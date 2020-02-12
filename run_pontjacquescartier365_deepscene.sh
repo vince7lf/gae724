@@ -1,0 +1,1 @@
+./segnet-batch.py --network=fcn-resnet18-deepscene --visualize=mask --alpha=10000 /home/lefv2603/projects/gae724/pontjacquescartier365/images /home/lefv2603/projects/gae724/pontjacquescartier365/processed
