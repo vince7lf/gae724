@@ -1,0 +1,82 @@
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150708.mp4 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB,width=(int)480,heigth=(int)640" ! v4l2sink device=/dev/video1 -e
+
+
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150708.mp4 ! queue ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB,width=(int)480,heigth=(int)640" ! v4l2sink device=/dev/video1
+
+
+
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150708.mp4 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB,width=(int)480,heigth=(int)640" ! tee name="splitter" ! queue ! v4l2sink device=/dev/video1 sync=false splitter. ! queue ! decodebin ! 'video/x-raw-yuv, width=(int)480, height=(int)640, format=(string)NV12, framerate=(fraction)25/1' ! nvv4l2h264enc maxperf-enable=1 bitrate=8000000 ! h264parse ! qtmux ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4 -e
+
+
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -v -e filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150708.mp4 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! videorate ! "video/x-raw,format=(string)RGB,width=(int)480,heigth=(int)640" ! tee name="splitter" ! queue ! v4l2sink device=/dev/video1 sync=false splitter. ! queue ! decodebin ! 'video/x-raw, width=(int)480, height=(int)640, format=(string)NV12, framerate=(fraction)25/1' ! nvv4l2h264enc maxperf-enable=1 bitrate=8000000 ! h264parse ! qtmux ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150708.mp4 ! tee name="splitter" ! qtdemux ! queue ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB,width=(int)480,heigth=(int)640" ! v4l2sink device=/dev/video1 sync=false splitter. ! queue ! decodebin ! 'video/x-raw-yuv, width=(int)480, height=(int)640, format=(string)NV12, framerate=(fraction)25/1' ! nvv4l2h264enc maxperf-enable=1 bitrate=8000000 ! h264parse ! qtmux ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+# play the file and tee it to transform it for the inference and save the raw video
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150945.mp4 ! tee name="splitter" ! qtdemux ! queue ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB, width=(int)480, heigth=(int)640" ! v4l2sink device=/dev/video1 splitter. ! queue ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+
+
+# works playing and recording video file
+# producer
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150945.mp4 ! queue ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB,width=(int)480,heigth=(int)640" ! v4l2sink device=/dev/video1
+
+# consumer
+GST_DEBUG=3 gst-launch-1.0 --gst-debug -e -v v4l2src device=/dev/video1 ! tee name=splitter ! queue ! decodebin ! videoconvert ! xvimagesink sync=false splitter. ! queue ! decodebin ! videoconvert ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+# To play the video mp4 saved (file invalid)
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/Downloads/test_save_h264.mp4 ! qtdemux ! queue ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nv3dsink -e
+
+		ss << "v4l2src device=" << mCameraStr << " ! ";
+		//ss << "video/x-raw, width=(int)" << mWidth << ", height=(int)" << mHeight << ", "; 
+		
+	//#if NV_TENSORRT_MAJOR >= 5
+		//ss << "format=YUY2 ! videoconvert ! video/x-raw, format=RGB ! videoconvert !";
+	//#else
+		//ss << "format=RGB ! videoconvert ! video/x-raw, format=RGB ! videoconvert !";
+	// #endif
+
+		//ss << " identity drop-allocation=1 ! ";
+		ss << " tee name=splitter ! queue ! ";
+		ss << " appsink name=mysink ";
+		ss << " sync=false splitter. ";
+//                ss << " ! queue ! decodebin ! 'video/x-raw-yuv, width=(int)480, height=(int)640, format=(string)NV12, framerate=(fraction)25/1' ! nvv4l2h264enc maxperf-enable=1 bitrate=8000000 ! h264parse ! qtmux ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4";
+                ss << " ! queue ! decodebin ! videoconvert ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4";
+
+//tee name=splitter ! queue ! decodebin ! videoconvert ! appsink name=mysink sync=true splitter. ! queue ! decodebin ! videoconvert ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+		mSource = GST_SOURCE_V4L2;
+
+
+'video/x-h264, stream-format=(string)byte-stream'
+
+
+
+ gst-launch-1.0 -v videotestsrc num-buffers=1000 ! tee name=t ! queue ! videoconvert ! autovideosink t. ! queue ! x264enc rc-lookahead=5 ! fakesink
+
+
+
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150945.mp4 num-buffers=1000 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB, width=(int)480, heigth=(int)640" ! tee name=t ! queue ! v4l2sink device=/dev/video1 t. ! queue ! x264enc rc-lookahead=5 ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+
+# ne fonctionne pas .. rien ne se passe... file 0bytes. 
+GST_DEBUG=3 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150945.mp4 num-buffers=1000 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB, width=(int)480, heigth=(int)640" ! tee name=t ! queue ! v4l2sink device=/dev/video1 sync=false t. ! queue ! decodebin ! videoconvert ! 'video/x-raw(memory:NVMM), width=(int)1920, height=(int)1080, format=(string)NV12, framerate=(fraction)30/1' ! nvv4l2h264enc maxperf-enable=1 bitrate=28000000 ! h264parse ! qtmux ! filesink location=/home/lefv2603/Downloads/test_save_h264.mp4
+
+
+GST_DEBUG=3 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150945.mp4 num-buffers=1000 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB, width=(int)480, heigth=(int)640" ! tee name=t ! queue ! v4l2sink device=/dev/video1 sync=false t. ! queue ! x264enc pass=5 quantizer=25 speed-preset=6 ! video/x-h264, profile=baseline ! qtmux ! filesink location=videotestsrc.mov#
+
+
+# producer
+GST_DEBUG=1 gst-launch-1.0 --gst-debug -e -v filesrc location=/home/lefv2603/projects/gae724/videos/20200308/20200308_150945.mp4 ! qtdemux ! h264parse ! nvv4l2decoder enable-max-performance=1 ! nvvidconv flip-method=3 ! videorate ! videoscale ! 'video/x-raw(memory:NVMM), format=(string)NV12, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! nvvidconv ! videorate ! videoscale ! 'video/x-raw, format=(string)I420, width=(int)480, height=(int)640, framerate=(fraction)25/1' ! decodebin ! videoconvert ! videoscale ! "video/x-raw,format=(string)RGB, width=(int)480, heigth=(int)640" ! v4l2sink device=/dev/video1
+
+# segmentation consumer and passing raw video (works .. but the result of appsink
+v4l2src device=/dev/video1 !  tee name=splitter ! queue !  appsink name=mysink  sync=false splitter.  ! decodebin ! videoconvert ! v4l2sink device=/dev/video2
+# Fail could not link mysink to splitter
+v4l2src device=/dev/video1 !  appsink name=mysink  sync=false  ! tee name=splitter splitter. ! queue  ! decodebin ! videoconvert ! v4l2sink device=/dev/video2
+
+# consummer and producer (tee) to video2
+GST_DEBUG=3 gst-launch-1.0 --gst-debug -e -v v4l2src device=/dev/video1 num-buffers=1000 ! decodebin ! videoconvert ! v4l2sink device=/dev/video2
+
+# consummer #2
+GST_DEBUG=3 gst-launch-1.0 --gst-debug -e -v v4l2src device=/dev/video1 num-buffers=1000 ! decodebin ! videoconvert ! xvimagesink
