@@ -1,3 +1,34 @@
+\par Voici le plan qui est utilisé pour rédiger au sujet des données.
+\begin{itemize}
+   \item Présentation des réseaux de neurones qui seront utilisés dans le cadre de l’essai, leurs caractéristiques.
+   \item Présentation des sources de données (images) qui seront utilisées pour l'apprentissage, la validation et les tests des réseaux de neurones pour le ré-entrainement.
+   \item Présentation des sources de données (images et vidéos) qui seront utilisées pour l'inférence.
+\end{itemize}
+
+\paragraph{Données}\label{metho:data}
+
+\begin{itemize}
+   \item Précision des différentes sources consultées:
+      \begin{itemize}
+         \item Les ressources mises à disposition par le constructeur du Jetson nano, NVIDIA, font référence à des jeux de données qui sont disponibles publiquement.
+         \item En complément des ressources de NVIDIA, deux références scientifiques seront principalement étudiées, car leurs recherches ont été faites avec le Jetson nano (\cite{nguyen_mavnet_2019} et \cite{chong_real-time_1992}). Beaucoup de références ont été publiées ces deux dernières années sur le sujet de la segmentation sémantique, ils existent donc de multiples alternatives inspirantes.
+         \item Internet est une mine de données. Il existe des forums et des blogues dans lesquels des utilisateurs publient leurs expérimentations de la segmentation sémantique en temps réel avec le Jetson nano (\cite{dustin_realtime_2019}), ou plus génériquement la segmentation sémantique. Des sites comme "modelzoo.co" ou "kaggle.com" sont des entrepôts de données. Une autre option est d'effectuer une recherche d'images ou de vidéos de la piste multifonctionnelle du pont Jacques-Cartier via les sites de recherche tels que Google. 
+         \item L'Association des piétons et cyclistes du pont Jacques-Cartier existe depuis de nombreuses années pour promouvoir le transport actif et conserver la piste multifonctionnelle du pont Jacques Cartier ouverte durant l'hiver. Ils fournissent, via leurs sites Internet, des collections de vidéos et d'images qui pourraient être utilisées. Il serait aussi possible d'entrer en contact avec l'association et leur demander de prendre de nouvelles vidéos. Voir "http://pontjacquescartier365.com", et\\"https://www.flickr.com/photos/pontjacquescartier".
+         \item Une autre possibilité serait d'hériter des acquisitions faites par un autre étudiant de l'université de Sherbrooke, soit déjà archivée, soit collectée prochainement. Mon directeur de projet Mickaël G. m'a informé qu'un étudiant de Sherbrooke va avoir besoin de collecter le trafic automobile sur le campus de l'Université de Sherbrooke, à Sherbrooke. 
+         \item Enfin il y a l'acquisition des vidéos spécifiquement pour le projet PJCCI. Comme il n'y a aucune date de planifiée pour la capture des vidéos, l'essai devra s'arranger pour dépendre le moins possible d'elles durant la préparation et le développement, et s'attendre à les recevoir pour le ré-apprentissage et les tests, en fin d'essai.
+         \item Tout au long de l'essai, mon directeur Mickaël sera une ressource importante afin de vérifier que les sources de données, les prétraitements et les traitements sont adéquats aux attentes du projet pour PJCCI.
+      \end{itemize}
+   \item Récapitulatif des jeux de données utilisés pour l'essai, grâce à un tableau: les réseaux de neurones et le nom des jeux de données d’imageries et de vidéos respectifs; leur source; le nombre d’images; leur résolution, leur nombre d'images par secondes dans le cas des vidéos.
+   \item Présentation des images utilisées pour le ré-entrainement des modèles, la validation et les tests; les traitements nécessaires des vidéos et des images. 
+   \item Présentation des vidéos et des images qui seront utilisées pour l'inférence; les traitements nécessaires des vidéos et des images.
+   \item Mention de la méthodologie d'acquisition des nouvelles données sur le site d'étude (même si potentiellement elles ne seront pas utilisées pendant l'essai ?).
+\end{itemize}
+
+\myparagraph{Approche prévue pour le traitement des données}
+\par Il y a deux phases à cet essai: l'inférence avec des modèles déjà prêts et l'inférence avec des modèles ré-entrainés. Les données utilisées par l'inférence sont des vidéos (d'une certaine résolution et d'un certain nombre d'images pas seconde), et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celle avec laquelle le modèle a été, ou sera, entrainé. La résolution et la qualité de l'image-vidéo seront nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la détection la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
+\par Tout cela signifie que les vidéos ou nouvelles images devront être traités pour répondre à une certaine taille et résolution requise par le modèle, tout en conservant une qualité élevée (nombre de pixels, niveaux de couleurs). De nouvelles images pour l'entrainement seront extraites des vidéos, et annotées. 
+\par Certains framework d'apprentissage profond (par exemple "Keras") offrent l'option d'augmenter automatiquement le jeu de données avec des techniques d'augmentation de données (par exemple la rotation, le redimensionnement, l'effet miroir), ce qui est très utile et non négligeable.
+
 \par Voici le tableau de synthèse des données, incluant la référence avec leur réseaux de neurones.
 {
    \clearpage 
