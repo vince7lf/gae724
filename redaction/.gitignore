@@ -1,5 +1,6 @@
 ## ignore generated pdf to avoid having to commit each time it's built
 *.pdf
+*.gz
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

@@ -1,6 +1,11 @@
 ﻿% command line to generate Word docx
 % pandoc -s "GAE723 - Travail 4.3 Comptes-rendus des suivis individuels - Vincent Le Falher - v1.0.tex" -o "GAE723 - Travail 4.3 Comptes-rendus des suivis individuels - Vincent Le Falher - v1.0.tex.docx"
 \documentclass[12pt, letterpaper]{article}
+
+\title{Essai Segmentation sémantique en temps réel à partir d'un nano-ordinateur: étude des performances et des limites}
+\author{Vincent Le Falher \thanks{Mickaël Germains}}
+\date{2020}
+
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[french]{babel}
@@ -36,35 +41,49 @@
    
    \vspace{10\baselineskip}
  
-   {\LARGE Essai}
+   \underline{{\LARGE Essai}}
    \vspace{1\baselineskip}
    \linebreak
-   {\LARGE Segmentation sémantique en temps réel à partir d'un nano-ordinateur: étude des performances et des limites.}
+   {\LARGE Segmentation sémantique en temps réel à partir d'un nano-ordinateur: étude des performances et des limites}
    \vspace{1\baselineskip}
    \linebreak
-   \underline{{\LARGE Sous-titre}}
+   % \underline{{\LARGE Sous-titre}}
  
    \vspace*{3\baselineskip}
  
-   \textit{Dans cadre de la maîtrise en sciences géographiques cheminement de type cours en géo développement durable}
+   \textit{Essai présenté pour l'obtention du grade de Maître en sciences (M.Sc.),\\cheminement géodéveloppement durable}
    
    \vspace{5\baselineskip}
     
-   VINCENT LE FALHER\\LEFV2603
+   {\LARGE Vincent Le Falher}
      
    \vfill % Whitespace between editor names and year
  
    Longueuil\\Septembre 2020 % Publication year
+   \vfill % Whitespace between editor names and year
+   % \footnotesize{\textcopyright{Vincent Le Falher, 2020}}
+   \tiny{\textcopyright{Vincent Le Falher, 2020}}
  
 \end{titlepage}
+
 %----------------------------------------------------------------------------------------
 \thispagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+\textbf{Remerciements}
+\input{sections/remerciements}
+
+%----------------------------------------------------------------------------------------
+\newpage
 \tableofcontents{}
 \listoffigures{}
 \listoftables{}
+
+%----------------------------------------------------------------------------------------
 \newpage
 \pagenumbering{arabic}
 
+%----------------------------------------------------------------------------------------
 \section{Introduction}
 \subsection{Mise en contexte}
 \input{sections/contexte}
@@ -73,6 +92,7 @@
 \subsection{Objectifs}
 \input{sections/objectifs}
 
+%----------------------------------------------------------------------------------------
 \section{Cadre théorique (état des connaissances, revue de la littérature) -- 5-9 pages}
 Il y a deux sections, la première qui concernent le nano-ordinateur et ensuite la seconde, l'apprentissage profond et la segmentation sémantique.
 \subsection{Cadre théorique au sujet du nano-ordinateur}
@@ -80,6 +100,7 @@ Il y a deux sections, la première qui concernent le nano-ordinateur et ensuite 
 \subsection{Cadre théorique au sujet de l'apprentisage profond et de la segmentation sémantique -- 3-5 pages}
 \input{sections/cadretheorique_dp_ss}
 
+%----------------------------------------------------------------------------------------
 \section{Matériel et méthodes}
 \subsection{Site d'étude - 1 page}
 \input{sections/site_etude}
@@ -90,15 +111,19 @@ Il y a deux sections, la première qui concernent le nano-ordinateur et ensuite 
 \subsection{Méthodologie –- 10-15 pages}
 \input{sections/methodologie}
 
+%----------------------------------------------------------------------------------------
 \section{Résultats -- 10-15 pages}
 \input{sections/resultats}
 
+%----------------------------------------------------------------------------------------
 \section{Interprétation et discussion des résultats -- 5-7 pages}
 \input{sections/interpretationresultats}
 
+%----------------------------------------------------------------------------------------
 \section{Conclusion et recommendations -- 3-4 pages}
 \input{sections/conclusion}
 
+%----------------------------------------------------------------------------------------
 \clearpage 
 \newpage
 \printbibliography[title={\bibname\label{bib:references}}] 
