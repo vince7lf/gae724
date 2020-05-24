@@ -1,0 +1,88 @@
+﻿% command line to generate Word docx
+% pandoc -s "GAE723 - Travail 4.3 Comptes-rendus des suivis individuels - Vincent Le Falher - v1.0.tex" -o "GAE723 - Travail 4.3 Comptes-rendus des suivis individuels - Vincent Le Falher - v1.0.tex.docx"
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\usepackage{todonotes}
+\usepackage{comment} 
+\usepackage{times}
+\usepackage[T1]{fontenc} 
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{flafter} % to force the table to be within it's section 
+\usepackage[backend=biber]{biblatex}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{draftwatermark}
+\addbibresource{selection.bib}
+\definecolor{orange}{rgb}{1,0.647,0}
+\graphicspath{ {images/} }
+\addto\captionsfrench{ \renewcommand*\contentsname{Table des matières} }
+\addto\captionsfrench{ \renewcommand{\listfigurename}{Liste des figures} }
+\addto\captionsfrench{ \renewcommand{\listtablename}{Liste des tableaux} }
+\addto\captionsfrench{ \renewcommand{\bibname}{Références}}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\\par}
+\renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
+\begin{document}
+\begin{titlepage} % Suppresses headers and footers on the title page
+   \centering % Centre everything on the title page
+ 
+   \scshape % Use small caps for all text on the title page
+  
+   DÉPARTEMENT DE GÉOMATIQUE APPLIQUÉE\\Faculté des lettres et sciences humaines\\Université de Sherbrooke
+   
+   \vspace{10\baselineskip}
+ 
+   {\LARGE Essai}
+   \vspace{1\baselineskip}
+   \linebreak
+   {\LARGE Segmentation sémantique en temps réel à partir d'un nano-ordinateur: étude des performances et des limites.}
+   \vspace{1\baselineskip}
+   \linebreak
+   \underline{{\LARGE Sous-titre}}
+ 
+   \vspace*{3\baselineskip}
+ 
+   \textit{Dans cadre de la maîtrise en sciences géographiques cheminement de type cours en géo développement durable}
+   
+   \vspace{5\baselineskip}
+    
+   VINCENT LE FALHER\\LEFV2603
+     
+   \vfill % Whitespace between editor names and year
+ 
+   Longueuil\\Septembre 2020 % Publication year
+ 
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+\thispagestyle{empty}
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+\newpage
+\pagenumbering{arabic}
+\section{Mise en contexte}
+\input{sections/contexte}
+\section{Problématique}
+\input{sections/problematique}
+\section{Objectifs}
+\input{sections/objectifs}
+\section{Identification des besoins en termes de données}
+\input{sections/donneesbesoin}
+\subsection{Stratégie de recherche de données}
+\input{sections/donneesstrategiesrecherche}
+\subsection{Conditions d'acquisition des nouvelles données} \label{sect:conditions}
+\input{sections/donneesacquisitionmetho}
+\subsection{Synthèse des données}
+\input{sections/donneestable}
+\section{Processus de gestion de l'essai}
+\input{sections/processusgestion}
+\section{Échéancier}
+\input{sections/echeancier}
+\clearpage 
+\newpage
+\printbibliography[title={\bibname\label{bib:references}}] 
+\end{document}

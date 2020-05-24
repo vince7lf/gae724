@@ -1,0 +1,125 @@
+\par Voici le tableau de synthèse des données, incluant la référence avec leur réseaux de neurones.
+{
+   \clearpage 
+   \newpage
+   \begin{landscape}
+   \newcounter{magicrownumbers}
+   \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+   % \centering
+   \vspace{0.3em} % Adjust the height of the space between caption and tabular
+   \begin{longtable}[t]{@{}p{1em}|p{15em}p{35em}@{}} % p{15em}p{35em} with landscape
+      \caption{Tableau des données}\label{tab:datasets}\\
+      & \textbf{Spécification} & \textbf{Description}\\
+      \hline
+      \endfirsthead
+      & \textbf{Spécification} & \textbf{Description}\\
+      \hline
+      \endhead
+      \endfoot
+      \endlastfoot
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: U-Net\\jeu de données: Membrane (origine isbi challenge)\\nombre d'images: 30\\résolution/s: 512x512
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         C'est le jeu de données pour le réseau U-Net. Il est utilisé dans le benchmark de NVIDIA pour l'inférence avec le Jetson nano. Les images sont de type médicale.\\
+         À noter que le framework "Keras" s'occupe de l'augmentation de données.\\
+         https://github.com/zhixuhao/unet/tree/master/data/membrane\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: SegNet\\jeu de données: CamVid\\vidéos: 10 minutes\\résolution/s: HD
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurents des vidéos de la route avec la méme perspective que le conducteur du véhicule. Un modèle entrainé est disponible pour le Jetson nano.\\
+         https://github.com/PengKiKi/camvid\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: MFANet\\jeu de données: Cityscapes\\nombre d'images: 5000\\résolution/s: 1280x1024
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         MFANet est un réseau qui a été créé en 2019 pour la segmentation sémantique sur des appareils tel que le Jetson nano. Il a été entrainé avec le jeu de données de Cityscapes, qui procurents des images de scènes urbaines. Différentes stratégies d'augmentation de données sont utilisées. Des tests ont été fait avec le Jetson nano.\\
+         leejy@ustb.edu.cn\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: MAVNet\\jeu de données: Penstock\\nombre d'images: 135\\résolution/s: 1280x1024
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         C'est l'un des deux jeux de données pour le réseau MAVNet. Les images sont celles de "conduites forcées", des voies d'eau de régulation, et sont préparées pour la segmentation sémantique. Des tests ont été fait avec le Jetson nano.\\
+         https://github.com/tynguyen/MAVNet/tree/master/data/TN\_penstock\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: MAVNet\\jeu de données: Penstock\\nombre d'images: 135\\résolution/s: 1280x1024
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         C'est l'un des deux jeux de données pour le réseau MAVNet. Les images sont celles de drones volant à l'intérieur d'un bâtiment, et préparées pour la segmentation sémantique. Des tests ont été fait avec le Jetson nano.\\
+         https://github.com/tynguyen/MAVNet/tree/master/data/perch\_drone\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: RESNet18\\jeu de données: Cityscapes\\nombre d'images: 25 000\\résolution/s: 360x720, 512x256, 1024x512, 2048x1024
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Cityscapes est un jeu de données qui fournit des images de rues spécifiquement destinées pour la segmentation sémantique. Il peut être utilisé par de nombreux réseaux. RESNet18 a été entrainé avec ce jeu et est disponible en diverses résolutions pour le Jetson Nano.\\
+         https://github.com/tynguyen/MAVNet/tree/master/data/perch\_drone\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: RESNet18\\jeu de données: DeepScenes\\nombre d'images: 15 000\\résolution/s: 576x320, 864x480 
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         DeepScene propose un modèle et un jeu de données. Le modèle est entrainé avec différents jeux de données, comme Cityscpapes, SUN-RGBD, Synthia. Le jeu de données fournit des images de forêt, qui est destinée pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux  résolutions pour le Jetson Nano.\\
+         http://deepscene.cs.uni-freiburg.de\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: RESNet18\\jeu de données: Multi-Human\\nombre d'images: 25 043\\résolution/s: 512x320, 640x360
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Le jeu de données Multi-Human fournit des images contenant des humains, et qui est destinée pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux résolutions pour le Jetson Nano.\\
+         https://lv-mhp.github.io/dataset\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: RESNet18\\jeu de données: Pascal VOC\\nombre d'images: 11 530\\résolution/s: 320x320, 512x320 
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Le jeu de données Pascal VOC fournit des images de classes variées tel que des personnes, des animaux, des véhicules, et des objets classiques, et qui peut être utilisé pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux résolutions pour le Jetson Nano.\\
+         http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: RESNet18\\jeu de données: SUN RGB-D\\nombre d'images: 10 335\\résolution/s: 512x400, 640x512
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Le jeu de données SUN RGB-D fournit des images de scènes d'intérieur de maison, et qui est destiné pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu.\\
+         https://synthia-dataset.net\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         réseau: DeepScene\\jeu de données: Synthia\\nombre d'images: 220 000\\résolution/s: 1280x760
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Le jeu de données Synthia fournit des images (et vidéos) de scènes de rue comme celui de Cityscapes, et qui est destiné pour la segmentation sémantique. DeepScene a été entrainé avec ce jeu. Il n'a pas été testé avec le Jetson Nano.\\
+         http://3dvision.princeton.edu/datasets.html\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         jeu de données: Association des piétons et cyclistes pont Jacques-Cartier\\nombre d'images: 313\\résolution/s: variées
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         L'Association des piétons et cyclistes du pont Jacques-Cartier a une collection d'images et de vidéos de la piste multifonctionnelle du pont Jacques-Cartier. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel-quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai. Il est envisagé de contacter l'association au besoin afin de leur demander leur collaboration pour la collecte d'autres d'images ou vidéos.\\
+         https://www.flickr.com/photos/pontjacquescartier\\
+         http://pontjacquescartier365.com/videos-pont-jacques-cartier\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         jeu de données: images et vidéo sur Internet\\nombre d'images: entre 30-50\\résolution/s: variées
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Internet est une source de données non négligeable en terme de données. Quelques images et vidéos de la piste multifonctionnelles du pont Jacques-Cartier, autres que celles fournies par L'Association des piétons et cyclistes du pont Jacques-Cartier, sont disponibles. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel-quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai.\\
+         https://google.ca\\
+      \end{tabular}\\
+      \hline
+      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
+         jeux de données: Kaggle
+      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
+         Le site Kaggle offre une vingtaine de jeux de données offert par la communauté pour faire de la segmentation sémantique, et qui sont prêt à être utilisé. Les jeux de données n'ont pas été évalués.\\
+         https://www.kaggle.com/search?q=%22semantic+segmentation%22+in%3Adatasets\\
+      \end{tabular}\\
+      \hline
+   \end{longtable}
+   \end{landscape}
+   \clearpage
+   \newpage
+}
