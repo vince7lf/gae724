@@ -1,0 +1,657 @@
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2486         819         197         650        1593
+Low:           3956        3136         819
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        3812        1471
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2515         757         197         682        1542
+Low:           3956        3198         757
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        3842        1409
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2536         703         197         715        1515
+Low:           3956        3252         703
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        3862        1355
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2565         637         197         752        1479
+Low:           3956        3318         637
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        3892        1289
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2598         573         197         784        1438
+Low:           3956        3382         573
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        3924        1225
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2649         497         197         809        1375
+Low:           3956        3458         497
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        3975        1149
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2693         423         197         839        1322
+Low:           3956        3532         423
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4019        1075
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2758         327         197         870        1243
+Low:           3956        3629         327
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4084         978
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2804         265         197         886        1167
+Low:           3956        3690         265
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4130         917
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2821         212         197         921        1143
+Low:           3956        3743         212
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4148         864
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2878         126         197         950        1075
+Low:           3956        3829         126
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4205         778
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2922          67         201         965         978
+Low:           3956        3888          67
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4249         719
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2900          73         200         981         921
+Low:           3956        3882          73
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4226         725
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2887          77         200         991         855
+Low:           3956        3878          77
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4214         729
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2911          69         197         975         780
+Low:           3956        3886          69
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4237         721
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2866         130         197         959         758
+Low:           3956        3825         130
+High:             0           0           0
+Swap:          1978        1326         651
+Total:         5934        4192         782
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        2944         182         197         829         647
+Low:           3956        3774         182
+High:             0           0           0
+Swap:          1978        1322         655
+Total:         5934        4266         837
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3197         245         179         514         413
+Low:           3956        3711         245
+High:             0           0           0
+Swap:          1978        1358         619
+Total:         5934        4555         864
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3280         297         177         378         332
+Low:           3956        3658         297
+High:             0           0           0
+Swap:          1978        1359         618
+Total:         5934        4640         915
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3282         263         177         409         329
+Low:           3956        3692         263
+High:             0           0           0
+Swap:          1978        1358         619
+Total:         5934        4640         883
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3283         266         177         406         329
+Low:           3956        3689         266
+High:             0           0           0
+Swap:          1978        1357         620
+Total:         5934        4640         887
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3285         257         176         412         331
+Low:           3956        3698         257
+High:             0           0           0
+Swap:          1978        1360         618
+Total:         5934        4645         875
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3283         265         176         407         332
+Low:           3956        3690         265
+High:             0           0           0
+Swap:          1978        1360         618
+Total:         5934        4643         883
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3283         269         176         403         330
+Low:           3956        3686         269
+High:             0           0           0
+Swap:          1978        1362         615
+Total:         5934        4646         884
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3283         259         176         413         330
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1362         615
+Total:         5934        4646         874
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3283         259         176         413         330
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1362         615
+Total:         5934        4646         874
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3283         258         176         413         330
+Low:           3956        3697         258
+High:             0           0           0
+Swap:          1978        1362         615
+Total:         5934        4646         874
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         269         176         407         334
+Low:           3956        3686         269
+High:             0           0           0
+Swap:          1978        1366         611
+Total:         5934        4645         881
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3281         262         176         412         331
+Low:           3956        3693         262
+High:             0           0           0
+Swap:          1978        1366         611
+Total:         5934        4647         874
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3282         271         176         401         337
+Low:           3956        3684         271
+High:             0           0           0
+Swap:          1978        1379         598
+Total:         5934        4661         870
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3280         263         159         412         356
+Low:           3956        3693         263
+High:             0           0           0
+Swap:          1978        1398         579
+Total:         5934        4679         842
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         261         157         415         360
+Low:           3956        3694         261
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         826
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         263         155         413         362
+Low:           3956        3692         263
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         827
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         260         155         416         361
+Low:           3956        3695         260
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4693         824
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3281         263         150         411         364
+Low:           3956        3692         263
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4694         828
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3280         262         151         413         364
+Low:           3956        3694         262
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4694         826
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         258         151         418         366
+Low:           3956        3697         258
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         822
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         258         151         418         366
+Low:           3956        3697         258
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         822
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         260         149         417         368
+Low:           3956        3696         260
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         824
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         259         150         418         367
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4691         823
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         259         150         418         367
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4691         824
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         259         149         417         368
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         824
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         258         151         419         367
+Low:           3956        3697         258
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4691         823
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         259         149         417         367
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         824
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         257         151         419         366
+Low:           3956        3698         257
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         822
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         257         151         419         366
+Low:           3956        3698         257
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         257         151         419         366
+Low:           3956        3698         257
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4691         822
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         256         151         420         366
+Low:           3956        3699         256
+High:             0           0           0
+Swap:          1978        1413         564
+Total:         5934        4692         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         271         146         411         376
+Low:           3956        3685         271
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4700         822
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         270         145         411         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         268         146         411         373
+Low:           3956        3688         268
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4703         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         269         144         410         374
+Low:           3956        3687         269
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4704         820
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         269         144         410         374
+Low:           3956        3687         269
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4704         819
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         267         146         412         373
+Low:           3956        3688         267
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4703         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         270         146         412         376
+Low:           3956        3686         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4700         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         270         146         412         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4700         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         270         146         412         376
+Low:           3956        3686         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4700         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         269         146         412         375
+Low:           3956        3686         269
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         820
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         270         144         410         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         270         146         412         376
+Low:           3956        3686         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         270         144         410         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         270         144         410         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         270         146         412         376
+Low:           3956        3686         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4700         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         270         144         411         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         270         144         411         376
+Low:           3956        3685         270
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         821
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         267         146         413         375
+Low:           3956        3688         267
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4701         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         268         144         412         376
+Low:           3956        3687         268
+High:             0           0           0
+Swap:          1978        1427         550
+Total:         5934        4702         819
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         266         146         414         374
+Low:           3956        3689         266
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         267         145         413         374
+Low:           3956        3688         267
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         266         146         414         374
+Low:           3956        3689         266
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         267         144         412         375
+Low:           3956        3688         267
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4703         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         267         144         412         375
+Low:           3956        3688         267
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4703         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         267         144         412         375
+Low:           3956        3688         267
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4703         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         268         144         412         375
+Low:           3956        3687         268
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         819
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         267         146         414         375
+Low:           3956        3689         267
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4701         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3274         268         144         413         376
+Low:           3956        3688         268
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4701         819
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3273         266         147         416         374
+Low:           3956        3689         266
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4701         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         266         145         414         374
+Low:           3956        3689         266
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         262         146         415         371
+Low:           3956        3693         262
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4705         813
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3278         262         146         415         371
+Low:           3956        3693         262
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4705         813
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         262         145         414         370
+Low:           3956        3694         262
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4706         813
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3279         260         147         416         369
+Low:           3956        3695         260
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4706         811
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         264         147         416         372
+Low:           3956        3692         264
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         815
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         266         144         413         375
+Low:           3956        3689         266
+High:             0           0           0
+Swap:          1978        1427         551
+Total:         5934        4702         818
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         266         144         414         375
+Low:           3956        3690         266
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         266         144         414         375
+Low:           3956        3690         266
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         266         144         414         375
+Low:           3956        3690         266
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         817
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         265         144         414         374
+Low:           3956        3690         265
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4703         816
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         265         144         414         374
+Low:           3956        3691         265
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4703         816
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         265         144         414         374
+Low:           3956        3691         265
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4703         816
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3275         258         151         421         373
+Low:           3956        3697         258
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         810
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         257         152         422         371
+Low:           3956        3698         257
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         809
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         259         150         420         374
+Low:           3956        3696         259
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         811
+
+              total        used        free      shared  buff/cache   available
+Mem:           3956        3276         258         152         422         372
+Low:           3956        3698         258
+High:             0           0           0
+Swap:          1978        1426         551
+Total:         5934        4702         810
