@@ -18,6 +18,36 @@ L'organigramme de la figure \ref{fig:methodologie1} présente la démarche de la
     \caption{Organigrame de la méthodologie}
     \label{fig:methodologie1}
 \end{figure}
+
+
+\subsubsection{Revue de littérature}
+\input{sections/methodologie/revue_literatture}
+\subsubsection{Étude du site d'implantation}
+\input{sections/methodologie/etude_site_implementation}
+\subsubsection{Sélection des données et des modèles de réseaux de neurones}
+\input{sections/methodologie/selection_donnees_modele}
+\subsubsection{Choix de l'équipement pour le nano-ordinateur}
+\input{sections/methodologie/choix_equipment}
+\subsubsection{Exploration des solutions logicielles}
+\input{sections/methodologie/exploration_solutions_logicielles}
+\subsubsection{Préparation du nano-ordinateur}
+\input{sections/methodologie/preparation_nano_ordinateur}
+\subsubsection{Collecte des données}
+\input{sections/methodologie/collecte_donnees}
+\subsubsection{Mise en place des solutions logicielles}
+\input{sections/methodologie/mise_en_place_solutions_logicielles}
+\subsubsection{Segmentation avec des images}
+\input{sections/methodologie/segmentation_images}
+\subsubsection{Segmentation avec des vidéos}
+\input{sections/methodologie/segmentation_videos}
+
+\subsubsection{Choix du modèle de l'architecture FCN}
+\input{sections/methodologie/choix_modele_architecture_fcn}
+\subsubsection{Adaptation du modèle}
+\input{sections/methodologie/adaptation_modele}
+\subsubsection{Ré-entrainement du modèle}
+\input{sections/methodologie/reentrainement_modele}
+
 \par L'objectif principal de l'essai est de déterminer la capacité et les limites du nano-ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
 \begin{enumerate}
    \item \label{metho:testbaseinférence} Afin de s'assurer du bon fonctionnement du nano-ordinateur et d'avoir des résultats de référence propre à notre environnement, l'inférence sera testée avec des modèles existants et pré-entrainés pour la segmentation sémantique, avec les images et les vidéos provenant des références, et dont les caractéristiques et les résultats sont disponibles. 
