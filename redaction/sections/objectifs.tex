@@ -1,12 +1,3 @@
-\par L'objectif principal de l'essai est d'évaluer la capacité du nano-ordinateur "NVIDIA Jetson nano" à exécuter, en temps réel, un modèle de réseau de neurones à convolution entier (FCN) permettant la segmentation sémantique d'une piste multifonctionnelle. La segmentation sera limitée à deux classes : une classe pour la piste et une autre pour les autres éléments présents dans l'image. Pour y arriver, différents sous-objectifs ont été établis. 
-\par Voici en bref les sous-objectifs, avec un peu plus de détails par la suite pour chacun d'eux: 
-\begin{itemize}
-   \item Évaluer les limites de la plateforme, matérielle et applicative; 
-   \item Trouver des moyens d'optimiser la plateforme, au besoin, d'un point de vue matériel, mais aussi applicatif; 
-   \item Permettre un accès à distance sécurisé au nano-ordinateur;
-   \item Documenter l'approche, les tests, et les résultats, et les rendre disponible au grand public;
-\end{itemize}
-\vspace{1\baselineskip}
 \par Le premier sous-objectif est de déterminer quelles sont les limites de la plateforme, d'un point de vue matériel (GPU, CPU, mémoire, transfert mémoire, consommation, etc.), mais aussi applicatif (entrainement, inférence). Cette phase du projet va permettre d'exécuter différents modèles déjà existants, sans  modification, en tenant compte des éléments documentés dans la littérature \cite{nguyen_mavnet_2019} \cite{jia_real-time_2020} \cite{nvidia_jetson_2019-1}. Selon le déroulement de cette étape, un ou plusieurs modèles seront sélectionnés. 
 \par Un autre sous-objectif est d'optimiser ou d'adapter la plateforme, d'un point de vue matériel, mais aussi applicatif, afin d'avoir les meilleures performances et résultats possibles pendant l'entrainement et l'inférence.
 \par Comme les résultats devront être disponibles en tout temps, une connexion à distance sécurisée devra être mise en place. Cette connexion permettra aussi de pouvoir prendre le contrôle du nano-ordinateur à distance et de l'administrer.
