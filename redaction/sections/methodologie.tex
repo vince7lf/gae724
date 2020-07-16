@@ -1,3 +1,51 @@
+\par Voici à très haut niveau les grandes étapes de cet essai:
+\label{methodologie_haut_niveau}
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{methodologie_haut_niveau}
+    \caption{Organigrame de la méthodologie à haut niveau}
+    \label{fig:methodologie_haut_niveau}
+\end{figure}
+\par Pour y parvenir, la méthodologie suivante a été suivie et permet d'évaluer les performances de base de la segmentation sémantique avec le nano-ordinateur.
+\label{methodologie_simple}
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{methodologie_simple}
+    \caption{Organigrame de la méthodologie pour évaluer les performances}
+    \label{fig:methodologie_simple}
+\end{figure}
+\par Si chacun des blocs est explosé, chacun d'eux s'organise autour des activités suivantes: 
+\label{methodologie_simple_details}
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{methodologie_simple_details}
+    \caption{Organigramme des détails de la méthodologie pour évaluer les performances}
+    \label{fig:methodologie_simple_details}
+\end{figure}
+\par Si l'évaluation est probante, la méthodologie se verra bonifiée par des étapes d'adaptation et de traitement. 
+\label{methodologie_complexe}
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{methodologie_complexe}
+    \caption{Organigramme de la méthodologie pour évaluer les performances après une phase d'adaptation théorique}
+    \label{fig:methodologie_complexe}
+\end{figure}
+\par Mais sincèrement dans la pratique la méthodologie ressemblera plus à celle-ci: 
+\label{methodologie_complexe_realiste}
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{methodologie_complexe_realiste}
+    \caption{Organigramme de la méthodologie pour évaluer les performances après une phase d'adaptation réaliste}
+    \label{fig:methodologie_complexe_realiste}
+\end{figure}
+\par Si chacun des blocs est explosé, chacun d'eux s'organise autour des activités suivantes: 
+\label{methodologie_complexe_details}
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{methodologie_complexe_details}
+    \caption{Organigramme des détails de la méthodologie pour évaluer les performances après une phase d'adaptation}
+    \label{fig:methodologie_complexe_details}
+\end{figure}
 \par Voir la section \ref{methodologie} et l'organigramme de la figure \ref{fig:methodologie1} pour la représentation graphique de la méthodologie, et dont les phases peuvent être résumées de la façon suivante:  
 \begin{itemize}
    \item Recherche des références, des modèles et des données, ainsi que l'équipement pour le nano-ordinateur et des logiciels nécessaires.
@@ -9,15 +57,32 @@
       \item Traitement des données afin de les adapter au requis des modèles.
    \end{itemize}
 \end{itemize}
-
-\label{methodologie}
-L'organigramme de la figure \ref{fig:methodologie1} présente la démarche de la réalisation du projet. 
-\begin{figure}
-    \centering
-    \includegraphics[width=1.0\textwidth]{methodologie}
-    \caption{Organigrame de la méthodologie}
-    \label{fig:methodologie1}
-\end{figure}
+\subsubsection{Revue de littérature}
+\input{sections/methodologie/revue_literatture}
+\subsubsection{Étude du site d'implantation}
+\input{sections/methodologie/etude_site_implementation}
+\subsubsection{Sélection des données et des modèles de réseaux de neurones}
+\input{sections/methodologie/selection_donnees_modele}
+\subsubsection{Choix de l'équipement pour le nano-ordinateur}
+\input{sections/methodologie/choix_equipment}
+\subsubsection{Exploration des solutions logicielles}
+\input{sections/methodologie/exploration_solutions_logicielles}
+\subsubsection{Préparation du nano-ordinateur}
+\input{sections/methodologie/preparation_nano_ordinateur}
+\subsubsection{Collecte des données}
+\input{sections/methodologie/collecte_donnees}
+\subsubsection{Mise en place des solutions logicielles}
+\input{sections/methodologie/mise_en_place_solutions_logicielles}
+\subsubsection{Segmentation avec des images}
+\input{sections/methodologie/segmentation_images}
+\subsubsection{Segmentation avec des vidéos}
+\input{sections/methodologie/segmentation_videos}
+\subsubsection{Choix du modèle de l'architecture FCN}
+\input{sections/methodologie/choix_modele_architecture_fcn}
+\subsubsection{Adaptation du modèle}
+\input{sections/methodologie/adaptation_modele}
+\subsubsection{Ré-entrainement du modèle}
+\input{sections/methodologie/reentrainement_modele}
 \par L'objectif principal de l'essai est de déterminer la capacité et les limites du nano-ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
 \begin{enumerate}
    \item \label{metho:testbaseinférence} Afin de s'assurer du bon fonctionnement du nano-ordinateur et d'avoir des résultats de référence propre à notre environnement, l'inférence sera testée avec des modèles existants et pré-entrainés pour la segmentation sémantique, avec les images et les vidéos provenant des références, et dont les caractéristiques et les résultats sont disponibles. 
@@ -27,6 +92,3 @@ L'organigramme de la figure \ref{fig:methodologie1} présente la démarche de la
 \end{enumerate}
 \par L'accès aux connaissances et à l'expérience de mon directeur de projet dans le domaine de l'apprentissage profond, ainsi que l'adhésion au "Deep Learning Institute" offerte par NVIDIA, sont les soutiens à ma disposition  pour arriver à compléter les objectifs de cet essai avec succès, et a trouver des solutions de contournement aux problèmes qui seront rencontrés.
 \par À noter que l'acquisition des données du site d'étude se fera par l'intermédiaire d'une autre partie. La présentation du matériel et de la méthode d'acquisition des vidéos et des images terrain est donc exclue de cet essai.
-
-\vspace{1\baselineskip}
-\par 

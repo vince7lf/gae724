@@ -21,7 +21,7 @@
 \usepackage[backend=biber]{biblatex}
 \usepackage{lscape}
 \usepackage{longtable}
-\usepackage{draftwatermark}
+% \usepackage{draftwatermark}
 \addbibresource{selection.bib}
 \definecolor{orange}{rgb}{1,0.647,0}
 \graphicspath{ {images/} }
@@ -30,6 +30,7 @@
 \addto\captionsfrench{ \renewcommand{\listtablename}{Liste des tableaux} }
 \addto\captionsfrench{ \renewcommand{\bibname}{Références}}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\\par}
+\newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}\\\par}
 \renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
 \begin{document}
 \begin{titlepage} % Suppresses headers and footers on the title page
@@ -93,34 +94,34 @@
 \input{sections/objectifs}
 
 %----------------------------------------------------------------------------------------
-\section{Cadre théorique (état des connaissances, revue de la littérature) -- 5-9 pages}
+\section{Cadre théorique (état des connaissances, revue de la littérature)}
 Il y a deux sections, la première qui concernent le nano-ordinateur et ensuite la seconde, l'apprentissage profond et la segmentation sémantique.
 \subsection{Cadre théorique au sujet du nano-ordinateur}
 \input{sections/cadretheorique_nano}
-\subsection{Cadre théorique au sujet de l'apprentisage profond et de la segmentation sémantique -- 3-5 pages}
+\subsection{Cadre théorique au sujet de l'apprentissage profond et de la segmentation sémantique}
 \input{sections/cadretheorique_dp_ss}
 
 %----------------------------------------------------------------------------------------
 \section{Matériel et méthodes}
-\subsection{Site d'étude - 1 page}
+\subsection{Site d'étude}
 \input{sections/site_etude}
-\subsection{Données -– 3-4 pages}
+\subsection{Modèles et jeux de données}
 \input{sections/donnees}
-\subsection{Matériel et logiciels –- 2-3 pages}
-\input{sections/materiel}
-\subsection{Méthodologie –- 10-15 pages}
+\subsection{Matériel et logiciels}
+\input{sections/materiel_logiciels}
+\subsection{Méthodologie}
 \input{sections/methodologie}
 
 %----------------------------------------------------------------------------------------
-\section{Résultats -- 10-15 pages}
+\section{Résultats}
 \input{sections/resultats}
 
 %----------------------------------------------------------------------------------------
-\section{Interprétation et discussion des résultats -- 5-7 pages}
+\section{Interprétation et discussion des résultats}
 \input{sections/interpretationresultats}
 
 %----------------------------------------------------------------------------------------
-\section{Conclusion et recommendations -- 3-4 pages}
+\section{Conclusion et recommendations}
 \input{sections/conclusion}
 
 %----------------------------------------------------------------------------------------

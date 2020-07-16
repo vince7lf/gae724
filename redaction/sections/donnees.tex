@@ -50,14 +50,6 @@
       \endlastfoot
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         réseau: U-Net\\jeu de données: Membrane (origine isbi challenge)\\nombre d'images: 30\\résolution/s: 512x512
-      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         C'est le jeu de données pour le réseau U-Net. Il est utilisé dans le benchmark de NVIDIA pour l'inférence avec le Jetson nano. Les images sont de type médicale.\\
-         À noter que le framework "Keras" s'occupe de l'augmentation de données.\\
-         https://github.com/zhixuhao/unet/tree/master/data/membrane\\
-      \end{tabular}\\
-      \hline
-      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          réseau: SegNet\\jeu de données: CamVid\\vidéos: 10 minutes\\résolution/s: HD
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
          SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurents des vidéos de la route avec la méme perspective que le conducteur du véhicule. Un modèle entrainé est disponible pour le Jetson nano.\\
@@ -72,20 +64,6 @@
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         réseau: MAVNet\\jeu de données: Penstock\\nombre d'images: 135\\résolution/s: 1280x1024
-      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         C'est l'un des deux jeux de données pour le réseau MAVNet. Les images sont celles de "conduites forcées", des voies d'eau de régulation, et sont préparées pour la segmentation sémantique. Des tests ont été fait avec le Jetson nano.\\
-         https://github.com/tynguyen/MAVNet/tree/master/data/TN\_penstock\\
-      \end{tabular}\\
-      \hline
-      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         réseau: MAVNet\\jeu de données: Penstock\\nombre d'images: 135\\résolution/s: 1280x1024
-      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         C'est l'un des deux jeux de données pour le réseau MAVNet. Les images sont celles de drones volant à l'intérieur d'un bâtiment, et préparées pour la segmentation sémantique. Des tests ont été fait avec le Jetson nano.\\
-         https://github.com/tynguyen/MAVNet/tree/master/data/perch\_drone\\
-      \end{tabular}\\
-      \hline
-      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          réseau: RESNet18\\jeu de données: Cityscapes\\nombre d'images: 25 000\\résolution/s: 360x720, 512x256, 1024x512, 2048x1024
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
          Cityscapes est un jeu de données qui fournit des images de rues spécifiquement destinées pour la segmentation sémantique. Il peut être utilisé par de nombreux réseaux. RESNet18 a été entrainé avec ce jeu et est disponible en diverses résolutions pour le Jetson Nano.\\
@@ -97,27 +75,6 @@
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
          DeepScene propose un modèle et un jeu de données. Le modèle est entrainé avec différents jeux de données, comme Cityscpapes, SUN-RGBD, Synthia. Le jeu de données fournit des images de forêt, qui est destinée pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux  résolutions pour le Jetson Nano.\\
          http://deepscene.cs.uni-freiburg.de\\
-      \end{tabular}\\
-      \hline
-      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         réseau: RESNet18\\jeu de données: Multi-Human\\nombre d'images: 25 043\\résolution/s: 512x320, 640x360
-      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         Le jeu de données Multi-Human fournit des images contenant des humains, et qui est destinée pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux résolutions pour le Jetson Nano.\\
-         https://lv-mhp.github.io/dataset\\
-      \end{tabular}\\
-      \hline
-      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         réseau: RESNet18\\jeu de données: Pascal VOC\\nombre d'images: 11 530\\résolution/s: 320x320, 512x320 
-      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         Le jeu de données Pascal VOC fournit des images de classes variées tel que des personnes, des animaux, des véhicules, et des objets classiques, et qui peut être utilisé pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux résolutions pour le Jetson Nano.\\
-         http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html\\
-      \end{tabular}\\
-      \hline
-      \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         réseau: RESNet18\\jeu de données: SUN RGB-D\\nombre d'images: 10 335\\résolution/s: 512x400, 640x512
-      \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         Le jeu de données SUN RGB-D fournit des images de scènes d'intérieur de maison, et qui est destiné pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu.\\
-         https://synthia-dataset.net\\
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
@@ -143,10 +100,10 @@
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
-         jeux de données: Kaggle
+         jeux de données: KITI Road/Lane Detection
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         Le site Kaggle offre une vingtaine de jeux de données offert par la communauté pour faire de la segmentation sémantique, et qui sont prêt à être utilisé. Les jeux de données n'ont pas été évalués.\\
-         https://www.kaggle.com/search?q=%22semantic+segmentation%22+in%3Adatasets\\
+         Ce dataset contient 289 images d'entrainement et 290 images de tests d'image de routes urbaines. Il existe une grande multitude de modèle qui sont entrainés avec ce jeux de données.\\
+         http://www.cvlibs.net/datasets/kitti/eval\_road.php\\
       \end{tabular}\\
       \hline
    \end{longtable}
