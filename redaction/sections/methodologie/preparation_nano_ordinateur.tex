@@ -1,6 +1,6 @@
-\label{preparation_nano_ordinateur}
+﻿\label{preparation_nano_ordinateur}
 \par L'organigramme de la figure \ref{fig:preparation_nano_ordinateur} présente les activités qui composent la préparation du nano-ordinateur. 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{preparation_nano_ordinateur}
     \caption{Préparation du nano-ordinateur}
@@ -10,47 +10,47 @@
 \par Le nano ordinateur est une carte mère livrée sans aucun périphérique ni même boîtier. Vu que les performances logicielles dépendent des performances matériels, surtout pour une unité tel qu 'un nano-ordinateur où les capacités matérielles sont très limités, la première partie de l'essai a été allouée à la sélection des accessoires et périphériques qui vont permettre d'augmenter les performances, protéger et utiliser confortablement le nano-ordinateur. 
 \label{montage_nano_ordinateur}
 \par L'organigramme de la figure \ref{fig:montage_nano_ordinateur} présente les activités qui composent le montage du nano-ordinateur. 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{montage_nano_ordinateur}
     \caption{Montage du nano-ordinateur}
     \label{fig:montage_nano_ordinateur}
 \end{figure}
 \mysubparagraph{Préparation de la carte mère Jetson Nano}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{jetson_nano}
+    \includegraphics[width=0.5\textwidth]{jetson_nano}
     \caption{Carte mère du nano-ordinateur}
     \label{fig:jetson_nano}
 \end{figure}
 \par Le nano-ordinateur qui est livré dans sa boîte est uniquement une carte mère, sans unité de stockage, ni boîtier, clavier, souris, écran, capacité wifi, ou caméra. Il est uniquement livré avec un cable micro-usb qui lui permet d'être démarré avec une alimitation minimale de 5 Volt/2Amp et ne consommer que 5 Watt. Aucun système d'exploitation n'est livré non plus. Vu que de l'objectif de l'essai est de tester les capacités du nano-ordinateur et que la consommation sera de plus de 5Watt dues aux branchements de multiples périphérques, certaines "broches" sur la carte mère doivent être activées:  la broche J48 permet de brancher un adapteur d'alimentation de 5Volt 4Amp au lieu de l'alimentation micro-usb; et la broche J38 permet d'activer le PoE (Power-Over-Ethernet) afin d'hériter de l'alimentation du cable Ethernet. Aucune autre préparation sur la carte n'est nécessaire.
 \mysubparagraph{Alimentation}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{alimentation}
+    \includegraphics[width=0.5\textwidth]{alimentation}
     \caption{Adapteur 5 volt 4 amp}
     \label{fig:alimenation}
 \end{figure}
 \par L'alimentation du nano-ordinateur est l'élément matériel le plus important du système. De base le nano-ordinateur est livré avec un cable micro-USB, lui permettant d'être alimenté en 5Volt 2Amp. Mais le besoin en énergie augmente avec les périphériques qui s'accumulent, tel qu'une caméra. Il est prudent de choisir un adapteur 5Volt 4Amp d'un fournisseur recommandé par NVIDIA, car un changement de puissance sensible en entrée impacte le fonctionnement opérationnel du nano-ordinateur. Deux adapteurs ont été utilisés, l'un recommandé, et l'autre non, afin de tester leur performance. 
 \par Dans le cadre de l'essai, l'alimentation du nano-ordinateur est utilisée pour alimenter la carte mère, qui comporte entre autre les CPUs, le GPU, le Hub USB 3.0 interne, le controleur Ethernet et le port HDMI. Mais aussi la caméra et  le ventilateur et optionellement une carte d'extension M.2 NVMe. Afin d'assister l'adapteur, un hub USB 3.0 externe a été utilisé pour brancher la souris, le clavier, et à un moment donné le dongle Wifi.
 \mysubparagraph{Boîtier}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{boitier}
+    \includegraphics[width=0.45\textwidth]{boitier}
     \caption{Boitier pour le nano-ordinateur}
     \label{fig:boitier}
 \end{figure}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{boitier_back}
+    \includegraphics[width=0.5\textwidth]{boitier_back}
     \caption{Vue arrière du boitier pour le nano-ordinateur}
     \label{fig:boitier_arriere}
 \end{figure}
 \par Afin de protéger le nano-ordinateur durant l'essai et l'utiliser dans les conditions les plus proches de son futur mode d'opération, il a été installé dans un boîtier en métal. Le boîtier a été choisi en tenant compte qu'une carte d'extension pour un SSD interne sera installée, ainsi qu'une caméra et un ventilateur. Durant l'essai le nano-ordinateur sera manipulé très fréquemment en raison d'un manque d'espace réservé dans la maison. Le boîtier permet donc d'éviter de manipuler le matériel et les connecteurs, les protège, évitant de risquer de les briser, et donc ajouter des délais à l'essai. 
 \mysubparagraph{SSD interne Nvme M.2 avec carte d'extension M.2 vers USB3.0}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{Samsung 970 EVO Plus 250GB M.2 NVMe Internal Solid State Drive}
+    \includegraphics[width=0.5\textwidth]{Samsung 970 EVO Plus 250GB M.2 NVMe Internal Solid State Drive}
     \caption{Disque SSD NVMe M.2 interne 250GB}
     \label{fig:disquessd}
 \end{figure}
@@ -65,25 +65,25 @@ https://geekworm.com/products/nvidia-jetson-nano-nvme-m-2-ssd-shield-t100-v1-1
 \par À noter que la carte T100 est discontinuée et remplacée par T130
 }
 \mysubparagraph{Caméra}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{camera}
+    \includegraphics[width=0.40\textwidth]{camera}
     \caption{Caméra}
     \label{fig:camera}
 \end{figure}
 \par L'objectif du nano-ordinateur est d'être utilisé pour détecter continuellement les délimitations de la piste cyclable. Il est évident qu'une caméra doit donc faire partie du système et faire partie de l'évaluation des performances. Néanmoins, durant le déroulement de l'essai, la caméra sera très peu utilisée. En effet il n'est pas évident d'être dans un mode de développement directement sur le terrain. Un matériel vidéo virtuel sera utilisé pour simuler la caméra et alimenter l'inférence avec des vidéos pré-enregistrées, permettant ainsi d'évaluer les performances de l'inférence avec des vidéos, même si d'un point de vue performance matérielle l'utilisation ne sera pas équivalente. Les performances matérielles de l'inférence en temps réel seront évaluée avec la caméra, même si la vue de la caméra n'est pas la piste cyclable, ce qui n'est pas important pour ce test, peu importe ce qui est détecté.
-\mysubparagraph{Fan}
-\begin{figure}
+\mysubparagraph{Ventilateur}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{fan}
+    \includegraphics[width=0.35\textwidth]{fan}
     \caption{Ventilateur}
     \label{fig:fan}
 \end{figure}
 \par Un système informatique a besoin d'un ventilateur pour évacuer la chaleur produite par ses processeurs et les autres élément électroniques, et éviter une faute opérationnelle et des bris de matériel. L'objectif du nano-ordinateur étant d'être opérationnel continuellement, et ses éléments étant contenus dans un boîtier, il est encore plus indispensable d'installer un ventilateur. Le ventilateur choisi a pu être installé dans le boitier, même si le boîtier ne possède de support pour le fixer. Le ventilateur est capable de démarrer automatiquement au besoin, mais il est volontairement démarré manuellement dés que le nano-ordinateur est démarré. Cela évite que la chaleur ne s'accumule, qu'elle soit tout de suite ventilée à l'extérieure, évitant un risque de surchauffe, la capacité du ventilateur étant tout de même limité (petit modèle).
 \mysubparagraph{Hub USB Externe 3.0 4 ports}
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{Powered USB Hub 3.0, Atolla 7-Port USB Data Hub Splitter with One Smart Charging}
+    \includegraphics[width=0.4\textwidth]{Powered USB Hub 3.0, Atolla 7-Port USB Data Hub Splitter with One Smart Charging}
     \caption{Hub USB 3.0 externe autoalimenté}
     \label{fig:hubusb}
 \end{figure}
