@@ -1,18 +1,14 @@
 ﻿\myparagraph{Données}\label{metho:data}
-
 \todo{TODO review}
-
 \par Les ressources mises à disposition par le constructeur du Jetson nano, NVIDIA, font référence à des jeux de données qui sont disponibles publiquement.
 \par En complément des ressources de NVIDIA, deux références scientifiques seront principalement étudiées, car leurs recherches ont été faites avec le Jetson nano (\cite{nguyen_mavnet_2019} et \cite{chong_real-time_1992}). Beaucoup de références ont été publiées ces deux dernières années sur le sujet de la segmentation sémantique, ils existent donc de multiples alternatives inspirantes.
 \par Internet est une mine de données : il existe des forums et des blogues dans lesquels des utilisateurs publient leurs expérimentations de la segmentation sémantique en temps réel avec le Jetson nano (\cite{dustin_realtime_2019}), ou plus génériquement la segmentation sémantique; des sites comme "modelzoo.co" ou "kaggle.com" sont des entrepôts de données et de modèles FCN prêts à être utilisés; une autre option a été d'effectuer une recherche d'images ou de vidéos de la piste multifonctionnelle du pont Jacques-Cartier via les sites de recherche tels que Google. 
-\par L'Association des piétons et cyclistes du pont Jacques-Cartier existe depuis de nombreuses années pour promouvoir le transport actif et conserver la piste multifonctionnelle du pont Jacques Cartier ouverte durant l'hiver. Ils fournissent, via leurs sites Internet, des collections de vidéos et d'images qui seront utilisées après leurs avoir demandé leur autorisation verbale et écrite. \cite{association_des_pietons_et_cyclistes_du_pont_jacques-cartier_pontjacques-cartier365com_2020} \cite{association_des_pietons_et_cyclistes_pont_jacques-cartier_flickr_2020}
-
+\par L'Association des piétons et cyclistes du pont Jacques-Cartier existe depuis de nombreuses années pour promouvoir le transport actif et conserver la piste multifonctionnelle du pont Jacques Cartier ouverte durant l'hiver. Ils fournissent, via leurs sites Internet, des collections de vidéos et d'images qui seront utilisées après leur avoir demandé leur autorisation verbale et écrite. \cite{association_des_pietons_et_cyclistes_du_pont_jacques-cartier_pontjacques-cartier365com_2020} \cite{association_des_pietons_et_cyclistes_pont_jacques-cartier_flickr_2020}
 \myparagraph{Approche prévue pour le traitement des données}
-\par Il y a deux phases à cet essai: l'inférence avec des modèles déjà prêts et l'inférence avec des modèles ré-entrainés. Les données utilisées par l'inférence sont des vidéos (d'une certaine résolution et d'un certain nombre d'images pas seconde), et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celle avec laquelle le modèle a été, ou sera, entrainé. La résolution et la qualité de l'image-vidéo seront nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la détection la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
+\par Il y a deux phases à cet essai: l'inférence avec des modèles déjà prêts et l'inférence avec des modèles ré entrainés. Les données utilisées par l'inférence sont des vidéos (d'une certaine résolution et d'un certain nombre d'images pas seconde), et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celle avec laquelle le modèle a été, ou sera, entrainé. La résolution et la qualité de l'image vidéo seront nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la détection la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
 \par Tout cela signifie que les vidéos ou nouvelles images devront être traités pour répondre à une certaine taille et résolution requise par le modèle, tout en conservant une qualité élevée (nombre de pixels, niveaux de couleurs). De nouvelles images pour l'entrainement seront extraites des vidéos, et annotées. 
-\par Certains framework d'apprentissage profond (par exemple "Keras") offrent l'option d'augmenter automatiquement le jeu de données avec des techniques d'augmentation de données (par exemple la rotation, le redimensionnement, l'effet miroir), ce qui est très utile et non négligeable.
-
-\par Voici le tableau de synthèse des données, incluant la référence avec leur réseaux de neurones.
+\par Certains cadres d'application logicielle ("framework") d'apprentissage profond (par exemple "Keras") offrent l'option d'augmenter automatiquement le jeu de données avec des techniques d'augmentation de données (par exemple la rotation, le redimensionnement, l'effet miroir), ce qui est très utile et non négligeable.
+\par Voici le tableau de synthèse des données, incluant la référence avec leurs réseaux de neurones.
 {
    \clearpage 
    \newpage
@@ -35,14 +31,14 @@
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          réseau: SegNet\\jeu de données: CamVid\\vidéos: 10 minutes\\résolution/s: HD
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurents des vidéos de la route avec la méme perspective que le conducteur du véhicule. Un modèle entrainé est disponible pour le Jetson nano.\\
+         SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurent des vidéos de la route avec la même perspective que le conducteur du véhicule. Un modèle entrainé est disponible pour le Jetson nano.\\
          https://github.com/PengKiKi/camvid\\
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          réseau: MFANet\\jeu de données: Cityscapes\\nombre d'images: 5000\\résolution/s: 1280x1024
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         MFANet est un réseau qui a été créé en 2019 pour la segmentation sémantique sur des appareils tel que le Jetson nano. Il a été entrainé avec le jeu de données de Cityscapes, qui procurents des images de scènes urbaines. Différentes stratégies d'augmentation de données sont utilisées. Des tests ont été fait avec le Jetson nano.\\
+         MFANet est un réseau qui a été créé en 2019 pour la segmentation sémantique sur des appareils tel que le Jetson nano. Il a été entrainé avec le jeu de données de Cityscapes, qui procurent des images de scènes urbaines. Différentes stratégies d'augmentation de données sont utilisées. Des tests ont été faits avec le Jetson nano.\\
          leejy@ustb.edu.cn\\
       \end{tabular}\\
       \hline
@@ -70,7 +66,7 @@
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          jeu de données: Association des piétons et cyclistes pont Jacques-Cartier\\nombre d'images: 313\\résolution/s: variées
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         L'Association des piétons et cyclistes du pont Jacques-Cartier a une collection d'images et de vidéos de la piste multifonctionnelle du pont Jacques-Cartier. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel-quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai. Il est envisagé de contacter l'association au besoin afin de leur demander leur collaboration pour la collecte d'autres d'images ou vidéos.\\
+         L'Association des piétons et cyclistes du pont Jacques-Cartier a une collection d'images et de vidéos de la piste multifonctionnelle du pont Jacques-Cartier. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai. Il est envisagé de contacter l'association au besoin afin de leur demander leur collaboration pour la collecte d'autres d'images ou vidéos.\\
          https://www.flickr.com/photos/pontjacquescartier\\
          http://pontjacquescartier365.com/videos-pont-jacques-cartier\\
       \end{tabular}\\
@@ -78,14 +74,14 @@
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          jeu de données: images et vidéo sur Internet\\nombre d'images: entre 30-50\\résolution/s: variées
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         Internet est une source de données non négligeable en terme de données. Quelques images et vidéos de la piste multifonctionnelles du pont Jacques-Cartier, autres que celles fournies par L'Association des piétons et cyclistes du pont Jacques-Cartier, sont disponibles. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel-quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai.\\
+         Internet est une source de données non négligeable en termes de données. Quelques images et vidéos de la piste multifonctionnelle du pont Jacques-Cartier, autre que celles fournies par L'Association des piétons et cyclistes du pont Jacques-Cartier, sont disponibles. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai.\\
          https://google.ca\\
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{15em}@{}}
          jeux de données: KITI Road/Lane Detection
       \end{tabular} & \begin{tabular}[t]{@{}p{35em}@{}}
-         Ce dataset contient 289 images d'entrainement et 290 images de tests d'image de routes urbaines. Il existe une grande multitude de modèle qui sont entrainés avec ce jeux de données.\\
+         Ce jeu de données contient 289 images d'entrainement et 290 images de tests d'image de routes urbaines. Il existe une grande multitude de modèles qui sont entrainés avec ce jeu de données.\\
          http://www.cvlibs.net/datasets/kitti/eval\_road.php\\
       \end{tabular}\\
       \hline

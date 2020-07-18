@@ -5,11 +5,10 @@
     \caption{Éléments pour l'évaluation des performances}
     \label{fig:metho_eval}
 \end{figure}
-
 \subsubsection{Stratégie de test}
-\par L'objectif principal de l'essai est de déterminer la capacité et les limites du nano-ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
+\par L'objectif principal de l'essai est de déterminer la capacité et les limites du nano ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
 \begin{enumerate}
-   \item \label{metho:testbaseinférence} Afin de s'assurer du bon fonctionnement du nano-ordinateur et d'avoir des résultats de référence propre à notre environnement, l'inférence sera testée avec des modèles existants et pré-entrainés pour la segmentation sémantique, avec les images et les vidéos provenant des références, et dont les caractéristiques et les résultats sont disponibles. 
+   \item \label{metho:testbaseinférence} Afin de s'assurer du bon fonctionnement du nano ordinateur et d'avoir des résultats de référence propre à notre environnement, l'inférence sera testée avec des modèles existants et pré entrainés pour la segmentation sémantique, avec les images et les vidéos provenant des références, et dont les caractéristiques et les résultats sont disponibles. 
    \item \label{metho:testbaseinférencesite} En espérant que les tests de l'étape \#\ref{metho:testbaseinférence} précédente donnent les résultats documentés dans les articles de références, ils seront repris avec les mêmes modèles, mais avec les images et les vidéos du site d'étude possédant la meilleure qualité acquise (1080p/i, 30FPS). Les données sources (images et vidéos) devront subir certains prétraitements à ce effet, afin de répondre aux requis des modèles.
    \item \label{metho:testdevinférencesite} Selon les résultats de l'étape \#\ref{metho:testbaseinférencesite}, les tests se concentreront sur l'inférence avec des vidéos, en réduisant progressivement la résolution (760p/i, 576p/i, 480p/i, 360p/i) et le nombre d'images par seconde (20FPS, 10FSP, 1FPS).
    \item Les étapes intermédiaires de l'étape \#\ref{metho:testdevinférencesite} précédente seront de 1) valider les résultats de l'inférence avec des images avant de tester avec les vidéos, et 2) évaluer si les modèles de réseaux de neurones à convolution entiers doivent et/ou peuvent être adaptés facilement, en tenant compte de l'échéancier de l'essai, et ce afin de répondre à l'objectif principal.
@@ -20,7 +19,7 @@
     \item La collecte est démarrée après un démarrage frais.
     \item Elle est consolidée dans un seul fichier.
     \item La date et l'heure du début de la collecte sont précisées.
-    \item Au moment précis de début et de fin de chacun des tests, une entrée spéciale est ajoutée dans le fichier de collecte des indicateurs avec la date et l'heure, un libellé et une description. Ce point de contrôle (checkpoint) est fait grâce à une commande shell qui vient ajouter une trace dans le fichier de collecte des indicateurs.
+    \item Au moment précis de début et de fin de chacun des tests, une entrée spéciale est ajoutée dans le fichier de collecte des indicateurs avec la date et l'heure, un libellé et une description. Ce point de contrôle (checkpoint) est fait grâce à une commande "shell" qui vient ajouter une trace dans le fichier de collecte des indicateurs.
     \item Chaque indicateur est collecté aux 5 secondes. Ce délai est réévalué au besoin, selon les fréquences des pics observées. 
 \end{itemize}
 \par Ensuite tout au long des tests de validations matériels et logiciels les indicateurs sont collectés. 
