@@ -1,9 +1,26 @@
-﻿{\color{red}
-\todo{TODO}
-\par Voici le plan qui est utilisé pour rédiger les résultats.
-\begin{itemize}
-   \item \label{resultat1}Pour chaque modèle et résolution utilisés, la segmentation sémantique de certaines images et vidéos sera présentée. La segmentation qui a réussi, celle qui est moins précise, et celle qui a échoué seront soulignées. Un résumé du \% de succès vs des échecs sera fait, selon les modèles et les résolutions. 
-   \item En complément de la section précédente, les performances du Jetson nano pour les divers scénarios de test seront résumés avec différents indicateurs. Ceux qui ont échoué ou n'ont pas été possibles en raison des limitations du nano ordinateur seront indiqués. 
-   \item Enfin les performances de l'inférence et des modèles de réseaux de neurones pour la segmentation sémantique seront listées. Des indicateurs de performance classiques et tirés de la littérature seront utilisés.
-\end{itemize}
+﻿{
+   \color{red}
+   \todo{TODO}
+   \par Voici le plan qui est utilisé pour rédiger les résultats.
+   \begin{itemize}
+      \item \label{resultat1}Pour chaque modèle et résolution utilisés, la segmentation sémantique de certaines images et vidéos sera présentée. La segmentation qui a réussi, celle qui est moins précise, et celle qui a échoué seront soulignées. Un résumé du \% de succès vs des échecs sera fait, selon les modèles et les résolutions. 
+      \item En complément de la section précédente, les performances du Jetson nano pour les divers scénarios de test seront résumés avec différents indicateurs. Ceux qui ont échoué ou n'ont pas été possibles en raison des limitations du nano ordinateur seront indiqués. 
+      \item Enfin les performances de l'inférence et des modèles de réseaux de neurones pour la segmentation sémantique seront listées. Des indicateurs de performance classiques et tirés de la littérature seront utilisés.
+   \end{itemize}
+}
+\par Pour tester les performances de la micro-sd et du disque SDD interne M.2 NVMe, l'utilitaire hdparm peut être facilement utilisé. Les tests montrent que le SSD interne est plus de 8 fois plus efficace que la micro-sd pour la lecture de données. 
+{
+   \centering
+   \vspace{0.3em} % Adjust the height of the space between caption and tabular
+   \renewcommand*{\arraystretch}{1.4}
+   \begin{longtable}[t]{@{}|p{5em}|p{2em}|p{2em}|p{3em}|@{}} % p{15em}p{35em} with landscape
+      \caption{Comparaison des performances du "data read" entre un SDD M.2 NVMe et une micro-sd}\label{tab:Timing O_DIRECT disk reads}\\
+      \hline
+      \textbf{Disk reads} & \textbf{MB} & \textbf{sec} & \textbf{MB/sec}\\
+      \hline
+         SSD & 1004 & 3 & 334.15\\
+      \hline
+      micro-sd & 122 & 3.03 & 40.22\\
+      \hline
+   \end{longtable}
 }

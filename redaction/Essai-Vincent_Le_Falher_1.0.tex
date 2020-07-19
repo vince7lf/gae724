@@ -22,6 +22,8 @@
 \usepackage[backend=biber]{biblatex}
 \usepackage{lscape}
 \usepackage{longtable}
+\usepackage{textcomp}
+\usepackage{listings}
 % \usepackage{draftwatermark}
 \addbibresource{selection-new.bib}
 \definecolor{orange}{rgb}{1,0.647,0}
@@ -81,6 +83,8 @@
 \newpage
 \pagenumbering{arabic}
 %----------------------------------------------------------------------------------------
+\section{Suivi des changements au rapport}
+\input{sections/changelog}
 \section{Introduction}
 \subsection{Mise en contexte}
 \input{sections/contexte}
@@ -118,4 +122,10 @@ Il y a deux sections, la première qui concerne le nano ordinateur et ensuite la
 \clearpage 
 \newpage
 \printbibliography[title={\bibname\label{bib:references}}] 
+%----------------------------------------------------------------------------------------
+\clearpage 
+\newpage
+\section{Annexes}
+\input{sections/annexes}
+%----------------------------------------------------------------------------------------
 \end{document}
