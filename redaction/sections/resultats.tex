@@ -13,14 +13,18 @@
    \centering
    \vspace{0.3em} % Adjust the height of the space between caption and tabular
    \renewcommand*{\arraystretch}{1.4}
-   \begin{longtable}[t]{@{}|p{5em}|p{2em}|p{2em}|p{3em}|@{}} % p{15em}p{35em} with landscape
+   \begin{longtable}[t]{@{}|p{25em}|p{2em}|p{2em}|p{3em}|@{}} 
       \caption{Comparaison des performances du "data read" entre un SDD M.2 NVMe et une micro-sd}\label{tab:Timing O_DIRECT disk reads}\\
       \hline
       \textbf{Disk reads} & \textbf{MB} & \textbf{sec} & \textbf{MB/sec}\\
       \hline
-         SSD & 1004 & 3 & 334.15\\
+      Samsung 970 EVO Plus 250GB M.2 NVMe Internal Solid State Drive & 1004 & 3 & 334.15\\
       \hline
-      micro-sd & 122 & 3.03 & 40.22\\
+      Microsd card Scan Disk Ultra 32Gb class 10 HC I & 122 & 3.03 & 40.22\\
+      \hline
+      Microsd card Samsung EVO 64Gb Plus class ? HC 1 & 256 & 3.02 & 84.71\\
+      \hline
+      Microsd card Samsung EVO 64Gb Select class ? HC 1 & 92 & 3.01 & 30.54\\
       \hline
    \end{longtable}
 }
