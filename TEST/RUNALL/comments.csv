@@ -1,0 +1,13 @@
+unixepochtime,comment
+1595467182,"room temperature is 27C"
+1595467311,"start segnet-camera 1st time"
+1595467507,"stop segnet-camera 1st time"
+1595467536,"start chromium 1st time"
+1595467621,"close chromium 1st time"
+1595467685,"start segnet-camera 2nd time"
+1595467867,"stop segnet-camera 2nd time"
+1595467945,"start segnet-camera 3rd time"
+1595468128,"start chromium 2nd time"
+1595468309,"close chromium 2nd time"
+1595468362,"stop segnet-camera 3rd time"
+1595468516,"stop metric collector"
