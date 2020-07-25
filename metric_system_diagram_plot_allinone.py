@@ -45,7 +45,7 @@ df.head()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -54,9 +54,13 @@ for xc,c in zip(zeroorigints_poi, df_poi['comment']):
     ax.axvline(x=xc, label='{}'.format(c), c="k", linestyle=':', alpha=.75, linewidth=2, dashes=(1, 8, 1, 8))
 
 zeroorigints = [ts - df['unixepochtime'][0] for ts in df['unixepochtime']]
-plt1, = ax.plot(zeroorigints, df['totaltotal'], label='Memoire totale Mbytes')
-plt2, = ax.plot(zeroorigints, df['totalused'], label='Memoire utilise Mbytes')
-plt3, = ax.plot(zeroorigints, df['totalfree'], label='Memoire libre Mbytes')
+plt1, = ax.plot(zeroorigints, df['totaltotal'], label='Mémoire totale Mbytes')
+plt2, = ax.plot(zeroorigints, df['totalused'], label='Mémoire utilisée Mbytes')
+plt3, = ax.plot(zeroorigints, df['totalfree'], label='Mémoire libre Mbytes')
+plt4, = ax.plot(zeroorigints, df['swapused'], label='Mémoire swap utilisée Mbytes')
+plt5, = ax.plot(zeroorigints, df['swapfree'], label='Mémoire swap libre Mbytes')
+plt6, = ax.plot(zeroorigints, df['memshared'], label='Mémoire partagée Mbytes')
+plt7, = ax.plot(zeroorigints, df['membufcache'], label='Mémoire tampon cachée Mbytes')
 
 ax2.set_xlim(ax.get_xlim())
 ax2.set_xlabel("")
@@ -65,8 +69,9 @@ ax2.tick_params(length=5)
 ax2.set_xticklabels(df_poi['comment'], rotation=25, ha='left')
 
 ax.set_ylabel("Utilisation en MBytes")
-plt.legend(handles=[plt1, plt2, plt3], loc='upper right')
+plt.legend(handles=[plt1, plt2, plt3, plt4, plt5, plt6, plt7], loc='upper right')
 fig.tight_layout()
+plt.ylim(top=10000)
 plt.savefig('memory_usage.png') 
 files.download('memory_usage.png') 
 plt.show()
@@ -75,9 +80,9 @@ plt.show()
 #fig, ax = plt.subplots(figsize=(10,5))
 
 #zeroorigints = [ts - df['unixepochtime'][0] for ts in df['unixepochtime']]
-#ax.plot(zeroorigints, df['totaltotal'], label='Memoire totale Mbytes')
-#ax.plot(zeroorigints, df['totalused'], label='Memoire utilise Mbytes')
-#ax.plot(zeroorigints, df['totalfree'], label='Memoire libre Mbytes')
+#ax.plot(zeroorigints, df['totaltotal'], label='Mémoire totale Mbytes')
+#ax.plot(zeroorigints, df['totalused'], label='Mémoire utiliséeMbytes')
+#ax.plot(zeroorigints, df['totalfree'], label='Mémoire libre Mbytes')
 
 #ax.axvline(x=0, color='k')
 #ax.axhline(y=0, color='k')
@@ -99,11 +104,11 @@ totaltotal = data[:,-3]
 totalused = data[:,-2]
 totalfree = data[:,-1]
 zeroorigints = [ts - unixepochtime[0] for ts in unixepochtime]
-ax.plot(zeroorigints, totaltotal, label='Memoire totale Mbytes')
-ax.plot(zeroorigints, totalused, label='Memoire utilise Mbytes')
-ax.plot(zeroorigints, totalfree, label='Memoire libre Mbytes')
+ax.plot(zeroorigints, totaltotal, label='Mémoire totale Mbytes')
+ax.plot(zeroorigints, totalused, label='Mémoire utilisée Mbytes')
+ax.plot(zeroorigints, totalfree, label='Mémoire libre Mbytes')
 
-plt.xlabel("Periode en seconde")
+plt.xlabel("Période en seconde")
 plt.ylabel("Utilisation en MBytes")
 ax.axvline(x=0, color='k')
 ax.axhline(y=0, color='k')
@@ -123,7 +128,7 @@ df.head()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -165,7 +170,7 @@ plt.show()
 #ax.plot(zeroorigints, df['aotemp'], label='AO C')
 #ax.plot(zeroorigints, df['thermal'], label='Thermal C')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 #plt.ylabel("Temperatude en degre Celcius")
 #plt.ylim(bottom=25, top=55)
 #ax.axhline(y=0, color='k')
@@ -176,7 +181,7 @@ plt.show()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -217,7 +222,7 @@ plt.show()
 #ax.plot(zeroorigints, df['gr3dper'], label='GR3D %')
 #ax.plot(zeroorigints, df['emcper'], label='EMC %')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 #plt.ylabel("Frequence en %")
 #plt.ylim(top=100)
 #ax.axhline(y=0, color='k')
@@ -228,7 +233,7 @@ plt.show()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -250,7 +255,7 @@ ax2.set_xticks(zeroorigints_poi)
 ax2.tick_params(length=5)
 ax2.set_xticklabels(df_poi['comment'], rotation=25, ha='left')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 ax.set_ylabel("Consommation en millivolt")
 plt.legend(handles=[plt1, plt2, plt3], loc='upper right')
 fig.tight_layout()
@@ -269,7 +274,7 @@ df.head()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -278,8 +283,8 @@ for xc,c in zip(zeroorigints_poi, df_poi['comment']):
     ax.axvline(x=xc, label='{}'.format(c), c="k", linestyle=':', alpha=.75, linewidth=2, dashes=(1, 8, 1, 8))
 
 zeroorigints = [ts - df['unixepochtime'][0] for ts in df['unixepochtime']]
-plt1, = ax.plot(zeroorigints, df['totaldiskread'], label='Total disk read Kbytes')
-plt2, = ax.plot(zeroorigints, df['totaldiskwrwite'], label='Total disk write Kbytes')
+plt1, = ax.plot(zeroorigints, df['totaldiskread'], label='Total lecture en Kbytes')
+plt2, = ax.plot(zeroorigints, df['totaldiskwrwite'], label='Total écriture en Kbytes')
 
 ax2.set_xlim(ax.get_xlim())
 ax2.set_xlabel("")
@@ -287,7 +292,7 @@ ax2.set_xticks(zeroorigints_poi)
 ax2.tick_params(length=5)
 ax2.set_xticklabels(df_poi['comment'], rotation=25, ha='left')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 ax.set_ylabel("Bande passante entre les processus et les 'kernel threads' en kilobytes")
 plt.legend(handles=[plt1, plt2], loc='upper right')
 fig.tight_layout()
@@ -302,7 +307,7 @@ plt.show()
 #ax.plot(zeroorigints, df['totaldiskread'], label='Total disk read Kbytes')
 #ax.plot(zeroorigints, df['totaldiskwrwite'], label='Total disk write Kbytes')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 #plt.ylabel("bandwidth between processes and kernel threads in kilobytes")
 ##plt.ylim(top=100)
 ##ax.axhline(y=0, color='k')
@@ -322,7 +327,7 @@ df.head()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -331,8 +336,8 @@ for xc,c in zip(zeroorigints_poi, df_poi['comment']):
     ax.axvline(x=xc, label='{}'.format(c), c="k", linestyle=':', alpha=.75, linewidth=2, dashes=(1, 8, 1, 8))
 
 zeroorigints = [ts - df['unixepochtime'][0] for ts in df['unixepochtime']]
-plt1, = ax.plot(zeroorigints, df['diskread'], label='Disk read Kbytes')
-plt2, = ax.plot(zeroorigints, df['diskwrite'], label='Disk write Kbytes')
+plt1, = ax.plot(zeroorigints, df['diskread'], label='Lecture de la segmentation Kbytes')
+plt2, = ax.plot(zeroorigints, df['diskwrite'], label='Écriture de la segmentation en Kbytes')
 
 ax2.set_xlim(ax.get_xlim())
 ax2.set_xlabel("")
@@ -340,7 +345,7 @@ ax2.set_xticks(zeroorigints_poi)
 ax2.tick_params(length=5)
 ax2.set_xticklabels(df_poi['comment'], rotation=25, ha='left')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 ax.set_ylabel("Bande passante entre les processus et les 'kernel threads' en kilobytes")
 plt.legend(handles=[plt1, plt2], loc='upper right')
 fig.tight_layout()
@@ -355,7 +360,7 @@ plt.show()
 #ax.plot(zeroorigints, df['diskread'], label='Total disk read Kbytes')
 #ax.plot(zeroorigints, df['diskwrite'], label='Total disk write Kbytes')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 #plt.ylabel("bandwidth between processes and kernel threads in kilobytes")
 ##plt.ylim(top=100)
 ##ax.axhline(y=0, color='k')
@@ -367,7 +372,7 @@ plt.show()
 fig, ax = plt.subplots(figsize=(25,5))
 ax2 = ax.twiny()
 
-ax.set_xlabel("Periode en seconde")
+ax.set_xlabel("Période en seconde")
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
@@ -376,7 +381,7 @@ for xc,c in zip(zeroorigints_poi, df_poi['comment']):
     ax.axvline(x=xc, label='{}'.format(c), c="k", linestyle=':', alpha=.75, linewidth=2, dashes=(1, 8, 1, 8))
 
 zeroorigints = [ts - df['unixepochtime'][0] for ts in df['unixepochtime']]
-ax.plot(zeroorigints, df['io'], label='Total disk read Kbytes')
+ax.plot(zeroorigints, df['io'], label='I/O de la segmentation en %')
 
 ax2.set_xlim(ax.get_xlim())
 ax2.set_xlabel("")
@@ -384,8 +389,8 @@ ax2.set_xticks(zeroorigints_poi)
 ax2.tick_params(length=5)
 ax2.set_xticklabels(df_poi['comment'], rotation=25, ha='left')
 
-#plt.xlabel("Periode en seconde")
-ax.set_ylabel("IO (%)")
+#plt.xlabel("Période en seconde")
+ax.set_ylabel("I/O (%)")
 plt.legend(handles=[plt1], loc='upper right')
 fig.tight_layout()
 plt.savefig('io.png')
@@ -398,7 +403,7 @@ plt.show()
 #zeroorigints = [ts - df['unixepochtime'][0] for ts in df['unixepochtime']]
 #ax.plot(zeroorigints, df['io'], label='Total disk read Kbytes')
 
-#plt.xlabel("Periode en seconde")
+#plt.xlabel("Période en seconde")
 #plt.ylabel("bandwidth between processes and kernel threads in kilobytes")
 ##plt.ylim(top=100)
 ##ax.axhline(y=0, color='k')
