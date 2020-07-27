@@ -1,6 +1,6 @@
 ﻿\subsection{Performances matérielles}
 \subsubsection{Stockage de données}
-\par Pour tester les performances de la micro-sd et du disque SDD interne M.2 NVMe, l'utilitaire hdparm peut être facilement utilisé. 
+\par Pour tester les performances de la micro-sd et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" peut être facilement utilisé. 
 {
    \vspace{0.3em} % Adjust the height of the space between caption and tabular
    \renewcommand*{\arraystretch}{1.4}
@@ -21,7 +21,7 @@
 }
 \subsubsection{Performances système}
 \par Les diagrammes suivants présentent l'état du nano-ordinateur avant la segmentation, pendant et après. Les indicateurs qui sont observés sont ceux de la mémoire, la fréquence, le I/O, la consommation, la température. Afin de montrer l'impacte potentiel de l'application Chromium, elle est démarrée entre deux segmentations, et pendant la segmentation. 
-\par Le test dure 1400 secondes, un peu de plus de 23 minutes. Il peut se diviser en onze périodes d'observation: 
+\par Le test infère en temps réelle la vidéo qui est capturée avec la caméra du nano ordinateur. Le réeseau FCN qui est utilisé est celui fournit par NVIDIA "fcn-resnet18-deepscene-576x320". Ce modèle détecte automatiquement la résolution la plus appropriée avec cette caméra, c'est-à-dire 30 image par seconde (FPS) et une résolution de 1920x1080. Le test dure 1400 secondes, un peu de plus de 23 minutes. Il peut se diviser en onze périodes d'observation, qui sont brièvement décrite ci-dessous: 
 \begin{enumerate}
    \item La première période est celle entre la 1re seconde et la 200e seconde, et qui permet d'observer l'état du système au démarrage du nano-ordinateur sans opération mis à part celle de la collecte des statistiques. 
    \item La seconde période est entre la 200e seconde et la 400e, et qui correspond à la première segmentation avec la caméra. Elle permet d'observer le système lors du premier démarrage de la segmentation. 
@@ -35,9 +35,6 @@
    \item La dixième période est celle entre l'arrêt Chromium la seconde fois et l'arrêt de la troisième segmentation. Cette période permet d'observer la réaction du système après l'arrêt de Chromium pendant l'inférence. 
    \item La onzième période est celle entre l'arrêt de la troisième segmentation et l'arrêt du test et de la collecte des statistiques. Elle permet d'observer la réaction du système après l'arrêt de la segmentation la troisième fois. 
 \end{enumerate} 
-{\color{red}
-\par Détail du test (commandes, séquences, etc); ref. github. \todo{todo}
-}
 \begin{figure}[H]
    \centering
    \includegraphics[width=1.0\textwidth]{test_periods}
@@ -96,13 +93,14 @@
 }
 \subsection{Performances de l'inférence}
 \subsubsection{Images}
+\par Les tests ont été fait avec le modèle "fcn-resnet18-deepscene-576x320" fournit ar NVIDIA. 
 \par Lors de l'entrainement et l'inférence, le script montre un IoU moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés afin de pouvoir observer le IoU et le Z-score (Dice) de la segmentation sémantique de la piste cyclable uniquement. \todo{ref. voir github; à ajouter dans la méthodologie}
-\par Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version "ground-truth". L'image générée est l'image prédite et peut être comparée avec l'image ground-truth, tant que la palette de couleur est identique à la version "ground-truth". 
+\par Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version vérité terrain ("ground truth")". L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain ("ground truth"), tant que la palette de couleur est identique à la version vérité terrain ("ground truth")". 
 \par Il s'avère que le IoU et Dice score sont assez élevés pour les deux photos. 
 \begin{figure}[H]
    \centering
    \includegraphics[width=1\textwidth]{b1-09517_Clipped}
-   \caption{"Ground-truth" de l'image b1-09517}
+   \caption{vérité terrain ("ground truth")" de l'image b1-09517}
    \label{fig:b1-09517_Clipped}
 \end{figure}
 \begin{figure}[H]
@@ -114,7 +112,7 @@
 \begin{figure}[H]
    \centering
    \includegraphics[width=1\textwidth]{b378-61_mask}
-   \caption{"Ground-truth" de l'image b378-61}
+   \caption{vérité terrain ("ground truth")" de l'image b378-61}
    \label{fig:b378-61_mask}
 \end{figure}
 \begin{figure}[H]
@@ -128,8 +126,8 @@
 \par J'ai tenté de capturer le résultat (vidéos/images) de l'inférence directement depuis le nano, mais ce n'est pas une bonne idée, car trop intrusive. Cela ralentit l'inférence. Il y a en fait deux images qui sont produites par le network: overlay et mask, qui sont directement "rendered" dans un XWindow. 
 \par J'ai filmé mon écran avec mon cellulaire. Cela produit une vidéo HD 1080p 30FPS. 
 \begin{itemize}
-   \item Lien vers une courte vidéo de quelques secondes démontrant l'inférence en temps réel de la segmentation sémantique d'une vidéo de la piste cyclable du pont Jacques-Cartier des conditions ensoleillée, mais avec un angle de vue qui change rapidement. Inférence en 30FPS 1920x1080 avec le "network" "fcn-resnet18-deepscene-576x320"; {\color{red} \par add reference <https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet\_visionmeteo/videos/gae724\_lefv2603/resultats/20200221\_020044.mp4> \todo{TODO}}
-   \item Lien vers la vidéo longue de +8 minutes démontrant l'inférence en temps réel de la segmentation sémantique d'une vidéo d'une piste cyclable dans des conditions ensoleillée, mais mouillée et avec de la neige. +8min / 800Mb, une seule vidéo qui montre successivement l'inférence de 60 / 30 / 15 / 1 FPS en 720x1280 / 480x640 / 320x480 / 240x320. Le "network" est "fcn-resnet18-deepscene-576x320". Il est limité à 26FPS et 576x320. {\color{red} \par ajouter référence <https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet\_visionmeteo/videos/gae724\_lefv2603/resultats/20200412\_232155.mp4> \todo{TODO}}
+   \item Lien vers une courte vidéo de quelques secondes démontrant l'inférence en temps réel de la segmentation sémantique d'une vidéo de la piste cyclable du pont Jacques-Cartier dans des conditions ensoleillée, mais avec un angle de vue qui change rapidement. Inférence en 30FPS 1920x1080 avec le "network" "fcn-resnet18-deepscene-576x320"; \footnote{https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet\_visionmeteo/videos/gae724\_lefv2603/resultats/20200221\_020044.mp4} {\color{red} \todo{TODO}}
+   \item Lien vers la vidéo longue de +8 minutes démontrant l'inférence en temps réel de la segmentation sémantique d'une vidéo d'une piste cyclable dans des conditions ensoleillée, mais mouillée et avec de la neige. +8min / 800Mb, une seule vidéo qui montre successivement l'inférence de 60 / 30 / 15 / 1 FPS en 720x1280 / 480x640 / 320x480 / 240x320. Le "network" est "fcn-resnet18-deepscene-576x320". Il est limité à 26FPS et 576x320. \footnote{https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet\_visionmeteo/videos/gae724\_lefv2603/resultats/20200412\_232155.mp4}{\color{red} \todo{TODO}}
 \end{itemize}
 \par Voici un tableau montrant les différentes résolutions et FPS qui ont été testés avec le modèle:
 {
