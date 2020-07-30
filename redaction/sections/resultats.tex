@@ -11,18 +11,18 @@
       \hline
       Samsung 970 EVO Plus 250GB M.2 NVMe Internal Solid State Drive & 1004 & 3 & 334.15\\
       \hline
-      Microsd card Scan Disk Ultra 32Gb class 10 HC I & 122 & 3.03 & 40.22\\
+      MicroSD card Scan Disk Ultra 32Gb HC I Class 10 & 122 & 3.03 & 40.22\\
       \hline
-      Microsd card Samsung EVO 64Gb Plus class 10 HC I & 256 & 3.02 & 84.71\\
+      MicroSD card Samsung EVO 64Gb Plus XC I Grade 3 Class 10 (rouge) & 256 & 3.02 & 84.71\\
       \hline
-      Microsd card Samsung EVO 64Gb Select class 10 HC I & 92 & 3.01 & 30.54\\
+      MicroSD card Samsung EVO 64Gb Select XC I Grade 3 Class 10 (verte) & 92 & 3.01 & 30.54\\
       \hline
    \end{longtable}
 }
 \subsubsection{Performances système}
 \par Les diagrammes suivants présentent l'état du nano-ordinateur avant la segmentation, pendant et après. Les indicateurs qui sont observés sont ceux de la mémoire, la fréquence, le I/O, la consommation, la température. Afin de montrer l'impacte potentiel de l'application Chromium, elle est démarrée entre deux segmentations, et pendant la segmentation. 
 \par La carte micro-sd "Scan Disk Ultra 32Gb class 10 HC I" a été utilisé pour les tests de performances système. La carte micro-sd "Samsung EVO 64Gb Plus class 10 HC I" n'était malheureusement plus fonctionnelle au moment des tests, celle-ci ayant été réservé pour tenter d'adapter le modèle aux images terrain locales. 
-\par Le test infère en temps réelle la vidéo qui est capturée avec la caméra du nano ordinateur. Le réeseau FCN qui est utilisé est celui fournit par NVIDIA "fcn-resnet18-deepscene-576x320". Ce modèle détecte automatiquement la résolution la plus appropriée avec cette caméra, c'est-à-dire 30 image par seconde (FPS) et une résolution de 1920x1080. Le test dure 1400 secondes, un peu de plus de 23 minutes. Il peut se diviser en onze périodes d'observation, qui sont brièvement décrite ci-dessous: 
+\par Le test infère en temps réelle la vidéo qui est capturée avec la caméra du nano ordinateur. Le réeseau FCN qui est utilisé est celui fournit par NVIDIA "fcn-resnet18-deepscene-576x320". Ce modèle détecte automatiquement la résolution la plus appropriée avec cette caméra, c'est-à-dire 30 image par seconde (FPS) et une résolution de 1920x1080. Le test dure 1400 secondes, un peu de plus de 23 minutes. Il peut se diviser en onze périodes d'observation, qui sont brièvement décrites ci-dessous: 
 \begin{enumerate}
    \item La première période est celle entre la 1re seconde et la 200e seconde, et qui permet d'observer l'état du système au démarrage du nano-ordinateur sans opération mis à part celle de la collecte des statistiques. 
    \item La seconde période est entre la 200e seconde et la 400e, et qui correspond à la première segmentation avec la caméra. Elle permet d'observer le système lors du premier démarrage de la segmentation. 
@@ -79,7 +79,7 @@
    \begin{figure}[H]
       \centering
       \includegraphics[width=1.5\textwidth]{temperature}
-      \caption[Caption for LOF]{Températures d'opération\protect\footnotemark}
+      \caption[Températures d'opération]{Températures d'opération\protect\footnotemark}
       \label{fig:temperature}
    \end{figure} 
    \footnotetext{PLL: Phase locking loop thermal sensor; AO: Always on thermal sensor. \url{https://forums.developer.nvidia.com/t/operating-temperature-range-on-jetson-nano/73555/10}}

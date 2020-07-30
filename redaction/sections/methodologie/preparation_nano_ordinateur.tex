@@ -48,12 +48,19 @@
 \end{figure}
 \par Afin de protéger le nano ordinateur durant l'essai et l'utiliser dans les conditions les plus proches de son futur mode d'opération, il a été installé dans un boitier en métal. Le boitier a été choisi en tenant compte qu'une carte d'extension pour un SSD interne sera installée, ainsi qu'une caméra et un ventilateur. Durant l'essai le nano ordinateur sera manipulé très fréquemment en raison d'un manque d'espace réservé dans la maison. Le boitier permet donc d'éviter de manipuler le matériel et les connecteurs, les protège, évitant de risquer de les briser, et donc ajouter des délais à l'essai. 
 \mysubparagraph{Micro SD}
-\begin{figure}[H]
+{
+    \renewcommand*{\arraystretch}{1.4}
+    \begin{table}[ht]
     \centering
-    \includegraphics[width=0.25\textwidth]{micro_sd_evo}
-    \caption{MicroSD Samsung EVO Select}
-    \label{fig:microsd_evo_select_verte}
-\end{figure}
+    \caption{Cartes MicroSD}\label{table:cartes_microsd}
+    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \begin{tabular}{l}
+        \includegraphics[width=0.15\textwidth]{micro_sd_evo_plus} MicroSD card Samsung EVO 64Gb Plus XC I Grade 3 Class 10\\
+        \includegraphics[width=0.15\textwidth]{micro_sd_evo} MicroSD card Samsung EVO 64Gb Select XC I Grade 3 Class 10\\
+        \includegraphics[width=0.15\textwidth]{Microsd card Scan Disk Ultra 32Gb class 10 HC I} MicroSD card Scan Disk Ultra 32Gb HC I Class 10\\
+    \end{tabular}
+    \end{table}
+}
 {\color{red}\todo{TODO}}
 \mysubparagraph{SSD interne Nvme M.2 avec carte d'extension M.2 vers USB3.0}
 \begin{figure}[H]

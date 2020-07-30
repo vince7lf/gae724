@@ -5,6 +5,7 @@
 \author{Vincent Le Falher \thanks{Mickaël Germains}}
 \date{2020}
 \usepackage[hyphens]{url}
+\usepackage{relsize}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 % \usepackage{wrapfig}
@@ -25,6 +26,7 @@
 \usepackage{longtable}
 \usepackage{textcomp}
 \usepackage{listings}
+\usepackage{subcaption}
 % \usepackage{draftwatermark}
 \addbibresource{selection-new.bib}
 \definecolor{orange}{rgb}{1,0.647,0}
@@ -36,6 +38,7 @@
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\\par}
 \newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}\\\par}
 \renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
+\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
 \begin{document}
 \begin{titlepage} % Suppresses headers and footers on the title page
    \centering % Centre everything on the title page
