@@ -2,14 +2,19 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{jetson_nano_lego}
-    \caption[Carte mère Jetson Nano de NVIDIA]{Carte mère Jetson Nano de NVIDIA, représenté avec des Lego pour démontrer sa petitesse}
+    \caption[Carte mère Jetson Nano de NVIDIA]{Carte mère Jetson Nano de NVIDIA, représenté avec des Lego pour démontrer sa petite taille}
     \label{fig:jetson_nano_lego}
 \end{figure}
-\par L'objet d'étude de cet essai est un nano ordinateur. Un nano ordinateur est un ordinateur miniaturisé en taille, mais aussi limité en capacité. Il existe différents fabricants et modèles, de caractéristiques techniques variées, pour répondre à différents besoins. Le dernier né est le modèle "Jetson nano" du fabricant "NVIDIA" (figure \ref{fig:jetson_nano_lego}), disponible depuis juin 2019 au prix très abordable de 99\$US. La compagnie NVIDIA a conçu ce matériel spécialement pour différentes applications d'inférence de modèles d'apprentissage profond sur une plateforme mobile (drone) ou proche des données ("edge" en anglais). Ce modèle a été choisi afin de répondre à l'intérêt que suscitent ses capacités et ses limites. 
+\par L'objet d'étude de cet essai est le nano ordinateur "Jetson nano" du fabricant "NVIDIA" (figure \ref{fig:jetson_nano_lego}). Ce modèle a été choisi car il a été conçu par la compagnie NVIDIA spécifiquement pour répondre au besoin d'inférence en temps réelle sur le terrain, afin d'éviter le transfer de données et le traitement à distance et différé. 
+\par L'architecture du nano ordinateur est ARM 64 bits (aarch64), ce qui le limite pour certaines portabilités de librairies, surtout dans le domaine assez restreind de la recherche, ou l'architecture la plus populaire et portable est x86-64. 
+\par Il est composé d'un quad-core ARM Cortex-A57, qui est conçu pour ce genre de nano ordinateur, comme le Raspberry Pi.
+\par Les performances GPU sont faibles, 0.5 TFLOPs (16FP; 16bits/2 bytes floating points). Par comparaison la PlayStation 4 Pro (2016) supporte +4 TFLOPs. 
+\par La mémoire est limitée à 6GB. 
+\par Les autres caractéristiques à considérer sont le port pour une carte microSD, un port Ethernet 10/100/1000Mbs, un port HDMI, un hub USB 4 ports 3.0, un connecteur pour une caméra, et un port PCIe.
 \myparagraph{Logiciels}
 \par De même que pour les périphériques, les solutions logiciels principales qui seront utilisés dans le cadre de l'essai sont résumés dans le tableau suivant, où il est indiqué leur nom, le type de licence, leur version, leurs rôles et responsabilités, comme pour le système d'exploitation, l'environnement de développement pour l'apprentissage profond, l'inférence, les logiciels de traitements vidéos et d'images. 
-\par Pour tester les performances de la micro-sd et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" a été utilisé. Il est nécessaire de l'installer (`sudo apt-get install hdparm`) car il n'est pas inclus de base avec le système L4T.
-\par Le SDK qui sera utilisé avec le nano ordinateur sera celui fourni par NVIDIA et qui se nomme "JetPack"\footnote{\url{https://developer.nvidia.com/embedded/jetpack}} \footnote{\url{https://docs.nvidia.com/jetson/jetpack/introduction/index.html}}. La version 4.4\footnote{\url{https://developer.nvidia.com/embedded/jetpack-archive}} sera celle avec laquelle les tests de performance ont été exeécuté. Il contient le système d'exploitation Linux For Tegra (L4T)\footnote{\url{https://developer.nvidia.com/embedded/linux-tegra}} (version L4T 32.4.3), qui est une version de la distribution Linux Ubuntu 18.04 mise à la saveur de NVIDIA. Jetpack contient aussi d'autres librairies qui sont nécessaires pour l'inférence, tel que Cuda, CuDn et TensorRT.
+\par Pour tester les performances de la microSD et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" a été utilisé. Il est nécessaire de l'installer (`sudo apt-get install hdparm`) car il n'est pas inclus de base avec le système L4T.
+\par Le SDK qui sera utilisé avec le nano ordinateur sera celui fourni par NVIDIA et qui se nomme "JetPack"\footnote{\url{https://developer.nvidia.com/embedded/jetpack}} \footnote{\url{https://docs.nvidia.com/jetson/jetpack/introduction/index.html}}. La version 4.4\footnote{\url{https://developer.nvidia.com/embedded/jetpack-archive}} sera celle avec laquelle les tests de performance ont été exeécuté. Il contient le système d'exploitation Linux For Tegra (L4T)\footnote{\url{https://developer.nvidia.com/embedded/linux-tegra}} (version L4T 32.4.3), qui est une version de la distribution Linux Ubuntu 18.04 mise à la saveur de NVIDIA. Jetpack contient aussi d'autres librairies qui sont nécessaires pour l'inférence, tel que Cuda, CuDNN et TensorRT.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{jetpack_architecture}
@@ -50,7 +55,7 @@
         \hline
         cuda & 10.0 & NVIDIA & Compilateur de code C++ pour GPU.\\
         \hline
-        TensorRT & 6.0.1.5 & NVIDIA & Librairies pour générer des modèles optimisés pour l'inférence.\\
+        TensorRT & 6.0.1.5 & NVIDIA & SDK pour générer des modèles au format ONNX, optimisés et interopérables, pour l'inférence.\\
         \hline
         ONNX & & MIT & Permet lde générer un format interopérable pour l'inférence de modèles d'architecture construit avec différent framework de machine learning (Caffe, PyTorch, TensorFlow, etc).\\
         \hline
@@ -60,7 +65,7 @@
         \hline
         v4l2loopback & & GPL & Utilitaire qui a permis de créer un matériel vidéo virtuelle permettant de remplaçer la caméra, permettant ainsi au modèle d'être alimenté par une vidéo et non la caméra.\\
         \hline
-        hdparm & & GPL & Utilitaire permettant de tester la capacité de lecture d'une unité de stockage, tel que'un SSD NVMe et différentes cartes micro-sd.\\
+        hdparm & & GPL & Utilitaire permettant de tester la capacité de lecture d'une unité de stockage, tel que'un SSD NVMe et différentes cartes microSD.\\
         \hline
         tegrastats & & NVIDIA & La commande offre différents indicateurs système tel que l'utilisation des processeurs, la température, la consommation, et qui sont utiles pour observer le comportement du système lors des tests de performance de la segmentation.\\
         \hline
@@ -70,51 +75,5 @@
         \hline
     \end{longtable}
 }
-% {
-%     \renewcommand*{\arraystretch}{1.4}
-%     \begin{table}[htb]
-%         \centering
-%         \caption{Solutions logicielles de l'essai}\label{table:table_sol_logiciel}
-%         \vspace{0.3em} % Adjust the height of the space between caption and tabular
-%         \begin{tabular}{{@{}|p{5em}|p{3em}|p{3em}|p{24em}|@{}}}
-%         % \begin{tabular}{|c|c|c|} % does not work don't know why
-%             \hline
-%             \textbf{Language} & \textbf{Version} & \textbf{Licence} & \textbf{Rôles et responsabilités} \\
-%             \hline
-%             JetpPack & 4.4 & NVIDIA & Kit de développement de logiciels incluant le système d'exploitation L4T, et les librairies et utilitaires nécessaires pour l'inférence avec le nano ordinateur.\\
-%             \hline
-%             L4T & 32.4.3 & NVIDIA & Le sytème d'exploitation "Linux For Tegra" conçut par NVIDIA pour leurs solutions d'inférence légères, comme pour le nano ordinateur.\\
-%             \hline
-%             Python & 2.7 & GPL & Language plus accessible que le C++.\\
-%             \hline
-%             C++ & GCC 7.3.1\footnote{\url{https://developer.nvidia.com/embedded/linux-tegra}} & GPL & Certaines extensions du cadre applicatif de NVIDIA pour l'inférence sont écrites en C++, pour des raisons d'optimisation.\\
-%             \hline
-%             pytorch & 1.1.0 & BSD 3-Clause & Cadres d'application logicielle ("framework") pour l'apprentissage machine et profond.\\
-%             \hline
-%             torchvision & & BSD 3-Clause & Branche de torchvision adaptée par NVIDIA\footnote{\url{https://github.com/dusty-nv/vision.git} et ensuite branche v0.3.0}; Doit être recompilée avec la version de pytorch 1.1.0 et cuda 10.0.\\
-%             \hline
-%             cuda & 10.0 & NVIDIA & Compilateur de code C++ pour GPU.\\
-%             \hline
-%             TensorRT & 6.0.1.5 & NVIDIA & Librairies pour générer des modèles optimisés pour l'inférence.\\
-%             \hline
-%             ONNX & & MIT & Permet lde générer un format interopérable pour l'inférence de modèles d'architecture construit avec différent framework de machine learning (Caffe, PyTorch, TensorFlow, etc).\\
-%             \hline
-%             trtexec & & NVIDIA & Utilitaire qui a permis de tester le .onnx qui a été regénéré.\\
-%             \hline
-%             gstreamer & 1.1 & LGPL & Utilitaire qui a permis d'alimenter le modèle de la segmentation avec la vidéo.\\
-%             \hline
-%             v4l2loopback & & GPL & Utilitaire qui a permis de créer un matériel vidéo virtuelle permettant de remplaçer la caméra, permettant ainsi au modèle d'être alimenté par une vidéo et non la caméra.\\
-%             \hline
-%             hdparm & & GPL & Utilitaire permettant de tester la capacité de lecture d'une unité de stockage, tel que'un SSD NVMe et différentes cartes micro-sd.\\
-%             \hline
-%             tegrastats & & NVIDIA & La commande offre différents indicateurs système tel que l'utilisation des processeurs, la température, la consommation, et qui sont utiles pour observer le comportement du système lors des tests de performance de la segmentation.\\
-%             \hline
-%             free & & GPL & La commande offre le status de la mémoire totale, utilisée, libre, swap, cachée, etc. Elle est utile pour observer le comportement de la mémoire du nano ordinateur lors des tests de performance de la segmentation.\\
-%             \hline
-%             iotop & & GPL & La commande offre le status des opérations "I/O" de lecture \& écriture sur le disque, totale ou pour le processus de segmentation. Elle est utile pour observer le comportement des opérations sur le disque du nano ordinateur lors des tests de performance de la segmentation.\\
-%             \hline
-%         \end{tabular}
-%     \end{table}
-% }
 \clearpage
 \newpage

@@ -1,26 +1,30 @@
 ﻿\par Cette section n'est disponible que pendant la rédaction du rapport. Les changements au rapport sont documentés dans ce tableau. Cela permet de faire un suivi et permet d'aider les personnes qui révisent et commentent le rapport.
 \par Les changements les plus récents apparaissent en premier. 
 {
-    \renewcommand*{\arraystretch}{1.4}
-    \begin{table}[ht]
-    \centering
-    \caption{Suivi des changements}\label{table:changelog}
     \vspace{0.3em} % Adjust the height of the space between caption and tabular
-    \begin{tabular}{{@{}|p{3em}|p{6em}|p{12cm}|@{}}}
-    % \begin{tabular}{|c|c|c|} % does not work don't know why
+    \begin{longtable}[t]{{@{}|p{3em}|p{6em}|p{24em}|@{}}}
+        \caption{Suivi des changements}\label{table:changelog}\\
+        \hline
+        \textbf{Version} & \textbf{Date} & \textbf{Changement}\\
+        \endfirsthead
         \hline
         \textbf{Version} & \textbf{Date} & \textbf{Changement}\\
         \hline
-        v1.2.1& 27/28/29 juillet 2020 & \begin{itemize}
-            \item Fixe les longues URL dans tout le document
-            \item Bonifie la section Résultat avec un tableau des résolutions qui ont été testées, et spécifie avec quelle carte micro-ssd les tests de perfomances sont exécutés.
+        \endhead
+        \endfoot
+        \endlastfoot
+        \hline
+        v1.2.1 & 27 28 29 30 juillet 2020 & \begin{itemize}
+            \item Fixe les longues URL dans tout le document.
+            \item Bonifie la section Résultat avec un tableau des résolutions qui ont été testées, et spécifie avec quelle carte microSD les tests de perfomances sont exécutés.
             \item Bonifie la section des Interprétations des résultats\char`\\Température avec le capteur AO et la durée de vie en opération constante. 
-            \item Ajoute une image pour chaque micro-sd dans un tableau, mais le label n'est pas bien centré verticalement (\todo{en cours}).
+            \item Ajoute une image pour chaque microSD dans un tableau, mais le label n'est pas bien centré verticalement. (todo en cours).
             \item Bonifie la section Solutions logicielles, et ajoute un tableau des logiciels.
-            \item fixe les Caption for LOF par le bon libellépour la TOC.
+            \item fixe les Caption for LOF par le bon libellé pour la TOC.
+            \item plusieurs clarifications et bonifications dans les sections contexte, donnees, interpretationresultats, materiel_logiciels, methodologie, methodologie/choix_equipment, methodologie/evaluation, methodologie/exploration_solutions_logicielles, methodologie/mise_en_place_solutions_logicielles, methodologie/preparation_nano_ordinateur, objectifs, problematique, resultats
         \end{itemize}\\
         \hline
-        v1.2.0& 26 juillet 2020 & \begin{itemize}
+        v1.2.0 & 26 juillet 2020 & \begin{itemize}
             \item Modification dans l'ensemble du document de l'expression "ground truth" par vérité terrain ("ground truth").
             \item Ajout dans les notes de bas de page des URLs (images du pont; github).
             \item Site d'étude: ajout des URL en note de base de page; enlève la deuxième image du pont; correction du nom de la station de métro la plus proche.  
@@ -35,18 +39,17 @@
         \hline
         v1.1.0 & 25 juillet 2020 & Section Résultats et Interprétation des résultats.\\
         \hline
-        v1.0.2 & 19 juillet 2020 & Ajout dans le tableau des performances data read SSD vs micro-sd les 2 autres micro-sd utilisées pendant l'essai.\\
+        v1.0.2 & 19 juillet 2020 & Ajout dans le tableau des performances data read SSD vs microSD les 2 autres microSD utilisées pendant l'essai.\\
         \hline
         v1.0.1 & 18 juillet 2020 & \begin{itemize}
             \item Ajout d'une section changelog pour documenter le suivi des changements et faciliter la révision.
             \item Apport de clarification dans la section Matérielle \& logiciels (hdparm, présentation SDK, etc). 
-            \item Début de la rédaction de la section résultat; inclusion d'un tableau des performances data read SSD vs micro-sd.
+            \item Début de la rédaction de la section résultat; inclusion d'un tableau des performances data read SSD vs microSD.
         \end{itemize}\\
         \hline
         v1.0 & 17 juillet 2020 & Première version envoyée à Michaël G. \\
         \hline
-    \end{tabular}
-    \end{table}
+    \end{longtable}
 }
 \clearpage
 \newpage

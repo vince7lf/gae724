@@ -1,27 +1,27 @@
 ﻿\subsection{Performances matérielles}
 \subsubsection{Stockage de données}
-\par Pour tester les performances de la micro-sd et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" peut être facilement utilisé. 
+\par Pour tester les performances de la microSD et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" peut être facilement utilisé. 
 {
    \vspace{0.3em} % Adjust the height of the space between caption and tabular
    \renewcommand*{\arraystretch}{1.4}
    \begin{longtable}[t]{@{}|p{25em}|p{2em}|p{2em}|p{3em}|@{}} 
-      \caption{Comparaison des performances du "data read" entre un SDD M.2 NVMe et une micro-sd}\label{tab:Timing O_DIRECT disk reads}\\
+      \caption{Comparaison des performances du "data read" entre un SDD M.2 NVMe et une microSD}\label{tab:Timing O_DIRECT disk reads}\\
       \hline
       \textbf{Disk reads} & \textbf{MB} & \textbf{sec} & \textbf{MB/sec}\\
       \hline
       Samsung 970 EVO Plus 250GB M.2 NVMe Internal Solid State Drive & 1004 & 3 & 334.15\\
       \hline
-      MicroSD card Scan Disk Ultra 32Gb HC I Class 10 & 122 & 3.03 & 40.22\\
+      microSD Scan Disk Ultra 32Gb HC I Class 10 & 122 & 3.03 & 40.22\\
       \hline
-      MicroSD card Samsung EVO 64Gb Plus XC I Grade 3 Class 10 (rouge) & 256 & 3.02 & 84.71\\
+      microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10 (rouge) & 256 & 3.02 & 84.71\\
       \hline
-      MicroSD card Samsung EVO 64Gb Select XC I Grade 3 Class 10 (verte) & 92 & 3.01 & 30.54\\
+      microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10 (verte) & 92 & 3.01 & 30.54\\
       \hline
    \end{longtable}
 }
 \subsubsection{Performances système}
 \par Les diagrammes suivants présentent l'état du nano-ordinateur avant la segmentation, pendant et après. Les indicateurs qui sont observés sont ceux de la mémoire, la fréquence, le I/O, la consommation, la température. Afin de montrer l'impacte potentiel de l'application Chromium, elle est démarrée entre deux segmentations, et pendant la segmentation. 
-\par La carte micro-sd "Scan Disk Ultra 32Gb class 10 HC I" a été utilisé pour les tests de performances système. La carte micro-sd "Samsung EVO 64Gb Plus class 10 HC I" n'était malheureusement plus fonctionnelle au moment des tests, celle-ci ayant été réservé pour tenter d'adapter le modèle aux images terrain locales. 
+\par La carte microSD "Scan Disk Ultra 32Gb class 10 HC I" a été utilisé pour les tests de performances système. La carte microSD "Samsung EVO 64Gb Plus class 10 HC I" n'était malheureusement plus fonctionnelle au moment des tests, celle-ci ayant été réservé pour tenter d'adapter le modèle aux images terrain locales. 
 \par Le test infère en temps réelle la vidéo qui est capturée avec la caméra du nano ordinateur. Le réeseau FCN qui est utilisé est celui fournit par NVIDIA "fcn-resnet18-deepscene-576x320". Ce modèle détecte automatiquement la résolution la plus appropriée avec cette caméra, c'est-à-dire 30 image par seconde (FPS) et une résolution de 1920x1080. Le test dure 1400 secondes, un peu de plus de 23 minutes. Il peut se diviser en onze périodes d'observation, qui sont brièvement décrites ci-dessous: 
 \begin{enumerate}
    \item La première période est celle entre la 1re seconde et la 200e seconde, et qui permet d'observer l'état du système au démarrage du nano-ordinateur sans opération mis à part celle de la collecte des statistiques. 
@@ -99,6 +99,7 @@
 \par Lors de l'entrainement et l'inférence, le script montre un IoU moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le IoU et le Z-score (Dice) de la segmentation sémantique de la piste cyclable uniquement.
 \par Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version vérité terrain ("ground truth")". L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain ("ground truth"), tant que la palette de couleur est identique à la version vérité terrain ("ground truth")". 
 \par Il s'avère que le IoU et Dice score sont assez élevés pour les deux photos. 
+\par Ajout de la photo originale, et légende code couleur-classe \todo{TODO}
 \begin{figure}[H]
    \centering
    \includegraphics[width=1\textwidth]{b1-09517_Clipped}
