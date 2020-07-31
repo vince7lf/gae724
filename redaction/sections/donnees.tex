@@ -11,11 +11,11 @@
 {
    \clearpage 
    \newpage
-   \begin{landscape}
+   % \begin{landscape}
    \newcounter{magicrownumbers}
    \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
    \vspace{0.3em} % Adjust the height of the space between caption and tabular
-   \begin{longtable}[t]{@{}p{1em}|p{15em}p{35em}@{}} % p{15em}p{35em} with landscape
+   \begin{longtable}[t]{@{}p{1em}|p{12em}p{28em}@{}} % p{15em}p{35em} with landscape
       \caption{Tableau des données}\label{tab:datasets}\\
       & \textbf{Spécification} & \textbf{Description}\\
       \hline
@@ -84,7 +84,7 @@
       \end{tabular}\\
       \hline
    \end{longtable}
-   \end{landscape}
+   % \end{landscape}
    \clearpage
    \newpage
 }
