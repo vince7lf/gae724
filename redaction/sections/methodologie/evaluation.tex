@@ -1,4 +1,15 @@
-﻿\label{metho_eval}
+﻿L’évaluation des performances se décomposent des différents éléments suivants, et qui sont présentés dans le diagramme de la figure \ref{fig:metho_eval}: 
+\begin{itemize}
+    \item Tout d'abord, les indicateurs de performances.
+    \begin{itemize}
+        \item Les performances matérielles durant l'inférence seront évaluées grâce aux indicateurs fournies par les utilitaires 'Tegrastats' de NVIDIA, 'free' et 'iotop'. Ces utilitaires sont brièvement décrit dans le tableau \ref{table:table_sol_logiciel}.
+        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques IoU (Intersection Over Union) et Z-Score (ou Dice). {\color{red}description de ces indicateurs ou référence vers définition (scikit learn) ou code source utilisé ?\todo{TODO}}
+    \end{itemize}
+    \item Ensuite, différentes résolutions d'images et de vidéos seront utilisées pour déterminer lesquelles sont supportées par le modèle évalué. 
+    \item Les images et vidéos qui seront utilisées durant l'évaluation proviennent de différentes sources de données.
+    \item Enfin les modèles qui seront évalués sont des modèles déjà entrainés avec un jeu de données.
+\end{itemize} 
+\label{metho_eval}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{metho_eval_perf_round_glass_shadow}
