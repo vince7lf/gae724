@@ -1,6 +1,38 @@
-﻿{\color{red}
-\todo{TODO}
-\par 
-\vspace{1\baselineskip}
-\par 
-}
+﻿\myparagraph{Préparation et post-traitement}
+\par Afin de pouvoir mesurer les performances de la segmentation (IoU, z-score), les classes et la palette de couleur entre l'image vérité terrain ("ground truth" GT) et celles préditent doivent être les mêmes.
+\par L'image vérité terrain ("ground truth (GT)") du jeu de donnée original DeepScene ne possède pas la même palette de couleur ni exactement les mêmes classes que celle du modèle.
+\par Un travail d'uniformisation est nécessaire avant la segmentation, qui est résumé dans le tableau \ref{table:classes_palette_couleur}.
+{
+    \renewcommand*{\arraystretch}{1.4}
+    \begin{table}[h]
+    \centering
+    \caption{Classes et palettes de couleur}\label{table:classes_palette_couleur}
+    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \begin{tabular}{{@{}|p{4em}|p{6em}||p{4em}|p{6em}||p{4em}|p{6em}|@{}}}
+        \hline
+        \multicolumn{2}{|c||}{\textbf{DeepScene}} & \multicolumn{2}{c||}{\textbf{NVIDIA}} & \multicolumn{2}{c|}{\textbf{Consolidée}} \\
+        \hline
+        \multicolumn{1}{|l|}{\textbf{Classes}} & \multicolumn{1}{c||}{\textbf{RGB}} & \multicolumn{1}{l|}{\textbf{Classes}} & \multicolumn{1}{c||}{\textbf{RGB}} & \multicolumn{1}{l|}{\textbf{Classes}} & \multicolumn{1}{c|}{\textbf{RGB}} \\
+        % \thead{Classes \\ DeepScene} & \thead{RGB \\ DeepScene} & \thead{Classes \\ NVIDIA} & \thead{RGB \\ NVIDIA} & \thead{Classes \\ consolidées} & \thead{RGB \\ consolidées} \\
+        \hline
+        \hline
+        Road & 170-170-170 & Trail & 200-155-75 & Trail & \textcolor{red}{170-170-170}\\
+        \hline
+        Grass & 0-255-0 & Grass & 85-210-100 & Grass & \textcolor{red}{0-255-0}\\
+        \hline
+        Vegetation & 102-102-51 & Vegetation & 15-100-20 & Vegetation & \textcolor{red}{102-102-51}\\
+        \hline
+        Tree & 0-60-0 & - & - & \textcolor{red}{Vegetation} & \textcolor{red}{102-102-51}\\
+        \hline
+        Sky & 0-120-255 & Sky & 0-120-255 & Sky & \textcolor{red}{0-120-255}\\
+        \hline
+        Obstacle & 0-0-0 & Obstacle & 255-185-0 & Obstacle & \textcolor{red}{0-0-0}\\
+        \hline
+    \end{tabular}
+    \end{table}
+\par De plus, l'image segmentée prédite par le modèle ne possède pas précisément la même palette de couleur que celle qui est configurée, il y a quelques différences minimes dans les codes couleurs RGB (par exemple 0-119-255 au lieu de 0-120-255), mais qui doivent être arrangées afin de pouvoir être correctement évaluées. 
+\par Un travail de traitement de l'image segmentée prédite est nécessaire avant l'évalution de la segmentation.
+\myparagraph{Segmentation et évaluation}
+\par Afin de tester la performance de la segmentation du modèle, deux images du jeu de données de DeepScene seront utilisées car ce jeu contient déjà les images vérités terrain ("ground truth" GT), un gain de temps non négligeable dans le cadre de l'essai. Uniquemement la classe "Trail" sera évaluée.
+\par L'architecture fournit à l'utilitaire "segnet-console" est "fcn-resnet18-deepscene-576x320" \footnote{\url{segnet-console --network=fcn-resnet18-deepscene --visualize=mask --alpha=10000 images/city_0.jpg output.jp}}. 
+\par Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le IoU et le Z-Score de la classe de l'image prédite par le modèle.

@@ -57,21 +57,25 @@
         \hline
         TensorRT & 6.0.1.5 & NVIDIA & SDK pour générer des modèles au format ONNX, optimisés et interopérables, pour l'inférence.\\
         \hline
-        ONNX & & MIT & Permet lde générer un format interopérable pour l'inférence de modèles d'architecture construit avec différent framework de machine learning (Caffe, PyTorch, TensorFlow, etc).\\
+        ONNX & & MIT & Librairie qui permet de générer un format interopérable pour l'inférence de modèles d'architecture construit avec différent framework de machine learning (Caffe, PyTorch, TensorFlow, etc).\\
         \hline
-        trtexec & & NVIDIA & Utilitaire qui a permis de tester le .onnx qui a été regénéré.\\
+        trtexec & - & NVIDIA & Utilitaire qui a permis de tester le .onnx qui a été regénéré.\\
         \hline
-        gstreamer & 1.1 & LGPL & Utilitaire qui a permis d'alimenter le modèle de la segmentation avec la vidéo.\\
+        gstreamer & 1.14.5 & LGPL & Utilitaire qui a permis d'alimenter le modèle de la segmentation avec la vidéo.\\
         \hline
-        v4l2loopback & & GPL & Utilitaire qui a permis de créer un matériel vidéo virtuelle permettant de remplaçer la caméra, permettant ainsi au modèle d'être alimenté par une vidéo et non la caméra.\\
+        v4l2loopback & & GPL & Utilitaire qui a permis de créer un matériel vidéo virtuelle permettant de remplaçer la caméra, permettant ainsi au modèle d'être alimenté par une vidéo et non la caméra. Une fois installé, le matériel vidéo virtuel est accessible via "/dev/video1", "/dev/video0" étant réservé pour la caméra. \\
         \hline
-        hdparm & & GPL & Utilitaire permettant de tester la capacité de lecture d'une unité de stockage, tel que'un SSD NVMe et différentes cartes microSD.\\
+        hdparm & 9.54 & GPL & Utilitaire permettant de tester la capacité de lecture d'une unité de stockage, tel que'un SSD NVMe et différentes cartes microSD.\\
         \hline
-        tegrastats & & NVIDIA & La commande offre différents indicateurs système tel que l'utilisation des processeurs, la température, la consommation, et qui sont utiles pour observer le comportement du système lors des tests de performance de la segmentation.\\
+        tegrastats & - & NVIDIA & La commande offre différents indicateurs système tel que l'utilisation des processeurs, la température, la consommation, et qui sont utiles pour observer le comportement du système lors des tests de performance de la segmentation.\\
         \hline
-        free & & GPL & La commande offre le status de la mémoire totale, utilisée, libre, swap, cachée, etc. Elle est utile pour observer le comportement de la mémoire du nano ordinateur lors des tests de performance de la segmentation.\\
+        free & 3.3.12 & GPL & La commande offre le status de la mémoire totale, utilisée, libre, swap, cachée, etc. Elle est utile pour observer le comportement de la mémoire du nano ordinateur lors des tests de performance de la segmentation.\\
         \hline
-        iotop & & GPL & La commande offre le status des opérations "I/O" de lecture \& écriture sur le disque, totale ou pour le processus de segmentation. Elle est utile pour observer le comportement des opérations sur le disque du nano ordinateur lors des tests de performance de la segmentation.\\
+        iotop & 0.6 & GPL & La commande offre le status des opérations "I/O" de lecture \& écriture sur le disque, totale ou pour le processus de segmentation. Elle est utile pour observer le comportement des opérations sur le disque du nano ordinateur lors des tests de performance de la segmentation.\\
+        \hline
+        segnet-console & - & NVIDIA & La commande permet de segmenter une image. L'architecture est donnée en argument. Lors de l'essai, celle qui a été évaluée est "fcn-resnet18-deepscene-576x320". Les options qui doivent être utilisées pour que l'image générée soit évaluée doivent être "--visualize=mask --filter-mode=point --alpha=0". L'image originale est fournie en avant dernière place de la commande, et l'image générée en dernière place. Il est possible aussi de démarrer l'inférence avec sa propre architecture grâce aux options "--model", "--prototxt", "--labels", "--colors", "--input\_blob" et "--output\_blob".\\
+        \hline
+        segnet-camera & - & NVIDIA & La commande permet de démarrer la segmentation avec la caméra, ou optionnellement avec un matériel vidéo virtuel ("v4l2loopback"), comme cela a été le cas durant le projet pour évaluer la segmentation avec des vidéos au lieu de la caméra. L'architecture est donnée en argument. Lors de l'essai, celle qui a été évaluée est "fcn-resnet18-deepscene-576x320". La résolution peut être précisée grâce aux options "width" et "height", mais durant l'évaluation les valeurs par défaut ont été conservées (width=1280px et height=720px). Il est possible aussi de démarrer l'inférence avec sa propre architecture grâce aux options "--model", "--prototxt", "--labels", "--colors", "--input\_blob" et "--output\_blob". Il n'est pas possible de conserver la vidéo segmentée, il a été tenté de sauvegarder les images qui sont rafraichies à l'écran dans la fenêtre XWindow mais le code est trop intrusif et impacte négativement les performances de la segmentation et du nano ordinateur. L'évaluation des performances n'est donc que visuelle, et cette limitation pourrait remettre en question le désir de détecter les délimitations de la piste cyclable en temps réel, puisqu'il n'y a pas de moyen de récupérer le résultat généré.\\
         \hline
     \end{longtable}
 }
