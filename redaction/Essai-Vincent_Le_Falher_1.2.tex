@@ -30,6 +30,7 @@
 \usepackage{pdfpages}
 \usepackage{grffile}
 \usepackage{makecell}
+\usepackage[acronym]{glossaries}
 % \usepackage{draftwatermark}
 \addbibresource{selection-new.bib}
 \definecolor{orange}{rgb}{1,0.647,0}
@@ -43,6 +44,11 @@
 \renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
 \renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
 \linespread{1.213}
+% 
+\makeglossaries
+\newacronym{iou}{IoU}{Intersection over Union}
+\newacronym{gt}{GT}{Ground Truth}
+% 
 \begin{document}
 \begin{titlepage} % Suppresses headers and footers on the title page
    \centering % Centre everything on the title page
@@ -84,6 +90,7 @@
 \tableofcontents{}
 \listoffigures{}
 \listoftables{}
+\printglossary[title=Liste des abréviations, toctitle=Liste des abréviations, type=\acronymtype]
 %----------------------------------------------------------------------------------------
 \newpage
 \pagenumbering{arabic}

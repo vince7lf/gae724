@@ -3,20 +3,19 @@
     \item Tout d'abord, les indicateurs de performances.
     \begin{itemize}
         \item Les performances matérielles durant l'inférence seront évaluées grâce aux indicateurs fournies par les utilitaires 'Tegrastats' de NVIDIA, 'free' et 'iotop'. Ces utilitaires sont brièvement décrit dans le tableau \ref{table:table_sol_logiciel}.
-        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques IoU (Intersection Over Union) et Z-Score (ou Dice). {\color{red}description de ces indicateurs ou référence vers définition (scikit learn) ou code source utilisé ?\todo{TODO}}
+        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques\footnote{\url{https://ilmonteux.github.io/2019/05/10/segmentation-metrics.html}}: "IoU" ("Intersection Over Union", ou "Jaccard") et le "Z-Score" (ou "Dice").
     \end{itemize}
     \item Ensuite, différentes résolutions d'images et de vidéos seront utilisées pour déterminer lesquelles sont supportées par le modèle évalué. 
-    \item Les images et vidéos qui seront utilisées durant l'évaluation proviennent de différentes sources de données.
-    \item Enfin les modèles qui seront évalués sont des modèles déjà entrainés avec un jeu de données.
+    \item Les images et vidéos qui sont à notre disposition pour être évaluée proviennent de différentes sources de données. Le jeu d'images de DeepScene est celui qui semble le plus approprié car il a été conçu pour détecter les chemins dans la forêt. De plus il existe une version du modèle qui a été entrainé avec ce jeu. Comme il possède un jeu d'images vérité terrain ("ground truth" GT), il sera bien utile pour évaluer la segmentation prédite et un gain de temps non négligeable dans le cadre d'un essai. Le jeu d'images de CityScape est très complet pour les scènes urbaines, mais comme il est moins spécialisé dans la détection de chemins ou de piste, son utilisation ne sera pas priorisé. Il contient toutefois des images vérité terrain de routes, ce qui est avantageux dans notre contexte et le favorise  par rapport au deux derniers que nous avons à notre disposition. En effet le jeu d'images et de vidéos de l'Association des piétons et cyclistes du pont Jacques-Cartier, et celui que j'ai monté, sont des jeux intéressants pour tester les résultats de la segmentation avec des images ou des vidéos qui viennent du site d'études, ou similaire, que celui de chemins forestiers. De plus ces images et vidéos sont loin des conditions parfaites (luminosité, qualité du sol, angle de vue, etc).
+    \item Enfin plusieurs modèles ont été sélectionnés comme candidats intéressants pour l'évluation. Le premier modèle qui sera évalué sera celui de SegNet18 entrainé avec le jeu de données "DeepSCene", et fourni par NVIDIA. Le second de la liste, et qui est aussi déjà founi par NVIDIA, est celui de SegNet18 entrainé avec le jeu de donnée "CityScape". Les deux autres architectures, ResNet101 \& DeepScene et DeepLabV3 \& Deepscene, ne sont pas disponibles et devront être préparées et entrainées, mais elles sont attrayantes du point de vue de leur réputation et potentiel, et vouloir les adapter au contexte de l'essai semble logique. Une dernière boîte vide est disponible, afin de laisser une porte ouverte à une potentielle opportunité d'entrainer un modèle tout à fait personnalisé, comme par exemple une adapation de l'architecture de DeepLabV3 avec le jeu de données de l'Association des piétons et cyclistes du pont Jacques-Cartier.
 \end{itemize} 
 \label{metho_eval}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{metho_eval_perf_round_glass_shadow}
+    \includegraphics[width=1.0\textwidth]{metho_eval_perf_round_glass_shadow2}
     \caption{Éléments pour l'évaluation des performances}
     \label{fig:metho_eval}
 \end{figure}
-\todo{bonifie}
 \subsubsection{Stratégie de test de l'inférence}
 \par L'objectif principal de l'essai est de déterminer la capacité et les limites du nano ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
 \begin{enumerate}
