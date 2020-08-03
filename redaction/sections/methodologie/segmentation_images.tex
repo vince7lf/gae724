@@ -35,4 +35,4 @@
 \myparagraph{Segmentation et évaluation}
 \par Afin de tester la performance de la segmentation du modèle, deux images du jeu de données de DeepScene seront utilisées car ce jeu contient déjà les images vérités terrain ("ground truth" GT), un gain de temps non négligeable dans le cadre de l'essai. Uniquemement la classe "Trail" sera évaluée.
 \par L'architecture fournit à l'utilitaire "segnet-console" est "fcn-resnet18-deepscene-576x320" \footnote{\url{segnet-console -{}-network=fcn-resnet18-deepscene -{}-visualize=mask -{}-alpha=10000 images/city_0.jpg output.jp}}. 
-\par Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le IoU et le Z-Score de la classe de l'image prédite par le modèle.
+\par Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le\acrshort{iou}et le Z-Score de la classe de l'image prédite par le modèle.

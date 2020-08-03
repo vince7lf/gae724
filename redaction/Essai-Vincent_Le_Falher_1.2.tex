@@ -5,6 +5,8 @@
 \author{Vincent Le Falher \thanks{Mickaël Germains}}
 \date{2020}
 \usepackage[hyphens]{url}
+% \usepackage{hyperref}
+\usepackage{nameref}
 \usepackage{relsize}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -30,7 +32,7 @@
 \usepackage{pdfpages}
 \usepackage{grffile}
 \usepackage{makecell}
-\usepackage[acronym]{glossaries}
+\usepackage[acronym,automake]{glossaries}
 % \usepackage{draftwatermark}
 \addbibresource{selection-new.bib}
 \definecolor{orange}{rgb}{1,0.647,0}
@@ -47,7 +49,14 @@
 % 
 \makeglossaries
 \newacronym{iou}{IoU}{Intersection over Union}
-\newacronym{gt}{GT}{Ground Truth}
+\newacronym{gt}{GT}{Ground truth}
+\newacronym{fps}{FPS}{Frames per second}
+\newacronym{fraps}{FRAPS}{Frames Per Second}
+\newacronym{flops}{FLOPS}{Floating-point Operations Per Second}
+\newacronym{cpu}{CPU}{Central Processing Unit)}
+\newacronym{gpu}{GPU}{Ggraphics Processing Unit}
+\newacronym{apcpontjc}{apc\_pontjc}{Association des Piétons et Cyclistes du pont Jacques-Cartier}
+\newacronym{fcn}{FCN}{fully Convolutional Network}
 % 
 \begin{document}
 \begin{titlepage} % Suppresses headers and footers on the title page
