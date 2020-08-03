@@ -98,8 +98,20 @@
 \par Les tests ont été fait avec le modèle "fcn-resnet18-deepscene-576x320" fournit par NVIDIA. 
 \par Lors de l'entrainement et l'inférence, le script montre un \acrshort{iou} moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le\acrshort{iou}et le Z-score (Dice) de la segmentation sémantique de la piste cyclable uniquement.
 \par Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version vérité terrain ("ground truth")". L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain ("ground truth"), tant que la palette de couleur est identique à la version vérité terrain ("ground truth")". 
-\par Il s'avère que le\acrshort{iou}et "Dice score" sont assez élevés pour les deux photos. 
-\par Ajout de la photo originale, et légende code couleur-classe \todo{TODO}
+\par Il s'avère que le \acrshort{iou} et "Dice score" sont assez élevés pour les deux photos. 
+\par {\color{red}Ajout de la photo originale \todo{TODO}}
+\par{
+   \definecolor{trail}{RGB}{170, 170, 170}
+   \definecolor{grass}{RGB}{0, 255, 0}
+   \definecolor{vegetation}{RGB}{102, 102, 51}
+   \definecolor{sky}{RGB}{0, 120, 255}
+   \definecolor{obstacle}{RGB}{0, 0, 0}
+   \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
+   \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
+   \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
+   \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
+   \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
+}
 \begin{figure}[H]
    \centering
    \includegraphics[width=1\textwidth]{b1-09517_Clipped}
@@ -148,7 +160,7 @@
         \hline
         832x1120, 832x1152, 768x1280, 800x1280, 864x1152, 900x1152, 900x1280, 960x1600, 1080x1920, 1024x1024\\
         \hline
-        \textbf{Images-par-secondes (\acrshort{fps}) supportées}\\
+        \textbf{Images par seconde (\acrshort{fps}) supportées}\\
         \hline
         60/1, 30/1, 15/1, 1/1\\
         \hline

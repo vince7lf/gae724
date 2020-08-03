@@ -5,9 +5,9 @@
         \item Les performances matérielles durant l'inférence seront évaluées grâce aux indicateurs fournies par les utilitaires 'Tegrastats' de NVIDIA, 'free' et 'iotop'. Ces utilitaires sont brièvement décrit dans le tableau \ref{table:table_sol_logiciel}.
         \item Les performances de la segmentation seront évaluées avec les indicateurs classiques\footnote{\url{https://ilmonteux.github.io/2019/05/10/segmentation-metrics.html}}: "IoU" ("Intersection Over Union", ou "Jaccard") et le "Z-Score" (ou "Dice").
     \end{itemize}
-    \item Ensuite, différentes résolutions d'images et de vidéos seront utilisées pour déterminer lesquelles sont supportées par le modèle évalué. 
-    \item Les images et vidéos qui sont à notre disposition pour être évaluée proviennent de différentes sources de données. Le jeu d'images de DeepScene est celui qui semble le plus approprié car il a été conçu pour détecter les chemins dans la forêt. De plus il existe une version du modèle qui a été entrainé avec ce jeu. Comme il possède un jeu d'images vérité terrain ("ground truth" GT), il sera bien utile pour évaluer la segmentation prédite et un gain de temps non négligeable dans le cadre d'un essai. Le jeu d'images de CityScape est très complet pour les scènes urbaines, mais comme il est moins spécialisé dans la détection de chemins ou de piste, son utilisation ne sera pas priorisé. Il contient toutefois des images vérité terrain de routes, ce qui est avantageux dans notre contexte et le favorise  par rapport au deux derniers que nous avons à notre disposition. En effet le jeu d'images et de vidéos de l'Association des piétons et cyclistes du pont Jacques-Cartier, et celui que j'ai monté, sont des jeux intéressants pour tester les résultats de la segmentation avec des images ou des vidéos qui viennent du site d'études, ou similaire, que celui de chemins forestiers. De plus ces images et vidéos sont loin des conditions parfaites (luminosité, qualité du sol, angle de vue, etc).
-    \item Enfin plusieurs modèles ont été sélectionnés comme candidats intéressants pour l'évluation. Le premier modèle qui sera évalué sera celui de SegNet18 entrainé avec le jeu de données "DeepSCene", et fourni par NVIDIA. Le second de la liste, et qui est aussi déjà founi par NVIDIA, est celui de SegNet18 entrainé avec le jeu de donnée "CityScape". Les deux autres architectures, ResNet101 \& DeepScene et DeepLabV3 \& Deepscene, ne sont pas disponibles et devront être préparées et entrainées, mais elles sont attrayantes du point de vue de leur réputation et potentiel, et vouloir les adapter au contexte de l'essai semble logique. Une dernière boîte vide est disponible, afin de laisser une porte ouverte à une potentielle opportunité d'entrainer un modèle tout à fait personnalisé, comme par exemple une adapation de l'architecture de DeepLabV3 avec le jeu de données de l'Association des piétons et cyclistes du pont Jacques-Cartier.
+    \item Ensuite, différentes résolutions d'images et de vidéos seront utilisées pour déterminer lesquelles sont supportées par le modèle évalué, tel qu'indiqué dans la section "\ref{section:resolutions_to_be_tested} \nameref{section:resolutions_to_be_tested}". 
+    \item Les images et vidéos qui sont à notre disposition pour être évaluée proviennent de différentes sources de données, tel que décrit dans la section "\ref{section:collecte_donnees} \nameref{section:collecte_donnees}". 
+    \item \item Enfin plusieurs modèles ont été sélectionnés comme candidats intéressants pour l'évluation, et décrit dans la section "\ref{choix_modele_architecture} \nameref{section:choix_modele_architecture}".
 \end{itemize} 
 \label{metho_eval}
 \begin{figure}[H]
@@ -42,3 +42,24 @@
 \par Les indicateurs collectés permettent de créer des graphiques qui montrent la progression de chacun.
 \par Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA, "free" et "iotop".
 \par Les performances de la segmentation sont évaluées grâce au\acrshort{iou}et au z-score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions\acrshort{iou}et le z-score utilisent l'image prédite (généré par le modèle FCN) et l'image vérité terrain ("ground truth"). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain ("ground truth") créée. L'image prédite et vérité terrain ("ground truth") doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain ("ground truth"), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain ("ground truth") ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
+\subsubsection{Résolutions évaluées}\label{section:resolutions_to_be_tested}
+Voici dans le tableau \ref{table:resolutions_to_be_tested} les résolutions et images par seconde qui seront évaluées. 
+{
+    \renewcommand*{\arraystretch}{1.4}
+    \begin{table}[ht]
+    \centering
+    \caption{Résolutions et images par seconde (\acrshort{fps}) à tester}\label{table:resolutions_to_be_tested}
+    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \begin{tabular}{{@{}|p{12cm}|@{}}}
+         \hline
+         \textbf{Résolutions}\\
+         \hline
+        320x576, 480x640, 720x1280, 768x1024, 768x1152, 800x1152, 832x1024, 864x1024, 832x1120, 832x1152, 768x1280, 800x1280, 864x1152, 900x1152, 900x1280, 960x1600, 1080x1920, 1024x1024\\
+        \hline
+        \textbf{Images par seconde (\acrshort{fps}) }\\
+        \hline
+        60/1, 30/1, 15/1, 1/1\\
+        \hline
+    \end{tabular}
+    \end{table}
+}
