@@ -3,7 +3,7 @@
     \item Tout d'abord, les indicateurs de performances.
     \begin{itemize}
         \item Les performances matérielles durant l'inférence seront évaluées grâce aux indicateurs fournies par les utilitaires 'Tegrastats' de NVIDIA, 'free' et 'iotop'. Ces utilitaires sont brièvement décrit dans le tableau \ref{table:table_sol_logiciel}.
-        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques\footnote{\url{https://ilmonteux.github.io/2019/05/10/segmentation-metrics.html}}: le "\acrshort{iou}" ("\acrlong{iou}", ou "Jaccard index"), et le "F1 score" (ou "Dice coefficient").
+        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques\footnote{\url{https://ilmonteux.github.io/2019/05/10/segmentation-metrics.html}}: le "\acrshort{iou}" ("\acrlong{iou}", ou "Jaccard index"), et le F1 score (ou "Dice coefficient").
     \end{itemize}
     \item Ensuite, différentes résolutions d'images et de vidéos seront utilisées pour déterminer lesquelles sont supportées par le modèle évalué, tel qu'indiqué dans la section "\ref{section:resolutions_to_be_tested} \nameref{section:resolutions_to_be_tested}". 
     \item Les images et vidéos qui sont à notre disposition pour être évaluée proviennent de différentes sources de données, tel que décrit dans la section "\ref{section:collecte_donnees} \nameref{section:collecte_donnees}". 
@@ -33,15 +33,15 @@
     \item Afin de faciliter la documentation et l'analyse du test, des points d'intérêt sont ajoutés dans un fichier séparé pour marquer un moment particulier du test, avec la date, l'heure et un libellé. Ce point d'intérêt est fait grâce à une commande "shell" qui vient ajouter une trace dans ce fichier.
     \item Chaque indicateur est collecté toutes les secondes.  
     \item Une fois le test complété, la collecte est arrêté manuellement. 
-    \item Chaque fichier est ensuite transformé en fichier CSV, via des commandes shell.
-    \item À partir des fichiers CSV un script Python génère les graphiques automatiquement. 
+    \item Chaque fichier est ensuite transformé en fichier \acrshort{csv}, via des commandes shell.
+    \item À partir des fichiers \acrshort{csv} un script Python génère les graphiques automatiquement. 
 \end{itemize}
-\par Chaque indicateur est une colonne du fichier CSV. Il existe le même nombre d'indicateurs à tout moment. La date et l'heure sont un champ. 
+\par Chaque indicateur est une colonne du fichier \acrshort{csv}. Il existe le même nombre d'indicateurs à tout moment. La date et l'heure sont un champ. 
 \par Avant tout début de tests, la collecte est démarrée sans activité autre que la collecte des indicateurs. Cela permet de prendre une base de référence sans aucune charge.
 \par Ensuite les tests débutent. 
 \par Les indicateurs collectés permettent de créer des graphiques qui montrent la progression de chacun.
 \par Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA, "free" et "iotop".
-\par Les performances de la segmentation sont évaluées grâce au \acrshort{iou} et au F1 score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions \acrshort{iou} et le F1 score utilisent l'image prédite (généré par le modèle FCN) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
+\par Les performances de la segmentation sont évaluées grâce au \acrshort{iou} et au F1 score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions \acrshort{iou} et le F1 score utilisent l'image prédite (généré par le modèle \acrshort{fcn}) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
 \subsubsection{Résolutions évaluées}\label{section:resolutions_to_be_tested}
 Voici dans le tableau \ref{table:resolutions_to_be_tested} les résolutions et images par seconde qui seront évaluées. 
 {
