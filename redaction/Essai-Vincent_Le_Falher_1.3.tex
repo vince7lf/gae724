@@ -1,0 +1,157 @@
+﻿% command line to generate Word docx
+% pandoc -s "GAE723 - Travail 4.3 Comptes-rendus des suivis individuels - Vincent Le Falher - v1.0.tex" -o "GAE723 - Travail 4.3 Comptes-rendus des suivis individuels - Vincent Le Falher - v1.0.tex.docx"
+\documentclass[12pt, letterpaper]{article}
+\title{Segmentation sémantique en temps réel à partir d'un nano ordinateur: étude des performances et des limites}
+\author{Vincent Le Falher \thanks{Mickaël Germains}}
+\date{2020}
+\usepackage[hyphens]{url}
+% \usepackage{hyperref}
+\usepackage{nameref}
+\usepackage{relsize}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage[french]{babel}
+\usepackage{todonotes}
+\usepackage{comment} 
+\usepackage{times}
+\usepackage[T1]{fontenc} 
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{flafter} % to force the table to be within it's section 
+\usepackage[backend=biber]{biblatex}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{grffile}
+\usepackage{makecell}
+\usepackage[acronym,automake]{glossaries}
+\usepackage{tikz}
+% \usepackage{draftwatermark}
+\addbibresource{selection.bib}
+\definecolor{orange}{rgb}{1,0.647,0}
+\graphicspath{ {images/} }
+\addto\captionsfrench{ \renewcommand*\contentsname{Table des matières} }
+\addto\captionsfrench{ \renewcommand{\listfigurename}{Liste des figures} }
+\addto\captionsfrench{ \renewcommand{\listtablename}{Liste des tableaux} }
+\addto\captionsfrench{ \renewcommand{\bibname}{Références}}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\\par}
+\newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}\\\par}
+\renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
+\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+\linespread{1.213}
+% 
+\makeglossaries
+\newacronym{iou}{IoU}{Intersection over Union}
+\newacronym{gt}{GT}{Ground truth}
+\newacronym{fps}{FPS}{Frames per second}
+\newacronym{fraps}{FRAPS}{Frames Per Second}
+\newacronym{flops}{FLOPS}{Floating-point Operations Per Second}
+\newacronym{cpu}{CPU}{Central Processing Unit)}
+\newacronym{gpu}{GPU}{Ggraphics Processing Unit}
+\newacronym{apcpontjc}{apc\_pontjc}{Association des Piétons et Cyclistes du pont Jacques-Cartier}
+\newacronym{fcn}{FCN}{fully Convolutional Network}
+% 
+\begin{document}
+\begin{titlepage} % Suppresses headers and footers on the title page
+   \centering % Centre everything on the title page
+ 
+   \scshape % Use small caps for all text on the title page
+  
+   DÉPARTEMENT DE GÉOMATIQUE APPLIQUÉE\\Faculté des lettres et sciences humaines\\Université de Sherbrooke
+   
+   \vspace{11\baselineskip}
+ 
+   {\LARGE Segmentation sémantique en temps réel à partir d'un nano ordinateur: étude des performances et des limites}
+   \vspace{1\baselineskip}
+   \linebreak
+ 
+   \vspace*{3\baselineskip}
+ 
+   \textit{Essai présenté pour l'obtention du grade de Maître en sciences (M.Sc.),\\cheminement géodéveloppement durable}
+   
+   \vspace{5\baselineskip}
+    
+   {\LARGE Vincent Le Falher}
+     
+   \vfill % Whitespace between editor names and year
+ 
+   Longueuil\\Septembre 2020 % Publication year
+   \vfill % Whitespace between editor names and year
+   % \footnotesize{\textcopyright{Vincent Le Falher, 2020}}
+   \tiny{\textcopyright{Vincent Le Falher, 2020}}
+ 
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+\thispagestyle{empty}
+%----------------------------------------------------------------------------------------
+\textbf{Remerciements}
+\input{sections/remerciements}
+%----------------------------------------------------------------------------------------
+\newpage
+\pagenumbering{Roman}
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+\printglossary[title=Liste des abréviations, toctitle=Liste des abréviations, type=\acronymtype]
+%----------------------------------------------------------------------------------------
+\newpage
+\pagenumbering{arabic}
+%----------------------------------------------------------------------------------------
+% \section{Suivi des changements au rapport}
+% \input{sections/changelog}
+\section{Introduction}
+\subsection{Mise en contexte}
+\input{sections/contexte}
+\subsection{Problématique}
+\input{sections/problematique}
+\subsection{Objectifs}
+\input{sections/objectifs}
+%----------------------------------------------------------------------------------------
+\section{Cadre théorique}
+Il y a deux sections, la première qui concerne le nano ordinateur et ensuite la seconde, l'apprentissage profond et la segmentation sémantique.
+\subsection{Cadre théorique au sujet du nano ordinateur}
+\input{sections/cadretheorique_nano}
+\subsection{Cadre théorique au sujet de l'apprentissage profond et de la segmentation sémantique}
+\input{sections/cadretheorique_dp_ss}
+%----------------------------------------------------------------------------------------
+\section{Matériel et méthodes}
+\subsection{Site d'étude}
+\input{sections/site_etude}
+\subsection{Modèles et jeux de données}
+\input{sections/donnees}
+\subsection{Matériel et logiciels}
+\input{sections/materiel_logiciels}
+\subsection{Méthodologie}
+\input{sections/methodologie}
+%----------------------------------------------------------------------------------------
+\section{Résultats}
+\input{sections/resultats}
+%----------------------------------------------------------------------------------------
+\section{Interprétation et discussion des résultats}
+\input{sections/interpretationresultats}
+%----------------------------------------------------------------------------------------
+\section{Conclusion et recommandations}
+\input{sections/conclusion}
+%----------------------------------------------------------------------------------------
+\clearpage 
+\newpage
+{
+   \color{red}
+   \par Il faut uniformiser le style. Il faut que les références dans le texte soient "(year, lastname)" et non "[n]"\todo{TODO}
+}
+\printbibliography[title={\bibname\label{bib:references}}] 
+%----------------------------------------------------------------------------------------
+\clearpage 
+\newpage
+\section{Annexes}
+\input{sections/annexes}
+%----------------------------------------------------------------------------------------
+\end{document}

@@ -1,11 +1,11 @@
 ﻿\myparagraph{Le nano ordinateur}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{jetson_nano_lego}
+    \includegraphics[width=0.75\textwidth]{jetson_nano_lego}
     \caption[Carte mère Jetson Nano de NVIDIA]{Carte mère Jetson Nano de NVIDIA, représenté avec des Lego pour démontrer sa petite taille}
     \label{fig:jetson_nano_lego}
 \end{figure}
-\par L'objet d'étude de cet essai est le nano ordinateur "Jetson nano" du fabricant "NVIDIA" (figure \ref{fig:jetson_nano_lego}). Ce modèle a été choisi car il a été conçu par la compagnie NVIDIA spécifiquement pour répondre au besoin d'inférence en temps réel sur le terrain, afin d'éviter le transfert de données et le traitement à distance et différé. 
+\par L'objet d'étude de cet essai est le nano ordinateur "Jetson Nano" du fabricant "NVIDIA" (figure \ref{fig:jetson_nano_lego}). Ce modèle a été choisi car il a été conçu par la compagnie NVIDIA spécifiquement pour répondre au besoin d'inférence en temps réel sur le terrain, afin d'éviter le transfert de données et le traitement à distance et différé. 
 \par L'architecture du nano ordinateur est ARM 64 bits (aarch64), ce qui le limite pour certaines portabilités de librairies, surtout dans le domaine assez restreint de la recherche, ou l'architecture la plus populaire et portable est x86-64. 
 \par Il est composé d'un quad-core ARM Cortex-A57, qui est conçu pour ce genre de nano ordinateur, comme le Raspberry Pi.
 \par Les performances GPU sont faibles, 0.5 TFLOPs (16FP; 16bits/2 bytes floating points). Par comparaison la PlayStation 4 Pro (2016) supporte +4 TFLOPs. 
@@ -24,11 +24,11 @@
 \footnotetext{\url{https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra\%2520Linux\%2520Driver\%2520Package\%2520Development\%2520Guide\%2Foverview.html\%23}}
 \par Python et le C++ sont les langages utilisés par le framework de DeepLearning de NVIDIA. Python est utilisé comme langage accessible et appelle les extensions écrites en C++ et qui optimisent les accès aux ressources systèmes tel que les CPUs et GPUS, les traitements des images et vidéos, les boucles et les traitements mémoires intensifs.
 \par La librairie d’apprentissage profond qui sera utilisée est PyTorch, bonifié avec une version adaptée par NVIDIA de torchvision, qui fournit des modèles d'architecture et des utilitaires pour la vision par ordinateur (computer vision). Des versions bien spécifiques sont nécessaires et il est important de s'y conformer au risque de tomber dans une investigation bien couteuse en temps et énergie\footnote{\url{https://forums.developer.nvidia.com/t/trying-to-regenerate-onnx-for-jetson-nano/125494?u=vincelf}}.
-\par Le nano ordinateur inclut un GPU qui est mis à contribution lors de l'inférence. Le compilateur de NVIDIA pour GPU 'cuda' est nécessaire pour régénérer le .onnx lors de la phase d'adoption. La version doit concorder avec la bonne version de PyTorch. La version adaptée (fork) de torchvision doit être recompilée avec la bonne version de pytorch et cuda. 
-\par Enfin pour régénérer le .onnx lors de la phase d'adaptation, les librairies TensorRT et ONNX ont été utilisées, en compagnie de l'utilitaire `trtexec` qui permet de valider et tester le fichier .onnx généré.
+\par Le nano ordinateur inclut un GPU qui est mis à contribution lors de l'inférence. Le compilateur de NVIDIA pour GPU 'cuda' est nécessaire pour re générer le .onnx lors de la phase d'adoption. La version doit concorder avec la bonne version de PyTorch. La version adaptée (fork) de torchvision doit être recompilée avec la bonne version de pytorch et cuda. 
+\par Enfin pour re générer le .onnx lors de la phase d'adaptation, les librairies TensorRT et ONNX ont été utilisées, en compagnie de l'utilitaire `trtexec` qui permet de valider et tester le fichier .onnx généré.
 \par Lors de la phase d'évaluation des performances systèmes, les utilitaires tegrastats, free, iotop ont été utilisés.
 {
-    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \vspace{0.1em} % Adjust the height of the space between caption and tabular
     \begin{longtable}[t]{{@{}|p{5em}|p{3em}|p{3em}|p{24em}|@{}}} % p{15em}p{35em} with landscape
         \caption{Solutions logicielles de l'essai}\label{table:table_sol_logiciel}\\
         \hline

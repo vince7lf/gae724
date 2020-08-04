@@ -2,7 +2,7 @@
 \subsubsection{Stockage de données}
 \par Pour tester les performances de la microSD et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" peut être facilement utilisé. 
 {
-   \vspace{0.3em} % Adjust the height of the space between caption and tabular
+   \vspace{0.1em} % Adjust the height of the space between caption and tabular
    \renewcommand*{\arraystretch}{1.4}
    \begin{longtable}[t]{@{}|p{25em}|p{2em}|p{2em}|p{3em}|@{}} 
       \caption{Comparaison des performances du "data read" entre un SDD M.2 NVMe et une microSD}\label{tab:Timing O_DIRECT disk reads}\\
@@ -96,10 +96,9 @@
 \subsection{Performances de l'inférence}
 \subsubsection{Images}
 \par Les tests ont été faits avec le modèle "fcn-resnet18-deepscene-576x320" fourni par NVIDIA. 
-\par Lors de l'entrainement et l'inférence, le script montre un \acrshort{iou} moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le \acrshort{iou} et le Z-score (Dice) de la segmentation sémantique de la piste cyclable uniquement.
+\par Lors de l'entrainement et l'inférence, le script montre un \acrshort{iou} moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le \acrshort{iou} et le "F1 score" de la segmentation sémantique de la piste cyclable uniquement.
 \par Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version vérité terrain (\acrshort{gt}). L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain (\acrshort{gt}), tant que la palette de couleur est identique à la version vérité terrain (\acrshort{gt}). 
-\par Il s'avère que le \acrshort{iou} et "Dice score" sont assez élevés pour les deux photos. 
-\par {\color{red}Ajout de la photo originale \todo{TODO}}
+\par Il s'avère que le \acrshort{iou} et "F1 score" sont assez élevés pour les deux photos. 
 \par{
    \definecolor{trail}{RGB}{170, 170, 170}
    \definecolor{grass}{RGB}{0, 255, 0}
@@ -110,30 +109,32 @@
    \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
    \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
    \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
-   \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
+   % \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
 }
+\par {\color{red}Ajout de la photo originale \todo{TODO}}
 \begin{figure}[H]
    \centering
-   \includegraphics[width=1\textwidth]{b1-09517_Clipped}
+   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped}
    \caption{vérité terrain (\acrshort{gt}) de l'image b1-09517}
    \label{fig:b1-09517_Clipped}
 \end{figure}
 \begin{figure}[H]
    \centering
-   \includegraphics[width=1\textwidth]{b1-09517_Clipped_pred_new_color}
-   \caption{Segmentation sémantique de l'image b1-09517 générée par le modèle. Le \acrshort{iou} et le "Dice score" pour le chemin sont de +80\%.}
+   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped_pred_new_color}
+   \caption{Segmentation sémantique de l'image b1-09517 générée par le modèle. Le \acrshort{iou} et le "F1 score" pour le chemin sont de +80\%.}
    \label{fig:b1-09517_Clipped_pred_new_color}
 \end{figure}
+\par {\color{red}Ajout de la photo originale \todo{TODO}}
 \begin{figure}[H]
    \centering
-   \includegraphics[width=1\textwidth]{b378-61_mask}
+   \includegraphics[width=0.75\textwidth]{b378-61_mask}
    \caption{vérité terrain (\acrshort{gt}) de l'image b378-61}
    \label{fig:b378-61_mask}
 \end{figure}
 \begin{figure}[H]
    \centering
-   \includegraphics[width=1\textwidth]{b378-61_mask_pred_new_color}
-   \caption{Segmentation sémantique de l'image b378-61 générée par le modèle. Le \acrshort{iou}pour le chemin est +69\%.}
+   \includegraphics[width=0.75\textwidth]{b378-61_mask_pred_new_color}
+   \caption{Segmentation sémantique de l'image b378-61 générée par le modèle. Le \acrshort{iou} pour le chemin est +69\%.}
    \label{fig:b378-61_mask_pred_new_color}
 \end{figure}
 \subsubsection{Vidéos}
@@ -149,7 +150,7 @@
     \begin{table}[ht]
     \centering
     \caption{Résolutions et images par seconde (\acrshort{fps}) testés}\label{table:resolutions_tested}
-    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \vspace{0.1em} % Adjust the height of the space between caption and tabular
     \begin{tabular}{{@{}|p{12cm}|@{}}}
          \hline
          \textbf{Résolutions qui fonctionnent}\\

@@ -1,5 +1,5 @@
 ﻿\myparagraph{Préparation et post-traitement}
-\par Afin de pouvoir mesurer les performances de la segmentation (IoU, z-score), les classes et la palette de couleur entre l'image vérité terrain (\acrshort{gt}) et celles prédites doivent être les mêmes.
+\par Afin de pouvoir mesurer les performances de la segmentation (IoU, F1 score), les classes et la palette de couleur entre l'image vérité terrain (\acrshort{gt}) et celles prédites doivent être les mêmes.
 \par L'image vérité terrain (\acrshort{gt}) du jeu de donnée original DeepScene ne possède pas la même palette de couleur ni exactement les mêmes classes que celle du modèle.
 \par Un travail d'uniformisation est nécessaire avant la segmentation, qui est résumée dans le tableau \ref{table:classes_palette_couleur}.
 {
@@ -7,7 +7,7 @@
     \begin{table}[h]
     \centering
     \caption{Classes et palettes de couleur}\label{table:classes_palette_couleur}
-    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \vspace{0.1em} % Adjust the height of the space between caption and tabular
     \begin{tabular}{{@{}|p{4em}|p{6em}||p{4em}|p{6em}||p{4em}|p{6em}|@{}}}
         \hline
         \multicolumn{2}{|c||}{\textbf{DeepScene}} & \multicolumn{2}{c||}{\textbf{NVIDIA}} & \multicolumn{2}{c|}{\textbf{Consolidée}} \\
@@ -35,4 +35,4 @@
 \myparagraph{Segmentation et évaluation}
 \par Afin de tester la performance de la segmentation du modèle, deux images du jeu de données de DeepScene seront utilisées, car ce jeu contient déjà les images vérités terrain (\acrshort{gt}), un gain de temps non négligeable dans le cadre de l'essai. Uniquemement la classe "Trail" sera évaluée.
 \par L'architecture fournit à l'utilitaire "segnet-console" est "fcn-resnet18-deepscene-576x320" \footnote{\url{segnet-console -{}-network=fcn-resnet18-deepscene -{}-visualize=mask -{}-alpha=10000 images/city_0.jpg output.jp}}. 
-\par Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le \acrshort{iou}et le Z-Score de la classe de l'image prédite par le modèle.
+\par Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le \acrshort{iou} et le Z-Score de la classe de l'image prédite par le modèle.

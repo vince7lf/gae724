@@ -3,11 +3,11 @@
     \item Tout d'abord, les indicateurs de performances.
     \begin{itemize}
         \item Les performances matérielles durant l'inférence seront évaluées grâce aux indicateurs fournies par les utilitaires 'Tegrastats' de NVIDIA, 'free' et 'iotop'. Ces utilitaires sont brièvement décrit dans le tableau \ref{table:table_sol_logiciel}.
-        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques\footnote{\url{https://ilmonteux.github.io/2019/05/10/segmentation-metrics.html}}: "IoU" ("Intersection Over Union", ou "Jaccard") et le "Z-Score" (ou "Dice").
+        \item Les performances de la segmentation seront évaluées avec les indicateurs classiques\footnote{\url{https://ilmonteux.github.io/2019/05/10/segmentation-metrics.html}}: le "\acrshort{iou}" ("\acrlong{iou}", ou "Jaccard index"), et le "F1 score" (ou "Dice coefficient").
     \end{itemize}
     \item Ensuite, différentes résolutions d'images et de vidéos seront utilisées pour déterminer lesquelles sont supportées par le modèle évalué, tel qu'indiqué dans la section "\ref{section:resolutions_to_be_tested} \nameref{section:resolutions_to_be_tested}". 
     \item Les images et vidéos qui sont à notre disposition pour être évaluée proviennent de différentes sources de données, tel que décrit dans la section "\ref{section:collecte_donnees} \nameref{section:collecte_donnees}". 
-    \item \item Enfin plusieurs modèles ont été sélectionnés comme candidats intéressants pour l'évluation, et décrit dans la section "\ref{choix_modele_architecture} \nameref{section:choix_modele_architecture}".
+    \item \item Enfin plusieurs modèles ont été sélectionnés comme candidats intéressants pour l'évaluation, et décrit dans la section "\ref{section:choix_modele_architecture} \nameref{section:choix_modele_architecture}".
 \end{itemize} 
 \label{metho_eval}
 \begin{figure}[H]
@@ -41,15 +41,15 @@
 \par Ensuite les tests débutent. 
 \par Les indicateurs collectés permettent de créer des graphiques qui montrent la progression de chacun.
 \par Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA, "free" et "iotop".
-\par Les performances de la segmentation sont évaluées grâce au\acrshort{iou}et au z-score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions\acrshort{iou}et le z-score utilisent l'image prédite (généré par le modèle FCN) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
+\par Les performances de la segmentation sont évaluées grâce au \acrshort{iou} et au F1 score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions \acrshort{iou} et le F1 score utilisent l'image prédite (généré par le modèle FCN) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
 \subsubsection{Résolutions évaluées}\label{section:resolutions_to_be_tested}
 Voici dans le tableau \ref{table:resolutions_to_be_tested} les résolutions et images par seconde qui seront évaluées. 
 {
     \renewcommand*{\arraystretch}{1.4}
     \begin{table}[ht]
     \centering
-    \caption{Résolutions et images par seconde (\acrshort{fps}) à tester}\label{table:resolutions_to_be_tested}
-    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \caption{Résolutions et images par seconde (\acrshort{fps}) qui seront évaluées}\label{table:resolutions_to_be_tested}
+    \vspace{0.1em} % Adjust the height of the space between caption and tabular
     \begin{tabular}{{@{}|p{12cm}|@{}}}
          \hline
          \textbf{Résolutions}\\

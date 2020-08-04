@@ -17,13 +17,19 @@
     \label{fig:montage_nano_ordinateur}
 \end{figure}
 \mysubparagraph{Préparation de la carte mère Jetson Nano}
+% \begin{wrapfigure}{R}{0.25\textwidth}
+%     \includegraphics[width=0.25\textwidth]{metho_recherche}
+% \end{wrapfigure}
+% \begin{wrapfigure}{R}{0.25\textwidth}
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{jetson_nano}
+\centering
+    \includegraphics[width=0.4\textwidth]{jetson_nano}
     \caption{Carte mère du nano ordinateur}
     \label{fig:jetson_nano}
 \end{figure}
+% \end{wrapfigure}
 \par Le nano ordinateur qui est livré dans sa boite est uniquement une carte mère, sans unité de stockage, ni boitier, clavier, souris, écran, capacité wifi, ou caméra. Il est uniquement livré avec un câble micro USB qui lui permet d'être démarré avec une alimitation minimale de 5 Volts/2Amp et ne consommer que 5 Watts. Aucun système d'exploitation n'est livré non plus. Vu que de l'objectif de l'essai est de tester les capacités du nano ordinateur et que la consommation sera de plus de 5Watt due aux branchements de multiples périphériques, certaines "broches" sur la carte mère doivent être activées:  la broche J48 permet de brancher un adaptateur d'alimentation de 5Volts 4Amp au lieu de l'alimentation micro USB; et la broche J38 permet d'activer le PoE (Power-Over-Ethernet) afin d'hériter de l'alimentation du câble Ethernet. Aucune autre préparation sur la carte n'est nécessaire.
+
 \mysubparagraph{Alimentation}
 \begin{figure}[H]
     \centering
@@ -36,7 +42,7 @@
 \mysubparagraph{Boitier}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.45\textwidth]{boitier}
+    \includegraphics[width=0.35\textwidth]{boitier}
     \caption{Boitier pour le nano ordinateur}
     \label{fig:boitier}
 \end{figure}
@@ -57,11 +63,11 @@ seront évaluées:
     \begin{table}[ht]
     \centering
     \caption{Cartes microSD}\label{table:cartes_microSD}
-    \vspace{0.3em} % Adjust the height of the space between caption and tabular
+    \vspace{0.1em} % Adjust the height of the space between caption and tabular
     \begin{tabular}{l}
-        \includegraphics[width=0.15\textwidth]{micro_sd_evo_plus} microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10\\
-        \includegraphics[width=0.15\textwidth]{micro_sd_evo} microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10\\
-        \includegraphics[width=0.15\textwidth]{Microsd card Scan Disk Ultra 32Gb class 10 HC I} microSD Scan Disk Ultra 32Gb HC I Class 10\\
+        \includegraphics[width=0.10\textwidth]{micro_sd_evo_plus} microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10\\
+        \includegraphics[width=0.10\textwidth]{micro_sd_evo} microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10\\
+        \includegraphics[width=0.10\textwidth]{Microsd card Scan Disk Ultra 32Gb class 10 HC I} microSD Scan Disk Ultra 32Gb HC I Class 10\\
     \end{tabular}
     \end{table}
 }
@@ -84,7 +90,7 @@ seront évaluées:
 \mysubparagraph{Caméra}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.40\textwidth]{camera}
+    \includegraphics[width=0.25\textwidth]{camera}
     \caption{Caméra}
     \label{fig:camera}
 \end{figure}
@@ -93,7 +99,7 @@ seront évaluées:
 \mysubparagraph{Ventilateur}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.35\textwidth]{fan}
+    \includegraphics[width=0.25\textwidth]{fan}
     \caption{Ventilateur}
     \label{fig:fan}
 \end{figure}
@@ -101,7 +107,7 @@ seront évaluées:
 \mysubparagraph{Hub USB externe 3.0 4 ports}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{Powered USB Hub 3.0, Atolla 7-Port USB Data Hub Splitter with One Smart Charging}
+    \includegraphics[width=0.3\textwidth]{Powered USB Hub 3.0, Atolla 7-Port USB Data Hub Splitter with One Smart Charging}
     \caption{Hub USB 3.0 externe autoalimenté}
     \label{fig:hubusb}
 \end{figure}
