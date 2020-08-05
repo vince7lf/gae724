@@ -7,12 +7,47 @@
    \item Synthèse des capacités et des limites des modèles de réseaux de neurones pour la segmentation sémantique en temps réel de la zone d’études;
    \item Recommandations;
 \end{itemize}
-}
-\subsection{Matériel}
-\subsection{Segmentation}
-\subsection{Adaptation}
-L'objectif principal de 
+
+\par Voici en bref les sous-objectifs, avec un peu plus de détails par la suite pour chacun d'eux: 
 \begin{itemize}
-   \item 2ème modèle adapté avec des nouvelles classes (mouillée, sèche, ensoleillé, ombragé, glace)
-   \item perspective Jetson AGX Xavier
+   \item Évaluer les limites de la plateforme, matérielle et applicative; 
+   \item Trouver des moyens d'optimiser la plateforme, au besoin, d'un point de vue matériel, mais aussi applicatif; 
+   \item Permettre un accès à distance sécurisé au nano ordinateur;
+   \item Documenter l'approche, les tests, et les résultats;
+\end{itemize}
+}
+\subsection{Objectif principal}
+\par L'objectif principal de l'essai était d'évaluer la capacité du nano ordinateur "NVIDIA Jetson Nano" à exécuter, en temps réel, un modèle de réseau de neurones à convolution entier (\acrshort{fcn}) permettant la segmentation sémantique d'une vidéo d'une piste multifonctionnelle. Il faut découper en plusieurs faits cet objectif afin de bien pouvoir l'évaluer: 
+\begin{itemize}
+   \item Le nano ordinateur est capable d'inférer un modèle \acrshort{fcn} pour segmenter sémantiquement une vidéo représentant une piste cyclable. 
+   \item La segmentation sémantique découlant de l'inférance n'a pas pu être mesurée, il n'y a aucun moyen qui m'est connu afin de récupérer un indicateur, un coefficient ou un score me permettant de juger si la segmentation d'une vidéo est bonne ou non, comme pour une image ou la mesure du \acrshort{iou} ou du F1 score est possible si l'image de la vérité terrain (\acrshort{gt}) est disponible. 
+   \item L'image générée par le modèle FCN SegNet18 a une résolution très faible, de l'ordre de 19x10. La délimitation de la ségmentation, entre chaque classe, est donc très très grossière.
+   \item Le "temps réel" à été simulé, et n'est donc pas celui qui sera utilisé sur le terrain. 
+   \item le nano ordinateur et le modèle FCN supporte l'inférence d'une vidéo HD (résolution de 720x1280 = 720p) avec un nombre d'image par seconde de 60/1 \acrshort{fps}.
+\end{itemize}   
+\par D'un point de vue performance matérielle et logicielle, le nano ordinateur est capable d'inférer avec un modèle \acrshort{fcn} une vidéo pour la segmenter. Par contre, d'un point de vue qualitatif, 1) la qualité de la segmentation ne peut pas être mesurée. De plus, 2) la segmentation prédite est très imprécise.
+\par La première contrainte qualitative semble être un défaut majeur. Mais si on replace l'objectif dans le contexte de la détection de la délimitation d'une piste cyclable, à partir d'un point de vue fixe, on peut questionner le besoin de faire de la télé-détection en temps réel avec une vidéo en haute résolution.
+\par La deuxième  contrainte pourrait potentiellement être améliorée en utilisant un modèle dont l'architecture est plus performante, mais implicitement plus complexe, tel que le modèle SegNet101 ou DeepLabV3, mais qui risque d'être aussi plus demandant en ressources matérielle, GPU, CPU et mémoire. Ce qui risque de remettre en question les performances matérielles et logicielles du nano ordinateur. C'est ainsi probablemet la raison pour laquelle NVIDIA procure uniquement des jeux de modèles pré-entrainés de segmentation sémantique avec SegNet18 pour le nano ordinateur. 
+\subsection{Limites}
+\subsubsection{Limites matérielles}
+\par Au sujet des limites matérielles, durant l'inférence, il n'y a aucune limite qui sont ressorties lors des tests de performance. Par contre il a été lue qu'un mode opérationel 24/7 n'offrait qu'une durée de vie de 4.4 années au nano ordinateur. 
+\subsubsection{Limites applicatives}
+\par Au sujet des limites applicatives, durant l'inférence, il n'y a aucune limite qui sont ressorties lors des tests de performance. Par contre il a été observé durant l'essai que le nano ordinateur ne devrait pas être utilisé comme machine de développement, pour par exemple pour re entrainé un modèle. L'entrainement du modèle SegNet18 n'a pas fonctionné dans un environnement virtuel Python, ni dans un conteneur Docker sur le nano ordinateur, celui-ci arrête de fonctionner. Il n'y a pas eu d'investigation, mais il semble que le nano ordinateur atteinds une limite mémoire qui le ralenti jusqu'à un arrêt de fonctionnement. DIGITS ne peut pas non plus être utilisé car il n'est pas compatible avec l'architecture ARM du nano ordinateur. Si l'objectif est d'améliorer le modèle en le ré entrainant à la demande en mode opérationnel, l'entrainement et l'inférence ne peuvent co-habiter simultanéement, cela me semble donc impossible aujourd'hui, à moins d'investiguer et de trouver un moyen d'optimiser les ressources.
+\par Durant l'essai, il a aussi été observé que l'utilisation prolongé de Chromium peut impacter les performances du nano ordinateur en le ralentissant grandement. 
+\subsection{Optimisation}
+\subsubsection{Optimisation matérielle}
+\par Plusieurs initiatives ont été tentées afin d'optimiser le matériel. L'optimisation requise est celle d'utiliser un adapteur 5V 4Amp, recommandé et fiable, afin de fournir assez de puissance au nano ordinateur lorsque d'autres périophériques viennent s'y raccorder, comme une caméra et un ventilateur. Profiter du PoE de l'interface réseau n'a pas été testé, mais cela semble aussi être une option rapide et simple à mettre en place pour assister l'adapteur. Enfin, forcer le démarrage du ventilateur dés le démarrage du nano ordinateur est une autre optimisation simple mais efficace a appliquer. Par contre, je ne recommande pas l'utilisation d'une dongle ou adapteur Wifi, celui-ci étant très énergivore, peu efficace, non fiable ni stable. Il prendrait de plus un pourcentage d'utilisation non négligeable du Hub USB 3.0. 
+\par La seconde optimisation qui a été logiquement tenté est celle d'utiliser un \acrshort{ssd} à la place d'une microSD, car il y aurait, selon moi, beaucoup d'avantages. Pour des raisons de performances d'abord, le gain peut-être d'au moins 4 fois plus grand en opération de lecture I/O. Ensuite, en durée de vie, une carte microSD est fragile et ne peut être considéré comme un système fiable sur le long terme. D'un point de vue capacité de stockage, un \acrshort{ssd} peut offir beaucoup mieux. Enfin, un \acrshort{ssd} est plus adapté à la gestion d'un système opérationnelle et la manipulation de petits fichiers. En contre partie, un SSD va demander plus de puissance (Watt) au nano ordinateur, et générer plus de chaleur. Ma recommandation serait de trouver un disque \acrshort{ssd} interne au format NVMe, connecteur de type M.2, assez pratique pour être branché au port PCIe du nano ordinateur.
+\par Une autre optimisation matérielle qui n'est pas à négliger est le boitier. Vu que le système a été conçu pour être en opération continue sur le terrain, un boitier bien conçu permet de le protéger sur le long terme. Il doit être bien adapté à ses périphériques, que sont la caméra et le ventilateur, et optionnellement un \acrshort{ssd} interne.
+\subsubsection{Optimisation applicative}
+\myparagraph{Segmentation}
+\myparagraph{Adaptation}
+\subsection{Accès distant}
+\subsection{Documentation}
+
+\par Perspective: 
+\begin{itemize}
+   \item architecture plus performante;
+   \item (hors sujet !) 2ème modèle adapté avec des nouvelles classes pour la détection de la surface de la piste (mouillée, sèche, ensoleillé, ombragé, glace);
+   \item perspective Jetson AGX Xavier;
 \end{itemize}
