@@ -99,38 +99,52 @@
 \par Lors de l'entrainement et l'inférence, le script montre un \acrshort{iou} moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le \acrshort{iou} et le F1 score de la segmentation sémantique de la piste cyclable uniquement.
 \par Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version vérité terrain (\acrshort{gt}). L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain (\acrshort{gt}), tant que la palette de couleur est identique à la version vérité terrain (\acrshort{gt}). 
 \par Il s'avère que le \acrshort{iou} et F1 score sont assez élevés pour les deux photos pour la classe "Chemin". 
-\par{
-   \definecolor{trail}{RGB}{170, 170, 170}
-   \definecolor{grass}{RGB}{0, 255, 0}
-   \definecolor{vegetation}{RGB}{102, 102, 51}
-   \definecolor{sky}{RGB}{0, 120, 255}
-   \definecolor{obstacle}{RGB}{0, 0, 0}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped.jpg}
+   \caption{Vérité terrain (\acrshort{gt}) de l'image b1-09517}
+   \label{fig:b1-09517_Clipped}
+\end{figure}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped}
+   \caption{Image originale b1-09517}
+   \label{fig:b1-09517_Clipped}
+\end{figure}
+{
+   \centering
    \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
    \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
    \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
    \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
    % \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
 }
-\par {\color{red}Ajout de la photo originale \todo{TODO}}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped}
-   \caption{Vérité terrain (\acrshort{gt}) de l'image b1-09517}
-   \label{fig:b1-09517_Clipped}
-\end{figure}
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.75\textwidth]{b1-09517_Clipped_pred_new_color}
    \caption[Segmentation sémantique de l'image b1-09517 générée par le modèle]{Segmentation sémantique de l'image b1-09517 générée par le modèle. Le \acrshort{iou} et le F1 score pour le chemin sont de +80\%.}
    \label{fig:b1-09517_Clipped_pred_new_color}
 \end{figure}
-\par {\color{red}Ajout de la photo originale \todo{TODO}}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\textwidth]{b378-61_Clipped.jpg}
+   \caption{Image originale b378-61}
+   \label{fig:b378-61_mask}
+\end{figure}
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.75\textwidth]{b378-61_mask}
    \caption{Vérité terrain (\acrshort{gt}) de l'image b378-61}
    \label{fig:b378-61_mask}
 \end{figure}
+{
+   \centering
+   \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
+   \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
+   \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
+   \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
+   \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
+}
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.75\textwidth]{b378-61_mask_pred_new_color}
