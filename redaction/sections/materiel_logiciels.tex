@@ -7,9 +7,9 @@
 \end{figure}
 \par L'objet d'étude de cet essai est le nano ordinateur "Jetson Nano" du fabricant "NVIDIA" (figure \ref{fig:jetson_nano_lego}). Ce modèle a été choisi car il a été conçu par la compagnie NVIDIA spécifiquement pour répondre au besoin d'inférence en temps réel sur le terrain, afin d'éviter le transfert de données et le traitement à distance et différé. 
 \par L'architecture du nano ordinateur est ARM 64 bits (aarch64), ce qui le limite pour certaines portabilités de librairies, surtout dans le domaine assez restreint de la recherche, ou l'architecture la plus populaire et portable est x86-64. 
-\par Il est composé d'un quad-core ARM Cortex-A57, qui est conçu pour ce genre de nano ordinateur, comme le Raspberry Pi.
-\par Les performances \acrshort{gpu} sont faibles, 0.5 \acrshort{tflops} (16 FP = 16 bits FP = 2 bytes Floating Points). Par comparaison la PlayStation 4 Pro (2016) supporte +4 \acrshort{tflops}. 
-\par La mémoire est limitée à 6GB. 
+\par Il est composé d'un quad-core ARM Cortex-A57 @ 1.43 GHz, qui est conçu pour ce genre de nano ordinateur, comme le Raspberry Pi.
+\par Les performances \acrshort{gpu} sont de 128-cores du Maxwell @ 921 MHz, 0.5 \acrshort{tflops} (16 FP = 16 bits FP = 2 bytes Floating Points). Par comparaison la PlayStation 4 Pro (2016) supporte +4 \acrshort{tflops}. 
+\par La mémoire est limitée à 4Gb LPDDR4 @ 1.6 GHz.
 \par Les autres caractéristiques à considérer sont le port pour une carte microSD, un port Ethernet 10/100/1000Mbs, un port HDMI, un hub USB 4 ports 3.0, un connecteur pour une caméra, et un port PCIe.
 \myparagraph{Logiciels}
 \par De même que pour les périphériques, les solutions logiciels principaux qui seront utilisés dans le cadre de l'essai sont résumés dans le tableau suivant, où il est indiqué leur nom, le type de licence, leur version, leurs rôles et responsabilités, comme pour le système d'exploitation, l'environnement de développement pour l'apprentissage profond, l'inférence, les logiciels de traitements vidéos et d'images. 
