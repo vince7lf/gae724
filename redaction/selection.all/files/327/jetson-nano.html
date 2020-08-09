@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" class="js csstransforms csstransforms3d csstransitions" lang="en"><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8"><script src="nr-1130.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="auth0.js"></script>
+<script src="dz-auth.js"></script>
+<link rel="shortcut icon" href="https://developer.nvidia.com/sites/all/themes/embedded/favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="description" content="Jetson Nano is a small, powerful computer for embedded applications and AI IoT that delivers the power of modern AI in a $129 module. Get started fast with the comprehensive JetPack SDK with accelerated libraries for deep learning, computer vision, graphics, multimedia, and more.">
+<meta name="robots" content="follow, index">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="https://developer.nvidia.com/embedded/jetson-nano">
+<link rel="shortlink" href="https://developer.nvidia.com/node/881502">
+<meta property="og:site_name" content="NVIDIA Developer">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://developer.nvidia.com/embedded/jetson-nano">
+<meta property="og:title" content="Jetson Nano">
+<meta property="og:description" content="Jetson Nano is a small, powerful computer for embedded applications and AI IoT that delivers the power of modern AI in a $129 module. Get started fast with the comprehensive JetPack SDK with accelerated libraries for deep learning, computer vision, graphics, multimedia, and more.">
+<meta property="og:updated_time" content="2019-08-13T17:36:45-07:00">
+<meta property="article:published_time" content="2019-03-06T17:38:26-08:00">
+<meta property="article:modified_time" content="2019-08-13T17:36:45-07:00">
+  <title>Jetson Nano | NVIDIA Developer</title>
+  <link type="text/css" rel="stylesheet" href="css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all">
+<link type="text/css" rel="stylesheet" href="css_hTLrwzbU9bZhjvzx-j5entbJFEHkjJyd6RgHEla8FhA.css" media="all">
+<link type="text/css" rel="stylesheet" href="css_VWGhZkkR4B4tMJA7PC_wov8dAxaI-MS03BCM3K8jjJA.css" media="screen">
+<link type="text/css" rel="stylesheet" href="css_SszGAe6JK9B9hacWsnKVSEo-uYCROkU91NHCZszWJpU.css" media="all">
+<link type="text/css" rel="stylesheet" href="css_jENQOQqZCRFGZK__DTefxYiXR2RUf03k1ugj3_Vg7vk.css" media="all">
+<link type="text/css" rel="stylesheet" href="dz-auth.css" media="all">
+<link type="text/css" rel="stylesheet" href="css_dxTC2SnbUQpi6ay7fqSk9MkxtE4JRKtOHqpCvu7mKNQ.css" media="all">
+<link type="text/css" rel="stylesheet" href="css_eEYBsdaxdQQIlGKrYmJS0ICWQ5IfWfqWHOHw3Pv8lME.css" media="all">
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="js_b3CE8FGnsqqQIkfcKCuPN4xwA2qS2ziveSO6I2YYajM.js"></script>
+<script src="js_oZD9-WvfiElJ5KPavqu9ZAQiZcfWlzNCzxFHpedR9dI.js"></script>
+<script src="satelliteLib-7ba51e58dc61bcb0e9311aadd02a0108ab24cc6c.js"></script>
+<script src="js_JP3TlCqKqiqPuAoTWfdvYhA4HjA1QSa33gLy1Yy6iPA.js"></script>
+<script src="js_oRBVbrZV7FAqu356imAriqUbp3bcQkSf7vs-78D-bp8.js"></script>
+<script src="js_t1JTY15zZ5UGOUp-FDbmU5CUqXa9qIEoXibR3dWh7TQ.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"embedded","theme_token":"WRcJgyhOGFOIhOTKpRQg2V-F6JTPJg9bYJjwPWGwX-0","js":{"0":1,"1":1,"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js":1,"\/\/assets.adobedtm.com\/b92787824f2e0e9b68dc2e993f9bd995339fe417\/satelliteLib-7ba51e58dc61bcb0e9311aadd02a0108ab24cc6c.js":1,"sites\/all\/modules\/contrib\/codefilter\/codefilter.js":1,"sites\/all\/modules\/contrib\/gss\/scripts\/autocomplete.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/hint\/hint.js":1,"sites\/all\/themes\/devzone_base\/js\/jquery.migrate.min.js":1,"sites\/all\/themes\/devzone_base\/js\/jquery.isotope.js":1,"sites\/all\/themes\/devzone_base\/js\/jquery.sidr.js":1,"sites\/all\/themes\/devzone_base\/js\/application.js":1,"sites\/all\/themes\/devzone_base\/js\/scripts.js":1,"sites\/all\/themes\/devzone_base\/js\/adroll.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/affix.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/alert.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/button.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/carousel.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/collapse.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/dropdown.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/modal.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/tooltip.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/popover.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/scrollspy.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/tab.js":1,"sites\/all\/themes\/devzone_base\/bootstrap\/js\/transition.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"sites\/all\/modules\/contrib\/codefilter\/codefilter.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"https:\/\/developer.nvidia.com\/register\/dz-auth.css?v=3.2.5c":1,"sites\/all\/modules\/contrib\/addtoany\/addtoany.css":1,"sites\/all\/themes\/bootstrap\/css\/overrides.css":1,"sites\/all\/themes\/devzone_base\/css\/application.css":1,"sites\/all\/themes\/embedded\/css\/embedded.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"gss":{"key":"000841979776854404513:41w2zzjvamy"},"urlIsAjaxTrusted":{"\/embedded\/jetson-nano":true},"ogContext":{"groupType":"node","gid":"873372"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+<script src="satellite-5b9b547a64746d6c84000d75.js"></script><script src="satellite-5a2a191764746d7d40012cac.js"></script><script src="satellite-598bf07e64746d066f0018eb.js"></script><script src="satellite-599197ca64746d2c22002eb4.js"></script><script src="satellite-59faa79964746d2ebe00023e.js"></script><script src="satellite-594a6ce764746d506700c2a3.js"></script><script src="satellite-5991afef64746d6deb010d48.js"></script><script src="satellite-5991b02f64746d63240018f2.js"></script><script src="s-code-contents-72887b31a9638f8b3cff7981a426c38c354f6412.js"></script><script async="true" type="text/javascript" src="https://s.adroll.com/j/roundtrip.js"></script></head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-881502 node-type-page og-context og-context-node og-context-node-873372 published">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+
+<!--Navbar-->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="nvidia-dropdown">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <div class="logo-header">
+        <a class="navbar-brand first-logo" href="https://developer.nvidia.com/" title="Home">
+          <img alt="Home" src="nvidia.png">
+        </a>
+        <a class="navbar-brand second-logo" href="https://developer.nvidia.com/embedded-computing" title="Autonomous Machines">
+          <img alt="Autonomous Machines" src="logo.png">
+        </a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+
+              <ul class="menu nav navbar-nav primary"><li class="first expanded dropdown"><a href="https://developer.nvidia.com/embedded/develop" title="Information to help you develop great products using our Embedded Solutions" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Develop <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/develop/hardware" title="Information about our Embedded Solutions Hardware">Hardware</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/develop/software" title="Learn more about our comprehensive software for our Embedded Solutions">Software</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/develop/tools" title="Learn more about our extensive software tools to help your Embedded Development">Tools</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/develop/production" title="Get information and help to get your Embedded Solution into production">Production</a></li>
+</ul></div></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/downloads" title="Software and Firmware Downloads for our Embedded Computing Solutions">Downloads</a></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/embedded/community" title="Learn more how to engage with other Embedded Developers" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Community <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/community/ecosystem" title="">Ecosystem</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/community/support-resources" title="">Support Resources</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/community/jetson-projects" title="">Projects</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/community/reference-platforms" title="">Quick Start Platforms</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/embedded/learn" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Learn <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/learn/getting-started-jetson" title="">Getting Started</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/learn/tutorials" title="">Tutorials</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/learn/success-stories" title="">Success Stories</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/faq" title="">FAQ</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/embedded/jetson-sdks" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">SDKs <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetpack" title="">JetPack</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/deepstream-sdk" title="">DeepStream</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/isaac-sdk" title="">Isaac</a></li>
+</ul></div></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/buy-jetson" title="Buy the latest Jetson Development Kits">Buy</a></li>
+</ul>            <ul class="nav navbar-nav navbar-margin navbar-right navbar-margin-media login-nav">
+                  <li class="search" id="search-top">
+            <div class="search-form" id="search-top-form">
+              <form class="gss form-search content-search" action="/embedded/jetson-nano" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">Search form</h2>
+    <div class="input-group"><input title="Enter the terms you wish to search for." placeholder="Search..." class="form-control form-text" id="edit-search-block-form--2" name="search_block_form" size="15" maxlength="128" type="text"><span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+</button></span></div><div class="form-actions form-wrapper form-group" id="edit-actions"><button class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Search">Search</button>
+</div><input name="form_build_id" value="form-3OUefzb4-MSWw1F4kz8oaIsbWqRj_YWb73r4bRgy5HM" type="hidden">
+<input name="form_id" value="search_block_form" type="hidden">
+</div>
+</div></form>            </div>
+          </li>
+        
+        
+          
+                        <li class="leaf last" id="dzauth_login_link"><a href="javascript:jQuery.sidr('close');javascript:showDzAuth('login');">Account</a></li>
+          
+      </ul>
+  </div>
+</div>
+</nav>
+<nav class="navbar navbar-inverse second-navbar hidden-xs" role="navigation" id="nvidia-secondary-dropdown">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="menu nav navbar-nav secondary"><li class="first expanded active-trail active dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="active-trail dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson Nano <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" title="">Developer Kit</a></li>
+<li class="last leaf active-trail active"><a href="https://developer.nvidia.com/embedded/jetson-nano" title="" class="active-trail active">Module</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson TX1 <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first last leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx1" title="">Module</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson TX2 <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2-developer-kit" title="">Developer Kit</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2" title="">Module</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2-4gb" title="">TX2 4GB Module</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2i" title="">TX2i Module</a></li>
+</ul></div></li>
+<li class="last expanded dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson AGX Xavier <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit" title="">Developer Kit</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/jetson-agx-xavier" title="">Module</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/buy/jetson-agx-xavier-8gb" title="">8GB Module</a></li>
+</ul></div></li>
+</ul>                  </div>
+      </div>
+    </nav>
+
+<div id="wrapper">
+          
+  <div id="content-background" class="white-background">
+        <div id="console">
+      <div class="container">
+                      </div>
+    </div>
+    
+    <div class="separator"></div>
+    <div id="content" class="container">
+              <ol class="breadcrumb hidden-xs"><li><a href="https://developer.nvidia.com/">Home</a></li><li><a href="https://developer.nvidia.com/embedded-computing">Autonomous Machines</a></li><li><a href="https://developer.nvidia.com/buy-jetson">Buy</a></li><li class="active">Jetson Nano</li></ol>      
+                      <div class="separator"></div>
+      
+      
+      <div class="row">
+
+        
+        <section class="col-sm-12">
+                    <div class="page-header ">
+            <h1 class="title">
+              Jetson Nano            </h1>
+          </div>
+          
+                    <a id="main-content"></a>
+
+            <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div class="ds-1col node node-page view-mode-full clearfix">
+
+  
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><style>
+    /* NICE SECTION SPACERS */
+    .content-section-bottom-ruler {
+        min-height: 12em;
+        margin-bottom: 1.5em;
+        padding: 1em 0;
+    }
+  
+    .content-section-bottom-ruler {
+        border-bottom: 1px #EEE solid;
+    }
+
+</style>
+<section class="content-section">
+    <div class="seperator"></div>
+    <div class="row">
+        <div style="padding: 0.5em 3em;" class="col-md-5">
+            <img alt="Jetson Nano Module" class="img-responsive" src="nvidia-jetson-nano-module-standing-2c50-d.jpg" width="100%">
+            <div class="seperator"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="seperator visible-md visible-lg"></div>
+            <p>Jetson Nano is a small, powerful computer for embedded 
+applications and AI IoT that delivers the power of modern AI in a $129 
+module.</p>
+            <p>Get started fast with the comprehensive <a href="https://developer.nvidia.com/embedded/jetpack">JetPack SDK</a>
+ with accelerated libraries for deep learning, computer vision, 
+graphics, multimedia, and more. Jetson Nano has the performance and 
+capabilities you need to run modern AI workloads, giving you a fast and 
+easy way to add advanced AI to your next product. To get started with 
+your development process, check out the <a href="https://developer.nvidia.com/embedded/buy/jetson-nano-devkit">Jetson Nano Developer Kit</a>.</p>
+            <div style="margin-top: 0; text-align: right" class="row-of-buttons panel panel-borderless">
+                <a class="btn btn-md btn-default" href="https://developer.nvidia.com/buy-jetson?product=jetson_nano&amp;location=US">Buy Now <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="seperator"></div>
+</section>
+<section id="tech_specs" style="padding-top: 0.75em;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>
+                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseTechSpecs" style="text-transform: uppercase; font-weight: bold">Technical Specifications</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse in collapse" id="collapseTechSpecs" aria-expanded="true" style="">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td role="rowheader"><strong>GPU</strong></td>
+                                    <td>NVIDIA Maxwell architecture with 128 NVIDIA CUDA® cores</td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            CPU
+                                        </strong></td>
+                                    <td>
+                                        Quad-core ARM Cortex-A57 MPCore processor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Memory
+                                        </strong></td>
+                                    <td>
+                                        4 GB 64-bit LPDDR4, 1600MHz 25.6 GB/s
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Storage
+                                        </strong></td>
+                                    <td>
+                                        16 GB eMMC 5.1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Video Encode
+                                        </strong></td>
+                                    <td>
+                                        250MP/sec<br>
+                                        1x 4K @ 30 (HEVC)<br>
+                                        2x 1080p @ 60 (HEVC)<br>
+                                        4x 1080p @ 30 (HEVC)<br>
+                                        4x 720p @ 60 (HEVC)<br>
+                                        9x 720p @ 30 (HEVC)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Video Decode
+                                        </strong></td>
+                                    <td>
+                                        500MP/sec<br>
+                                        1x 4K @ 60 (HEVC)<br>
+                                        2x 4K @ 30 (HEVC)<br>
+                                        4x 1080p @ 60 (HEVC)<br>
+                                        8x 1080p @ 30 (HEVC)<br>
+                                        9x 720p @ 60 (HEVC)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Camera
+                                        </strong></td>
+                                    <td>
+                                        12 lanes (3x4 or 4x2) MIPI CSI-2
+                                        D-PHY 1.1 (1.5 Gb/s per pair)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Connectivity
+                                        </strong></td>
+                                    <td>
+                                        Gigabit Ethernet, M.2 Key E
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Display
+                                        </strong></td>
+                                    <td>
+                                        HDMI 2.0 and eDP 1.4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            USB
+                                        </strong></td>
+                                    <td>
+                                        4x USB 3.0, USB 2.0 Micro-B
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Others
+                                        </strong></td>
+                                    <td>
+                                        GPIO, I<sup>2</sup>C, I<sup>2</sup>S, SPI, UART
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td role="rowheader"><strong>
+                                            Mechanical
+                                        </strong></td>
+                                    <td>
+                                        69.6 mm x 45 mm<br>
+                                        260-pin edge connector
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="small">Please refer to NVIDIA documentation for what is currently supported, and the <a href="https://developer.nvidia.com/embedded/develop/hardware">Jetson Hardware</a> page for a comparison of all Jetson modules.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<section>
+    <div class="row">
+        <div class="col-md-10">
+            <h3>Questions?</h3>
+            <p>Please see the <a href="https://developer.nvidia.com/embedded/faq" title="Jetson FAQ | NVIDIA Developer">FAQ</a>, <a href="https://elinux.org/Jetson_Nano" target="_blank" title="Jetson Nano - eLinux.org">wiki</a> and post any questions you have to the <a href="https://devtalk.nvidia.com/default/board/371/jetson-nano/">NVIDIA Jetson Nano Forum</a>.</p>
+        </div>
+    </div>
+</section></div></div></div></div>
+
+
+</section>
+  </div>
+                  </section>
+
+        
+      </div>
+    </div>
+    <div class="separator"></div>
+  </div>
+  
+  <footer>
+    <div class="footer-links">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="padding-md-footer">
+                <div class="logo-footer"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 padding-section-footer">
+                <div class="region region-footer-menu">
+    <div class="block block-menu" id="block-menu-menu-footer-menu">
+  <div class="block-content zone-select">
+    <ul class="menu nav"><li class="first leaf"><a href="https://developer.nvidia.com/hpc" title="">HIGH PERFORMANCE COMPUTING</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/gameworks" title="">GAMEWORKS</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded-computing" title="">JETPACK</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/designworks" title="">DESIGNWORKS</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/drive" title="">DRIVE</a></li>
+</ul>  </div>
+</div>
+  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                            <div class="region region-footer">
+    <div class="block block-menu col-xs-12 col-sm-4 col-md-4 col-lg-4" id="block-menu-menu-embedded-cat1">
+<div class="padding-sub-footer">
+      <h5>
+      GET STARTED    </h5>
+      <div class="block-content">
+      <ul class="menu nav"><li class="first leaf"><a href="https://developer.nvidia.com/embedded/develop/hardware" title="">Hardware</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/develop/software" title="">Software</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/develop/tools" title="">Tools</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/develop/production" title="">Production</a></li>
+</ul>    </div>
+  </div>
+</div>
+<div class="block block-menu col-xs-12 col-sm-4 col-md-4 col-lg-4" id="block-menu-menu-embedded-cat2">
+<div class="padding-sub-footer">
+      <h5>
+      Learn More    </h5>
+      <div class="block-content">
+      <ul class="menu nav"><li class="first leaf"><a href="https://developer.nvidia.com/embedded/downloads" title="">Downloads</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/learn/tutorials" title="">Tutorials</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/community/ecosystem" title="">Ecosystem</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/support" title="">Support</a></li>
+</ul>    </div>
+  </div>
+</div>
+<div class="block block-menu col-xs-12 col-sm-4 col-md-4 col-lg-4" id="block-menu-menu-embedded-cat3">
+<div class="padding-sub-footer">
+      <h5>
+      GET INVOLVED    </h5>
+      <div class="block-content">
+      <ul class="menu nav"><li class="first leaf"><a href="https://developer.nvidia.com/embedded-developer-program-old" title="">Register</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/community" title="">Community</a></li>
+<li class="leaf"><a href="https://devtalk.nvidia.com/default/board/139/embedded-systems/" title="">Jetson Forums</a></li>
+<li class="leaf"><a href="http://elinux.org/Jetson" title="">Jetson Wiki</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/contact">Contact Us</a></li>
+</ul>    </div>
+  </div>
+</div>
+  </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-boilerplate">
+      <div class="container">
+        <div class="boilerplate">
+          <div class="col-xs-12 col-sm-12 col-lg-9 padding-sm-bottom">
+            Copyright © 2019 NVIDIA Corporation                          <ul class="legal_links"><li class="first leaf"><a href="https://www.nvidia.com/en-us/about-nvidia/legal-info/" title="">Legal Information</a></li>
+<li class="leaf"><a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" title="">Privacy Policy</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/contact" title="">Contact</a></li>
+</ul>                      </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  <script>var dzauth = {"settings":{"client_id":"4jljTejN7RMO9suL0S33gFrYgjHX0VcW","redirect_uri":"https:\/\/developer.nvidia.com\/auth0\/callback","custom_domain":"login.developer.nvidia.com","domain":"devzone.auth0.com","auto_login":true}};
+
+function nvidia_dzauth_register_and_redirect(redirect_destination) {
+  if(redirect_destination) {
+    history.pushState(null, '', redirect_destination);
+    showDzAuth('login');
+  }
+}
+
+function nvidia_dzauth_init() {
+  initDzAuth(dzauth);
+  if (typeof auth0 !== 'undefined') {
+    dzCheckSession(auth0);
+  }
+}
+nvidia_dzauth_init();
+</script>
+<script>_satellite.pageBottom();</script>
+<script src="js_MRdvkC2u4oGsp5wVxBG1pGV5NrCPW3mssHxIn6G9tGE.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6f2048d7bc","applicationID":"341156206","transactionName":"YFVbbEJQXhJTW0JRX1kfeFtEWF8PHWdEXUZeQ1BXXlheBm1OX11H","queueTime":0,"applicationTime":256,"atts":"TBJYGgpKTRw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div id="sidr" class="sidr left"><div class="sidr-inner">
+
+              <ul class="menu nav navbar-nav primary"><li class="first expanded dropdown"><a href="https://developer.nvidia.com/embedded/develop" title="Information to help you develop great products using our Embedded Solutions" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Develop <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/develop/hardware" title="Information about our Embedded Solutions Hardware">Hardware</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/develop/software" title="Learn more about our comprehensive software for our Embedded Solutions">Software</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/develop/tools" title="Learn more about our extensive software tools to help your Embedded Development">Tools</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/develop/production" title="Get information and help to get your Embedded Solution into production">Production</a></li>
+</ul></div></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/downloads" title="Software and Firmware Downloads for our Embedded Computing Solutions">Downloads</a></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/embedded/community" title="Learn more how to engage with other Embedded Developers" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Community <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/community/ecosystem" title="">Ecosystem</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/community/support-resources" title="">Support Resources</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/community/jetson-projects" title="">Projects</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/community/reference-platforms" title="">Quick Start Platforms</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/embedded/learn" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Learn <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/learn/getting-started-jetson" title="">Getting Started</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/learn/tutorials" title="">Tutorials</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/learn/success-stories" title="">Success Stories</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/faq" title="">FAQ</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/embedded/jetson-sdks" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">SDKs <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetpack" title="">JetPack</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/deepstream-sdk" title="">DeepStream</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/isaac-sdk" title="">Isaac</a></li>
+</ul></div></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/buy-jetson" title="Buy the latest Jetson Development Kits">Buy</a></li>
+</ul>            <ul class="nav navbar-nav navbar-margin navbar-right navbar-margin-media login-nav">
+                  <li class="search" id="search-top">
+            <div class="search-form" id="search-top-form">
+              <form class="gss form-search content-search" action="/embedded/jetson-nano" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">Search form</h2>
+    <div class="input-group"><input title="Enter the terms you wish to search for." placeholder="Search..." class="form-control form-text" id="edit-search-block-form--2" name="search_block_form" size="15" maxlength="128" type="text"><span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+</button></span></div><div class="form-actions form-wrapper form-group" id="edit-actions"><button class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Search">Search</button>
+</div><input name="form_build_id" value="form-3OUefzb4-MSWw1F4kz8oaIsbWqRj_YWb73r4bRgy5HM" type="hidden">
+<input name="form_id" value="search_block_form" type="hidden">
+</div>
+</div></form>            </div>
+          </li>
+        
+        
+          
+                        <li class="leaf last" id="dzauth_login_link"><a href="javascript:jQuery.sidr('close');javascript:showDzAuth('login');">Account</a></li>
+          
+      </ul>
+  </div><div class="sidr-inner">
+          <ul class="menu nav navbar-nav secondary"><li class="first expanded active-trail active dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="active-trail dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson Nano <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" title="">Developer Kit</a></li>
+<li class="last leaf active-trail active"><a href="https://developer.nvidia.com/embedded/jetson-nano" title="" class="active-trail active">Module</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson TX1 <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first last leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx1" title="">Module</a></li>
+</ul></div></li>
+<li class="expanded dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson TX2 <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2-developer-kit" title="">Developer Kit</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2" title="">Module</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2-4gb" title="">TX2 4GB Module</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/jetson-tx2i" title="">TX2i Module</a></li>
+</ul></div></li>
+<li class="last expanded dropdown"><a href="https://developer.nvidia.com/buy-jetson" title="" class="dropdown-toggle" data-target="#" data-toggle="dropdown">Jetson AGX Xavier <span class="caret"></span></a><div class="dropdown-menu"><ul><li class="first leaf"><a href="https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit" title="">Developer Kit</a></li>
+<li class="leaf"><a href="https://developer.nvidia.com/embedded/jetson-agx-xavier" title="">Module</a></li>
+<li class="last leaf"><a href="https://developer.nvidia.com/embedded/buy/jetson-agx-xavier-8gb" title="">8GB Module</a></li>
+</ul></div></li>
+</ul>                  </div></div><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_nvidia_0" name="destination_publishing_iframe_nvidia_0_name" style="display: none; width: 0px; height: 0px;" src="https://nvidia.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fdeveloper.nvidia.com%2Fembedded%2Fjetson-nano"></iframe></body></html>

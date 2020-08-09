@@ -1,0 +1,602 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Create account 
+    Sign in
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    1 of 1
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Add to List
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+IEEE Intelligent Vehicles Symposium, Proceedings Volume 2018-June, 18 October 2018, Article number 8500598, Pages 1444-1451 2018 IEEE Intelligent Vehicles Symposium, IV 2018; Changshu, Suzhou; China; 26 September 2018 through 30 September 2018; Category numberCFP18IVS-ART; Code 141341
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+An efficient encoder-decoder CNN architecture for reliable multilane detection in real time (Conference Paper)
+
+    Chougule, S. a Email Author ,
+    Ismail, A. b Email Author ,
+    Soni, A. a Email Author ,
+    Kozonek, N. b Email Author ,
+    Narayan, V. b Email Author ,
+    Schulze, M. b Email Author
+
+View additional authors  
+  Save all to author list
+Retrieving additional authors...
+
+    a Visteon Corporation, Pune, India
+    b Visteon Corporation, Karlsruhe, Germany
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (27)
+
+Multilane detection system is a vital prerequisite for realizing higher ADAS functionality of autonomous navigation. In this work, we present an efficient convolutional neural network (CNN) architecture for real time detection of multiple lane boundaries using a camera sensor. Our network has a simple encoder-decoder architecture and is a special two class semantic segmentation network designed to segment lane boundaries. Efficacy of our network stems from two key insights which are at the foundation of all our design decisions. Firstly, we term a lane boundary as a weak class object in the context of semantic segmentation . We show that the weak class objects which occupy relatively few pixels in the scene, also have a relatively low detection accuracy among the know segmentation methods. We present novel design choices and intuitions to improve the segmentation accuracy of weak class objects, which in turn reduces computation time. Our second insight lies in the manner we depict the ground truth information in our derived dataset. Instead of annotating just the visible lane markers, we accurately delineate the lane boundaries in the ground truth for challenging scenarios like occlusions, low light and degraded lane markings. We then leverage the CNN's ability to concisely summarize the global and local context in an image, for accurately inferring lane boundaries in these challenging cases. We evaluate our network against ENet and FCN-8, and found it performing notably better in terms of speed and accuracy. Our network achieves an encouraging 46 FPS performance on NVIDIA Drive PX2 platform and it has been validated on our test vehicle in highway driving conditions. © 2018 IEEE.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Vehicles | Roads and streets | Road region
+Prominence percentile: 98.083
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Indexed keywords
+Engineering controlled terms: 	Decoding Intelligent vehicle highway systems Neural networks Road and street markings Semantics Signal encoding Vehicles
+Engineering uncontrolled terms 	Autonomous navigation Convolutional Neural Networks (CNN) Detection accuracy Encoder-decoder architecture Real-time detection Segmentation accuracy Segmentation methods Semantic segmentation
+Engineering main heading: 	Network architecture
+
+    ISBN: 978-153864452-2
+    Source Type: Conference Proceeding
+    Original language: English
+
+    DOI: 10.1109/IVS.2018.8500598
+    Document Type: Conference Paper
+    Publisher: Institute of Electrical and Electronics Engineers Inc.
+
+View references (27)
+
+    References (27)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+Bengler, K., Dietmayer, K., Farber, B., Maurer, M., Stiller, C., Winner, H.
+Three decades of driver assistance systems: Review and future perspectives
+
+(2014)  IEEE Intelligent Transportation Systems Magazine , 6 (4), art. no. 6936444, pp. 6-22.  Cited 274 times .
+doi: 10.1109/MITS.2014.2336271
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+2
+	
+Sternlund, S., Strandroth, J., Rizzi, M., Lie, A., Tingvall, C.
+The effectiveness of lane departure warning systems—A reduction in real-world passenger car injury crashes
+
+(2017)  Traffic Injury Prevention , 18 (2), pp. 225-229.  Cited 27 times .
+www.tandf.co.uk/journals/titles/15389588.asp
+doi: 10.1080/15389588.2016.1230672
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+3
+	
+Bottazzi, V.S., Borges, P.V.K., Stantic, B., Jo, J.
+Adaptive regions of interest based on HSV histograms for lane marks detection
+
+(2014)  Advances in Intelligent Systems and Computing , 274, pp. 677-687.  Cited 12 times .
+http://www.springer.com.ezproxy.usherbrooke.ca/series/11156
+ISBN: 978-331905581-7
+doi: 10.1007/978-3-319-05582-4_58
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+4
+	
+Satzoda, R.K., Trivedi, M.M.
+(2013)  Vision-based Lane Analysis: Exploration of Issues and Approaches for Embedded Realization .  Cited 2 times .
+
+     
+
+5
+	
+Satzoda, R.K., Trivedi, M.M.
+Efficient lane and vehicle detection with integrated synergies (ELVIS)
+
+(2014)  IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops , art. no. 6910058, pp. 708-713.  Cited 34 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/xpl/conferences.jsp
+ISBN: 978-147994309-8; 978-147994309-8
+doi: 10.1109/CVPRW.2014.108
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+6
+	
+Li, Q., Chen, L., Li, M., Shaw, S.-L., Nüchter, A.
+A sensor-fusion drivable-region and lane-detection system for autonomous vehicle navigation in challenging road scenarios
+
+(2014)  IEEE Transactions on Vehicular Technology , 63 (2), art. no. 6594920, pp. 540-555.  Cited 131 times .
+doi: 10.1109/TVT.2013.2281199
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+7
+	
+Shin, B.-S., Tao, J., Klette, R.
+A superparticle filter for lane detection
+
+(2015)  Pattern Recognition , 48 (11), pp. 3333-3345.  Cited 24 times .
+www.elsevier.com/inca/publications/store/3/2/8/
+doi: 10.1016/j.patcog.2014.10.011
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+8
+	
+Bar Hillel, A., Lerner, R., Levi, D., Raz, G.
+Recent progress in road and lane detection: A survey
+
+(2014)  Machine Vision and Applications , 25 (3), pp. 727-745.  Cited 294 times .
+doi: 10.1007/s00138-011-0404-2
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+9
+	
+Aly, H., Basalamah, A., Youssef, M.
+LaneQuest: An accurate and energy-efficient lane detection system
+
+(2015)  2015 IEEE International Conference on Pervasive Computing and Communications, PerCom 2015 , art. no. 7146523, pp. 163-171.  Cited 31 times .
+ISBN: 978-147998033-8
+doi: 10.1109/PERCOM.2015.7146523
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+10
+	
+Kim, J., Kim, J., Jang, G.-J., Lee, M.
+Fast learning method for convolutional neural networks using extreme learning machine and its application to lane detection
+
+(2017)  Neural Networks , 87, pp. 109-121.  Cited 46 times .
+www.elsevier.com/locate/neunet
+doi: 10.1016/j.neunet.2016.12.002
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+11
+	
+Park, M., Yoo, K., Park, Y., Lee, Y.
+Diagonally-reinforced lane detection scheme for high-performance advanced driver assistance systems
+
+(2017)  Journal of Semiconductor Technology and Science , 17 (1), pp. 79-85.  Cited 3 times .
+http://www.jsts.org/html/journal/journal_files/2017/02/Year2017Volume17_01_11.pdf
+doi: 10.5573/JSTS.2017.17.1.079
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+12
+	
+Li, J., Mei, X., Prokhorov, D., Tao, D.
+Deep Neural Network for Structural Prediction and Lane Detection in Traffic Scene
+
+(2017)  IEEE Transactions on Neural Networks and Learning Systems , 28 (3), art. no. 7407673, pp. 690-703.  Cited 87 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/xpl/RecentIssue.jsp?punumber=5962385
+doi: 10.1109/TNNLS.2016.2522428
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+13
+	
+Gurghian, A., Koduri, T., Bailur, S.V., Carey, K.J., Murali, V.N.
+DeepLanes: End-To-End Lane Position Estimation Using Deep Neural Networks
+
+(2016)  IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops , art. no. 7789502, pp. 38-45.  Cited 50 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/xpl/conferences.jsp
+ISBN: 978-146738850-4
+doi: 10.1109/CVPRW.2016.12
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+14
+	
+Nieto, M., Corts, A., Otaegui, O.
+(2016)  Realtime Lane Tracking Using Rao-Blackwellized Particle Filter
+J. A.-J. of R.-T., and U, Springer
+
+     
+
+15
+	
+Cui, D., Xue, J., Du, S., Zheng, N.
+Real-time global localization of intelligent road vehicles in lane-level via lane marking detection and shape registration
+
+(2014)  IEEE International Conference on Intelligent Robots and Systems , art. no. 6943267, pp. 4958-4964.  Cited 15 times .
+ISBN: 978-147996934-0
+doi: 10.1109/IROS.2014.6943267
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+16
+	
+Aly, M.
+Real time lane detection in urban streets
+(2008)  Intell. Veh. Symp , pp. 1-3.  Cited 3 times .
+
+     
+
+17
+	
+Borkar, A., Hayes, M., Smith, M.T.
+Robust lane detection and tracking with Ransac and Kalman filter
+
+(2009)  Proceedings - International Conference on Image Processing, ICIP , art. no. 5413980, pp. 3261-3264.  Cited 93 times .
+ISBN: 978-142445654-3
+doi: 10.1109/ICIP.2009.5413980
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+18
+	
+Kim, J., Park, C.
+End-To-End Ego Lane Estimation Based on Sequential Transfer Learning for Self-Driving Cars
+
+(2017)  IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops , 2017-July, art. no. 8014892, pp. 1194-1202.  Cited 22 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/xpl/conferences.jsp
+ISBN: 978-153860733-6
+doi: 10.1109/CVPRW.2017.158
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+19
+	
+Ioffe, S., Szegedy, C.
+Batch normalization: Accelerating deep network training by reducing internal covariate shift
+
+(2015)  32nd International Conference on Machine Learning, ICML 2015 , 1, pp. 448-456.  Cited 4169 times .
+ISBN: 978-151081058-7
+
+    Pour obtenir le document(opens in a new window)
+
+20
+	
+Badrinarayanan, V., Kendall, A., Cipolla, R.
+(2015)  SegNet: A Deep Convolutional Encoder-decoder Architecture for Image Segmentation .  Cited 633 times .
+
+     
+
+21
+	
+Long, J., Shelhamer, E., Darrell, T.
+Fully convolutional networks for semantic segmentation
+
+(2015)  Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition , 07-12-June-2015, art. no. 7298965, pp. 3431-3440.  Cited 5916 times .
+ISBN: 978-146736964-0
+doi: 10.1109/CVPR.2015.7298965
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+22
+	
+Paszke, A., Chaurasia, A., Kim, S., Culurciello, E.
+(2016)  ENet: A Deep Neural Network Architecture for Real-time Semantic Segmentation .  Cited 255 times .
+
+     
+
+23
+	
+Noh, H., Hong, S., Han, B.
+Learning deconvolution network for semantic segmentation
+
+(2015)  Proceedings of the IEEE International Conference on Computer Vision , 2015 International Conference on Computer Vision, ICCV 2015, art. no. 7410535, pp. 1520-1528.  Cited 1139 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/xpl/conhome.jsp?punumber=1000149
+ISBN: 978-146738391-2
+doi: 10.1109/ICCV.2015.178
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+24
+	
+Cordts, M.
+(2016)  The Cityscapes Dataset for Semantic Urban Scene Understanding .  Cited 51 times .
+cv-foundation. org
+
+     
+
+25
+	
+http://benchmark.tusimple.ai/#/t/1
+
+     
+
+26
+	
+Yosinski, J., Clune, J., Bengio, Y., Lipson, H.
+(2014)  How Transferable Are Features in Deep Neural Networks .  Cited 124 times .
+papers. nips. cc
+
+     
+
+27
+	
+Brostow, G.J., Fauqueur, J., Cipolla, R.
+Semantic object classes in video: A high-definition ground truth database
+(2008)  Pattern Recognition Letters .  Cited 30 times .
+
+     
+
+
+© Copyright 2019 Elsevier B.V., All rights reserved.
+
+    Back to results
+    1 of 1
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+1
+Citation in Scopus
+1.68
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+Captures
+
+    Readers: 18
+
+see details
+Cited by 1 document
+
+    A novel vehicle lateral positioning methodology based on the integrated deep neural network
+    Zheng, Z. , Li, X.
+    (2020) Expert Systems with Applications
+
+View details of this citation
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+
+    Reliable multilane detection and classification by utilizing CNN as a regression network
+    Chougule, S. , Koznek, N. , Ismail, A.
+    (2019) Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)
+
+    Towards End-to-End Lane Detection: An Instance Segmentation Approach
+    Neven, D. , De Brabandere, B. , Georgoulis, S.
+    (2018) IEEE Intelligent Vehicles Symposium, Proceedings
+
+    End-To-End Ego Lane Estimation Based on Sequential Transfer Learning for Self-Driving Cars
+    Kim, J. , Park, C.
+    (2017) IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Vehicles; Roads and streets; Road region","id":1094,"uri":"Topic/1094","prominencePercentile":98.08264,"prominencePercentileString":"98.083","overallScholarlyOutput":0},"dig":"63dbe4b552106f6fd285df52698e2423f4bbabc3a7bf769bdb2741a02d9b3df1"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+

@@ -1,0 +1,1213 @@
+Classes, Workshops, Training | NVIDIA Deep Learning Institute
+Artificial Intelligence Computing Leadership from NVIDIA
+
+    0
+    Cart
+    My Account
+    .cls-search {fill: #bdbdbd;fill-rule: evenodd;}
+
+PLATFORMS
+Autonomous Machines Autonomous Machines
+Cloud & Data Center Cloud & Data Center
+Deep Learning & Ai Deep Learning & Ai
+Design & Pro Visualization Design & Pro Visualization
+Healthcare & Life Sciences Healthcare & Life Sciences
+High Performance Computing High Performance Computing
+Self-Driving Cars Self-Driving Cars
+Gaming & Entertainment Gaming & Entertainment
+other links
+
+    Developers
+    Industries
+    Shop
+    Drivers
+    Support
+    About NVIDIA
+
+    View All Products
+    GPU TECHNOLOGY CONFERENCE
+    NVIDIA Blog
+    Community
+    Careers
+    TECHNOLOGIES
+
+Industries
+
+    Overview
+    AI Innovators
+    AI Cities
+    AI for Public Good
+    Healthcare & Life Sciences
+    Higher Education
+    Retail
+    Robotics
+    Self-Driving Cars
+
+For Developers
+Products
+
+    AGX Systems
+    Data Science Workstation
+    DGX SYSTEMS
+    EGX
+    NGC
+    NVIDIA TITAN RTX
+    TESLA
+    T4 ENTERPRISE SERVER
+
+Solutions
+
+    Overview
+    Data Science
+    Training
+    Inference
+    On-Premises
+    Cloud
+    Edge
+    Workstations
+
+Education
+AI Startups
+
+    Industries
+        AI Innovators
+        AI Cities
+        AI for Public Good
+        Healthcare & Life Sciences
+        Higher Education
+        Retail
+        Robotics
+        Self-Driving Cars
+    For Developers
+    Products
+        AGX Systems
+        Data Science Workstation
+        DGX SYSTEMS
+        EGX
+        NGC
+        NVIDIA TITAN RTX
+        TESLA
+        T4 ENTERPRISE SERVER
+    Solutions
+        Data Science
+        Training
+        Inference
+        On-Premises
+        Cloud
+        Edge
+        Workstations
+    Education
+    AI Startups
+
+    Industries
+        Industries
+        Overview
+        AI Innovators
+        AI Cities
+        AI for Public Good
+        Healthcare & Life Sciences
+        Higher Education
+        Retail
+        Robotics
+        Self-Driving Cars
+    For Developers
+    Products
+        Products
+        AGX Systems
+        Data Science Workstation
+        DGX SYSTEMS
+        EGX
+        NGC
+        NVIDIA TITAN RTX
+        TESLA
+        T4 ENTERPRISE SERVER
+    Solutions
+        Solutions
+        Overview
+        Data Science
+        Training
+        Inference
+        On-Premises
+        Cloud
+        Edge
+        Workstations
+    Education
+    AI Startups
+
+INDIVIDUALS TEAMS UNIVERSITIES CONTACT US
+Education
+
+    INDIVIDUALS
+    TEAMS
+    UNIVERSITIES
+    CONTACT US
+
+.cls-1 { fill: #79b600; } .cls-2 { fill: #fff; } ic_arrow-back-to-top
+This site requires Javascript in order to view all its content. Please enable Javascript in order to access all the functionality of this web site. Here are the instructions how to enable JavaScript in your web browser.
+NVIDIA Deep Learning Institute
+
+Training You to Solve the World’s Most Challenging Problems
+View Catalog
+
+The NVIDIA Deep Learning Institute (DLI) offers hands-on training in AI and accelerated computing to solve real-world problems. Developers, data scientists, researchers, and students can get practical experience powered by GPUs in the cloud and earn a certificate of competency to support professional growth. We offer self-paced, online training for individuals, instructor-led workshops for teams, and downloadable course materials for university educators.
+
+    <span style=
+    INDIVIDUALS
+    <span style=
+    TEAMS
+    <span style=
+    UNIVERSITIES
+
+For self-learners, students, and teams of less than 20 developers, we recommend self-paced online training to learn how to apply deep learning to your projects and how to accelerate your applications with CUDA and OpenACC . You’ll gain practical skills for your work and earn a certificate of subject matter competency. You can also attend an upcoming instructor-led workshop in your area.
+Online training with DLI
+
+Dive into self-paced online training from anywhere at any time, with access to a fully-configured, GPU-accelerated workstation in the cloud. Choose an 8-hour course to implement and deploy an end-to-end project or a 2-hour course to apply a specific technology or technique.
+Certification Available
+Certificate Available
+Deep Learning Courses
+DEEP LEARNING FUNDAMENTALS
+
+    Fundamentals of Deep Learning for Computer Vision 
+    Get Started
+
+    Prerequisites: Familiarity with basic programming fundamentals such as functions and variables
+
+    Tools and Frameworks: Caffe, DIGITS
+
+    Assessment Type: Code-based
+
+    Duration: 8 hours
+
+    Languages: English, Japanese, Korean, Simplified Chinese, Traditional Chinese
+
+    Price: $90
+
+    Certificate Available
+
+    Explore the fundamentals of deep learning by training neural networks and using results to improve performance and capabilities.
+
+    In this course, you’ll learn the basics of deep learning by training and deploying neural networks. You’ll learn how to:
+        Implement common deep learning workflows, such as image classification and object detection
+        Experiment with data, training parameters, network structure, and other strategies to increase performance and capability
+        Deploy your neural networks to start solving real-world problems
+
+    Upon completion, you’ll be able to start solving problems on your own with deep learning.
+    Getting Started with AI on Jetson Nano
+    Get Started
+
+    Prerequisites: Familiarity with Python (helpful, not required)
+
+    Libraries, Tools and Frameworks: PyTorch, Jetson Nano
+
+    Duration: 8 hours
+
+    Languages: English
+
+    Price: Free
+
+    Certificate:  Available
+
+    The power of AI is now in the hands of makers, self-taught developers, and embedded technology enthusiasts everywhere with the NVIDIA Jetson Nano Developer Kit . This easy-to-use, powerful computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. In this course, you'll use Jupyter iPython notebooks on your own Jetson Nano to build a deep learning classification project with computer vision models.
+
+    You'll learn how to:
+        Set up your Jetson Nano and camera
+        Collect image data for classification models
+        Annotate image data for regression models
+        Train a neural network on your data to create your own models
+        Run inference on the Jetson Nano with the models you create
+
+    Upon completion, you'll be able to create your own deep learning classification and regression models with the Jetson Nano. Hardware is required to complete this course ( view details ).
+    Image Classification with DIGITS
+    Get Started
+
+    Prerequisites: None
+
+    Tools and Frameworks: Caffe (with DIGITS interface)
+
+    Duration: 2 hours
+
+    Languages: English, Japanese, Simplified Chinese
+
+    Price: $30
+
+    Deep learning enables entirely new solutions by replacing hand-coded instructions with models learned from examples. Train a deep neural network to recognize handwritten digits by:
+        Loading image data to a training environment
+        Choosing and training a network
+        Testing with new data and iterating to improve performance
+
+    Upon completion, you’ll be able to assess what data you should be using for training.
+    Object Detection with DIGITS
+    Get Started
+
+    Prerequisites: Basic experience with neural networks
+
+    Tools and Frameworks: Caffe (with DIGITS interface)
+
+    Duration: 2 hours
+
+    Languages: English, Simplified Chinese
+
+    Price: $30
+
+    Learn to apply deep learning to object detection through the challenge of detecting whale faces from aerial images by:
+        Combining traditional computer vision with deep learning
+        Performing minor “brain surgery” on an existing neural network using the deep learning framework Caffe
+        Harnessing the knowledge of the deep learning community by identifying and using a purpose-built network and end-to-end labeled data
+
+    Upon completion, you’ll be able to solve custom problems with deep learning.
+    Optimization and Deployment of TensorFlow Models with TensorRT
+    Get Started
+
+    Prerequisites: Experience with TensorFlow and Python
+
+    Tools and Frameworks: TensorFlow, Python, TensorRT (TF-TRT)
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Learn the fundamentals of generating high-performance deep learning models in the TensorFlow platform using built-in TensorRT library (TF-TRT) and Python. You'll explore:
+        How to pre-process classifications models and freeze graphs and weights in order to perform optimization
+        Get familiar with fundamentals of graph optimization and quantization using FP32, FP16 and INT8
+        Use TF-TRT API to optimize subgraphs and select optimization parameters that best fit your model
+        Design and embed custom operations in Python to mitigate the non-supporting layers problem and optimize detection models
+
+    Upon completion, you'll understand how to utilize TF-TRT to achieve deployment-ready optimized models.
+    Deep Learning at Scale with Horovod
+    Get Started
+
+    Prerequisites: Competency in Python and professional experience training deep learning models in Python
+
+    Tools and Frameworks: Horovod, TensorFlow, Keras, Python
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Learn how to scale deep learning training to multiple GPUs with Horovod, the open-source distributed training framework originally built by Uber and hosted by the LF AI Foundation. In this course, you'll:
+        Complete a step-by-step refactor of a Fashion-MNIST classification model to use Horovod and run on four NVIDIA V100 GPUs
+        Understand Horovod's MPI roots and develop an intuition for parallel programming motifs like multiple workers, race conditions, and synchronization
+        Use techniques like learning rate warmups that greatly impact scaled deep learning performance
+
+    Upon completion, you'll be able to use Horovod to effectively scale deep learning training in new or existing code bases.
+    Image Segmentation with TensorFlow
+    Get Started
+
+    Prerequisites: Basic experience with neural networks
+
+    Tools and Frameworks: TensorFlow
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Image (or semantic) segmentation is the task of placing each pixel of an image into a specific class. Learn how to segment MRI images to measure parts of the heart by:
+        Comparing image segmentation with other computer vision problems
+        Experimenting with TensorFlow tools such as TensorBoard and the TensorFlow Python API
+        Learning to implement effective metrics for assessing model performance
+
+    Upon completion, you’ll be able to set up most computer vision workflows using deep learning.
+    Signal Processing with DIGITS
+    Get Started
+
+    Prerequisites: Basic experience training neural networks
+
+    Tools and Frameworks: Caffe, DIGITS
+
+    Duration: 2 hours
+
+    Languages: English, Simplified Chinese
+
+    Price: $30
+
+    Deep neural networks are better at classifying images than humans, which has implications beyond what we expect of computer vision. Learn how to convert radio frequency (RF) signals into images to detect a weak signal corrupted by noise. You’ll be trained how to:
+        Treat non-image data as image data
+        Implement a deep learning workflow (load, train, test, adjust) in DIGITS
+        Test performance programmatically and guide performance improvements
+
+    Upon completion, you’ll be able to classify both image and image-like data using deep learning.
+
+DEEP LEARNING FOR DIGITAL CONTENT CREATION
+
+    Image Style Transfer with Torch
+    Get Started
+
+    Prerequisites: Experience with CNNs
+
+    Tools and Frameworks: Torch
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Explore how to transfer the look and feel of one image to another image by extracting distinct visual features. See how convolutional neural networks (CNNs) are used for feature extraction, and how these features feed into a generator to create a new image. You’ll learn how to:
+        Transfer the look and feel of one image to another image by extracting distinct visual features
+        Qualitatively determine whether a style is transferred correctly using different techniques
+        Use architectural innovations and training techniques for arbitrary style transfer
+
+    Upon completion, you’ll be able to use neural networks for arbitrary style transfer at a speed that's effective for video.
+    Rendered Image Denoising Using Autoencoders
+    Get Started
+
+    Prerequisites: Experience with CNNs
+
+    Tools and Frameworks: TensorFlow
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Learn how neural networks with autoencoders can be used to dramatically speed up the removal of noise in ray traced images. You’ll learn how to:
+        Determine whether noise exists in rendered images
+        Use a pre-trained network to denoise some sample images or your own images
+        Train your own denoiser using the provided dataset
+
+    Upon completion, you’ll be able to use autoencoders inside neural networks to train your own rendered image denoiser.
+    Image Super Resolution Using Autoencoders
+    Get Started
+
+    Prerequisites: Experience with CNNs
+
+    Tools and Frameworks: Keras
+
+    Duration: 2 hours
+
+    Languages: English, Simplified Chinese
+
+    Price: $30
+
+    Leverage the power of a neural network with autoencoders to create high-quality images from low-quality source images. In this mini course, you'll:
+        Understand and design an autoencoder
+        Learn various methods to rigorously measuring image quality
+
+    Upon completion, you'll be able to use autoencoders inside neural networks to significantly enhance image quality.
+
+DEEP LEARNING FOR HEALTHCARE
+
+    Modeling Time Series Data with Recurrent Neural Networks in Keras
+    Get Started
+
+    Prerequisites: Basic experience with deep learning
+
+    Tools and Frameworks: Keras
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Recurrent Neural Networks (RNNs) allow models to classify or forecast time-series data, like natural language, markets, and even a patient’s health over time. You'll learn how to:
+        Create training and testing datasets using electronic health records in HDF5 (hierarchical data format version five)
+        Prepare datasets for use with recurrent neural networks, which allows modeling of very complex data sequences
+        Construct a Long-Short Term Memory model (LSTM), a specific RNN architecture, using the Keras library running on top of Theano to evaluate model performance against baseline data
+
+    Upon completion, you’ll be able to model time-series data using RNNs.
+    Medical Image Classification Using the MedNIST Dataset
+    Get Started
+
+    Prerequisites: Basic experience with Python
+
+    Tools and Frameworks: PyTorch
+
+    Duration: 2 hours
+
+    Languages: English,  Simplified Chinese
+
+    Price: $30
+
+    Get a hands-on practical introduction to deep learning for radiology and medical imaging. You'll learn how to:
+        Collect, format, and standardize medical image data
+        Architect and train a convolutional neural network (CNN) on a dataset
+        Use the trained model to classify new medical images
+
+    Upon completion, you’ll be able to apply CNNs to classify images in a medical imaging dataset.
+    Data Science Workflows for Deep Learning in Medical Applications
+    Get Started
+
+    Prerequisites: Basic experience with Python and CNNs
+
+    Tools and Frameworks: PyTorch
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Medical datasets present special challenges for the application of deep learning. You will:
+        Learn introductory techniques in data augmentation and standardization
+        Experiment with these techniques on a simple medical imaging dataset
+        Validate your techniques by training a convolutional neural network on the augmented dataset
+
+    Upon completion, you'll be able to apply simple data manipulation techniques to your medical imaging datasets.
+    Medical Image Segmentation with DIGITS
+    Get Started
+
+    Prerequisites: Basic experience with CNNs and Python
+
+    Tools and Frameworks: DIGITS, Caffe
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Image (or semantic) segmentation is the task of placing each pixel of an image into a specific class. You’ll segment MRI images to measure parts of the heart by:
+        Extending Caffe with custom Python layers
+        Implementing the process of transfer learning
+        Creating fully convolutional neural networks (CNNs) from popular image classification networks
+
+    Upon completion, you’ll be able to set up most computer vision workflows using deep learning.
+    Image Classification with TensorFlow: Radiomics—1p19q Chromosome Status Classification
+    Get Started
+
+    Prerequisites: Basic experience with CNNs and Python
+
+    Tools and Frameworks: TensorFlow
+
+    Duration: 2 hours
+
+    Languages: English, Simplified Chinese
+
+    Price: $30
+
+    Thanks to work being performed at the Mayo Clinic, using deep learning techniques to detect radiomics from MRI imaging has led to more effective treatments and better health outcomes for patients with brain tumors. Learn to detect the 1p19q co-deletion biomarker by:
+        Designing and training convolutional neural networks (CNNs)
+        Using imaging genomics (radiomics) to create biomarkers that identify the genomics of a disease without the use of an invasive biopsy
+        Exploring the radiogenomics work being done at the Mayo Clinic
+
+    Upon completion, you’ll have unique insight into the novelty and promising results of using deep learning to predict radiomics.
+    Medical Image Analysis with R and MXNet
+    Get Started
+
+    Prerequisites:  Basic experience with CNNs and Python
+
+    Tools and Frameworks: MXNet
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Convolutional neural networks (CNNs) can be applied to medical image analysis to infer patient status from non-visible images. Learn how to train a CNN to infer the volume of the left ventricle of the human heart from time-series MRI data. You'll explore how to:
+        Extend a canonical 2D CNN to more complex data
+        Use MXNet through the standard Python API and R
+        Process high-dimensionality imagery that may be volumetric and have a temporal component
+
+    Upon completion, you’ll know how to use CNNs for non-visible images.
+    Data Augmentation and Segmentation with Generative Networks for Medical Imaging
+    Get Started
+
+    Prerequisites: Experience with CNNs
+
+    Tools and Frameworks: TensorFlow
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    A generative adversarial network (GAN) is a pair of deep neural networks: a generator that creates new examples based on the training data provided and a discriminator that attempts to distinguish between genuine and simulated data. As both networks improve together, the examples created become increasingly realistic. This technology is promising for healthcare, because it can augment smaller datasets for training of traditional networks. You'll learn how to:
+        Generate synthetic brain MRIs
+        Apply GANs for segmentation
+        Use GANs for data augmentation to improve accuracy
+
+    Upon completion, you'll be able to apply GANs to medical imaging use cases.
+    Coarse-to-Fine Contextual Memory for Medical Imaging
+    Get Started
+
+    Prerequisites: Experience with CNNs and long short term memory (LSTMs)
+
+    Tools and Frameworks: TensorFlow
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Coarse-to-fine contextual memory (CFCM) is a technique developed for image segmentation using very deep architectures and incorporating features from many different scales with convolutional long short-term memory (LSTM). You’ll:
+        Take a deep dive into encoder-decoder architectures for medical image segmentation
+        Get to know common building blocks (convolutions, pooling layers, residual nets, etc.)
+        Investigate different strategies for skip connections
+
+    Upon completion, you'll be able to apply CFCM techniques to medical image segmentation and similar imaging tasks.
+
+DEEP LEARNING FOR INTELLIGENT VIDEO ANALYTICS
+
+    AI Workflows for Intelligent Video Analytics with DeepStream
+    Get Started
+
+    Prerequisites: Experience with C++ and Gstreamer
+
+    Tools and Frameworks: DeepStream3
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    The DeepStream 3.0 framework features hardware-accelerated building blocks of Intelligent Video Analytics (IVA) applications. This allows developers to focus on building core deep learning networks. The DeepStream SDK underpins a variety of use cases and offers flexibility on the deployment medium.
+
+    You’ll learn how to:
+        Deploy DeepStream pipeline for parallel, multi-stream video processing and deliver applications with maximum throughput at scale
+        Configure the processing pipeline and create intuitive, graph-based applications. Leverage multiple deep network models to process video streams and achieve more intelligent insights
+
+    Upon completion, you'll know how to create AI-based video analytics applications using DeepStream to transform video streams into actionable insights.
+
+Accelerated Computing Courses
+
+    Fundamentals of Accelerated Computing with CUDA C/C++ 
+    Get Started
+
+    Prerequisites: Basic C/C++ competency including familiarity with variable types, loops, conditional statements, functions, and array manipulations.
+
+    Assessment Type: Code-based
+
+    Duration: 8 hours
+
+    Languages: English, Japanese, Korean, Simplified Chinese, Traditional Chinese
+
+    Price: $90
+
+    Certificate Available
+
+    The CUDA computing platform enables the acceleration of CPU-only applications to run on the world’s fastest massively parallel GPUs. Experience C/C++ application acceleration by:
+        Accelerating CPU-only applications to run their latent parallelism on GPUs
+        Utilizing essential CUDA memory management techniques to optimize accelerated applications
+        Exposing accelerated application potential for concurrency and exploiting it with CUDA streams
+        Leveraging command line and visual profiling to guide and check your work
+
+    Upon completion, you’ll be able to accelerate and optimize existing C/C++ CPU-only applications using the most essential CUDA tools and techniques.
+    Fundamentals of Accelerated Computing with CUDA Python
+    Get Started
+
+    Prerequisites: Basic Python competency including familiarity with variable types, loops, conditional statements, functions, and array manipulations. NumPy competency including the use of ndarrays and ufuncs.
+
+    Assessment Type: Code-based
+
+    Duration: 8 hours
+
+    Languages: English
+
+    Price: $90
+
+    Certificate Available
+
+    This course explores how to use Numba—the just-in-time, type-specializing Python function compiler—to accelerate Python programs to run on massively parallel NVIDIA GPUs. You’ll learn how to:
+        Use Numba to compile CUDA kernels from NumPy universal functions (ufuncs)
+        Use Numba to create and launch custom CUDA kernels
+        Apply key GPU memory management techniques
+
+    Upon completion, you’ll be able to use Numba to compile and launch CUDA kernels to accelerate your Python applications on NVIDIA GPUs.
+    Fundamentals of Accelerated Computing with OpenACC
+    Get Started
+
+    Prerequisites: Basic experience with C/C++
+
+    Duration: 8 hours
+
+    Languages: English
+
+    Price: $90
+
+    Learn the basics of OpenACC, a high-level programming language for programming on GPUs. This course is for anyone with some C/C++ experience who is interested in accelerating the performance of their applications beyond the limits of CPU-only programming. In this course, you’ll learn:
+        Four simple steps to accelerating your already existing application with OpenACC
+        How to profile and optimize your OpenACC codebase
+        How to program on multi-GPU systems by combining OpenACC with the message passing interface (MPI)
+
+    Upon completion, you’ll be able to build and optimize accelerated heterogeneous applications on multiple GPU clusters using a combination of OpenACC, CUDA-aware MPI, and NVIDIA profiling tools.
+    High-Performance Computing with Containers
+    Get Started
+
+    Prerequisites: Proficiency programming in C/C++ and professional experience working on HPC applications
+
+    Tools and Frameworks: Docker, Singularity, HPCCM, C/C++
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Learn how to reduce complexity and improve portability and efficiency of your code by using a containerized environment for high-performance computing (HPC) application development. In this course, you'll:
+        Explore the basics of building and running Docker and Singularity containers
+        Use the HPC Container Maker (HPCCM) to programmatically configure complex, portable, bare-metal HPC environments for your application
+        Apply advanced container building techniques like layered containers and multi-stage builds
+        Utilize drop-in containerized versions of existing HPC applications like MPI Bandwidth and MILC
+
+    Upon completion, you'll be able to quickly build and utilize Docker, Singularity, and HPCCM for portable, bare-metal performance in your HPC applications.
+    Accelerating Applications with CUDA C/C++
+    Get Started
+
+    Prerequisites: Basic experience with C/C++
+
+    Duration: 2 hours
+
+    Languages: English, Japanese
+
+    Price: $30
+
+    Learn how to accelerate your C/C++ application using CUDA to harness the massively parallel power of NVIDIA GPUs. You'll learn how to program with CUDA in order to:
+        Accelerate SAXPY algorithms
+        Accelerate Matrix Multiply algorithms
+        Accelerate heat conduction algorithms
+
+    Upon completion, you'll be able to use the CUDA platform to accelerate C/C++ applications.
+    OpenACC – 2X in 4 Steps
+    Get Started
+
+    Prerequisites: Basic experience with C/C++
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Learn how to accelerate your C/C++ or Fortran application using OpenACC to harness the massively parallel power of NVIDIA GPUs. OpenACC is a directive-based approach to computing where you provide compiler hints to accelerate your code, instead of writing the accelerator code yourself. Get started on the four-step process for accelerating applications using OpenACC:
+        Characterize and profile your application
+        Add compute directives
+        Add directives to optimize data movement
+        Optimize your application using kernel scheduling
+
+    Upon completion, you will be ready to use a profile-driven approach to rapidly accelerate your C/C++ applications using OpenACC directives.
+    GPU Memory Optimizations with CUDA C/C++
+    Get Started
+
+    Prerequisites: Basic experience accelerating applications with CUDA C/C++
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Explore memory optimization techniques for programming with CUDA C/C++ on an NVIDIA GPU, and how to use the NVIDIA Visual Profiler (NVVP) to support these optimizations. You'll learn how to:
+        Implement a naive matrix transposing algorithm
+        Perform several cycles of profiling the algorithm with NVVP and optimize its performance
+
+    Upon completion, you'll know how to analyze and improve global and shared memory access patterns, and how to optimize your accelerated C/C++ applications.
+    Accelerating Applications with GPU-Accelerated Libraries in C/C++
+    Get Started
+
+    Prerequisites: Basic experience accelerating applications with CUDA C/C++
+
+    Duration: 2 hours
+
+    Languages: English, Japanese
+
+    Price: $30
+
+    Learn how to accelerate your C/C++ application using drop-in libraries to harness the massively parallel power of NVIDIA GPUs. You'll work through three exercises, including how to:
+        Use cuBLAS to accelerate a basic matrix multiply
+        Combine libraries by adding some cuRAND API calls to the previous cuBLAS calls
+        Use nvprof to profile code and optimize with some CUDA Runtime API calls
+
+    Upon completion, you'll be ready to utilize several CUDA enabled libraries for rapid application acceleration in your existing CPU-only C/C++ programs.
+    Using Thrust to Accelerate C++
+    Get Started
+
+    Prerequisites: Basic experience accelerating applications with CUDA C/C++
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    Thrust is a parallel algorithms library loosely based on the C++ Standard Template Library. It enables developers to quickly embrace the power of parallel computing and supports multiple system back-ends such as OpenMP and Intel's Threading Building Blocks. Use Thrust to accelerate C++ through exercises that cover:
+        Basic Iterators, Containers, and Functions
+        Built-in and Custom Functors
+        Portability to CPU processing
+
+    Upon completion, you'll be ready to harness the power of the Thrust library to accelerate your C/C++ applications.
+
+ACCELERATED DATA SCIENCE COURSES
+
+    Fundamentals of Accelerated Data Science with RAPIDS
+    Get Started
+
+    Prerequisites:  Experience with Python, ideally including Pandas and NumPy
+
+    Technologies: RAPIDS, NumPy, XGBoost, DBSCAN, K-Means, SSSP, Python
+
+    Duration: 6 hours
+
+    Price: $90 (excludes tax, if applicable)
+
+    RAPIDS is a collection of data science libraries that allows end-to-end GPU acceleration for data science workflows. In this training, you'll:
+        Use cuDF and Dask to ingest and manipulate massive datasets directly on the GPU
+        Apply a wide variety of GPU-accelerated machine learning algorithms including XGBoost, cuGRAPH, and cuML to perform data analysis at massive scale
+        Perform multiple analysis tasks on massive datasets in an effort to stave off a simulated epidemic outbreak effecting the UK
+
+    Upon completion, you'll be able to load, manipulate, and analyze data orders of magnitude fast, enabling more iteration cycles and drastically improving productivity.
+    Accelerating Data Science Workflows with RAPIDS
+    Get Started
+
+    Prerequisites: Advanced competency in Pandas, NumPy, and scikit-learn
+
+    Tools and Frameworks: None
+
+    Duration: 2 hours
+
+    Languages: English
+
+    Price: $30
+
+    The open source RAPIDS project allows data scientists to GPU-accelerate their data science and data analytics applications from beginning to end, creating possibilities for drastic performance gains and techniques not available through traditional CPU-only workflows.
+
+    Learn how to GPU-accelerate your data science applications by:
+        Utilizing key RAPIDS libraries like cuDF (GPU-enabled Pandas-like dataframes) and cuML (GPU-accelerated machine learning algorithms)
+        Learning techniques and approaches to end-to-end data science, made possible by rapid iteration cycles created by GPU acceleration
+        Understanding key differences between CPU-driven and GPU-driven data science, including API specifics and best practices for refactoring
+
+    Upon completion, you'll be able to refactor existing CPU-only data science workloads to run much faster on GPUs and write accelerated data science workflows from scratch.
+
+Online Training with Partners
+
+DLI collaborates with leading educational organizations to expand the reach of deep learning training to developers worldwide.
+Udacity Computer Vision Nanodegree
+
+    Udacity Self-Driving Car Nanodegree
+    Udacity Robotics Nanodegree
+    Udacity Computer Vision Nanodegree
+    Udacity Deep Reinforcement Learning Nanodegree
+
+Nanodegree: Coursera Deep Learning Specialization
+
+    Coursera Deep Learning Specialization
+
+UPCOMING INSTRUCTOR-LED WORKSHOPS
+
+DLI offers public instructor-led workshops around the world at conferences and universities. View the schedule below to find a workshop near you.
+
+    DLI Training at GTC DC |  WASHINGTON DC | Nov 4–6, 2019
+    DLI Training on Medical Imaging |  VILLACH, AUSTRIA | Dec 6, 2019
+    DLI Training at GTC Silicon Valley |  SAN JOSE, CA | March 22–26, 2020
+
+For teams of 20 or more developers, data scientists, and researchers, we recommend instructor-led workshops to learn how to apply deep learning to your projects and how to accelerate your applications with CUDA and OpenACC . You’ll gain practical skills for your work and earn a certificate of subject matter competency.
+Instructor-led training
+
+Request a full-day workshop at your location, led by a DLI-certified instructor. You’ll get hands-on training and access to GPUs in the cloud to implement and deploy a project from end to end.
+REQUEST WORKSHOP
+Certification Available
+Certificate Available
+Deep Learning Workshops
+DEEP LEARNING FUNDAMENTALS
+
+    Fundamentals of Deep Learning for Computer Vision 
+    REQUEST WORKSHOP
+
+    Prerequisites: Familiarity with basic programming fundamentals such as functions and variables
+
+    Tools and Frameworks: Caffe, DIGITS
+
+    Assessment Type: Code-based
+
+    Languages: English, Japanese, Korean, Simplified Chinese, Traditional Chinese
+
+    Certificate Available
+
+    Explore the fundamentals of deep learning by training neural networks and using results to improve performance and capabilities.
+
+    In this workshop, you’ll learn the basics of deep learning by training and deploying neural networks. You’ll learn how to:
+        Implement common deep learning workflows, such as image classification and object detection
+        Experiment with data, training parameters, network structure, and other strategies to increase performance and capability
+        Deploy your neural networks to start solving real-world problems
+
+    Upon completion, you’ll be able to start solving problems on your own with deep learning.
+    Fundamentals of Deep Learning for Multiple Data Types 
+    REQUEST WORKSHOP
+
+    Prerequisites: Familiarity with basic Python (functions and variables), prior experience training neural networks.
+
+    Tools and Frameworks: TensorFlow
+
+    Assessment Type: Multiple choice
+
+    Languages: English, Japanese, Korean, Simplified Chinese
+
+    Certificate Available
+
+    This workshop explores how convolutional and recurrent neural networks can be combined to generate effective descriptions of content within images and video clips.
+
+    Learn how to train a network using TensorFlow and the Microsoft Common Objects in Context (COCO) dataset to generate captions from images and video by:
+        Implementing deep learning workflows like image segmentation and text generation
+        Comparing and contrasting data types, workflows, and frameworks
+        Combining computer vision and natural language processing
+
+    Upon completion, you’ll be able to solve deep learning problems that require multiple types of data inputs.
+    Fundamentals of Deep Learning for Natural Language Processing 
+    REQUEST WORKSHOP
+
+    Prerequisites: Basic experience with neural networks and Python programming, familiarity with linguistics
+
+    Tools and Frameworks: TensorFlow, Keras
+
+    Assessment Type: Code-based, multiple choice
+
+    Languages: English
+
+    Certificate Available
+
+    Learn the latest deep learning techniques to understand textual input using natural language processing (NLP). You’ll learn how to:
+        Convert text to machine-understandable representations and classical approaches
+        Implement distributed representations (embeddings) and understand their properties
+        Train machine translators from one language to another
+
+    Upon completion, you’ll be proficient in NLP using embeddings in similar applications.
+    Fundamentals of Deep Learning for Multi-GPUs 
+    REQUEST WORKSHOP
+
+    Prerequisites: Experience with stochastic gradient descent mechanics, network architecture, and parallel computing
+
+    Tools and Frameworks: TensorFlow
+
+    Assessment Type: Code-based
+
+    Languages: English
+
+    Certificate Available
+
+    The computational requirements of deep neural networks used to enable AI applications like self-driving cars are enormous. A single training cycle can take weeks on a single GPU or even years for larger datasets like those used in self-driving car research. Using multiple GPUs for deep learning can significantly shorten the time required to train lots of data, making solving complex problems with deep learning feasible.
+
+    This workshop will teach you how to use multiple GPUs to train neural networks. You'll learn:
+        Approaches to multi-GPUs training
+        Algorithmic and engineering challenges to large-scale training
+        Key techniques used to overcome the challenges mentioned above
+
+    Upon completion, you'll be able to effectively parallelize training of deep neural networks using TensorFlow.
+
+DEEP LEARNING BY INDUSTRY
+
+    Deep Learning for Digital Content Creation Using Autoencoders
+    REQUEST WORKSHOP
+
+    Prerequisites: Basic familiarity with deep learning concepts such as CNNs and experience with Python programming language
+
+    Tools and Frameworks: Torch, TensorFlow
+
+    Assessment Type: Multiple choice
+
+    Languages: English
+
+    Certificate Available
+
+    Explore the latest techniques for designing, training, and deploying neural networks for digital content creation. You’ll learn how to:
+        Apply the architectural innovations and training techniques used to make arbitrary video style transfer
+        Train your own denoiser for rendered images
+        Upscale images with super resolution AI
+
+    Upon completion, you’ll be able to start creating digital assets using deep learning approaches.
+    Deep Learning for Healthcare Image Analysis
+    Request Workshop
+
+    Prerequisites: Basic familiarity with deep neural networks, basic coding experience in Python or a similar language
+
+    Tools and Frameworks: R, MXNet, TensorFlow, Caffe, DIGITS
+
+    Assessment Type: Code-based
+
+    Languages: English
+
+    Certificate Available
+
+    This workshop explores how to apply convolutional neural networks (CNNs) to MRI scans to perform a variety of medical tasks and calculations. You’ll learn how to:
+        Perform image segmentation on MRI images to determine the location of the left ventricle
+        Calculate ejection fractions by measuring differences between diastole and systole using CNNs applied to MRI scans to detect heart disease
+        Apply CNNs to MRI scans of low-grade gliomas (LGGs) to determine 1p/19q chromosome co-deletion status
+
+    Upon completion, you’ll be able to apply CNNs to MRI scans to conduct a variety of medical tasks.
+    Deep Learning for Industrial Inspection
+    Request Workshop
+
+    Prerequisites: Familiarity with deep neural networks, experience with Python and deep learning frameworks such as TensorFlow, Keras, or PyTorch
+
+    Tools and Frameworks: TensorFlow, TensorRT, Keras
+
+    Assessment Type: Code-based
+
+    Languages: English, Traditional Chinese
+
+    Certificate Available
+
+    Explore how to build a deep learning model to automate the verification of capacitors in NVIDIA's printed circuit board (PCB) using a real production dataset. This can lower the verification cost and increase the production throughput across a variety of manufacturing use cases. You'll learn how to:
+        Extract meaningful insights from the provided dataset using Pandas DataFrame and NumPy library
+        Apply transfer-learning to a deep learning classification model known as InceptionV3
+        Optimize the trained InceptionV3 model on V100 GPU using TensorRT 5
+        Experiment with FP16 half-precision fast inferencing using V100’s TensorCore
+
+    Upon completion, you'll be able to design, train, test, and deploy building blocks of a hardware-accelerated industrial inspection pipeline.
+    Deep Learning for Intelligent Video Analytics
+    Request Workshop
+
+    Prerequisites: Experience with deep networks (specifically variations of CNNs), intermediate-level experience with C and Python
+
+    Tools and Frameworks: DeepStream 3.0, TensorFlow
+
+    Assessment Type: Code-based
+
+    Languages: English, Korean
+
+    Certificate Available
+
+    With the increase in traffic cameras, growing prospect of autonomous vehicles, and promising outlook of smart cities, there's a rise in demand for faster and more efficient object detection and tracking models. This involves identification, tracking, segmentation and prediction of different types of objects within video frames.
+
+    In this workshop, you’ll learn how to:
+        Efficiently process and prepare video feeds using hardware accelerated decoding methods
+        Train and evaluate deep learning models and leverage "transfer learning" techniques to elevate efficiency and accuracy of these models and mitigate data sparsity issues
+        Explore the strategies and trade-offs involved in developing high-quality neural network models to track moving objects in large-scale video datasets
+        Optimize and deploy video analytics inference engines by acquiring the DeepStream SDK
+
+    Upon completion, you'll be able to design, train, test and deploy building blocks of a hardware-accelerated traffic management system based on parking lot camera feeds.
+    Deep Learning for Robotics
+    Request Workshop
+
+    Prerequisites:   Basic familiarity with deep neural networks, basic coding experience in Python or similar language
+
+    Tools and Frameworks: ROS, DIGITS, NVIDIA Jetson
+
+    Assessment Type: Code-based
+
+    Languages: English
+
+    Certificate Available
+
+    AI is revolutionizing the acceleration and development of robotics across a broad range of industries. Explore how to create robotics solutions on a Jetson for embedded applications. You’ll learn how to:
+        Apply computer vision models to perform detection
+        Prune and optimize the model for embedded application
+        Train a robot to actuate the correct output based on the visual input
+
+    Upon completion, you’ll know how to deploy high-performance deep learning applications for robotics.
+
+Accelerated Computing Workshops
+
+    Fundamentals of Accelerated Computing with CUDA C/C++ 
+    REQUEST WORKSHOP
+
+    Prerequisites: Basic C/C++ competency including familiarity with variable types, loops, conditional statements, functions, and array manipulations.
+
+    Duration: 8 hours
+
+    Assessment Type: Code-based
+
+    Languages: English, Japanese, Korean, Traditional Chinese
+
+    Certificate Available
+
+    The CUDA computing platform enables the acceleration of CPU-only applications to run on the world’s fastest massively parallel GPUs. Experience C/C++ application acceleration by:
+        Accelerating CPU-only applications to run their latent parallelism on GPUs
+        Utilizing essential CUDA memory management techniques to optimize accelerated applications
+        Exposing accelerated application potential for concurrency and exploiting it with CUDA streams
+        Leveraging command line and visual profiling to guide and check your work
+
+    Upon completion, you’ll be able to accelerate and optimize existing C/C++ CPU-only applications using the most essential CUDA tools and techniques. You’ll understand an iterative style of CUDA development that will allow you to ship accelerated applications fast.
+    Fundamentals of Accelerated Computing with CUDA Python
+    REQUEST WORKSHOP
+
+    Prerequisites: Basic Python competency including familiarity with variable types, loops, conditional statements, functions, and array manipulations. NumPy competency including the use of ndarrays and ufuncs.
+
+    Duration: 8 hours
+
+    Assessment Type: Code-based
+
+    Languages: English
+
+    Certificate Available
+
+    This workshop explores how to use Numba—the just-in-time, type-specializing Python function compiler—to accelerate Python programs to run on massively parallel NVIDIA GPUs. You’ll learn how to:
+        Use Numba to compile CUDA kernels from NumPy universal functions (ufuncs)
+        Use Numba to create and launch custom CUDA kernels
+        Apply key GPU memory management techniques
+
+    Upon completion, you’ll be able to use Numba to compile and launch CUDA kernels to accelerate your Python applications on NVIDIA GPUs.
+
+Enterprise Solution
+
+If you’re interested in more comprehensive enterprise training, the DLI Enterprise Solution offers a package of training and lectures to meet your organization’s unique needs. From hands-on online and onsite training to executive briefings and enterprise-level reporting, DLI can help your company transform into an AI organization. Contact us to learn more.
+Request Solution
+
+NVIDIA DLI offers downloadable course materials for university educators and free self-paced, online training to students through the DLI Teaching Kits. Educators can also get certified to deliver DLI workshops on campus through the University Ambassador Program.
+Teaching Kits
+
+DLI Teaching Kits are available to qualified university educators interested in course solutions across deep learning, accelerated computing, and robotics. Educators can integrate lecture materials, hands-on courses, GPU cloud resources, and more into their curriculum.
+Learn More
+University Ambassador Program
+
+The DLI University Ambassador Program certifies qualified educators to deliver hands-on DLI workshops to university faculty, students, and researchers at no cost. Educators are encouraged to download the DLI Teaching Kits to be qualified for participation in the Ambassador Program.
+
+DLI has certified University Ambassadors at hundreds of universities, including:
+Arizona State University
+Columbia
+The Hong Kong University Of Science And Technology
+Massachusetts Institute of Technology
+NUS - National University of Singapore
+University of Oxford
+Arizona State University
+Columbia
+The Hong Kong University Of Science And Technology
+Massachusetts Institute of Technology
+NUS - National University of Singapore
+University of Oxford
+Partners
+
+DLI works with industry partners to build DLI content and deliver DLI instructor-led workshops around the world. Here are some of our leading partners.
+AGS
+Alexandra
+Booz Allen Hamilton
+Boston logo
+CII.IA
+Coursera logo
+Dell EMC logo
+Hancom MDS
+HPE logo
+IBM Power Systems logo
+Ingram Logo
+Qleadtek logo
+iTrainAsia logo
+Open Zeka logo
+Opteamizer logo
+Rabbit&Tortoise logo
+Scan Business logo
+SGInnovate logo
+Skyline logo
+Udacity logo
+Uber logo
+Xenon logo
+Resources
+
+Explore a wide range of technical resources on AI and accelerated computing.
+Read Blog: What is Deep Learning?
+Read Blog: What’s the difference between AI, machine learning, and deep learning?
+Read Blog: What’s the difference between deep learning training and inference?
+Read Blog: Deep Learning in a Nutshell: Core Concepts
+Read Blog: Deep Learning in a Nutshell: Sequence Learning
+Read Blog: Deep Learning in a Nutshell: Reinforcement Learning
+Read Blog: What Can Deep Learning Do for Your Business?
+View Page: Three Simple Steps to Kick-Off Your Deep Learning Project
+View Slideshow: Deep Learning Glossary: Concepts Defined
+Download PDF: AI Across Industries: Telecommunications, Retail, and Financial Services
+View Webinar: Deep Learning Demystified Webinar
+Watch: NVIDIA Developer YouTube Channel
+Listen: NVIDIA AI Podcast
+Questions about DLI?
+Contact Us
+
+DLI Terms & Conditions >
+Contact Us for Questions on
+Deep Learning Training
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+Reason for requesting contact:
+* Mandatory Fields
+View NVIDIA's Privacy Policy .
+SUBMIT
+ 
+DLI Workshop Request Form
+To inquire about bringing hands-on technical training to your organization or event, please complete the form below. Additionally, you can view all self-paced online training and upcoming workshops at www.nvidia.com/dli .
+YOUR INFORMATION
+* First Name
+* Last Name
+* Job Title
+* Organization
+* Email Address
+* Industry
+* Job Role
+Phone Number
+WORKSHOP DETAILS
+* Location where workshop would take place
+* City where the workshop would take place
+* Name of customer site, event, or venue where workshop would take place
+Please select the date(s) of the workshop, expected number of attendees, and DLI Workshop topic. You may include more than one date or course by adding a new item.
+Date
+* Number of Attendees
+* Workshop Topic
+How much experience does the audience have with deep learning?
+Additional Comments:
+Would you like to receive the latest news and updates on Deep Learning?
+Yes No
+Send me the latest deep learning news and updates from NVIDIA. I can unsubscribe at any time.
+Holding_Field_Ent_Opt_In_Sentence
+Holding_Field_Ent_Opt_In_Source
+ncid
+SyncToMarketo
+* Mandatory fields
+Products
+
+    DGX-2
+    DGX-1
+    DGX Station
+    Data Science Workstation
+    Tesla
+    T4 Enterprise Server
+    Jetson
+    Developer
+    NVIDIA TITAN RTX
+    Quadro GV100
+    Drive PX
+    Volta Architecture
+    NGC
+
+Software
+
+    CUDA-X
+    Deep Learning SDK
+    Deep Learning Frameworks
+    NVIDIA DIGITS
+
+Resources
+
+    Deep Learning Blogs
+    AI Newsletter
+    GPU Technology Conference
+    Customer Stories
+    Deep Learning Jobs
+
+SIGN UP FOR DEEP LEARNING AND AI NEWS
+Subscribe
+GET THE LATEST FROM NVIDIA
+ON AI COMPUTING
+*
+*
+*
+*
+*
+*
+*
+*
+View NVIDIA's Privacy Policy .
+SUBMIT
+Follow Deep Learning AI
+Facebook Twitter LinkedIn YouTube
+NVIDIA
+USA - United States
+
+    Privacy Policy
+    Legal Info
+    Contact Us
+
+Copyright © 2019 NVIDIA Corporation

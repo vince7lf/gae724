@@ -1,0 +1,340 @@
+Skip to main content
+Home NVIDIA Developer
+
+    Solutions
+        AI and Deep Learning
+            Deep Learning
+            Machine Learning
+            Inference
+            Deep Learning institute
+            Genomics
+            GPU-Optimized S/W (NGC)
+        Autonomous Machines
+            Hardware (Jetson)
+            Robotics
+            Video analytics
+        Autonomous Vehicles
+            Hardware (DRIVE AGX)
+            Car reference architecture
+            Autonomous Vehicle Software
+            Data Center Simulation Platform
+        Graphics and Simulation
+            Raytracing
+            AI for graphics
+            Real-time VFX
+            Virtual and Augmented Reality
+            Simulation
+            Medical Imaging
+            Scientific Visualization
+            Display
+            Video Processing
+        High-performance Computing
+            Languages and APIs
+            GPU accelerated libraries
+            OpenACC Programming Model
+        Tools and Management
+            Developer Tools
+            Management Tools
+            Android and Tegra for Mobile
+    Platforms
+        CUDA-X AI
+            TensorRT
+            cuDNN
+            NCCL
+            cuBLAS
+            cuSPARSE
+            DeepStream SDK
+            Optical Flow SDK
+            DALI
+            Transfer Learning Toolkit
+            DIGITS
+        CLARA
+            Clara Train
+            Clara Deploy
+            Clara Genomics SDK
+        HPC
+            CUDA Toolkit
+            OpenACC
+        DRIVE
+            DRIVE AGX
+            DRIVE Hyperion
+            DRIVE Sim
+            DRIVE Constellation
+            DGX
+        RTX
+            OptiX SDK
+            Path-traced Audio (VRWorks)
+            VKRay
+            MDL SDK
+            vMaterials
+            PhysX
+            Flex
+            Optical Flow SDK
+            Video Codec SDK
+            GPUDirect for Video
+        ISAAC
+            Jetson Developer Kits
+            JetPack
+            Isaac Robot Engine
+            Isaac Sim
+        Metropolis
+            DeepStream SDK
+    Documentation
+        Ray tracing
+        Library
+        CUDA Toolkit
+        GameWorks
+        DRIVE
+        NGC
+        Isaac
+    Downloads
+        CUDA Toolkit
+        CLARA
+        Developer Tools
+        DRIVE
+        Gameworks
+        Isaac
+        Jetson
+        Metropolis
+    Resources
+        Developer Program
+        Deep Learning Institute
+        Educators
+        NGC
+        GTC Videos
+        Open Source
+        Contact us
+    Community
+        Forums (DevTalk)
+        Blog
+        News
+
+    Search form
+    Search
+    Account
+
+    RTX
+    GAMEWORKS
+    DESIGNWORKS
+    VRWORKS
+    HPC
+    METROPOLIS
+    DRIVE
+    CLARA
+    OPEN SOURCE
+
+    Home
+    Higher Education & Research
+    Education Resources & Teaching Programs
+    Educators Resources
+    NVIDIA Teaching Kits
+
+NVIDIA Teaching Kits
+
+NVIDIA Teaching Kits are complete course solutions for use by educators in a variety of academic disciplines that benefit from GPU-accelerated computing. Co-developed with leading university faculty, Teaching Kits provide full curriculum design coupled with ease-of-use. Educators can bridge academic theory with real-world application to empower next-generation innovators with critical AI skillsets.
+
+Learn more about Teaching Kits by viewing the webinar Bringing GPU Computing to the Classroom .
+
+The continually updated curriculum keeps coursework timely and relevant with the latest techniques and trends. NVIDIA Teaching Kits contain content such as:
+
+    Lecture slides
+    Lecture videos
+    Hands-on labs/coding projects/solutions
+
+    Online DLI courses with certification
+    e-books
+    GPU cloud resources
+
+Explore NVIDIA Teaching Kits
+
+
+
+Request Teaching Kit
+
+Co-developed with Professor Yann LeCun and his team at New York University (NYU), the Deep Learning Institute (DLI) Teaching Kit covers introductory and advanced deep learning topics, including:
+
+    Introduction to Machine and Deep Learning
+    Applied Image Classification
+    Applied Object Detection
+    Convolutional Neural Networks
+    Applied Image Segmentation
+    Energy-based Learning
+    Unsupervised Learning
+    Generative Adversarial Networks
+    Recurrent Neural Networks
+    Natural Language Processing
+    And Many More!
+
+
+
+Request Teaching Kit
+
+Co-developed with Professor Wen-Mei Hwu and his team at University of Illinois (UIUC), the Accelerated Computing Teaching Kit covers introductory and advanced accelerated parallel computing topics:
+
+    Introduction to CUDA C
+    Memory and Data Locality
+    Thread Execution Efficiency
+    Memory Access Performance
+    Parallel Computation Patterns
+    Histogram, Stencil, Reduction, Scan
+    Efficient Host-Device Data Transfer
+    Related Programming Models
+    OpenACC, MPI, OpenCL
+    And Many More!
+    Translated Russian and Portuguese versions available now!
+
+
+
+Request Teaching Kit
+
+Co-developed with Professor John Seng and his team, at California Polytechnic State University (CalPoly), the Robotics Teaching Kit with 'Jet' covers introductory and advanced multidisciplinary topics:
+
+    Intro. to Robotics and Jetson
+    ROS Robot O/S
+    Sensors
+    Computer Vision
+    Machine Learning
+    Dead Reckoning
+    Path Planning
+    And Many More!
+
+An Exclusive Offer for Educators and Their Students
+
+Qualified educators using Teaching Kits receive codes for free access to NVIDIA Deep Learning Institute (DLI) online, self-paced training for themselves and all of their students — a value of up to $90 per course per person. DLI content reinforces deep learning and accelerated computing concepts presented in the Teaching Kits and teaches students how to apply those concepts to end-to-end projects. Through built-in assessments, students can earn certificates that prove subject matter competency and can be leveraged for professional career growth. Each course presents a self-paced learning environment with access to a GPU-accelerated workstation in the cloud. All you need is a web browser and internet connection to get started. Additionally, faculty and students can continue to build on their hands-on knowledge through DLI instructor-led workshops. Learn More
+
+Like to read more about these Teaching Kits or have questions? Checkout our Teaching Kit FAQ
+
+    HIGH PERFORMANCE COMPUTING
+    GAMEWORKS
+    JETPACK
+    DESIGNWORKS
+    DRIVE
+
+Copyright © 2019 NVIDIA Corporation
+
+    Legal Information
+    Privacy Policy
+    Contact
+
+    Solutions
+        AI and Deep Learning
+            Deep Learning
+            Machine Learning
+            Inference
+            Deep Learning institute
+            Genomics
+            GPU-Optimized S/W (NGC)
+        Autonomous Machines
+            Hardware (Jetson)
+            Robotics
+            Video analytics
+        Autonomous Vehicles
+            Hardware (DRIVE AGX)
+            Car reference architecture
+            Autonomous Vehicle Software
+            Data Center Simulation Platform
+        Graphics and Simulation
+            Raytracing
+            AI for graphics
+            Real-time VFX
+            Virtual and Augmented Reality
+            Simulation
+            Medical Imaging
+            Scientific Visualization
+            Display
+            Video Processing
+        High-performance Computing
+            Languages and APIs
+            GPU accelerated libraries
+            OpenACC Programming Model
+        Tools and Management
+            Developer Tools
+            Management Tools
+            Android and Tegra for Mobile
+    Platforms
+        CUDA-X AI
+            TensorRT
+            cuDNN
+            NCCL
+            cuBLAS
+            cuSPARSE
+            DeepStream SDK
+            Optical Flow SDK
+            DALI
+            Transfer Learning Toolkit
+            DIGITS
+        CLARA
+            Clara Train
+            Clara Deploy
+            Clara Genomics SDK
+        HPC
+            CUDA Toolkit
+            OpenACC
+        DRIVE
+            DRIVE AGX
+            DRIVE Hyperion
+            DRIVE Sim
+            DRIVE Constellation
+            DGX
+        RTX
+            OptiX SDK
+            Path-traced Audio (VRWorks)
+            VKRay
+            MDL SDK
+            vMaterials
+            PhysX
+            Flex
+            Optical Flow SDK
+            Video Codec SDK
+            GPUDirect for Video
+        ISAAC
+            Jetson Developer Kits
+            JetPack
+            Isaac Robot Engine
+            Isaac Sim
+        Metropolis
+            DeepStream SDK
+    Documentation
+        Ray tracing
+        Library
+        CUDA Toolkit
+        GameWorks
+        DRIVE
+        NGC
+        Isaac
+    Downloads
+        CUDA Toolkit
+        CLARA
+        Developer Tools
+        DRIVE
+        Gameworks
+        Isaac
+        Jetson
+        Metropolis
+    Resources
+        Developer Program
+        Deep Learning Institute
+        Educators
+        NGC
+        GTC Videos
+        Open Source
+        Contact us
+    Community
+        Forums (DevTalk)
+        Blog
+        News
+
+    Search form
+    Search
+    Account
+
+    RTX
+    GAMEWORKS
+    DESIGNWORKS
+    VRWORKS
+    HPC
+    METROPOLIS
+    DRIVE
+    CLARA
+    OPEN SOURCE
+

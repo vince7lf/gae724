@@ -1,0 +1,581 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Vincent Le Falher
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+        Sign out
+    Close help menu
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    Previous
+    4 of 21
+    Next
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Save to list
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) Volume 10449 LNAI, 2017, Pages 119-128 9th International Conference on Computational Collective Intelligence, ICCCI 2017; Nicosia; Cyprus; 27 September 2017 through 29 September 2017; Code 199269
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+Edge Real-Time Medical Data Segmentation for IoT Devices with Computational and Memory Constrains (Conference Paper)
+
+    Bernas, M. Email Author ,
+    Płaczek, B. Email Author ,
+    Sapek, A.
+    View Correspondence (jump link)
+
+View additional authors  
+  Save all to author list
+Retrieving additional authors...
+
+    Institute of Computer Science, University of Silesia, Bedzinska 39, Sosnowiec, 41-200, Poland
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (23)
+
+The Internet of Things (IoT) becomes very important tool for data gathering and management in many environments. The majority of dedicated solutions register data only at time of events, while in case of medical data full records for long time periods are usually needed. The precision of acquired data and the amount of data sent by sensor-equipped IoT devices has vital impact on lifetime of these devices. In case of solutions, where multiple sensors are available for single device with limited computation power and memory, the complex compression or transformation methods cannot be applied - especially in case of nano device injected to a body. Thus this paper is focused on linear complexity segmentation algorithms that can be used by the resource-limited devices. The state-of-art data segmentation methods are analysed and adapted for simple IoT devices. Two segmentation algorithms are proposed and tested on a real-world dataset collected from a prototype of the IoT device. © 2017, Springer International Publishing AG.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Sensor networks | Sensor nodes | Wireless visual
+Prominence percentile: 89.313
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Author keywords
+Data segmentation Edge mining Internet of Things Medical data
+Indexed keywords
+Engineering controlled terms: 	Computational complexity Medical computing
+Engineering uncontrolled terms 	Computation power Data segmentation Internet of thing (IOT) Linear complexity Medical data Resource-limited devices Segmentation algorithms Transformation methods
+Engineering main heading: 	Internet of things
+
+    ISSN: 03029743
+    ISBN: 978-331967076-8
+    Source Type: Book series
+    Original language: English
+
+    DOI: 10.1007/978-3-319-67077-5_12
+    Document Type: Conference Paper
+    Volume Editors: Jedrzejowicz P.,Vossen G.,Papadopoulos G.A.,Nguyen N.T.,Trawinski B.
+    Sponsors:
+    Publisher: Springer Verlag
+
+View references (23)
+
+    References (23)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+Perera, C., Liu, C.H., Jayawardena, S.
+The Emerging Internet of Things Marketplace from an Industrial Perspective: A Survey
+
+(2015)  IEEE Transactions on Emerging Topics in Computing , 3 (4), art. no. 7004800, pp. 585-598.  Cited 161 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/servlet/opac?punumber=6245516
+doi: 10.1109/TETC.2015.2390034
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+2
+	
+Atzori, L., Iera, A., Morabito, G.
+The Internet of Things: A survey
+
+(2010)  Computer Networks , 54 (15), pp. 2787-2805.  Cited 6449 times .
+doi: 10.1016/j.comnet.2010.05.010
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+3
+	
+Athreya, A.P., Tague, P.
+Network self-organization in the Internet of Things
+
+(2013)  2013 IEEE International Conference on Sensing, Communications and Networking, SECON 2013 , art. no. 6644956, pp. 25-33.  Cited 30 times .
+ISBN: 978-147990230-9
+doi: 10.1109/SAHCN.2013.6644956
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+4
+	
+Sheng, Z., Yang, S., Yu, Y., Vasilakos, A., McCann, J., Leung, K.
+A survey on the ietf protocol suite for the internet of things: Standards, challenges, and opportunities
+
+(2013)  IEEE Wireless Communications , 20 (6), art. no. 6704479, pp. 91-98.  Cited 428 times .
+doi: 10.1109/MWC.2013.6704479
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+5
+	
+Ning, H., Liu, H., Yang, L.T.
+Cyberentity security in the internet of things
+
+(2013)  Computer , 46 (4), art. no. 6475947, pp. 46-53.  Cited 113 times .
+doi: 10.1109/MC.2013.74
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+6
+	
+Wesołowski, T.E., Porwik, P., Doroz, R.
+Electronic Health Record Security Based on Ensemble Classification of Keystroke Dynamics
+
+(2016)  Applied Artificial Intelligence , 30 (6), pp. 521-540.  Cited 5 times .
+www.tandf.co.uk/journals/titles/08839514.asp
+doi: 10.1080/08839514.2016.1193715
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+7
+	
+Tsai, C., Lai, C., Chiang, M., Yang, L.
+Data mining for Internet of Things: A survey
+(2013)  Commun. Surv. Tutor. , 99, pp. 1-21.  Cited 4 times .
+
+     
+
+8
+	
+Gaura, E.I., Brusey, J., Allen, M., Wilkins, R., Goldsmith, D., Rednic, R.
+Edge mining the internet of things
+
+(2013)  IEEE Sensors Journal , 13 (10), art. no. 6527282, pp. 3816-3825.  Cited 50 times .
+doi: 10.1109/JSEN.2013.2266895
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+9
+	
+Keogh, E., Chakrabarti, K., Pazzani, M.
+(2001)  Knowl. Inf. Syst , 3, p. 263.  Cited 877 times .
+
+     
+
+10
+	
+Bishop, C.
+(2006)  Pattern Recognition and Machine Learning .  Cited 20556 times .
+Springer, Heidelberg
+
+     
+
+11
+	
+Murakami, T., Asai, K., Yamazaki, E.
+Vector quantiser of video signals
+
+(1982)  Electronics Letters , 18 (23), pp. 1005-1006.  Cited 50 times .
+doi: 10.1049/el:19820688
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+12
+	
+Lin, J., Keogh, E., Lonardi, S., Chiu, B.
+A symbolic representation of time series, with implications for streaming algorithms
+
+(2003)  Proceedings of the 8th ACM SIGMOD Workshop on Research Issues in Data Mining and Knowledge Discovery, DMKD '03 , pp. 2-11.  Cited 1086 times .
+doi: 10.1145/882082.882086
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+13
+	
+Ji, S., Xue, Y., Carin, L.
+Bayesian compressive sensing
+
+(2008)  IEEE Transactions on Signal Processing , 56 (6), pp. 2346-2356.  Cited 1371 times .
+doi: 10.1109/TSP.2007.914345
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+14
+	
+Bello, J.P.
+Measuring structural similarity in music
+
+(2011)  IEEE Transactions on Audio, Speech and Language Processing , 19 (7), art. no. 5711645, pp. 2013-2025.  Cited 37 times .
+doi: 10.1109/TASL.2011.2108287
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+15
+	
+Schoellhammer, T., Osterweil, E., Greenstein, B., Wimbrow, M., Estrin, D.
+Lightweight temporal compression of microclimate datasets
+
+(2004)  Proceedings - Conference on Local Computer Networks, LCN , pp. 516-524.  Cited 90 times .
+doi: 10.1109/LCN.2004.72
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+16
+	
+Lin, J., Keogh, E., Lonardi, S., Patel, P.
+Finding motifs in time series
+(2002)  Proceedings of the 2Nd Workshop on Temporal Data Mining, Edmonton, Canada, 23–26 July 2002 , pp. 53-68.  Cited 284 times .
+
+     
+
+17
+	
+Agrawal, R., Faloutsos, C., Swami, A.
+Efficient similarity search in sequence databases
+
+(1993)  Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) , 730 LNCS, pp. 69-84.  Cited 960 times .
+http://springerlink.com.ezproxy.usherbrooke.ca/content/0302-9743/copyright/2005/
+ISBN: 978-354057301-2
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+18
+	
+Hunter, J., McIntosh, N.
+Knowledge-based event detection in complex time series data
+
+(1999)  Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) , 1620, pp. 271-280.  Cited 53 times .
+http://springerlink.com.ezproxy.usherbrooke.ca/content/0302-9743/copyright/2005/
+ISBN: 354066162X; 978-354066162-7
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+19
+	
+Kudłacik, P., Porwik, P., Wesołowski, T.
+Fuzzy approach for intrusion detection based on user’s commands
+
+(2016)  Soft Computing , 20 (7), pp. 2705-2719.  Cited 19 times .
+http://springerlink.metapress.com/app/home/journal.asp?wasp=h83ak0wtmr5uxkah9j5m&referrer=parent&backto=browsepublicationsresults,466,533;
+doi: 10.1007/s00500-015-1669-6
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+20
+	
+Balasubramaniam, S., Kangasharju, J.
+Realizing the internet of nano things: Challenges, solutions, and applications
+
+(2013)  Computer , 46 (2), art. no. 6357163, pp. 62-68.  Cited 94 times .
+doi: 10.1109/MC.2012.389
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+21
+	
+Danieletto, M., Bui, N., Zorzi, M.
+RAZOR: A compression and classification solution for the internet of things ( Open Access )
+
+(2014)  Sensors (Switzerland) , 14 (1), pp. 68-94.  Cited 10 times .
+http://www.mdpi.com/1424-8220/14/1/68/pdf
+doi: 10.3390/s140100068
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+22
+	
+Bernas, M., Płaczek, B.
+Period-aware local modelling and data selection for time series prediction
+
+(2016)  Expert Systems with Applications , 59, pp. 60-77.  Cited 8 times .
+doi: 10.1016/j.eswa.2016.04.024
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+23
+	
+Preacher, K.J., Curran, P.J., Bauer, D.J.
+Computational tools for probing interactions in multiple linear regression, multilevel modeling, and latent curve analysis
+
+(2006)  Journal of Educational and Behavioral Statistics , 31 (4), pp. 437-448.  Cited 2651 times .
+doi: 10.3102/10769986031004437
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+  Bernas, M.; Institute of Computer Science, University of Silesia, Bedzinska 39, Sosnowiec, Poland; email: marcin.bernas@gmail.com
+© Copyright 2017 Elsevier B.V., All rights reserved.
+
+    Back to results
+    Previous
+    4 of 21
+    Next
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+1
+Citation in Scopus
+0.59
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+Citations
+
+    Citation Indexes: 1
+
+Captures
+
+    Readers: 4
+
+see details
+Cited by 1 document
+
+    Light sensor based vehicle and pedestrian detection method for wireless sensor network
+    Bernas, M. , Smyła, J.
+    (2018) Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)
+
+View details of this citation
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+
+    RAZOR: A compression and classification solution for the internet of things
+    Danieletto, M. , Bui, N. , Zorzi, M.
+    (2013) Sensors (Switzerland)
+
+    Multi stage symbolic-based shape indexing and retrieval
+    Ergovic, V.
+    (2008) Proceedings Elmar - International Symposium Electronics in Marine
+
+    Similarity measure based on piecewise linear approximation and derivative dynamic time warping for time series mining
+    Li, H. , Guo, C. , Qiu, W.
+    (2011) Expert Systems with Applications
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Sensor networks; Sensor nodes; Wireless visual","id":15828,"uri":"Topic/15828","prominencePercentile":89.31311,"prominencePercentileString":"89.313","overallScholarlyOutput":0},"dig":"3bf85db814bbb0d974b7e34f7148826002c2d9f36a9a694b308e4ae0b21505c5"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+
+    Account Settings
+    Export and reference management settings
+
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+

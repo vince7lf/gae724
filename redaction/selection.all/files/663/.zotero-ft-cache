@@ -1,0 +1,360 @@
+Skip to content
+The Official NVIDIA Blog
+
+    PLATFORMS
+        AUTONOMOUS MACHINES
+            OVERVIEW
+            INDUSTRIES
+                DRONES
+                ROBOTICS
+                INTELLIGENT VIDEO ANALYTICS (IVA)
+            PRODUCTS
+                OVERVIEW
+                JETSON NANO
+                JETSON AGX XAVIER
+                JETSON TX2
+            FOR DEVELOPERS
+            JETSON STORE
+        CLOUD & DATA CENTER
+            OVERVIEW
+            PRODUCTS
+                OVERVIEW
+                TESLA
+                T4 ENTERPRISE SERVER
+                DGX
+                DGX 2
+                DGX STATION
+                HGX
+                NGC
+                VIRTUAL GPU
+                EGX
+            SOLUTIONS
+                AI & DEEP LEARNING
+                HIGH PERFORMANCE COMPUTING
+                CLOUD GAMING
+                GPU CLOUD COMPUTING
+                GPU VIRTUALIZATION
+                ANALYTICS
+            APPS
+                GPU APPS DIRECTORY
+                GPU READY APPS
+            FOR DEVELOPERS
+            TECHNOLOGIES
+                NVIDIA VOLTA
+                NVIDIA PASCAL
+                NVLINK/NVSWITCH
+                TENSOR CORES
+                INDEX PARAVIEW PLUGIN
+                VIRTUAL GPU TECHNOLOGY
+        DEEP LEARNING AND AI
+            OVERVIEW
+            INDUSTRIES
+                OVERVIEW
+                AI INNOVATORS
+                AI CITIES
+                AI FOR PUBLIC GOOD
+                HEALTHCARE & LIFE SCIENCES
+                HIGHER EDUCATION
+                RETAIL
+                ROBOTICS
+                SELF-DRIVING CARS
+            DEVELOPER
+            PRODUCTS
+                AGX SYSTEMS
+                DGX SYSTEMS
+                NGC
+                NVIDIA TITAN RTX
+                NVIDIA TITAN V
+                NVIDIA TESLA
+                T4 ENTERPRISE SERVER
+            SOLUTIONS
+                DATA SCIENCE
+                INFERENCE
+            EDUCATION
+            AI STARTUPS
+        DESIGN AND PRO VISUALIZATION
+            INDUSTRIES
+                ARCHITECTURE, ENGINEERING AND CONSTRUCTION
+                EDUCATION
+                MANUFACTURING
+                MEDIA AND ENTERTAINMENT
+            PRODUCTS
+                QUADRO
+                QUADRO vDWS
+                GRID vPC/vAPPS
+                NVIDIA TITAN RTX
+                NVIDIA TITAN XP
+                NVS
+            SOLUTIONS
+                MULTI-DISPLAY
+                RENDERING
+                VIRTUALIZATION
+                VIRTUAL REALITY
+                HPC VISUALIZATION
+                FOR CREATORS
+                FOR DATA SCIENTISTS
+            TECHNOLOGIES
+                MATERIAL DEFINITION LANGUAGE
+                NVIDIA RTX
+                NVLINK
+                TURING ARCHITECTURE
+                VIRTUAL GPU TECHNOLOGY
+                HOLODECK
+            FOR CREATORS
+            FOR DEVELOPERS
+            QUADRO STORE
+        HEALTHCARE
+        HIGH PERFORMANCE COMPUTING
+            OVERVIEW
+            PRODUCTS
+                TESLA
+                T4 ENTERPRISE SERVER
+                DGX
+                DGX-2
+                NGC
+                GPU CLOUD COMPUTING
+            APPS
+                GPU APPS CATALOG
+                GPU READY APPS
+            FOR DEVELOPERS
+                DEEP LEARNING & AI
+                INDEX PARAVIEW PLUG-IN
+                CUDA
+        SELF-DRIVING CARS
+            SOLUTIONS
+                NVIDIA DRIVE PLATFORM
+                NVIDIA DGX SYSTEMS
+                NVIDIA DRIVE CONSTELLATION
+                NVIDIA DRIVE IX
+                HD MAPPING
+                ADVANCED DRIVER ASSISTANCE SYSTEMS
+            PARTNERS
+            FOR DEVELOPERS
+        GAMING & ENTERTAINMENT
+            GEFORCE GAMING
+                OVERVIEW
+                20 SERIES GRAPHICS CARDS
+                16 SERIES GRAPHICS CARDS
+                10 SERIES GRAPHICS CARDS
+                GAMING LAPTOPS
+                G-SYNC DISPLAYS
+                BIG FORMAT GAMING DISPLAYS (BFGD)
+                GEFORCE EXPERIENCE
+                GEFORCE NOW
+            SHIELD
+                OVERVIEW
+                DISPLAYS WITH SHIELD TV
+            FOR CREATORS
+            FOR BROADCASTERS
+    DEVELOPERS
+        NVIDIA DEVELOPER
+        DEVELOPER NEWS
+        DEVELOPER BLOG
+        DEVELOPER FORUMS
+        OPEN SOURCE PORTAL
+        GPU TECHNOLOGY CONFERENCES
+        CUDA
+    INDUSTRIES
+        GAME DEVELOPMENT
+        HEALTHCARE
+        HIGHER EDUCATION
+        INDUSTRIAL
+        MEDIA & ENTERTAINMENT
+        PUBLIC SECTOR
+        RETAIL
+        SUPERCOMPUTING
+        TELECOMMUNICATIONS
+        TRANSPORTATION
+        ALL INDUSTRIES
+    SHOP
+    DRIVERS
+        GEFORCE DRIVERS
+        ALL NVIDIA DRIVERS
+    SUPPORT
+    ABOUT NVIDIA
+        NVIDIA PARTNER NETWORK
+        AI COMPUTING MODEL
+        TECHNOLOGIES
+        NEWSROOM
+        NVIDIA BLOG
+        RESEARCH
+        WEBINARS
+        EVENTS
+        COMPANY INFORMATION
+        CAREERS
+        INVESTORS
+        SOCIAL RESPONSIBILITY
+        NVIDIA FOUNDATION
+
+Search for:
+
+    Privacy Policy
+    Legal Info
+    Contact Us
+
+Copyright © 2019 NVIDIA Corporation
+
+    Home
+    Deep Learning
+    Driving
+    Gaming
+    Pro Graphics
+    Autonomous Machines
+    Healthcare
+    AI Podcast
+
+    Search for:
+
+What’s the Difference Between Deep Learning Training and Inference?
+August 22, 2016 by Michael Copeland
+269 Shares
+
+    Email 1
+
+This is the second of a multi-part series explaining the fundamentals of deep learning by long-time tech journalist Michael Copeland. 
+
+School’s in session. That’s how to think about deep neural networks going through the “training” phase. Neural networks get an education for the same reason most people do — to learn to do a job.
+
+More specifically, the trained neural network is put to work out in the digital world using what it has learned — to recognize images, spoken words, a blood disease, or suggest the shoes someone is likely to buy next, you name it — in the streamlined form of an application. This speedier and more efficient version of a neural network infers things about new data it’s presented with based on its training. In the AI lexicon this is known as “inference.”
+Text Inference is where capabilities learned during deep learning training are put to work.
+
+Inference can’t happen without training. Makes sense. That’s how we gain and use our own knowledge for the most part. And just as we don’t haul around all our teachers, a few overloaded bookshelves and a red-brick schoolhouse to read a Shakespeare sonnet, inference doesn’t require all the infrastructure of its training regimen to do its job well.
+
+So let’s break down the progression from training to inference, and in the context of AI how they both function.
+Training Deep Neural Networks
+Think of deep learnning training as school. It trains networks to go out and solve problems in the wider world. Just as we don’t haul around all our teachers, a few overloaded bookshelves and a red-brick schoolhouse to read a Shakespeare sonnet, inference doesn’t require all the infrastructure of its training regimen to do its job well.
+
+While the goal is the same – knowledge — the educational process, or training, of a neural network is (thankfully) not quite like our own. Neural networks are loosely modeled on the biology of our brains — all those interconnections between the neurons. Unlike our brains, where any neuron can connect to any other neuron within a certain physical distance, artificial neural networks have separate layers, connections, and directions of data propagation .
+
+When training a neural network, training data is put into the first layer of the network, and individual neurons assign a weighting to the input — how correct or incorrect it is — based on the task being performed.
+
+To learn more, check out NVIDIA’s inference solutions for the data center, self-driving cars, video analytics and more.
+
+In an image recognition network, the first layer might look for edges. The next might look for how these edges form shapes — rectangles or circles. The third might look for particular features — such as shiny eyes and button noses. Each layer passes the image to the next, until the final layer and the final output determined by the total of all those weightings is produced.
+
+But here’s where the training differs from our own. Let’s say the task was to identify images of cats. The neural network gets all these training images, does its weightings and comes to a conclusion of cat or not . What it gets in response from the training algorithm is only “right” or “wrong.”
+Training Is Compute Intensive
+
+And if the algorithm informs the neural network that it was wrong, it doesn’t get informed what the right answer is. The error is propagated back through the network’s layers and it has to guess at something else. In each attempt it must consider other attributes — in our example attributes of “catness” — and weigh the attributes examined at each layer higher or lower. Then it guesses again. And again. And again. Until it has the correct weightings and gets the correct answer practically every time. It’s a cat.
+Training can teach deep learning networks to correctly label images of cats in a limited set, before the network is put to work detecting cats in the broader world. Training can teach deep learning networks to correctly label images of cats in a limited set, before the network is put to work detecting cats in the broader world.
+
+Now you have a data structure and all the weights in there have been balanced based on what it has learned as you sent the training data through. It’s a finely tuned thing of beauty. The problem is, it’s also a monster when it comes to consuming compute. Andrew Ng, who honed his AI chops at Google and Stanford and is now chief scientist at Baidu’s Silicon Valley Lab, says training one of Baidu’s Chinese speech recognition models requires not only four terabytes of training data, but also 20 exaflops of compute — that’s 20 billion billion math operations — across the entire training cycle. Try getting that to run on a smartphone.
+
+That’s where inference comes in.
+Congratulations! Your Neural Network Is Trained and Ready for Inference
+
+That properly weighted neural network is essentially a clunky, massive database. What you had to put in place to get that sucker to learn — in our education analogy all those pencils, books, teacher’s dirty looks — is now way more than you need to get any specific task accomplished. Isn’t the point of graduating to be able to get rid of all that stuff?
+
+If anyone is going to make use of all that training in the real world, and that’s the whole point, what you need is a speedy application that can retain the learning and apply it quickly to data it’s never seen. That’s inference: taking smaller batches of real-world data and quickly coming back with the same correct answer (really a prediction that something is correct).
+
+While this is a brand new area of the field of computer science, there are two main approaches to taking that hulking neural network and modifying it for speed and improved latency in applications that run across other networks.
+How Inferencing Works
+Looking for inferencing in the real world? Turn on your smartphone. How is inferencing used? Just turn on your smartphone. Inferencing is used to put deep learning to work for everything from speech recognition to categorizing your snapshots.
+
+The first approach looks at parts of the neural network that don’t get activated after it’s trained. These sections just aren’t needed and can be “pruned” away. The second approach looks for ways to fuse multiple layers of the neural network into a single computational step.
+
+It’s akin to the compression that happens to a digital image. Designers might work on these huge, beautiful, million pixel-wide and tall images, but when they go to put it online, they’ll turn into a jpeg. It’ll be almost exactly the same, indistinguishable to the human eye, but at a smaller resolution. Similarly with inference you’ll get almost the same accuracy of the prediction, but simplified, compressed and optimized for runtime performance.
+
+What that means is we all use inference all the time. Your smartphone’s voice-activated assistant uses inference, as does Google’s speech recognition, image search and spam filtering applications. Baidu also uses inference for speech recognition, malware detection and spam filtering. Facebook’s image recognition and Amazon’s and Netflix’s recommendation engines all rely on inference.
+
+GPUs, thanks to their parallel computing capabilities — or ability to do many things at once — are good at both training and inference.
+
+Systems trained with GPUs allow computers to identify patterns and objects as well as — or in some cases, better than — humans (see “ Accelerating AI with GPUs: A New Computing Model ”).
+
+After training is completed, the networks are deployed into the field for “inference” — classifying data to “infer” a result. Here too, GPUs — and their parallel computing capabilities — offer benefits, where they run billions of computations based on the trained network to identify known patterns or objects.
+
+You can see how these models and applications will just get smarter, faster and more accurate. Training will get less cumbersome, and inference will bring new applications to every aspect of our lives. It seems the same admonition applies to AI as it does to our youth — don’t be a fool, stay in school. Inference awaits.
+
+To learn more, check out NVIDIA’s inference solutions for the data center, self-driving cars, video analytics and more. Or to learn more about the evolution of AI into deep learning, tune into the AI Podcast for an in-depth interview with NVIDIA’s own Will Ramey.
+
+Real-time ray-tracing is the talk of the 2018 Game Developer Conference. So what is it? Where have you seen it before? And how does it differ from rasterization? Check out “ What’s the Difference Between Ray Tracing and Rasterization ?” 
+Categories: Deep Learning | Explainer | The AI Podcast
+Tags: Artificial Intelligence | GPU Computing | Inference
+Subscribe Widget
+All nvidia news
+What’s the Difference Between NVIDIA RTX and GTX?
+November 1, 2019
+Bumper Crop of AI Helps Farmers Whack Weeds, Pesticide Use
+November 1, 2019
+Street Dreams: NVIDIA DRIVE AI Innovations Wow Smart Mobility Conference
+October 31, 2019
+NoTraffic, No Problems: AI Startup Improves Intersections
+October 31, 2019
+Picture-Perfect Product Help: AI Startup Brings Computer Vision to Customer Service
+October 30, 2019
+Post navigation
+Platforms
+
+    CUDA-X
+    Autonomous Machines
+    Data Center
+    Deep Learning and AI
+    Design and Visualization
+    Healthcare
+    High Performance Computing
+    Self-Driving Cars
+    Gaming & Entertainment
+    NGC
+
+Products
+
+    DGX Systems
+    DRIVE PX
+    GeForce RTX 20-Series
+    NVIDIA Virtual GPU
+    Jetson
+    Quadro
+    SHIELD TV
+    Tesla
+    T4 Enterprise Server
+
+Developers
+
+    NVIDIA Developer
+    Developer News
+    Developer Blog
+    Developer Forums
+    Open Source Portal
+    Training
+    GPU Tech Conference
+    CUDA
+
+Corporate
+
+    NVIDIA Partner Network
+    Careers
+    Contact Us
+    Security
+    Communities
+    RSS Feeds
+    Email Signup
+    Privacy Center
+    Share Your Story Idea
+
+Explore our regional blogs and other social networks
+
+    Privacy Policy
+    Legal Info
+    Contact Us
+
+Copyright © 2019 NVIDIA Corporation
+USA - United States
+Share this Article
+
+Friend's Email Address
+
+Your Name
+
+Your Email Address
+
+Comments
+
+Send Email
+Email sent!
+ Tweet
+ Share
+ E-mail
+ Tweet
+ Share
+ LinkedIn
+ E-mail

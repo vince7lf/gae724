@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html class="  no-touch js svg" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="6si.js"></script><script async="" src="conversion.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta id="viewport" name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://blogs.nvidia.com/xmlrpc.php">
+
+<script type="text/javascript" async="" src="insight.js"></script><script src="https://connect.facebook.net/signals/config/355529111510186?v=2.9.9&amp;r=stable" async=""></script><script async="" src="fbevents.js"></script><script async="" src="uwt.js"></script><script async="" src="a" data-sumo-site-id="631f5cfc62615a0703aed131dad7176b9e0991e329aef6a4698851cbeb04b0ce" data-sumo-platform="wordpress"></script><script>
+<!--
+// Check for js support (replace no-js class on html)
+document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,'') + ' js';
+// Check for SVG support (replace no-svg class on html)
+if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', "svg").createSVGRect) {
+  document.documentElement.className=document.documentElement.className.replace(/\bno-svg\b/,'') + ' svg';
+}
+// Check if touch-capable device.
+if ('ontouchstart' in window || navigator.maxTouchPoints) {
+	document.documentElement.className=document.documentElement.className.replace(/\bno-touch\b/,'') + ' touch';
+}
+// -->
+</script>
+
+<title>What’s the Difference Between Deep Learning Training and Inference? | The Official NVIDIA Blog</title>
+
+<link rel="stylesheet" href="language-selector.css" type="text/css" media="all">
+<link rel="alternate" hreflang="en-US" href="https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/">
+
+<!-- This site is optimized with the Yoast SEO plugin v12.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Let's break let’s break down the progression from deep-learning training to inference in the context of AI how they both function.">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What’s the Difference Between Deep Learning Training and Inference? | The Official NVIDIA Blog">
+<meta property="og:description" content="Let's break let’s break down the progression from deep-learning training to inference in the context of AI how they both function.">
+<meta property="og:url" content="https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/">
+<meta property="og:site_name" content="The Official NVIDIA Blog">
+<meta property="article:publisher" content="https://www.facebook.com/NVIDIA/">
+<meta property="article:tag" content="Artificial Intelligence">
+<meta property="article:tag" content="GPU Computing">
+<meta property="article:tag" content="Inference">
+<meta property="article:section" content="Explainer">
+<meta property="article:published_time" content="2016-08-22T18:00:28+00:00">
+<meta property="article:modified_time" content="2019-06-20T20:28:30+00:00">
+<meta property="og:updated_time" content="2019-06-20T20:28:30+00:00">
+<meta property="fb:app_id" content="1679326302390196">
+<meta property="og:image" content="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg">
+<meta property="og:image:secure_url" content="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Let's break let’s break down the progression from deep-learning training to inference in the context of AI how they both function.">
+<meta name="twitter:title" content="What’s the Difference Between Deep Learning Training and Inference? | The Official NVIDIA Blog">
+<meta name="twitter:site" content="@NVIDIA">
+<meta name="twitter:image" content="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg">
+<meta name="twitter:creator" content="@NVIDIA">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://blogs.nvidia.com/#website","url":"https://blogs.nvidia.com/","name":"The Official NVIDIA Blog","potentialAction":{"@type":"SearchAction","target":"https://blogs.nvidia.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/#primaryimage","url":"https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg","width":1080,"height":720,"caption":"Looking for inferencing in the real world? Turn on your smartphone."},{"@type":"WebPage","@id":"https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/#webpage","url":"https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/","inLanguage":"en-US","name":"What\u2019s the Difference Between Deep Learning Training and Inference? | The Official NVIDIA Blog","isPartOf":{"@id":"https://blogs.nvidia.com/#website"},"primaryImageOfPage":{"@id":"https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/#primaryimage"},"datePublished":"2016-08-22T18:00:28+00:00","dateModified":"2019-06-20T20:28:30+00:00","author":{"@id":"https://blogs.nvidia.com/#/schema/person/a10fe5256374c5a47ef0d3d53a0bf62a"},"description":"Let's break let\u2019s break down the progression from deep-learning training to inference in the context of AI how they both function."},{"@type":["Person"],"@id":"https://blogs.nvidia.com/#/schema/person/a10fe5256374c5a47ef0d3d53a0bf62a","name":"Michael Copeland","image":{"@type":"ImageObject","@id":"https://blogs.nvidia.com/#authorlogo","url":"https://secure.gravatar.com/avatar/eaa997babe02b60996eb023c7f1fd7e3?s=96&d=mm&r=g","caption":"Michael Copeland"},"description":"A long-time journalist based in Silicon Valley, Michael has been in the thick of technological change since the web took hold. Writing and editing for such outlets as WIRED, Fortune, and Business 2.0, Michael has been a part of identifying and explaining some of the most monumental (and monumentally stupid) trends in technology from the time Netscape was a thing. Most recently he helped lead editorial efforts as a partner at venture capital firm Andreessen Horowitz.","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://nvidiablog.disqus.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="The Official NVIDIA Blog » Feed" href="https://blogs.nvidia.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="The Official NVIDIA Blog » Comments Feed" href="https://blogs.nvidia.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blogs.nvidia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="style.css" type="text/css" media="all">
+<link rel="stylesheet" id="yith-infs-style-css" href="frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="nvb5-style-css" href="styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="print-style-css" href="print.css" type="text/css" media="print">
+<link rel="stylesheet" id="bxslider-css" href="jquery.css" type="text/css" media="screen">
+<link rel="stylesheet" id="tablepress-default-css" href="tablepress-combined.css" type="text/css" media="all">
+<link rel="stylesheet" id="highlight-and-share-email-css" href="highlight-and-share-emails.css" type="text/css" media="all">
+<link rel="stylesheet" id="highlight-and-share-css" href="highlight-and-share.css" type="text/css" media="all">
+<link rel="stylesheet" id="colorbox-css" href="colorbox.css" type="text/css" media="all">
+<script type="text/javascript" src="jquery_008.js"></script>
+<script type="text/javascript" src="jquery-migrate.js"></script>
+<script type="text/javascript" src="load-disqus.js"></script>
+<script type="text/javascript" src="nv-gtm.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogs.nvidia.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blogs.nvidia.com/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://blogs.nvidia.com/?p=34395">
+<link rel="alternate" type="application/json+oembed" href="https://blogs.nvidia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://blogs.nvidia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F&amp;format=xml">
+<link type="text/css" rel="stylesheet" href="simple-pull-quote.css">
+<meta name="generator" content="WPML ver:3.4.0 stt:1,28,2;">
+
+<style type="text/css">#lang_sel a, #lang_sel a.lang_sel_sel{color:#444444;}#lang_sel a:hover, #lang_sel a.lang_sel_sel:hover{color:#000000;}#lang_sel a.lang_sel_sel, #lang_sel a.lang_sel_sel:visited{background-color:#ffffff;}#lang_sel a.lang_sel_sel:hover{background-color:#eeeeee;}#lang_sel li ul a, #lang_sel li ul a:visited{color:#444444;}#lang_sel li ul a:hover{color:#000000;}#lang_sel li ul a, #lang_sel li ul a:link, #lang_sel li ul a:visited{background-color:#ffffff;}#lang_sel li ul a:hover{background-color:#eeeeee;}#lang_sel a, #lang_sel a:visited{border-color:#cdcdcd;} #lang_sel ul ul{border-top:1px solid #cdcdcd;}</style>
+	<meta name="google-site-verification" content="fRN6Tokx0As6AGYPd4zjMBgITWR2dvXjN6Zb3gojo-Y">
+	<script type="text/javascript" src="satelliteLib-83ef9349726ac41eb29937f097a1adb4802f148d.js"></script><script src="mbox-contents-8607bf005193af02d5af3a1af0f3297ceffcdbfe.js"></script><script type="text/javascript" src="ps-utid.js" async=""></script><script src="satellite-57adc88f64746d3e8a000ee0.js"></script><script src="satellite-57cffad664746d361900afbb.js"></script>
+	<!-- for global search -->
+	<script type="text/javascript">var isIE6 = false;var isIE7 = false;</script><script async="" type="text/javascript" src="count_002.js"></script><style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{position:fixed;background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}[dir=rtl] .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style><script src="satellite-5aa287ac64746d5a680018e1.js"></script><script src="satellite-5aa7ade564746d5a6200311c.js"></script><script src="satellite-5aa7ade564746d5a6200311d.js"></script><script src="satellite-5a32742864746d0864005afa.js"></script><script src="satellite-5b69471e64746d2bdc003059.js"></script><script src="satellite-5b4330e364746d5695004f9b.js"></script><script src="satellite-5a77f88064746d169d000595.js"></script><script src="satellite-5a79a61964746d04f5000035.js"></script><script src="satellite-5a79a70164746d373500021e.js"></script><script src="satellite-5a26bb8064746d1dae00518f.js"></script><script src="satellite-598bf6c364746d5708002415.js"></script><script src="satellite-5a9d56a764746d23c400b64e.js"></script><script src="satellite-5af92a4564746d324e0073e9.js"></script><script src="satellite-5ad4fa8564746d7e3100293d.js"></script><script src="satellite-594929c064746d3b0300c08c.js"></script><script src="satellite-57bef2ad64746d78b2005b7d.js"></script><script src="satellite-5804718e64746d492a00411b.js"></script><script src="satellite-580482ff64746d4ccb00418f.js"></script><script src="satellite-580715d364746d5fd70065b3.js"></script><script src="satellite-5845588c64746d0999008737.js"></script><script src="satellite-58f9d58164746d1905009392.js"></script><script src="satellite-5ae0c93f64746d10a1006d9a.js"></script><script src="s-code-contents-f94b9086b601efccfd108c7d00bff23f03d85bb7.js"></script><script type="text/javascript" async="" src="embed.js"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><link rel="prefetch" href="https://c.disquscdn.com/next/embed/styles/lounge.953a2bd009935f47a8e815c3ee2bfc5a.css"><link rel="prefetch" href="https://c.disquscdn.com/next/embed/common.bundle.3ec876f0dd63f3552e71b17b94e297ec.js"><link rel="prefetch" href="https://c.disquscdn.com/next/embed/lounge.bundle.ae2c759244193264ec2a1bfbfc626d7e.js"><link rel="prefetch" href="https://disqus.com/next/config.js"><script charset="utf-8" src="https://load.sumo.com/76.b673d503a425732f6368.js"></script><script charset="utf-8" src="https://load.sumo.com/78.b673d503a425732f6368.js"></script></head>
+
+<body class="post-template-default single single-post postid-34395 single-format-standard group-blog non-aggregation-view site-lang-en">
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="inner for-masthead">
+			<div class="site-branding">
+							<a href="http://www.nvidia.com/" rel="home">
+									<div class="site-title">
+						<span class="site-title-text">The Official NVIDIA Blog</span>
+					</div>
+				</a>
+			</div><!-- .site-branding -->
+
+			<div class="mobile-menu-toggle-wrapper to-open">
+				<button class="mobile-menu-toggle">	<span class="icon icon-menu"></span>
+	</button>
+			</div>
+
+			<nav id="site-navigation" class="primary-menu-slot main-navigation" role="navigation">
+				<div class="main-navigation-inner">
+					<div class="mobile-menu-toggle-wrapper to-close">
+						<button class="mobile-menu-toggle">	<span class="icon icon-x"></span>
+	</button>
+					</div>
+
+					<div class="menu-primary-container"><ul id="primary-menu" class="menu"><li id="menu-item-34290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34290"><a>PLATFORMS<span class="icon icon-triangle-right"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-43614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43614"><a>AUTONOMOUS MACHINES<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-43615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43615"><a href="https://www.nvidia.com/en-us/autonomous-machines/">OVERVIEW</a></li>
+		<li id="menu-item-43616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43616"><a>INDUSTRIES<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43617"><a href="https://www.nvidia.com/en-us/autonomous-machines/uavs-drones-technology/">DRONES</a></li>
+			<li id="menu-item-43618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43618"><a href="https://www.nvidia.com/en-us/autonomous-machines/robotics/">ROBOTICS</a></li>
+			<li id="menu-item-43619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43619"><a href="https://www.nvidia.com/en-us/autonomous-machines/intelligent-video-analytics-platform/">INTELLIGENT VIDEO ANALYTICS (IVA)</a></li>
+		</ul>
+</li>
+		<li id="menu-item-43620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43620"><a>PRODUCTS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43621"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/">OVERVIEW</a></li>
+			<li id="menu-item-43622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43622"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/">JETSON NANO</a></li>
+			<li id="menu-item-43623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43623"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier/">JETSON AGX XAVIER</a></li>
+			<li id="menu-item-43624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43624"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-tx2/">JETSON TX2</a></li>
+		</ul>
+</li>
+		<li id="menu-item-43625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43625"><a href="https://developer.nvidia.com/embedded-computing">FOR DEVELOPERS</a></li>
+		<li id="menu-item-43626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43626"><a href="https://www.nvidia.com/en-us/autonomous-machines/jetson-store/">JETSON STORE</a></li>
+	</ul>
+</li>
+	<li id="menu-item-34292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34292"><a>CLOUD &amp; DATA CENTER<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-43627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43627"><a href="https://www.nvidia.com/en-us/data-center/">OVERVIEW</a></li>
+		<li id="menu-item-34297" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34297"><a href="https://www.nvidia.com/en-us/data-center/products/">PRODUCTS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43628"><a href="https://www.nvidia.com/en-us/data-center/products/">OVERVIEW</a></li>
+			<li id="menu-item-33527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33527"><a href="https://www.nvidia.com/en-us/data-center/tesla">TESLA</a></li>
+			<li id="menu-item-43629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43629"><a href="https://www.nvidia.com/en-us/data-center/products/enterprise-server/">T4 ENTERPRISE SERVER</a></li>
+			<li id="menu-item-34704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34704"><a href="https://www.nvidia.com/en-us/data-center/dgx-1/">DGX</a></li>
+			<li id="menu-item-34705" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34705"><a href="https://www.nvidia.com/en-us/data-center/dgx-2/">DGX 2</a></li>
+			<li id="menu-item-28488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28488"><a href="https://www.nvidia.com/en-us/data-center/dgx-station/">DGX STATION</a></li>
+			<li id="menu-item-28486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28486"><a href="https://www.nvidia.com/en-us/data-center/hgx">HGX</a></li>
+			<li id="menu-item-28485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28485"><a href="https://www.nvidia.com/en-us/gpu-cloud">NGC</a></li>
+			<li id="menu-item-43630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43630"><a href="https://www.nvidia.com/en-us/data-center/virtual-solutions/">VIRTUAL GPU</a></li>
+			<li id="menu-item-43631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43631"><a href="https://www.nvidia.com/en-us/data-center/products/egx-edge-computing/">EGX</a></li>
+		</ul>
+</li>
+		<li id="menu-item-29340" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29340"><a title="Quadro VCA" href="https://www.nvidia.com/en-us/data-center/solutions/">SOLUTIONS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-28500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28500"><a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/">AI &amp; DEEP LEARNING</a></li>
+			<li id="menu-item-39780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39780"><a href="https://www.nvidia.com/en-us/data-center/tesla/#hpc">HIGH PERFORMANCE COMPUTING</a></li>
+			<li id="menu-item-43655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43655"><a href="https://www.nvidia.com/en-us/data-center/rtx-server-gaming/">CLOUD GAMING</a></li>
+			<li id="menu-item-39781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39781"><a href="https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/">GPU CLOUD COMPUTING</a></li>
+			<li id="menu-item-39782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39782"><a href="https://www.nvidia.com/en-us/data-center/virtualization/">GPU VIRTUALIZATION</a></li>
+			<li id="menu-item-39783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39783"><a href="https://www.nvidia.com/en-us/data-center/ai-accelerated-analytics/">ANALYTICS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-34285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34285"><a>APPS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39784"><a href="https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/catalog/">GPU APPS DIRECTORY</a></li>
+			<li id="menu-item-39785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39785"><a href="https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/">GPU READY APPS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-34286" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34286"><a href="https://developer.nvidia.com/computeworks">FOR DEVELOPERS</a></li>
+		<li id="menu-item-34287" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34287"><a>TECHNOLOGIES<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39786"><a href="https://www.nvidia.com/en-us/data-center/volta-gpu-architecture/">NVIDIA VOLTA</a></li>
+			<li id="menu-item-39787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39787"><a href="https://www.nvidia.com/en-us/data-center/pascal-gpu-architecture/">NVIDIA PASCAL</a></li>
+			<li id="menu-item-39788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39788"><a href="https://www.nvidia.com/en-us/data-center/nvlink/">NVLINK/NVSWITCH</a></li>
+			<li id="menu-item-39789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39789"><a href="https://www.nvidia.com/en-us/data-center/tensorcore/">TENSOR CORES</a></li>
+			<li id="menu-item-39790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39790"><a href="https://www.nvidia.com/en-us/data-center/index-paraview-plugin/">INDEX PARAVIEW PLUGIN</a></li>
+			<li id="menu-item-43656" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43656"><a href="https://www.nvidia.com/en-us/data-center/virtual-gpu-technology/">VIRTUAL GPU TECHNOLOGY</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-36046" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-36046"><a>DEEP LEARNING AND AI<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-43683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43683"><a href="https://www.nvidia.com/en-us/deep-learning-ai/">OVERVIEW</a></li>
+		<li id="menu-item-36047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-36047"><a>INDUSTRIES<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43684"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/">OVERVIEW</a></li>
+			<li id="menu-item-34300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34300"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/ai-innovators/">AI INNOVATORS</a></li>
+			<li id="menu-item-34302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34302"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/ai-cities/">AI CITIES</a></li>
+			<li id="menu-item-34303" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34303"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/public-good/">AI FOR PUBLIC GOOD</a></li>
+			<li id="menu-item-34304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34304"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/healthcare/">HEALTHCARE &amp; LIFE SCIENCES</a></li>
+			<li id="menu-item-34305" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34305"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/higher-education-research/">HIGHER EDUCATION</a></li>
+			<li id="menu-item-34306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34306"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/retail/">RETAIL</a></li>
+			<li id="menu-item-34310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34310"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/">ROBOTICS</a></li>
+			<li id="menu-item-34311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34311"><a href="https://www.nvidia.com/en-us/deep-learning-ai/industries/automotive/">SELF-DRIVING CARS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-34314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34314"><a href="https://www.nvidia.com/en-us/deep-learning-ai/developer/">DEVELOPER</a></li>
+		<li id="menu-item-34316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34316"><a>PRODUCTS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-40667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40667"><a href="https://www.nvidia.com/en-us/deep-learning-ai/products/agx-systems/">AGX SYSTEMS</a></li>
+			<li id="menu-item-34315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34315"><a href="https://www.nvidia.com/en-us/data-center/dgx-systems/">DGX SYSTEMS</a></li>
+			<li id="menu-item-34293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34293"><a href="https://www.nvidia.com/en-us/gpu-cloud/">NGC</a></li>
+			<li id="menu-item-43651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43651"><a href="https://www.nvidia.com/en-us/titan/titan-rtx/">NVIDIA TITAN RTX</a></li>
+			<li id="menu-item-34294" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34294"><a href="https://www.nvidia.com/en-us/titan/titan-v/">NVIDIA TITAN V</a></li>
+			<li id="menu-item-43652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43652"><a href="https://www.nvidia.com/en-us/data-center/tesla/">NVIDIA TESLA</a></li>
+			<li id="menu-item-43653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43653"><a href="https://www.nvidia.com/en-us/data-center/products/enterprise-server/">T4 ENTERPRISE SERVER</a></li>
+		</ul>
+</li>
+		<li id="menu-item-34295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34295"><a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/">SOLUTIONS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43654"><a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/">DATA SCIENCE</a></li>
+			<li id="menu-item-34296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34296"><a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/inference-platform/">INFERENCE</a></li>
+		</ul>
+</li>
+		<li id="menu-item-34309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34309"><a href="https://www.nvidia.com/en-us/deep-learning-ai/education/">EDUCATION</a></li>
+		<li id="menu-item-34313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34313"><a href="https://www.nvidia.com/en-us/deep-learning-ai/startups/">AI STARTUPS</a></li>
+	</ul>
+</li>
+	<li id="menu-item-30549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30549"><a href="https://www.nvidia.com/en-us/design-visualization/">DESIGN AND PRO VISUALIZATION<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-28499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28499"><a>INDUSTRIES<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39791"><a href="https://www.nvidia.com/en-us/design-visualization/industries/architecture-engineering-construction">ARCHITECTURE, ENGINEERING AND CONSTRUCTION</a></li>
+			<li id="menu-item-39792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39792"><a href="https://www.nvidia.com/en-us/design-visualization/industries/education">EDUCATION</a></li>
+			<li id="menu-item-39793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39793"><a href="https://www.nvidia.com/en-us/design-visualization/industries/manufacturing">MANUFACTURING</a></li>
+			<li id="menu-item-39832" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39832"><a href="https://www.nvidia.com/en-us/design-visualization/industries/media-entertainment">MEDIA AND ENTERTAINMENT</a></li>
+		</ul>
+</li>
+		<li id="menu-item-39797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39797"><a>PRODUCTS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39795"><a href="https://www.nvidia.com/en-us/design-visualization/quadro/">QUADRO</a></li>
+			<li id="menu-item-39796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39796"><a href="https://www.nvidia.com/en-us/design-visualization/quadro-vdws/">QUADRO vDWS</a></li>
+			<li id="menu-item-39798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39798"><a href="https://www.nvidia.com/en-us/design-visualization/grid-vpc-vapps/">GRID vPC/vAPPS</a></li>
+			<li id="menu-item-43657" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43657"><a href="https://www.nvidia.com/en-us/titan/titan-rtx/">NVIDIA TITAN RTX</a></li>
+			<li id="menu-item-39799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39799"><a href="https://www.nvidia.com/en-us/titan/titan-xp/">NVIDIA TITAN XP</a></li>
+			<li id="menu-item-39800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39800"><a href="https://www.nvidia.com/en-us/design-visualization/nvs-graphics-cards/">NVS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-31627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31627"><a>SOLUTIONS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39801"><a href="https://www.nvidia.com/en-us/design-visualization/solutions/quadro-display-desktop-management/">MULTI-DISPLAY</a></li>
+			<li id="menu-item-39802" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39802"><a href="https://www.nvidia.com/en-us/design-visualization/solutions/rendering/">RENDERING</a></li>
+			<li id="menu-item-39803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39803"><a href="https://www.nvidia.com/en-us/design-visualization/solutions/virtualization/">VIRTUALIZATION</a></li>
+			<li id="menu-item-39804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39804"><a href="https://www.nvidia.com/en-us/design-visualization/solutions/quadro-vr/">VIRTUAL REALITY</a></li>
+			<li id="menu-item-39805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39805"><a href="https://www.nvidia.com/en-us/data-center/index-paraview-plugin/">HPC VISUALIZATION</a></li>
+			<li id="menu-item-43658" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43658"><a href="https://www.nvidia.com/en-us/design-visualization/creators/">FOR CREATORS</a></li>
+			<li id="menu-item-43659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43659"><a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workstations/">FOR DATA SCIENTISTS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-28490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28490"><a>TECHNOLOGIES<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39806"><a href="https://www.nvidia.com/en-us/design-visualization/technologies/material-definition-language/">MATERIAL DEFINITION LANGUAGE</a></li>
+			<li id="menu-item-40669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40669"><a href="https://www.nvidia.com/en-us/design-visualization/technologies/rtx/">NVIDIA RTX</a></li>
+			<li id="menu-item-39807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39807"><a href="https://www.nvidia.com/en-us/data-center/nvlink/">NVLINK</a></li>
+			<li id="menu-item-40670" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40670"><a href="https://www.nvidia.com/en-us/design-visualization/technologies/turing-architecture/">TURING ARCHITECTURE</a></li>
+			<li id="menu-item-39808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39808"><a href="https://www.nvidia.com/en-us/design-visualization/technologies/virtual-gpu/">VIRTUAL GPU TECHNOLOGY</a></li>
+			<li id="menu-item-39809" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39809"><a href="https://www.nvidia.com/en-us/design-visualization/technologies/holodeck/">HOLODECK</a></li>
+		</ul>
+</li>
+		<li id="menu-item-43660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43660"><a href="https://www.nvidia.com/en-us/design-visualization/creators/">FOR CREATORS</a></li>
+		<li id="menu-item-28497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28497"><a href="https://developer.nvidia.com/designworks">FOR DEVELOPERS</a></li>
+		<li id="menu-item-42993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42993"><a href="https://www.nvidia.com/en-us/design-visualization/quadro-store/">QUADRO STORE</a></li>
+	</ul>
+</li>
+	<li id="menu-item-43632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43632"><a href="https://www.nvidia.com/en-us/healthcare/">HEALTHCARE</a></li>
+	<li id="menu-item-28496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28496"><a>HIGH PERFORMANCE COMPUTING<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-39833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39833"><a href="https://www.nvidia.com/en-us/high-performance-computing/">OVERVIEW</a></li>
+		<li id="menu-item-39834" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39834"><a>PRODUCTS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39835" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39835"><a href="https://www.nvidia.com/en-us/data-center/tesla/">TESLA</a></li>
+			<li id="menu-item-43633" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43633"><a href="https://www.nvidia.com/en-us/data-center/products/enterprise-server/">T4 ENTERPRISE SERVER</a></li>
+			<li id="menu-item-43634" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43634"><a href="https://www.nvidia.com/en-us/data-center/dgx-1/">DGX</a></li>
+			<li id="menu-item-43635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43635"><a href="https://www.nvidia.com/en-us/data-center/dgx-2/">DGX-2</a></li>
+			<li id="menu-item-43636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43636"><a href="https://www.nvidia.com/en-us/gpu-cloud/">NGC</a></li>
+			<li id="menu-item-43637" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43637"><a href="https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/">GPU CLOUD COMPUTING</a></li>
+		</ul>
+</li>
+		<li id="menu-item-43638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43638"><a>APPS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43639" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43639"><a href="https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/catalog/">GPU APPS CATALOG</a></li>
+			<li id="menu-item-43640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43640"><a href="https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/">GPU READY APPS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-43641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43641"><a>FOR DEVELOPERS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43642"><a href="https://www.nvidia.com/en-us/deep-learning-ai/developer/">DEEP LEARNING &amp; AI</a></li>
+			<li id="menu-item-43643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43643"><a href="https://www.nvidia.com/en-us/data-center/index-paraview-plugin/">INDEX PARAVIEW PLUG-IN</a></li>
+			<li id="menu-item-43644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43644"><a href="https://developer.nvidia.com/cuda-zone">CUDA</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-28493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28493"><a href="https://www.nvidia.com/en-us/self-driving-cars/">SELF-DRIVING CARS<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-39815" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39815"><a>SOLUTIONS<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-39816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39816"><a href="https://www.nvidia.com/en-us/self-driving-cars/drive-px">NVIDIA DRIVE PLATFORM</a></li>
+			<li id="menu-item-39817" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39817"><a href="https://www.nvidia.com/en-us/self-driving-cars/data-center/">NVIDIA DGX SYSTEMS</a></li>
+			<li id="menu-item-39818" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39818"><a href="https://www.nvidia.com/en-us/self-driving-cars/drive-constellation/">NVIDIA DRIVE CONSTELLATION</a></li>
+			<li id="menu-item-39819" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39819"><a href="https://www.nvidia.com/en-us/self-driving-cars/drive-ix/">NVIDIA DRIVE IX</a></li>
+			<li id="menu-item-39820" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39820"><a href="https://www.nvidia.com/en-us/self-driving-cars/hd-mapping">HD MAPPING</a></li>
+			<li id="menu-item-39821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39821"><a href="https://www.nvidia.com/en-us/self-driving-cars/adas">ADVANCED DRIVER ASSISTANCE SYSTEMS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-39822" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39822"><a href="https://www.nvidia.com/en-us/self-driving-cars/partners">PARTNERS</a></li>
+		<li id="menu-item-39823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39823"><a href="https://developer.nvidia.com/drive">FOR DEVELOPERS</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28495"><a href="http://www.geforce.com/">GAMING &amp; ENTERTAINMENT<span class="icon icon-triangle-right"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-43645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43645"><a>GEFORCE GAMING<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43646"><a href="https://www.nvidia.com/en-us/geforce/">OVERVIEW</a></li>
+			<li id="menu-item-39824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39824"><a href="https://www.nvidia.com/en-us/geforce/20-series/">20 SERIES GRAPHICS CARDS</a></li>
+			<li id="menu-item-43647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43647"><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/16-series/">16 SERIES GRAPHICS CARDS</a></li>
+			<li id="menu-item-39826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39826"><a href="https://www.nvidia.com/en-us/geforce/products/">10 SERIES GRAPHICS CARDS</a></li>
+			<li id="menu-item-39825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39825"><a href="https://www.nvidia.com/en-us/geforce/gaming-laptops/20-series/">GAMING LAPTOPS</a></li>
+			<li id="menu-item-39827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39827"><a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/">G-SYNC DISPLAYS</a></li>
+			<li id="menu-item-43695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43695"><a href="https://www.nvidia.com/en-us/geforce/products/big-format-gaming-displays/">BIG FORMAT GAMING DISPLAYS (BFGD)</a></li>
+			<li id="menu-item-43696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43696"><a href="https://www.nvidia.com/en-us/geforce/geforce-experience/">GEFORCE EXPERIENCE</a></li>
+			<li id="menu-item-43697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43697"><a href="https://www.nvidia.com/en-us/geforce/products/geforce-now/">GEFORCE NOW</a></li>
+		</ul>
+</li>
+		<li id="menu-item-43648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43648"><a>SHIELD<span class="icon icon-triangle-right"></span></a>
+		<ul class="sub-menu">
+			<li id="menu-item-43649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43649"><a href="https://www.nvidia.com/en-us/shield/">OVERVIEW</a></li>
+			<li id="menu-item-43650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43650"><a href="https://www.nvidia.com/en-us/geforce/products/big-format-gaming-displays/#shieldtv">DISPLAYS WITH SHIELD TV</a></li>
+		</ul>
+</li>
+		<li id="menu-item-39828" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39828"><a href="https://www.nvidia.com/en-us/design-visualization/creators/">FOR CREATORS</a></li>
+		<li id="menu-item-39829" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39829"><a href="https://www.nvidia.com/en-us/geforce/20-series/rtx-for-broadcasting/">FOR BROADCASTERS</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-28484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28484"><a>DEVELOPERS<span class="icon icon-triangle-right"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-39836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39836"><a href="https://developer.nvidia.com/">NVIDIA DEVELOPER</a></li>
+	<li id="menu-item-43587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43587"><a href="https://news.developer.nvidia.com/">DEVELOPER NEWS</a></li>
+	<li id="menu-item-43588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43588"><a href="https://devblogs.nvidia.com/">DEVELOPER BLOG</a></li>
+	<li id="menu-item-43589" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43589"><a href="https://devtalk.nvidia.com/">DEVELOPER FORUMS</a></li>
+	<li id="menu-item-39838" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39838"><a href="https://developer.nvidia.com/open-source">OPEN SOURCE PORTAL</a></li>
+	<li id="menu-item-43677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43677"><a href="https://www.nvidia.com/en-us/gtc/">GPU TECHNOLOGY CONFERENCES</a></li>
+	<li id="menu-item-39837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39837"><a href="https://developer.nvidia.com/cuda-zone">CUDA</a></li>
+</ul>
+</li>
+<li id="menu-item-28501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28501"><a>INDUSTRIES<span class="icon icon-triangle-right"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-28464" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28464"><a href="https://www.nvidia.com/en-us/industries/game-development/">GAME DEVELOPMENT</a></li>
+	<li id="menu-item-28465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28465"><a href="https://www.nvidia.com/en-us/industries/healthcare/">HEALTHCARE</a></li>
+	<li id="menu-item-28466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28466"><a href="https://www.nvidia.com/en-us/industries/higher-education-research/">HIGHER EDUCATION</a></li>
+	<li id="menu-item-28467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28467"><a href="https://www.nvidia.com/en-us/industries/industrial/">INDUSTRIAL</a></li>
+	<li id="menu-item-28468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28468"><a href="https://www.nvidia.com/en-us/industries/media-and-entertainment/">MEDIA &amp; ENTERTAINMENT</a></li>
+	<li id="menu-item-43605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43605"><a href="https://www.nvidia.com/en-us/industries/public-sector/">PUBLIC SECTOR</a></li>
+	<li id="menu-item-43606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43606"><a href="https://www.nvidia.com/en-us/industries/retail/">RETAIL</a></li>
+	<li id="menu-item-43607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43607"><a href="https://www.nvidia.com/en-us/industries/supercomputing/">SUPERCOMPUTING</a></li>
+	<li id="menu-item-43608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43608"><a href="https://www.nvidia.com/en-us/industries/telecommunications/">TELECOMMUNICATIONS</a></li>
+	<li id="menu-item-43609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43609"><a href="https://www.nvidia.com/en-us/industries/transportation/">TRANSPORTATION</a></li>
+	<li id="menu-item-43610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43610"><a href="https://www.nvidia.com/en-us/industries/">ALL INDUSTRIES</a></li>
+</ul>
+</li>
+<li id="menu-item-28518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28518"><a href="https://www.nvidia.com/en-us/shop/">SHOP</a></li>
+<li id="menu-item-28461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28461"><a>DRIVERS<span class="icon icon-triangle-right"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-28462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28462"><a href="https://www.geforce.com/drivers">GEFORCE DRIVERS</a></li>
+	<li id="menu-item-28463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28463"><a href="https://www.nvidia.com/Download/index.aspx?lang=en-us">ALL NVIDIA DRIVERS</a></li>
+</ul>
+</li>
+<li id="menu-item-28517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28517"><a href="https://www.nvidia.com/en-us/support/">SUPPORT</a></li>
+<li id="menu-item-28519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28519"><a href="https://www.nvidia.com/en-us/about-nvidia/">ABOUT NVIDIA<span class="icon icon-triangle-right"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-43611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43611"><a href="https://www.nvidia.com/en-us/about-nvidia/partners/">NVIDIA PARTNER NETWORK</a></li>
+	<li id="menu-item-28525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28525"><a href="https://www.nvidia.com/en-us/about-nvidia/ai-computing/">AI COMPUTING MODEL</a></li>
+	<li id="menu-item-43612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43612"><a href="https://www.nvidia.com/en-us/technologies/">TECHNOLOGIES</a></li>
+	<li id="menu-item-28521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28521"><a href="https://nvidianews.nvidia.com/">NEWSROOM</a></li>
+	<li id="menu-item-28522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-28522"><a href="https://blogs.nvidia.com/">NVIDIA BLOG</a></li>
+	<li id="menu-item-28509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28509"><a href="https://www.nvidia.com/en-us/research/">RESEARCH</a></li>
+	<li id="menu-item-28515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28515"><a href="https://www.nvidia.com/en-us/about-nvidia/webinar-portal/">WEBINARS</a></li>
+	<li id="menu-item-35127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35127"><a href="https://www.nvidia.com/en-us/about-nvidia/events/">EVENTS</a></li>
+	<li id="menu-item-28520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28520"><a href="https://www.nvidia.com/en-us/about-nvidia/">COMPANY INFORMATION</a></li>
+	<li id="menu-item-30077" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30077"><a href="https://www.nvidia.com/en-us/about-nvidia/careers/">CAREERS</a></li>
+	<li id="menu-item-28523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28523"><a href="https://investor.nvidia.com/home/default.aspx">INVESTORS</a></li>
+	<li id="menu-item-28524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28524"><a href="https://www.nvidia.com/en-us/csr/">SOCIAL RESPONSIBILITY</a></li>
+	<li id="menu-item-43613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43613"><a href="https://www.nvidia.com/en-us/foundation/">NVIDIA FOUNDATION</a></li>
+</ul>
+</li>
+</ul></div>
+					<div class="nvidia-site-search for-mobile">
+
+					<form role="search" method="get" class="search-form" action="https://blogs.nvidia.com/">
+						<div class="form-item for-search">
+							<label>
+								<span class="screen-reader-text">Search for:</span>
+								<input class="search-field" placeholder="Search" name="s" title="Search for:" type="search">
+							</label>
+						</div>
+						<div class="form-item for-submit">
+							<button type="submit" class="search-submit">	<span class="icon icon-search"></span>
+	</button>
+						</div>
+						<input name="lang" value="en" type="hidden">
+					</form>
+
+					</div>
+
+					<div class="social-links for-mobile">	<div class="mobile-menu-social-links">
+		<ul class="mobile-menu-social-links-list">
+						<li>
+			<a href="https://twitter.com/nvidia" class="nvb4-social-connect-link for-twitter" target="_blank">	<span class="icon icon-twitter"></span>
+	</a>			</li>
+										<li>
+			<a href="https://www.facebook.com/NVIDIA" class="nvb4-social-connect-link for-facebook" target="_blank">	<span class="icon icon-facebook"></span>
+	</a>			</li>
+										<li>
+			<a href="https://news.ycombinator.com/submit" class="nvb4-social-connect-link for-hacker-news" target="_blank">	<span class="icon icon-hacker-news"></span>
+	</a>			</li>
+										<li>
+			<a href="https://www.instagram.com/nvidia/" class="nvb4-social-connect-link for-instagram" target="_blank">	<span class="icon icon-instagram"></span>
+	</a>			</li>
+									<!-- row -->
+										<li>
+			<a href="https://www.linkedin.com/company/nvidia/" class="nvb4-social-connect-link for-linkedin" target="_blank">	<span class="icon icon-linkedin"></span>
+	</a>			</li>
+										<li>
+			<a href="https://www.reddit.com/r/nvidia/" class="nvb4-social-connect-link for-reddit" target="_blank">	<span class="icon icon-reddit"></span>
+	</a>			</li>
+										<li>
+			<a href="https://feeds.feedburner.com/nvidiablog" class="nvb4-social-connect-link for-rss" target="_blank">	<span class="icon icon-rss"></span>
+	</a>			</li>
+										<li>
+			<a href="https://www.twitch.tv/nvidia" class="nvb4-social-connect-link for-twitch" target="_blank">	<span class="icon icon-twitch"></span>
+	</a>			</li>
+									<!-- row -->
+										<li>
+			<a href="https://www.youtube.com/nvidia" class="nvb4-social-connect-link for-youtube" target="_blank">	<span class="icon icon-youtube"></span>
+	</a>			</li>
+									</ul>
+	</div>
+						</div>
+
+					<div class="mobile-menu-footer for-mobile">
+							<div class="site-info">
+		<ul class="site-info-list">
+			<li><a href="https://blogs.nvidia.com/privacy-commenting-policy/">Privacy Policy</a></li>
+						<li><a href="https://www.nvidia.com/en-us/about-nvidia/legal-info/">Legal Info</a></li>
+									<li><a href="https://www.nvidia.com/en-us/contact/">Contact Us</a></li>
+					</ul>
+		<div class="copyright">
+			Copyright © 2019 NVIDIA Corporation		</div>
+	</div>
+						</div>
+
+				</div><!-- /.main-navigation-inner -->
+			</nav><!-- #site-navigation -->
+		</div><!-- /.inner.for-masthead -->
+	</header><!-- #masthead -->
+		<div class="secondary-menu-slot-wrapper">
+		<nav class="secondary-menu-slot" role="navigation">
+			<div class="secondary-menu-slot-inner inner for-masthead">
+				<div class="menu-secondary-container"><ul id="secondary-menu" class="menu"><li id="menu-item-1289" class="nav-home menu-item menu-item-type-custom menu-item-object-custom menu-item-1289"><a href="https://blogs.nvidia.com/">Home</a></li>
+<li id="menu-item-33260" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-33260"><a href="https://blogs.nvidia.com/blog/category/deep-learning/">Deep Learning</a></li>
+<li id="menu-item-33089" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33089"><a href="https://blogs.nvidia.com/blog/category/auto/">Driving</a></li>
+<li id="menu-item-4893" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4893"><a href="https://blogs.nvidia.com/blog/category/gaming/">Gaming</a></li>
+<li id="menu-item-40164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40164"><a href="https://blogs.nvidia.com/blog/category/pro-graphics/">Pro Graphics</a></li>
+<li id="menu-item-38968" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-38968"><a href="https://blogs.nvidia.com/blog/category/autonomous-machines/">Autonomous Machines</a></li>
+<li id="menu-item-40746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40746"><a href="https://blogs.nvidia.com/blog/tag/medical-research-and-healthcare/">Healthcare</a></li>
+<li id="menu-item-41315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41315"><a href="https://blogs.nvidia.com/ai-podcast/">AI Podcast</a></li>
+</ul></div>
+					<ul class="secondary-menu-socials">
+						<li class="search-item">
+							<form role="search" method="get" class="search-form" action="https://blogs.nvidia.com/">
+	<div class="form-item for-search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="search-field" placeholder="Search The Blog" name="s" title="Search for:" type="search">
+		</label>
+	</div>
+	<div class="form-item for-submit">
+		<input class="search-submit" value="Search" type="submit">
+		<button type="submit" class="search-submit-button">	<span class="icon icon-search"></span>
+	</button>
+	</div>
+<input name="lang" value="en" type="hidden"></form>
+							<a href="https://blogs.nvidia.com/?s=" class="search-icon-link js-search-item-link">	<span class="icon icon-search"></span>
+	</a>
+						</li><!-- .search-item -->
+					</ul><!-- .secondary-menu-socials -->
+			</div><!-- /.secondary-menu-slot-inner -->
+		</nav>
+	</div>	<div id="content" class="site-content">
+		<div class="inner for-content">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+			<div class="cf-posts-with-overrides">
+		
+
+<article id="post-34395" class="post-with-sidebar post-34395 post type-post status-publish format-standard has-post-thumbnail hentry category-deep-learning category-explainer category-the-ai-podcast tag-artificial-intelligence tag-gpu-computing tag-inference loop-item-1 for-pagenum-1" data-url="https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/" data-identifier="34395 https://blogs.nvidia.com/?p=34395" data-title="What’s the Difference Between Deep Learning Training and Inference?">
+
+	<header class="entry-header">
+		<div class="inner3">
+			<!-- TITLE -->
+			<h1>What’s the Difference Between Deep Learning Training and Inference?</h1>
+						<div class="author_meta">
+			<span class="entry-date">August 22, 2016</span> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="https://blogs.nvidia.com/blog/author/michaelcopeland/" title="View all posts by Michael Copeland">Michael Copeland</a></span>			</div>
+		</div><!-- /inner3 -->
+
+		<!-- FEATURED IMG/VIDEO -->
+					<div class="entry-title img-bg js-lazy-load-image orientation-landscape with-img" data-img-min="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone-328x219.jpg" data-img-max="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg" style="background-image:url(https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg)">
+			</div>
+		
+	</header><!-- .entry-header -->
+
+	<!-- META -->
+	<div class="entry-meta-social">
+		<div class="share-count-section">
+			<span class="share-count">
+				269			</span>
+			<span class="share-text">
+					<span class="icon icon-share"></span>
+					Shares			</span>
+		</div>
+		<ul class="entry-meta-social-links-list">
+			<li><a href="https://twitter.com/home?status=What%E2%80%99s%20the%20Difference%20Between%20Deep%20Learning%20Training%20and%20Inference?%20https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F" class="nvb4-social-share-link for-twitter" target="_blank">	<span class="icon icon-twitter"></span>
+	</a></li><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F" class="nvb4-social-share-link for-facebook" target="_blank">	<span class="icon icon-facebook"></span>
+	</a></li><li><a href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F&amp;t=What%E2%80%99s+the+Difference+Between+Deep+Learning+Training+and+Inference%3F+%7C+The+Official+NVIDIA+Blog" class="nvb4-social-share-link for-hacker-news" target="_blank">	<span class="icon icon-hacker-news"></span>
+	</a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F&amp;title=What%E2%80%99s+the+Difference+Between+Deep+Learning+Training+and+Inference%3F+%7C+The+Official+NVIDIA+Blog" class="nvb4-social-share-link for-linkedin" target="_blank">	<span class="icon icon-linkedin"></span>
+	</a></li><li><a href="#ea-share-count-email" class="ea-share-count-button style- ea-share-no-count email" data-postid="34395" data-nonce="81edccdd48" "=""><span class="ea-share-count-icon-label"><i class="ea-share-count-icon easc-envelope"></i><span class="ea-share-count-label">Email</span></span><span class="ea-share-count">1</span></a></li>		</ul>
+	</div><!-- .entry-meta -->
+
+	<div class="entry-content">
+		<div class="has-content-area" data-url="https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/" data-title="What’s the Difference Between Deep Learning Training and Inference?"><p><i>This is the second of a <a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">multi-part series explaining the fundamentals</a> of </i><a href="https://blogs.nvidia.com/blog/category/deep-learning/"><i>deep learning</i></a><i> by long-time tech journalist Michael Copeland.&nbsp;</i></p>
+<p>School’s in session. That’s how to think about <a href="https://developer.nvidia.com/deep-learning">deep neural networks</a> going through the “training” phase. <a href="https://developer.nvidia.com/discover/artificial-neural-network">Neural networks</a> get an education for the same reason most people do — to learn to do a job.</p>
+<p>More specifically, the trained neural network is put to work out in 
+the digital world using what it has learned — to recognize images, 
+spoken words, a blood disease, or suggest the shoes someone is likely to
+ buy next, you name it — in the streamlined form of an application. This
+ speedier and more efficient version of a neural network <i>infers </i>things about new data it’s presented with based on its training. In the AI lexicon this is known as “inference.”</p>
+<figure id="attachment_34485" aria-describedby="caption-attachment-34485" style="width: 1080px" class="wp-caption aligncenter"><a href="https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference.jpg"><img class="size-full wp-image-34485" src="ai_difference_between_deep_learning_training_inference.jpg" alt="Text" srcset="https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference.jpg 1080w, https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference-300x169.jpg 300w, https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference-768x432.jpg 768w, https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference-672x378.jpg 672w, https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference-676x381.jpg 676w, https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference-328x185.jpg 328w, https://blogs.nvidia.com/wp-content/uploads/2016/08/ai_difference_between_deep_learning_training_inference-700x394.jpg 700w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="608"></a><figcaption id="caption-attachment-34485" class="wp-caption-text">Inference is where capabilities learned during deep learning training are put to work.</figcaption></figure>
+<p>Inference can’t happen without training. Makes sense. That’s how we 
+gain and use our own knowledge for the most part. And just as we don’t 
+haul around all our teachers, a few overloaded bookshelves and a 
+red-brick schoolhouse to read a Shakespeare sonnet, inference doesn’t 
+require all the infrastructure of its training regimen to do its job 
+well.</p>
+<p>So let’s break down the progression from training to inference, and in the context of AI how they both function.</p>
+<h2><b>Training Deep Neural Networks</b></h2>
+<figure id="attachment_34398" aria-describedby="caption-attachment-34398" style="width: 1080px" class="wp-caption aligncenter"><a href="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web.jpg"><img class="wp-image-34398 size-full" src="inferencing_training_deep_learning_schoolhouse_web.jpg" alt="Think of deep learnning training as school. It trains networks to go out and solve problems in the wider world. " srcset="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web.jpg 1080w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web-300x200.jpg 300w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web-768x511.jpg 768w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web-672x447.jpg 672w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web-676x450.jpg 676w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_training_deep_learning_schoolhouse_web-328x218.jpg 328w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="719"></a><figcaption id="caption-attachment-34398" class="wp-caption-text">Just
+ as we don’t haul around all our teachers, a few overloaded bookshelves 
+and a red-brick schoolhouse to read a Shakespeare sonnet, inference 
+doesn’t require all the infrastructure of its training regimen to do its
+ job well.</figcaption></figure>
+<p>While the goal is the same – knowledge — the educational process, or 
+training, of a neural network is (thankfully) not quite like our own. 
+Neural networks are loosely modeled on the biology of our brains — all 
+those interconnections between the neurons. Unlike our brains, where any
+ neuron can connect to any other neuron within a certain physical 
+distance, <a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">artificial neural networks have separate layers, connections, and directions of data propagation</a>.</p>
+<p>When training a neural network, training data is put into the first 
+layer of the network, and individual neurons assign a weighting to the 
+input — how correct or incorrect it is — based on the task being 
+performed.</p>
+<p><em><strong>To learn more, check out <a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/inference-platform/">NVIDIA’s inference solutions</a> for the data center, self-driving cars, video analytics and more.</strong></em></p>
+<p>In an image recognition network, the first layer might look for 
+edges. The next might look for how these edges form shapes — rectangles 
+or circles. The third might look for particular features — such as shiny
+ eyes and button noses. Each layer passes the image to the next, until 
+the final layer and the final output determined by the total of all 
+those weightings is produced.</p>
+<p>But here’s where the training differs from our own. Let’s say the 
+task was to identify images of cats. The neural network gets all these 
+training images, does its weightings and comes to a conclusion of <i>cat</i> or <i>not</i>. What it gets in response from the training algorithm is only “right” or “wrong.”</p>
+<h2><b>Training Is Compute Intensive</b></h2>
+<p>And if the algorithm informs the neural network that it was wrong, it
+ doesn’t get informed what the right answer is. The error is propagated 
+back through the network’s layers and it has to guess at something else.
+ In each attempt it must consider other attributes — in our example 
+attributes of “catness” — and weigh the attributes examined at each 
+layer higher or lower. Then it guesses again. And again. And again. 
+Until it has the correct weightings and gets the correct answer 
+practically every time. It’s a cat.</p>
+<figure id="attachment_34399" aria-describedby="caption-attachment-34399" style="width: 1080px" class="wp-caption aligncenter"><a href="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat.jpg"><img class="wp-image-34399 size-full" src="inferencing_cat.jpg" alt="Training can teach deep learning networks to correctly label images of cats in a limited set, before the network is put to work detecting cats in the broader world. " srcset="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat.jpg 1080w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat-300x200.jpg 300w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat-768x512.jpg 768w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat-672x448.jpg 672w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat-676x451.jpg 676w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_cat-328x219.jpg 328w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="720"></a><figcaption id="caption-attachment-34399" class="wp-caption-text">Training
+ can teach deep learning networks to correctly label images of cats in a
+ limited set, before the network is put to work detecting cats in the 
+broader world.</figcaption></figure>
+<p>Now you have a data structure and all the weights in there have been 
+balanced based on what it has learned as you sent the training data 
+through. It’s a finely tuned thing of beauty. The problem is, it’s also a
+ monster when it comes to consuming compute. Andrew Ng, who honed his AI
+ chops at Google and Stanford and is now chief scientist at Baidu’s 
+Silicon Valley Lab, says training one of Baidu’s Chinese speech 
+recognition models requires not only four terabytes of training data, 
+but also 20 exaflops of compute — that’s 20 billion <i>billion </i>math operations — across the entire training cycle. Try getting that to run on a smartphone.</p>
+<p>That’s where inference comes in.</p>
+<h2><b>Congratulations! Your Neural Network Is Trained and Ready for Inference</b></h2>
+<p>That properly weighted neural network is essentially a clunky, 
+massive database. What you had to put in place to get that sucker to 
+learn — in our education analogy all those pencils, books, teacher’s 
+dirty looks — is now way more than you need to get any specific task 
+accomplished. Isn’t the point of graduating to be able to get rid of all
+ that stuff?</p>
+<p>If anyone is going to make use of all that training in the real 
+world, and that’s the whole point, what you need is a speedy application
+ that can retain the learning and apply it quickly to data it’s never 
+seen. That’s inference: taking smaller batches of real-world data and 
+quickly coming back with the same correct answer (really a prediction 
+that something is correct).</p>
+<p>While this is a brand new area of the field of computer science, 
+there are two main approaches to taking that hulking neural network and 
+modifying it for speed and improved latency in applications that run 
+across other networks.</p>
+<h2><b>How Inferencing Works</b></h2>
+<figure id="attachment_34397" aria-describedby="caption-attachment-34397" style="width: 1080px" class="wp-caption aligncenter"><a href="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg"><img class="size-full wp-image-34397" src="inferencing_smartphone.jpg" alt="Looking for inferencing in the real world? Turn on your smartphone." srcset="https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone.jpg 1080w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone-300x200.jpg 300w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone-768x512.jpg 768w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone-672x448.jpg 672w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone-676x451.jpg 676w, https://blogs.nvidia.com/wp-content/uploads/2016/08/inferencing_smartphone-328x219.jpg 328w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="720"></a><figcaption id="caption-attachment-34397" class="wp-caption-text">How
+ is inferencing used? Just turn on your smartphone. Inferencing is used 
+to put deep learning to work for everything from speech recognition to 
+categorizing your snapshots.</figcaption></figure>
+<p>The first approach looks at parts of the neural network that don’t 
+get activated after it’s trained. These sections just aren’t needed and 
+can be “pruned” away. The second approach looks for ways to fuse 
+multiple layers of the neural network into a single computational step.</p>
+<p>It’s akin to the compression that happens to a digital image. 
+Designers might work on these huge, beautiful, million pixel-wide and 
+tall images, but when they go to put it online, they’ll turn into a 
+jpeg. It’ll be almost exactly the same, indistinguishable to the human 
+eye, but at a smaller resolution. Similarly with inference you’ll get 
+almost the same accuracy of the prediction, but simplified, compressed 
+and optimized for runtime performance.</p>
+<p>What that means is we all use inference all the time. Your 
+smartphone’s voice-activated assistant uses inference, as does Google’s 
+speech recognition, image search and spam filtering applications. Baidu 
+also uses inference for speech recognition, malware detection and spam 
+filtering. Facebook’s image recognition and Amazon’s and Netflix’s 
+recommendation engines all rely on inference.</p>
+<p>GPUs, thanks to their parallel computing capabilities — or ability to
+ do many things at once — are good at both training and inference.</p>
+<p>Systems trained with GPUs allow computers to identify patterns and 
+objects as well as — or in some cases, better than — humans (see “<a href="https://blogs.nvidia.com/blog/2016/01/12/accelerating-ai-artificial-intelligence-gpus/">Accelerating AI with GPUs: A New Computing Model</a>”).</p>
+<p>After training is completed, the networks are deployed into the field
+ for “inference” — classifying data to “infer” a result. Here too, GPUs —
+ and their parallel computing capabilities — offer benefits, where they 
+run billions of computations based on the trained network to identify 
+known patterns or objects.</p>
+<p>You can see how these models and applications will just get smarter, 
+faster and more accurate. Training will get less cumbersome, and 
+inference will bring new applications to every aspect of our lives. It 
+seems the same admonition applies to <a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">AI</a> as it does to our youth — don’t be a fool, stay in school. Inference awaits.</p>
+<p><strong><em>To learn more, check out <a href="https://www.nvidia.com/en-us/deep-learning-ai/solutions/inference-platform/">NVIDIA’s inference solutions</a>
+ for the data center, self-driving cars, video analytics and more. Or to
+ learn more about the evolution of AI into deep learning, tune into the <a href="https://blogs.nvidia.com/ai-podcast/">AI Podcast</a> for an in-depth interview with NVIDIA’s own Will Ramey. </em></strong></p>
+<p><iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295616968&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" scrolling="no" data-mce-fragment="1" frameborder="no" width="100%" height="450"></iframe></p>
+<p><strong><em>Real-time ray-tracing is the talk of the 2018 Game 
+Developer Conference. So what is it? Where have you seen it before? And 
+how does it differ from rasterization? Check out “<a href="https://blogs.nvidia.com/blog/2018/03/19/whats-difference-between-ray-tracing-rasterization/">What’s the Difference Between Ray Tracing and Rasterization</a>?”&nbsp;</em></strong></p>
+</div>
+		<footer id="post-footer" class="entry-footer">
+			<div class="entry-footer-categories"><span class="cat-links">Categories: <a href="https://blogs.nvidia.com/blog/category/deep-learning/" rel="category tag">Deep Learning</a> | <a href="https://blogs.nvidia.com/blog/category/explainer/" rel="category tag">Explainer</a> | <a href="https://blogs.nvidia.com/blog/category/deep-learning/the-ai-podcast/" rel="category tag">The AI Podcast</a></span></div><div class="entry-footer-tags"><span class="tags-links">Tags: <a href="https://blogs.nvidia.com/blog/tag/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a href="https://blogs.nvidia.com/blog/tag/gpu-computing/" rel="tag">GPU Computing</a> | <a href="https://blogs.nvidia.com/blog/tag/inference/" rel="tag">Inference</a></span></div><div id="disqus_thread"><iframe id="dsq-app4319" name="dsq-app4319" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px ! important; min-width: 100% ! important; border: medium none ! important; overflow: hidden ! important; height: 0px ! important;" src="https://disqus.com/embed/comments/?base=default&amp;f=nvidiablog&amp;t_u=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2F2016%2F08%2F22%2Fdifference-deep-learning-training-inference-ai%2F&amp;t_d=What%E2%80%99s%20the%20Difference%20Between%20Deep%20Learning%20Training%20and%20Inference%3F&amp;t_t=What%E2%80%99s%20the%20Difference%20Between%20Deep%20Learning%20Training%20and%20Inference%3F&amp;s_o=default#version=4fd81c9e35c659f1046a0c8a1b32ae30" frameborder="0" width="100%"></iframe></div>		</footer><!-- .entry-footer -->
+
+	</div><!-- .entry-content -->
+	
+<div id="secondary" class="single-latest-news-widget-area" role="complementary">
+	<aside id="nvb5_subscribe_widget-2" class="widget NVB5_Subscribe_Widget">		<div class="subscribe-wrapper">
+						<img src="the-ai-podcast.jpg" alt="Subscribe Widget">
+						<a href="https://blogs.nvidia.com/ai-podcast/" class="subscribe-inner">
+															</a>
+		</div>
+		</aside><aside id="nvb5categorynewswidget-3" class="widget NVB5CategoryNewsWidget"><h3 class="widget-title">All nvidia news</h3>			<div class="category-latest-news">
+				
+<article class="excerpt orientation-landscape with-img post-44140 post type-post status-publish format-standard has-post-thumbnail hentry category-gaming tag-geforce tag-ray-tracing loop-item-1 for-pagenum-1" id="post-44140" data-post-id="44140">
+
+	<div class="inner for-hentry img-bg orientation-landscape with-img" style="background-image:url('https://blogs.nvidia.com/wp-content/uploads/2019/10/RTXGTX3-406x215.jpg');">
+
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.com/blog/2019/11/01/whats-the-difference-between-nvidia-rtx-and-gtx/" class="aggregation-card-link" title="What’s the Difference Between NVIDIA RTX and GTX?"></a>
+		</div><!-- /.inner2.for-hentry -->
+	</div><!-- /.inner.for-hentry -->
+
+	<div class="title-excerpt">
+		<h2 class="entry-title"><a href="https://blogs.nvidia.com/blog/2019/11/01/whats-the-difference-between-nvidia-rtx-and-gtx/" class="entry-title-text">What’s the Difference Between NVIDIA RTX and GTX?</a></h2>
+					<!-- DATE -->
+			<div class="publish-date">
+				<div class="meta-section-inner">
+					November 1, 2019				</div>
+			</div>
+			</div>
+</article>
+
+<article class="excerpt orientation-landscape with-img post-44124 post type-post status-publish format-standard has-post-thumbnail hentry category-deep-learning tag-artificial-intelligence tag-science loop-item-1 for-pagenum-1" id="post-44124" data-post-id="44124">
+
+	<div class="inner for-hentry img-bg orientation-landscape with-img" style="background-image:url('https://blogs.nvidia.com/wp-content/uploads/2019/10/Young-Corn-Plant-Cornfield-Food-Rows-Agriculture-4262406-406x215.jpg');">
+
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.com/blog/2019/11/01/ai-helps-farmers-whack-weeds/" class="aggregation-card-link" title="Bumper Crop of AI Helps Farmers Whack Weeds, Pesticide Use"></a>
+		</div><!-- /.inner2.for-hentry -->
+	</div><!-- /.inner.for-hentry -->
+
+	<div class="title-excerpt">
+		<h2 class="entry-title"><a href="https://blogs.nvidia.com/blog/2019/11/01/ai-helps-farmers-whack-weeds/" class="entry-title-text">Bumper Crop of AI Helps Farmers Whack Weeds, Pesticide Use</a></h2>
+					<!-- DATE -->
+			<div class="publish-date">
+				<div class="meta-section-inner">
+					November 1, 2019				</div>
+			</div>
+			</div>
+</article>
+
+<article class="excerpt orientation-landscape with-img post-44133 post type-post status-publish format-standard has-post-thumbnail hentry category-auto tag-automotive tag-nvidia-drive loop-item-1 for-pagenum-1" id="post-44133" data-post-id="44133">
+
+	<div class="inner for-hentry img-bg orientation-landscape with-img" style="background-image:url('https://blogs.nvidia.com/wp-content/uploads/2019/10/BWR-406x215.jpg');">
+
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.com/blog/2019/10/31/ai-innovations-smart-mobility-conference/" class="aggregation-card-link" title="Street Dreams: NVIDIA DRIVE AI Innovations Wow Smart Mobility Conference"></a>
+		</div><!-- /.inner2.for-hentry -->
+	</div><!-- /.inner.for-hentry -->
+
+	<div class="title-excerpt">
+		<h2 class="entry-title"><a href="https://blogs.nvidia.com/blog/2019/10/31/ai-innovations-smart-mobility-conference/" class="entry-title-text">Street Dreams: NVIDIA DRIVE AI Innovations Wow Smart Mobility Conference</a></h2>
+					<!-- DATE -->
+			<div class="publish-date">
+				<div class="meta-section-inner">
+					October 31, 2019				</div>
+			</div>
+			</div>
+</article>
+
+<article class="excerpt orientation-landscape with-img post-44119 post type-post status-publish format-standard has-post-thumbnail hentry category-deep-learning tag-artificial-intelligence tag-gtc-2019 tag-jetson loop-item-1 for-pagenum-1" id="post-44119" data-post-id="44119">
+
+	<div class="inner for-hentry img-bg orientation-landscape with-img" style="background-image:url('https://blogs.nvidia.com/wp-content/uploads/2019/11/NoTraf_Featured_Image-406x215.jpg');">
+
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.com/blog/2019/10/31/notraffic-ai-startup-intersections/" class="aggregation-card-link" title="NoTraffic, No Problems: AI Startup Improves Intersections"></a>
+		</div><!-- /.inner2.for-hentry -->
+	</div><!-- /.inner.for-hentry -->
+
+	<div class="title-excerpt">
+		<h2 class="entry-title"><a href="https://blogs.nvidia.com/blog/2019/10/31/notraffic-ai-startup-intersections/" class="entry-title-text">NoTraffic, No Problems: AI Startup Improves Intersections</a></h2>
+					<!-- DATE -->
+			<div class="publish-date">
+				<div class="meta-section-inner">
+					October 31, 2019				</div>
+			</div>
+			</div>
+</article>
+
+<article class="excerpt orientation-landscape with-img post-44111 post type-post status-publish format-standard has-post-thumbnail hentry category-the-ai-podcast loop-item-1 for-pagenum-1" id="post-44111" data-post-id="44111">
+
+	<div class="inner for-hentry img-bg orientation-landscape with-img" style="background-image:url('https://blogs.nvidia.com/wp-content/uploads/2018/05/ai-podcast-323x215.jpg');">
+
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.com/blog/2019/10/30/picture-perfect-product-help-ai-startup-brings-computer-vision-to-customer-service/" class="aggregation-card-link" title="Picture-Perfect Product Help: AI Startup Brings Computer Vision to Customer Service"></a>
+		</div><!-- /.inner2.for-hentry -->
+	</div><!-- /.inner.for-hentry -->
+
+	<div class="title-excerpt">
+		<h2 class="entry-title"><a href="https://blogs.nvidia.com/blog/2019/10/30/picture-perfect-product-help-ai-startup-brings-computer-vision-to-customer-service/" class="entry-title-text">Picture-Perfect Product Help: AI Startup Brings Computer Vision to Customer Service</a></h2>
+					<!-- DATE -->
+			<div class="publish-date">
+				<div class="meta-section-inner">
+					October 30, 2019				</div>
+			</div>
+			</div>
+</article>
+			</div>
+			</aside></div><!-- #secondary -->
+	<div class="clearfix"></div>
+
+</article><!-- #post-## -->
+			<nav class="navigation post-navigation nvb4-post-navigation" role="navigation">
+			<h2 class="screen-reader-text">Post navigation</h2>
+			<div class="nvb4-single-post-pagination" style="display: none;">
+				<div class="for-next js-for-next">
+					<a href="https://blogs.nvidia.com/blog/2016/08/22/the-witness-ansel/?nv_excludes=34400,34395" title="What’s the Difference Between Deep Learning Training and Inference?"></a>
+				</div>
+			</div>
+			</nav><!-- .navigation -->
+					</div>
+			</main><!-- #main -->
+</div><!-- #primary -->
+
+	</div><!-- /.inner.for-content -->
+</div><!-- #content -->
+
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="inner for-colophon">
+
+		<!-- == FOOTER AREA 1 == -->
+		<div class="footer-area-1">
+						<nav class="footer-menu-1-slot" role="navigation">
+										<h3 class="menu-title">Platforms</h3>
+					<div class="menu-platforms-container"><ul id="footer-menu-1" class="menu"><li id="menu-item-42750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42750"><a href="https://www.nvidia.com/en-us/technologies/cuda-x/">CUDA-X</a></li>
+<li id="menu-item-28532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28532"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/autonomous-machines/">Autonomous Machines</a></li>
+<li id="menu-item-28530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28530"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/data-center/">Data Center</a></li>
+<li id="menu-item-28529" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28529"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/deep-learning-ai/">Deep Learning and AI</a></li>
+<li id="menu-item-40671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40671"><a href="https://www.nvidia.com/en-us/design-visualization/">Design and Visualization</a></li>
+<li id="menu-item-28531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28531"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/healthcare/">Healthcare</a></li>
+<li id="menu-item-39779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39779"><a href="https://www.nvidia.com/en-us/high-performance-computing/">High Performance Computing</a></li>
+<li id="menu-item-28533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28533"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/self-driving-cars/">Self-Driving Cars</a></li>
+<li id="menu-item-28535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28535"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/geforce/">Gaming &amp; Entertainment</a></li>
+<li id="menu-item-42751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42751"><a href="https://www.nvidia.com/en-us/gpu-cloud/">NGC</a></li>
+</ul></div>			</nav>
+						<nav class="footer-menu-2-slot" role="navigation">
+										<h3 class="menu-title">Products</h3>
+					<div class="menu-products-container"><ul id="footer-menu-2" class="menu"><li id="menu-item-28536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28536"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/data-center/dgx-systems/">DGX Systems</a></li>
+<li id="menu-item-28537" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28537"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/self-driving-cars/drive-platform/">DRIVE PX</a></li>
+<li id="menu-item-28538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28538"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/geforce/20-series/">GeForce RTX 20-Series</a></li>
+<li id="menu-item-28539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28539"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/design-visualization/solutions/virtualization/">NVIDIA Virtual GPU</a></li>
+<li id="menu-item-28540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28540"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems-dev-kits-modules/">Jetson</a></li>
+<li id="menu-item-28541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28541"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/design-visualization/quadro/">Quadro</a></li>
+<li id="menu-item-28542" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28542"><a target="_blank" rel="noopener noreferrer" href="https://www.nvidia.com/en-us/shield/shield-tv/">SHIELD TV</a></li>
+<li id="menu-item-39778" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39778"><a href="https://www.nvidia.com/en-us/data-center/tesla/">Tesla</a></li>
+<li id="menu-item-42752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42752"><a href="https://www.nvidia.com/en-us/data-center/products/enterprise-server/">T4 Enterprise Server</a></li>
+</ul></div>			</nav>
+						<nav class="footer-menu-3-slot" role="navigation">
+										<h3 class="menu-title">Developers</h3>
+					<div class="menu-developers-container"><ul id="footer-menu-3" class="menu"><li id="menu-item-40378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40378"><a href="https://developer.nvidia.com/">NVIDIA Developer</a></li>
+<li id="menu-item-42753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42753"><a href="https://news.developer.nvidia.com/">Developer News</a></li>
+<li id="menu-item-42755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42755"><a href="https://devblogs.nvidia.com/">Developer Blog</a></li>
+<li id="menu-item-42754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42754"><a href="https://devtalk.nvidia.com/">Developer Forums</a></li>
+<li id="menu-item-42756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42756"><a href="https://developer.nvidia.com/open-source/">Open Source Portal</a></li>
+<li id="menu-item-40380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40380"><a href="https://developer.nvidia.com/training/">Training</a></li>
+<li id="menu-item-40381" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40381"><a href="https://www.nvidia.com/en-us/gtc/">GPU Tech Conference</a></li>
+<li id="menu-item-40379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40379"><a href="https://developer.nvidia.com/cuda-zone">CUDA</a></li>
+</ul></div>			</nav>
+						<nav class="footer-menu-4-slot" role="navigation">
+										<h3 class="menu-title">Corporate</h3>
+					<div class="menu-corporate-container"><ul id="footer-menu-4" class="menu"><li id="menu-item-40394" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40394"><a href="https://www.nvidia.com/en-us/about-nvidia/partners/">NVIDIA Partner Network</a></li>
+<li id="menu-item-40396" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40396"><a href="https://www.nvidia.com/en-us/about-nvidia/careers/">Careers</a></li>
+<li id="menu-item-40400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40400"><a href="https://www.nvidia.com/en-us/contact/">Contact Us</a></li>
+<li id="menu-item-40401" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40401"><a href="https://www.nvidia.com/en-us/product-security/">Security</a></li>
+<li id="menu-item-42757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42757"><a href="https://www.nvidia.com/en-us/about-nvidia/communities/">Communities</a></li>
+<li id="menu-item-40397" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40397"><a href="https://www.nvidia.com/en-us/about-nvidia/rss/">RSS Feeds</a></li>
+<li id="menu-item-40398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40398"><a href="https://www.nvidia.com/en-us/preferences/email-signup/">Email Signup</a></li>
+<li id="menu-item-40399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40399"><a href="https://www.nvidia.com/en-us/privacy-center/">Privacy Center</a></li>
+<li id="menu-item-40643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40643"><a href="mailto:blogideas@nvidia.com">Share Your Story Idea</a></li>
+</ul></div>			</nav>
+					</div><!-- /.footer-area-1 -->
+
+		<!-- == FOOTER AREA 2 == -->
+		<div class="footer-area-2">
+			<div class="explore-cta">
+				<a href="https://www.nvidia.com/en-us/contact/social/">
+					<div class="explore-cta-icon-wrapper">
+							<span class="icon icon-plus"></span>
+	</div>
+					<div class="explore-cta-text">
+						<div class="explore-cta-text-inner">
+							Explore our regional blogs and other social networks</div>
+					</div>
+				</a>
+			</div>
+		</div><!-- /.footer-area-2 -->
+
+		<!-- == FOOTER AREA 3 == -->
+		<div class="footer-area-3">
+
+		</div><!-- /.footer-area-3 -->
+
+	</div><!-- /.inner.for-colophon -->
+
+	<div id="white-footer">
+		<div class="inner for-colophon">
+			<div class="area footer-area-4">
+				<svg class="global-footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 407.8 1000 184.4" enable-background="new 0 407.8 1000 184.4" xml:space="preserve">
+					<g id="nvidia-logo">
+						<path d="M987.1 555.7v-2.8h1.7c0.9 0 2.3 0.1 2.3 1.2 0 1.2-0.7 1.5-1.8 1.5H987.1M987.1 557.6h1.2l2.8 4.8h3l-3.1-5c1.5-0.1 2.9-0.8 2.9-3 0-2.7-1.8-3.5-4.9-3.5h-4.4v11.5h2.6L987.1 557.6M1000 556.7c0-6.8-5.2-10.7-11.1-10.7 -5.8 0-11.1 3.9-11.1 10.7 0 6.8 5.2 10.7 11.1 10.7S1000 563.5 1000 556.7M996.8 556.7c0 4.9-3.6 8.2-7.9 8.2l0 0c-4.4 0-7.9-3.3-7.9-8.2 0-4.9 3.6-8.2 7.9-8.2C993.2 548.6 996.8 551.9 996.8 556.7z"></path>
+						<path d="M593.2 442.7v121.1h34.2V442.7H593.2zM324.4 442.5v121.2h34.5v-94.1l26.9 0.1c8.8 0 15 2.2 19.2 6.7 5.4 5.7 7.6 15.1 7.6 32v55.3H446v-66.9c0-47.8-30.5-54.3-60.2-54.3C385.8 442.5 324.4 442.5 324.4 442.5zM648.3 442.7v121.1h55.4c29.5 0 39.2-4.9 49.6-15.9 7.4-7.7 12.1-24.7 12.1-43.3 0-17-4-32.2-11.1-41.7 -12.5-16.9-30.8-20.2-58.1-20.2H648.3zM682.2 469h14.7c21.3 0 35.1 9.5 35.1 34.4 0 24.8-13.7 34.4-35.1 34.4h-14.7V469zM544 442.7l-28.5 95.9 -27.3-95.9h-36.9l39 121.1h49.2l39.3-121.1H544zM781.4 563.7h34.2v-121h-34.2V563.7zM877.2 442.7l-47.7 121h33.7l7.6-21.3h56.5l7.2 21.3h36.6l-48.2-121H877.2zM899.4 464.8l20.7 56.6H878L899.4 464.8z"></path>
+						<path d="M103.9 462.8v-16.6c1.6-0.1 3.3-0.2 4.9-0.2 45.6-1.4 75.4 39.1 75.4 39.1s-32.2 44.8-66.8 44.8c-5 0-9.4-0.8-13.4-2.2v-50.5c17.7 2.2 21.3 10 32 27.7l23.7-20c0 0-17.3-22.7-46.5-22.7C110 462.3 106.9 462.5 103.9 462.8M103.9 407.8v24.8c1.6-0.1 3.3-0.2 4.9-0.3 63.3-2.2 104.6 51.9 104.6 51.9s-47.4 57.7-96.7 57.7c-4.5 0-8.7-0.4-12.7-1.1v15.4c3.4 0.4 7 0.7 10.6 0.7 46 0 79.2-23.5 111.4-51.2 5.3 4.3 27.2 14.7 31.7 19.2 -30.6 25.6-101.9 46.3-142.3 46.3 -3.9 0-7.6-0.2-11.3-0.6v21.6h174.7V407.8H103.9zM103.9 527.8v13.1c-42.5-7.6-54.3-51.8-54.3-51.8s20.4-22.6 54.3-26.3v14.4c0 0 0 0-0.1 0 -17.7-2.2-31.7 14.5-31.7 14.5S80 519.6 103.9 527.8M28.4 487.2c0 0 25.2-37.1 75.5-41v-13.5C48.2 437.2 0 484.4 0 484.4s27.3 79 103.9 86.3v-14.4C47.7 549.2 28.4 487.2 28.4 487.2z"></path>
+					</g>
+					<image src="images/nvidia-logo.png" alt="NVIDIA" title="NVIDIA" xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+				</svg>
+					<div class="site-info">
+		<ul class="site-info-list">
+			<li><a href="https://blogs.nvidia.com/privacy-commenting-policy/">Privacy Policy</a></li>
+						<li><a href="https://www.nvidia.com/en-us/about-nvidia/legal-info/">Legal Info</a></li>
+									<li><a href="https://www.nvidia.com/en-us/contact/">Contact Us</a></li>
+					</ul>
+		<div class="copyright">
+			Copyright © 2019 NVIDIA Corporation		</div>
+	</div>
+				</div>
+			<div class="area footer-area-5">
+				<a href="http://www.nvidia.com/object/country-selector.html">
+				USA - United States				</a>
+			</div>
+		</div>
+	</div>
+</footer><!-- #colophon -->
+
+</div><!-- #page -->
+<script async="">(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='631f5cfc62615a0703aed131dad7176b9e0991e329aef6a4698851cbeb04b0ce';j.dataset.sumoPlatform='wordpress';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>    <script type="application/javascript">
+      var ajaxurl = "https://blogs.nvidia.com/wp-admin/admin-ajax.php";
+
+      function sumo_add_woocommerce_coupon(code) {
+        jQuery.post(ajaxurl, {
+          action: 'sumo_add_woocommerce_coupon',
+          code: code,
+        });
+      }
+
+      function sumo_remove_woocommerce_coupon(code) {
+        jQuery.post(ajaxurl, {
+          action: 'sumo_remove_woocommerce_coupon',
+          code: code,
+        });
+      }
+
+      function sumo_get_woocommerce_cart_subtotal(callback) {
+        jQuery.ajax({
+          method: 'POST',
+          url: ajaxurl,
+          dataType: 'html',
+          data: {
+            action: 'sumo_get_woocommerce_cart_subtotal',
+          },
+          success: function(subtotal) {
+            return callback(null, subtotal);
+          },
+          error: function(err) {
+            return callback(err, 0);
+          }
+        });
+      }
+    </script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"nvidiablog"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="comment_count.js"></script>
+<script type="text/javascript" src="yith.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var yith_infs = {"navSelector":".nvb4-single-post-pagination","nextSelector":".for-next a","itemSelector":".cf-posts-with-overrides","contentSelector":"#main","loader":"https:\/\/blogs.nvidia.com\/wp-content\/plugins\/yith-infinite-scrolling\/assets\/images\/loader.gif","shop":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="yith-infs.js"></script>
+<script type="text/javascript" src="count.js"></script>
+<script type="text/javascript" src="skip-link-focus-fix.js"></script>
+<script type="text/javascript" src="jquery_003.js"></script>
+<script type="text/javascript" src="isotope.js"></script>
+<script type="text/javascript" src="jquery_004.js"></script>
+<script type="text/javascript" src="jquery_009.js"></script>
+<script type="text/javascript" src="jquery_005.js"></script>
+<script type="text/javascript" src="sticky.js"></script>
+<script type="text/javascript" src="jquery_002.js"></script>
+<script type="text/javascript" src="jquery_006.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var nvb4ThemeVars = {"ajaxUrl":"https:\/\/blogs.nvidia.com\/wp-admin\/admin-ajax.php","disqus_url":"https:\/\/blogs.nvidia.com\/blog\/2016\/08\/22\/difference-deep-learning-training-inference-ai\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="new-tab.js"></script>
+<script type="text/javascript" src="jquery_007.js"></script>
+<script type="text/javascript" src="sweetalert2.js"></script>
+<script type="text/javascript" src="wp-polyfill.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://blogs.nvidia.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blogs.nvidia.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blogs.nvidia.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blogs.nvidia.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="i18n.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var highlight_and_share = {"show_facebook":"1","show_twitter":"1","show_linkedin":"1","show_pinterest":"","show_email":"1","show_xing":"","show_copy":"","show_whatsapp":"","twitter_username":"","twitter_fa_class":"fa fa-twitter","facebook_fa_class":"fa fa-facebook","linkedin_fa_class":"fa fa-linkedin","pinterest_fa_class":"fa fa-pinterest","xing_fa_class":"fa fa-xing","whatsapp_fa_class":"fa fa-whatsapp","copy_fa_class":"fa fa-copy","email_fa_class":"fa fa-envelope","mobile":"1","content":".has-content-area,.has-excerpt-area","tweet_text":"Tweet","facebook_text":"Share","linkedin_text":"LinkedIn","pinterest_text":"Pinterest","whatsapp_text":"WhatsApp","xing_text":"Xing","copy_text":"Copy","email_text":"E-mail","icons":"1","facebook_app_id":"","email_your_name_value":"","email_from_value":"","nonce":"59ff7a538a","ajax_url":"https:\/\/blogs.nvidia.com\/wp-admin\/admin-ajax.php","email_share":"Share This Post Via Email","email_subject":"Your Subject","email_your_name":"Your Name","email_send_email":"Send to Email Address","email_subject_text":"[Shared Post] %title%","email_from":"Your Email Address","email_send":"Send Email","email_cancel":"Cancel","email_close":"Close","email_loading":"https:\/\/blogs.nvidia.com\/wp-content\/plugins\/highlight-and-share\/img\/loading.gif","email_subject_error":"You must fill in a subject.","email_email_to":"Send to Email Address is blank.","email_email_from":"Your email address is blank.","email_email_name":"Your name is blank.","email_sending":"Sending...","customizer_preview":""};
+/* ]]> */
+</script>
+<script type="text/javascript">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "highlight-and-share", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type="text/javascript" src="highlight-and-share.js"></script>
+<script type="text/javascript" src="wp-embed.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"https:\/\/blogs.nvidia.com","ajax_url":"https:\/\/blogs.nvidia.com\/wp-admin\/admin-ajax.php","url_type":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="sitepress.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var easc = {"url":"https:\/\/blogs.nvidia.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="share-count.js"></script>
+		<div id="easc-modal-wrap" style="display:none;">
+			<div class="easc-modal">
+				<span class="easc-modal-title">Share this Article</span>
+				<p>
+					<label for="easc-modal-recipient">Friend's Email Address</label>
+					<input id="easc-modal-recipient" type="text">
+				</p>
+				<p>
+					<label for="easc-modal-name">Your Name</label>
+					<input id="easc-modal-name" type="text">
+				</p>
+				<p>
+					<label for="easc-modal-email">Your Email Address</label>
+					<input id="easc-modal-email" type="text">
+				</p>
+				<p class="easc-modal-validation">
+					<label for="easc-modal-validation">Comments</label>
+					<input id="easc-modal-validation" autocomplete="off" type="text">
+				</p>
+				<p class="easc-modal-submit">
+					<button id="easc-modal-submit"><i class="ea-share-count-icon easc-envelope send-email-btn-icon"></i> Send Email</button>
+				</p>
+				<a href="#" id="easc-modal-close"><i class="easc-close close-icon"></i></a>
+				<div id="easc-modal-sent">Email sent!</div>
+			</div>
+		</div>
+			<script type="text/javascript"> _satellite.pageBottom(); </script><iframe style="display: none;" src="https://assets.adobedtm.com/b92787824f2e0e9b68dc2e993f9bd995339fe417/scripts/satellite-582ee5d564746d557900081b.html"></iframe><style>
+#Form1 .searchbox{display:none !important;}
+#search-nv{display:none !important;}
+#nvidiaHeader #search{display:none !important;}
+#header #search{display:none !important;}
+.global-nav .search-outter-container{display:none !important;}
+.global-nav .nav-search-link{display:none !important;}
+.hamburger-nav-blocker .search-container{display:none !important;}
+</style>
+	
+
+<div class="highlight-and-share-wrapper-cts highlight-and-share-wrapper"><div class="has_twitter" style="display: none;" data-type="twitter"><a href="https://twitter.com/intent/tweet?url=%url%&amp;text=%text%" target="_blank"><i class="fa fa-twitter"></i><span class="has-text">&nbsp;Tweet</span></a></div><div class="has_facebook" style="display: none;" data-type="facebook"><a href="https://www.facebook.com/dialog/share?app_id=&amp;display=popup&amp;quote=%text%&amp;href=%url%" target="_blank"><i class="fa fa-facebook"></i><span class="has-text">&nbsp;Share</span></a></div><div class="has_email" style="display: none;" data-type="email" data-title="%title%" data-url="%url%"><a href="https://blogs.nvidia.com/wp-admin/admin-ajax.php" target="_blank"><i class="fa fa-envelope"></i><span class="has-text">&nbsp;E-mail</span></a></div></div><div class="highlight-and-share-wrapper"><div class="has_twitter" style="display: none;" data-type="twitter"><a href="https://twitter.com/intent/tweet?url=%url%&amp;text=%text%" target="_blank"><i class="fa fa-twitter"></i><span class="has-text">&nbsp;Tweet</span></a></div><div class="has_facebook" style="display: none;" data-type="facebook"><a href="https://www.facebook.com/dialog/share?app_id=&amp;display=popup&amp;quote=%text%&amp;href=%url%" target="_blank"><i class="fa fa-facebook"></i><span class="has-text">&nbsp;Share</span></a></div><div class="has_linkedin" style="display: none;" data-type="linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%url%&amp;title=%title%" target="_blank"><i class="fa fa-linkedin"></i><span class="has-text">&nbsp;LinkedIn</span></a></div><div class="has_email" style="display: none;" data-type="email" data-title="%title%" data-url="%url%"><a href="https://blogs.nvidia.com/wp-admin/admin-ajax.php" target="_blank"><i class="fa fa-envelope"></i><span class="has-text">&nbsp;E-mail</span></a></div></div><!-- #highlight-and-share-wrapper --><script type="text/javascript">var google_conversion_id = 1041525299;var google_custom_params = window.google_tag_params;var google_remarketing_only = true;</script><script type="text/javascript" src="conversion.js"></script><script>window._6si = window._6si || [];window._6si.push(["enableEventTracking", true]); window._6si.push(["setToken", "eb417ec30d332e34d732e2916f185311"]); window._6si.push(["setEndpoint", "b.6sc.co"]); (function(){var gd = document.createElement("script");gd.type = "text/javascript"; gd.async = true; gd.src = "//j.6sc.co/6si.min.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gd, s);})();</script><iframe style="display: none;"></iframe><iframe style="display: none;" id="sumome-jquery-iframe" title="Sumo Hidden Content"></iframe></body></html>

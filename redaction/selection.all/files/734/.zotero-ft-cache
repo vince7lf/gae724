@@ -1,0 +1,5735 @@
+You need to enable JavaScript to run this app.
+ModelZoo
+
+    Frameworks
+    TensorFlow Caffe Caffe2 PyTorch MXNet Keras Chainer
+    Categories
+    Computer Vision Natural Language Processing Generative Models Reinforcement Learning Unsupervised Learning Audio and Speech
+    Collections
+    Pose Estimation Models
+
+    Suggest a Model
+    Blog
+    About
+
+Model Zoo
+
+Discover open source deep learning code and pretrained models.
+Browse Frameworks Browse Categories
+OpenPose
+14173
+
+OpenPose represents the first real-time multi-person system to jointly detect human body, hand, and facial keypoints (in total 130 keypoints) on single images.
+
+Caffe
+CV
+Mask R-CNN
+13851
+
+This is an implementation of Mask R-CNN on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
+
+Keras
+CV
+FastPhotoStyle
+9825
+
+A Closed-form Solution to Photorealistic Image Stylization
+
+PyTorch
+CV
+pytorch-CycleGAN-and-pix2pix
+9485
+
+PyTorch implementation for both unpaired and paired image-to-image translation.
+
+PyTorch
+CV NLP Generative
+Subscribe
+
+We send out monthly emails showcasing the best or most notable models released each month. Sign up to receive updates!
+
+vid2vid
+6744
+
+Pytorch implementation of our method for high-resolution (e.g. 2048x1024) photorealistic video-to-video translation.
+
+PyTorch
+NLP
+maskrcnn-benchmark
+6386
+
+Fast, modular reference implementation of Instance Segmentation and Object Detection algorithms in PyTorch.
+
+PyTorch
+CV
+DCGAN-tensorflow
+6049
+
+Tensorflow implementation of Deep Convolutional Generative Adversarial Networks which is a stabilize Generative Adversarial Networks.
+
+TensorFlow
+Generative
+deep-image-prior
+5089
+
+Image restoration with neural networks but without learning.
+
+PyTorch
+CV
+YOLO TensorFlow ++
+5033
+
+TensorFlow implementation of 'YOLO: Real-Time Object Detection', with training and an actual support for real-time running on mobile devices.
+
+TensorFlow
+CV
+Progressive Growing of GANs for Improved Quality, Stability, and Variation
+4741
+
+We describe a new training methodology for generative adversarial networks. The key idea is to grow both the generator and discriminator progressively: starting from a low resolution, we add new layers that model increasingly fine details as training progresses.
+
+TensorFlow
+Generative
+Wavenet
+4582
+
+This is a TensorFlow implementation of the WaveNet generative neural network architecture for audio generation.
+
+TensorFlow
+Audio
+Deep Reinforcement Learning for Keras
+4117
+
+Keras-rl implements some state-of-the art deep reinforcement learning algorithms in Python and seamlessly integrates with the deep learning library Keras.
+
+Keras
+RL
+StarGAN
+4095
+
+StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Tranlsation.
+
+PyTorch
+CV Generative
+PyTorch-GAN
+4045
+
+PyTorch implementations of Generative Adversarial Networks.
+
+PyTorch
+Generative
+faster-rcnn.pytorch
+3993
+
+This project is a faster faster R-CNN implementation, aimed to accelerating the training of faster R-CNN object detection models.
+
+PyTorch
+CV
+pix2pixHD
+3918
+
+Synthesizing and manipulating 2048x1024 images with conditional GANs tcwang0509.github.io/pix2pixHD
+
+PyTorch
+CV Generative
+Colornet
+3480
+
+Neural Network to colorize grayscale images
+
+TensorFlow
+CV
+Augmentor
+3420
+
+Image augmentation library in Python for machine learning. http://augmentor.readthedocs.io
+
+PyTorch
+CV
+Open-source (MIT) Neural Machine Translation (NMT) System
+3370
+
+This is a Pytorch
+PyTorch
+NLP
+Image analogies
+3369
+
+Generate image analogies using neural matching and blending.
+
+Keras
+CV
+albumentations
+3054
+
+Fast image augmentation library.
+
+PyTorch
+CV
+Deep Video Analytics
+2700
+
+Deep Video Analytics is a platform for indexing and extracting information from videos and images.
+PyTorch
+CV
+Chatbot
+2543
+
+Implementation of "A neural conversational model"
+
+TensorFlow
+NLP
+semantic-segmentation-pytorch
+2543
+
+Pytorch implementation for Semantic Segmentation/Scene Parsing on MIT ADE20K dataset
+
+PyTorch
+CV
+Fully Convolutional Networks for Semantic Segmentation
+2479
+
+This is the reference implementation of the models and code for the fully convolutional networks (FCNs) in the PAMI FCN and CVPR FCN papers:
+Caffe
+CV
+WassersteinGAN
+2434
+
+WassersteinGAN in pytorch.
+
+PyTorch
+Generative
+MUSE
+2126
+
+Multilingual Unsupervised and Supervised Embeddings
+
+PyTorch
+Unsupervised
+Faster-RCNN
+2104
+
+This is an experimental Tensorflow implementation of Faster RCNN - a convnet for object detection with a region proposal network. For details about R-CNN please refer to the paper Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks by Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
+
+TensorFlow
+CV
+Colorful Image Colorization
+2086
+
+Colorful Image Colorization
+
+Caffe
+CV
+DQN-tensorflow
+2025
+
+TensorFlow implementation of DeepMind's 'Human-Level Control through Deep Reinforcement Learning' with OpenAI Gym by Devsisters.com
+
+TensorFlow
+RL
+SRGAN
+1892
+
+Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
+
+TensorFlow
+CV Generative
+YOLO TensorFlow
+1567
+
+Implementation of 'YOLO : Real-Time Object Detection'
+
+TensorFlow
+CV
+BigGAN-PyTorch
+1533
+
+The author's officially unofficial PyTorch BigGAN implementation.
+
+PyTorch
+Generative
+pytorch-a2c-ppo-acktr
+1509
+
+PyTorch implementation of Advantage Actor Critic (A2C), Proximal Policy Optimization (PPO) and Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation (ACKTR).
+
+PyTorch
+RL
+Chess Reinforcement Learning
+1470
+
+Chess reinforcement learning by AlphaGo Zero methods.
+
+Keras
+RL
+An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition
+1456
+
+This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR.
+PyTorch
+CV
+UNIT
+1427
+
+PyTorch Implementation of our Coupled VAE-GAN algorithm for Unsupervised Image-to-Image Translation
+
+PyTorch
+CV NLP Generative Unsupervised
+DeblurGAN
+1422
+
+Pytorch implementation of the paper DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks.
+
+PyTorch
+Generative
+espnet
+1305
+
+End-to-End Speech Processing Toolkit espnet.github.io/espnet
+
+PyTorch
+NLP Audio
+TTS
+1278
+
+Deep learning for Text2Speech
+
+PyTorch
+NLP Audio
+Neural Sequence labeling model
+1267
+
+Sequence labeling models are quite popular in many NLP tasks, such as Named Entity Recognition (NER), part-of-speech (POS) tagging and word segmentation.
+PyTorch
+CV NLP Audio
+UnsupervisedMT
+1259
+
+Phrase-Based & Neural Unsupervised Machine Translation.
+
+PyTorch
+NLP Unsupervised
+faster rcnn
+1238
+
+This is a PyTorch implementation of Faster RCNN. This project is mainly based on py-faster-rcnn and TFFRCNN.For details about R-CNN please refer to the paper Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks by Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
+
+PyTorch
+CV
+waveglow
+1191
+
+A Flow-based Generative Network for Speech Synthesis.
+
+PyTorch
+NLP Audio
+DeepOSM
+1184
+
+Train TensorFlow neural nets with OpenStreetMap features and satellite imagery.
+
+TensorFlow
+CV
+Lip Reading
+1179
+
+Cross Audio-Visual Recognition using 3D Architectures in TensorFlow
+
+TensorFlow
+Audio
+deepvoice3_pytorch
+1087
+
+PyTorch implementation of convolutional networks-based text-to-speech synthesis models
+
+PyTorch
+NLP Audio
+deepspeech2
+1065
+
+Implementation of DeepSpeech2 using Baidu Warp-CTC. Creates a network based on the DeepSpeech2 architecture, trained with the CTC activation function.
+
+PyTorch
+NLP Audio
+pytorch-semantic-segmentation
+1055
+
+PyTorch for Semantic Segmentation.
+
+PyTorch
+CV
+pytorch-seq2seq
+1049
+
+A framework for sequence-to-sequence (seq2seq) models implemented in PyTorch.
+
+PyTorch
+NLP
+async-RL
+1008
+
+Tensorflow + Keras + OpenAI Gym implementation of 1-step Q Learning from "Asynchronous Methods for Deep Reinforcement Learning"
+
+Keras
+RL
+R-FCN
+969
+
+R-FCN: Object Detection via Region-based Fully Convolutional Networks
+Caffe
+CV
+sentiment-discovery
+890
+
+Unsupervised Language Modeling at scale for robust sentiment classification.
+
+PyTorch
+Unsupervised
+EDSR-PyTorch
+888
+
+PyTorch version of the paper 'Enhanced Deep Residual Networks for Single Image Super-Resolution' (CVPRW 2017)
+
+PyTorch
+CV
+Popular Image Segmentation Models
+875
+
+FCN, Segnet, U-Net etc.
+
+Keras
+CV
+DiscoGAN
+872
+
+PyTorch implementation of "Learning to Discover Cross-Domain Relations with Generative Adversarial Networks"
+
+PyTorch
+Generative
+Ultrasound nerve segmentation
+847
+
+This tutorial shows how to use Keras library to build deep neural network for ultrasound image nerve segmentation.
+Keras
+CV Audio
+chainer-DCGAN
+837
+
+Deep Convolutional Generative Adversarial Network (DCGAN)
+
+Chainer
+Generative
+wgan-gp
+819
+
+A pytorch implementation of Paper "Improved Training of Wasserstein GANs".
+
+PyTorch
+Generative
+Rainbow
+816
+
+Rainbow: Combining Improvements in Deep Reinforcement Learning
+
+PyTorch
+RL
+loop
+811
+
+A method to generate speech across multiple speakers
+
+PyTorch
+NLP Audio
+Domain Transfer Network
+801
+
+Implementation of Unsupervised Cross-Domain Image Generation
+
+TensorFlow
+CV Unsupervised
+Show, Attend and Tell
+770
+
+Attention Based Image Caption Generator
+
+TensorFlow
+CV NLP
+SSD
+733
+
+SSD is an unified framework for object detection with a single network.
+MXNet
+CV
+ChainerRL
+728
+
+ChainerRL is a deep reinforcement learning library built on top of Chainer.
+
+Chainer
+RL
+image-classification-mobile
+724
+
+Collection of classification models pretrained on the ImageNet-1K.
+
+PyTorch
+CV
+official DiscoGAN implementation
+675
+
+Official implementation of "Learning to Discover Cross-Domain Relations with Generative Adversarial Networks".
+
+PyTorch
+Generative
+FaderNetworks
+674
+
+Fader Networks: Manipulating Images by Sliding Attributes - NIPS 2017
+
+PyTorch
+CV
+neuraltalk2-pytorch
+669
+
+Image captioning model in pytorch(finetunable cnn in branch with_finetune)
+
+PyTorch
+CV NLP
+GAN_stability
+654
+
+Code for paper "Which Training Methods for GANs do actually Converge? (ICML 2018)"
+
+PyTorch
+Generative
+Asynchronous Methods for Deep Reinforcement Learning
+652
+
+This is a PyTorch implementation of Asynchronous Advantage Actor Critic (A3C) from "Asynchronous Methods for Deep Reinforcement Learning".
+PyTorch
+RL
+Seq2seq-Chatbot
+651
+
+Chatbot in 200 lines of code
+
+TensorFlow
+NLP
+pytorch-rl
+641
+
+Deep Reinforcement Learning with pytorch & visdom
+
+PyTorch
+RL
+Faster RCNN
+634
+
+Region Proposal Network solves object detection as a regression problem
+MXNet
+CV
+RandWireNN
+617
+
+Implementation of: "Exploring Randomly Wired Neural Networks for Image Recognition".
+
+PyTorch
+CV
+stackGAN-v2
+614
+
+Pytorch implementation for reproducing StackGAN_v2 results in the paper StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks by Han Zhang , Tao Xu , Hongsheng Li, Shaoting Zhang, Xiaogang Wang, Xiaolei Huang, Dimitris Metaxas.
+
+PyTorch
+CV Generative
+AnimeGAN
+613
+
+A simple PyTorch Implementation of Generative Adversarial Networks, focusing on anime face drawing.
+
+PyTorch
+Generative
+seq2seq
+601
+
+This repository contains implementations of Sequence to Sequence (Seq2Seq) models in PyTorch
+
+PyTorch
+NLP
+audio
+601
+
+Simple audio I/O for pytorch.
+
+PyTorch
+Audio
+Deep-Reinforcement-Learning-Algorithms-with-PyTorch
+588
+
+This repository contains PyTorch implementations of deep reinforcement learning algorithms.
+
+PyTorch
+RL
+Detectron models for Object Detection
+559
+
+(Disclaimer: this is work in progress and does not feature all the functionalities of detectron.
+PyTorch
+CV
+DEXTR-PyTorch
+555
+
+Deep Extreme Cut http://www.vision.ee.ethz.ch/~cvlsegmentation/dextr
+
+PyTorch
+CV
+pointnet.pytorch
+525
+
+Pytorch implementation for "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation" https://arxiv.org/abs/1612.00593
+
+PyTorch
+CV
+android-yolo
+519
+
+Real-time object detection on Android using the YOLO network, powered by TensorFlow.
+
+TensorFlow
+CV
+cnn-vis
+492
+
+Inspired by Google's recent Inceptionism blog post, cnn-vis is an open-source tool that lets you use convolutional neural networks to generate images.
+Caffe
+CV
+Neural Caption Generator
+484
+
+Implementation of "Show and Tell"
+
+TensorFlow
+NLP
+DCSCN Super Resolution
+467
+
+This is a tensorflow implementation of "Fast and Accurate Image Super Resolution by Deep CNN with Skip Connection and Network in Network", a deep learning based Single-Image Super-Resolution (SISR) model.
+
+TensorFlow
+CV
+seq2seq.pytorch
+459
+
+Sequence-to-Sequence learning using PyTorch
+
+PyTorch
+NLP
+PyTorch-progressive_growing_of_gans
+445
+
+PyTorch implementation of Progressive Growing of GANs for Improved Quality, Stability, and Variation.
+
+PyTorch
+Generative
+self-critical.pytorch
+442
+
+Unofficial pytorch implementation for Self-critical Sequence Training for Image Captioning.
+
+PyTorch
+CV NLP
+Faster RCNN+Focal Loss
+439
+
+The code is unofficial version for focal loss for Dense Object Detection.
+MXNet
+CV
+TensorFlow White Paper Notes
+437
+
+Annotated notes and summaries of the TensorFlow white paper, along with SVG figures and links to documentation
+
+TensorFlow
+NLP
+Hierarchical Attention Networks for Document Classification
+421
+
+We know that documents have a hierarchical structure, words combine to form sentences and sentences combine to form documents.
+PyTorch
+NLP
+speech
+415
+
+PyTorch ASR Implementation.
+
+PyTorch
+NLP Audio
+rl_a3c_pytorch
+399
+
+Reinforcement learning with implementation of A3C LSTM for Atari 2600.
+
+PyTorch
+RL
+T2F
+395
+
+Text-to-Face generation using Deep Learning. This project combines two of the recent architectures StackGAN and ProGAN for synthesizing faces from textual descriptions.
+
+PyTorch
+Generative
+GAN-CLS
+382
+
+This is an experimental tensorflow implementation of synthesizing images.
+TensorFlow
+CV Generative
+nmtpytorch
+365
+
+Neural Machine Translation Framework in PyTorch.
+
+PyTorch
+NLP
+generative-models
+359
+
+Annotated, understandable, and visually interpretable PyTorch implementations of: VAE, BIRVAE, NSGAN, MMGAN, WGAN, WGANGP, LSGAN, DRAGAN, BEGAN, RaGAN, InfoGAN, fGAN, FisherGAN.
+
+PyTorch
+Generative
+gan-lib
+349
+
+Various GANs implementation
+
+Chainer
+Generative
+vnet.pytorch
+345
+
+A Pytorch implementation for V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation.
+
+PyTorch
+CV
+ARAE
+339
+
+Code for the paper "Adversarially Regularized Autoencoders for Generating Discrete Structures" by Zhao, Kim, Zhang, Rush and LeCun.
+
+PyTorch
+Generative
+AttGAN
+335
+
+Tensorflow implementation of AttGAN - Arbitrary Facial Attribute Editing: Only Change What You Want
+
+TensorFlow
+Generative
+piwise
+322
+
+Pixel-wise segmentation on VOC2012 dataset using pytorch.
+
+PyTorch
+CV
+pspnet-pytorch
+318
+
+PyTorch implementation of PSPNet segmentation network
+
+PyTorch
+CV
+Speech Recognition
+314
+
+Speech Recognition with the caffe deep learning framework
+Caffe
+NLP Audio
+DeconvNet
+308
+
+Learning Deconvolution Network for Semantic Segmentation
+
+Caffe
+CV
+prog_gans_pytorch_inference
+308
+
+PyTorch inference for "Progressive Growing of GANs" with CelebA snapshot.
+
+PyTorch
+Generative
+/pytorch-SRResNet
+301
+
+Pytorch implementation for Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network arXiv:1609.04802v2
+
+PyTorch
+CV Generative
+mnist-svhn-transfer
+297
+
+PyTorch Implementation of CycleGAN and SGAN for Domain Transfer (Minimal).
+
+PyTorch
+Generative
+U-Net
+291
+
+For Brain Tumor Segmentation
+
+TensorFlow
+CV
+pytorch_RVAE
+291
+
+Recurrent Variational Autoencoder that generates sequential data implemented in pytorch.
+
+PyTorch
+Generative
+PNASNet.pytorch
+277
+
+PyTorch implementation of PNASNet-5 on ImageNet.
+
+PyTorch
+CV
+pro_gan_pytorch
+276
+
+ProGAN package implemented as an extension of PyTorch nn.Module.
+
+PyTorch
+Generative
+MusicGenreClassification
+271
+
+Academic research in the field of Deep Learning (Deep Neural Networks) and Sound Processing, Tel Aviv University.
+TensorFlow
+Audio
+img_classification_pk_pytorch
+269
+
+Quickly comparing your image classification models with the state-of-the-art models (such as DenseNet, ResNet, ...)
+
+PyTorch
+CV
+AGE
+257
+
+Code for paper "Adversarial Generator-Encoder Networks" by Dmitry Ulyanov, Andrea Vedaldi and Victor Lempitsky which can be found here
+
+PyTorch
+Generative
+Improved Training of Wasserstein GANs
+243
+
+This is a Pytorch implementation of gan_64x64.py from Improved Training of Wasserstein GANs.
+PyTorch
+Generative
+BEGAN-pytorch
+241
+
+PyTorch implementation of BEGAN : Boundary Equilibrium Generative Adversarial Networks.
+
+PyTorch
+Generative
+CNN-LSTM-CTC
+239
+
+I realize three different models for text recognition, and all of them consist of CTC loss layer to realize no segmentation for text images.
+MXNet
+CV
+Neural machine translation between the writings of Shakespeare and modern English using TensorFlow
+236
+
+This performs a monolingual translation, going from modern English to Shakespeare and vice-versa.
+
+TensorFlow
+NLP
+DCGAN
+227
+
+Deep Convolutional Generative Adversarial Networks
+
+TensorFlow
+Generative
+Coupled Face Generation
+227
+
+This is the open source repository for the Coupled Generative Adversarial Network (CoupledGAN or CoGAN) work.
+Caffe
+Generative
+pytorch-trpo(Hessian-vector product version)
+219
+
+This is a PyTorch implementation of "Trust Region Policy Optimization (TRPO)" with exact Hessian-vector product instead of finite differences approximation.
+
+PyTorch
+RL
+Deep Neural Networks are Easily Fooled
+218
+
+High Confidence Predictions for Unrecognizable Images
+
+PyTorch
+CV
+**Faster_RCNN_for_DOTA**
+215
+
+This is the official repo of paper _DOTA: A Large-scale Dataset for Object Detection in Aerial Images_.
+MXNet
+CV
+pix2pix-pytorch
+214
+
+PyTorch implementation of "Image-to-Image Translation Using Conditional Adversarial Networks".
+
+PyTorch
+CV NLP Generative
+adversarial-autoencoder
+214
+
+Adversarial-autoencoder
+
+Chainer
+Generative
+RetinaNet
+213
+
+Focal loss for Dense Object Detection
+MXNet
+CV
+stitchfix/fauxtograph
+211
+
+Variational Auto-Encoder (VAE), Generative Adversarial Nets (GAN), VAE-GAN
+
+Chainer
+Generative
+neural-combinatorial-rl-pytorch
+205
+
+PyTorch implementation of Neural Combinatorial Optimization with Reinforcement Learning.
+
+PyTorch
+RL
+NVIDIA/semantic-segmentation
+204
+
+A PyTorch Implementation of Improving Semantic Segmentation via Video Propagation and Label Relaxation , In CVPR2019.
+
+PyTorch
+CV
+samplernn-pytorch
+194
+
+PyTorch implementation of SampleRNN: An Unconditional End-to-End Neural Audio Generation Model.
+
+PyTorch
+Audio
+torch_waveglow
+194
+
+A PyTorch implementation of the WaveGlow: A Flow-based Generative Network for Speech Synthesis.
+
+PyTorch
+NLP Audio
+Open Source Chatbot with PyTorch
+186
+
+Aim to build a Marvelous ChatBot
+PyTorch
+NLP
+DeepMask object segmentation
+186
+
+This is a Keras-based Python implementation of DeepMask- a complex deep neural network for learning object segmentation masks.
+Keras
+CV
+Very Deep Convolutional Networks for Large-Scale Image Recognition
+179
+
+Some scripts to convert the VGG-16
+PyTorch
+CV
+GAN-weight-norm
+175
+
+Code for "On the Effects of Batch and Weight Normalization in Generative Adversarial Networks"
+
+PyTorch
+Generative
+nonauto-nmt
+174
+
+PyTorch Implementation of "Non-Autoregressive Neural Machine Translation"
+
+PyTorch
+NLP
+MobileNetv2
+174
+
+An implementation of MobileNetv2 in PyTorch. MobileNetv2 is an efficient convolutional neural network architecture for mobile devices. For more information check the paper: Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification, Detection and Segmentation
+
+PyTorch
+CV
+tacotron_pytorch
+163
+
+PyTorch implementation of Tacotron speech synthesis model.
+
+PyTorch
+NLP Audio
+Neural-IMage-Assessment
+163
+
+A PyTorch Implementation of Neural IMage Assessment.
+
+PyTorch
+CV
+Tacotron-pytorch
+163
+
+Tacotron: Towards End-to-End Speech Synthesis
+
+PyTorch
+NLP Audio
+Neural-IMage-Assessment 2
+157
+
+A PyTorch Implementation of Neural IMage Assessment.
+
+PyTorch
+CV
+pytorch-seq2seq-intent-parsing
+153
+
+Intent parsing and slot filling in PyTorch with seq2seq + attention
+
+PyTorch
+NLP
+Learning to Communicate with Deep Multi-Agent Reinforcement Learning
+152
+
+Pytorch implementation of Learning to Communicate with Deep Multi-Agent Reinforcement Learning paper.
+
+PyTorch
+RL
+DiffAI
+140
+
+A provable defense against adversarial examples and library for building compatible PyTorch models.
+
+PyTorch
+Generative
+Semantic Image Synthesis via Adversarial Learning
+129
+
+A PyTorch implementation of the paper "Semantic Image Synthesis via Adversarial Learning" in ICCV 2017.
+
+PyTorch
+CV Generative
+deep_image_prior
+129
+
+An implementation of image reconstruction methods from Deep Image Prior (Ulyanov et al., 2017) in PyTorch.
+
+PyTorch
+CV
+Pytorch-DPPO
+122
+
+Pytorch implementation of Distributed Proximal Policy Optimization: arxiv.org/abs/1707.02286
+
+PyTorch
+RL
+**MobileNetV2**(TVM Supported)
+122
+
+This is a MXNet implementation of MobileNetV2 architecture as described in the paper Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification, Detection and Segmentation.
+MXNet
+CV
+MXNMT
+122
+
+This is an implementation of seq2seq with attention for neural machine translation with MXNet.
+MXNet
+NLP
+Mnemonic Descent Method
+119
+
+Tensorflow implementation of "Mnemonic Descent Method: A recurrent process applied for end-to-end face alignment"
+
+TensorFlow
+NLP
+Deep-Image-Analogy-PyTorch
+118
+
+A python implementation of Deep-Image-Analogy based on pytorch.
+
+PyTorch
+CV
+chainer_examples
+118
+
+Machine Translation, word segmentation, and language model
+
+Chainer
+CV NLP
+VAE with a VampPrior
+117
+
+Variational Mixture of Posteriors, 1705.07120
+
+PyTorch
+Generative
+captionGen
+113
+
+Generate captions for an image using PyTorch.
+
+PyTorch
+CV NLP
+bandit-nmt
+113
+
+This is code repo for our EMNLP 2017 paper "Reinforcement Learning for Bandit Neural Machine Translation with Simulated Human Feedback", which implements the A2C algorithm on top of a neural encoder-decoder model and benchmarks the combination under simulated noisy rewards.
+
+PyTorch
+NLP RL
+pytorch-trpo
+109
+
+PyTorch Implementation of Trust Region Policy Optimization (TRPO)
+
+PyTorch
+RL
+wasserstein-gan
+94
+
+WGAN
+
+Chainer
+Generative
+DAGAN
+92
+
+Fast Compressed Sensing MRI Reconstruction
+
+TensorFlow
+Generative
+paysage
+91
+
+Unsupervised learning and generative models in python/pytorch.
+
+PyTorch
+Unsupervised
+Categorical DQN
+88
+
+A PyTorch Implementation of Categorical DQN from A Distributional Perspective on Reinforcement Learning .
+
+PyTorch
+RL
+biogans
+87
+
+Implementation supporting the ICCV 2017 paper "GANs for Biological Image Synthesis".
+
+PyTorch
+CV Generative
+neuron-selectivity-transfer
+82
+
+This code is a re-implementation of the imagenet classification experiments in the paper Like What You Like: Knowledge Distill via Neuron Selectivity Transfer
+MXNet
+CV
+back2future.pytorch
+81
+
+This is a Pytorch implementation of Janai, J., Güney, F., Ranjan, A., Black, M. and Geiger, A., Unsupervised Learning of Multi-Frame Optical Flow with Occlusions. ECCV 2018.
+
+PyTorch
+Unsupervised
+MobileNetV2(Gluon:star
+81
+
+This is a Gluon implementation of MobileNetV2 architecture as described in the paper Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification, Detection and Segmentation.
+MXNet
+CV
+Improved CycleGAN
+79
+
+Unpaired Image to Image Translation
+
+TensorFlow
+CV NLP Generative
+Pytorch Poetry Generation
+79
+
+is a repurposing of http://pytorch.org/: an early release beta software (developed by a consortium led by Facebook and NIVIDIA), a deep learning software that puts Python first.
+PyTorch
+NLP
+**deepspeech**
+76
+
+This example based on DeepSpeech2 of Baidu helps you to build Speech-To-Text (STT) models at scale using
+MXNet
+NLP Audio
+Visual-Feature-Attribution-Using-Wasserstein-GANs-Pytorch
+75
+
+Implementation of Visual Feature Attribution using Wasserstein GANs (arxiv.org/abs/1711.08998) in PyTorch.
+
+PyTorch
+Generative
+Image Embedding Learning (Gluon:star
+73
+
+Apache MXNet (incubating) is a deep learning framework designed for both efficiency and flexibility.
+MXNet
+CV
+famos
+72
+
+Pytorch implementation of the paper "Copy the Old or Paint Anew? An Adversarial Framework for (non-) Parametric Image Stylization" available at http://arxiv.org/abs/1811.09236.
+
+PyTorch
+CV Generative
+adversarial-patch
+71
+
+PyTorch implementation of adversarial patch.
+
+PyTorch
+Generative
+dragan-pytorch
+71
+
+PyTorch implementation of DRAGAN (https://arxiv.org/abs/1705.07215)
+PyTorch
+Generative
+SVHNClassifier
+70
+
+A PyTorch implementation of Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks .
+
+PyTorch
+CV
+translagent
+70
+
+Code for Emergent Translation in Multi-Agent Communication.
+
+PyTorch
+NLP
+sparse-structure-selection
+70
+
+This code is a re-implementation of the imagenet classification experiments in the paper Data-Driven Sparse Structure Selection for Deep Neural Networks
+MXNet
+CV
+pytorch_image_classifier
+69
+
+Minimal But Practical Image Classifier Pipline Using Pytorch, Finetune on ResNet18, Got 99% Accuracy on Own Small Datasets.
+
+PyTorch
+CV
+Unsupervised Object Counting
+68
+
+Implementation of "Attend, Infer, Repeat"
+
+TensorFlow
+Unsupervised
+Fast Neural Style for Image Style Transform by Pytorch
+68
+
+Fast Neural Style for Image Style Transform by Pytorch .
+
+PyTorch
+CV
+vae_vpflows
+68
+
+Code in PyTorch for the convex combination linear IAF and the Householder Flow, J.M. Tomczak & M. Welling https://jmtomczak.github.io/deebmed.html
+
+PyTorch
+Generative
+Semi Adversarial Networks (SAN)
+64
+
+PyTorch implementation of the semi-adversarial neural network model described in Semi-adversarial networks: Convolutional autoencoders for imparting privacy to face images by V. Mirjalili, S. Raschka, A. Namboodiri, and A. Ross.
+
+PyTorch
+CV Generative
+im2im
+61
+
+Unsupervised Image to Image Translation with Generative Adversarial Networks
+
+TensorFlow
+CV NLP Generative Unsupervised
+chainer_caption_generation
+59
+
+Show and Tell
+
+Chainer
+NLP
+tgan
+56
+
+Temporal Generative Adversarial Nets
+
+Chainer
+Generative
+chainer-dfi
+53
+
+Deep Feature Interpolation for Image Content Changes
+
+Chainer
+CV
+google_evolution
+51
+
+This implements one of result networks from Large-scale evolution of image classifiers by Esteban Real, et. al.
+
+PyTorch
+CV
+mxnet-seq2seq
+51
+
+This project implements the sequence to sequence learning with mxnet for open-domain chatbot
+MXNet
+NLP
+LSGAN
+50
+
+LSGAN
+
+Chainer
+Generative
+PhotographicImageSynthesiswithCascadedRefinementNetworks-Pytorch
+49
+
+Photographic Image Synthesis with Cascaded Refinement Networks - Pytorch Implementation
+
+PyTorch
+CV
+Grammar Variational Autoencoder
+47
+
+Grammar Variational Autoencoder, 1703.01925
+
+PyTorch
+Generative
+AVO-pytorch
+46
+
+Implementation of Adversarial Variational Optimization in PyTorch.
+
+PyTorch
+Generative
+bytenet
+45
+
+Pytorch implementation of bytenet from "Neural Machine Translation in Linear Time" paper
+
+PyTorch
+NLP
+mmd/jmmd/adaBN
+43
+
+Unsupervised transfer learning for image classification written in mxnet.
+MXNet
+CV Unsupervised
+Monolingual and Multilingual Image Captioning
+42
+
+This is the source code that accompanies Multilingual Image Description with Neural Sequence Models .
+Keras
+CV NLP
+Asynchronous Advantage Actor-Critic in PyTorch
+40
+
+This is PyTorch implementation of A3C as described in Asynchronous Methods for Deep Reinforcement Learning. Since PyTorch has a easy method to control shared memory within multiprocess, we can easily implement asynchronous method like A3C.
+
+PyTorch
+RL
+ppo_pytorch_cpp
+38
+
+This is an implementation of the proximal policy optimization algorithm for the C++ API of Pytorch.
+
+PyTorch
+RL
+PyTorch Image Classification with Kaggle Dogs vs Cats Dataset
+38
+
+Classifies an image as containing either a dog or a cat (using Kaggle's public dataset), but could easily be extended to other image classification problems.
+PyTorch
+CV
+AEGeAN
+34
+
+Deeper DCGAN with AE stabilization
+
+PyTorch
+Generative
+Graphics code generating model using Processing
+33
+
+sketchnet - processing code generator
+PyTorch
+CV
+imagenet-vgg
+33
+
+VGG
+
+Chainer
+CV
+improved-gan
+33
+
+code for the paper
+Chainer
+Generative
+chainer-Variational-AutoEncoder
+30
+
+Variational autoencoder (VAE)
+
+Chainer
+Generative
+Hierarchical Attention Network for Document Classification
+28
+
+A faster and up to date implementation is in my other repo
+PyTorch
+NLP
+Simple Generative Adversarial Networks
+28
+
+Run the sample code by typing:
+PyTorch
+Generative
+multilabel
+28
+
+This is the implement of the multilabel image classificaton in MXNet.
+MXNet
+CV
+VAE
+24
+
+Variational AutoEncoder
+
+Chainer
+Generative
+mxnet-audio
+23
+
+Implementation of music genre classification, audio-to-vec, song recommender, and music search in mxnet
+MXNet
+Audio
+chainer-gan-denoising-feature-matching
+23
+
+Generative Adversarial Networks with Denoising Feature Matching
+
+Chainer
+Generative
+SqeezeNet
+20
+
+Top-1 Acc=61.0% on ImageNet, without any sacrificing compared with SqueezeNet v1.1.
+MXNet
+CV
+ADDA
+19
+
+Adversarial Discriminative Domain Adaptation
+
+Chainer
+Generative
+chainer_encoder_decoder
+19
+
+Neural Encoder-Decoder Machine Translation
+
+Chainer
+NLP
+AdversarialAutoEncoder
+18
+
+Adversarial Autoencoder [arXiv:1511.05644] implemented with MXNet.
+MXNet
+Generative
+MXSeq2Seq(Gluon:star
+17
+
+python seq2seq.py
+MXNet
+NLP
+FocalLoss(CUDA)
+16
+
+the focal loss in Aritcal Focal Loss for Dense Object Detection
+MXNet
+CV
+**dspnet**
+16
+
+This repositary contains an implementation of the paper Driving Scene Perception Network: Real-time Joint Detection, Depth Estimation and Semantic Segmentation .
+MXNet
+CV
+SEC
+16
+
+This is a reimplementation of the paper "Seed, Expand and Constrain: Three Principles for Weakly-Supervised Image
+MXNet
+CV
+Ultrasound nerve segmentation
+15
+
+Kaggle ultrasound nerve segmentation challenge using Keras.
+Keras
+CV Audio
+multi-task
+12
+
+This is the implement of the multi-task image classificaton in MXNet
+MXNet
+CV
+LSGAN
+11
+
+Least Squares Generative Adversarial Network implemented in Chainer
+
+Chainer
+Generative
+VGAN Tensorflow
+10
+
+Tensorflow implementation for MIT "Generating Videos with Scene Dynamics" by Vondrick et al.
+
+TensorFlow
+Generative
+L-GM-Loss
+9
+
+My implement of Rethinking Feature Distribution for Loss Functions in Image Classification using MXNet/Gluon
+MXNet
+CV
+chainer_superresolution
+9
+
+Image super-resolution
+
+Chainer
+CV
+Neural Image Caption
+8
+
+This is a simple implementaion of paper Neural Image Caption based on mxnet.
+MXNet
+CV NLP
+unrolled-gan
+8
+
+Unrolled-ga
+
+Chainer
+Generative
+Image colorization
+7
+
+This is an attempt to implement Pix2pix network using Python and MXNet
+MXNet
+CV
+retrieval chatbot
+7
+
+This repo use mxnet to implement baselines for retrieval chatbot
+MXNet
+NLP
+began
+7
+
+BEGAN
+
+Chainer
+Generative
+text2image(Gluon:star
+5
+
+Text to Image Synthesis in MXNET
+MXNet
+CV
+mxnet_kaldi
+5
+
+This is the speech demo from mxnet, but for some reason, they removed this demo.
+MXNet
+NLP Audio
+chainer-srcnn
+5
+
+Image super-resolution
+
+Chainer
+CV
+SSD+FPN
+4
+
+SSD is an unified framework for object detection with a single network.
+MXNet
+CV
+Generative Adversarial Nets (GAN)
+4
+
+Generative Adversarial Nets (GAN)
+
+Chainer
+Generative
+translatR
+3
+
+Lightweight tools for translation tasks with mxnet R.
+MXNet
+NLP
+chainer-gan-trainer
+3
+
+Chainer GAN Trainer
+
+Chainer
+Generative
+SRCNN
+2
+
+This repo reproduces a prototype of the classical algorithm for Single Image Super resolution (SISR) with convolutional neural network based on MXNET.
+MXNet
+CV
+Hierarchical Question-Imagee Co-Attention
+2
+
+This is MXNet implementation of Hierarchical Question-Image Co-Attention for Visual Question Answering(https://arxiv.org/abs/1606.00061)
+MXNet
+CV
+AdversarialCrypto
+
+Protecting communications with adversarial neural cryptography.
+
+TensorFlow
+Generative
+AdversarialText
+
+Semi-supervised sequence learning with adversarial training.
+
+TensorFlow
+Generative
+AttentionOCR
+
+A model for real-world image text extraction.
+
+TensorFlow
+CV
+Audioset
+
+Models and supporting code for use with AudioSet .
+
+TensorFlow
+Audio
+BrainCoder
+
+Program synthesis with reinforcement learning.
+
+TensorFlow
+RL
+CognitiveMappinGANPlanning
+
+Implementation of a spatial memory based mapping and planning architecture for visual navigation.
+
+TensorFlow
+Generative
+Compression
+
+Compressing and decompressing images using a pre-trained Residual GRU network.
+
+TensorFlow
+CV
+DeepSpeech
+
+Automatic speech recognition.
+
+TensorFlow
+NLP Audio
+DeepLab
+
+Deep labeling for semantic image segmentation.
+
+TensorFlow
+CV
+DELF
+
+Deep local features for image matching and retrieval.
+
+TensorFlow
+CV
+GAN
+
+Generative adversarial networks.
+
+TensorFlow
+Generative
+Im2txt
+
+Image-to-text neural network for image captioning.
+
+TensorFlow
+CV NLP
+LearningUnsupervisedLearning
+
+A meta-learned unsupervised learning update rule.
+
+TensorFlow
+Unsupervised
+LFADS
+
+Sequential variational autoencoder for analyzing neuroscience data.
+
+TensorFlow
+Generative
+MaskGAN
+
+Text generation with GANs.
+
+TensorFlow
+Generative
+ObjectDetection
+
+Localizing and identifying multiple objects in a single image.
+
+TensorFlow
+CV
+PCLRL
+
+Code for several reinforcement learning algorithms, including Path Consistency Learning.
+
+TensorFlow
+RL
+SLIM
+
+Image classification models in TF-Slim.
+
+TensorFlow
+CV
+Street
+
+Identify the name of a street (in France) from an image using a Deep RNN.
+
+TensorFlow
+CV
+Vid2depth
+
+Learning depth and ego-motion unsupervised from raw monocular video.
+
+TensorFlow
+Unsupervised
+Policy Gradient
+
+For Playing Atari Ping Pong
+
+TensorFlow
+RL
+Fully Convolutional Networks for Semantic Segmentation (FCNs)
+
+These models are described in the paper: Fully Convolutional Models for Semantic Segmentation Jonathan Long, Evan Shelhamer, Trevor Darrell CVPR 2015 arXiv:1411.4038Details, model definitions, pre-trained weights, and code are public on github: https://github.com/shelhamer/fcn.berkeleyvision.org.These models are compatible with Caffe master, unlike earlier FCNs that required a pre-release branch (note: this reference edition of the models is still in progress and not all of the models have yet been ported to master).
+Caffe
+CV
+Deep Learning of Binary Hash Codes for Fast Image Retrieval
+
+We present an effective deep learning framework to create the hash-like binary codes for fast image retrieval.
+Caffe
+CV
+GoogLeNet_cars on car model classification
+
+GoogLeNet_cars is the GoogLeNet model pre-trained on ImageNet classification task and fine-tuned on 431 car models in CompCars dataset.
+Caffe
+CV
+SegNet and Bayesian SegNet
+
+SegNet is a real-time semantic segmentation architecture for scene understanding.
+Caffe
+CV
+Emotion Recognition in the Wild via Convolutional Neural Networks and Mapped Binary Patterns
+
+We provide models for facial emotion classification for different image representation obtained using mapped binary patterns.
+Caffe
+CV
+ResNets
+
+This repository contains the original models (ResNet-50, ResNet-101, and ResNet-152) described in the paper "Deep Residual Learning for Image Recognition" (http://arxiv.org/abs/1512.03385).
+Caffe
+CV
+CNN Object Proposal Models for Salient Object Detection
+
+CNN models for the following CVPR'16 paper: Unconstrained Salient Object Detection via Proposal Subset Optimization J.
+Caffe
+CV
+Deep Hand
+
+We provide pretrained CNN models of our CVPR'16 paper (Oral): Deep Hand: How to Train a CNN on 1 Million Hand Images When Your Data Is Continuous and Weakly Labelled O.
+Caffe
+CV
+Inception-BN full ImageNet model
+
+Inception-v2 model trained on full ImageNet dataset with 14,197,087 images in 21,841 classes.
+Caffe
+CV
+DeepYeast
+
+11-layer convolutional neural network trained on two-channel microscopy images of yeast cells carrying fluorescent proteins with different subcellular localizations.[Web] [Paper] [Model]
+Caffe
+CV
+ImageNet pre-trained models with batch normalization
+
+CNN models pre-trained on 1000 ImageNet categories.
+Caffe
+CV
+ResNet-101 for regressing 3D morphable face models (3DMM) from single images
+
+This project page contains a ResNet-101 deep network model for 3DMM regression (3D shape and texture)The download includes both the network itself and the parameters required to map the 3DMM parameters regressed by the network back to 3D shapes(e.g., the basis vectors for the face shape and the average face shape).
+Caffe
+CV
+Cascaded Fully Convolutional Networks for Biomedical Image Segmentation
+
+These models segment liver and liver tumor in CT volumes using the UNET architecture proposed by Ronnerberger et al.
+Caffe
+CV
+Deep Networks for Earth Observation
+
+These models have been trained to perform semantic segmentation on aerial images, as proposed by Audebert et al.
+Caffe
+CV
+Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks
+
+We present a simple yet effective supervised deep hash approach that constructs binary hash codes from labeled data for large-scale image search.
+Caffe
+CV
+BVLC AlexNet
+
+This model is a replication of the model described in the AlexNet publication.
+
+Caffe2
+CV
+BVLC Reference CaffeNet
+
+This model is the result of following the Caffe ImageNet model training instructions .
+
+Caffe2
+CV
+Detectron
+
+Detectron is Facebook AI Research's software system that implements state-of-the-art object detection algorithms, including Mask R-CNN . It is written in Python and powered by the Caffe2 deep learning framework.
+
+Caffe2
+CV
+ResNet-50
+
+An implementation of ResNet , deep residual learning for image recognition.
+
+Caffe2
+CV
+InfoGAN
+
+Keras implementation of InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets
+Keras
+Generative
+pix2pix
+
+Keras implementation of Image-to-Image Translation with Conditional Adversarial Networks by Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A.
+Keras
+CV NLP Generative
+Colorful Image colorization
+
+B&W to color
+
+Keras
+CV
+Auxiliary Classifier GAN
+
+Implementation of _Auxiliary Classifier Generative Adversarial Network_. Paper: https://arxiv.org/abs/1610.0958
+
+Keras
+Generative
+Adversarial Autoencoder
+
+Implementation of _Adversarial Autoencoder_. Paper: https://arxiv.org/abs/1511.0564
+
+Keras
+Generative
+Bidirectional GAN
+
+Implementation of _Bidirectional Generative Adversarial Network_. Paper: https://arxiv.org/abs/1605.0978
+
+Keras
+Generative
+Boundary-Seeking GAN
+
+Implementation of _Boundary-Seeking Generative Adversarial Networks_. Paper: https://arxiv.org/abs/1702.0843
+
+Keras
+Generative
+Conditional GAN
+
+Implementation of _Semi-Supervised Learning with Context-Conditional Generative Adversarial Networks_. Paper: https://arxiv.org/abs/1611.06430
+
+Keras
+Generative
+Context-Conditional GAN
+
+Implementation of _Conditional Generative Adversarial Nets_. Paper:https://arxiv.org/abs/1411.178
+
+Keras
+Generative
+Coupled GANs
+
+Implementation of _Coupled generative adversarial networks_. Paper: https://arxiv.org/abs/1606.0753
+
+Keras
+Generative
+CycleGAN
+
+Implementation of _Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks_. Paper: https://arxiv.org/abs/1703.1059
+
+Keras
+CV NLP Generative
+Deep Convolutional GAN
+
+Implementation of _Deep Convolutional Generative Adversarial Network_. Paper: https://arxiv.org/abs/1511.0643
+
+Keras
+Generative
+DiscoGAN
+
+Implementation of _Learning to Discover Cross-Domain Relations with Generative Adversarial Networks_. Paper: https://arxiv.org/abs/1703.0519
+
+Keras
+Generative
+DualGAN
+
+Implementation of _DualGAN: Unsupervised Dual Learning for Image-to-Image Translation_. Paper: https://arxiv.org/abs/1704.0251
+
+Keras
+CV NLP Generative Unsupervised
+Generative Adversarial Network
+
+Implementation of _Generative Adversarial Network_ with a MLP generator and discriminator. Paper: https://arxiv.org/abs/1406.266
+
+Keras
+Generative
+InfoGAN
+
+Implementation of _InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets_. Paper: https://arxiv.org/abs/1606.0365
+
+Keras
+Generative
+LSGAN
+
+Implementation of _Least Squares Generative Adversarial Networks_. Paper: https://arxiv.org/abs/1611.0407
+
+Keras
+Generative
+Pix2Pix
+
+Implementation of _Image-to-Image Translation with Conditional Adversarial Networks_. Paper: https://arxiv.org/abs/1611.0700
+
+Keras
+CV NLP Generative
+PixelDA
+
+Implementation of _Unsupervised Pixel-Level Domain Adaptation with Generative Adversarial Networks_. Paper: https://arxiv.org/abs/1612.0542
+
+Keras
+Generative Unsupervised
+Semi-Supervised GAN
+
+Implementation of _Semi-Supervised Generative Adversarial Network_. Paper: https://arxiv.org/abs/1606.0158
+
+Keras
+Generative
+Super-Resolution GAN
+
+Implementation of _Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network_. Paper: https://arxiv.org/abs/1609.0480
+
+Keras
+CV Generative
+Wasserstein GAN
+
+Implementation of _Wasserstein GAN_ (with DCGAN generator and discriminator). Paper: https://arxiv.org/abs/1701.0787
+
+Keras
+Generative
+Wasserstein GAN GP
+
+Implementation of _Improved Training of Wasserstein GANs_. Paper: https://arxiv.org/abs/1704.0002
+
+Keras
+Generative
+Adversarial Auto-encoders
+143
+
+argparse
+PyTorch
+Generative
+DCGAN(Gluon:star
+10
+
+MXNet
+Generative
+DCGAN face generation(Gluon:star
+6
+
+MXNet
+Generative
+Variational Autoencoder with deconvolutions
+
+Keras
+Generative
+t-SNE of image CNN fc7 activations
+
+Keras
+CV
+Magenta
+13858
+
+Research project to advance the state of the art in machine intelligence for music and art generation
+
+TensorFlow
+pytorch-pretrained-BERT
+11904
+
+PyTorch version of Google AI's BERT model with script to load Google's pre-trained models
+
+PyTorch
+Kubeflow
+7407
+
+Kubeflow is a Cloud Native platform for machine learning based on Googles internal machine learning pipelines.
+TensorFlow
+flair
+7112
+
+A very simple framework for state-of-the-art Natural Language Processing (NLP)
+
+PyTorch
+AllenNLP
+7060
+
+An open-source NLP research library, built on PyTorch.
+
+PyTorch
+Kaldi
+7040
+
+To build the toolkit: see ./INSTALL.
+Caffe
+Faster R-CNN
+6140
+
+The official Faster R-CNN code (written in MATLAB) is available here.
+Caffe
+pyro
+5595
+
+Deep universal probabilistic programming with Python and PyTorch http://pyro.ai
+
+PyTorch
+Collection of Generative Models with PyTorch
+5428
+
+Collection of generative models, e.g.
+PyTorch
+pytext
+5348
+
+A natural language modeling framework based on PyTorch fb.me/pytextdocs
+
+PyTorch
+fairseq-py
+5343
+
+Facebook AI Research Sequence-to-Sequence Toolkit written in Python.
+
+PyTorch
+DensePose
+4994
+
+Dense Human Pose Estimation In The Wild
+Caffe2
+Deep Residual Networks
+4981
+
+By Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+Caffe
+**InsightFace**
+4929
+
+By Jia Guo and Jiankang Deng
+MXNet
+Sentence Classification with CNN
+4925
+
+TensorFlow implementation of "Convolutional Neural Networks for Sentence Classification" with a blog post
+
+TensorFlow
+Neural Style
+4803
+
+An implementation of neural style
+
+TensorFlow
+pytorch vision
+4306
+
+Datasets, Transforms and Models specific to Computer Vision.
+
+PyTorch
+Keras YOLOv3
+4297
+
+A Keras implementation of YOLOv3 (Tensorflow backend).
+
+Keras
+Realtime Multi-Person Pose Estimation
+3973
+
+We present a bottom-up approach for realtime multi-person pose estimation, without using any person detector.
+
+TensorFlow
+denseNet
+3654
+
+This repository contains the code for DenseNet introduced in the following paper
+Caffe
+CapsNet-Tensorflow
+3533
+
+A Tensorflow implementation of CapsNet based on Geoffrey Hinton's paper, Dynamic Routing Between Capsules.
+
+TensorFlow
+Reading Wikipedia to Answer Open-Domain Questions
+3377
+
+This is a PyTorch implementation of the DrQA system described in the ACL 2017 paper Reading Wikipedia to Answer Open-Domain Questions.
+PyTorch
+face-alignment
+3120
+
+Pytorch implementation of the paper "How far are we from solving the 2D & 3D Face Alignment problem? (and a dataset of 230,000 3D facial landmarks)", ICCV 2017
+
+PyTorch
+AlphaPose
+3103
+
+Alpha Pose is an accurate multi-person pose estimator, which is the first open-source system that achieves 70+ mAP (72.3 mAP) on COCO dataset and 80+ mAP (82.1 mAP) on MPII dataset.
+
+TensorFlow
+attention-is-all-you-need-pytorch
+3099
+
+A PyTorch implementation of the Transformer model in "Attention is All You Need".https://github.com/thnkim/OpenFacePytorch
+
+PyTorch
+Tensorflow-Project-Template
+3019
+
+A simple and well-designed template for your tensorflow project.
+
+TensorFlow
+Minigo
+2877
+
+A minimalist Go engine modeled after AlphaGo Zero, built on MuGo. This is NOT an official version of AlphaGo.
+
+TensorFlow
+BERT-PyTorch
+2803
+
+Pytorch implementation of Google AI's 2018 BERT, with simple annotation
+
+PyTorch
+**Faster RCNN+Deeplab+R-FCN+Deformable-ConvNets+FPN+SoftNMS**
+2768
+
+The major contributors of this repository include Yuwen Xiong, Haozhi Qi, Guodong Zhang, Yi Li, Jifeng Dai, Bin Xiao, Han Hu and Yichen Wei.
+MXNet
+pythia
+2748
+
+A software suite for Visual Question Answering
+
+PyTorch
+Striving for Simplicity
+2746
+
+The All Convolutional Net
+
+PyTorch
+Single Shot MultiBox Detector
+2727
+
+A PyTorch Implementation of Single Shot MultiBox Detector.
+
+PyTorch
+OpenPose TensorFlow
+2572
+
+'Openpose' for human pose estimation have been implemented using Tensorflow. It also provides several variants that have made some changes to the network structure for real-time processing on the CPU or low-power embedded devices.
+
+TensorFlow
+Fast R-CNN
+2559
+
+Created by Ross Girshick at Microsoft Research, Redmond.
+Caffe
+Detectron.pytorch
+2554
+
+A pytorch implementation of Detectron. Both training from scratch and inferring directly from pretrained Detectron weights are available.
+
+PyTorch
+PyTorch YOLOv3
+2538
+
+Minimal implementation of YOLOv3 in PyTorch.
+
+PyTorch
+DeepJazz
+2462
+
+Uses Keras & Theano, two deep learning libraries, to generate jazz music.
+
+Keras
+Neural Style
+2325
+
+This is a TensorFlow implementation of several techniques described in the papers:
+TensorFlow
+yolov3
+2224
+
+YOLOv3: Training and inference in PyTorch pjreddie.com/darknet/yolo
+
+PyTorch
+CapsNet-Keras
+2191
+
+A Keras implementation of CapsNet in the paper: Sara Sabour, Nicholas Frosst, Geoffrey E Hinton. Dynamic Routing Between Capsules. NIPS 2017
+
+Keras
+Transformer-XL
+2063
+
+Transformer-XL: Attentive Language Models Beyond a Fixed-Length Contexthttps://github.com/kimiyoung/transformer-xl
+
+PyTorch
+CIFAR-10 on Pytorch with VGG, ResNet and DenseNet
+2054
+
+I'm playing with PyTorch on the CIFAR10 dataset.
+PyTorch
+3DDFA
+2048
+
+The pytorch improved re-implementation of TPAMI 2017 paper: Face Alignment in Full Pose Range: A 3D Total Solution.
+
+PyTorch
+LASER
+1945
+
+Language-Agnostic SEntence Representations change detection, speaker embedding
+
+PyTorch
+ENAS-pytorch
+1919
+
+PyTorch implementation of "Efficient Neural Architecture Search via Parameters Sharing".
+
+PyTorch
+pytorch text
+1902
+
+Torch text related contents.
+
+PyTorch
+TCN
+1875
+
+Sequence modeling benchmarks and temporal convolutional networks locuslab/TCN
+
+PyTorch
+SqueezeNet
+1798
+
+The Caffe-compatible files that you are probably looking for:
+Caffe
+pytorch-generative-model-collections
+1765
+
+Collection of generative models in Pytorch version.
+
+PyTorch
+pygcn
+1753
+
+Graph Convolutional Networks in PyTorch.
+
+PyTorch
+Mask R-CNN
+1730
+
+An MXNet implementation of Mask R-CNN.
+MXNet
+Training RNNs as Fast as CNNs
+1702
+
+SRU is a recurrent unit that can run over 10 times faster than cuDNN LSTM, without loss of accuracy tested on many tasks.
+PyTorch
+InferSent
+1682
+
+Sentence embeddings (InferSent) and training code for NLI.
+
+PyTorch
+pytorch-playground
+1601
+
+Base pretrained models and datasets in pytorch (MNIST, SVHN, CIFAR10, CIFAR100, STL10, AlexNet, VGG16, VGG19, ResNet, Inception, SqueezeNet)**.
+
+PyTorch
+3D-ResNets-PyTorch
+1572
+
+3D ResNets for Action Recognition.
+
+PyTorch
+XLM
+1568
+
+PyTorch original implementation of Cross-lingual Language Model Pretraining.
+
+PyTorch
+neuralcoref
+1522
+
+State-of-the-art coreference resolution based on neural nets and spaCy huggingface.co/coref
+
+PyTorch
+Neural Style Transfer
+1516
+
+Implementation of Neural Style Transfer from the paper A Neural Algorithm of Artistic Style in Keras 2.0+
+Keras
+FCIS
+1506
+
+The major contributors of this repository include Haozhi Qi, Yi Li, Guodong Zhang, Haochen Zhang, Jifeng Dai, and Yichen Wei.
+MXNet
+Person-reID_pytorch
+1485
+
+PyTorch for Person re-ID.
+
+PyTorch
+Averaged Stochastic Gradient Descent with Weight Dropped LSTM
+1485
+
+This repository contains the code used for two Salesforce Research papers:
+PyTorch
+style-transfer
+1454
+
+This repository contains a pyCaffe-based implementation of "A Neural Algorithm of Artistic Style" by L.
+Caffe
+PyTorch-NLP
+1435
+
+Text utilities and datasets for PyTorch pytorchnlp.readthedocs.io
+
+PyTorch
+FlowNet 2.0
+1407
+
+FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
+
+PyTorch
+Data Augmentation and Sampling for Pytorch
+1348
+
+This package provides a few things:
+PyTorch
+pytorch-faster-rcnn
+1337
+
+A pytorch implementation of faster RCNN detection framework based on Xinlei Chen's tf-faster-rcnn.
+
+PyTorch
+CRF-RNN
+1268
+
+http://crfasrnn.torr.vision
+Caffe
+YOLO2
+1228
+
+YOLOv2 in PyTorch.
+
+PyTorch
+ChainerCV
+1227
+
+Versatile set of tools for Deep Learning based Computer Vision
+
+Chainer
+Pretty Tensor
+1225
+
+Pretty Tensor provides a high level builder API
+
+TensorFlow
+end-to-end-negotiator
+1224
+
+Deal or No Deal? End-to-End Learning for Negotiation Dialogues
+
+PyTorch
+poincare-embeddings
+1157
+
+PyTorch implementation of the NIPS-17 paper "Poincaré Embeddings for Learning Hierarchical Representations".
+
+PyTorch
+Center Loss
+1118
+
+Caffe is a deep learning framework made with expression, speed, and modularity in mind.
+Caffe
+Deep Feature Flow
+1100
+
+The major contributors of this repository include Xizhou Zhu, Yuwen Xiong, Jifeng Dai, Lu Yuan, and Yichen Wei.
+MXNet
+tacotron2
+1083
+
+Tacotron 2 - PyTorch implementation with faster-than-realtime inference.
+
+PyTorch
+pytorch-openai-transformer-lm
+1082
+
+This is a PyTorch implementation of the TensorFlow code provided with OpenAI's paper "Improving Language Understanding by Generative Pre-Training" by Alec Radford, Karthik Narasimhan, Tim Salimans and Ilya Sutskever.
+
+PyTorch
+pytorch-qrnn
+1069
+
+PyTorch implementation of the Quasi-Recurrent Neural Network - up to 16 times faster than NVIDIA's cuDNN LSTM
+
+PyTorch
+efficient_densenet_pytorch
+1034
+
+A memory-efficient implementation of DenseNets
+
+PyTorch
+loss-landscape
+1021
+
+Loss-landscape Code for visualizing the loss landscape of neural nets.
+
+PyTorch
+Single Shot MultiBox Detector
+996
+
+For more details, please refer to arXiv paper.
+Keras
+attention-transfer
+971
+
+Attention transfer in pytorch, read the paper here .
+
+PyTorch
+Neural Turing Machine in TensorFlow
+963
+
+Implementation of Neural Turing Machine
+
+TensorFlow
+pytorch-fcn
+875
+
+PyTorch implementation of Fully Convolutional Networks.
+
+PyTorch
+SparseConvNet
+873
+
+Submanifold sparse convolutional networks.
+
+PyTorch
+Human Pose Estimation with TensorFlow
+856
+
+Here you can find the implementation of the Human Body Pose Estimation algorithm, presented in the ArtTrack and DeeperCut papers.
+
+TensorFlow
+**sockeye**
+851
+
+This package contains the Sockeye project,
+MXNet
+TensorNets
+843
+
+High level network definitions with pre-trained weights in TensorFlow (tested with >= 1.1.0).
+TensorFlow
+pytorch-yolo2
+838
+
+Pytorch-yolo2
+
+PyTorch
+Mask-RCNN
+808
+
+A PyTorch implementation of the architecture of Mask RCNN, serves as an introduction to working with PyTorch
+
+PyTorch
+Dilated ResNet combination with Dilated Convolutions
+800
+
+This code provides various models combining dilated convolutions with residual networks.
+PyTorch
+pytorch-retinanet
+791
+
+RetinaNet in PyTorch
+
+PyTorch
+inplace_abn
+787
+
+In-Place Activated BatchNorm for Memory-Optimized Training of DNNs
+
+PyTorch
+Realtime_Multi-Person_Pose_Estimation
+772
+
+This is a pytorch version of Realtime_Multi-Person_Pose_Estimation, origin code is here .
+
+PyTorch
+grad-cam
+741
+
+Pytorch implementation of Grad-CAM
+
+PyTorch
+yusuketomoto/chainer-fast-neuralstyle
+740
+
+Perceptual Losses for Real-Time Style Transfer and Super-Resolution
+
+Chainer
+Character-Aware Neural Language Models
+726
+
+TensorFlow implementation of Character-Aware Neural Language Models
+
+TensorFlow
+kornia
+712
+
+Differentiable computer vision library.
+
+PyTorch
+CNN visualization using Tensorflow
+705
+
+Tensorflow implementation of "Visualizing and Understanding Convolutional Networks"
+
+TensorFlow
+relational-networks
+696
+
+Pytorch implementation of "A simple neural network module for relational reasoning" (Relational Networks) https://arxiv.org/pdf/1706.01427.pdf
+
+PyTorch
+pytorch-pose
+692
+
+A PyTorch toolkit for 2D Human Pose Estimation.
+
+PyTorch
+Inferring and Executing Programs for Visual Reasoning
+677
+
+This is the code for the paper
+PyTorch
+LM-LSTM-CRF
+652
+
+Empower Sequence Labeling with Task-Aware Language Model http://arxiv.org/abs/1709.04109
+
+PyTorch
+deep-head-pose
+645
+
+Deep Learning Head Pose Estimation using PyTorch.
+
+PyTorch
+Generative Handwriting Demo using TensorFlow
+641
+
+An attempt to implement the random handwriting generation portion of Alex Graves' paper
+
+TensorFlow
+probtorch
+641
+
+Probabilistic Torch is library for deep generative models that extends PyTorch.
+
+PyTorch
+PVANet
+640
+
+by Sanghoon Hong, Byungseok Roh, Kye-hyeon Kim, Yeongjae Cheon, Minje Park (Intel Imaging and Camera Technology)
+Caffe
+pytorch-deform-conv
+637
+
+PyTorch implementation of Deformable Convolution.
+
+PyTorch
+Cnn-text classification
+629
+
+This is the implementation of Kim's Convolutional Neural Networks for Sentence Classification paper in PyTorch.
+
+PyTorch
+CapsGNN
+623
+
+Capsule Graph Neural Network. (ICLR 2019).
+
+PyTorch
+CondenseNet
+620
+
+CondenseNet: An Efficient DenseNet using Learned Group Convolutions.
+
+PyTorch
+s2cnn
+620
+
+This library contains a PyTorch implementation of the SO(3) equivariant CNNs for spherical signals (e.g. omnidirectional cameras, signals on the globe)
+
+PyTorch
+tsn-pytorch
+617
+
+Temporal Segment Networks (TSN) in PyTorch.
+
+PyTorch
+Video Frame Interpolation via Adaptive Separable Convolution
+607
+
+News: Check our new CVPR 2018 paper on a faster and higher-quality frame interpolation method.
+PyTorch
+Densely Connected Convolutional Networks
+607
+
+DenseNet implementation of the paper Densely Connected Convolutional Networks in Keras
+Keras
+densenet
+588
+
+This is a PyTorch implementation of the DenseNet-BC architecture as described in the paper Densely Connected Convolutional Networks by G. Huang, Z. Liu, K. Weinberger, and L. van der Maaten. This implementation gets a CIFAR-10+ error rate of 4.77 with a 100-layer DenseNet-BC with a growth rate of 12. Their official implementation and links to many other third-party implementations are available in the liuzhuang13/DenseNet repo on GitHub.
+
+PyTorch
+Keras Realtime Multi-Person Pose Estimation
+587
+
+This is a Keras version of Realtime Multi-Person Pose Estimation project.
+
+Keras
+DiracNets
+576
+
+Training Very Deep Neural Networks Without Skip-Connections
+
+PyTorch
+MTCNN (original detector)
+574
+
+This is a python/mxnet implementation of Zhang's work .
+MXNet
+torchMoji
+570
+
+A pyTorch implementation of the DeepMoji model: state-of-the-art deep learning model for analyzing sentiment, emotion, sarcasm etc.
+
+PyTorch
+jiant
+568
+
+The jiant sentence representation learning toolkit.
+
+PyTorch
+3D Convolutional Neural Networks in TensorFlow
+567
+
+Implementation of "3D Convolutional Neural Networks for Speaker Verification application" in TensorFlow by Torfi et al.
+
+TensorFlow
+MTCNN
+563
+
+this repository is the implementation of MTCNN in MXnet
+MXNet
+Flow-Guided Feature Aggregation
+557
+
+This repository is implemented by Yuqing Zhu, Shuhao Fu, and Xizhou Zhu, when they are interns at MSRA.
+MXNet
+AlexNet, VGG 16, VGG 19, and class heatmap visualization
+547
+
+NOTE: This repo is outdated and no longer updated.
+Keras
+bottom-up-attention-vqa
+545
+
+Vqa, bottom-up-attention, pytorch
+
+PyTorch
+MXNet Face
+545
+
+Using mxnet for face-related algorithm, here now only provide :
+MXNet
+pytorch-deeplab-resnet
+539
+
+Pytorch-deeplab-resnet-model.
+
+PyTorch
+pytorch-capsule
+537
+
+Pytorch implementation of Hinton's Dynamic Routing Between Capsules.
+
+PyTorch
+Wide ResNet model in PyTorch
+531
+
+Model definitions and pretrained weights for PyTorch and Tensorflow
+PyTorch
+pytorch-pruning
+527
+
+PyTorch Implementation of [1611.06440] Pruning Convolutional Neural Networks for Resource Efficient Inference
+
+PyTorch
+sphereface_pytorch
+527
+
+A PyTorch Implementation of SphereFace.
+
+PyTorch
+DUC
+521
+
+by Panqu Wang, Pengfei Chen, Ye Yuan, Ding Liu, Zehua Huang, Xiaodi Hou, and Garrison Cottrell.
+MXNet
+medicaltorch
+519
+
+A medical imaging framework for Pytorch http://medicaltorch.readthedocs.io
+
+PyTorch
+pytorch-wavenet
+514
+
+An implementation of WaveNet with fast generation
+
+PyTorch
+translate
+514
+
+Translate - a PyTorch Language Library.
+
+PyTorch
+YOLO in caffe
+509
+
+__Update 12-05-2016__: __Currently, only yolo v1 (http://pjreddie.com/darknet/yolov1/) is supported.
+Caffe
+DPN
+508
+
+This repository contains the code and trained models of:
+MXNet
+PyTorch YOLOv3
+496
+
+PyTorch implementation of YOLOv3
+
+PyTorch
+PyTorch-Style-Transfer
+491
+
+PyTorch Implementation of Multi-style Generative Network for Real-time Transfer
+
+PyTorch
+illustration2vec
+487
+
+Illustration2vec
+
+Chainer
+Deep-Compression-AlexNet
+484
+
+This is a demo of Deep Compression compressing AlexNet from 233MB to 8.9MB without loss of accuracy.
+Caffe
+SfmLearner-Pytorch
+471
+
+Pytorch version of SfmLearner from Tinghui Zhou et al.
+
+PyTorch
+NeuralArt
+465
+
+Implementation of A Neural Algorithm of Artistic Style
+
+TensorFlow
+vqa.pytorch
+463
+
+Visual Question Answering in Pytorch
+
+PyTorch
+Visual question answering
+461
+
+Click here to go to the accompanying blog post.
+Keras
+pytorch-cnn-finetune
+454
+
+Fine-tune pretrained Convolutional Neural Networks with PyTorch.
+
+PyTorch
+attn2d
+453
+
+Pervasive Attention: 2D Convolutional Networks for Sequence-to-Sequence Prediction
+
+PyTorch
+ResNet
+453
+
+Install MXNet on a machine with CUDA GPU, and it's better also installed with cuDNN v5
+MXNet
+Prototypical-Networks-for-Few-shot-Learning-PyTorch
+439
+
+Implementation of Prototypical Networks for Few Shot Learning (arxiv.org/abs/1703.05175) in Pytorch
+
+PyTorch
+FaceBoxes.PyTorch
+433
+
+A PyTorch Implementation of FaceBoxes.
+
+PyTorch
+SMASH
+427
+
+An experimental technique for efficiently exploring neural architectures.
+
+PyTorch
+pytorch - fid
+422
+
+A Port of Fréchet Inception Distance (FID score) to PyTorch
+
+PyTorch
+flownet
+418
+
+Pytorch implementation of FlowNet by Dosovitskiy et al.
+
+PyTorch
+yolo2-pytorch
+410
+
+The YOLOv2 is one of the most popular one-stage object detector. This project adopts PyTorch as the developing framework to increase productivity, and utilize ONNX to convert models into Caffe 2 to benifit engineering deployment.
+
+PyTorch
+STN OCR
+410
+
+This repository contains the code for the paper: STN-OCR: A single Neural Network for Text Detection and Text Recognition
+MXNet
+pytorch-pose-hg-3d
+407
+
+PyTorch implementation for 3D human pose estimation
+
+PyTorch
+Convolutional LSTM Network
+387
+
+A multi-layer convolution LSTM module
+PyTorch
+treelstm.pytorch
+379
+
+Tree LSTM implementation in PyTorch.
+
+PyTorch
+CapsNet-pytorch
+377
+
+PyTorch implementation of NIPS 2017 paper Dynamic Routing Between Capsules.
+
+PyTorch
+deformable-convolution-pytorch
+376
+
+PyTorch implementation of Deformable Convolution.
+
+PyTorch
+FlappyBird DQN
+374
+
+A single 200 lines of python code to demostrate DQN with Keras
+Keras
+A Structured Self-Attentive Sentence Embedding
+370
+
+An open-source implementation of the paper ``A Structured Self-Attentive Sentence Embedding'' published by IBM and MILA.
+PyTorch
+gpt-2-Pytorch
+368
+
+Simple Text-Generator with OpenAI gpt-2 Pytorch Implementation
+
+PyTorch
+pytorch-made
+365
+
+MADE (Masked Autoencoder Density Estimation) implementation in PyTorch
+
+PyTorch
+pytorch-mobilenet
+363
+
+PyTorch MobileNet Implementation of "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", 1704.04861
+
+PyTorch
+Spatial Transformer Networks
+357
+
+Ported from https://github.com/qassemoquab/stnbhwd according to pytorch tutorial.
+PyTorch
+pytorch-ntm
+355
+
+Pytorch ntm implementation.
+
+PyTorch
+trellisnet
+354
+
+Trellis Networks for Sequence Modeling
+
+PyTorch
+RoIAlign.pytorch
+354
+
+This is a PyTorch version of RoIAlign. This implementation is based on crop_and_resize and supports both forward and backward on CPU and GPU.
+
+PyTorch
+Shufflenet-v2-Pytorch
+342
+
+This is a Pytorch implementation of faceplusplus's ShuffleNet-v2.
+
+PyTorch
+Weakly_detector
+340
+
+Implementation of "Learning Deep Features for Discriminative Localization"
+
+TensorFlow
+Structured-Self-Attention
+340
+
+Implementation for the paper A Structured Self-Attentive Sentence Embedding, which is published in ICLR 2017: arxiv.org/abs/1703.03130 .
+
+PyTorch
+DeepPose
+339
+
+Deep pose
+
+Chainer
+qp solver
+337
+
+A fast and differentiable QP solver for PyTorch. Crafted by Brandon Amos and J. Zico Kolter.
+
+PyTorch
+BMXNet
+337
+
+A fork of the deep learning framework mxnet to study and implement quantization and binarization in neural networks.
+MXNet
+pytorch-maml
+335
+
+PyTorch implementation of MAML: arxiv.org/abs/1703.03400
+
+PyTorch
+GoogleNet Convolutional Neural Network Groups Movie Scenes By Setting
+334
+
+Search, filter, and describe videos based on objects, places, and other things that appear in them
+
+TensorFlow
+YOLOv2
+332
+
+YOLOv2
+
+Chainer
+voicefilter
+331
+
+Unofficial PyTorch implementation of Google AI's VoiceFilter system http://swpark.me/voicefilter
+
+PyTorch
+Random-Erasing
+330
+
+This code has the source code for the paper "Random Erasing Data Augmentation".
+
+PyTorch
+ban-vqa
+330
+
+Bilinear attention networks for visual question answering.
+
+PyTorch
+ResNeXt.pytorch
+329
+
+Reproduces ResNet-V3 (Aggregated Residual Transformations for Deep Neural Networks) with pytorch.
+
+PyTorch
+DrQA
+325
+
+A pytorch implementation of Reading Wikipedia to Answer Open-Domain Questions.
+
+PyTorch
+pytorch-coviar
+325
+
+Compressed Video Action Recognition
+
+PyTorch
+tbd-nets
+325
+
+PyTorch implementation of "Transparency by Design: Closing the Gap Between Performance and Interpretability in Visual Reasoning" arxiv.org/abs/1803.05268
+
+PyTorch
+TripletLoss(FaceNet)
+317
+
+This aims to reproduce the loss function used in Google's FaceNet paper.
+Caffe
+End-To-End Memory Networks
+315
+
+Implementation of End-To-End Memory Networks
+
+TensorFlow
+ConvE
+314
+
+Convolutional 2D Knowledge Graph Embeddings
+
+PyTorch
+pytorch-flows
+314
+
+PyTorch implementations of algorithms for density estimation
+
+PyTorch
+fast-neural-style
+313
+
+Pytorch implementation of fast-neural-style, The model uses the method described in Perceptual Losses for Real-Time Style Transfer and Super-Resolution along with Instance Normalization.
+
+PyTorch
+deepfloat
+307
+
+This repository contains the SystemVerilog RTL, C++, HLS (Intel FPGA OpenCL to wrap RTL code) and Python needed to reproduce the numerical results in "Rethinking floating point for deep learning"
+
+PyTorch
+ResNet-38
+305
+
+Visual applications by the University of Adelaide
+MXNet
+gogh
+301
+
+Implementation of "A neural algorithm of Artistic style"
+
+Chainer
+QANet-pytorch
+297
+
+An implementation of QANet with PyTorch (EM/F1 = 70.5/77.2 after 20 epoches for about 20 hours on one 1080Ti card.)
+
+PyTorch
+graphsage-simple
+297
+
+Simple reference implementation of GraphSAGE.
+
+PyTorch
+YellowFin_Pytorch
+289
+
+Auto-tuning momentum SGD optimizer
+
+PyTorch
+CoordConv-pytorch
+278
+
+Pytorch implementation of CoordConv introduced in 'An intriguing failing of convolutional neural networks and the CoordConv solution' paper. (arxiv.org/pdf/1807.03247.pdf)
+
+PyTorch
+faster-rcnn
+276
+
+Faster R-CNN
+
+Chainer
+optnet
+275
+
+This repository is by Brandon Amos and J. Zico Kolter and contains the PyTorch source code to reproduce the experiments in our paper OptNet: Differentiable Optimization as a Layer in Neural Networks.
+
+PyTorch
+pytorch-es
+273
+
+This is a PyTorch implementation of Evolution Strategies .
+
+PyTorch
+HMM in TensorFlow
+272
+
+Implementation of viterbi and forward/backward algorithms for HMM
+
+TensorFlow
+BERT-NER
+271
+
+Pytorch-Named-Entity-Recognition-with-BERT.
+
+PyTorch
+pyvarinf
+271
+
+Python package facilitating the use of Bayesian Deep Learning methods with Variational Inference for PyTorch.
+
+PyTorch
+RetinaNet
+268
+
+An implementation of RetinaNet in PyTorch.
+
+PyTorch
+quick-nlp
+268
+
+Pytorch NLP library based on FastAI.
+
+PyTorch
+pytorch-i-revnet
+266
+
+Pytorch implementation of i-RevNets.
+
+PyTorch
+pyscatwave
+261
+
+Fast Scattering Transform with CuPy/PyTorch,read the paper here
+
+PyTorch
+neural-art-mini
+261
+
+Lightweight version of mxnet neural art implementation using ~4.8M SqueezeNet model.
+MXNet
+NLP-Caffe
+257
+
+NLP-Caffe is a pull request [1] on the Caffe framework developed by Yangqing Jia and Evan Shelhamer, among other members of the BVLC lab at Berkeley and a large number of independent online contributers.
+Caffe
+gensen
+256
+
+Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning.
+
+PyTorch
+transfer-nlp
+256
+
+NLP library designed for flexible research and development
+
+PyTorch
+Snapshot Ensembles
+255
+
+Train 1, Get M for Free
+
+Keras
+Tensorflow FastText
+254
+
+A simple embedding based text classifier inspired by Facebook's fastText.
+
+TensorFlow
+ggnn.pytorch
+247
+
+A PyTorch Implementation of Gated Graph Sequence Neural Networks (GGNN).
+
+PyTorch
+NGCN
+247
+
+A Higher-Order Graph Convolutional Layer. NeurIPS 2018.
+
+PyTorch
+NGCN
+247
+
+A Higher-Order Graph Convolutional Layer. NeurIPS 2018.
+
+PyTorch
+honk
+243
+
+PyTorch reimplementation of Google's TensorFlow CNNs for keyword spotting.
+
+PyTorch
+generative-query-network-pytorch
+243
+
+Generative Query Network (GQN) in PyTorch as described in "Neural Scene Representation and Rendering"
+
+PyTorch
+YOLO/YOLOv2
+239
+
+Still under development.
+MXNet
+MTCNN_face_detection_alignment
+238
+
+This original project is MTCNN.
+Caffe
+densebody_pytorch
+236
+
+PyTorch implementation of CloudWalk's recent paper DenseBody.
+
+PyTorch
+Neural programmer-interpreter
+236
+
+Implementation of Neural Programmer-Interpreters with Keras.
+Keras
+pytorch-value-iteration-networks
+233
+
+Pytorch implementation of Value Iteration Networks (NIPS 2016 best paper)
+
+PyTorch
+graph_convnets_pytorch
+233
+
+PyTorch implementation of graph ConvNets, NIPS’16
+
+PyTorch
+Face_Attention_Network
+232
+
+Pytorch implementation of face attention network as described in Face Attention Network: An Effective Face Detector for the Occluded Faces.
+
+PyTorch
+pytorch-explain-black-box
+227
+
+PyTorch implementation of Interpretable Explanations of Black Boxes by Meaningful Perturbation
+
+PyTorch
+pytorch-dnc
+223
+
+Neural Turing Machine (NTM) & Differentiable Neural Computer (DNC) with pytorch & visdom.
+
+PyTorch
+SFD_pytorch
+223
+
+A PyTorch Implementation of Single Shot Scale-invariant Face Detector.
+
+PyTorch
+Mask R-CNN
+222
+
+Implementation of Mask-RCNN in Caffe based on https://arxiv.org/pdf/1703.06870.pdf
+Caffe
+fusenet
+222
+
+This project contains the models used for the experiments in the paper:
+MXNet
+nmp_qc
+220
+
+Neural Message Passing for Computer Vision
+
+PyTorch
+Learning to learn by gradient descent by gradient descent
+218
+
+PyTorch implementation of Learning to learn by gradient descent by gradient descent.
+
+PyTorch
+PytorchNeuralStyleTransfer
+215
+
+Implementation of Neural Style Transfer in Pytorch.
+
+PyTorch
+ClariNet
+212
+
+A Pytorch Implementation of ClariNet arxiv.org/abs/1807.07281
+
+PyTorch
+relational-rnn-pytorch
+211
+
+An implementation of DeepMind's Relational Recurrent Neural Networks in PyTorch.
+
+PyTorch
+GraphWaveletNeuralNetwork
+210
+
+This is a Pytorch implementation of Graph Wavelet Neural Network. ICLR 2019.
+
+PyTorch
+DQN
+208
+
+DQN-in-the-Caffe is an implementation of Deep Q-Network using Caffe.
+Caffe
+vsepp
+205
+
+Code for the paper "VSE++: Improved Visual Semantic Embeddings"
+
+PyTorch
+GrouPy
+204
+
+Group Equivariant Convolutional Neural Networks
+
+Chainer
+DeepRL-Grounding
+203
+
+This is a PyTorch implementation of the AAAI-18 paper Gated-Attention Architectures for Task-Oriented Language Grounding
+
+PyTorch
+R2Plus1D-PyTorch
+201
+
+PyTorch implementation of the R2Plus1D convolution based ResNet architecture described in the paper "A Closer Look at Spatiotemporal Convolutions for Action Recognition"
+
+PyTorch
+DQN-chainer
+198
+
+Deep Q-Network (DQN)
+
+Chainer
+VIN_PyTorch_Visdom
+196
+
+PyTorch implementation of Value Iteration Networks (VIN): Clean, Simple and Modular. Visualization in Visdom.
+
+PyTorch
+ChainerMN
+195
+
+Scalable distributed deep learning with Chainer
+
+Chainer
+LearningToCompare-Pytorch
+194
+
+Pytorch Implementation for Paper: Learning to Compare: Relation Network for Few-Shot Learning.
+
+PyTorch
+dnc
+190
+
+Differentiable Neural Computers, for Pytorch
+
+PyTorch
+pytorch-dqn
+188
+
+Deep Q-Learning Network in pytorch.
+
+PyTorch
+GradientEpisodicMemory
+188
+
+Continuum Learning with GEM: Gradient Episodic Memory. https://arxiv.org/abs/1706.08840
+
+PyTorch
+DQN
+187
+
+This is a very basic DQN (with experience replay) implementation, which uses OpenAI's gym environment and Keras/Theano neural networks.
+Keras
+fcn
+186
+
+Fully Convolutional Networks
+
+Chainer
+Continuous Deep Q-Learning with Model-based Acceleration
+185
+
+Reimplementation of Continuous Deep Q-Learning with Model-based Acceleration.
+
+PyTorch
+ORN
+185
+
+A PyTorch implementation of the paper "Oriented Response Networks" in CVPR 2017.
+
+PyTorch
+pytorch-sgns
+185
+
+Skipgram Negative Sampling in PyTorch.
+
+PyTorch
+PyramidNet-PyTorch
+183
+
+A PyTorch implementation for PyramidNets (Deep Pyramidal Residual Networks, arxiv.org/abs/1610.02915)
+
+PyTorch
+AccSGD
+183
+
+Implements pytorch code for the Accelerated SGD algorithm.
+
+PyTorch
+PyTorch Realtime Multi-Person Pose Estimation
+183
+
+Pytorch version of Realtime Multi-Person Pose Estimation project.
+
+PyTorch
+FreezeOut
+181
+
+Accelerate Neural Net Training by Progressively Freezing Layers.
+
+PyTorch
+FewShotLearning
+172
+
+Pytorch implementation of the paper "Optimization as a Model for Few-Shot Learning"
+
+PyTorch
+NALU-pytorch
+172
+
+Basic pytorch implementation of NAC/NALU from Neural Arithmetic Logic Units arxiv.org/pdf/1808.00508.pdf
+
+PyTorch
+Skip-Thought Vectors
+171
+
+An implementation of Skip-Thought Vectors in PyTorch.
+PyTorch
+chainer-char-rnn
+171
+
+Recurrent neural network (RNN)
+
+Chainer
+WideResNets
+169
+
+WideResNets for CIFAR10/100 implemented in PyTorch. This implementation requires less GPU memory than what is required by the official Torch implementation: https://github.com/szagoruyko/wide-residual-networks .
+
+PyTorch
+C3D
+168
+
+This is 3D convolution (C3D) and video reader implementation in the latest Caffe (Dec 2016).
+Caffe
+context_encoder_pytorch
+166
+
+PyTorch Implement of Context Encoders
+
+PyTorch
+Noisy Networks for Exploration
+163
+
+NoisyNet [1] (LSTM) asynchronous advantage actor-critic (A3C) [2] on the CartPole-v1 environment.
+PyTorch
+pytorch-retraining
+162
+
+Transfer Learning Shootout for PyTorch's model zoo (torchvision)
+
+PyTorch
+visual-interaction-networks-pytorch
+161
+
+This's an implementation of deepmind Visual Interaction Networks paper using pytorch
+
+PyTorch
+ClusterGCN
+161
+
+A PyTorch implementation of "Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks" (KDD 2019).
+
+PyTorch
+ChainerUI
+160
+
+ChainerUI is a visualization and management tool for Chainer.
+
+Chainer
+pytorch-transformer
+159
+
+Pytorch implementation of Attention is all you need.
+
+PyTorch
+SimGNN
+159
+
+SimGNN: A Neural Network Approach to Fast Graph Similarity Computation.
+
+PyTorch
+Real-time style transfer
+159
+
+This is an attempt at implementing something like Real-Time Style Transfer
+Keras
+Conditional Similarity Networks
+158
+
+This repository contains a PyTorch implementation of the paper Conditional Similarity Networks presented at CVPR 2017.
+PyTorch
+Visual Search (Gluon:star
+158
+
+Demo website
+MXNet
+vqa-winner-cvprw-2017
+154
+
+Pytorch Implementation of winner from VQA Chllange Workshop in CVPR'17.
+
+PyTorch
+pt-dilate-rnn
+153
+
+Dilated RNNs in pytorch.
+
+PyTorch
+VGG-CAM
+153
+
+Original matlab implementation and paper here.
+Keras
+dockerface
+152
+
+Dockerface is a deep learning replacement for dlib and OpenCV non-deep face detection.
+Caffe
+DRRN-pytorch
+148
+
+An implementation of Deep Recursive Residual Network for Super Resolution (DRRN), CVPR 2017
+
+PyTorch
+PyTorchWavelets
+145
+
+PyTorch implementation of the wavelet analysis found in Torrence and Compo (1998)
+
+PyTorch
+AttentionWalk
+145
+
+This is a Pytorch implementation of Watch Your Step: Learning Node Embeddings via Graph Attention. NIPS 2018.
+
+PyTorch
+MobileNet
+145
+
+This is a MXNet implementation of Google's MobileNets.
+MXNet
+Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling
+144
+
+Pytorch implementation of "Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling" (https://arxiv.org/pdf/1609.01454.pdf)
+PyTorch
+pytorch-zssr
+141
+
+PyTorch implementation of 1712.06087 "Zero-Shot" Super-Resolution using Deep Internal Learning
+
+PyTorch
+OpenFacePytorch
+140
+
+PyTorch module to use OpenFace's nn4.small2.v1.t7 model
+
+PyTorch
+pytorch_compact_bilinear_pooling v1
+140
+
+This repository has a pure Python implementation of Compact Bilinear Pooling and Count Sketch for PyTorch.
+
+PyTorch
+convnet-aig
+139
+
+PyTorch implementation for Convolutional Networks with Adaptive Inference Graphs.
+
+PyTorch
+Attentive Recurrent Comparators
+138
+
+PyTorch implementation of Attentive Recurrent Comparators by Shyam et al.
+PyTorch
+FractalNet
+138
+
+I built this network as stated in the paper but fractals are done iterative instead of functional to avoid the extra complexity when merging the fractals.
+Keras
+Deep Networks with Stochastic Depth
+138
+
+Keras implementation for "Deep Networks with Stochastic Depth" http://arxiv.org/abs/1603.09382
+Keras
+fmpytorch
+137
+
+A PyTorch implementation of a Factorization Machine module in cython.
+
+PyTorch
+StackNN
+137
+
+A PyTorch implementation of differentiable stacks for use in neural networks.
+
+PyTorch
+Attentive Object Tracking
+135
+
+Implementation of "Hierarchical Attentive Recurrent Tracking"
+
+TensorFlow
+pytorch-pose-estimation
+135
+
+PyTorch Implementation of Realtime Multi-Person Pose Estimation project.
+
+PyTorch
+FaceDetection-ConvNet-3D
+135
+
+Yunzhu Li, Benyuan Sun, Tianfu Wu and Yizhou Wang, "Face Detection with End-to-End Integration of a ConvNet and a 3D Model", ECCV 2016 (https://arxiv.org/abs/1606.00850)
+MXNet
+GAM
+134
+
+This is a Pytorch implementation of Graph Classification using Structural Attention. KDD 2018.
+
+PyTorch
+odin-pytorch
+133
+
+Principled Detection of Out-of-Distribution Examples in Neural Networks.
+
+PyTorch
+packnet
+133
+
+Code for PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning arxiv.org/abs/1711.05769
+
+PyTorch
+ODIN
+133
+
+Out-of-Distribution Detector for Neural Networks
+
+PyTorch
+neural style transfer
+132
+
+An introduction to PyTorch through the Neural-Style algorithm (https://arxiv.org/abs/1508.06576) developed by Leon A. Gatys, Alexander S. Ecker and Matthias Bethge.
+
+PyTorch
+FCNT
+131
+
+FCNT is an online visual tracking algorithm using fully convolutional neural networks.
+Caffe
+UntrimmedNets
+130
+
+We provide the code and models for our CVPR paper (Arxiv Preprint):
+Caffe
+SENet
+130
+
+A MXNet implementation of Squeeze-and-Excitation Networks
+MXNet
+DeepCORAL
+128
+
+A PyTorch implementation of 'Deep CORAL: Correlation Alignment for Deep Domain Adaptation.', ECCV 2016
+
+PyTorch
+Pytorch-NCE
+128
+
+The Noise Contrastive Estimation for softmax output written in Pytorch
+
+PyTorch
+Smile detection with a CNN
+128
+
+Smile Detection with a Deep Convolutional Neural Net using Keras.
+Keras
+GoogleNet-V2
+127
+
+This model is a re-implementation of Batch Normalization publication, and the model is trained with a customized caffe; however, the modifications are minor.
+Caffe
+AOGNet
+127
+
+This repository contains the code (in MXNet) for: "AOGNets: Deep AND-OR Grammar Networks for Visual Recognition" paper by Xilai Li, Tianfu Wu*, Xi Song and Hamid Krim.
+MXNet
+cifar10
+127
+
+Cifar10
+
+Chainer
+Character CNN
+126
+
+PyTorch implementation of the Character-level Convolutional Networks for Text Classification paper.
+
+PyTorch
+Pytorch-Sketch-RNN
+125
+
+A pytorch implementation of arxiv.org/abs/1704.03477
+
+PyTorch
+Wide Residual Networks
+125
+
+This repo contains the code to run Wide Residual Networks using Keras.
+Keras
+pix2pix
+124
+
+Chainer implementation of pix2pix
+
+Chainer
+Optical Flow Estimation using a Spatial Pyramid Network
+123
+
+This is a personal reimplementation of Optical Flow Estimation using a Spatial Pyramid Network [1] using PyTorch.
+PyTorch
+DeepPose TensorFlow
+122
+
+TensorFlow implementation of DeepPose.
+
+TensorFlow
+HCN-pytorch
+122
+
+A pytorch reimplementation of { Co-occurrence Feature Learning from Skeleton Data for Action Recognition and Detection with Hierarchical Aggregation }.
+
+PyTorch
+CNN-LSTM-CTC(Gluon:star
+122
+
+import math
+MXNet
+DeepBox
+121
+
+Created by Weicheng Kuo at UC Berkeley
+Caffe
+VRNN
+121
+
+Pytorch implementation of the Variational RNN (VRNN), from A Recurrent Latent Variable Model for Sequential Data.
+
+PyTorch
+TuckER
+120
+
+TuckER: Tensor Factorization for Knowledge Graph Completion.
+
+PyTorch
+Realtime Multi-Person Pose Estimation
+120
+
+You can download mxnet model and parameters(coco and MPII) from google drive:
+MXNet
+bigBatch
+118
+
+Code used to generate the results appearing in "Train longer, generalize better: closing the generalization gap in large batch training of neural networks"
+
+PyTorch
+skip-gram-pytorch
+118
+
+A complete pytorch implementation of skipgram model (with subsampling and negative sampling). The embedding result is tested with Spearman's rank correlation.
+
+PyTorch
+CompactBilinearPooling-Pytorch v2
+117
+
+(Yang Gao, et al.) A Pytorch Implementation for Compact Bilinear Pooling.
+
+PyTorch
+DCC
+116
+
+This repository contains the source code and data for reproducing results of Deep Continuous Clustering paper.
+
+PyTorch
+DenseNet
+115
+
+This is a MXNet implementation of DenseNet-BC architecture as described in the paper Densely Connected Convolutional Networks by Gao Huang, Zhuang Liu, Kilian Q.
+MXNet
+binary-wide-resnet
+114
+
+PyTorch implementation of Wide Residual Networks with 1-bit weights by McDonnel (ICLR 2018)
+
+PyTorch
+NoisyNaturalGradient
+113
+
+Pytorch Implementation of paper "Noisy Natural Gradient as Variational Inference".
+
+PyTorch
+APPNP
+113
+
+Combining Neural Networks with Personalized PageRank for Classification on Graphs. ICLR 2019.
+
+PyTorch
+Splitter
+113
+
+Splitter: Learning Node Representations that Capture Multiple Social Contexts. (WWW 2019).
+
+PyTorch
+Draw like Bob Ross
+112
+
+pip install -r requirements.txt
+PyTorch
+e2e-model-learning
+110
+
+Task-based end-to-end model learning.
+
+PyTorch
+doomnet
+107
+
+PyTorch's version of Doom-net implementing some RL models in ViZDoom environment.
+
+PyTorch
+piggyback
+107
+
+Code for Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights arxiv.org/abs/1801.06519
+
+PyTorch
+DSSD+TDM
+107
+
+An MXNet implementation of DSSD : Deconvolutional Single Shot Detector.
+MXNet
+radio-transformer-networks
+106
+
+A PyTorch implementation of Radio Transformer Networks from the paper "An Introduction to Deep Learning for the Physical Layer". arxiv.org/abs/1702.00832
+
+PyTorch
+FCN-pytorch-easiest
+105
+
+Trying to be the most easiest and just get-to-use pytorch implementation of FCN (Fully Convolotional Networks)
+
+PyTorch
+Probabilistic Programming and Statistical Inference in PyTorch
+105
+
+Probabilistic Programming and Statistical Inference in PyTorch.
+PyTorch
+lang-emerge-parlai
+102
+
+Implementation of EMNLP 2017 Paper "Natural Language Does Not Emerge 'Naturally' in Multi-Agent Dialog" using PyTorch and ParlAI
+
+PyTorch
+pytorch-prunes
+102
+
+Pruning neural networks: is it time to nip it in the bud?
+
+PyTorch
+pytorch_NEG_loss
+101
+
+NEG loss implemented in pytorch.
+
+PyTorch
+DepthNet
+101
+
+PyTorch DepthNet Training on Still Box dataset.
+
+PyTorch
+SRDenseNet-pytorch
+99
+
+SRDenseNet-pytorch（ICCV_2017）
+
+PyTorch
+binary_net
+98
+
+BinaryNet
+
+Chainer
+TDD
+97
+
+Here we provide the code for the extraction of Trajectory-Pooled Deep-Convolutional Descriptors (TDD), from the following paper:
+Caffe
+mixup_pytorch
+97
+
+A PyTorch implementation of the paper Mixup: Beyond Empirical Risk Minimization in PyTorch.
+
+PyTorch
+SGCN
+97
+
+This is a Pytorch implementation of Signed Graph Convolutional Network. ICDM 2018.
+
+PyTorch
+Keras Realtime Multi-Person Pose Estimation
+97
+
+Keras version of Realtime Multi-Person Pose Estimation project.
+
+Keras
+dni
+96
+
+Implement Decoupled Neural Interfaces using Synthetic Gradients in Pytorch
+
+PyTorch
+MSG-Net(Gluon:star
+96
+
+This repo has been included in official MXNet repo, which provides the implementations of MSG-Net and Neural Style Transfer.
+MXNet
+Highway Networks
+95
+
+This is sample code for convolutional Highway Networks, implemented in Caffe checked out at this state.
+Caffe
+Head Pose
+95
+
+This is a python/mxnet implementation of a very simple CNN that predicts the head pose
+MXNet
+A3C-PyTorch
+94
+
+@inproceedings{mnih2016asynchronous,
+PyTorch
+Tiny Face (original detector)
+94
+
+This is an inference-only implementation for MXNet of tiny face.
+MXNet
+SEAL-CI
+91
+
+A Hierarchical Graph Perspective. (WWW 2019).
+
+PyTorch
+rl-multishot-reid
+90
+
+Multi-shot Re-identification
+MXNet
+pytorch-smoothgrad
+89
+
+SmoothGrad implementation in PyTorch
+
+PyTorch
+nmn-pytorch
+89
+
+Neural Module Network for VQA in Pytorch.
+
+PyTorch
+deep-forecast-pytorch
+89
+
+Wind Speed Prediction using LSTMs in PyTorch (arxiv.org/pdf/1707.08110.pdf)
+
+PyTorch
+transducer
+89
+
+A Fast Sequence Transducer Implementation with PyTorch Bindings.
+
+PyTorch
+crnn-mxnet-chinese-text-recognition
+87
+
+This is an implementation of CRNN (CNN+LSTM+CTC) for chinese text recognition.
+MXNet
+wavenet
+87
+
+Wavenet
+
+Chainer
+pytorch-NeuCom
+86
+
+Pytorch implementation of DeepMind's differentiable neural computer paper.
+
+PyTorch
+Whale Detector
+85
+
+So, this repository is my PyTorch solution for the Kaggle whale-detection challenge.
+PyTorch
+SSD Text Detection
+85
+
+This is a modified SSD model for text detection.
+MXNet
+deep-auto-punctuation
+83
+
+A pytorch implementation of auto-punctuation learned character by character.
+
+PyTorch
+Wide Residual Networks
+82
+
+Implementation of Wide Residual Networks from the paper Wide Residual Networks in Keras.
+Keras
+PyTorch_GBW_LM
+81
+
+PyTorch Language Model for Google Billion Word Dataset.
+
+PyTorch
+mixup
+81
+
+This is an implement and Improvement on mixup: Beyond Empirical Risk Minimization https://arxiv.org/abs/1710.09412
+MXNet
+deep-dream-in-pytorch
+80
+
+Pytorch implementation of the DeepDream computer vision algorithm.
+
+PyTorch
+NASNet-A-Mobile. Ported weights
+78
+
+The goal of this repo is:
+PyTorch
+FFTNet
+77
+
+Unofficial Implementation of FFTNet vocode paper.
+
+PyTorch
+PSPNet
+75
+
+Pyramid Scene Parsing Network
+
+Chainer
+mxnet-model
+73
+
+MXNet models (only classification for now) and deploy prototxt for resnet, resnext, inception_v3, inception_v4, inception_resnet, wider_resnet, densenet, DPNs and other networks.
+MXNet
+PyTorch-value-iteration-networks
+72
+
+PyTorch implementation of the Value Iteration Networks (NIPS '16) paper
+
+PyTorch
+minimal_glo
+72
+
+Minimal PyTorch implementation of Generative Latent Optimization from the paper "Optimizing the Latent Space of Generative Networks"
+
+PyTorch
+Character-level convolutional neural nets for text classification
+72
+
+This is an re-implementation of the
+Keras
+nninit
+70
+
+Weight initialization schemes for PyTorch nn.Modules. This is a port of the popular nninit for Torch7 by @kaixhin.
+
+PyTorch
+E2FAR
+69
+
+This is a MXNet/Gluon Implementation of End-to-end 3D Face Reconstruction with Deep Neural Networks.
+MXNet
+RNN-Transducer
+69
+
+MXNET GPU version of RNN Transducer loss is now available !
+MXNet
+Neural-Style-MMD
+67
+
+This repository holds the MXNet code for the paper
+MXNet
+forward-thinking-pytorch
+66
+
+Pytorch implementation of "Forward Thinking: Building and Training Neural Networks One Layer at a Time" https://arxiv.org/pdf/1706.02480.pdf
+
+PyTorch
+interaction_network_pytorch
+65
+
+Pytorch Implementation of Interaction Networks for Learning about Objects, Relations and Physics.
+
+PyTorch
+neural-style-pt
+64
+
+A PyTorch implementation of Justin Johnson's Neural-style.
+
+PyTorch
+graph-cnn
+63
+
+Chainer implementation of 'Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering' (https://arxiv.org/abs/1606.09375)
+
+Chainer
+scalingscattering
+62
+
+Scaling The Scattering Transform : Deep Hybrid Networks.
+
+PyTorch
+ewc.pytorch
+62
+
+An implementation of Elastic Weight Consolidation (EWC), proposed in James Kirkpatrick et al. Overcoming catastrophic forgetting in neural networks 2016(10.1073/pnas.1611835114).
+
+PyTorch
+Recurrent Neural Networks for Sentiment Analysis (Aspect-Based) on SemEval 2014
+62
+
+Pytorch Example For Aspect-based Sentiment Analysis with RNN / GRUs / LSTMs on SemEval 2014.
+PyTorch
+pnn.pytorch
+61
+
+PyTorch implementation of CVPR'18 - Perturbative Neural Networks http://xujuefei.com/pnn.html.
+
+PyTorch
+CNN Based Text Classification
+61
+
+A simple implementation of CNN based text classification
+PyTorch
+kaggle_CIFAR10
+61
+
+kaggle CIFAR10 compitition code, implement by mxnet gluon.
+MXNet
+Factorized-Bilinear-Network
+60
+
+This repository holds the MXNet code for the paper:
+MXNet
+chainer-ssd
+59
+
+SSD
+
+Chainer
+EPSR
+58
+
+Pytorch implementation of Analyzing Perception-Distortion Tradeoff using Enhanced Perceptual Super-resolution Network . This work has won the first place in PIRM2018-SR competition (region 1) held as part of the ECCV 2018.
+
+PyTorch
+Faster RCNN(Gluon:star
+58
+
+ya_mxdet provides a simple Faster R-CNN
+MXNet
+chainer-visualization
+58
+
+Visualizing and Understanding Convolutional Networks
+
+Chainer
+pytorch-nec
+57
+
+PyTorch Implementation of Neural Episodic Control (NEC)
+
+PyTorch
+Char-RNN(Gluon:star
+57
+
+RNNMXNet-GluonPyTorch
+MXNet
+Highway Network
+56
+
+TensorFlow implementation of "Training Very Deep Networks" with a blog post
+
+TensorFlow
+chainer-ResNet
+56
+
+ResNet
+
+Chainer
+imsat
+56
+
+IMSAT
+
+Chainer
+DRQN
+55
+
+DQN-in-the-Caffe is an implementation of Deep Q-Network using Caffe.
+Caffe
+sqeezenet
+55
+
+Implementation of Squeezenet in pytorch, #### pretrained models on CIFAR10 data to come Plan to train the model on cifar 10 and add block connections too.
+
+PyTorch
+Yelp Restaurant Photo Classifacation
+55
+
+Description of the my approach to this problem was published on the Kaggle's blog.
+MXNet
+**Gluon Dynamic-batching**(Gluon:star
+55
+
+This repository includes simplified implementation of Fold, a helper for dynamic batching.
+MXNet
+pytorch_Highway
+53
+
+Highway network implemented in pytorch.
+
+PyTorch
+molencoder
+53
+
+Molecular AutoEncoder in PyTorch
+
+PyTorch
+LOLA_DiCE
+53
+
+Pytorch implementation of LOLA (arxiv.org/abs/1709.04326) using DiCE (arxiv.org/abs/1802.05098)
+
+PyTorch
+pytorch_highway_networks
+52
+
+Highway networks implemented in PyTorch.
+
+PyTorch
+DAGGER
+51
+
+For Playing Gym Torcs
+
+TensorFlow
+psmm
+51
+
+Imlementation of the the Pointer Sentinel Mixture Model, as described in the paper by Stephen Merity et al.
+
+PyTorch
+quantile-regression-dqn-pytorch
+51
+
+Quantile Regression DQN a Minimal Working Example
+
+PyTorch
+CortexNet
+48
+
+A Generic Network Family for Robust Visual Temporal Representations
+
+PyTorch
+**CTPN.mxnet**
+48
+
+A MXNet CTPN implementation mimic of eragonruan's tensorflow implementation with full feature.
+MXNet
+crnn
+48
+
+This repo contains code written by MXNet for ocr tasks, which uses an cnn-lstm-ctc architecture to do text recognition.
+MXNet
+fast-rcnn
+48
+
+Fast R-CNN
+
+Chainer
+CRU-Net
+47
+
+This repository contains the code and trained models of "Sharing Residual Units Through Collective Tensor Factorization in Deep Neural Networks".
+MXNet
+cat-net
+46
+
+Canonical Appearance Transformations
+
+PyTorch
+crnn (with Chinese Support)
+46
+
+crnn in mxnet.can train with chinese characters
+MXNet
+chainer-gogh
+46
+
+StyleNet (A Neural Algorithm of Artistic Style)
+
+Chainer
+TRPO
+45
+
+For Continuous and Discrete Action Space by
+
+TensorFlow
+pytorch_TDNN
+45
+
+Time Delayed NN implemented in pytorch.
+
+PyTorch
+binary-stochastic-neurons
+45
+
+Binary Stochastic Neurons in PyTorch.
+
+PyTorch
+ShuffleNet
+45
+
+to test on mnist
+MXNet
+MXNet for CTR
+45
+
+DCNN: A Convolutional Neural Network for Modelling Sentences
+MXNet
+reseg-pytorch
+44
+
+PyTorch Implementation of ReSeg (arxiv.org/pdf/1511.07053.pdf)
+
+PyTorch
+shampoo.pytorch
+43
+
+An implementation of shampoo.
+
+PyTorch
+ram
+43
+
+Recurrent Attention Model
+
+Chainer
+integrated-gradient-pytorch
+42
+
+This is the pytorch implementation of the paper - Axiomatic Attribution for Deep Networks.
+
+PyTorch
+SINE
+42
+
+This is a Pytorch implementation of SINE: Scalable Incomplete Network Embedding. ICDM 2018.
+
+PyTorch
+segnet
+42
+
+SegNet implementation & experiments in Chainer
+
+Chainer
+mlpnlp-nmt
+42
+
+LSTM encoder-decoder with attention mechanism
+
+Chainer
+segnet
+42
+
+SegNet
+
+Chainer
+chainer-ResDrop
+41
+
+ResDrop
+
+Chainer
+associative_compression_networks
+40
+
+Associative Compression Networks for Representation Learning.
+
+PyTorch
+mxnet-videoio
+40
+
+MXNet RecI/O.
+MXNet
+CDL
+40
+
+This is the MXNet version of CDL used in the KDD 2016 hands-on tutorial for MXNet.
+MXNet
+simple-fast-rnn
+40
+
+Fast R-CNN
+
+Chainer
+chainer-DenseNet
+39
+
+DenseNet
+
+Chainer
+Deep-Leafsnap
+38
+
+LeafSnap replicated using deep neural networks to test accuracy compared to traditional computer vision methods.
+
+PyTorch
+fluidnet_cxx
+38
+
+FluidNet re-written with ATen tensor lib.
+
+PyTorch
+FacialLandmark
+38
+
+Facial landmarks training by MXNet.
+MXNet
+ko_en_NMT(Gluon:star
+38
+
+2018 .
+MXNet
+DarkRank
+37
+
+This is the repo for our AAAI-18 paper "DarkRank: Accelerating Deep Metric Learning via Cross Sample Similarities"
+MXNet
+siamese
+37
+
+Siamese Network
+
+Chainer
+AlexNet3D
+36
+
+An implementations of AlexNet3D. Simple AlexNet model but with 3D convolutional layers (conv3d).
+
+TensorFlow
+proxprop
+35
+
+Proximal Backpropagation - a neural network training algorithm that takes implicit instead of explicit gradient steps.
+
+PyTorch
+StrassenNets
+35
+
+Code to reproduce the experiments in the paper StrassenNets: Deep learning with a multiplication budget, M.
+MXNet
+pytorch_hmax
+34
+
+Implementation of the HMAX model of vision in PyTorch.
+
+PyTorch
+Spatial Transformer Networks
+33
+
+Learn the Transformation Function
+
+TensorFlow
+MalConv-Pytorch
+31
+
+Pytorch implementation of MalConv.
+
+PyTorch
+e2c-pytorch
+30
+
+Embed to Control implementation in PyTorch.
+
+PyTorch
+CapsNet
+30
+
+This example is MXNet implementation of CapsNet:
+MXNet
+YOLO(Gluon:star
+30
+
+implement the YOLO algorithm using MXNet/Gluon
+MXNet
+LSTNet
+30
+
+This repo contains an MXNet implementation of this state of the art time series forecasting model.
+MXNet
+chainer_stylenet
+30
+
+StyleNet (A Neural Algorithm of Artistic Style)
+
+Chainer
+eve.pytorch
+29
+
+An implementation of Eve Optimizer, proposed in Imploving Stochastic Gradient Descent with Feedback, Koushik and Hayashi, 2016.
+
+PyTorch
+poisson-convolution-sum
+29
+
+Implements an infinite sum of poisson-weighted convolutions
+
+PyTorch
+LSTM to predict gender of a name
+29
+
+Predict the gender of a name using LSTM
+Keras
+Character-level CNN Text Classification (Gluon:star
+27
+
+This is an automated Markdown generation from the notebook 'Crepe-Gluon.ipynb'
+MXNet
+Ladder Network
+26
+
+This is an implementation of Ladder Network in Keras.
+TensorFlow
+pyTorch_NCE
+26
+
+An implementation of the Noise Contrastive Estimation algorithm for pyTorch. Working, yet not very efficient.
+
+PyTorch
+zalando-pytorch
+26
+
+Various experiments on the Fashion-MNIST dataset from Zalando.
+
+PyTorch
+pt-styletransfer
+26
+
+Neural style transfer as a class in PyTorch.
+
+PyTorch
+svm
+26
+
+Support Vector Machine (SVM)
+
+Chainer
+OpenPose
+24
+
+Note for a bug, stage2 and stage 4's output are noise, which has already been fixed.
+MXNet
+OrthNet
+23
+
+TensorFlow and PyTorch layers for generating Orthogonal Polynomials.
+
+PyTorch
+Deeplab v2
+23
+
+CaffeDeepLab v2-LargeFOVMXNet.
+MXNet
+U-Net(Gluon:star
+23
+
+This is an Gluon reimplementation of U-Net.
+MXNet
+VanillaCNN
+23
+
+This is a mxnet implementation of the Vanilla CNN.
+MXNet
+flow
+22
+
+Pytorch implementation of ICLR 2018 paper Deep Learning for Physical Processes: Integrating Prior Scientific Knowledge.
+
+PyTorch
+lgamma
+21
+
+Implementations of polygamma, lgamma, and beta functions for PyTorch
+
+PyTorch
+mia
+21
+
+A library for running membership inference attacks against ML models.
+
+PyTorch
+variational-autoencoder
+21
+
+Semi-Supervised Learning with Deep Generative Models
+
+Chainer
+Convolutional Neural Fabrics
+20
+
+PyTorch implementation of Convolutional Neural Fabrics arxiv:1606.02492
+PyTorch
+NonLocal+SENet
+20
+
+Non-local Neural Networks (https://arxiv.org/abs/1711.07971)
+MXNet
+SqueezeDet
+20
+
+This repository is built in Python3.6.
+MXNet
+Traffic sign classification
+20
+
+In this notebook, we are going to classify german traffic sign using convolution neural network using mxnet.
+MXNet
+AC-BLSTM
+20
+
+MXNet Scala module implementation of my work AC-BLSTM[1].
+MXNet
+wavenet
+20
+
+I am trying to reproduce the WaveNet result using MXNet.
+MXNet
+Xception
+19
+
+This is a MXNet implementation of Xception architecture as described in the paper Xception: Deep Learning with Depthwise Separable Convolutions proposed by Franois Chollet at CVPR 2017 from google.
+MXNet
+SSD+Focal Loss
+19
+
+This is an unofficial implementation of Focal Loss (https://arxiv.org/abs/1708.02002).
+MXNet
+sentiment-analysis(Gluon:star
+18
+
+Sentiment Analysis with Apache MXNet and Gluon
+MXNet
+Visual-Semantic Embedding
+18
+
+Keras implementation of https://github.com/ryankiros/visual-semantic-embedding
+Keras
+YOLO/dark2mxnet
+17
+
+This repo contains:
+MXNet
+DeepHumanPrediction
+17
+
+A place to 'post' the progress of my master's thesis.
+MXNet
+Sequential Matching Network(Gluon:star
+17
+
+Sequential Matching Network(ACL 2017) reimplemented by MXNET1.0-GPU//but you can always use cpu
+MXNet
+galapagos_nao
+17
+
+_/laps na/_
+MXNet
+conv-vis
+17
+
+Convolution Filter Visualization
+
+Chainer
+VQA(Gluon:star
+16
+
+This repo contrains tutorial on Visual Question Answer task using MXNET gluon based on "Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding".
+MXNet
+DEF(Gluon:star
+16
+
+This is an implementation of deep exponential families in MXNet/Gluon.
+MXNet
+anuvada
+15
+
+Interpretable Models for NLP using PyTorch.
+
+PyTorch
+Tiny Face (w/ training)
+15
+
+Finished coding.
+MXNet
+PointCNN.MX
+15
+
+This is a MXNet implementation of PointCNN.
+MXNet
+siamese
+15
+
+siamise networks[^1]
+MXNet
+P3D
+14
+
+This repo implements the network structure of P3D[1] with MXNet, pre-trained model weights are converted from caffemodel, which is supported from the author's repo
+MXNet
+mx-pointnet
+14
+
+This repository contains a MXNet implementation for the Pointnet.
+MXNet
+U-Net(kaggle dstl)
+13
+
+Scripts for the my 6th place solution with MXNet.
+MXNet
+Language/dialect identification with multiple character-level CNNs
+13
+
+Character-level CNN model for the DSL 2016 shared task.
+Keras
+memnn
+13
+
+End-to-end memory networks
+
+Chainer
+chainer-example-overfeat-classify
+13
+
+Overfeat
+
+Chainer
+YOLOtiny_v2
+13
+
+YOLOtiny_v2
+
+Chainer
+SDPoint
+11
+
+Implementation of "Stochastic Downsampling for Cost-Adjustable Inference and Improved Regularization in Convolutional Networks", published in CVPR 2018.
+
+PyTorch
+LightCNN
+11
+
+mxnet implementation of LightCNN in the paper "A Light CNN for Deep Face Representation with Noisy Labels" [Paper]
+MXNet
+MemN2N
+11
+
+MXNet implementation of End-To-End Memory Networks for language modelling.
+MXNet
+deformable-conv
+11
+
+Deformable-conv
+
+Chainer
+st-resnet
+10
+
+A python version of Spatiotemporal Multiplier Networks based on mxnet.
+MXNet
+cnn+Highway Net
+10
+
+Sentiment classification forked from incubator-mxnet/cnn_text_classification/, i've implemented the Highway Networks architecture.The final train model is CNN + Highway Network structure, and this version can achieve a best dev accuracy of 94.75% with the Chinese corpus.
+MXNet
+SpectralLDA
+10
+
+This code implements a Spectral (third order tensor decomposition) learning method for the Latent Dirichlet Allocation model in Python.
+MXNet
+Tacotron
+9
+
+A tech demo of MXNet capabilities consisting of a Tacotron implementation.
+MXNet
+Zero-shot Intent CapsNet
+8
+
+GPU-accelerated PyTorch implementation of "Zero-shot User Intent Detection via Capsule Neural Networks".
+
+PyTorch
+Xception+Keras2MXNet
+8
+
+Xception: Deep Learning with Depthwise Separable Convolutions
+MXNet
+Class Activation Mapping
+8
+
+This demo shows the method proposed in "Zhou, Bolei, et al.
+MXNet
+siamese_network_on_omniglot(Gluon:star
+8
+
+This is a repository consisting of a naive implementation of Siamese Network using MXNet and the nice interface Gluon, and the dataset used here is Omniglot.
+MXNet
+chainer_ca
+8
+
+Convolutional Autoencoder
+
+Chainer
+Dynamic Capacity Networks
+7
+
+Implementation of "Dynamic Capacity Networks"
+
+TensorFlow
+Range Loss
+7
+
+I am trying to implement the range loss using MxNet to get familiar with MxNet :)
+MXNet
+RangeLoss(Gluon:star
+7
+
+My implement of Range Loss for Deep Face Recognition with Long-tail using MxNet/Gluon
+MXNet
+fast-style-transfer
+7
+
+A mxnet implementation of fast style transfer, inspired by:
+MXNet
+VisualBackProp
+7
+
+This repo contains an implementation of VisualBackProp for MXNet.
+MXNet
+Loss Surfaces
+7
+
+A MXNet implementation of AN EMPIRICAL ANALYSIS OF DEEP NETWORK LOSS SURFACES.
+MXNet
+RNN-Transducer(RNNT loss using CPP)
+7
+
+A fast parallel implementation of RNN Transducer (Graves 2013 joint network), on CPU for mxnet.
+MXNet
+chainer_rnnlm
+7
+
+RNN Language Model
+
+Chainer
+SuperResolutionCNN
+6
+
+Super resolution with convolutional neural network.
+MXNet
+mxnet-recommender(Gluon:star
+6
+
+Collaborative Filtering NN and CNN based recommender implemented with MXNet
+MXNet
+prednet
+6
+
+Deep Predictive Coding Networks
+
+Chainer
+vat
+6
+
+VAT
+
+Chainer
+SENet(from Caffe)
+5
+
+This repo contains the code which can convert the offical caffemodel of SENet into MXNet.
+MXNet
+Chest-XRay
+5
+
+(port and enhancement of tensorflow repo found at ayush1997/Xvision using Resnet-50)
+MXNet
+parserChiang(Gluon:star
+5
+
+This repo support CoNLL format, which is adapted by Universal Dependencies Project.
+MXNet
+NER with Bidirectional LSTM-CNNs
+5
+
+This repo contains an MXNet implementation of this state of the art entity recognition model.
+MXNet
+adgm
+5
+
+Auxiliary Deep Generative Models
+
+Chainer
+Dynamic pose estimation
+4
+
+Training and inference code for LSTM-based action recognition model.
+MXNet
+Reinspect
+4
+
+MXNet version of Reinspect
+MXNet
+NetVlad
+4
+
+NetVlad layer with MxNet
+MXNet
+IMSAT
+4
+
+IMSAT
+
+Chainer
+Convolutional Sketch Inversion
+3
+
+MXNet implementation of Convolutional Sketch Inversion
+MXNet
+Convolutional Pose Machines
+3
+
+Refer to Shih-En Wei, Varun Ramakrishna, Takeo Kanade, Yaser Sheikh, "Convolutional pose machines", CVPR 2016.
+MXNet
+LUCAD
+3
+
+This repository contains multiple useful scripts to train (and score) models
+MXNet
+openai-mxnet
+3
+
+Play the OpenAI gym with mxnet.
+MXNet
+mnist-oneshot
+3
+
+Mnist-oneshot
+
+Chainer
+meProp
+2
+
+Codes for "meProp: Sparsified Back Propagation for Accelerated Deep Learning with Reduced Overfitting".
+
+PyTorch
+VQA
+2
+
+This code is written in Python and requires MXNET.
+MXNet
+geometric-matching
+2
+
+geometric matching
+MXNet
+PPO(Gluon:star
+2
+
+Add entropy term to encourage exploration
+MXNet
+chainer-fluid
+2
+
+Fluid simulation
+
+Chainer
+ddgm
+2
+
+Deep Directed Generative Models with Energy-Based Probability Estimation
+
+Chainer
+FractalNet
+1
+
+MXNet implementation of FractalNet
+MXNet
+IOULoss
+1
+
+mxnetIOULoss
+MXNet
+cicada classification
+1
+
+1300 cicada speces is distributed aroud the world.
+MXNet
+DPSH
+1
+
+MXNet implements of deep pair-wise hashing
+MXNet
+MemN2N(Gluon:star
+1
+
+MXNet (using Gluon) implementation of End-To-End Memory Networks for language modelling.
+MXNet
+Neural Programmer-Interpreters
+1
+
+Neural Programmer-Interpreters implemented with MxNet.
+MXNet
+sequence-sampling
+1
+
+Implementation of the experiments in the paper "A comparative study of batch-construction strategies for recurrent neural networks in MXNet"
+MXNet
+collaborative_filtering
+1
+
+A repository to experiment building recommender systems using apache MXNet.
+MXNet
+Holographic Embeddings for Graph Completion and Link Prediction
+
+Implementation of Holographic Embeddings of Knowledge Graphs
+
+TensorFlow
+pyprob
+
+A PyTorch-based library for probabilistic programming and inference compilation.
+
+PyTorch
+minibatch_discrimination
+
+Minibatch discrimination
+
+Chainer
+Autoencoder
+
+Various autoencoders.
+
+TensorFlow
+DeepContextualBandits
+
+Code for a variety of contextual bandits algorithms using deep neural networks and Thompson sampling.
+
+TensorFlow
+DifferentialPrivacy
+
+Differential privacy for training data.
+
+TensorFlow
+DomainAdaptation
+
+Domain separation networks.
+
+TensorFlow
+Inception
+
+Deep convolutional networks for computer vision.
+
+TensorFlow
+KeypointNet
+
+Discovery of latent 3D keypoints via end-to-end geometric eeasoning [ demo ].
+
+TensorFlow
+LearningToRememberRareEvents
+
+A large-scale life-long memory module for use in deep learning.
+
+TensorFlow
+LexNetc
+
+A distributed model for noun compound relationship classification.
+
+TensorFlow
+LM1B
+
+Language modeling on the one billion word benchmark.
+
+TensorFlow
+LmCommonsense
+
+Commonsense reasoning using language models.
+
+TensorFlow
+Namignizer
+
+Recognize and generate names.
+
+TensorFlow
+NeuralGpu
+
+Highly parallel neural computer.
+
+TensorFlow
+NeuralProgrammer
+
+Neural network augmented with logic and mathematic operations.
+
+TensorFlow
+NextFramePrediction
+
+Probabilistic future frame synthesis via cross convolutional networks.
+
+TensorFlow
+PTN
+
+Perspective transformer nets for 3D object reconstruction.
+
+TensorFlow
+MARCO
+
+Automating the evaluation of crystallization experiments.
+
+TensorFlow
+QAKG
+
+Module networks for question answering on knowledge graphs.
+
+TensorFlow
+RealNvp
+
+Density estimation using real-valued non-volume preserving (real NVP) transformations.
+
+TensorFlow
+REBAR
+
+Low-variance, unbiased gradient estimates for discrete latent variable models.
+
+TensorFlow
+ResNet
+
+Deep and wide residual networks.
+
+TensorFlow
+Seq2species
+
+Deep learning solution for read-level taxonomic classification.
+
+TensorFlow
+SkipThoughts
+
+Recurrent neural network sentence-to-vector encoder.
+
+TensorFlow
+Swivel
+
+The Swivel algorithm for generating word embeddings.
+
+TensorFlow
+SyntaxNet
+
+Neural models of natural language syntax.
+
+TensorFlow
+TCN
+
+Self-supervised representation learning from multi-view video.
+
+TensorFlow
+Textsum
+
+Sequence-to-sequence with attention model for text summarization.
+
+TensorFlow
+Transformer
+
+Spatial transformer network, which allows the spatial manipulation of data within the network.
+
+TensorFlow
+VideoPrediction
+
+Predicting future video frames with neural advection.
+
+TensorFlow
+Deep Q-Network
+
+For Playing Frozen Lake Game
+
+TensorFlow
+AC
+
+Actor Critic for Playing Discrete Action space Game (Cartpole)
+
+TensorFlow
+A3C
+
+Asynchronous Advantage Actor Critic (A3C) for Continuous Action Space (Bipedal Walker)
+
+TensorFlow
+Network in Network model
+
+The Network in Network model is described in the following ICLR-2014 paper: Network In Network M.
+Caffe
+Models from the BMVC-2014 paper "Return of the Devil in the Details
+
+The models are trained on the ILSVRC-2012 dataset.
+Caffe
+Models used by the VGG team in ILSVRC-2014
+
+The models are the improved versions of the models used by the VGG team in the ILSVRC-2014 competition.
+Caffe
+Places-CNN model from MIT.
+
+Places CNN is described in the following NIPS 2014 paper: B.
+Caffe
+GoogLeNet GPU implementation from Princeton.
+
+We implemented GoogLeNet using a single GPU.
+Caffe
+CaffeNet fine-tuned for Oxford flowers dataset
+
+https://gist.github.com/jimgoo/0179e52305ca768a601fThe is the reference CaffeNet (modified AlexNet) fine-tuned for the Oxford 102 category flower dataset.
+Caffe
+CNN Models for Salient Object Subitizing.
+
+CNN subitizing models described in the following papers (project page): Salient Object Subitizing J.
+Caffe
+Places_CNDS_models on Scene Recognition
+
+Places-CNDS-8 is a "8conv3fc layer" deep Convolutional neural Networks model trained on MIT Places Dataset with Deep Supervision.The details of training this model are described in the following report.
+Caffe
+Models for Age and Gender Classification.
+
+Age/Gender.net are models for age and gender classification trained on the Adience-OUI dataset.
+Caffe
+ParseNet
+
+These models are described in the paper: ParseNet: Looking Wider to See Better Wei Liu, Andrew Rabinovich, Alexander C.
+Caffe
+Conditional Random Fields as Recurrent Neural Networks
+
+Code (with Matlab/Python API) and model are described in the ICCV 2015 paper Conditional Random Fields as Recurrent Neural Networks S.
+Caffe
+Holistically-Nested Edge Detection
+
+The model and code provided are described in the ICCV 2015 paper: Holistically-Nested Edge Detection Saining Xie and Zhuowen Tu ICCV 2015For details about training/evaluating HED, please take a look at http://github.com/s9xie/hed.Model trained on BSDS-500 Dataset (finetuned from the VGGNet): * HED BSDS-500
+Caffe
+Translating Videos to Natural Language
+
+These models are described in this NAACL-HLT 2015 paper.
+Caffe
+VGG Face CNN descriptor
+
+These models are described in this [BMVC 2015 paper] (http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf).
+Caffe
+Yearbook Photo Dating
+
+Model from the ICCV 2015 Extreme Imaging Workshop paper: A Century of Portraits: Exploring the Visual Historical Record of American High School Yearbooks Shiry Ginosar, Kate Rakelly, Brian Yin, Sarah Sachs, Alyosha Efros ICCV Workshop 2015Model and prototxt files: Yearbook
+Caffe
+CCNN
+
+These models are described in the ICCV 2015 paper.
+Caffe
+Facial Landmark Detection with Tweaked Convolutional Neural Networks
+
+We provide source code and model for article:Yue Wu and Tal Hassner, "Facial Landmark Detection with Tweaked Convolutional Neural Networks", arXiv preprint arXiv:1511.04031, 12 Nov.
+Caffe
+Faster R-CNN
+
+Download pre-computed Faster R-CNN detectorscd $FRCN_ROOT ./data/scripts/fetch_faster_rcnn_models.shThis will populate the $FRCN_ROOT/data folder with faster_rcnn_models.
+Caffe
+Sequence to Sequence - Video to Text
+
+
+These models are described in [this ICCV 2015 paper](http://www.cs.utexas.edu/users/ml/papers/venugopalan.iccv15.pdf).
+Caffe
+Pascal VOC 2012 Multilabel Classification Model
+
+This model has been used for the paper "Analyzing Classifiers: Fisher Vectors and Deep Neural Networks" (http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Bach_Analyzing_Classifiers_Fisher_CVPR_2016_paper.pdf), published in the proceedings of CVPR 2016.Kindly note, that it has been trained in a multilabel setting with a multilabel-compatible loss function.
+Caffe
+SqueezeNet
+
+@article{SqueezeNet, Author = {Forrest N.
+Caffe
+Mixture DCNN
+
+Mixture DCNN is a novel multi-model architecture which achieves better performance than an ensemble of DCNNs as evaluated on three different fine-grained datasets.
+Caffe
+Mulimodal Compact Bilinear Pooling for VQA
+
+The current state-of-the-art model for visual question answering, as described in the following paper:
+@article{fukui16mcb,
+title={Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding},
+author={Fukui, Akira and Park, Dong Huk and Yang, Daylen and Rohrbach, Anna and Darrell, Trevor and Rohrbach, Marcus},
+journal={arXiv:1606.01847},
+year={2016},
+}
+[[arXiv](https://arxiv.org/abs/1606.01847)] [[GitHub repo](https://github.com/akirafukui/vqa-mcb/)]
+Caffe
+Pose-Aware CNN Models (PAMs) for Face Recognition
+
+We provide the following:- pretrained CNN models of our CVPR'16 paper for pose-aware face recognition in the wild- IJB-A yaw estimates from our pose estimation module _(your informations are required to proceed to the download page in the link below)_latex
+@INPROCEEDINGS{masi2016cvpr,
+author={Iacopo Masi and Stephen Rawls and G{\'e}rard Medioni and Prem Natarajan},
+booktitle={CVPR},
+title={Pose-{A}ware {F}ace {R}ecognition in the {W}ild},
+year={2016}
+}
+[PDF] [Webpage]
+Caffe
+Learning Structured Sparsity in Deep Neural Networks
+
+Train deep neural networks with structured sparsity to speed up DNNs:
+@incollection{Wen_NIPS2016,
+Title = {Learning Structured Sparsity in Deep Neural Networks},
+Author = {Wen, Wei and Wu, Chunpeng and Wang, Yandan and Chen, Yiran and Li, Hai},
+bookTitle = {Advances in Neural Information Processing Systems},
+Year = {2016}
+}
+[[arXiv](http://arxiv.org/abs/1608.03665)] [[Caffemodel](https://drive.google.com/folderview?id=0B50edhjyQ0sRd3JLQ1V0OHdHcUE&usp=sharing)] [GitHub repo]
+Caffe
+Neural Activation Constellations
+
+We provide fine-tuned models for CUB200-2011 birds (AlexNet + VGG19), Oxford flowers 102 (AlexNet + VGG19), Oxford IIIT PETS (AlexNet + VGG19), and NABirds dataset (GoogLeNet).
+Caffe
+ResFace101
+
+This page contains ResFace101: a ResNet-101 deep network model, tuned for face recognition.We fine-tuned this model using the procedure described in _I.
+Caffe
+Striving for Simplicity
+
+Implementation of All-CNN-C model for CIFAR-10 from the paper _Striving for Simplicity: The All Convolutional Net_ by Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, Martin Riedmiller, accepted as a workshop contribution at ICLR 2015.latex
+@article{Springenberg14,
+author = {Jost Tobias Springenberg and Alexey Dosovitskiy and Thomas Brox and Martin A.
+Caffe
+VGG 4x without degradation
+
+An algorithm that effectively prune channels each layer, which could accelerate VGG-16 4x without degradation.
+Caffe
+Using Ranking-CNN for Age Estimation
+
+The ranking-CNN Caffe model for the CVPR 2017 paper: @InProceedings{Chen_2017_CVPR,author = {Chen, Shixing and Zhang, Caojin and Dong, Ming and Le, Jialiang and Rao, Mike},title = {Using Ranking-CNN for Age Estimation},booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},month = {July},year = {2017}} [PDF] [GitHub repo]
+Caffe
+Lets Keep it Simple
+
+This repository contains the architectures, Models, logs, etc pertaining to the SimpleNet Paper.
+Caffe
+SSD
+
+Single Shot MultiBox Detector
+
+Caffe
+BVLC GoogLeNet
+
+This model is a replication of the model described in the GoogLeNet publication.
+
+Caffe2
+BVLC Reference RCNN ILSVRC13
+
+The pure Caffe instantiation of the R-CNN model for ILSVRC13 detection. This model was made by transplanting the R-CNN SVM classifiers into a fc-rcnn classification layer, provided here as an off-the-shelf Caffe detector.
+
+Caffe2
+DenseNet-121
+
+An implementation of the DenseNet model .
+
+Caffe2
+Inception v1
+
+Inception v1 is a reproduction of GoogLeNet.
+
+Caffe2
+SqueezeNet
+
+An implementation of SqueezeNet : AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size.
+
+Caffe2
+ZFNet-512
+
+ZFNet-512 is a deep convolutional networks for classification. This model's 4th layer has 512 maps instead of 1024 maps mentioned in the paper.
+
+Caffe2
+Learning local feature descriptors with triplets and shallow convolutional neural networks
+
+This example implements the paper Learning local feature descriptors with
+PyTorch
+Self-Norm Nets
+
+MXNet-scala module implementation of Self-normalizing networks[1].
+MXNet
+LSTM for HAR
+
+MXNet-scala module implementation of LSTM for Human Activity Recognition.
+MXNet
+pix2pix
+
+MXNet-scala module implementation of Pix2Pix[1].
+MXNet
+DIRNet
+
+This is an Mxnet implementation of the DIRNet
+MXNet
+Densely Connected Convolutional Networks
+
+Original idea and implementation:
+Keras
+DFI
+
+Deep Feature Interpolation
+
+Keras
+Context Encoder
+
+Implementation of _Context Encoders: Feature Learning by Inpainting_. Paper: https://arxiv.org/abs/1604.0737
+
+Keras
+chainer_examples
+
+LSTM variants
+
+Chainer
+qrnn
+
+QRNN
+
+Chainer
+chainer-libDNN
+
+Stacked Denoising Autoencoder
+
+Chainer
+Face68Pts
+19
+
+-opencv
+MXNet
+VGG16 Deconvolution network
+
+N.B.
+Keras
+mxnet_tetris
+3
+
+GRU
+MXNet
+**gluon-nlp**(Gluon:star
+1740
+
+MXNet
+SegNet
+928
+
+Caffe
+VGG 16 (with pre-trained weights)
+668
+
+Keras
+VGG 19 (with pre-trained weights)
+103
+
+Keras
+DQN(Gluon:star
+20
+
+MXNet
+GluonSeg(Gluon:star
+6
+
+MXNet
+C3D
+6
+
+MXNet
+matchnet
+6
+
+MXNet
+Double DQN(Gluon:star
+6
+
+MXNet
+DeepID v1
+5
+
+MXNet
+cnnbilstm
+4
+
+MXNet
+NASNet-A(Gluon:star
+3
+
+MXNet
+DRL
+3
+
+MXNet
+FCN-ASPP
+2
+
+MXNet
+Deep-Q learning Pong with TensorFlow and PyGame
+
+TensorFlow
+DeepLab
+
+Caffe
+VGG-Face
+
+Caffe
+LRCN
+
+Caffe
+Places CNN
+
+Caffe
+SRCNN
+
+Caffe
+DeepDrive
+
+Caffe
+Berkeley DeepDrive
+
+Caffe
+Princeton deepdriving
+
+Caffe
+Sentiment Analysis
+
+Caffe
+AlexNet
+
+Caffe2
+Inception v2
+
+Caffe2
+StyleTransfer
+
+Caffe2
+VGG19
+
+Caffe2
+Multi-GPU Multi-Label DenseNet (Gluon:star
+
+MXNet
+Light-Head R-CNN
+
+MXNet
+Segnet
+
+MXNet
+EAST
+
+MXNet
+RC3D
+
+MXNet
+Receptive Field Tool
+
+MXNet
+Reuters topic classification
+
+Keras
+LSTM on the IMDB dataset (text sentiment classification)
+
+Keras
+Bidirectional LSTM on the IMDB dataset
+
+Keras
+1D CNN on the IMDB dataset
+
+Keras
+1D CNN-LSTM on the IMDB dataset
+
+Keras
+LSTM-based network on the bAbI dataset
+
+Keras
+Memory network on the bAbI dataset (reading comprehension question answering)
+
+Keras
+Sequence to sequence learning for performing additions of strings of digits
+
+Keras
+LSTM text generation
+
+Keras
+Using pre-trained word embeddings
+
+Keras
+FastText on the IMDB dataset
+
+Keras
+Structurally constrained recurrent nets text generation
+
+Keras
+Simple CNN on MNIST
+
+Keras
+Simple CNN on CIFAR10 with data augmentation
+
+Keras
+Inception v3
+
+Keras
+Neural Style Transfer
+
+Keras
+Visualizing the filters learned by a CNN
+
+Keras
+Deep dreams
+
+Keras
+Stateful LSTM
+
+Keras
+Siamese network
+
+Keras
+Pretraining on a different dataset
+
+Keras

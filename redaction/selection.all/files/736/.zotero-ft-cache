@@ -1,0 +1,592 @@
+Skip to main content
+Home NVIDIA Developer
+
+    Solutions
+        AI and Deep Learning
+            Deep Learning
+            Machine Learning
+            Inference
+            Deep Learning institute
+            Genomics
+            GPU-Optimized S/W (NGC)
+        Autonomous Machines
+            Hardware (Jetson)
+            Robotics
+            Video analytics
+        Autonomous Vehicles
+            Hardware (DRIVE AGX)
+            Car reference architecture
+            Autonomous Vehicle Software
+            Data Center Simulation Platform
+        Graphics and Simulation
+            Raytracing
+            AI for graphics
+            Real-time VFX
+            Virtual and Augmented Reality
+            Simulation
+            Medical Imaging
+            Scientific Visualization
+            Display
+            Video Processing
+        High-performance Computing
+            Languages and APIs
+            GPU accelerated libraries
+            OpenACC Programming Model
+        Tools and Management
+            Developer Tools
+            Management Tools
+            Android and Tegra for Mobile
+    Platforms
+        CUDA-X AI
+            TensorRT
+            cuDNN
+            NCCL
+            cuBLAS
+            cuSPARSE
+            DeepStream SDK
+            Optical Flow SDK
+            DALI
+            Transfer Learning Toolkit
+            DIGITS
+        CLARA
+            Clara Train
+            Clara Deploy
+            Clara Genomics SDK
+        HPC
+            CUDA Toolkit
+            OpenACC
+        DRIVE
+            DRIVE AGX
+            DRIVE Hyperion
+            DRIVE Sim
+            DRIVE Constellation
+            DGX
+        RTX
+            OptiX SDK
+            Path-traced Audio (VRWorks)
+            VKRay
+            MDL SDK
+            vMaterials
+            PhysX
+            Flex
+            Optical Flow SDK
+            Video Codec SDK
+            GPUDirect for Video
+        ISAAC
+            Jetson Developer Kits
+            JetPack
+            Isaac Robot Engine
+            Isaac Sim
+        Metropolis
+            DeepStream SDK
+    Documentation
+        Ray tracing
+        Library
+        CUDA Toolkit
+        GameWorks
+        DRIVE
+        NGC
+        Isaac
+    Downloads
+        CUDA Toolkit
+        CLARA
+        Developer Tools
+        DRIVE
+        Gameworks
+        Isaac
+        Jetson
+        Metropolis
+    Resources
+        Developer Program
+        Deep Learning Institute
+        Educators
+        NGC
+        GTC Videos
+        Open Source
+        Contact us
+    Community
+        Forums (DevTalk)
+        Blog
+        News
+
+    Search form
+    Search
+    Account
+
+    RTX
+    GAMEWORKS
+    DESIGNWORKS
+    VRWORKS
+    HPC
+    METROPOLIS
+    DRIVE
+    CLARA
+    OPEN SOURCE
+
+    Home
+    Autonomous Machines
+    Learn
+    Jetson Nano: Deep Learning Inference Benchmarks
+
+Jetson Nano: Deep Learning Inference Benchmarks
+
+To run the following benchmarks on your Jetson Nano, please see the instructions here .
+
+Jetson Nano can run a wide variety of advanced networks, including the full native versions of popular ML frameworks like TensorFlow, PyTorch, Caffe/Caffe2, Keras, MXNet, and others. These networks can be used to build autonomous machines and complex AI systems by implementing robust capabilities such as image recognition, object detection and localization, pose estimation, semantic segmentation, video enhancement, and intelligent analytics.
+
+Figure 1 shows results from inference benchmarks across popular models available online. See here for the instructions to run these benchmarks on your Jetson Nano. The inferencing used batch size 1 and FP16 precision, employing NVIDIA’s TensorRT accelerator library included with JetPack 4.2. Jetson Nano attains real-time performance in many scenarios and is capable of processing multiple high-definition video streams.
+
+Figure 1 . Performance of various deep learning inference networks with Jetson Nano and TensorRT, using FP16 precision and batch size 1
+
+Table 1 provides full results, including the performance of other platforms like the Raspberry Pi 3, Intel Neural Compute Stick 2, and Google Edge TPU Coral Dev Board:
+
+Model
+	
+
+Application
+	
+
+Framework
+	
+
+NVIDIA Jetson Nano
+	
+
+Raspberry Pi 3
+	
+
+Raspberry Pi 3 +
+Intel Neural Compute Stick 2
+	
+
+Google Edge
+TPU Dev Board
+
+ResNet-50
+(224×224) 	
+
+Classification
+	
+
+TensorFlow
+	
+
+36 FPS
+	
+
+1.4 FPS
+	
+
+16 FPS
+	
+
+DNR
+
+MobileNet-v2
+(300×300) 	
+
+Classification
+	
+
+TensorFlow
+	
+
+64 FPS
+	
+
+2.5 FPS
+	
+
+30 FPS
+	
+
+130 FPS
+
+SSD ResNet-18
+(960×544) 	
+
+Object Detection
+	
+
+TensorFlow
+	
+
+5 FPS
+	
+
+DNR
+	
+
+DNR
+	
+
+DNR
+
+SSD ResNet-18
+(480×272) 	
+
+Object Detection
+	
+
+TensorFlow
+	
+
+16 FPS
+	
+
+DNR
+	
+
+DNR
+	
+
+DNR
+
+SSD ResNet-18
+(300×300) 	
+
+Object Detection
+	
+
+TensorFlow
+	
+
+18 FPS
+	
+
+DNR
+	
+
+DNR
+	
+
+DNR
+
+SSD Mobilenet-V2
+(960×544) 	
+
+Object
+Detection
+	
+
+TensorFlow
+	
+
+8 FPS
+	
+
+DNR
+	
+
+1.8 FPS
+	
+
+DNR
+
+SSD Mobilenet-V2
+(480×272) 	
+
+Object Detection
+	
+
+TensorFlow
+	
+
+27 FPS
+	
+
+DNR
+	
+
+7 FPS
+	
+
+DNR
+
+SSD Mobilenet-V2
+(300×300) 	
+
+Object Detection
+	
+
+TensorFlow
+	
+
+39 FPS
+	
+
+1 FPS
+	
+
+11 FPS
+	
+
+48 FPS
+
+Inception V4
+(299×299) 	
+
+Classification
+	
+
+PyTorch
+	
+
+11 FPS
+	
+
+DNR
+	
+
+DNR
+	
+
+9 FPS
+
+Tiny YOLO V3
+(416×416) 	
+
+Object Detection
+	
+
+Darknet
+	
+
+25 FPS
+	
+
+0.5 FPS
+	
+
+DNR
+	
+
+DNR
+
+OpenPose
+(256×256) 	
+
+Pose Estimation
+	
+
+Caffe
+	
+
+14 FPS
+	
+
+DNR
+	
+
+5 FPS
+	
+
+DNR
+
+VGG-19
+(224×224) 	
+
+Classification
+	
+
+MXNet
+	
+
+10 FPS
+	
+
+0.5 FPS
+	
+
+5 FPS
+	
+
+DNR
+
+Super Resolution
+(481×321) 	
+
+Image Processing
+	
+
+PyTorch
+	
+
+15 FPS
+	
+
+DNR
+	
+
+0.6 FPS
+	
+
+DNR
+
+Unet
+(1x512x512) 	
+
+Segmentation
+	
+
+Caffe
+	
+
+18 FPS
+	
+
+DNR
+	
+
+5 FPS
+	
+
+DNR
+
+Table 1 . Inference performance results from Jetson Nano, Raspberry Pi 3, Intel Neural Compute Stick 2, and Google Edge TPU Coral Dev Board
+
+DNR (did not run) results occurred frequently due to limited memory capacity, unsupported network layers, or hardware/software limitations. Fixed-function neural network accelerators often support a relatively narrow set of use-cases, with dedicated layer operations supported in hardware, with network weights and activations required to fit in limited on-chip caches to avoid significant data transfer penalties. They may fall back on the host CPU to run layers unsupported in hardware and may rely on a model compiler that supports a reduced subset of a framework (TFLite, for example).
+
+Jetson Nano’s flexible software and full framework support, memory capacity, and unified memory subsystem, make it able to run a myriad of different networks up to full HD resolution, including variable batch sizes on multiple sensor streams concurrently. These benchmarks represent a sampling of popular networks, but users can deploy a wide variety of models and custom architectures to Jetson Nano with accelerated performance. And Jetson Nano is not just limited to DNN inferencing. Its CUDA architecture can be leveraged for computer vision and Digital Signal Processing (DSP), using algorithms including FFTs, BLAS, and LAPACK operations, along with user-defined CUDA kernels.
+More Resources
+
+    Deep Learning Inference Benchmarking Instructions
+    Jetson Nano Developer Kit
+    Getting Started with Jetson Nano Developer Kit
+    Hello AI World
+    JetBot: An educational AI robot based on NVIDIA Jetson Nano.
+
+    HIGH PERFORMANCE COMPUTING
+    GAMEWORKS
+    JETPACK
+    DESIGNWORKS
+    DRIVE
+
+Copyright © 2019 NVIDIA Corporation
+
+    Legal Information
+    Privacy Policy
+    Contact
+
+    Solutions
+        AI and Deep Learning
+            Deep Learning
+            Machine Learning
+            Inference
+            Deep Learning institute
+            Genomics
+            GPU-Optimized S/W (NGC)
+        Autonomous Machines
+            Hardware (Jetson)
+            Robotics
+            Video analytics
+        Autonomous Vehicles
+            Hardware (DRIVE AGX)
+            Car reference architecture
+            Autonomous Vehicle Software
+            Data Center Simulation Platform
+        Graphics and Simulation
+            Raytracing
+            AI for graphics
+            Real-time VFX
+            Virtual and Augmented Reality
+            Simulation
+            Medical Imaging
+            Scientific Visualization
+            Display
+            Video Processing
+        High-performance Computing
+            Languages and APIs
+            GPU accelerated libraries
+            OpenACC Programming Model
+        Tools and Management
+            Developer Tools
+            Management Tools
+            Android and Tegra for Mobile
+    Platforms
+        CUDA-X AI
+            TensorRT
+            cuDNN
+            NCCL
+            cuBLAS
+            cuSPARSE
+            DeepStream SDK
+            Optical Flow SDK
+            DALI
+            Transfer Learning Toolkit
+            DIGITS
+        CLARA
+            Clara Train
+            Clara Deploy
+            Clara Genomics SDK
+        HPC
+            CUDA Toolkit
+            OpenACC
+        DRIVE
+            DRIVE AGX
+            DRIVE Hyperion
+            DRIVE Sim
+            DRIVE Constellation
+            DGX
+        RTX
+            OptiX SDK
+            Path-traced Audio (VRWorks)
+            VKRay
+            MDL SDK
+            vMaterials
+            PhysX
+            Flex
+            Optical Flow SDK
+            Video Codec SDK
+            GPUDirect for Video
+        ISAAC
+            Jetson Developer Kits
+            JetPack
+            Isaac Robot Engine
+            Isaac Sim
+        Metropolis
+            DeepStream SDK
+    Documentation
+        Ray tracing
+        Library
+        CUDA Toolkit
+        GameWorks
+        DRIVE
+        NGC
+        Isaac
+    Downloads
+        CUDA Toolkit
+        CLARA
+        Developer Tools
+        DRIVE
+        Gameworks
+        Isaac
+        Jetson
+        Metropolis
+    Resources
+        Developer Program
+        Deep Learning Institute
+        Educators
+        NGC
+        GTC Videos
+        Open Source
+        Contact us
+    Community
+        Forums (DevTalk)
+        Blog
+        News
+
+    Search form
+    Search
+    Account
+
+    RTX
+    GAMEWORKS
+    DESIGNWORKS
+    VRWORKS
+    HPC
+    METROPOLIS
+    DRIVE
+    CLARA
+    OPEN SOURCE
+

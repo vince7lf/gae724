@@ -1,0 +1,435 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Vincent Le Falher
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+        Sign out
+    Close help menu
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    1 of 1
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Save to list
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+Proceedings - International Symposium on Quality Electronic Design, ISQED Volume 2018-March, 9 May 2018, Pages 432-436 19th International Symposium on Quality Electronic Design, ISQED 2018; Santa Clara Convention CenterSanta Clara; United States; 13 March 2018 through 14 March 2018; Category numberCFP18250-ART; Code 136431
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+Low cost and power CNN/deep learning solution for automated driving (Conference Paper)
+
+    Mody, M. Email Author ,
+    Kumar, D. Email Author ,
+    Swami, P. Email Author ,
+    Mathew, M. Email Author ,
+    Nagori, S. Email Author
+
+View additional authors  
+  Save all to author list
+Retrieving additional authors...
+
+    Automotive Processor, Texas Instruments Incorporated, Bangalore, India
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (14)
+
+Automated driving functions, like highway driving and parking assist, are increasingly getting deployed in high-end cars with the ultimate goal of realizing self-driving car using Deep learning techniques like convolution neural network (CNN). For mass-market deployment, the embedded solution is required to address the right cost and performance envelope along with security and safety. In the case of automated driving, one of the key functionality is 'finding drivable free space', which is addressed using deep learning techniques like CNN. These CNN networks pose huge computing requirements in terms of hundreds of GOPS/TOPS (Giga or Tera operations per second), which seems beyond the capability of today's embedded SoC. This paper covers various techniques consisting of fixed-point conversion, sparse multiplication, fusing of layers and network pruning, for tailoring on the embedded solution. These techniques are implemented on the device by means of optimized Deep learning library for inference . The paper concludes by demonstrating the results of a CNN network running in real time on TI's TDA2X embedded platform producing a high-quality drivable space output for automated driving. © 2018 IEEE.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Convolution | Neural networks | Convolutional network
+Prominence percentile: 99.989
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Author keywords
+Automated Driving CNN Deep Learning semantic segmentation TDA processor
+Indexed keywords
+Engineering controlled terms: 	Automation Learning algorithms Network layers Semantics System-on-chip
+Engineering uncontrolled terms 	Automated driving Convolution neural network Embedded platforms Fixed-point conversion Learning techniques Network pruning Semantic segmentation TDA processor
+Engineering main heading: 	Deep learning
+
+    ISSN: 19483287
+    ISBN: 978-153861214-9
+    Source Type: Conference Proceeding
+    Original language: English
+
+    DOI: 10.1109/ISQED.2018.8357325
+    Document Type: Conference Paper
+    Sponsors: Innovotek,Silicon Valley Polytechnic Institute,Synopsys
+    Publisher: IEEE Computer Society
+
+View references (14)
+
+    References (14)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+Society of Automotive Engineers
+https://www-sae-org.ezproxy.usherbrooke.ca/
+
+     
+
+2
+	
+Krizhevsky, A., Sutskever, I., Hinton, G.E.
+ImageNet classification with deep convolutional neural networks
+
+(2012)  Advances in Neural Information Processing Systems , 2, pp. 1097-1105.  Cited 27692 times .
+ISBN: 978-162748003-1
+
+    Pour obtenir le document(opens in a new window)
+
+3
+	
+Simonyan, K., Zisserman, A.
+(2014)  Very Deep Convolutional Networks for Large-scale Image Recognition .  Cited 10158 times .
+arXiv preprint arXiv:1409.1556
+
+     
+
+4
+	
+Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan, D., (...), Rabinovich, A.
+Going deeper with convolutions
+
+(2015)  Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition , 07-12-June-2015, art. no. 7298594, pp. 1-9.  Cited 8358 times .
+ISBN: 978-146736964-0
+doi: 10.1109/CVPR.2015.7298594
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+5
+	
+Jacob, B., Kligys, S., Chen, B., Zhu, M., Tang, M., Howard, A., Adam, H., (...), Kalenichenko, D.
+(2017)  Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference .  Cited 25 times .
+arXiv:1712.05877
+
+     
+
+6
+	
+Gysel, P., Motamedi, M., Ghiasi, S.
+(2016)  Hardwareoriented Approximation of Convolutional Neural Networks .  Cited 134 times .
+arXiv:1604.03168
+
+     
+
+7
+	
+Lin, D., Talathi, S., Annapureddy, S.
+(2015)  Fixed Point Quantization of Deep Convolutional Networks .  Cited 41 times .
+arXiv:1511.06393
+
+     
+
+8
+	
+Courbariaux, M., David, J.-P., Bengio, Y.
+Training deep neural networks with low precision multiplications
+
+(2015)  3rd International Conference on Learning Representations, ICLR 2015 - Workshop Track Proceedings .  Cited 31 times .
+https://dblp.org/db/conf/iclr/iclr2015w.html
+
+    Pour obtenir le document(opens in a new window)
+
+9
+	
+Mathew, M., Desappan, K., Kumar Swami, P., Nagori, S.
+(2017)  Sparse, Quantized, Full Frame CNN for Low Power Embedded Devices
+CVPR workshop paper
+
+     
+
+10
+	
+Warden, P.
+(2016)  How to Quantize Neural Networks with TensorFlow .  Cited 6 times .
+https://petewarden.com/2016/05/03/how-to-quantizeneural-networks-with-tensorflow/
+
+     
+
+11
+	
+Mathew, M., Desappan, K., Kumar Swami, P., Nagori, S.
+Sparse, Biju Moothedath Gopinath, Embedded Low-power Deep Learning with TIDL .  Cited 2 times .
+http://www.ti.com/lit/wp/spry314/spry314.pdf
+
+     
+
+12
+	
+He, K., Zhang, X., Ren, S., Sun, J.
+(2016)  Deep Residual Learning for Image Recognition .  Cited 103 times .
+CVPR
+
+     
+
+13
+	
+Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler, M., Benenson, R., Franke, U., (...), Schiele, B.
+The Cityscapes Dataset for Semantic Urban Scene Understanding
+
+(2016)  Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition , 2016-December, art. no. 7780719, pp. 3213-3223.  Cited 952 times .
+ISBN: 978-146738850-4
+doi: 10.1109/CVPR.2016.350
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+14
+	
+TDAx ADAS SoCs
+
+     
+
+
+© Copyright 2018 Elsevier B.V., All rights reserved.
+
+    Back to results
+    1 of 1
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+No metrics available.
+see details
+Cited by 0 documents
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+
+    CNN Inference: Dynamic and predictive quantization
+    Desappan, K. , Mody, M. , Mathew, M.
+    (2018) IEEE International Conference on Consumer Electronics - Berlin, ICCE-Berlin
+
+    Short floating-point representation for convolutional neural network inference
+    Kang, H.-J.
+    (2019) IEICE Electronics Express
+
+    Quad-multiplier packing based on customized floating point for convolutional neural networks on FPGA
+    Zhang, Z. , Zhou, D. , Wang, S.
+    (2018) Proceedings of the Asia and South Pacific Design Automation Conference, ASP-DAC
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Convolution; Neural networks; Convolutional network","id":4338,"uri":"Topic/4338","prominencePercentile":99.98852,"prominencePercentileString":"99.989","overallScholarlyOutput":0},"dig":"ffefc29fa0daabc795f802bbab08a4d737e629e2e2cffc5a1fff11c8d2c854fc"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+
+    Account Settings
+    Export and reference management settings
+
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+
