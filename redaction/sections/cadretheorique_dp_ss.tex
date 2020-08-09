@@ -1,18 +1,16 @@
-﻿{\color{red}
-\todo{TODO}
-\par Voici le plan qui est utilisé pour rédiger le cadre théorique au sujet des réseaux de neurones et de la segmentation sémantique.
-\begin{itemize}
-   \item historique; une brève présentation de l'historique et du contexte de l'intelligence artificielle, l'apprentissage machine et les réseaux de neurones.
-   \par Les concepts de l'Intelligence artificielle (AI) existe depuis les années 1950 et ont continué à se développer jusqu'à leur popularité des 10 dernières années;
-   \item popularité depuis 10 ans; argumentation autour des raisons de la renaissance de l'apprentissage machine. 
-   \par Trois raisons principales ont permis à ce domaine de sortir du champ de la recherche pour celui de l’industrie et la mise en production: amélioration de la capacité et la puissance des machines; jeux de données plus larges; algorithmes plus avancés;
-   \item domaine; où se situent les réseaux de neurones et la segmentation sémantique dans la hiérarchie de l'IA.
-   \par L’apprentissage profond est un sous-domaine de celui de l'apprentissage machine qui est un sous-domaine de celui de l'intelligence artificielle.
-   \par La segmentation sémantique d'images ou de vidéos avec des algorithmes d'apprentissage profond fait partie du domaine de la télédétection par la vision.
-   \item applications; quelques exemples d'applications des réseaux de neurones selon leur type, dont les réseaux de neurones à convolution entiers.
-   \par Les applications sont plus sophistiquées, la segmentation sémantique en fait partie.
-   \item principes; présentation des principes théoriques de la segmentation sémantique.
-   \par La segmentation sémantique d'images est une technique élaborée de classification supervisée d'images.
-\end{itemize}
-À noter qu'il n'est pas prévu expliquer le fonctionnement des réseaux de neurones, tels que les différentes fonctions (activation, perte), les hyper-paramètres, les différentes architectures et les types de couches. 
-}
+﻿\par La segmentation sémantique d'images ou de vidéos est une technique de télédétection du domaine de la vision par ordinateur. Elle permet de délimiter (segmenter) différentes parties (sémantique) d'une image. Les méthodes de segmentation ont été améliorées ces dernières années par les récentes avancées dans le domaine de l'apprentissage profond. 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.5\textwidth]{semantic_segmentation_vs_others}
+   \caption{Semantic Segmentation \cite[p.~1]{wu_recent_2019}}
+   \label{fig:semantic_segmentation_vs_others}
+\end{figure}
+\par L’apprentissage profond est un sous-domaine de celui de l'apprentissage machine qui est un sous-domaine de celui de l'intelligence artificielle. 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.5\textwidth]{Deep_Learning_with_Python.pdf}
+   \caption{IA, ML et AP \cite[p.~4]{chollet_deep_2018}}
+   \label{fig:ia_ml_ap}
+\end{figure}
+\par Les concepts de l'Intelligence artificielle (AI) existent depuis les années 1950 \cite[p.~4]{chollet_deep_2018} \cite[p.~1]{alom_history_nodate}, et ont continuée à se développer par vague, jusqu'à leur nouvelle popularité des 15 dernières années. En effet, trois raisons principales ont permis à ce domaine de renaitre de nouveau \cite[p.~20]{chollet_deep_2018}: la capacité et la puissance des machines; des jeux de données plus larges; des algorithmes plus avancés. Les deux moments clés, preuves de cette renaissance, sont: 1) la possibilité d'entrainer des architectures de réseaux de neurones profond (DNN) (2006) \cite[p.~6]{alom_history_nodate}; et 2) l'architecture du réseau de neurones convolutionels AlexNet permet de  gagner le challenge ImageNet contre les approches traditionnelles\cite[p.~11]{alom_history_nodate}. 
+\par En 2016 \cite[p.~14]{alom_history_nodate}, l'architecture FCN ("Fully Convolutional Network", réseau (de neureones) convolutionnel entier) a permis aux taches réservées à la segmentation d'images d'être plus efficace que les méthodes traditionnelles de la vision par ordinateur. Cette nouvelle méthode s'applique désormais à tous les domaines connexes à l'analyse d'images, tel que l'imagerie médicale, la conduite autonome de véhicules, la robotique, la télédétection d'images satellites, la sécurité par caméra vidéo, l'agriculture de haute précision. Aujourd'hui, elle peut s'exécuter en temps réel sur des systèmes embarqués proche des données. 
