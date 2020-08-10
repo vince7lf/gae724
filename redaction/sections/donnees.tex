@@ -15,76 +15,82 @@
    \newcounter{magicrownumbers}
    \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
    \vspace{0.1em} % Adjust the height of the space between caption and tabular
-   \begin{longtable}[t]{@{}p{1em}|p{10em}p{25em}@{}} % p{10em}p{25em} with landscape
+   \begin{longtable}[t]{@{}p{1em}|p{35em}} % p{10em}p{25em} with landscape
       \caption{Tableau des données}\label{tab:datasets}\\
-      & \textbf{Spécification} & \textbf{Description}\\
+      & \textbf{Spécification} \\
       \hline
       \endfirsthead
-      & \textbf{Spécification} & \textbf{Description}\\
+      & \textbf{Spécification} \\
       \hline
       \endhead
       \endfoot
       \endlastfoot
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Réseau: SegNet\\Jeu de données: CamVid\\Vidéo: 10 minutes\\Résolution/s: HD
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Réseau: SegNet\\Jeu de données: CamVid\\Vidéo: 10 minutes\\Résolution/s: HD\\
+         \hline
          SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurent des vidéos de la route avec la même perspective que le conducteur du véhicule. Un modèle entrainé est disponible pour le Jetson Nano.\\
          \url{https://github.com/PengKiKi/camvid}\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Réseau: MFANet\\Jeu de données: Cityscapes\\Nombre d'images: 5000\\Résolutions: 1280x1024
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Réseau: MFANet\\Jeu de données: Cityscapes\\Nombre d'images: 5000\\Résolutions: 1280x1024\\
+         \hline
          MFANet est un réseau qui a été créé en 2019 pour la segmentation sémantique sur des appareils tel que le Jetson Nano. Il a été entrainé avec le jeu de données de Cityscapes, qui procurent des images de scènes urbaines. Différentes stratégies d'augmentation de données sont utilisées. Des tests ont été faits avec le Jetson Nano.\\
          leejy@ustb.edu.cn\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Réseau: RESNet18\\Jeu de données: Cityscapes\\Nombre d'images: 25 000\\Résolutions: 360x720, 512x256, 1024x512, 2048x1024
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Réseau: RESNet18\\Jeu de données: Cityscapes\\Nombre d'images: 25 000\\Résolutions: 360x720, 512x256, 1024x512, 2048x1024\\
+         \hline
          Cityscapes est un jeu de données qui fournit des images de rues spécifiquement destinées pour la segmentation sémantique. Il peut être utilisé par de nombreux réseaux. RESNet18 a été entrainé avec ce jeu et est disponible en diverses résolutions pour le Jetson Nano.\\
          \url{https://github.com/tynguyen/MAVNet/tree/master/data/perch_drone}\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Réseau: RESNet18\\Jeu de données: DeepScenes\\Nombre d'images: 15 000\\Résolutions: 576x320, 864x480 
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Réseau: RESNet18\\Jeu de données: DeepScenes\\Nombre d'images: 15 000\\Résolutions: 576x320, 864x480 \\
+         \hline
          DeepScene propose un modèle et un jeu de données. Le modèle est entrainé avec différents jeux de données, comme Cityscpapes, SUN-RGBD, Synthia. Le jeu de données fournit des images de forêt, qui est destinée pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu et est disponible en deux  résolutions pour le Jetson Nano.\\
          \url{http://deepscene.cs.uni-freiburg.de}\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Réseau: RESNet18\\Jeu de données: Synthia\\Nombre d'images: 220 000\\Résolutions: 1280x760
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Réseau: RESNet18\\Jeu de données: Synthia\\Nombre d'images: 220 000\\Résolutions: 1280x760\\
+         \hline
          Le jeu de données Synthia fournit des images (et vidéos) de scènes de rue comme celui de Cityscapes, et qui est destiné pour la segmentation sémantique. RESNet18 a été entrainé avec ce jeu. Il n'a pas été testé avec le Jetson Nano.\\
          \url{http://3dvision.princeton.edu/datasets.html}\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Jeu de données: Association des piétons et cyclistes pont Jacques-Cartier\\Nombre d'images: 313\\Résolutions: variées
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Jeu de données: Association des piétons et cyclistes pont Jacques-Cartier\\Nombre d'images: 313\\Résolutions: variées\\
+         \hline
          L'\acrlong{apcpontjc} a une collection d'images et de vidéos de la piste multifonctionnelle du pont Jacques-Cartier. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai. Il est envisagé de contacter l'association au besoin afin de leur demander leur collaboration pour la collecte d'autres d'images ou vidéos.\\
          \url{https://www.flickr.com/photos/pontjacquescartier}\\
          \url{http://pontjacquescartier365.com/videos-pont-jacques-cartier}\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Jeu de données: images et vidéo sur Internet\\Nombre d'images: entre 30-50\\Résolutions: variées
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Jeu de données: images et vidéo sur Internet\\Nombre d'images: entre 30-50\\Résolutions: variées\\
+         \hline
          Internet est une source de données non négligeable en termes de données. Quelques images et vidéos de la piste multifonctionnelle du pont Jacques-Cartier, autre que celles fournies par L'\acrlong{apcpontjc}, sont disponibles. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai.\\
          \url{https://google.ca}\\
       \end{tabular}\\
       \hline
-      \rownumber & \begin{tabular}[t]{@{}p{10em}@{}}
-         Jeux de données: KITI Road/Lane Detection
-      \end{tabular} & \begin{tabular}[t]{@{}p{25em}@{}}
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Jeux de données: KITI Road/Lane Detection\\
+         \hline
          Ce jeu de données contient 289 images d'entrainement et 290 images de tests d'image de routes urbaines. Il existe une grande multitude de modèles qui sont entrainés avec ce jeu de données.\\
          \url{http://www.cvlibs.net/datasets/kitti/eval_road.php}\\
       \end{tabular}\\
       \hline
+      \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
+         Jeux de données: Personnel\\Nombre d'images et vidéos: 188 images de 1080x1920; 19 vidéos de 30-60 secondes de 1080x1920 et 60\acrshort{fps}.\\
+         \hline
+         Ce jeu de données contient des vidéos de différentes sections de pistes cyclables de mon quartier. Les vidéos ont été prises au mois de mars, dans des conditions ensoleillées, mais avec des endroits de la piste ombragée, sèche ou mouillée, bordée d'herbe ou de neige, parfois avec des passants. 188 images ont été extraites des vidéos.\\
+      \end{tabular}\\
+      \hline
    \end{longtable}
    % \end{landscape}
-   \clearpage
-   \newpage
+   % \clearpage
+   % \newpage
 }

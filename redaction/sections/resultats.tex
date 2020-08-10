@@ -4,7 +4,7 @@
 {
    \vspace{0.1em} % Adjust the height of the space between caption and tabular
    \renewcommand*{\arraystretch}{1.4}
-   \begin{longtable}[t]{@{}|p{25em}|p{2em}|p{2em}|p{3em}|@{}} 
+   \begin{longtable}[t]{@{}|p{28em}|p{2em}|p{2em}|p{3em}|@{}} 
       \caption{Comparaison des performances du "data read" entre un SDD M.2 NVMe et une microSD}\label{tab:Timing O_DIRECT disk reads}\\
       \hline
       \textbf{Disk reads} & \textbf{MB} & \textbf{sec} & \textbf{MB/sec}\\
@@ -13,9 +13,9 @@
       \hline
       microSD Scan Disk Ultra 32Gb HC I Class 10 & 122 & 3.03 & 40.22\\
       \hline
-      microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10 (rouge) & 256 & 3.02 & 84.71\\
+      microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10 & 256 & 3.02 & 84.71\\
       \hline
-      microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10 (verte) & 92 & 3.01 & 30.54\\
+      microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10 & 92 & 3.01 & 30.54\\
       \hline
    \end{longtable}
 }
@@ -43,8 +43,8 @@
    \label{fig:test_periods}
 \end{figure}
 {
-   \clearpage 
-   \newpage
+   % \clearpage 
+   % \newpage
    \begin{landscape}
    \begin{figure}[H]
       \centering
@@ -90,8 +90,8 @@
       \label{fig:consommation}
    \end{figure}
    \end{landscape}
-   \clearpage
-   \newpage
+   % \clearpage
+   % \newpage
 }
 \subsection{Performances de l'inférence}
 \subsubsection{Images}
@@ -101,55 +101,30 @@
 \par Il s'avère que le \acrshort{iou} et F1 score sont assez élevés pour les deux photos pour la classe "Chemin". 
 \begin{figure}[H]
    \centering
-   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped.jpg}
-   \caption{Vérité terrain (\acrshort{gt}) de l'image b1-09517}
+   {
+      \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
+      \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
+      \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
+      \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
+      % \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
+   }
+   \includegraphics[width=1\textwidth]{b1-09517_Clipped_segmented}
+   \caption[Segmentation sémantique de l'image b1-09517 générée par le modèle]{(gauche) Image originale (b1-09517); (centre) vérité terrain (\acrshort{gt}); (droite) segmentation sémantique générée par le modèle. Le \acrshort{iou} et le F1 score pour le chemin sont de +80\%.}
    \label{fig:b1-09517_Clipped}
 \end{figure}
 \begin{figure}[H]
    \centering
-   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped}
-   \caption{Image originale b1-09517}
-   \label{fig:b1-09517_Clipped}
-\end{figure}
-{
-   \centering
-   \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
-   \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
-   \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
-   \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
-   % \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
-}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=0.75\textwidth]{b1-09517_Clipped_pred_new_color}
-   \caption[Segmentation sémantique de l'image b1-09517 générée par le modèle]{Segmentation sémantique de l'image b1-09517 générée par le modèle. Le \acrshort{iou} et le F1 score pour le chemin sont de +80\%.}
-   \label{fig:b1-09517_Clipped_pred_new_color}
-\end{figure}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=0.75\textwidth]{b378-61_Clipped.jpg}
-   \caption{Image originale b378-61}
+   {
+      \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
+      \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
+      \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
+      \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
+      \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
+   }   
+   \includegraphics[width=1\textwidth]{b378-61_Clipped_segmented}
+   \caption[Segmentation sémantique de l'image b378-61 générée par le modèle]{(gauche) Image originale (b378-61); (milieu) vérité terrain (\acrshort{gt});  (droite) segmentation sémantique générée par le modèle. Le \acrshort{iou} pour le chemin est +69\%.}
    \label{fig:b378-61_mask}
-\end{figure}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=0.75\textwidth]{b378-61_mask}
-   \caption{Vérité terrain (\acrshort{gt}) de l'image b378-61}
-   \label{fig:b378-61_mask}
-\end{figure}
-{
-   \centering
-   \tikz \fill [trail] (0.05, 0.05) rectangle (1.0, 0.5) ; {Chemin}
-   \tikz \fill [grass] (0.05, 0.05) rectangle (1.0, 0.5) ; {Herbe}
-   \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
-   \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
-   \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
-}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=0.75\textwidth]{b378-61_mask_pred_new_color}
-   \caption[Segmentation sémantique de l'image b378-61 générée par le modèle]{Segmentation sémantique de l'image b378-61 générée par le modèle. Le \acrshort{iou} pour le chemin est +69\%.}
-   \label{fig:b378-61_mask_pred_new_color}
+
 \end{figure}
 \subsubsection{Vidéos}
 \par Il y a deux vidéos qui ont été utilisées pour tester les performances de la segmentation avec une vidéo. Comme il n'est pas évident de montrer une vidéo dans un essai, des liens sont mis à disposition. Ces vidéos sont disponibles dans le projet "Vision Météo" de Teams de l'Université de Sherbrooke. Chaque vidéo a été créée en filmant avec un téléphone intelligent l'écran du nano ordinateur pendant que la segmentation est exécutée. Cela produit une vidéo HD 1080p 30 \acrshort{fps}. Lors de la seconde vidéo, les performances du système et les statistiques "tegrastats" sont affichées en plus de la segmentation.
@@ -165,7 +140,7 @@
     \centering
     \caption{Résolutions et images par seconde (\acrshort{fps}) testés}\label{table:resolutions_tested}
     \vspace{0.1em} % Adjust the height of the space between caption and tabular
-    \begin{tabular}{{@{}|p{12cm}|@{}}}
+    \begin{tabular}{{@{}|p{35em}|@{}}}
          \hline
          \textbf{Résolutions qui fonctionnent}\\
          \hline

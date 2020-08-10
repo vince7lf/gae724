@@ -64,14 +64,13 @@ seront évaluées:
     \centering
     \caption{Cartes microSD}\label{table:cartes_microSD}
     \vspace{0.1em} % Adjust the height of the space between caption and tabular
-    \begin{tabular}{l}
-        \includegraphics[width=0.10\textwidth]{micro_sd_evo_plus} microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10\\
-        \includegraphics[width=0.10\textwidth]{micro_sd_evo} microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10\\
-        \includegraphics[width=0.10\textwidth]{Microsd card Scan Disk Ultra 32Gb class 10 HC I} microSD Scan Disk Ultra 32Gb HC I Class 10\\
+    \begin{tabular}{ll}
+        \raisebox{-.4\height}{\includegraphics[width=0.10\textwidth]{micro_sd_evo_plus}} & microSD Samsung EVO 64Gb Plus XC I Grade 3 Class 10\\
+        \raisebox{-.4\height}{\includegraphics[width=0.10\textwidth]{micro_sd_evo}} & microSD Samsung EVO 64Gb Select XC I Grade 3 Class 10\\
+        \raisebox{-.4\height}{\includegraphics[width=0.10\textwidth]{Microsd card Scan Disk Ultra 32Gb class 10 HC I}} & microSD Scan Disk Ultra 32Gb HC I Class 10\\
     \end{tabular}
     \end{table}
 }
-{\color{red}\todo{fix le tableau}}
 \par\underline{Disque \acrshort{ssd}}
 % \mysubparagraph{\acrshort{ssd} interne Nvme M.2 avec carte d'extension M.2 vers USB3.0}
 % \par Pour un appareil destiné à être continuellement en service et à l'extérieure, l'unité de stockage doit être non seulement performante, mais aussi endurante. Un disque \acrshort{ssd} interne pour un nano ordinateur est soit une carte d'extension M.2 NVMe ou SATA (selon la carte d'extension), connecté au port PCIe ou USB. Les \acrshort{ssd} internes Samsung 970 EVO 250GB NVMe M.2 et Samsung 860 EVO M.2 500GB SATA seront évalués. À noter qu'une carte microSD est tout de même nécessaire pour "bootstrapper" le système d'exploitation. Il n'est pas nécessaire d'avoir une carte microSD performante puisqu'elle n'est utilisée que pour démarrer le système qui se trouve sur le \acrshort{ssd} interne. 
