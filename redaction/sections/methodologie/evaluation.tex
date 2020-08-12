@@ -17,7 +17,7 @@
     \label{fig:metho_eval}
 \end{figure}
 \subsubsection{Stratégie de test de l'inférence} \label{section:strategie_test_inference}
-\par L'objectif principal de l'essai est de déterminer la capacité et les limites du nano ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
+\noindent L'objectif principal de l'essai est de déterminer la capacité et les limites du nano ordinateur d'inférer en temps réel des modèles de réseau de neurones à convolution entier pour la segmentation sémantique de vidéos. La stratégie qui sera appliquée sera de tester avec divers modèles et divers niveaux de qualité vidéos, en espérant trouver le compromis qui répond le mieux à cet objectif.
 \begin{enumerate}
    \item \label{metho:testbaseinférence} Afin de s'assurer du bon fonctionnement du nano ordinateur et d'avoir des résultats de référence propre à notre environnement, l'inférence sera testée avec des modèles existants et pré entrainés pour la segmentation sémantique, avec les images et les vidéos provenant des références, et dont les caractéristiques et les résultats sont disponibles. 
    \item \label{metho:testbaseinférencesite} En espérant que les tests de l'étape \#\ref{metho:testbaseinférence} précédente donnent les résultats documentés dans les articles de références, ils seront repris avec les mêmes modèles, mais avec les images et les vidéos du site d'étude possédant la meilleure qualité acquise (1080p/i, 30\acrshort{fps}). Les données sources (images et vidéos) devront subir certains prétraitements à ce effet, afin de répondre aux requis des modèles.
@@ -25,7 +25,7 @@
    \item Les étapes intermédiaires de l'étape \#\ref{metho:testdevinférencesite} précédente seront de 1) valider les résultats de l'inférence avec des images avant de tester avec les vidéos, et 2) évaluer si les modèles de réseaux de neurones à convolution entiers doivent et/ou peuvent être adaptés facilement, en tenant compte de l'échéancier de l'essai, et ce afin de répondre à l'objectif principal.
 \end{enumerate}
 \subsubsection{Stratégie de collecte des indicateurs de performance matériel}
-\par La méthodologie de la collecte des indicateurs est la suivante\footnote{\url{https://vince7lf.github.io/2020/05/26/metrics.html}}: 
+\noindent La méthodologie de la collecte des indicateurs est la suivante\footnote{\url{https://vince7lf.github.io/2020/05/26/metrics.html}}: 
 \begin{itemize}    
     \item La collecte est démarrée après un démarrage frais, manuellement, via un script shell, qui exécute chaque utilitaire, et attend l'interruption du test. 
     \item Chaque utilitaire qui est utilisé pour collecter les mesures, possède son propre fichier.
@@ -36,12 +36,23 @@
     \item Chaque fichier est ensuite transformé en fichier \acrshort{csv}, via des commandes shell.
     \item À partir des fichiers \acrshort{csv} un script Python génère les graphiques automatiquement. 
 \end{itemize}
-\par Chaque indicateur est une colonne du fichier \acrshort{csv}. Il existe le même nombre d'indicateurs à tout moment. La date et l'heure sont un champ. 
-\par Avant tout début de tests, la collecte est démarrée sans activité autre que la collecte des indicateurs. Cela permet de prendre une base de référence sans aucune charge.
-\par Ensuite les tests débutent. 
-\par Les indicateurs collectés permettent de créer des graphiques qui montrent la progression de chacun.
-\par Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA, "free" et "iotop".
-\par Les performances de la segmentation sont évaluées grâce au \acrshort{iou} et au F1 score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions \acrshort{iou} et le F1 score utilisent l'image prédite (généré par le modèle \acrshort{fcn}) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
+\vspace{\baselineskip}
+\noindent Chaque indicateur est une colonne du fichier \acrshort{csv}. Il existe le même nombre d'indicateurs à tout moment. La date et l'heure sont un champ. 
+\vspace{\baselineskip}
+\\
+\noindent Avant tout début de tests, la collecte est démarrée sans activité autre que la collecte des indicateurs. Cela permet de prendre une base de référence sans aucune charge.
+\vspace{\baselineskip}
+\\
+\noindent Ensuite les tests débutent. 
+\vspace{\baselineskip}
+\\
+\noindent Les indicateurs collectés permettent de créer des graphiques qui montrent la progression de chacun.
+\vspace{\baselineskip}
+\\
+\noindent Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA, "free" et "iotop".
+\vspace{\baselineskip}
+\\
+\noindent Les performances de la segmentation sont évaluées grâce au \acrshort{iou} et au F1 score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions \acrshort{iou} et le F1 score utilisent l'image prédite (généré par le modèle \acrshort{fcn}) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 
 \subsubsection{Résolutions évaluées}\label{section:resolutions_to_be_tested}
 Voici dans le tableau \ref{table:resolutions_to_be_tested} les résolutions et images par seconde qui seront évaluées. 
 {

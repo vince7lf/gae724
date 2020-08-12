@@ -50,11 +50,12 @@
 \addto\captionsfrench{ \renewcommand{\listfigurename}{Liste des figures} }
 \addto\captionsfrench{ \renewcommand{\listtablename}{Liste des tableaux} }
 \addto\captionsfrench{ \renewcommand{\bibname}{Références}}
-\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\\par}
-\newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}\\\par}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}}
+\newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}}
 \renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
 \renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
-\linespread{1.213}
+% \linespread{1.213}
+\linespread{1.25}
 % 
 \makeglossaries
 \newacronym{iou}{IoU}{Intersection over Union}
@@ -86,7 +87,7 @@
    \vspace{11\baselineskip}
  
    {\LARGE Segmentation sémantique en temps réel à partir d'un nano ordinateur: étude des performances et des limites}
-   \vspace{1\baselineskip}
+   \vspace{\baselineskip}
    \linebreak
  
    \vspace*{3\baselineskip}
@@ -160,7 +161,8 @@
 \newpage
 {
    \color{red}
-   \par Il faut uniformiser le style. Il faut que les références dans le texte soient "(year, lastname)" et non "[n]"\todo{TODO}
+   \vspace{\baselineskip}
+   \noindent Il faut uniformiser le style. Il faut que les références dans le texte soient "(year, lastname)" et non "[n]"\todo{TODO}
 }
 \printbibliography[title={\bibname\label{bib:references}}] 
 %----------------------------------------------------------------------------------------

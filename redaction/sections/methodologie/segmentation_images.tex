@@ -1,7 +1,13 @@
 ﻿\myparagraph{Préparation et post-traitement}
-\par Afin de pouvoir mesurer les performances de la segmentation (IoU, F1 score), les classes et la palette de couleur entre l'image vérité terrain (\acrshort{gt}) et celles prédites doivent être les mêmes.
-\par L'image vérité terrain (\acrshort{gt}) du jeu de donnée original DeepScene ne possède pas la même palette de couleur ni exactement les mêmes classes que celle du modèle.
-\par Un travail d'uniformisation est nécessaire avant la segmentation, qui est résumée dans le tableau \ref{table:classes_palette_couleur}.
+\vspace{\baselineskip}
+\\
+\noindent Afin de pouvoir mesurer les performances de la segmentation (IoU, F1 score), les classes et la palette de couleur entre l'image vérité terrain (\acrshort{gt}) et celles prédites doivent être les mêmes.
+\vspace{\baselineskip}
+\\
+\noindent L'image vérité terrain (\acrshort{gt}) du jeu de donnée original DeepScene ne possède pas la même palette de couleur ni exactement les mêmes classes que celle du modèle.
+\vspace{\baselineskip}
+\\
+\noindent Un travail d'uniformisation est nécessaire avant la segmentation, qui est résumée dans le tableau \ref{table:classes_palette_couleur}.
 {
     \renewcommand*{\arraystretch}{1.4}
     \begin{table}[h]
@@ -30,9 +36,19 @@
         \hline
     \end{tabular}
     \end{table}
-\par De plus, l'image segmentée prédite par le modèle ne possède pas précisément la même palette de couleur que celle qui est configurée, il y a quelques différences minimes dans les codes couleurs RGB (par exemple 0-119-255 au lieu de 0-120-255), mais qui doivent être arrangée afin de pouvoir être correctement évaluées. 
-\par Un travail de traitement de l'image segmentée prédite est nécessaire avant l'évaluation de la segmentation.
+\vspace{\baselineskip}
+\\
+\noindent De plus, l'image segmentée prédite par le modèle ne possède pas précisément la même palette de couleur que celle qui est configurée, il y a quelques différences minimes dans les codes couleurs RGB (par exemple 0-119-255 au lieu de 0-120-255), mais qui doivent être arrangée afin de pouvoir être correctement évaluées. 
+\vspace{\baselineskip}
+\\
+\noindent Un travail de traitement de l'image segmentée prédite est nécessaire avant l'évaluation de la segmentation.
 \myparagraph{Segmentation et évaluation}
-\par Afin de tester la performance de la segmentation du modèle, deux images du jeu de données de DeepScene seront utilisées, car ce jeu contient déjà les images vérités terrain (\acrshort{gt}), un gain de temps non négligeable dans le cadre de l'essai. Uniquemement la classe "Trail" sera évaluée.
-\par L'architecture fournit à l'utilitaire "segnet-console" est "fcn-resnet18-deepscene-576x320" \footnote{\url{segnet-console -{}-network=fcn-resnet18-deepscene -{}-visualize=mask -{}-alpha=10000 images/city_0.jpg output.jp}}. 
-\par Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le \acrshort{iou} et le F1 score de la classe de l'image prédite par le modèle.
+\vspace{\baselineskip}
+\\
+\noindent Afin de tester la performance de la segmentation du modèle, deux images du jeu de données de DeepScene seront utilisées, car ce jeu contient déjà les images vérités terrain (\acrshort{gt}), un gain de temps non négligeable dans le cadre de l'essai. Uniquemement la classe "Trail" sera évaluée.
+\vspace{\baselineskip}
+\\
+\noindent L'architecture fournit à l'utilitaire "segnet-console" est "fcn-resnet18-deepscene-576x320" \footnote{\url{segnet-console -{}-network=fcn-resnet18-deepscene -{}-visualize=mask -{}-alpha=10000 images/city_0.jpg output.jp}}. 
+\vspace{\baselineskip}
+\\
+\noindent Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le \acrshort{iou} et le F1 score de la classe de l'image prédite par le modèle.
