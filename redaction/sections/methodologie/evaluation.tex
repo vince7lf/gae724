@@ -49,7 +49,7 @@
 \noindent Les indicateurs collectés permettent de créer des graphiques qui montrent la progression de chacun.
 \vspace{\baselineskip}
 \\
-\noindent Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA, "free" et "iotop".
+\noindent Les performances matérielles du Jetson Nano sont évaluées grâce à différents utilitaires : "tegrastats" fournis par NVIDIA; "free"; et "iotop".
 \vspace{\baselineskip}
 \\
 \noindent Les performances de la segmentation sont évaluées grâce au \acrshort{iou} et au F1 score pour la classe du chemin / route. Une fonction Python est utilisée. Les fonctions \acrshort{iou} et le F1 score utilisent l'image prédite (généré par le modèle \acrshort{fcn}) et l'image vérité terrain (\acrshort{gt}). Les images originales sont donc présélectionnées selon leur intérêt et l'image vérité terrain (\acrshort{gt}) créée. L'image prédite et vérité terrain (\acrshort{gt}) doivent utiliser la même palette de couleurs et doivent être de la même résolution. Pour les images qui ne possèdent pas d'image vérité terrain (\acrshort{gt}), cell-ci est créée à la main avec l'éditeur "Gimp". Comme la résolution de la segmentation de l'image prédite par le modèle de NVIDIA est très faible ("carrée"), l'image vérité terrain (\acrshort{gt}) ne sera pas précise au pixel prêt. Le besoin est d'évaluer et non d'entrainer, l'importance de la précision de la classification est moindre dans ce cas. 

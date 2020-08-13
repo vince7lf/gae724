@@ -50,6 +50,7 @@
 \addto\captionsfrench{ \renewcommand*\contentsname{Table des matières} }
 \addto\captionsfrench{ \renewcommand{\listfigurename}{Liste des figures} }
 \addto\captionsfrench{ \renewcommand{\listtablename}{Liste des tableaux} }
+\addto\captionsfrench{\def\tablename{Tableau}}
 \addto\captionsfrench{ \renewcommand{\bibname}{Références}}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}}
 \newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}}
@@ -94,7 +95,7 @@
 %----------------------------------------------------------------------------------------
 \thispagestyle{empty}
 %----------------------------------------------------------------------------------------
-\textbf{Remerciements}
+\noindent\textbf{Remerciements}
 \input{sections/remerciements}
 %----------------------------------------------------------------------------------------
 \newpage
@@ -102,7 +103,7 @@
 \tableofcontents{}
 \listoffigures{}
 \listoftables{}
-\printglossary[title=Liste des abréviations, toctitle=Liste des abréviations, type=\acronymtype]
+\printglossary[title=Liste des abréviations, toctitle=Liste des abréviations, type=\acronymtype, nonumberlist]
 % \printglossary[type=\acronymtype]
 %----------------------------------------------------------------------------------------
 \newpage

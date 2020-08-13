@@ -14,7 +14,7 @@ Les ressources mises à disposition par le constructeur du Jetson Nano, NVIDIA, 
 \myparagraph{Approche prévue pour le traitement des données}
 \vspace{\baselineskip}
 \\
-Il y a deux phases à cet essai: l'inférence avec des modèles déjà prêts et l'inférence avec des modèles ré entrainés. Les données utilisées par l'inférence sont des vidéos (d'une certaine résolution et d'un certain nombre d'images pas seconde), et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celles avec lesquelles le modèle a été, ou sera, entrainées. La résolution et la qualité de l'image vidéo seront nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la détection la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
+Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts; et 2) l'inférence avec des modèles ré entrainés. Les données utilisées par l'inférence sont des vidéos (d'une certaine résolution et d'un certain nombre d'images pas seconde), et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celles avec lesquelles le modèle a été, ou sera, entrainées. La résolution et la qualité de l'image vidéo seront nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la détection la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
 \vspace{\baselineskip}
 \\
 \noindent Tout cela signifie que les vidéos ou nouvelles images devront être traités pour répondre à une certaine taille et résolution requise par le modèle, tout en conservant une qualité élevée (nombre de pixels, niveaux de couleurs). De nouvelles images pour l'entrainement seront extraites des vidéos, et annotées. 
@@ -25,9 +25,6 @@ Il y a deux phases à cet essai: l'inférence avec des modèles déjà prêts et
 \\
 \noindent Voici le tableau de synthèse des données qui ont été découvertes et qui seront potentiellement utilisées dans le cadre de l'essai, incluant la référence à l'architecture du modèle d'apprentissage profond.
 {
-   % \clearpage 
-   % \newpage
-   % \begin{landscape}
    \newcounter{magicrownumbers}
    \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
    \vspace{0.1em} % Adjust the height of the space between caption and tabular
@@ -106,7 +103,5 @@ Il y a deux phases à cet essai: l'inférence avec des modèles déjà prêts et
       \end{tabular}\\
       \hline
    \end{longtable}
-   % \end{landscape}
-   % \clearpage
-   % \newpage
+
 }
