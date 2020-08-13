@@ -23,7 +23,7 @@
 \usepackage{xcolor}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage{flafter} % to force the table to be within it's section 
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, style=apa, citestyle=authoryear, natbib=true]{biblatex}
 % \usepackage[round]{natbib}   % omit 'round' option if you prefer square brackets
 % \bibliographystyle{plainnat}
 % \bibliographystyle{apalike} 
@@ -35,7 +35,8 @@
 \usepackage{pdfpages}
 \usepackage{grffile}
 \usepackage{makecell}
-\usepackage[acronym,automake]{glossaries}
+\usepackage[acronym, nomain, toc, automake]{glossaries}
+% \usepackage{glossaries-french}
 \usepackage{tikz}
 % \usepackage{draftwatermark}
 \addbibresource{selection.bib}
@@ -52,31 +53,13 @@
 \addto\captionsfrench{ \renewcommand{\bibname}{Références}}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}}
 \newcommand{\mysubparagraph}[1]{\paragraph{\textit{#1}}\mbox{}}
-\renewcommand{\tocbibname}{Bibliographie\label{chap:bib}}
+\renewcommand{\tocbibname}{Liste des références\label{chap:bib}}
 \renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
 % \linespread{1.213}
 \linespread{1.25}
 % 
 \makeglossaries
-\newacronym{iou}{IoU}{Intersection over Union}
-\newacronym{gt}{GT}{Ground truth}
-\newacronym{fps}{FPS}{Frames per second}
-\newacronym{fraps}{FRAPS}{Frames Per Second}
-\newacronym{flops}{FLOPS}{Floating-point Operations Per Second}
-\newacronym{tflops}{TFLOPS}{teraFLOPS}
-\newacronym{cpu}{CPU}{Central Processing Unit)}
-\newacronym{gpu}{GPU}{Ggraphics Processing Unit}
-\newacronym{apcpontjc}{APC-PJC}{Association des Piétons et Cyclistes du Pont Jacques-Cartier}
-\newacronym{fcn}{FCN}{fully Convolutional Network}
-\newacronym{l4t}{L4T}{Linux for Tegra}
-\newacronym{pjcci}{PJCCI}{Les Ponts Jacques Cartier et Champlain Incorporée}
-\newacronym{sdk}{SDK}{Software Development Kit}
-\newacronym{ssd}{SSD}{Solid State Drive}
-\newacronym{csv}{CSV}{Comma Separated Value}
-\newacronym{iot}{IoT}{Internet of Things}
-\newacronym{ia}{IA}{Intelligence Artificielle}
-\newacronym{am}{AM}{Apprentissage Machine}
-\newacronym{ap}{ap}{Apprentissage Profond}
+\input{acronyms.tex}
 % 
 \begin{document}
 \begin{titlepage} % Suppresses headers and footers on the title page
@@ -120,6 +103,7 @@
 \listoffigures{}
 \listoftables{}
 \printglossary[title=Liste des abréviations, toctitle=Liste des abréviations, type=\acronymtype]
+% \printglossary[type=\acronymtype]
 %----------------------------------------------------------------------------------------
 \newpage
 \pagenumbering{arabic}
@@ -160,16 +144,9 @@
 \input{sections/conclusion}
 %----------------------------------------------------------------------------------------
 \clearpage 
-\newpage
-{
-   \color{red}
-   \vspace{\baselineskip}
-   \noindent Il faut uniformiser le style. Il faut que les références dans le texte soient "(year, lastname)" et non "[n]"\todo{TODO}
-}
-\printbibliography[title={\bibname\label{bib:references}}] 
+\printbibliography[heading=bibintoc,title={Références\label{bib:references}}] 
 %----------------------------------------------------------------------------------------
 \clearpage 
-\newpage
 \section{Annexes}
 \input{sections/annexes}
 %----------------------------------------------------------------------------------------
