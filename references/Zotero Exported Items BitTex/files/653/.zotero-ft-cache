@@ -1,0 +1,397 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Create account 
+    Sign in
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    Previous
+    4 of 5
+    Next
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Add to List
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+Hongwai yu Jiguang Gongcheng/Infrared and Laser Engineering Volume 41, Issue 2, February 2012, Pages 523-530
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+Real-time embedded implementation of foreground/background segmentation algorithm (Article)
+
+    Zhang, H. a Email Author ,
+    Chang, Y. b ,
+    Li, F. a Email Author ,
+    Shen, Y. a
+    View Correspondence (jump link)
+
+View additional authors  
+Retrieving additional authors...
+
+    a Shanghai Institute of Technical Physics, Chinese Academy of Sciences, Shanghai 200083, China
+    b Military Representatives Office in Hangzhou of Fourth Department of PLA General Staff, Jiaxing 314033, China
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (8)
+
+Foreground/Background (FG/BG) segmentation is one of the most widely-used computer vision (CV) algorithms. Its basic algorithm takes advantages of correlation between background of different pixels or frames, predicts gray intensity for every pixel point and judges whether it belongs to foreground or background based on the prediction and actual value. Several FG/BG algorithms used in different situation were introduced firstly. Considering that those computationally expensive algorithms are hard to operate in real time using the traditional processor-based platform, its real-time embedded implementation was highlighted after this algorithm being verified. The design methodology and flow of reconfigurable computing (RC) which was an advanced method to implement those algorithms were introduced. In addition, several important issues about hardware implementation were discussed. A case of study to elaborate how it works was presented, and how to attach the implemented algorithm into the SoPC-based imaging system to achieve an integrated system was described.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Bluetooth | Vehicles | Wireless communication
+Prominence percentile: 20.762
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Author keywords
+FG/BG segmentation FPGA Reconfigurable computing SoPC
+Indexed keywords
+Engineering uncontrolled terms 	Design Methodology Embedded implementation Foreground/background Foreground/background segmentation Gray intensity Hardware implementations Integrated systems Pixel points Processor-based platform Real time Reconfigurable computing SoPC
+Engineering controlled terms: 	Computer vision Design Field programmable gate arrays (FPGA) Hardware Pixels Reconfigurable architectures
+Engineering main heading: 	Algorithms
+
+    ISSN: 10072276
+    Source Type: Journal
+    Original language: English
+
+    Document Type: Article
+
+View references (8)
+
+    References (8)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+Stauffer, C., Grimson, W.E.L.
+Learning patterns of activity using real-time tracking
+
+(2000)  IEEE Transactions on Pattern Analysis and Machine Intelligence , 22 (8), pp. 747-757.  Cited 2717 times .
+doi: 10.1109/34.868677
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+2
+	
+Yang, W., Wang, X., Moran, B., Zhang, Y., Zhang, Z., Wheaton, A., Cooley, N.
+Automated canopy temperature estimation via infrared thermography
+
+(2011)  Hongwai yu Jiguang Gongcheng/Infrared and Laser Engineering , 40 (1), pp. 169-175.  Cited 3 times .
+
+    Pour obtenir le document(opens in a new window)
+
+3
+	
+Kim, K., Chalidabhongse, T.H., Harwood, D., Davis, L.
+Real-time foreground-background segmentation using codebook model
+
+(2005)  Real-Time Imaging , 11 (3), pp. 172-185.  Cited 1139 times .
+doi: 10.1016/j.rti.2004.12.004
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+4
+	
+Wu, W., Peng, J.
+Algorithm of infrared background suppression and small target detection
+(2003)  Infrared and Laser Engineering , 32 (2), pp. 148-152.  Cited 7 times .
+
+     
+
+5
+	
+Xu, J.
+Research on the detection of small and dim targets in infrared images
+(2001) .  Cited 13 times .
+Xian: Xidian University, in Chinese
+
+     
+
+6
+	
+Yuan, K., Xiao, H., He, W.
+Survey on machine vision systems based on FPGA
+(2010)  Computer Engineering and Applications , 46 (36), pp. 1-6.  Cited 4 times .
+in Chinese
+
+     
+
+7
+	
+Hauck, S., DeHon, A.
+(2008)  Reconfigurable Computing: The Theory and Practice of FPGA-Based Computation .  Cited 269 times .
+San Francisco: Morgan Kaufmann
+
+     
+
+8
+	
+Wang, B.-J., Liu, S.-Q., Cheng, Y.-B.
+Real-time image processing system for IRFPA based on FPGA
+
+(2006)  Hongwai yu Jiguang Gongcheng/Infrared and Laser Engineering , 35 (6), pp. 655-658.  Cited 4 times .
+
+    Pour obtenir le document(opens in a new window)
+
+  Zhang, H.; Shanghai Institute of Technical Physics, Chinese Academy of Sciences, China; email: zhanghaojun1985@hotmail.com
+© Copyright 2012 Elsevier B.V., All rights reserved.
+
+    Back to results
+    Previous
+    4 of 5
+    Next
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+2
+Citations in Scopus
+0.34
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+No metrics available.
+see details
+Cited by 2 documents
+
+    Foreground image denoising based on layered filter
+    Gao, Z. , Lin, X. , Wu, P.
+    (2014) Shuju Caiji Yu Chuli/Journal of Data Acquisition and Processing
+
+    Fast and memory-saving algorithm for moving object detection from a moving camera
+    Wu, M. , Xu, J. , Zhou, Z.
+    (2013) Hongwai yu Jiguang Gongcheng/Infrared and Laser Engineering
+
+View all 2 citing documents
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+
+    Image bit-planes representation for moving object detection in real-time video surveillance
+    Lin, C.-Y. , Jian, Z.-Y. , Lin, W.-Y.
+    (2016) 2016 IEEE International Conference on Consumer Electronics-Taiwan, ICCE-TW 2016
+
+    Smart Detection of Vehicle in Illegal Parking Area by Fusing of Multi-features
+    Chunyang, M. , Xing, M. , Panpan, Z.
+    (2016) Proceedings - NGMAST 2015: The 9th International Conference on Next Generation Mobile Applications, Services and Technologies
+
+    Automatic light control system using fish-eye lens camera
+    Gil, J.-I. , Mahmoudpour, S. , Kim, M.
+    (2015) 2015 Frontiers of Computer Vision, FCV 2015
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Bluetooth; Vehicles; Wireless communication","id":84130,"uri":"Topic/84130","prominencePercentile":20.762142,"prominencePercentileString":"20.762","overallScholarlyOutput":0},"dig":"c0bb40a519db3dae6c6b4335b0a1bacbf4b6c4a7e4457513c11c5f8920c2a4fb"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+    Grouped authors
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+

@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en-US"><head class="at-element-marker">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE, NO-STORE">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta name="verify-v1" content="M5q4CxMVJyf1WE5UwVmHfV8q3LK1vh/3qmo894V0Pqg=">
+<script src="https://js-agent.newrelic.com/nr-1130.min.js"></script><script async="" src="pendo.js"></script><script type="application/javascript" defer="defer" async="" src="azaleadTag.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQQPUFdVCRADVVVXAwABVA=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(21)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(21)(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(21)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(21)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(16);n.exports={generateTraceHeader:r}},{}],11:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(12),u=t(10).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(15),w=t(14),v=window.XMLHttpRequest;s.features.xhr=!0,t(9),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],12:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],13:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],14:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],15:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],16:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],18:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],19:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],20:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],21:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:x,userAgent:d};t(13),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(20)},{}]},{},["loader",2,11,4,3]);</script><link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ojplelelocihfchkdaebocpankipadmp">
+<meta name="robots" content="NOARCHIVE, NOFOLLOW, NOINDEX">
+<meta name="description" content="Elsevier’s Scopus, the largest abstract and citation database of peer-reviewed literature. Search and access research from the science, technology, medicine, social sciences and arts and humanities fields.">
+<meta name="referrer" content="unsafe-url">
+<meta name="dc.identifier" content="10.1109/ISQED.2018.8357325">
+<style type="text/css">
+.jsEnabled {display:none !important;}
+</style>
+<link rel="SHORTCUT ICON" href="https://www-scopus-com.ezproxy.usherbrooke.ca/static/proteus-images/favicon.ico?ver=1.0">
+<script type="text/javascript" src="masterjquery.js"></script>
+<script language="javascript" type="text/javascript">
+window.$ = window.jQuery;
+</script>
+<script>
+var feMetricUrl = new Object();
+feMetricUrl = 'https://els-eum.elsst.com';
+</script>
+<link rel="stylesheet" type="text/css" media="all" href="ScopusMasterLayout">
+<link rel="stylesheet" type="text/css" media="all" href="xslPages">
+<link rel="stylesheet" type="text/css" media="all" href="d3charts">
+<script type="text/javascript" src="RecordPageTopMaster.js"></script>
+<script src="tag" type="application/javascript"> </script> 
+<script type="text/javascript">
+var MendeleybookmarkletUrl = 'https://www.mendeley.com/minified/bookmarklet.js';
+writeJavaScriptCookie();
+var isPreviewPage = false;
+var isLoggedInUser = false;
+var isShibUser = false;
+var isIndividuallyAuthenticated = false;
+</script>
+<script type="text/javascript">
+writeJavaScriptCookie();
+isLoggedInUser = 'true' === 'true';
+isShibUser = ('IPPROFILE'==="SHIBBOLETHANON")?true:false;
+var isIndividual = 'true' === 'true';
+isIndividuallyAuthenticated = isLoggedInUser || isIndividual;
+</script>
+<script type="text/javascript">
+var isIDPlusEnabled = 'true' === 'true';
+var isCarsForIDPlus = 'true' === '';
+var isCARSBulkRegisterPage = 'true' === '';
+var isCARSRegisterPage = 'true' === '';
+var isCARSPathChoicePage = 'true' === '';
+var isCARSLoginFullPage = 'true' === '';
+</script>
+<script>
+var smapiVars = {};
+smapiVars["AFW_AUTHOR_MAX_SELECT_COUNT"] = "50";
+smapiVars["MAX_SOURCE_RESULTS_DISPLAYED"] = "1000";
+</script>
+<title>
+Scopus - Document details | Signed in
+</title>
+<script type="text/javascript" src="SiteCatalystTop.js"></script>
+<script type="text/javascript">
+var pageData = {
+page: {},
+visitor: {}
+};
+pageDataUtil.loadPageDataObject("false","132.210.236.20","en_US","","45783156","ae:REG:U_P:INST:IP",
+"","51264","", "University of Sherbrooke");
+</script>
+<script src="satelliteLib-c74074f9c1cbd68a79f7ff7103e0cdc14b7e5f41.js"></script><script src="mbox-contents-d1bd66003147215a5f3f760888b29601943f6f40.js"></script><script src="satellite-565363fc64746d2b76000ee1.js"></script>
+<link id="plx-css-all" type="text/css" rel="stylesheet" href="all.css"><script type="text/javascript" src="xss.js"></script><script src="s-code-contents-c38c4ce3a68e75c844e742335f3f25700e586003.js"></script></head>
+<body onload="onBodyLoad();" data-page-type="">
+<div id="mainSkipNav" class="skipnav list-group">
+<a href="#skip1" class="list-group-item">Skip Main Navigation Links</a>
+<a href="#skiptofooter" class="list-group-item">Jump to Footer</a>
+</div>
+<div class="container-fluid">
+<div class="row-fluid mainRow" id="rowMain">
+<div id="contentContainer" class="col-md-12 fullHeightHack content">
+<div class="row">
+<div class="col-md-12 globalNavigation" id="globalNavigation">
+<header>
+<a name="top" id="top"></a>
+<input id="txGid" value="B4B4A1DED8994F34FB81600EE499C9D3.wsnAw8kcdt7IPYLO0V48gA:357" type="hidden"> 
+<script>
+var prs = {rt: function(label,ts) { this[label]=(ts||ts==0?ts:new Date().getTime());}};	
+var continuePcrRecording = true;
+var PCR_SCR_ATTRIBUTE_NAME = 'data-reportRenderTime';
+function recordRendering (primaryContentElements, mutations) {
+if (continuePcrRecording) {
+primaryContentElements.each (function () {
+for (var i = 0; i < mutations.length; i++) {
+var changedNode = mutations[i].target;
+if (this === changedNode || $.contains (this, changedNode)) {
+var contentSignificance = $(this).attr (PCR_SCR_ATTRIBUTE_NAME);
+prs.rt (contentSignificance);
+}
+}
+});
+}
+};
+MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+var domChangeListener = new MutationObserver (function (mutations) {
+// fired when the document changes - look for PCR / SCR changes
+recordRendering ($('[' + PCR_SCR_ATTRIBUTE_NAME + '="pcr"]'), mutations);
+recordRendering ($('[' + PCR_SCR_ATTRIBUTE_NAME + '^="scr"]'), mutations);
+});
+domChangeListener.observe (document, {childList: true, attributes: true, characterData: true, subtree: true});
+</script>     
+<div class="col-md-1">
+<h1 class="logo">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/home.uri?zone=header&amp;origin=searchbasic" title="Select to go to the Scopus main search page">
+Scopus			
+</a>
+</h1>
+</div> 
+<nav class="navbar col-md-11 globalNavigation">
+<ul id="globalLinks" class="nav navbar-nav navbar-right verticalAlign">          
+<li class="active">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/form.uri?zone=TopNavBar&amp;origin=recordpage&amp;display=advanced" title="Search for documents, authors and affiliations." target="_top">
+<span class="anchorText">Search</span>
+</a>
+</li>
+<li>
+<a id="sourceBrowseId" href="https://www-scopus-com.ezproxy.usherbrooke.ca/sources.uri?zone=TopNavBar&amp;origin=recordpage" title="Browse or search the indexed sources/journals by title." target="_top">
+<span class="anchorText">Sources</span>
+</a>
+</li>
+<li>
+<a id="headerMyAlerts" href="https://www-scopus-com.ezproxy.usherbrooke.ca/alert/form/MyAlerts.uri?zone=TopNavBar&amp;origin=recordpage" title="Manage your e-mail alerts." target="_top">
+<span class="anchorText">Alerts</span>
+</a>
+</li>
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/results/storedList.uri?listId=myDocList&amp;origin=recordpage&amp;zone=TopNavBar" title="Manage your temporary list of documents and saved lists." target="_top">
+<span class="anchorText">Lists</span>
+</a>
+</li>
+<li id="helpMenu">
+<div class="dropdownGroup">
+<button type="button" title="Select to display help and Contact options" class="btn btn-link dropdown-toggle icon-wide" id="helpMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="anchorText">Help</span> 
+<span class="ico-navigate-down" aria-hidden="true"></span>
+</button>
+<div id="helpMenuDropdown" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="helpMenu">
+<span class="dropdownHeader"></span> 
+<span class="dropdownContent">
+<span class="dropdownContentWrap">
+<span id="dropdownTitle" class="row" tabindex="-1"></span>
+<ul class="list-unstyled">
+<li role="presentation">
+<a role="menuitem" href="#" target="globalHelp" onclick="return openGlobalhelp('/standard/help.uri?zone=TopNavBar&amp;origin=recordpage&amp;topic=14190','globalHelp',760,570,0)" title="View Scopus help files (opens in a new window)" class="secondaryLink">
+<span class="anchorText">Help</span>
+</a>
+</li>
+<li role="presentation">
+<a role="menuitem" href="#" target="globalHelp" onclick="return openGlobalhelp('/standard/tutorial.uri?zone=TopNavBar&amp;origin=recordpage&amp;module=revdoc','globalHelp',760,570,0)" title="Select to view tutorials (opens in a new window)" class="secondaryLink">
+<span class="anchorText">Tutorials</span>
+</a>
+</li>
+<li role="presentation">
+<a role="menuitem" href="#" target="_blank" title="Contact us (opens in a new window)" onclick="return openGlobalhelp('/standard/contactForm.uri?zone=TopNavBar&amp;origin=recordpage','globalHelp',760,570,0)" class="secondaryLink">
+<span class="anchorText">Contact us</span>
+</a>
+</li>
+</ul>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" id="closeHelpMenu" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+<span class="sr-only">Close help menu</span>
+</button>
+</span>
+</span> 
+<span class="dropdownFooter"></span>
+</div>
+</div>
+</li>
+<li id="sciValLink">
+<a href="https://www.scival.com/home" target="_blank" class="externalLink">
+<span class="anchorText">SciVal</span>
+<span class="ico-external-link-after" aria-hidden="true"></span>
+</a>
+</li>
+<style type="text/css">
+/*
+* IDPLUS - START
+*
+* After IDPlus, jcars.css and cars.css wont be loaded into Scopus. Adding below custom CSS for the login link and user name dropdown in order to achieve the same look and feel
+* Since these classes are required in all the pages of the application, it should be promoted to above level (document.css)
+*/
+/* Adjust styling for register link to appear like a button */
+#signin_registerlink {
+background-color: #007398;
+color: #fff;
+margin-right: 1rem;
+border: none;
+padding: .6rem .75rem;
+}
+/* Adjust hover styling for register link to appear like a button */
+#signin_registerlink:hover,
+#signin_registerlink:focus {
+background: #e9711c;
+text-decoration: none;
+}
+/* Adjust styling for disabled register link */
+#signin_registerlink.disabled,
+#signin_registerlink.disabled:hover,
+#signin_registerlink.disabled:focus {
+background: #b9b9b9;
+cursor: not-allowed;
+}
+/* Increase the width of the user name dropdown menu */
+#username_link-data {
+width: 25rem;
+}
+/* Adjust the position of the user name dropdown menu when opened from the spine */
+.spine #username_link-data {
+left: -26rem;
+top: 3rem;
+line-height: normal;
+}
+/* Override the line-height for the user name dropdown as its getting affected by ".spine #spineHeading a" CSS class from document.css */
+.spine #username_link-data a {
+line-height: normal;
+}
+/* Adjust login/username link styles for spine color, display and ellipsis */
+.spine #username_spine > a {
+display: inline-block;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+max-width: 10rem;
+}
+/* Helper class for greyish black background */
+.greyishBlackBg {
+background: #323232!important;
+}
+.marginTop1Half {
+margin-top: 1.5rem!important;
+}
+.marginBottom1Half {
+margin-bottom: 1.5rem!important;
+}
+/* Anchor with white link text - like the ones used in spine */
+a.whiteColor {
+color: #fff;
+}
+/* Anchor with white link text - like the ones used in spine */
+a.whiteColor:active,
+a.whiteColor:focus,
+a.whiteColor:hover {
+border: none;
+color: #e9711c;
+text-decoration: none;
+}
+/* Set width for login prompt (ID+ login popup) */
+.loginPromptMenu {
+width: 22rem;
+}
+/* Adjust left alignment for spine login prompt (ID+ login popup) */
+.spine .loginPromptMenu {
+left: -23rem;
+}
+/* Adjust left alignment for spine login prompt login prompt (ID+ login popup) under my scopus */
+.spine #myScopus .loginPromptMenu {
+left: -24rem;
+}
+/* Adjust margin for the login dropdown alignment as the arrow is overlapping with the btn-link element */
+.btn-link + .dropdown-menu.loginPromptMenu.dropdown-menu-left {
+margin-left: 1rem;
+margin-top: 1rem;
+}
+/* Adjust margin for the login dropdown alignment as the arrow is overlapping with the btn element */
+.btn + .dropdown-menu.loginPromptMenu.dropdown-menu-left,
+.btn + .dropdown-menu.loginPromptMenu.dropdown-menu-right {
+margin-top: 1rem;
+margin-right: 0.5rem;
+}
+/* Adjust color for help icon inside the dropdown menu for profile access link which is inside the panel-title as its getting overridden by ".spine .panel-title [class^="ico-"]" in document.css*/
+/* Probably the class in document.css should be modified to .spine .panel-title [class^="ico-"]:not(.spine .panel-title .loginPromptMenu [class^="ico-"]) */
+.spine .panel-title .loginPromptMenu [class^="ico-"] {
+color: inherit;
+}
+/* Adjust padding for the signin button as its getting overridden by the "#quickLinks .nav button" class from page.css */
+/* Probably the class in page.css should be modified to #quickLinks .nav button:not(#quickLinks .nav .loginPromptMenu button) */
+#quickLinks .nav .loginPromptMenu button {
+padding: .25rem .50rem;
+}
+/* Adjust change org dropdown */
+#username_link-data {
+top: 1.25rem;
+width: 25rem;
+}
+#username_link-data-anon {
+right: 1rem;
+top: 1.25rem;
+width: 25rem;
+}
+/* Adjust height and width for paywall feature images */
+.paywallImg img{
+width : 300px;
+height : 160px;
+}
+/*
+* IDPLUS - END
+*/
+</style>
+<li id="usernameList">
+<div id="username" class="loggedIn dropdownGroup pull-left">
+<a href="javascript:void(0);" id="username_link" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+<span class="anchorText">Vincent Le Falher</span> 
+<span class="ico-navigate-down" aria-hidden="true"></span>
+</a>
+<div id="username_link-data" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="username_link">
+<span class="dropdownHeader"></span>
+<span class="dropdownContent">
+<span class="dropdownContentWrap">
+<span id="dropdownTitle" class="row" tabindex="-1"></span>
+<ul class="list-unstyled">
+<li role="presentation">
+<div><h4>My organization</h4></div>
+</li>
+<li role="presentation" id="orgNameItem">
+<span>University of Sherbrooke, Universite de Sherbrooke - Canada Consortium</span>
+</li>
+<li role="presentation" id="logoutItem">
+<a role="menuitem" href="https://id-elsevier-com.ezproxy.usherbrooke.ca/ext/ae-logout?platSite=SC%2Fscopus&amp;return_to=https%3A%2F%2Fwww.scopus.com%2Flogout.uri" title="Sign out" class="secondaryLink">
+<span class="anchorText">Sign out</span>
+</a>
+</li>
+</ul>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" id="closeIDMenu" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+<span class="sr-only">Close help menu</span>
+</button>
+</span>
+</span>			
+</div>
+</div>
+</li>
+<div id="loginPromptWrap" class="hidden">
+<div class="dropdownGroup registerSigninPrompt">
+<div class="dropdown-menu loginPromptMenu">
+<span class="dropdownHeader"></span>
+<span class="dropdownContent">
+<span class="dropdownContentWrap">
+<h4 class="row" tabindex="-1">
+Sign in or create account
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/standard/help.uri?topic=11220" class="btn-link" target="globalHelp" onclick="return openGlobalhelp('/standard/help.uri?topic=11220','globalHelp',760,570,0)" title="Learn more about signing in or creating an account with Scopus (opens in a new window)">
+<span class="sr-only">Learn more about signing in or creating an account with Scopus (opens in a new window)</span>
+<span class="ico-help-icon fontMedium" aria-hidden="true"></span>
+</a>
+</h4>
+<p>To use this feature you must be a registered user of Scopus.</p>
+<button class="btn btn-primary btn-sm pull-right dropdownActionButton" type="button" title="Sign in or create an account with Scopus">
+<span class="btnText">Sign in or create account</span>
+</button>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+<span class="sr-only">Close popup</span>
+</button>
+</span>
+</span>
+<span class="dropdownFooter"></span>
+</div>
+</div>
+</div>
+<li id="spineBtn">
+<button type="button" class="btn btn-lg btn-link" id="spineToggle" aria-controls="spineContainer" aria-expanded="false">
+<span class="hamburgerIcon"></span> 
+<span class="sr-only">
+Expand navigation/Collapse navigation
+</span>
+</button>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<a name="skip1" id="skip1"></a> 
+<header class="headerBackground">
+<h1 class="documentHeader"><span id="pageTitleHeader"> Document details</span>
+</h1>
+</header>
+</div>
+</div>							
+<div class="row">
+<div id="contentWrapper" class="col-md-12">
+<div id="alertArea" aria-live="polite" aria-atomic="true" class="">
+</div>
+<div id="container" role="main">
+<a name="skip1" id="skip1"></a> 
+<script>
+var isAuthListEnabled = 'true' === 'true';
+</script> 
+<div id="resultsPageAlertArea" aria-live="polite" aria-atomic="true">
+</div>
+<div id="clusterMessages" aria-live="polite" aria-atomic="true" class="marginRight2 marginLeft2"></div>
+<div class="row wrapper whiteBg">
+<div id="profilelayout" class="row">
+<div id="profileleftside" class="col-md-9">
+<div id="docDetailPage">
+<section id="topResultListLinks1"><nav class="navigationLink marginBottom1" id="refNavLinksId">
+<ul class="list-inline">
+<li class="backToResults noPaddingLeft"> 
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/results/results.uri?sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;offset=1&amp;origin=recordpage&amp;citeCnt=0">
+<span class="ico-navigate-left" aria-hidden="true"></span>
+<span class="anchorText secondaryLink">Back to results</span>
+</a>
+</li>
+<li class="recordPageCount"> 
+1<span>of</span>1
+</li>
+</ul></nav>
+</section>
+<section id="quickLinks" class="row">
+<ul class="nav navbar-nav">
+<li id="exportFeature">
+<form class="lnkEnabled">
+<button id="directExport" class="btn-link btn-sm clickAction" type="button" title="Export this document directly to an RIS file." data-type="directExport"><span class="btnText">RIS export</span></button><button type="button" data-type="exportRecordLink" class="btn-link btn-sm clickAction arrowDownExport exportResultsAf" id="export_results"><span class="ico-navigate-down" aria-hidden="true"></span></button>
+</form>
+</li>
+<li id="downloadFeature">
+<button class="btn-link btn-sm" type="button" title="Download the abstract or full text of the document, depending on availability" id="ddmDownloadButton">
+<span class="ico-download" aria-hidden="true"></span>
+<span class="btnText">Download</span>
+</button>
+</li>
+<li id="printFeature">
+<button type="button" onclick="window.location='/citation/output.uri?origin=recordpage&amp;view=&amp;src=s&amp;eid=2-s2.0-85047958236&amp;outputType=print';" class="btn-link btn-sm" title="Print this document">
+<span class="ico-printer-2" aria-hidden="true"></span>
+<span class="btnText">Print</span>
+</button>
+</li>
+<li id="emailFeature">
+<button onclick="window.location='/citation/output.uri?origin=recordpage&amp;view=&amp;src=s&amp;eid=2-s2.0-85047958236&amp;outputType=email';" class="btn-link btn-sm" title="Email this document">
+<span class="ico-email" aria-hidden="true"></span>
+<span class="btnText">E-mail</span>
+</button>
+</li>
+<li id="saveToPdfFeature">
+<button onclick="window.location='/citation/output.uri?origin=recordpage&amp;view=&amp;src=s&amp;eid=2-s2.0-85047958236&amp;outputType=exportPdf';" class="btn-link btn-sm" title="Save this document to PDF">
+<span class="ico-pdf-file" aria-hidden="true"></span>
+<span class="btnText">Save to PDF</span>
+</button>
+</li>
+<li id="addSaveToList">
+<button class="btn-link btn-sm" id="saveToList" title="Add this document to a saved list">
+<span class="ico-star" aria-hidden="true"></span>
+<span class="btnText">Save to list</span>
+</button>
+<div class="modal fade" id="saveToList-data" tabindex="-1" role="dialog" aria-labelledby="saveToListmodalTitle"></div> 				
+</li>
+<li id="moreMenu">
+<menu class="dropdownGroup">
+<button class="btn-link btn-sm" title="Show more available options" data-toggle="dropdown" aria-expanded="false">
+<span class="btnText">More...</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+<div class="dropdown-menu dropdown-menu-right">
+<span class="dropdownHeader" tabindex="-1"></span>
+<span class="dropdownContent">
+<span class="dropdownContentWrap">
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" id="closeHelpMenu" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+<span class="sr-only">Close help menu</span>
+</button>
+<ul class="list-unstyled">
+<li id="bibliographyLink">
+<button class="btn-link btn-sm" onclick="window.location='/citation/output.uri?origin=recordpage&amp;view=&amp;src=s&amp;eid=2-s2.0-85047958236&amp;outputType=quikbib';" title="Create a bibliography for this document">
+<span class="ico-create-bibliography" aria-hidden="true"></span>
+<span class="btnText">Create bibliography</span>
+</button>
+</li>		
+</ul>
+</span>
+</span>
+<span class="dropdownFooter"></span>
+</div>
+</menu>
+</li>
+</ul>
+</section>
+<section id="outwardLinks">
+<a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d19483287%26isbn%3d9781538612149%26volume%3d2018-March%26issue%3d%26spage%3d432%26epage%3d436%26pages%3d432-436%26artnum%3d%26date%3d2018%26id%3ddoi%3a10.1109%252fISQED.2018.8357325%26title%3dProceedings%2b-%2bInternational%2bSymposium%2bon%2bQuality%2bElectronic%2bDesign%252c%2bISQED%26atitle%3dLow%2bcost%2band%2bpower%2bCNN%252fdeep%2blearning%2bsolution%2bfor%2bautomated%2bdriving%26aufirst%3dM.%26auinit%3dM.%26auinit1%3dM%26aulast%3dMody&amp;locationID=1&amp;categoryID=6&amp;eid=2-s2.0-85047958236&amp;issn=19483287&amp;linkType=TemplateLinking&amp;year=2018&amp;zone=outwardlinks&amp;origin=recordpage&amp;dig=ee77550286804d06e9fc3b9fbd0cf453&amp;recordRank=" target="_blank"><img class="outwardLink" src="sfx" alt="Pour obtenir le document(opens in a new window)" title="Pour obtenir le document(opens in a new window)" width="101" height="15"></a><span class="divider">|</span><span class="divTextLink"><a class="outwardTextLink" title="View at Publisher(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=https%3a%2f%2fdoi.org%2f10.1109%2fISQED.2018.8357325&amp;locationID=1&amp;categoryID=4&amp;eid=2-s2.0-85047958236&amp;issn=19483287&amp;linkType=ViewAtPublisher&amp;year=2018&amp;origin=recordpage&amp;dig=97b642b1aefebeb985a7380f669030fe&amp;recordRank=" target="_blank">View at Publisher</a></span><span class="divider">|</span>
+</section>
+<div class="modal fade exportModalCnt" id="export_results-data" tabindex="-1" role="dialog" aria-labelledby="exportmodalTitle" data-isscivalaccess="false">
+<div class="modal-dialog modalXl" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+<h2 class="modal-title h4" id="exportmodalTitle">Export document settings
+<a class="exportHelp noBorder" href="#" title="Get help with export (Opens in a new window)" onclick="return openGlobalhelp('/standard/help.uri?zone=TopNavBar&amp;origin=export&amp;topic=11234&amp;anchor=anchor','globalHelp',760,570,0);">
+<span class="sr-only">Help/More Information</span>
+<span class="ico-help fontMedium textCenter" aria-hidden="true"></span>
+</a>
+</h2>
+</div>
+<div class="modal-body">
+<p id="selectedDocsForExport" class="sub-heading-margin-bottom"></p>
+<div class="row marginLeft1">
+<div id="exportMethod" class="col-md-12">
+<p>
+Select your method of export
+</p>
+<ul id="exportList" class="list-group radio lightGreyBorderBottom paddingBottom1 marginBottom1">
+<li class="radio-inline valignTop">
+<input id="saveToMed" name="exportRadio" type="radio">
+<label class="radio-label" for="saveToMed">
+<img src="logo_mendeley_red" alt="Mendeley">
+</label>
+</li>
+<li class="radio-inline valignTop">
+<input id="refWorkDir" name="exportRadio" type="radio">
+<label class="radio-label" for="refWorkDir">
+<img src="icon_refwork" alt="RefWorks">
+</label>
+</li>
+<li class="radio-inline valignTop">
+<input id="RIS" name="exportRadio" type="radio">
+<label class="radio-label" for="RIS">		               				
+<span class="">RIS Format
+<div class="fontSmall">
+<em>EndNote,</em><br>
+<em>Reference Manager</em>
+</div>
+</span>
+</label>
+</li>
+<li class="radio-inline valignTop">
+<input id="CSV" name="exportRadio" type="radio">
+<label class="radio-label" for="CSV">
+<span class="">
+CSV <div class="fontSmall"><em>Excel</em></div>
+</span>
+</label>
+</li>
+<li class="radio-inline valignTop">
+<input id="BIB" name="exportRadio" type="radio">
+<label class="radio-label" for="BIB">
+<span class="">
+BibTeX
+</span>
+</label>
+</li>
+<li class="radio-inline valignTop">
+<input id="TEXT" name="exportRadio" type="radio">
+<label class="radio-label" for="TEXT">
+<span class="">
+Plain Text <div class="fontSmall"><em>ASCII in HTML</em></div>
+</span>
+</label>
+</li>
+</ul>		           		
+</div>
+</div>
+<div id="normalExport" class="marginLeft1">
+<div class="row" id="exportSpecifyFields">
+<div class="col-md-12">
+<p>What information do you want to export?</p>
+<table id="exportTable" class="table table-responsive">
+<thead>
+<tr id="exportCheckboxHeaders">
+<th id="citationGroupCheckboxes" class="noPaddingLeft">
+<span class="checkbox citationGroupCheckboxes">
+<input id="selectedCitationInformationItemsAll-Export" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedCitationInformationItemsAll" type="checkbox">
+<label for="selectedCitationInformationItemsAll-Export" class="checkbox-label">Citation information</label>
+</span>
+</th>
+<th id="bibliographicalInformationCheckboxes">
+<span class="checkbox">
+<input name="selectedBibliographicalInformationItemsAll" value="on" onclick="selectDeselectCheckBoxs(this)" id="selectedBibliographicalInformationItemsAll-Export" type="checkbox">
+<label for="selectedBibliographicalInformationItemsAll-Export" class="checkbox-label">Bibliographical information</label></span>
+
+</th>
+<th id="abstractInformationCheckboxes">
+<span class="checkbox">
+<input id="selectedAbstractInformationItemsAll-Export" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedAbstractInformationItemsAll" type="checkbox">
+<label for="selectedAbstractInformationItemsAll-Export" class="checkbox-label">Abstract &amp; keywords</label>
+</span>
+</th>
+<th id="fundInformationCheckboxes">
+<span class="checkbox">
+<input id="selectedFundInformationItemsAll-Export" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedFundInformationItemsAll" type="checkbox">
+<label for="selectedFundInformationItemsAll-Export" class="checkbox-label">Funding details</label>
+</span>
+</th>
+<th id="otherInformationCheckboxes">
+<span class="checkbox">
+<input id="selectedOtherInformationItemsAll-Export" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedOtherInformationItemsAll" type="checkbox">
+<label for="selectedOtherInformationItemsAll-Export" class="checkbox-label">Other information</label>
+</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="citationCheckBoxes" class="noPaddingLeft">
+<ul class="list-group citationGroupCheckboxes">
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export1" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Authors_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export1" class="checkbox-label">Author(s)</label>
+</li>
+<li id="authorIdChckbox" class="checkbox displayNone">
+<input id="selectedCitationInformationItems-Export11" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_AuthorIds_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export11" class="checkbox-label">Author(s) ID</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export2" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Title_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export2" class="checkbox-label">Document title</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export3" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Year_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export3" class="checkbox-label">Year</label>
+</li>
+<li id="eidChckbox" class="checkbox displayNone">
+<input id="selectedCitationInformationItems-Export8" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_EID_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export8" class="checkbox-label">EID</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export4" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_SourceTitle_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export4" class="checkbox-label">Source title</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export5" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Volume_Issue_ArtNo_PageStart_PageEnd_PageCount_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export5" class="checkbox-label">volume, issue, pages</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export6" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_CitedBy_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export6" class="checkbox-label">Citation count</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export7" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_DocumentType_Source_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export7" class="checkbox-label">Source &amp; document type</label>
+</li>
+<li id="pubStageChckbox" class="checkbox displayNone">
+<input id="selectedCitationInformationItems-Export12" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_PublicationStage_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export12" class="checkbox-label">Publication Stage</label>
+</li>
+<li class="checkbox">
+<input id="selectedCitationInformationItems-Export9" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_DOI_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export9" class="checkbox-label">DOI</label>
+</li>
+<li id="accessChckbox" class="checkbox displayNone">
+<input id="selectedCitationInformationItems-Export10" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_ACCESSTYPE_" name="selectedCitationInformationItems" type="checkbox">
+<label for="selectedCitationInformationItems-Export10" class="checkbox-label">Access Type</label>
+</li>
+</ul>
+</td>
+<td id="bibiliographyCheckboxes">
+<ul class="list-group">
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_Affiliations_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export1" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export1" class="checkbox-label">Affiliations</label>
+</li>
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_ISSN_ISBN_CODEN_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export2" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export2" class="checkbox-label">Serial identifiers (e.g. ISSN)</label>
+</li>					
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_PubMedID_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export4" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export4" class="checkbox-label">PubMed ID</label>
+</li>
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_Publisher_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export5" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export5" class="checkbox-label">Publisher</label>
+</li>
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_Editors_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export6" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export6" class="checkbox-label">Editor(s)</label>
+</li>
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_LanguageOfOriginalDocument_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export7" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export7" class="checkbox-label">Language of original document</label>
+</li>
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_CorrespondenceAddress_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export8" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export8" class="checkbox-label">Correspondence address</label>
+</li>
+<li class="checkbox">
+<input name="selectedBibliographicalInformationItems" value="_AbbreviatedSourceTitle_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export9" type="checkbox">
+<label for="selectedBibliographicalInformationItems-Export9" class="checkbox-label">Abbreviated source title</label>
+</li>
+</ul>
+</td>
+<td id="abstractCheckboxes">
+<ul class="list-group">
+<li class="checkbox">
+<input id="selectedAbstractInformationItems-Export1" onclick="selectDeselectSubCheckBoxs(this)" value="_Abstract_" name="selectedAbstractInformationItems" type="checkbox">
+<label for="selectedAbstractInformationItems-Export1" class="checkbox-label">Abstract</label>
+</li>
+<li class="checkbox">
+<input id="selectedAbstractInformationItems-Export2" onclick="selectDeselectSubCheckBoxs(this)" value="_AuthorKeywords_" name="selectedAbstractInformationItems" type="checkbox">
+<label for="selectedAbstractInformationItems-Export2" class="checkbox-label">Author keywords</label>
+</li>
+<li class="checkbox">
+<input id="selectedAbstractInformationItems-Export3" onclick="selectDeselectSubCheckBoxs(this)" value="_IndexKeywords_" name="selectedAbstractInformationItems" type="checkbox">
+<label for="selectedAbstractInformationItems-Export3" class="checkbox-label">Index keywords</label>
+</li>
+</ul>
+</td>
+<td id="fundingCheckboxes">
+<ul class="list-group">
+<li class="checkbox">
+<input id="selectedFundInformationItems-Export1" onclick="selectDeselectSubCheckBoxs(this)" value="_Number_" name="selectedFundInformationItems" type="checkbox">
+<label for="selectedFundInformationItems-Export1" class="checkbox-label">Number</label>		
+</li>
+<li class="checkbox">
+<input id="selectedFundInformationItems-Export2" onclick="selectDeselectSubCheckBoxs(this)" value="_Acronym_" name="selectedFundInformationItems" type="checkbox">
+<label for="selectedFundInformationItems-Export2" class="checkbox-label">Acronym</label>
+</li>
+<li class="checkbox">
+<input id="selectedFundInformationItems-Export3" onclick="selectDeselectSubCheckBoxs(this)" value="_Sponsor_" name="selectedFundInformationItems" type="checkbox">
+<label for="selectedFundInformationItems-Export3" class="checkbox-label">Sponsor</label>
+</li>
+<li class="checkbox">
+<input id="selectedFundInformationItems-Export4" onclick="selectDeselectSubCheckBoxs(this)" value="_Text_" name="selectedFundInformationItems" type="checkbox">
+<label for="selectedFundInformationItems-Export4" class="checkbox-label">Funding text</label>
+</li>
+</ul>
+</td>
+<td id="otherInfoCheckboxes">
+<ul class="list-group">
+<li class="checkbox"><input id="selectedOtherInformationItems-Export1" onclick="selectDeselectSubCheckBoxs(this)" value="_Manufacturers_Tradenames_" name="selectedOtherInformationItems" type="checkbox">
+<label for="selectedOtherInformationItems-Export1" class="checkbox-label">Tradenames &amp; manufacturers</label>
+</li>
+<li class="checkbox">
+<input name="selectedOtherInformationItems" value="_ChemicalsCAS_MolecularSequenceNumbers_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedOtherInformationItems-Export2" type="checkbox">
+<label for="selectedOtherInformationItems-Export2" class="checkbox-label">Accession numbers &amp; chemicals</label>
+</li>
+<li class="checkbox">
+<input name="selectedOtherInformationItems" value="_ConferenceName_ConferenceDate_ConferenceLocation_ConferenceCode_Sponsors_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedOtherInformationItems-Export3" type="checkbox">
+<label for="selectedOtherInformationItems-Export3" class="checkbox-label">Conference information</label>
+</li>
+<li class="checkbox">
+<input id="selectedReferenceInformationItems-Export" value="_References_" name="selectedReferenceInformationItems" onclick="selectDeselectSubCheckBoxs(this)" type="checkbox">
+<label for="selectedReferenceInformationItems-Export" class="checkbox-label"><b>Include references</b></label>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="referenceExport" class="hidden">
+<div class="exportHeadingFont referenceMessage">
+Scopus reference list can only export citations.
+<a id="viewRefList" class="secondaryLink" href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/references.uri?sort=plf-f&amp;src=r&amp;imp=t&amp;sid=adec33b5d4766f2881131f406e89342c&amp;sot=rec&amp;sdt=citedreferences&amp;sl=23&amp;s=EID%282-s2.0-85047958236%29&amp;origin=recordpage&amp;citeCnt=1&amp;citingId=2-s2.0-85047958236" title="View in search results format for more sorting options and/or to view a full list of documents.">
+<span class="anchorText">View references in search results</span>
+</a>
+for more options.						
+</div>
+<div class="exportSubHeadingFont">
+
+Citation information
+<table>
+<thead>
+<tr></tr>
+</thead>
+<tbody>
+<tr>
+<td>Author(s)</td>
+<td>Year</td>
+<td>volume, issue, pages</td>
+<td><span id="refEidLi" class="displayNone">EID</span></td>
+</tr>
+<tr>
+<td>Document title</td>
+<td>Source title</td>
+<td>Citation count</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="modal-footer noBorder">
+<div class="pull-right form-inline"> 
+<button type="button" class="btn btn-link btn-sm secondaryLink" data-dismiss="modal">
+<span class="btnText">Cancel</span>
+</button> 
+<button type="button" class="btn btn-primary btn-sm" title="Disabled - Select a file format above to Export" id="exportTrigger" name="ExportPopUp">
+<span class="btnText">Export</span>
+</button>		
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="txtZoneInfoMsgContainer alert alert-info displayNone" role="alert"></div>
+<div class="confirmMsgContainer alert alert-info displayNone" role="alert"><span></span></div>
+<div class="warningMsgContainer alert alert-danger displayNone" role="alert"></div>
+<div id="exportLimit" class="hidden">2000</div>
+</div>
+<div id="profileleftinside">
+<div class="row">
+<div class="col-xs-10">
+<section xmlns:htm="http://www.w3.org/1999/xhtml" xmlns:localzn="xalan://com.elsevier.scopus.biz.util.LocalizationHelper" id="articleTitleInfo" class="list-group marginTop1 noMarginLeft paddingTop1">
+<span id="noSourceTitleLink" class="list-group-item">Proceedings - International Symposium on Quality Electronic Design, ISQED</span><span id="journalInfo" class="list-group-item">Volume 2018-March, 9 May 2018, Pages 432-436</span><span class="list-group-item">19th
+ International Symposium on Quality Electronic Design, ISQED 2018; Santa
+ Clara Convention CenterSanta Clara; United States; 13 March 
+2018&nbsp;through&nbsp;14 March 2018; Category numberCFP18250-ART; 
+Code&nbsp;136431</span>
+</section><input id="sourceId" value="21100205716" type="hidden"><input id="sourceType" value="p" type="hidden"><input id="citationType" value="cp" type="hidden"><input id="currentRecordPageEID" value="2-s2.0-85047958236" type="hidden"><input id="currentRecordPageSCP" value="85047958236" type="hidden"><input id="publicationYear" value="2018" type="hidden">
+<form id="saveToListForm" name="saveToListForm">
+<input name="origin" value="recordPage" type="hidden">
+<div class="modal fade" id="saveAllToAuthorList-data" tabindex="-1" role="dialog" aria-labelledby="saveToListmodalTitle"></div>
+<input name="items" value="8646211300" type="hidden"><input name="items" value="55807186900" type="hidden"><input name="items" value="55421440800" type="hidden"><input name="items" value="57189091865" type="hidden"><input name="items" value="22835759000" type="hidden"></form>
+</div>
+<section id="viewPdfButtonSection">
+<div class="col-xs-2">
+<div id="viewPdfButtonDiv" class="pull-right">
+<script type="text/javascript">
+var ScopusDDMConfig = {
+isViewPdfEnabled : "false" === "true",
+webUserId : 45783156,
+storeSuccessToS3 : "false" === "true",
+storeFailureToS3 : "false" === "true",
+isFenceEnabled : {
+edge : "false" === "true",
+},
+useNameCriteria : "false" === "true",
+installMsg : {
+chrome : "We created a fast and lightweight solution for the Chrome browser.</br> Click the button below to download the extension:",
+firefox : "We created a fast and lightweight solution for the Firefox browser.</br> Click the button below to download the extension:",
+},
+extensionURL : {
+chrome : "https://chrome.google.com/webstore/detail/scopus-document-download/ojplelelocihfchkdaebocpankipadmp",
+firefox : "https://addons.mozilla.org/firefox/downloads/latest/scopus-document-download/",
+edge : "",
+},
+maxDownload: 50,
+maxDownloadMsg: "You can download a maximum of 50 documents.",
+downloadInfoMsg: "Some documents may not download in full text due to restrictions on the publisher's side.",
+downloadSuccessMsgSingle: "full-text document was successfully downloaded as PDFs in your personal Downloads folder.",
+downloadSuccessMsgMultiple: "full-text documents were successfully downloaded as PDFs in your personal Downloads folder.",
+downloadErrorMsgSingle: "This document could not be downloaded. Check with publisher(s) or try your link resolver.",
+downloadErrorMsgMultiple: "These document could not be downloaded. Check with publisher(s) or try your link resolver.",
+isISSNEntitlementAvailable: false,
+doiBaseUrl: 'http://dx.doi.org.ezproxy.usherbrooke.ca/',
+recordPageBaseUrl: '/record/display.uri',
+throttleDownload: {
+enabled: false,
+maxConnectionsPerPublisher: 3,
+maxConnections: 10
+}
+};
+// variable to hold global objects for ddm
+var ScopusDDMGlobal = {
+ignoreDomainsString: "Enter_url_below"
+};
+// variable to hold optimized results for DDM
+var ScopusDDMOptimizer = {};
+// variable to hold flag enabling logging
+var ScopusDDMEnableLogging = false;
+</script>
+<script type="text/javascript" src="DocumentDownloadManager.js"></script>
+<div id="ddmGetExtensionModal" class="modal fade hidden" data-backdrop="false" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-xsm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>				
+<div class="browserImage marginTopHalf">
+<span class="ddmModalImg scLogoImg"></span>
+<span class="ico-right verticalAlignTop paddingLeft1 paddingRight1 lightGreyText paddingTopHalf" aria-hidden="true"></span> 
+<span class="ddmModalImg firefoxImg"></span>
+</div>
+<h4 class="modal-title marginTop1">
+The Scopus Document Download Manager requires an extension
+<a class="noBorder" href="#" title="Learn more about Scopus Document Download Manager Plugin/Extension (opens in a new window)" onclick="return openGlobalhelp('/standard/help.uri?topic=11276','globalHelp',760,570,0);">
+<span class="sr-only">Help/More Information</span>
+<span class="ico-help fontMedium textCenter" aria-hidden="true"></span>
+</a>
+</h4>
+</div>
+<div class="modal-body ddmModalContent noPaddingTop marginTopHalf"></div>
+<div class="modal-footer noBorder noMarginTop">
+<button type="button" id="btnGetExtension" data-dismiss="modal" class="btn btn-primary btn-sm pull-right" title="Get extension">
+<span class="btnText">Get extension</span>
+</button>
+</div>				
+</div>
+</div>
+</div>	
+<div id="ddmWelcomeBackModal" class="modal fade hidden" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-xsm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>					
+<h4 class="modal-title">Welcome back</h4>
+</div>
+<div class="modal-body ddmModalContent paddingTopQuarter">
+<div class="row">
+<p>To start downloading documents, please refresh your browser by either <br> clicking on the button below or directly refreshing the browser.</p>
+</div>
+<div class="row">
+<button type="button" class="btn btn-primary btn-sm" title="Refresh browser" onclick="getDDMExtensionReloadDocument();">
+Refresh browser
+</button>
+</div>
+</div>
+<div class="modal-footer textLeft">
+If you haven't installed the extension yet: 
+<button type="button" class="btn-link btn-sm color" id="btnGetExtensionOnRefresh" title="Get extension">
+<span class="btnText">Get the extension</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div id="ddmErrorModal" class="modal fade hidden" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-xsm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>					
+<h4 class="modal-title">Sorry, something went wrong...</h4>
+</div>
+<div class="modal-body ddmModalContent noPaddingBottom paddingTopHalf">
+<p>Scopus Document Download Manager Extension could not load properly.<br>Please reload the page and contact our support team if the issue persists.</p>
+</div>
+<div class="modal-footer noBorder noMarginTop">
+<button type="button" class="btn btn-primary btn-sm" title="Refresh browser" onclick="getDDMExtensionReloadDocument();">
+Refresh browser
+</button>
+</div>
+</div>
+</div>
+</div>
+<div id="ddmBrowserNotSupportedModal" class="modal fade hidden" data-backdrop="false" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-xsm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+<h4 class="modal-title">
+Browser is not supported
+</h4> 
+</div>
+<div class="modal-body">
+<span id="browserMsgDDMTextZone">
+The Scopus Document Download Manager (DDM) is not supported on this browser. <br><br>Please use our new and improved DDM for Firefox and Chrome.<br><br>
+<img src="Firefox_Logo_2017" width="48" height="48">&nbsp;&nbsp;
+&nbsp;<img src="Google_Chrome_icon" width="46" height="46">
+</span>
+</div>
+<div class="modal-footer noBorder noMarginTop">
+<button type="button" class="btn btn-primary btn-sm pull-right" data-dismiss="modal">
+<span class="btnText">Ok</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div id="ddmDownloadModal" class="modal fade hidden" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg modalVscroll" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+<h4 class="modal-title" id="ddmModalLabel">Scopus Document Download Manager </h4>
+</div>
+<div class="modal-body clearfix">
+<div id="ddmModalMsgArea" aria-live="polite" aria-atomic="true" class="alert alert-info noMargin" role="alert">
+<div class="row flexDisplay flexAlignCenter flexNoWrap">
+<span class="icon" aria-hidden="true">i</span>
+<div class="alertContent">
+<p id="ddmDownloadMsg" class="noMarginBottom"></p>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<table class="table marginTop2">
+<tbody id="tableBody"></tbody>
+</table>
+</div>
+</div>
+<div class="modal-footer noMarginTop">
+<div class="pull-right">
+<button type="button" id="btnDDMDownloadStart" class="btn btn-primary btn-sm pull-right" title="Begin Download" aria-label="Begin Download">
+<span class="btnText">Download</span>
+</button>
+<button type="button" id="btnDDMDownloadComplete" class="btn btn-primary btn-sm pull-right hidden" data-dismiss="modal" title="Close the download popup" aria-label="Close the download popup">
+<span class="btnText paddingRight1 paddingLeft1">Done</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="ddmViewPdfButtonTemplate">
+<a class="outwardTextLink noBorder viewPdfButton" onclick="" href="#">
+<span class="btnText">Loading...</span>
+<span class="loading-wrapper">
+<span class="loadingIcon"></span>
+</span>
+</a>
+</div>
+<div class="hidden" id="ddmLoadingIconTemplate">
+<span class="loading-wrapper">
+<span class="loadingIcon">
+</span>
+</span></div>
+<div class="hidden" id="ddmDownloadStatusTemplate">
+<div id="ddmDownloadedStatus">
+<span class="greenText" type="button">
+<span class="btnText">Downloaded</span>
+<span class="ico-pdf-file" aria-hidden="true"></span>
+</span>
+</div>
+<div id="ddmVAPStatus">
+<a href="" target="_blank" title="Go to Publisher Page (opens in a new window)">
+<span class="anchorText secondaryLink">Check publisher site</span>
+<span class="ico-up-right fontSmall" aria-hidden="true"></span>
+</a>
+</div>
+<div id="ddmAbstractStatus">
+<a href="" target="_blank" title="Go to Abstract Page (opens in a new window)">
+<span class="anchorText secondaryLink">View abstract</span>
+<span class="ico-up-right fontSmall" aria-hidden="true"></span>
+</a>
+</div>
+<div id="ddmErrorStatus">
+<span class="errorNote" type="button">
+<span class="btnText">Sorry, something went wrong...</span>
+</span>
+</div>
+</div>
+</div>	
+</div>
+</section>
+</div>
+<div>
+<h2 xmlns:localzn="xalan://com.elsevier.scopus.biz.util.LocalizationHelper" class="h3"><span class="ScopusTermHighlight">Low</span> cost and <span class="ScopusTermHighlight">power</span> CNN/deep learning solution for automated driving<span>(Conference Paper)</span>
+</h2>
+<section id="authorlist">
+<ul class="list-inline" style="height: 62px; overflow: hidden; display: block;">
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?authorId=8646211300&amp;amp;eid=2-s2.0-85047958236" title="Show Author Details"><span class="anchorText">Mody, M.</span></a><a href="mailto:mihir@ti.com" onclick="
+" title="Email to this author" class="correspondenceEmail" id="absAuthEmail"><span class="ico-email" aria-hidden="true"></span><span class="sr-only">Email Author</span></a><span>,</span>
+</li>
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?authorId=55807186900&amp;amp;eid=2-s2.0-85047958236" title="Show Author Details"><span class="anchorText">Kumar, D.</span></a><a href="mailto:kumar.desappan@ti.com" onclick="
+" title="Email to this author" class="correspondenceEmail" id="absAuthEmail"><span class="ico-email" aria-hidden="true"></span><span class="sr-only">Email Author</span></a><span>,</span>
+</li>
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?authorId=55421440800&amp;amp;eid=2-s2.0-85047958236" title="Show Author Details"><span class="anchorText">Swami, P.</span></a><a href="mailto:pramods@ti.com" onclick="
+" title="Email to this author" class="correspondenceEmail" id="absAuthEmail"><span class="ico-email" aria-hidden="true"></span><span class="sr-only">Email Author</span></a><span>,</span>
+</li>
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?authorId=57189091865&amp;amp;eid=2-s2.0-85047958236" title="Show Author Details"><span class="anchorText">Mathew, M.</span></a><a href="mailto:mathew.manu@ti.com" onclick="
+" title="Email to this author" class="correspondenceEmail" id="absAuthEmail"><span class="ico-email" aria-hidden="true"></span><span class="sr-only">Email Author</span></a><span>,</span>
+</li>
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?authorId=22835759000&amp;amp;eid=2-s2.0-85047958236" title="Show Author Details"><span class="anchorText">Nagori, S.</span></a><a href="mailto:soyeb@ti.com" onclick="
+" title="Email to this author" class="correspondenceEmail" id="absAuthEmail"><span class="ico-email" aria-hidden="true"></span><span class="sr-only">Email Author</span></a>
+</li>
+</ul>
+</section>
+<section id="viewHideAuthorList" class="displayInlineBlock paddingRight1" style="display: inline-block;">
+<a class="viewAddIcon" href="#" aria-expanded="false" title="View additional authors"><span class="anchorText">View additional authors</span>&nbsp;
+<span class="ico-navigate-down" aria-hidden="true"></span></a>
+</section>
+<a id="saveAllToAuthorList" class="secondaryLink displayInlineBlock paddingBottom1" href="#" title="Save all to author list"><span class="ico-create-bibliography" aria-hidden="true"></span>&nbsp;
+<span class="anchorText">Save all to author list</span></a>
+<section id="AuthorRetriving" class="hidden">
+<div>
+<img src="loading_3"></div>
+<div>Retrieving additional authors...</div>
+</section>
+<section id="affiliationlist">
+<ul class="list-unstyled">
+<li id="superscript_a">Automotive Processor, Texas Instruments Incorporated, Bangalore, India</li>
+</ul>
+</section>
+<section id="viewHideAffilList" style="display: none;">
+<a id="viewMoreAffilite" href="#" aria-expanded="false" title="View additional affiliations"><span class="anchorText">View additional affiliations</span>&nbsp;
+<span class="ico-navigate-down" aria-hidden="true"></span></a>
+</section>
+<section id="AffRetriving" class="hidden">
+<div>
+<img src="loading_3"></div>
+<div>Retrieving additional affiliations...</div>
+</section>
+<a name="abstract"></a>
+<section id="abstractSection" class="row">
+<h3 class="h4">Abstract<span id="viewRefPH" class="pull-right show">
+<a href="#references" title="View references" class="secondaryLink">
+<span class="ico-navigate-down" aria-hidden="true"></span>
+<span class="anchorText">
+View references (14)
+</span>
+</a>
+</span>
+</h3>
+<p data-reportrendertime="pcr">Automated driving functions, like highway
+ driving and parking assist, are increasingly getting deployed in 
+high-end cars with the ultimate goal of realizing self-driving car using
+ Deep learning techniques like convolution neural network (CNN). For 
+mass-market deployment, the embedded solution is required to address the
+ right cost and performance envelope along with security and safety. In 
+the case of automated driving, one of the key functionality is 'finding 
+drivable free space', which is addressed using deep learning techniques 
+like CNN. These CNN networks pose huge computing requirements in terms 
+of hundreds of GOPS/TOPS (Giga or Tera operations per second), which 
+seems beyond the capability of today's embedded SoC. This paper covers 
+various techniques consisting of fixed-point conversion, sparse 
+multiplication, fusing of layers and network pruning, for tailoring on 
+the embedded solution. These techniques are implemented on the <span class="ScopusTermHighlight">device</span> by means of optimized Deep learning library for <span class="ScopusTermHighlight">inference</span>. The paper concludes by demonstrating the results of a CNN network running in <span class="ScopusTermHighlight">real time</span> on TI's TDA2X embedded platform producing a high-quality drivable space output for automated driving. © 2018 IEEE.</p>
+<section id="topicSection" class="row">
+<h3 class="topicTitle h4 displayInline">SciVal Topic Prominence</h3>
+<span class="dropdown dropup">
+<button type="button" title="Learn about these Topics" class="btn btn-link dropdown-toggle btn-sm" id="topicsBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="ico-information triangleColor" aria-hidden="true"></span>
+</button>
+<div class="dropdown-menu dropdown-menu-right dropdown-menu-medium" role="menu" aria-labelledby="downloadHelp" id="topicsHelp">
+<span class="dropdownHeader"></span>
+<span class="dropdownContent">
+<span class="dropdownContentWrap">
+<span id="dropdownTitle" class="row" tabindex="-1"></span>
+<h4 id="meModalTitle"><strong class="font-weight-bold">New: </strong>SciVal Topic Prominence</h4>
+<p>Topics are unique areas of research, created using all Scopus publications from 1996 onwards. </p>
+<p class="noMargin">
+Use this section to learn about the Topic, find key authors to follow, and view related documents.
+<a class="btn btn-sm secondaryLink externalLink marginTopHalf noBorder" href="https://www-scopus-com.ezproxy.usherbrooke.ca/standard/help.uri?topic=27947" alt="" target="globalHelp" title="Learn more about these Topics (opens in a new window)" id="topicDetail"> 
+<span class="anchorText paddingTopHalf">Learn more about these Topics</span>
+<span class="ico-external-link-after" aria-hidden="true"></span>
+</a>
+</p>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" id="closeDownloadHelpMenu" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+<span class="sr-only"> Close window </span>
+</button>
+</span>
+</span>
+<span class="dropdownFooter"></span>
+</div>
+</span>
+<div class="topicContent marginBottom1 marginTop1">
+Topic: 
+<a href="#topicDetailModal" data-toggle="modal" data-target="#topicDetailModal" title="Open Topic details" id="4338" class="paddingLeftHalf secondaryLink"><span class="anchorText">Convolution</span><span class="anchorText lightGreyText "> | </span><span class="anchorText">Neural networks</span><span class="anchorText lightGreyText "> | </span><span class="anchorText">Convolutional network</span></a>
+</div>
+<div class="topicsProgress flexAlignCenter flexDisplay">
+<div>
+Prominence percentile:
+<span class="paddingRightHalf paddingLeft1 percentText">99.989</span>
+</div>
+<div class="progress quarterWidth noMarginBottom" style="width: 4.9rem">
+<div class="progress-bar" style="width: 100%;">&nbsp;</div>
+</div>
+<div class="dropdown dropup">
+<button type="button" title="Learn about prominence percentile" class="btn btn-link dropdown-toggle btn-sm marginLeftHalf" id="svTopicInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="ico-information triangleColor" aria-hidden="true"></span>
+</button>
+<div class="dropdown-menu dropup-menu-right dropdown-menu-medium marginLeft1" role="menu" aria-labelledby="svTopicInfo">
+<span class="dropdownHeader"></span> <span class="dropdownContent">
+<span class="dropdownContentWrap greyText">
+<span class="">Prominence is an indicator that shows the current 
+momentum of a Topic. It is calculated by weighing 3 metrics for papers 
+clustered in a Topic: Citation count, Scopus views and Average 
+CiteScore.</span>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" id="closeBtnTopicId" type="button">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+</span>
+</span> <span class="dropdownFooter"></span>
+</div>
+</div>
+</div>
+</section></section>
+<div id="reaxysSubstanceBlk"></div>
+<div id="reaxysBlk"></div>
+<section id="authorKeywords">
+<h3 class="h4">Author keywords</h3>
+<span class="badges">Automated Driving</span><span class="badges">CNN</span><span class="badges">Deep Learning</span><span class="badges">semantic <span class="ScopusTermHighlight">segmentation</span></span><span class="badges">TDA processor</span>
+</section>
+<section id="indexedKeywords">
+<h3 class="h4">Indexed keywords</h3>
+<table class="table">
+<tbody><tr>
+<th scope="row">Engineering controlled terms:</th><td><span class="badges">Automation</span><span class="badges">Learning algorithms</span><span class="badges">Network layers</span><span class="badges">Semantics</span><span class="badges">System-on-chip</span></td>
+</tr>
+<tr>
+<th scope="row">Engineering uncontrolled terms</th><td><span class="badges">Automated driving</span><span class="badges">Convolution neural network</span><span class="badges">Embedded platforms</span><span class="badges">Fixed-point conversion</span><span class="badges">Learning techniques</span><span class="badges">Network pruning</span><span class="badges">Semantic <span class="ScopusTermHighlight">segmentation</span></span><span class="badges">TDA processor</span></td>
+</tr>
+<tr>
+<th scope="row">Engineering main heading:</th><td><span class="badges">Deep learning</span></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+</tbody></table>
+</section>
+<section id="referenceInfo">
+<div class="row">
+<div class="col-md-5">
+<ul class="list-unstyled" id="citationInfo">
+<li>
+<strong>ISSN: </strong>19483287</li>
+<li>
+<strong>ISBN: </strong>978-153861214-9</li>
+<li>
+<strong>Source Type: </strong>Conference Proceeding</li>
+<li>
+<strong>Original language: </strong>English</li>
+</ul>
+</div>
+<div class="col-md-7">
+<ul class="list-unstyled" id="documentInfo">
+<li>
+<strong>DOI: </strong><span id="recordDOI">10.1109/ISQED.2018.8357325</span>
+</li>
+<li>
+<strong>Document Type: </strong>Conference Paper</li>
+<li>
+<strong>Sponsors: </strong>Innovotek,Silicon Valley Polytechnic Institute,Synopsys</li>
+<li>
+<strong>Publisher: </strong>IEEE Computer Society</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<section id="SC_BA1P" class="sgfNoTitleBar svDoNotLink"></section>
+<section id="SC_BA1" class="svDoNotLink"></section>
+<a name="ref"></a>
+<section id="refDocs"><div id="referenceList">
+<form id="recordPageFormId" name="RecordPageForm" class="smallLink" action="/record/display.uri" method="post" onsubmit="return g_formSubmitOK;">
+<input name="view" value="extended" type="hidden"> 
+<input name="clickedLink" value="" type="hidden">
+<input name="zone" value="" type="hidden">
+<input name="oneClickExport" type="hidden">
+<input name="origin" value="resultslist" type="hidden">
+<input name="eid" value="2-s2.0-85047958236" type="hidden"> 
+<input name="asdfd" value="true" type="hidden">
+<input name="resultsListTypeValue" value="" type="hidden">          
+<div id="referenceListOptions">  
+<div id="viewRef" class="displayNone">
+<a href="#references" title="View references" class="secondaryLink">
+<span class="ico-navigate-down" aria-hidden="true"></span>
+<span class="anchorText">
+View references (14)
+</span>
+</a>
+</div>
+<div class="row">
+<ul class="refTitleCount list-inline">
+<li class="pull-left">
+<h4 class="subTitle">
+<a name="references" id="references"></a> References (14)
+</h4>
+</li>
+<li class="pull-right">
+<a class="secondaryLink" id="referenceSrhResults" href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/references.uri?sort=plf-f&amp;src=r&amp;imp=t&amp;sid=adec33b5d4766f2881131f406e89342c&amp;sot=rec&amp;sdt=citedreferences&amp;sl=23&amp;s=EID%282-s2.0-85047958236%29&amp;origin=recordpage&amp;citeCnt=1&amp;citingId=2-s2.0-85047958236" title="View in search results format for more sorting options and/or to view a full list of documents.">
+<span class="anchorText">View in search results format</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</a>
+</li>
+</ul>
+</div>
+<input id="sot" name="sot" value="a" type="hidden">
+<input id="sid" name="sid" value="a15268945cf66ed42f89f40083e86fb8" type="hidden">
+<input id="sdt" name="sdt" value="a" type="hidden">
+<input id="origSearch" name="s" value="TITLE-ABS-KEY ( segmentation AND &quot;real-time&quot; AND inference AND low AND power AND device )" type="hidden">
+<input id="sl" name="sl" value="89" type="hidden">
+<input id="sort" name="sort" value="plf-f" type="hidden">
+<input id="stem" name="stem" value="t" type="hidden">
+<input id="src" name="src" value="s" type="hidden">
+<input id="rebrandResultsPage" name="rebrandResultsPage" value="false" type="hidden">
+<input name="view" value="extended" type="hidden"> 
+<input name="relpos" value="0" type="hidden"> 
+<input name="citeCnt" value="0" type="hidden">
+<input name="ctoId" value="" type="hidden">
+<input id="img" name="img" value="" type="hidden">
+<input id="tgt" name="tgt" value="" type="hidden">
+<input name="submitType" value="post" type="hidden">
+<div class="row margin-left-negative-scopus">
+<div id="resultsListToolbar" class="featuresRow paddingT10 btn-toolbar" role="toolbar">
+<div class="btn-group" role="group" id="btnToolbar">
+<ul class="jsEnabled list-unstyled list-inline">
+<li class="last">     
+<input name="selectAllCheckBox" value="true" id="referencePageCheckbox" onclick="toggleRefChkBoxes(this);" title="Select all results" type="checkbox">
+<label for="referencePageCheckbox" class="checkbox-label">All</label>
+</li>
+<li class="referenceHdrLnk" id="referenceHdrLink">
+<span class="docHeaderLinks lnkDisabled">
+<span id="toolbarIcons">
+<button id="referenceDirectExport" type="button" class="btn-link btn-sm clickAction directExport" title="Please select one or more document(s) below to Export" data-type="directExportReference" disabled="disabled"><span class="btnText">RIS export</span></button><button type="button" id="export_references" class="btn-link btn-sm color clickAction arrowDownExport exportRefenceAf" data-type="exportLink" disabled="disabled"><span class="ico-navigate-down" aria-hidden="true"></span></button>
+<button type="button" class="btn-link btn-sm color clickAction print" data-type="printLink" disabled="disabled" title="Please select one or more document(s) below to Print">
+<span class="ico-printer-2" aria-hidden="true"></span>
+<span class="btnText">Print</span>
+</button>
+<button type="button" class="btn-link btn-sm color clickAction email" data-type="emailLink" disabled="disabled" title="Please select one or more document(s) below to E-mail">
+<span class="ico-email" aria-hidden="true"></span>
+<span class="btnText">E-mail</span>
+</button>
+<button type="button" class="btn-link btn-sm color clickAction exPdf" data-type="pdfLink" disabled="disabled" title="Please select one or more document(s) below to Save to Pdf">
+<span class="ico-pdf-file" aria-hidden="true"></span>
+<span class="btnText">Save to PDF</span>
+</button>
+<button type="button" class="btn-link btn-sm color clickAction createBibliography" data-type="bibliographyLink" disabled="disabled" title="Please select one or more document(s) below to Create a bibliography">
+<span class="btnText">Create bibliography</span>
+</button>
+</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<table class="referenceLists table">
+<tbody class="referencesUL">
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-1" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85047918490" type="checkbox">
+<label for="reference-1" class="checkbox-label">
+1
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Society of Automotive Engineers<br><a href="https://www-sae-org.ezproxy.usherbrooke.ca/" target="_blank"><u>https://www-sae-org.ezproxy.usherbrooke.ca/</u></a><br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="ImageNet classification with deep convolutional neural networks" name="selectedEIDs" id="reference-2" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84876231242" type="checkbox">
+<label for="reference-2" class="checkbox-label">
+2
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">
+      			Krizhevsky, A.,&nbsp;Sutskever, I.,&nbsp;Hinton, G.E.<br>
+</div>
+<div class="refDocTitle fontMedium">
+<a class="outwardLink" title="Abstract + Refs(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?eid=2-s2.0-84876231242&amp;origin=reflist&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;recordRank=">ImageNet classification with deep convolutional neural networks</a>
+<a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d10495258%26isbn%3d9781627480031%26volume%3d2%26issue%3d%26spage%3d1097%26epage%3d1105%26pages%3d1097-1105%26artnum%3d%26date%3d2012%26id%3ddoi%3a%26title%3dAdvances%2bin%2bNeural%2bInformation%2bProcessing%2bSystems%26atitle%3dImageNet%2bclassification%2bwith%2bdeep%2bconvolutional%2bneural%2bnetworks%26aufirst%3dA.%26auinit%3dA.%26auinit1%3dA%26aulast%3dKrizhevsky&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-84876231242&amp;issn=10495258&amp;linkType=TemplateLinking&amp;year=2012&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=28cf3b909a8e5b047e2cfe516ec9087a&amp;recordRank=" target="_blank"></a>
+</div>
+<br>(2012)&nbsp;<em>Advances in Neural Information Processing Systems</em>,&nbsp;2,&nbsp;pp. 1097-1105.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84876231242&amp;src=s&amp;origin=reflist&amp;refstat=core" title="View the 27692 publications that cite this one" class="">Cited 27692 times</a>.<br>ISBN: 978-162748003-1<br>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="refOutwardLinks last">
+<span class="refListOutwardLinks"><a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d10495258%26isbn%3d9781627480031%26volume%3d2%26issue%3d%26spage%3d1097%26epage%3d1105%26pages%3d1097-1105%26artnum%3d%26date%3d2012%26id%3ddoi%3a%26title%3dAdvances%2bin%2bNeural%2bInformation%2bProcessing%2bSystems%26atitle%3dImageNet%2bclassification%2bwith%2bdeep%2bconvolutional%2bneural%2bnetworks%26aufirst%3dA.%26auinit%3dA.%26auinit1%3dA%26aulast%3dKrizhevsky&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-84876231242&amp;issn=10495258&amp;linkType=TemplateLinking&amp;year=2012&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=28cf3b909a8e5b047e2cfe516ec9087a&amp;recordRank=" target="_blank"><img class="outwardLink" src="sfx" alt="Pour obtenir le document(opens in a new window)" title="Pour obtenir le document(opens in a new window)" width="101" height="15"></a></span>
+</li></ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-3" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84925410541" type="checkbox">
+<label for="reference-3" class="checkbox-label">
+3
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Simonyan, K.,&nbsp;Zisserman, A.<br>(2014)&nbsp;<em>Very Deep Convolutional Networks for Large-scale Image Recognition</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84925410541&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 10158 publications that cite this one" class="">Cited 10158 times</a>.<br>arXiv preprint arXiv:1409.1556<br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="Going deeper with convolutions" name="selectedEIDs" id="reference-4" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84937522268" type="checkbox">
+<label for="reference-4" class="checkbox-label">
+4
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">
+Szegedy, C.,&nbsp;Liu, W.,&nbsp;Jia, Y.,&nbsp;Sermanet, P.,&nbsp;Reed, 
+S.,&nbsp;Anguelov, D.,&nbsp;Erhan, D.,&nbsp;(...),&nbsp;Rabinovich, A.<br>
+</div>
+<div class="refDocTitle fontMedium">
+<a class="outwardLink" title="Abstract + Refs(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?eid=2-s2.0-84937522268&amp;origin=reflist&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;recordRank=">Going deeper with convolutions</a>
+<a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d10636919%26isbn%3d9781467369640%26volume%3d07-12-June-2015%26issue%3d%26spage%3d1%26epage%3d9%26pages%3d1-9%26artnum%3d7298594%26date%3d2015%26id%3ddoi%3a10.1109%252fCVPR.2015.7298594%26title%3dProceedings%2bof%2bthe%2bIEEE%2bComputer%2bSociety%2bConference%2bon%2bComputer%2bVision%2band%2bPattern%2bRecognition%26atitle%3dGoing%2bdeeper%2bwith%2bconvolutions%26aufirst%3dC.%26auinit%3dC.%26auinit1%3dC%26aulast%3dSzegedy&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-84937522268&amp;issn=10636919&amp;linkType=TemplateLinking&amp;year=2015&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=dee394e3c3e1ae63a3b02f01b00545ed&amp;recordRank=" target="_blank"></a>
+</div>
+<br>(2015)&nbsp;<em>Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</em>,&nbsp;07-12-June-2015,&nbsp;art. no. 7298594,&nbsp;pp. 1-9.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84937522268&amp;src=s&amp;origin=reflist&amp;refstat=core" title="View the 8358 publications that cite this one" class="">Cited 8358 times</a>.<br>ISBN: 978-146736964-0<br>doi: 10.1109/CVPR.2015.7298594<br>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="refOutwardLinks">
+<span class="refListOutwardLinks"><a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d10636919%26isbn%3d9781467369640%26volume%3d07-12-June-2015%26issue%3d%26spage%3d1%26epage%3d9%26pages%3d1-9%26artnum%3d7298594%26date%3d2015%26id%3ddoi%3a10.1109%252fCVPR.2015.7298594%26title%3dProceedings%2bof%2bthe%2bIEEE%2bComputer%2bSociety%2bConference%2bon%2bComputer%2bVision%2band%2bPattern%2bRecognition%26atitle%3dGoing%2bdeeper%2bwith%2bconvolutions%26aufirst%3dC.%26auinit%3dC.%26auinit1%3dC%26aulast%3dSzegedy&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-84937522268&amp;issn=10636919&amp;linkType=TemplateLinking&amp;year=2015&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=dee394e3c3e1ae63a3b02f01b00545ed&amp;recordRank=" target="_blank"><img class="outwardLink" src="sfx" alt="Pour obtenir le document(opens in a new window)" title="Pour obtenir le document(opens in a new window)" width="101" height="15"></a></span>
+</li><li class="refOutwardLinks last">
+<span class="refListOutwardLinks"><span class="divTextLink"><a class="outwardTextLink" title="View at Publisher(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=https%3a%2f%2fdoi.org%2f10.1109%2fCVPR.2015.7298594&amp;locationID=3&amp;categoryID=4&amp;eid=2-s2.0-84937522268&amp;issn=10636919&amp;linkType=ViewAtPublisher&amp;year=2015&amp;origin=reflist&amp;dig=91d0c7acd146b82a8afea0191aef280a&amp;recordRank=" target="_blank">View at Publisher</a></span></span>
+</li></ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-5" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85047940425" type="checkbox">
+<label for="reference-5" class="checkbox-label">
+5
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Jacob, B.,&nbsp;Kligys, S.,&nbsp;Chen, 
+B.,&nbsp;Zhu, M.,&nbsp;Tang, M.,&nbsp;Howard, A.,&nbsp;Adam, 
+H.,&nbsp;(...),&nbsp;Kalenichenko, D.<br>(2017)&nbsp;<em>Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-85047940425&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 25 publications that cite this one" class="">Cited 25 times</a>.<br>arXiv:1712.05877<br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-6" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84988910518" type="checkbox">
+<label for="reference-6" class="checkbox-label">
+6
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Gysel, P.,&nbsp;Motamedi, M.,&nbsp;Ghiasi, S.<br>(2016)&nbsp;<em>Hardwareoriented Approximation of Convolutional Neural Networks</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84988910518&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 134 publications that cite this one" class="">Cited 134 times</a>.<br>arXiv:1604.03168<br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-7" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84994648586" type="checkbox">
+<label for="reference-7" class="checkbox-label">
+7
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Lin, D.,&nbsp;Talathi, S.,&nbsp;Annapureddy, S.<br>(2015)&nbsp;<em>Fixed Point Quantization of Deep Convolutional Networks</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84994648586&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 41 publications that cite this one" class="">Cited 41 times</a>.<br>arXiv:1511.06393<br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="Training deep neural networks with low precision multiplications" name="selectedEIDs" id="reference-8" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85070753527" type="checkbox">
+<label for="reference-8" class="checkbox-label">
+8
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">
+Courbariaux, M.,&nbsp;David, J.-P.,&nbsp;Bengio, Y.<br>
+</div>
+<div class="refDocTitle fontMedium">
+<a class="outwardLink" title="Abstract + Refs(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?eid=2-s2.0-85070753527&amp;origin=reflist&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;recordRank=">Training deep neural networks with low precision multiplications</a>
+<a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d%26isbn%3d%26volume%3d%26issue%3d%26spage%3d%26epage%3d%26pages%3d%26artnum%3d%26date%3d2015%26id%3ddoi%3a%26title%3d3rd%2bInternational%2bConference%2bon%2bLearning%2bRepresentations%252c%2bICLR%2b2015%2b-%2bWorkshop%2bTrack%2bProceedings%26atitle%3dTraining%2bdeep%2bneural%2bnetworks%2bwith%2blow%2bprecision%2bmultiplications%26aufirst%3dM.%26auinit%3dM.%26auinit1%3dM%26aulast%3dCourbariaux&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-85070753527&amp;issn=&amp;linkType=TemplateLinking&amp;year=2015&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=19767ffe09dc24fe3db3ea6280dade50&amp;recordRank=" target="_blank"></a>
+</div>
+<br>(2015)&nbsp;<em>3rd International Conference on Learning Representations, ICLR 2015 - Workshop Track Proceedings</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-85070753527&amp;src=s&amp;origin=reflist&amp;refstat=core" title="View the 31 publications that cite this one" class="">Cited 31 times</a>.<br><a href="https://dblp.org/db/conf/iclr/iclr2015w.html" target="_blank"><u>https://dblp.org/db/conf/iclr/iclr2015w.html</u></a><br>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="refOutwardLinks last">
+<span class="refListOutwardLinks"><a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d%26isbn%3d%26volume%3d%26issue%3d%26spage%3d%26epage%3d%26pages%3d%26artnum%3d%26date%3d2015%26id%3ddoi%3a%26title%3d3rd%2bInternational%2bConference%2bon%2bLearning%2bRepresentations%252c%2bICLR%2b2015%2b-%2bWorkshop%2bTrack%2bProceedings%26atitle%3dTraining%2bdeep%2bneural%2bnetworks%2bwith%2blow%2bprecision%2bmultiplications%26aufirst%3dM.%26auinit%3dM.%26auinit1%3dM%26aulast%3dCourbariaux&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-85070753527&amp;issn=&amp;linkType=TemplateLinking&amp;year=2015&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=19767ffe09dc24fe3db3ea6280dade50&amp;recordRank=" target="_blank"><img class="outwardLink" src="sfx" alt="Pour obtenir le document(opens in a new window)" title="Pour obtenir le document(opens in a new window)" width="101" height="15"></a></span>
+</li></ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-9" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85047937431" type="checkbox">
+<label for="reference-9" class="checkbox-label">
+9
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Mathew, M.,&nbsp;Desappan, K.,&nbsp;Kumar Swami, P.,&nbsp;Nagori, S.<br>(2017)&nbsp;<em>Sparse, Quantized, Full Frame CNN for Low Power Embedded Devices</em><br>CVPR workshop paper<br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+	        	
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-10" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85048737871" type="checkbox">
+<label for="reference-10" class="checkbox-label">
+10
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Warden, P.<br>(2016)&nbsp;<em>How to Quantize Neural Networks with TensorFlow</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-85048737871&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 6 publications that cite this one" class="">Cited 6 times</a>.<br><a href="https://petewarden.com/2016/05/03/how-to-quantizeneural-networks-with-tensorflow/" target="_blank"><u>https://petewarden.com/2016/05/03/how-to-quantizeneural-networks-with-tensorflow/</u></a><br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-11" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85047917271" type="checkbox">
+<label for="reference-11" class="checkbox-label">
+11
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">Mathew, M.,&nbsp;Desappan, K.,&nbsp;Kumar Swami, P.,&nbsp;Nagori, S.<br><em>Sparse, Biju Moothedath Gopinath, Embedded Low-power Deep Learning with TIDL</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-85047917271&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 2 publications that cite this one" class="">Cited 2 times</a>.<br><a href="http://www.ti.com/lit/wp/spry314/spry314.pdf" target="_blank"><u>http://www.ti.com/lit/wp/spry314/spry314.pdf</u></a><br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-12" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84978717864" type="checkbox">
+<label for="reference-12" class="checkbox-label">
+12
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">He, K.,&nbsp;Zhang, X.,&nbsp;Ren, S.,&nbsp;Sun, J.<br>(2016)&nbsp;<em>Deep Residual Learning for Image Recognition</em>.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84978717864&amp;src=s&amp;origin=reflist&amp;refstat=dummy" title="View the 103 publications that cite this one" class="">Cited 103 times</a>.<br>CVPR<br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="The Cityscapes Dataset for Semantic Urban Scene Understanding" name="selectedEIDs" id="reference-13" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-84986255616" type="checkbox">
+<label for="reference-13" class="checkbox-label">
+13
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle">
+Cordts, M.,&nbsp;Omran, M.,&nbsp;Ramos, S.,&nbsp;Rehfeld, 
+T.,&nbsp;Enzweiler, M.,&nbsp;Benenson, R.,&nbsp;Franke, 
+U.,&nbsp;(...),&nbsp;Schiele, B.<br>
+</div>
+<div class="refDocTitle fontMedium">
+<a class="outwardLink" title="Abstract + Refs(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?eid=2-s2.0-84986255616&amp;origin=reflist&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;recordRank=">The Cityscapes Dataset for Semantic Urban Scene Understanding</a>
+<a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d10636919%26isbn%3d9781467388504%26volume%3d2016-December%26issue%3d%26spage%3d3213%26epage%3d3223%26pages%3d3213-3223%26artnum%3d7780719%26date%3d2016%26id%3ddoi%3a10.1109%252fCVPR.2016.350%26title%3dProceedings%2bof%2bthe%2bIEEE%2bComputer%2bSociety%2bConference%2bon%2bComputer%2bVision%2band%2bPattern%2bRecognition%26atitle%3dThe%2bCityscapes%2bDataset%2bfor%2bSemantic%2bUrban%2bScene%2bUnderstanding%26aufirst%3dM.%26auinit%3dM.%26auinit1%3dM%26aulast%3dCordts&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-84986255616&amp;issn=10636919&amp;linkType=TemplateLinking&amp;year=2016&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=43b99ae67dbb33a603019718f191b349&amp;recordRank=" target="_blank"></a>
+</div>
+<br>(2016)&nbsp;<em>Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</em>,&nbsp;2016-December,&nbsp;art. no. 7780719,&nbsp;pp. 3213-3223.&nbsp;<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/citedby.uri?eid=2-s2.0-85047958236&amp;refeid=2-s2.0-84986255616&amp;src=s&amp;origin=reflist&amp;refstat=core" title="View the 952 publications that cite this one" class="">Cited 952 times</a>.<br>ISBN: 978-146738850-4<br>doi: 10.1109/CVPR.2016.350<br>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="refOutwardLinks">
+<span class="refListOutwardLinks"><a class="outwardLink" title="Pour obtenir le document(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=http%3a%2f%2fsfxhosted.exlibrisgroup.com%2fsherbrooke%3fsid%3dElsevier%3aScopus%26_service_type%3dgetFullTxt%26issn%3d10636919%26isbn%3d9781467388504%26volume%3d2016-December%26issue%3d%26spage%3d3213%26epage%3d3223%26pages%3d3213-3223%26artnum%3d7780719%26date%3d2016%26id%3ddoi%3a10.1109%252fCVPR.2016.350%26title%3dProceedings%2bof%2bthe%2bIEEE%2bComputer%2bSociety%2bConference%2bon%2bComputer%2bVision%2band%2bPattern%2bRecognition%26atitle%3dThe%2bCityscapes%2bDataset%2bfor%2bSemantic%2bUrban%2bScene%2bUnderstanding%26aufirst%3dM.%26auinit%3dM.%26auinit1%3dM%26aulast%3dCordts&amp;locationID=3&amp;categoryID=6&amp;eid=2-s2.0-84986255616&amp;issn=10636919&amp;linkType=TemplateLinking&amp;year=2016&amp;zone=outwardlinks&amp;origin=reflist&amp;dig=43b99ae67dbb33a603019718f191b349&amp;recordRank=" target="_blank"><img class="outwardLink" src="sfx" alt="Pour obtenir le document(opens in a new window)" title="Pour obtenir le document(opens in a new window)" width="101" height="15"></a></span>
+</li><li class="refOutwardLinks last">
+<span class="refListOutwardLinks"><span class="divTextLink"><a class="outwardTextLink" title="View at Publisher(opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/redirect/linking.uri?targetURL=https%3a%2f%2fdoi.org%2f10.1109%2fCVPR.2016.350&amp;locationID=3&amp;categoryID=4&amp;eid=2-s2.0-84986255616&amp;issn=10636919&amp;linkType=ViewAtPublisher&amp;year=2016&amp;origin=reflist&amp;dig=24e15d5ec9c5091eb30bcde068117fa5&amp;recordRank=" target="_blank">View at Publisher</a></span></span>
+</li></ul>
+</div>
+</td>
+</tr>		
+<tr class="referencesUL" id="referenceListRowId">
+<th class="checkboxes">
+<div class="checkbox">
+<input aria-label="" name="selectedEIDs" id="reference-14" onclick="toggleSelectAllChkBox(this);" value="2-s2.0-85047940843" type="checkbox">
+<label for="reference-14" class="checkbox-label">
+14
+</label>
+</div>
+</th>
+<td class="refCont">
+<div class="refAuthorTitle"><a href="http://www.ti.com/lsds/ti/processors/dsp/automotive_processors/tdax_adas_socs/overview.page" target="_blank"><u>TDAx ADAS SoCs</u></a><br></div>
+<div class="featuresRow marginTop1">
+<ul id="outwardLinkSection" class="list-inline">
+<li class="last">&nbsp;</li>
+</ul>
+</div>
+</td>
+</tr>		
+</tbody>
+</table>
+</form>
+</div></section>
+<p class="corrAuthSect">
+<br>
+© Copyright 2018 Elsevier B.V., All rights reserved.</p>
+</div>
+<div class="sdBase recordBottomNav">
+<hr id="refNavLinks">
+<div class="pull-left" id="bottomResultListLinks"><nav class="navigationLink marginBottom1" id="refNavLinksId">
+<ul class="list-inline">
+<li class="backToResults noPaddingLeft"> 
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/results/results.uri?sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;offset=1&amp;origin=recordpage&amp;citeCnt=0">
+<span class="ico-navigate-left" aria-hidden="true"></span>
+<span class="anchorText secondaryLink">Back to results</span>
+</a>
+</li>
+<li class="recordPageCount"> 
+1<span>of</span>1
+</li>
+</ul></nav>
+</div>
+<div class="pull-right">
+<a class="topOfPage" href="#top" title="Top of page">
+<span class="ico-navigate-up" aria-hidden="true"></span>
+<span class="anchorText">
+Top of page
+</span>
+</a> 
+</div>
+</div>
+</div>
+<div id="profilerightside" class="col-md-3">
+<section id="profilerightinside">
+<div id="chapterList" class="displayNone"></div>
+<script type="text/javascript">
+var chapterListEnabled = true;
+</script>
+<section id="metricSection">
+<div class="panel panel-default boxPanel">
+<div class="panel-heading">
+<div class="flexDisplay flexAlignCenter flexSpaceBetween">
+<div class="flexNone">
+<h3 class="panel-title displayInlineBlock">
+Metrics
+</h3>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/standard/help.uri?topic=12031" class="btn-link" target="pubMetHelp" title="Learn more about Article metrics in Scopus (opens in a new window)">
+<span class="sr-only">Learn more about Article metrics in Scopus (opens in a new window)</span> <span class="ico-help-icon" aria-hidden="true"></span>
+</a>
+</div>
+<div class="pubMetViewAllLink text-right">
+<a class="secondaryLink" href="#" title="View all metrics">
+<span class="anchorText">View all metrics</span>&nbsp;<span class="ico-navigate-right" aria-hidden="true"></span>
+</a>
+</div>
+</div>
+</div>
+<div id="metricsBody" class="panel-body">
+<div class="flexMetrics hidden">
+<div id="fwciValue" class="metricCount"></div>
+<div class="dropdown dropdownGroup">
+<button type="button" title="Learn more about Field-Weighted Citation Impact" class="btn btn-link dropdown-toggle btn-sm well" id="fwciHelp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="btnText spriteBg icon-fwciMetrics" aria-hidden="true"></span>
+<span class="sr-only">Learn more about Field-Weighted Citation Impact</span>
+</button>
+<div class="dropdown-menu dropdown-menu-right dropdown-menu-medium" aria-labelledby="fwciHelp">
+<div class="dropdownHeader"></div>
+<div class="dropdownContent">
+<div class="dropdownContentWrap">
+<span id="dropdownTitle" class="row" tabindex="-1"></span>
+<button class="btn btn-link closeDropDown" data-toggle="dropdown" type="button" aria-expanded="false">
+<span class="ico-delete icon noPadding" aria-hidden="true"></span> <span class="sr-only">Close popup</span>
+</button>
+<div class="bubble-source-data">
+<span>Field-Weighted Citation Impact</span><span>Field-Weighted Citation
+ Impact shows how well cited this document is when compared to similar 
+documents. A value greater than 1.00 means the document is more cited 
+than expected according to the average. It takes into account:</span>
+<ul>
+<li>The year of publication</li>
+<li>Document type, and</li>
+<li>Disciplines associated with its source.</li>
+</ul>
+<span>The FWCI is the ratio of the document's citations to the average 
+number of citations received by all similar documents over a three-year 
+window. Each discipline makes an equal contribution to the metric, which
+ eliminates differences in researcher citation behavior.</span>
+</div>
+</div>
+</div>
+<div class="dropdownFooter"></div>
+</div>
+</div>
+<div class="progressBar">
+<h4 class="progressBarTitle">
+Field-Weighted Citation Impact
+</h4>
+</div>
+</div>
+</div>
+<div id="plumPanel" class="panel-body">
+<div class="clearfix">
+<div class="secondaryLinkWrapper pull-left">
+<div class="plum-scopus-theme"><div class="PlumX-Popup"><div class="ppp-container ppp-medium"><a target="_blank" class="plx-wrapping-print-link" href="javascript:void(0)" title="PlumX Metrics Detail Page"><div class="plx-print"><svg viewBox="0 0 100 100" width="100%" height="100%" aria-labelledby="widget-plumprint-1"><title id="widget-plumprint-1">Plum Print visual indicator of research metrics</title><path fill="#6e1a62" stroke="#6e1a62" stroke-width="1" d="M 36.075524746876404,57.96956599135724 C 47.24224000477168,47.68596460512846 53.05297314616313,51.90770935123954 46.72339182284403,65.70569425459581 L 53.27660817715597,65.70569425459581 C 46.94702685383687,51.90770935123954 53.50848354948492,47.05603274763565 65.39011014278067,61.891009356402684 L 69.44022058537712,49.42605112348201 C 51.10800228184648,54.443954426344064 48.651416263702714,46.662138123559565 61.88240715909315,39.21976840364822 L 56.58074376063895,35.36788447550181 C 53.59123058093537,50.25112330547885 46.40876941906463,50.25112330547885 43.419256239361054,35.3678844755018 L 38.11759284090686,39.2197684036482 C 51.348583736297286,46.662138123559565 49.12908117584119,53.493064614593585 34.05046952557818,51.73708687489691 Z"></path><circle fill="#6e1a62" stroke="#6e1a62" stroke-width="1" r="4" cx="32.880982706687234" cy="55.56230589874905"></circle><circle fill="#6e1a62" stroke="#6e1a62" stroke-width="1" r="4" cx="50" cy="68"></circle><circle fill="#c43bf3" stroke="#6e1a62" stroke-width="1" r="8" cx="71.77919422315901" cy="57.076489171186296"></circle><circle fill="none" stroke="#ffffff" stroke-width="1.5" r="6.5" cx="71.77919422315901" cy="57.076489171186296"></circle><circle fill="#6e1a62" stroke="#6e1a62" stroke-width="1" r="4" cx="60.58013454126452" cy="35.43769410125095"></circle><circle fill="#6e1a62" stroke="#6e1a62" stroke-width="1" r="4" cx="39.41986545873549" cy="35.43769410125094"></circle></svg></div></a></div></div></div>
+<script type="text/javascript">
+var plumMetricsUrl = "https://plu.mx/plum/a/";
+PlumWidgetLoad.registerForPromise("callBackId");
+</script>
+</div>
+<div class="pull-left">
+<h3 class="plumSummaryHeaderText displayInline">
+PlumX Metrics
+</h3>
+<div class="plumSummaryHeaderTextInfo">
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+</div>
+</div>
+<div class="pull-right">
+<a href="#plumSummaryContent" id="plumSummarySwitch" title="Toggle Plum summary content" data-toggle="collapse" aria-expanded="false" aria-controls="plumSummaryContent"> <span class="ico-navigate-down pointerCursor" aria-hidden="false" data-span-type="nav"></span>
+</a>
+</div>
+</div>
+<div id="plumSummaryContent" class="collapse">
+<div class="plum-scopus-theme"><div class="PlumX-Summary"><div class="pps-container pps-container-vertical plx-is-empty plx-no-print"><div class="pps-branding pps-branding-top"><img src="plumx-inverse-logo.png" class="plx-logo"></div><div class="pps-cols"><div class="pps-col pps-col-empty">No metrics available.</div></div><div><div class="pps-branding pps-branding-bottom"><img src="plumx-inverse-logo.png" class="plx-logo"></div><a target="_blank" href="https://plu.mx/plum/a/?elsevier_id=2-s2.0-85047958236&amp;theme=plum-scopus-theme" class="pps-seemore" title="PlumX Metrics Detail Page">see details</a></div></div></div></div>
+<script type="text/javascript">
+var plumMetricsUrl = "https://plu.mx/plum/a/";
+PlumWidgetLoad.registerForPromise("PlumSummaryWidget");
+</script>
+</div>
+</div>
+</div>
+</section>
+<section id="documentLinks">
+<div id="recordPageBoxes">
+<div class="panel panel-default boxPanel">
+<div class="panel-heading noBorder noPaddingBottom">
+<h3 class="panel-title">
+Cited by 0 documents 
+</h3>
+</div>
+<div class="displayBlock paddingBottom1">
+</div>
+<div class="noBorderTop paddingTop1 noPaddingBottom">
+<input name="setCitationAlertUrl" value="/alert/popup/form/document.uri?eid=2-s2.0-85047958236&amp;ATP=document&amp;discoveryEngineID=scopusdoccite&amp;discoveryEventID=NEW&amp;mode=C&amp;AID=NEW&amp;origin=recordpage&amp;view=extended" type="hidden">
+<div class="footerSection">
+<span class="findMoreHeader">Inform me when this document is cited in Scopus:</span>
+<div class="citeinfo marginTop1">
+<span class="dropdownGroup">
+<button type="button" class="btn btn-secondary-altBg btn-xsm altColor" id="saveAsAlert" title="Set citation alert" aria-expanded="true" aria-haspopup="true" data-toggle="dropdown">
+<span class="btnText">Set citation alert</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</button>
+<div class="dropdown-menu dropdown-menu-right marginTop1Half" role="menu">
+<span class="dropdownHeader"></span>
+<span class="dropdownContent">
+<span id="alertDropdownContent" class="dropdownContentWrap">
+</span>
+</span>
+<span class="dropdownFooter"></span>
+</div>
+</span>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/results/rss/handler.uri?citeEid=2-s2.0-85047958236" target="_blank" class=" btn btn-secondary-altBg btn-xsm altColor icon setFeed" title="Set citation feed">
+<span class="anchorText noBorder">Set citation feed</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section id="articleDataSet"></section>
+<script language="javascript" type="text/javascript">
+var mltContinueURL;
+if (mltContinueURL != null) {
+yes = confirm(mltContinueMsg);
+if (yes) {
+window.location = mltContinueURL;
+}
+}
+</script>
+<div id="recordPageBoxes">
+<div id="relatedDocBox" class="panel panel-default boxPanel">
+<div class="panel-heading">
+<h3 class="panel-title">
+Related documents
+</h3>
+</div>
+<div class="panel-body">
+<div id="relatedDoc"><div class="recordPageBoxes">
+<div class="recordPageBoxItem">
+<ul class="list-unstyled">          
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?origin=recordpage&amp;zone=relatedDocuments&amp;eid=2-s2.0-85060279779&amp;citeCnt=0&amp;noHighlight=false&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;relpos=0" title="Show document details">
+<span class="anchorText">CNN Inference: Dynamic and predictive quantization
+</span>
+</a>
+</li>
+<li class="authorLinks">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=56473656300&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Desappan, K.</span>
+</a>
+, <a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=8646211300&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Mody, M.</span></a>
+, <a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=57189091865&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Mathew, M.</span></a>
+</li>
+<li class="darkGrayText">
+<i>(2018)
+IEEE International Conference on Consumer Electronics - Berlin, ICCE-Berlin</i>
+</li>
+</ul>
+</div>
+<div class="recordPageBoxItem">
+<ul class="list-unstyled">          
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?origin=recordpage&amp;zone=relatedDocuments&amp;eid=2-s2.0-85065512301&amp;citeCnt=0&amp;noHighlight=false&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;relpos=1" title="Show document details">
+<span class="anchorText">Short floating-point representation for convolutional neural network inference
+</span>
+</a>
+</li>
+<li class="authorLinks">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=56824762800&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Kang, H.-J.</span>
+</a>
+</li>
+<li class="darkGrayText">
+<i>(2019)
+IEICE Electronics Express</i>
+</li>
+</ul>
+</div>
+<div class="recordPageBoxItem">
+<ul class="list-unstyled">          
+<li>
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/record/display.uri?origin=recordpage&amp;zone=relatedDocuments&amp;eid=2-s2.0-85045323738&amp;citeCnt=0&amp;noHighlight=false&amp;sort=plf-f&amp;src=s&amp;sid=a15268945cf66ed42f89f40083e86fb8&amp;sot=a&amp;sdt=a&amp;sl=89&amp;s=TITLE-ABS-KEY+%28+segmentation+AND+%22real-time%22+AND+inference+AND+low+AND+power+AND+device+%29&amp;relpos=2" title="Show document details">
+<span class="anchorText">Quad-multiplier packing based on customized floating point for convolutional neural networks on FPGA
+</span>
+</a>
+</li>
+<li class="authorLinks">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=57206281442&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Zhang, Z.</span>
+</a>
+, <a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=57195448217&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Zhou, D.</span></a>
+, <a href="https://www-scopus-com.ezproxy.usherbrooke.ca/authid/detail.uri?origin=recordpage&amp;authorId=56415988000&amp;zone=relatedDocuments" title="Show author details">
+<span class="anchorText">Wang, S.</span></a>
+</li>
+<li class="darkGrayText">
+<i>(2018)
+Proceedings of the Asia and South Pacific Design Automation Conference, ASP-DAC</i>
+</li>
+</ul>
+</div>
+<script>if(typeof prs != "undefined"){prs.rt("scr_relatedDocuments");}</script>
+</div>
+<div class="recordPageBoxes docViewAll">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/mlt.uri?eid=2-s2.0-85047958236&amp;src=s&amp;all=true&amp;origin=recordpage&amp;method=ref&amp;zone=relatedDocuments" title="View all related documents based on references"><span class="anchorText">View all related documents based on references</span></a>
+<br>
+</div>
+</div>
+</div>
+<div class="panel-footer">
+<div class="inforeldocbox footerSection">
+<span class="findMoreHeader">Find more related documents in Scopus based on:</span>
+<div class="footerSctnLinks flexDisplay verticalAlign">
+<div>
+<div class="infobubble-container">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/mlt.uri?eid=2-s2.0-85047958236&amp;src=s&amp;all=true&amp;origin=recordpage&amp;method=aut&amp;zone=relatedDocuments" title="Find related documents based on authors">
+<span class="anchorText">Authors</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</a>											
+</div>
+</div>
+<div class="keywordsMargin">
+<div class="infobubble-container">
+<a href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/submit/mlt.uri?eid=2-s2.0-85047958236&amp;src=s&amp;all=true&amp;origin=recordpage&amp;method=key&amp;zone=relatedDocuments" title="Find related documents based on keywords">
+<span class="anchorText">Keywords</span>
+<span class="ico-navigate-right" aria-hidden="true"></span>
+</a>											
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="sciTopicsVal displayNone">{"topic":{"name":"Convolution; 
+Neural networks; Convolutional 
+network","id":4338,"uri":"Topic/4338","prominencePercentile":99.98852,"prominencePercentileString":"99.989","overallScholarlyOutput":0},"dig":"ffefc29fa0daabc795f802bbab08a4d737e629e2e2cffc5a1fff11c8d2c854fc"}</div>
+<div class="sciTopics">
+</div>
+<script type="text/javascript" src="d3.js" async="async"></script>
+<div class="modal popupModal" id="topicDetailModal" data-backdrop="true" aria-labelledby="" aria-describedby="" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-xl smallText" role="document">
+<div class="modal-content">
+<div class="modal-header"><h3><span class="topicName">Topic: </span></h3>
+<div><span>Year range: </span><span class="yrRange"></span></div>
+<button type="button" class="close" data-dismiss="modal" aria-label="">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+</div>
+<div class="modal-body paddingTop1 noPaddingBottom">
+<div class="row">
+<div class="col-md-7 pull-left">
+<section id="documents">
+<header class="paddingBottomHalf fontMedium">Representative documents</header>
+<ul class="articleList list-unstyled"></ul>
+</section>
+</div>
+<div class="col-md-5 pull-right">
+<aside id="authors" class="col-md-10">
+<table class="table">
+<thead>
+<tr><th class="noBorder noPaddingLeft noPaddingTop fontMedium paddingBottomHalf">Top authors</th>
+<th class="noBorder textRight noPaddingLeft noPaddingTop lightGreyText fontSmall paddingBottomHalf">Scholarly Output</th>
+</tr></thead>
+<tbody>
+</tbody>
+</table>
+</aside>
+<aside id="visual" class="col-md-12">
+<div id="tabs" class="clearfix marginTop2 marginBottom1Half marginRight1">
+<header class="pull-left fontMedium">Keyphrase analysis</header>
+<ul class="noBorder pull-right nav buttonTab">
+<li data-tabname="wrdCldCtner" class="pull-left active" default="">
+<button href="#wrdCldCtner" class="btn btn-sm paddingRightHalf paddingLeftHalf btn-secondary btn-link secondary-button-border-color noBorderRight" data-toggle="tab" id="chartTab">
+<span class="ico-upwards-line-chart paddingRightQuarter"></span><span class="btnText noBorder">Chart</span>
+</button>
+</li>
+<li data-tabname="keyword" class="pull-left">
+<button href="#keyword" class="btn btn-sm paddingRightHalf paddingLeftHalf btn-secondary btn-link secondary-button-border-color noBorderLeft" data-toggle="tab" id="tableTab">
+<span class="ico-tables paddingRightQuarter"></span><span class="btnText noBorder">Table</span>
+</button>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div id="wrdCldCtner" class="tab-pane fade in active">
+<div id="chart"></div>
+<div class="wordCloudLegend textCenter">
+<span class="relevance">
+<span class="normal">A</span>
+<span class="large">A</span>
+<span class="larger">A</span>
+<span>relevance of keyphrase</span>
+<span class="verticalpipe">|</span>
+</span>
+<span class="nowrap">
+<span>declining</span>
+<span class="large declining">A</span>
+<span class="large flat">A</span>
+<span class="large growing">A</span>
+<span>Growth</span>
+</span>
+</div>
+</div>
+<div id="keyword" class="tab-pane">
+<table id="keyword-table" class="table table-fixed tableRowBorder"></table>
+</div>
+</div>
+</aside></div>
+
+</div>
+</div>
+<div class="row pull-right paddingRight1 paddingBottom1 marginTop2">
+<a class="btn btn-primary btn-sm" data-link="https://scival.com/viewtopic?id=" title="Analyze this topic in SciVal (opens in new tab)" id="topicsLink" target="_blank"> <span class="btnText paddingRightHalf noBorder">Analyze in SciVal</span><span class="ico-navigate-right whiteText" aria-hidden="true"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade inputFocus alignLeft" id="reaxysSubstanceModal" aria-labelledby="reaxysSubstanceModalTitle" aria-describedby="reaxysSubstanceModalTitle" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-sm" role="document" data-page="docDetails">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="displayInlineBlock reaxysFixH1">
+<span id="reaxysSubstanceModalTitle" class="reaxysSubDetailHeader">Substance details</span>
+</h1>
+<div id="reaxysSubDetailViewAll" class="reaxysSubstanceDetailHeaderViewAll displayInlineBlock pull-right">
+<a id="allSubstanceLinkPopup" href="" class="reaxysAllSubstanceAnchor btn btn-link secondaryLink" data-toggle="modal" data-target="#reaxysAllSubstanceModal" title="View all substances">
+<span class="anchorText">View all substances&nbsp;</span>
+</a>
+</div>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="reaxysSubstanceClose">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+</div>
+<div class="modal-body reaxysSubstanceTableBody">
+<div id="reaxysSubstanceDetail" class="reaxysSubstanceDetail">
+</div>
+<div id="reaxysSubstanceDetailDivider"></div>
+<div id="reaxysSubstanceDetailImg" class="reaxysSubstanceDetailImg">
+</div>
+</div>
+<div class="modalOverlayFooter modal-footer reaxysSubstanceDetailFooter">
+<div class="pull-left displayInlineBlock reaxysSubstanceDetailFooterMain">
+<span class="displayInlineBlock">Addtional data on physical properties, spectra and targets in</span>
+<a class="secondaryLink" href='javascript:scopusReaxys.openReaxys("S")'>
+<span id="reaxysSubHomeLink" class="anchorText displayInlineBlock">
+Reaxys&nbsp;
+</span>
+<span class="ico-up-right reaxysSubstanceDetailFooterArrow" aria-hidden="true"></span>
+</a>                    
+</div>
+<div class="pull-right displayInlineBlock italicText reaxysSubstanceFooterRight">
+<span>Powered by&nbsp;</span>
+<span class="ico-reaxysLogo reaxysSubstanceDetailFooterLogo displayInlineBlock" style="height:20px; width:60px; background-repeat:no-repeat" title="Reaxys" aria-label="Reaxys"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade inputFocus alignLeft" id="reaxysAllSubstanceModal" aria-labelledby="reaxysSubstanceAllModalTitle" aria-describedby="" reaxyssubstanceallmodaltitle""="" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document" data-page="docDetails">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="reaxysSubstanceClose">
+<span class="ico-delete icon" aria-hidden="true"></span>
+</button>
+<h1 class="reaxysFixH1">
+<span id="reaxysAllSubstanceModalTitle" class="reaxysSubDetailHeader"></span>
+</h1>
+<div id="reaxysSubAllViewAll" class="reaxysSubstanceHeaderViewAll">
+<span>View all substances on </span>
+<a id="reaxysAllSubHomeLink" class="secondaryLink" href="javascript:scopusReaxys.openReaxys()">
+<span class="anchorText reaxysHomeLink">Reaxys</span>
+</a>
+</div>
+</div>
+<div class="modal-body reaxysSubstanceTableBody">
+<div id="reaxysViewAllSubstance">
+</div>
+</div>
+<div class="modalOverlayFooter reaxysAllSubstanceFooter modal-footer">
+<div class="pull-left displayInlineBlock reaxysAllSubstanceFooterLeft">
+</div>
+<div class="pull-left displayInlineBlock reaxysAllSubstanceFooterMain">
+<a id="reaxysAllSubstancesPrev" class="secondaryLink" href="javascript:scopusReaxys.reaxysAllSubPrev()">
+<span id="reaxysAllSubsPrevArrow" class="ico-navigate-left" aria-hidden="true"></span>
+<span class="reaxysLink">Previous</span>
+</a>
+<span id="reaxysSubstanceAllFooterNav" class="reaxysHideLink">&nbsp;
+<span id="reaxysSubstanceAllFooterPage" class=""></span>
+<span id="reaxysSubstanceAllFooterOf" class="">&nbsp;
+of&nbsp;
+</span>
+<span id="reaxysSubstanceAllFooterTot" class=""></span>&nbsp;
+</span>
+<a id="reaxysAllSubstancesNext" class="secondaryLink" href="javascript:scopusReaxys.reaxysAllSubNext()">
+<span class="reaxysLink">Next</span>
+<span id="reaxysAllSubsNextArrow" class="ico-navigate-right" aria-hidden="true"></span>
+</a>
+</div>
+<div class="pull-right displayInlineBlock italicText reaxysSubstanceFooterRight">
+<span>Powered by&nbsp;</span>
+<span class="ico-reaxysLogo reaxysSubstanceDetailFooterLogo" style="height:20px; width:60px; display:inline-block; background-repeat:no-repeat" title="Reaxys" aria-label="Reaxys"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+// Add Reaxys Javascript properties.
+var documentPui = 622441261;
+var isViewReaxysSubstances = 'true' === 'true';
+var maxReaxysSubstances = 90;
+var reaxysName = 'Reaxys';
+var reaxysTitle = 'Reaxys Database Information';
+var reaxysSubstanceTitle = 'Chemistry database information';
+var reaxysSubstanceHeader = 'Substances';
+var reaxysReactionHeader = 'Reactions';
+var reaxysSubstanceViewAll = 'View all substances';
+var reaxysSubstanceView = 'View substance';
+var reaxyHelp = 'Learn about Reaxys chemistry database information';
+var reaxysAbout = 'About Reaxys';
+var reaxysAboutDetails = 'Reaxys is designed to support chemistry researchers at every stage with the ability to investigated chemistry related research topics in peer-reviewed literature, patents and substance databases.  Reaxys retrieves substances, substance properties, reaction and synthesis data.';
+var reaxysAboutClose = 'Close window';
+// Add Reaxys Substance Propery Labels;
+var reaxysChemNameLabel = 'Chemical names';
+var reaxysMolFormLabel = 'Molecular formula';
+var reaxysLinearFormLabel = 'Linear formla';
+var reaxysSubTypeLabel = 'Substance type';
+var reaxysMolWgtLabel = 'Molecular weight';
+var reaxysCASRegLabel = 'CAS registry number(s)';
+var reaxysInChiKeyLabel = 'InChiKey';
+var reaxysReaxysIdLabel = 'Reaxys ID';
+var reaxysAllSubstances = 'All substances';
+var reaxysOfWord = 'of';
+var reaxysExpandSubstance = 'Expand Substance';
+</script>
+<script>
+oneClick.getExportJSON(false, true);
+</script>
+<script type="text/javascript" src="widget-all.js"></script>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 footer">
+<footer role="contentinfo">
+<a href="#" name="skiptofooter" id="skiptofooter"></a>
+<div class="row footerLinks">
+<div class="col-md-3">
+<header>
+<h3>About Scopus</h3>
+</header>
+<ul class="list-unstyled">
+<li>
+<a target="_blank" href="https://www.elsevier.com/online-tools/scopus" title="Learn more about Scopus (opens in a new window)" class="secondaryLink">
+<span class="anchorText">What is Scopus</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.elsevier.com/online-tools/scopus/content-overview/" title="Learn more about Scopus' content coverage (opens in a new window)" class="secondaryLink">
+<span class="anchorText">Content coverage</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://blog-scopus-com.ezproxy.usherbrooke.ca/" title="Read the Scopus Blog (opens in a new window)" class="secondaryLink">
+<span class="anchorText">Scopus blog</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://dev-elsevier-com.ezproxy.usherbrooke.ca/" title="Learn more about Scopus API's (opens in a new window)" class="secondaryLink">
+<span class="anchorText">Scopus API</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.elsevier.com/about/our-business/policies/privacy-principles" title="View privacy matters page (opens in a new window)" class="secondaryLink">
+<span class="anchorText">Privacy matters</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-md-3">
+<header>
+<h3>Language</h3>
+</header>
+<ul class="list-unstyled" id="languageSwitchList" data-currentlocale="en_US">
+<li lang="ja">
+<a hreflang="ja" href="https://www-scopus-com.ezproxy.usherbrooke.ca/personalization/switch/Japanese.uri?origin=recordpage&amp;zone=footer&amp;locale=ja_JP" target="_top" title="日本語版を表示する" class="" lang="ja">
+<span class="anchorText">
+日本語に切り替える
+</span>
+</a>
+</li>
+<li lang="zh-Hans">
+<a hreflang="zh-Hans" href="https://www-scopus-com.ezproxy.usherbrooke.ca/personalization/switch/Chinese.uri?origin=recordpage&amp;zone=footer&amp;locale=zh_CN" target="_top" title="查看简体中文版本" class="" lang="zh-Hans">
+<span class="anchorText">
+切换到简体中文
+</span>
+</a>
+</li>
+<li lang="zh-Hant">
+<a hreflang="zh-Hant" href="https://www-scopus-com.ezproxy.usherbrooke.ca/personalization/switch/Chinese.uri?origin=recordpage&amp;zone=footer&amp;locale=zh_TW" target="_top" title="查看繁體中文版本" class="" lang="zh-Hant">
+<span class="anchorText">
+切換到繁體中文
+</span>
+</a>
+</li>
+<li lang="ru">
+<a hreflang="ru" href="https://www-scopus-com.ezproxy.usherbrooke.ca/personalization/switch/Russian.uri?origin=recordpage&amp;zone=footer&amp;locale=ru_RU" target="_top" title="Просмотр версии на русском языке" class="" lang="ru">
+<span class="anchorText">
+Русский язык
+</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<header>
+<h3>Customer Service</h3>
+</header>
+<ul class="list-unstyled">
+<li>
+<a target="_blank" title="View Scopus help files (opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/standard/contactUs.uri?pageOrigin=footer">
+<span class="anchorText">Help</span>
+</a>
+</li>
+<li>
+<a target="_blank" title="Contact us (opens in a new window)" href="https://www-scopus-com.ezproxy.usherbrooke.ca/standard/contactForm.uri?pageOrigin=footer">
+<span class="anchorText">
+Contact us
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row footerCopyright">
+<div class="col-md-2">
+<a id="elsevierLogo" target="_blank" href="https://www.elsevier.com/" title="Go to the Elsevier site (opens in a new window)">
+<img src="logo_Elsevier" alt="Elsevier">
+</a>
+</div>
+<div class="col-md-8">
+<ul class="list-unstyled list-inline">
+<li>
+<a target="_blank" href="https://www.elsevier.com/locate/termsandconditions" title="View the terms and conditions of Elsevier (opens in a new window)" class="btn-link secondaryLink noPaddingLeft noBorder">
+<span class="anchorText">
+Terms and conditions
+</span>
+<span class="ico-external-link-after noMargin" aria-hidden="true"></span>
+<span class="sr-only">View the terms and conditions of Elsevier (opens in a new window)</span>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.elsevier.com/locate/privacypolicy" title="View the privacy policy of Elsevier (opens in a new window)" class="btn-link secondaryLink noPaddingLeft noBorder">
+<span class="anchorText">
+Privacy policy
+</span>
+<span class="ico-external-link-after noMargin" aria-hidden="true"></span>
+</a>
+</li>
+</ul>
+<p id="copyRightID" class="noMargin">
+Copyright ©  <a target="_blank" href="https://www.elsevier.com/" title="Go to the Elsevier site (opens in a new window)" class="btn-link noPadding secondaryLink noBorder"><span class="anchorText">Elsevier B.V </span><span class="ico-external-link-after noMargin" aria-hidden="true"></span></a>. All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+</p>
+<p class="cookiesTextID">
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the <a href="https://www-scopus-com.ezproxy.usherbrooke.ca/cookies/policy.uri" title="See cookie details (opens in a new window)" class="btn-link noPadding secondaryLink">use of cookies</a>.
+</p>
+</div>
+<div class="col-md-2">
+<a id="relexLogo" href="http://www.relx.com/" title="Go to RELX Group Homepage (Opens in a new window)" target="_blank">
+<img src="reLogo_orange" alt="RELX Group">
+<img src="reText_gray" alt="RELX Group">
+</a>
+</div>
+</div>
+</footer>
+<script type="text/javascript">
+var originVal = "recordpage";
+var SDM = new Object;
+SDM.si = new Object;
+SDM.si.sds = "f44607d0df9f9d3f22b52a6c0c73da1413bdd56a94400d1a5fccab0fc3783991ab1335dd8dee4be763ca9d11473d425b";
+SDM.tid = "B4B4A1DED8994F34FB81600EE499C9D3.wsnAw8kcdt7IPYLO0V48gA:357";
+SDM.ep = new Object();
+SDM.ep.prDevice = "https://els-eum.elsst.com";
+SDM.ep.urlPrefix = "http://www-scopus-com.ezproxy.usherbrooke.ca";
+SDM.ieVersion = "8";
+SDM.pru = "https://els-eum.elsst.com";
+SDM.pru = window.location.protocol
++ SDM.pru.replace('http:', '').replace('https:', '');
+SDM.platform = "SC";
+SDM.pageType = "recordpage";
+SDM.pageTransKey = "Sat Nov 02 18:31:36 UTC 2019#i-0b12fdee78f817ca0#B4B4A1DED8994F34FB81600EE499C9D3.wsnAw8kcdt7IPYLO0V48gA:357#FAD59CA012853B38F54ED439499D121E.wsnAw8kcdt7IPYLO0V48gA#132.210.236.20";
+SDM.sds = "166f73ef33636048808a42f17a50142bf595gxrqa";
+SDM.pf = new Object();
+SDM.cpc = "SC";
+</script>
+<script type="text/javascript" src="ScopusMasterJS.js"></script>
+<script type="text/javascript" src="RecordPageBottomMaster.js"></script>
+<input value="51264" id="accId" name="accId" type="hidden">
+<script type="text/javascript">	
+var WAM = new Object;
+WAM.sep = "#";
+WAM.ud = "IPPROFILE#72353#51264";
+WAM.cars = "";
+WAM.part = "";
+WAM.exportAction=function(format, info, count) {return true;};
+</script>
+<script type="text/javascript">
+</script>
+</div>
+</div>
+</div>
+<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-busy="true" aria-live="assertive">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body textCenter">
+Loading...
+<span class="loading-wrapper">
+<span class="loadingIcon"></span>
+</span>			
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="spineContainer" class="spine" role="region" tabindex="-1">
+<aside id="spineContent" role="complementary">
+<header>
+<h1 class="sr-only">Scopus Navigation Panel</h1>
+<h2 id="spineHeading">
+<span class="headerText">Guest user</span>
+<button type="button" class="btn-md btn-link" id="spineToggleDeux" aria-controls="spineContainer" aria-expanded="true">
+<span class="hamburgerIcon"></span>
+<span class="sr-only">Expand navigation/Collapse navigation</span>
+</button>
+</h2>
+</header>
+<div class="loggedInUserOpt">
+<div class="panel-group" id="accordian">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<a href="#personalPreferences" id="profileLink" class="btn-link btn-md btn-block text-left" data-toggle="collapse" data-parent="#accordian" aria-expanded="false">
+<span class="anchorText">Personal profile access</span>
+<span class="ico-navigate-down icon-after pull-right" aria-hidden="true"></span>
+</a>
+</h3>
+</div>
+<div id="personalPreferences" class="panel-collapse collapse">
+<ul class="list-group">
+<li><a href="https://www-scopus-com.ezproxy.usherbrooke.ca/settings.uri">Account Settings</a></li>
+<li><a href="https://www-scopus-com.ezproxy.usherbrooke.ca/export/settings.uri">Export and reference management settings</a></li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<a href="#myScopus" id="myScopusLink" class="btn-link btn-md btn-block text-left" data-toggle="collapse" data-parent="#accordian" aria-expanded="false">
+<span class="anchorText">My Scopus</span>
+<span class="ico-navigate-down icon-after pull-right" aria-hidden="true"></span>
+</a>
+</h3>
+</div>
+<div id="myScopus" class="panel-collapse collapse">
+<ul class="list-group">
+<li><a id="spineUserDashboardLink" href="https://www-scopus-com.ezproxy.usherbrooke.ca/dashboard.uri" data-type="userDashboard">Dashboard</a></li>
+<li><a id="spineSavedSearchesLink" href="https://www-scopus-com.ezproxy.usherbrooke.ca/search/save/savedSearch.uri" data-type="savedSearches">Saved searches</a></li>
+<li><a id="spineAlertsLink" href="https://www-scopus-com.ezproxy.usherbrooke.ca/alert/form/MyAlerts.uri" data-type="alerts">Alerts</a></li>
+<li><a id="spineSavedListsLink" href="https://www-scopus-com.ezproxy.usherbrooke.ca/list/form/overview.uri" data-type="savedLists">Saved lists</a></li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<a href="#myOrg" class="btn-link btn-md btn-block text-left" data-toggle="collapse" data-parent="#accordian" aria-expanded="true">
+<span class="anchorText">My organization</span>
+<span class="ico-navigate-down icon-after pull-right" aria-hidden="true"></span>
+</a>
+</h3>
+</div>
+<div id="myOrg" class="panel-collapse collapse in">
+<ul id="broughtToYouCnt" class="list-group">
+<li class="scopusBanner libraryBannerCont well">
+<div id="banner-top">
+<input id="bannerHeaderCheck" value="notAvailable" type="hidden">
+<h4>Brought to you by</h4>
+<a href="http://www.usherbrooke.ca.ezproxy.usherbrooke.ca/biblio/" class="outwardLink" target="_blank" title="View institutional website (opens in a new window)">
+<span class="anchorText">Service des bibliothèques et archives - UdeS</span>
+</a>
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+<ul id="miscLinks" class="list-group list-unstyled">
+<li>
+<a href="https://www.scival.com/home" target="_blank">SciVal</a>
+</li>
+<li>
+<a href="https://www.mendeley.com/" target="_blank">Mendeley</a>
+</li>
+<li>
+<a href="https://www.elsevier.com/solutions/pure" target="_blank">Pure</a>
+</li>
+<li>
+<a id="privacyCenterLink" href="https://privacy-elsevier-com.ezproxy.usherbrooke.ca/?redirect_url=https%3A%2F%2Fwww-scopus-com.ezproxy.usherbrooke.ca%2Frecord%2Fdisplay.uri%3Feid%3D2-s2.0-85047958236%26origin%3Dresultslist%26sort%3Dplf-f%26src%3Ds%26sid%3Da15268945cf66ed42f89f40083e86fb8%26sot%3Da%26sdt%3Da%26sl%3D89%26s%3DTITLE-ABS-KEY%2B%2528%2Bsegmentation%2BAND%2B%2522real-time%2522%2BAND%2Binference%2BAND%2Blow%2BAND%2Bpower%2BAND%2Bdevice%2B%2529%26relpos%3D0%26citeCnt%3D0%26searchTerm%3D" target="_blank">Privacy center</a>
+</li>
+</ul>
+</aside>
+</div>
+<script type="text/javascript" src="pendoTop.js"></script>
+<script type="text/javascript">
+var pendoData = {};
+pendoDataUtil.loadPendoDataObject("45783156",
+"132.210.236.20",
+"ae:REG:U_P:INST:IP",
+"",
+"en_US",
+"51264",
+"University of Sherbrooke",
+"");
+(function(p, e, n, d, o) {
+var v, w, x, y, z;
+o = p[d] = p[d] || {};
+o._q = [];
+v = [ 'initialize', 'identify', 'updateOptions', 'pageLoad' ];
+for (w = 0, x = v.length; w < x; ++w)
+(function(m) {
+o[m] = o[m]
+|| function() {
+o._q[m === v[0] ? 'unshift' : 'push']([ m ]
+.concat([].slice.call(arguments, 0)));
+};
+})(v[w]);
+y = e.createElement(n);
+y.async = !0;
+y.src = 'https://cdn.pendo.io/agent/static/7108b796-60e0-44bd-6a6b-7313c4a99c35/pendo.js';
+z = e.getElementsByTagName(n)[0];
+z.parentNode.insertBefore(y, z);
+})(window, document, 'script', 'pendo');
+/* Call this whenever information about your visitors becomes available. 
+* Please use Strings, Numbers, or Bools for value types. */
+pendo.initialize({
+apiKey : '7108b796-60e0-44bd-6a6b-7313c4a99c35',
+visitor : {
+id : pendoData.userId,
+scopusOriginalId: pendoData.scopusOriginalId,
+ipAddress : pendoData.ipAddress,
+loginStatus : pendoData.loginStatus,
+language : pendoData.language,
+SCSessionID : pendoData.SCSessionID,
+navigatorLanguage : window.navigator.language
+},
+account : {
+id : pendoData.accountId,
+name : pendoData.accountName,
+accessType : pendoData.accessType,
+consortiumId : pendoData.consortiumId
+}
+});
+</script><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_elsevier_0" name="destination_publishing_iframe_elsevier_0_name" style="display: none; width: 0px; height: 0px;" src="https://elsevier.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww-scopus-com.ezproxy.usherbrooke.ca%2Frecord%2Fdisplay.uri%3Feid%3D2-s2.0-85047958236%26origin%3Dresultslist%26sort%3Dplf-f%26src%3Ds%26sid%3Da15268945cf66ed42f89f40083e86fb8%26sot%3Da%26sdt%3Da%26sl%3D89%26s%3DTITLE-ABS-KEY%2B%2528%2Bsegmentation%2BAND%2B%2522real-time%2522%2BAND%2Binference%2BAND%2Blow%2BAND%2Bpower%2BAND%2Bdevice%2B%2529%26relpos%3D0%26citeCnt%3D0%26searchTerm%3D" class="aamIframeLoaded"></iframe>
+<script type="text/javascript">
+pageDataUtil.loadFooterPageDataObject();
+pageData.page.loadTime = performance ? Math.round(performance.now()).toString() : '';
+pageDataTracker.trackPageLoad();
+siteCatPageUtil.afterPageLoad();
+</script>
+<script type="text/javascript">
+var isBreakUpMonolith = 'true' === 'false';
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"0268925da8","agent":"","beacon":"bam.nr-data.net","applicationTime":69,"applicationID":"31454162","transactionName":"MwAGYhBYX0oEABUNXQpKN0YQUF9eJgwPEEALCQhTEBZDXAYMEwAdAAwXRg5YSBlNJCQwGw==","queueTime":0}</script>
+
+<img style="display: none;" src="https://els-eum.elsst.com/idx?cpc=SC&amp;pagetype=recordpage&amp;sds=f44607d0df9f9d3f22b52a6c0c73da1413bdd56a94400d1a5fccab0fc3783991ab1335dd8dee4be763ca9d11473d425b&amp;tid=B4B4A1DED8994F34FB81600EE499C9D3.wsnAw8kcdt7IPYLO0V48gA:357&amp;sdsh=-408283146&amp;tidh=-165582737&amp;domCount=1531" width="0" height="0"></body></html>

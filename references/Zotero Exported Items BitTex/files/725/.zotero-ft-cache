@@ -1,0 +1,162 @@
+Skip to main content
+Home Autonomous Machines
+
+    Develop
+        Hardware
+        Software
+        Tools
+        Production
+    Downloads
+    Community
+        Ecosystem
+        Support Resources
+        Projects
+        Quick Start Platforms
+    Learn
+        Getting Started
+        Tutorials
+        Success Stories
+        FAQ
+    SDKs
+        JetPack
+        DeepStream
+        Isaac
+    Buy
+
+    Search form
+    Search
+    Account
+
+    Jetson Nano
+        Developer Kit
+        Module
+    Jetson TX1
+        Module
+    Jetson TX2
+        Developer Kit
+        Module
+        TX2 4GB Module
+        TX2i Module
+    Jetson AGX Xavier
+        Developer Kit
+        Module
+        8GB Module
+
+    Home
+    Autonomous Machines
+    Buy
+    Jetson Nano
+
+Jetson Nano
+Jetson Nano Module
+
+Jetson Nano is a small, powerful computer for embedded applications and AI IoT that delivers the power of modern AI in a $129 module.
+
+Get started fast with the comprehensive JetPack SDK with accelerated libraries for deep learning, computer vision, graphics, multimedia, and more. Jetson Nano has the performance and capabilities you need to run modern AI workloads, giving you a fast and easy way to add advanced AI to your next product. To get started with your development process, check out the Jetson Nano Developer Kit .
+Buy Now
+Technical Specifications
+GPU 	NVIDIA Maxwell architecture with 128 NVIDIA CUDA® cores
+CPU 	Quad-core ARM Cortex-A57 MPCore processor
+Memory 	4 GB 64-bit LPDDR4, 1600MHz 25.6 GB/s
+Storage 	16 GB eMMC 5.1
+Video Encode 	250MP/sec
+1x 4K @ 30 (HEVC)
+2x 1080p @ 60 (HEVC)
+4x 1080p @ 30 (HEVC)
+4x 720p @ 60 (HEVC)
+9x 720p @ 30 (HEVC)
+Video Decode 	500MP/sec
+1x 4K @ 60 (HEVC)
+2x 4K @ 30 (HEVC)
+4x 1080p @ 60 (HEVC)
+8x 1080p @ 30 (HEVC)
+9x 720p @ 60 (HEVC)
+Camera 	12 lanes (3x4 or 4x2) MIPI CSI-2 D-PHY 1.1 (1.5 Gb/s per pair)
+Connectivity 	Gigabit Ethernet, M.2 Key E
+Display 	HDMI 2.0 and eDP 1.4
+USB 	4x USB 3.0, USB 2.0 Micro-B
+Others 	GPIO, I 2 C, I 2 S, SPI, UART
+Mechanical 	69.6 mm x 45 mm
+260-pin edge connector
+
+Please refer to NVIDIA documentation for what is currently supported, and the Jetson Hardware page for a comparison of all Jetson modules.
+
+Questions?
+
+Please see the FAQ , wiki and post any questions you have to the NVIDIA Jetson Nano Forum .
+
+    HIGH PERFORMANCE COMPUTING
+    GAMEWORKS
+    JETPACK
+    DESIGNWORKS
+    DRIVE
+
+GET STARTED
+
+    Hardware
+    Software
+    Tools
+    Production
+
+Learn More
+
+    Downloads
+    Tutorials
+    Ecosystem
+    Support
+
+GET INVOLVED
+
+    Register
+    Community
+    Jetson Forums
+    Jetson Wiki
+    Contact Us
+
+Copyright © 2019 NVIDIA Corporation
+
+    Legal Information
+    Privacy Policy
+    Contact
+
+    Develop
+        Hardware
+        Software
+        Tools
+        Production
+    Downloads
+    Community
+        Ecosystem
+        Support Resources
+        Projects
+        Quick Start Platforms
+    Learn
+        Getting Started
+        Tutorials
+        Success Stories
+        FAQ
+    SDKs
+        JetPack
+        DeepStream
+        Isaac
+    Buy
+
+    Search form
+    Search
+    Account
+
+    Jetson Nano
+        Developer Kit
+        Module
+    Jetson TX1
+        Module
+    Jetson TX2
+        Developer Kit
+        Module
+        TX2 4GB Module
+        TX2i Module
+    Jetson AGX Xavier
+        Developer Kit
+        Module
+        8GB Module
+

@@ -1,0 +1,635 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Create account 
+    Sign in
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    1 of 5
+    Next
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Add to List
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) Volume 10542 LNCS, 2017, Pages 319-332 3rd International Symposium on Ubiquitous Networking, UNet 2017; Casablance; Morocco; 9 May 2017 through 12 May 2017; Code 204549
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+IoT-empowered smart agriculture: A real-time light-weight embedded segmentation system (Conference Paper)
+
+    Abouzahir, S. Email Author ,
+    Sadik, M. Email Author ,
+    Sabir, E. Email Author
+    View Correspondence (jump link)
+
+View additional authors  
+Retrieving additional authors...
+
+    LRI Laboratory, NEST Research Group, ENSEM, Hassan II University of Casablanca, Casablanca, Morocco
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (21)
+
+Internet of Things (IoT) is an emerging technology where standalone equipments and autonomous devices are connected to each other and users via Internet. When IoT concept meets agriculture, the future of farming is pushed to the next level, giving birth to what is called “Smart Agriculture” or “Precision Agriculture”. The most important benefit from IoT is that a user can daily monitor his crop online in a seamless fashion. High quality data gathered from various sensors and transferred wirelessly to farm database will increase farmers understanding to their landuse leading to increasing income and product quality. One of the monitoring process is weeds detection and crop yield estimation using camera sensors. The acquired images help farmers to build map of weeds distribution or yield quantity all over the field, these maps can be used either for real-time processing or to predetermine weeds regions based on field maps history of the previous seasons. This process is referred to as segmentation problem. Several algorithms have been proposed for that purpose, however, these algorithms were run only on high performance computers. In this paper, we evaluate performance and the robustness of the most used legacy algorithms under local conditions. We focused on implementing these schemes within real-time application constraint. For instance, these algorithms were implemented and run in a low-cost embedded system. © Springer International Publishing AG 2017.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Agriculture | Crops | Weed detection
+Prominence percentile: 97.580
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Author keywords
+Back propagation neural network Fuzzy C means Internet of things Precision agriculture Segmentation Smart agriculture Vegetation color index
+Indexed keywords
+Engineering controlled terms: 	Agriculture Backpropagation Crops Image segmentation Neural networks Ubiquitous computing
+Engineering uncontrolled terms 	Back propagation neural networks Color index Fuzzy C mean Precision Agriculture Smart agricultures
+Engineering main heading: 	Internet of things
+
+    ISSN: 03029743
+    ISBN: 978-331968178-8
+    Source Type: Book series
+    Original language: English
+
+    DOI: 10.1007/978-3-319-68179-5_28
+    Document Type: Conference Paper
+    Volume Editors: Garcia Armada A.,Ghogho M.,Sabir E.,Ghogho M.,Debbah M.
+    Sponsors:
+    Publisher: Springer Verlag
+
+View references (21)
+
+    References (21)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+Abouzahir, M., Elouardi, A., Bouaziz, S., Latif, R., Abdelouahed, T.
+An improved Rao-Blackwellized particle filter based-SLAM running on an OMAP embedded architecture
+
+(2014)  2014 2nd World Conference on Complex Systems, WCCS 2014 , art. no. 7061001, pp. 716-721.  Cited 5 times .
+ISBN: 978-147994647-1
+doi: 10.1109/ICoCS.2014.7061001
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+2
+	
+Al-Hiary, H., Bani-Ahmad, S., Reyalat, M., Braik, M., Alrahamneh, Z.
+Fast and accurate detection and classification of plant diseases
+(2011)  Mach. Learn , 14 (5).  Cited 149 times .
+
+     
+
+3
+	
+Bezdek, J.C., Ehrlich, R., Full, W.
+FCM: The fuzzy c-means clustering algorithm
+
+(1984)  Computers and Geosciences , 10 (2-3), pp. 191-203.  Cited 2789 times .
+doi: 10.1016/0098-3004(84)90020-7
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+4
+	
+Cui, Y., Qiao, Z., Zou, X., Wang, B.
+Study on the method of visual navigation baseline identification and extraction of agricultural machinery
+
+(2015)  Proceedings of the IEEE International Conference on Software Engineering and Service Sciences, ICSESS , 2015-November, art. no. 7339169, pp. 766-769.  Cited 2 times .
+http://ieeexplore.ieee.org.ezproxy.usherbrooke.ca/xpl/mostRecentIssue.jsp?punumber=6596204
+ISBN: 978-147998352-0
+doi: 10.1109/ICSESS.2015.7339169
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+5
+	
+De Rainville, F.-M., Durand, A., Fortin, F.-A., Tanguy, K., Maldague, X., Panneton, B., Simard, M.-J.
+Bayesian classification and unsupervised learning for isolating weeds in row crops
+
+(2014)  Pattern Analysis and Applications , 17 (2), pp. 401-414.  Cited 21 times .
+http://link.springer-ny.com/link/service/journals/10044/index.htm
+doi: 10.1007/s10044-012-0307-5
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+6
+	
+Guijarro, M, Pajares, G., Riomoros, I., Herrera, P.J, Burgos-Artizzu, X.P., Ribeiro, A.
+Automatic segmentation of relevant textures in agricultural images
+
+(2011)  Computers and Electronics in Agriculture , 75 (1), pp. 75-83.  Cited 126 times .
+doi: 10.1016/j.compag.2010.09.013
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+7
+	
+Hague, T., Tillett, N.D., Wheeler, H.
+Automated crop and weed monitoring in widely spaced cereals
+
+(2006)  Precision Agriculture , 7 (1), pp. 21-32.  Cited 110 times .
+doi: 10.1007/s11119-005-6787-1
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+8
+	
+Hamuda, E., Glavin, M., Jones, E.
+A survey of image processing techniques for plant extraction and segmentation in the field
+
+(2016)  Computers and Electronics in Agriculture , 125, pp. 184-199.  Cited 86 times .
+www.elsevier.com/inca/publications/store/5/0/3/3/0/4
+doi: 10.1016/j.compag.2016.04.024
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+9
+	
+Kataoka, T., Kaneko, T., Okamoto, H., Hata, S.
+Crop growth estimation system using machine vision
+
+(2003)  IEEE/ASME International Conference on Advanced Intelligent Mechatronics, AIM , 2, art. no. 1225492, pp. 1079-1083.  Cited 116 times .
+ISBN: 0780377591
+doi: 10.1109/AIM.2003.1225492
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+10
+	
+Lavania, S., Matey, P.S.
+Novel method for weed classification in maize field using OTSU and PCA implementation
+
+(2015)  Proceedings - 2015 IEEE International Conference on Computational Intelligence and Communication Technology, CICT 2015 , art. no. 7078760, pp. 534-537.  Cited 6 times .
+ISBN: 978-147996022-4
+doi: 10.1109/CICT.2015.71
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+11
+	
+Otsu, Nobuyuki
+THRESHOLD SELECTION METHOD FROM GRAY-LEVEL HISTOGRAMS.
+
+(1979)  IEEE Trans Syst Man Cybern , SMC-9 (1), pp. 62-66.  Cited 19627 times .
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+12
+	
+Meyer, George E., Hindman, Tim, Laksmi, Koppolu
+Machine vision detection parameters for plant species identification
+
+(1999)  Proceedings of SPIE - The International Society for Optical Engineering , 3543, pp. 327-335.  Cited 49 times .
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+13
+	
+Meyer, G.E., Neto, J.C., Jones, D.D., Hindman, T.W.
+Intensified fuzzy clusters for classifying plant, soil, and residue regions of interest from color images
+
+(2004)  Computers and Electronics in Agriculture , 42 (3), pp. 161-180.  Cited 72 times .
+www.elsevier.com/inca/publications/store/5/0/3/3/0/4
+doi: 10.1016/j.compag.2003.08.002
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+14
+	
+Ruiz-Ruiz, G., Gómez-Gil, J., Navas-Gracia, L.M.
+Testing different color spaces based on hue for the environmentally adaptive segmentation algorithm (EASA)
+
+(2009)  Computers and Electronics in Agriculture , 68 (1), pp. 88-96.  Cited 57 times .
+doi: 10.1016/j.compag.2009.04.009
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+15
+	
+Rumelhart, D.E., Hinton, G.E., Williams, R.J.
+(1985)  Learning Internal Representations by Error Propagation .  Cited 538 times .
+Technical report, DTIC Document
+
+     
+
+16
+	
+Sekulska-Nalewajko, J., Goclawski, J.
+A semi-automatic method for the discrimination of diseased regions in detached leaf images using fuzzy c-means clustering
+
+(2011)  2011 Proceedings of 7th International Conference on Perspective Technologies and Methods in MEMS Design, MEMSTECH 2011 , art. no. 5960329, pp. 172-175.  Cited 9 times .
+ISBN: 978-966219119-6
+
+    Pour obtenir le document(opens in a new window)
+
+17
+	
+Slaughter, D.C., Giles, D.K., Downey, D.
+Autonomous robotic weed control systems: A review
+
+(2008)  Computers and Electronics in Agriculture , 61 (1), pp. 63-78.  Cited 369 times .
+doi: 10.1016/j.compag.2007.05.008
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+18
+	
+Woebbecke, David M., Meyer, George E., Von Bargen, Kenneth, Mortensen, David A.
+Plant species identification, size, and enumeration using machine vision techniques on near-binary images
+
+(1993)  Proceedings of SPIE - The International Society for Optical Engineering , 1836, pp. 208-219.  Cited 69 times .
+ISBN: 0819410373
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+19
+	
+Woebbecke, D.M., Meyer, G.E., Von Bargen, K., Mortensen, D.A.
+Color indices for weed identification under various soil, residue, and lighting conditions
+
+(1995)  Transactions of the American Society of Agricultural Engineers , 38 (1), pp. 259-269.  Cited 501 times .
+
+    Pour obtenir le document(opens in a new window)
+
+20
+	
+Zheng, L., Zhang, J., Wang, Q.
+Mean-shift-based color segmentation of images containing green vegetation
+
+(2009)  Computers and Electronics in Agriculture , 65 (1), pp. 93-98.  Cited 112 times .
+doi: 10.1016/j.compag.2008.08.002
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+21
+	
+Zhou, Z., Zang, Y., Li, Y., Zhang, Y., Wang, P., Luo, X.
+Rice plant-hopper infestation detection and classification algorithms based on fractal dimension values and fuzzy C-means ( Open Access )
+
+(2013)  Mathematical and Computer Modelling , 58 (3-4), pp. 701-709.  Cited 9 times .
+doi: 10.1016/j.mcm.2011.10.028
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+  Abouzahir, S.; LRI Laboratory, NEST Research Group, ENSEM, Hassan II University of Casablanca, Casablanca, Morocco; email: saad.abouzahir@ensem.ac.ma
+© Copyright 2017 Elsevier B.V., All rights reserved.
+
+    Back to results
+    1 of 5
+    Next
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+1
+Citation in Scopus
+0.61
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+Citations
+
+    Citation Indexes: 1
+
+Captures
+
+    Readers: 18
+
+see details
+Cited by 1 document
+
+    Enhanced approach for weeds species detection using machine vision
+    Abouzahir, S. , Sadik, M. , Sabir, E.
+    (2019) 2018 International Conference on Electronics, Control, Optimization and Computer Science, ICECOCS 2018
+
+View details of this citation
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related research data
+Close help menu
+
+Some Scopus articles have associated research data available for your review or for you to download.
+
+If an article has associated research data, the title(s) of the data record is available as a hyperlink. Click on a title of the related research data to open and view the full dataset record, and from there, you also have the option to download the record file.
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+    IoT-Empowered Smart Agriculture: A Real-Time Light-Weight Embedded Segmentation System
+    Abouzahir, Saad ,  Sabir, Essaid ,  Sadik, Mohamed
+    Springer International Publishing
+
+Data linking provided by  View all View less
+Related documents
+
+    Effective segmentation of green vegetation for resource-constrained real-time applications
+    Moorthy, S. , Boigelot, B. , Mercatoris, B.C.N.
+    (2015) Precision Agriculture 2015 - Papers Presented at the 10th European Conference on Precision Agriculture, ECPA 2015
+
+    A new approach for greenness identification from maize images
+    Yang, W. , Zhao, X. , Wang, S.
+    (2015) Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)
+
+    A new vegetation segmentation approach for cropped fields based on threshold detection from hue histograms
+    Hassanein, M. , Lari, Z. , El-Sheimy, N.
+    (2018) Sensors (Switzerland)
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Agriculture; Crops; Weed detection","id":4184,"uri":"Topic/4184","prominencePercentile":97.57956,"prominencePercentileString":"97.580","overallScholarlyOutput":0},"dig":"adaed3fe0096a8aef062c57c948a5283aacb732c585f54c1b4ab341af7d70543"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+    Grouped authors
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+

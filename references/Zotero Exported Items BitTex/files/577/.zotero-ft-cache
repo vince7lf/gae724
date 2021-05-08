@@ -1,0 +1,274 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Create account 
+    Sign in
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    Previous
+    2 of 510
+    Next
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Add to List
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+Sensors (Basel, Switzerland) Open Access Volume 19, Issue 20, 9 October 2019
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+Real-Time Hybrid Multi-Sensor Fusion Framework for Perception in Autonomous Vehicles (Article) ( Open Access )
+
+    Shahian Jahromi, B. a ,
+    Tulabandhula, T. b Email Author ,
+    Cetin, S. c Email Author
+
+View additional authors  
+Retrieving additional authors...
+
+    a Mechanical and Industrial Engineering, University of Illinois, Chicago, IL 60607, United States
+    b Information and Decision Sciences, University of Illinois, Chicago, IL 60607, United States
+    c Mechanical and Industrial Engineering, University of Illinois, Chicago, IL 60607, United States
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract
+
+There are many sensor fusion frameworks proposed in the literature using different sensors and fusion methods combinations and configurations. More focus has been on improving the accuracy performance; however, the implementation feasibility of these frameworks in an autonomous vehicle is less explored. Some fusion architectures can perform very well in lab conditions using powerful computational resources; however, in real-world applications, they cannot be implemented in an embedded edge computer due to their high cost and computational need. We propose a new hybrid multi-sensor fusion pipeline configuration that performs environment perception for autonomous vehicles such as road segmentation , obstacle detection, and tracking. This fusion framework uses a proposed encoder-decoder based Fully Convolutional Neural Network (FCNx) and a traditional Extended Kalman Filter (EKF) nonlinear state estimator method. It also uses a configuration of camera, LiDAR, and radar sensors that are best suited for each fusion method. The goal of this hybrid framework is to provide a cost-effective, lightweight, modular, and robust (in case of a sensor failure) fusion system solution. It uses FCNx algorithm that improve road detection accuracy compared to benchmark models while maintaining real-time efficiency that can be used in an autonomous vehicle embedded computer. Tested on over 3K road scenes, our fusion algorithm shows better performance in various environment scenarios compared to baseline benchmark networks. Moreover, the algorithm is implemented in a vehicle and tested using actual sensor data collected from a vehicle, performing real-time environment perception.
+Author keywords
+autonomous vehicle environment perception extended Kalman filter fully convolutional network LiDAR object detection and tracking road segmentation sensor fusion
+
+    ISSN: 14248220
+    Source Type: Journal
+    Original language: English
+
+    DOI: 10.3390/s19204357
+    PubMed ID: 31600922
+    Document Type: Article
+    Publisher: NLM (Medline)
+
+
+© This record is sourced from MEDLINE/PubMed, a database of the U.S. National Library of Medicine
+
+    Back to results
+    Previous
+    2 of 510
+    Next
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+No metrics available.
+see details
+Cited by 0 documents
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+Find more related documents in Scopus based on:
+Authors
+Keywords
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+    Grouped authors
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+

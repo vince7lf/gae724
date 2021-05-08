@@ -1,0 +1,575 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Create account 
+    Sign in
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    Previous
+    5 of 308
+    Next
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Add to List
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+Journal of Visual Communication and Image Representation Volume 64, October 2019, Article number 102638
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+Road surface condition classification using deep learning (Article)
+
+    Cheng, L. a ,
+    Zhang, X. a Email Author ,
+    Shen, J. b
+    View Correspondence (jump link)
+
+View additional authors  
+Retrieving additional authors...
+
+    a School of Mechanical and Automotive Engineering, Shanghai University of Engineering Science, Shanghai, 201620, China
+    b Department of Computer and Information Science, University of Michigan-Dearborn, Dearborn, MI 48128, United States
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (24)
+
+Traditional image recognition technology currently cannot achieve the fast real-time high-accuracy performance necessary for road recognition in intelligent driving. Deep learning models have been recently emerging as promising tools to achieve this performance. The recognition performance of such models can be boosted using appropriate selection of the activation functions. This paper proposes a deep learning approach for the classification of road surface conditions, and constructs a new activation function based on the rectified linear unit Rectified Linear Units (ReLu) activation function. The experimental results show a classification accuracy of 94.89% on the road state database. Experiments on public datasets demonstrate that the proposed convolutional neural network model with the improved activation function has better generalization and excellent classification performance. © 2019 Elsevier Inc.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Convolution | Neural networks | Convolutional network
+Prominence percentile: 99.989
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Author keywords
+Activation function Deep learning Image recognition Intelligent driving Road condition
+Indexed keywords
+Engineering controlled terms: 	Binary alloys Chemical activation Classification (of information) Image recognition Lutetium alloys Neural networks Rhenium alloys Roads and streets
+Engineering uncontrolled terms 	Activation functions Classification accuracy Classification performance Convolutional neural network Image recognition technology Intelligent driving New activation functions Road condition
+Engineering main heading: 	Deep learning
+Funding details
+Funding sponsor 	Funding number 	Acronym
+National Natural Science Foundation of China 	51775328,51205246 	NSFC
+
+    Funding text
+
+    The work described in this paper was supported by the National Natural Science Foundation of China (Grant No. 51205246 , 51775328 ).
+
+    ISSN: 10473203
+    CODEN: JVCRE
+    Source Type: Journal
+    Original language: English
+
+    DOI: 10.1016/j.jvcir.2019.102638
+    Document Type: Article
+    Publisher: Academic Press Inc.
+
+View references (24)
+
+    References (24)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+WIESEL, T.N., HUBEL, D.H.
+EFFECTS OF VISUAL DEPRIVATION ON MORPHOLOGY AND PHYSIOLOGY OF CELLS IN THE CATS LATERAL GENICULATE BODY
+
+(1963)  Journal of neurophysiology , 26, pp. 978-993.  Cited 729 times .
+doi: 10.1152/jn.1963.26.6.978
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+2
+	
+Keller, J.M., Liu, D., Fogel, D.B.
+Multilayer neural networks and backpropagation
+(2017)  Fundamentals of Computational Intelligence: Neural Networks, Fuzzy Systems, and Evolutionary Computation , p. 378.
+Spring Science+Business media B.V New York
+
+     
+
+3
+	
+LeCun, Y., Bottou, L., Bengio, Y., Haffner, P.
+Gradient-based learning applied to document recognition
+
+(1998)  Proceedings of the IEEE , 86 (11), pp. 2278-2323.  Cited 11828 times .
+doi: 10.1109/5.726791
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+4
+	
+Wu, Y.-C., Yin, F., Liu, C.-L.
+Improving handwritten Chinese text recognition using neural network language models and convolutional neural network shape models
+
+(2017)  Pattern Recognition , 65, pp. 251-264.  Cited 36 times .
+www.elsevier.com/inca/publications/store/3/2/8/
+doi: 10.1016/j.patcog.2016.12.026
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+5
+	
+Krizhevsky, A., Sutskever, I., Hinton, G.E.
+ImageNet classification with deep convolutional neural networks ( Open Access )
+
+(2017)  Communications of the ACM , 60 (6), pp. 84-90.  Cited 689 times .
+http://www.acm.org.ezproxy.usherbrooke.ca/pubs/cacm/
+doi: 10.1145/3065386
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+6
+	
+Fu, Y., Aldrich, C.
+Flotation froth image recognition with convolutional neural networks
+
+(2019)  Minerals Engineering , 132, pp. 183-190.  Cited 4 times .
+http://www.journals.elsevier.com.ezproxy.usherbrooke.ca/minerals-engineering/
+doi: 10.1016/j.mineng.2018.12.011
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+7
+	
+Shi, K., Bao, H., Ma, N.
+Forward Vehicle Detection Based on Incremental Learning and Fast R-CNN
+
+(2018)  Proceedings - 13th International Conference on Computational Intelligence and Security, CIS 2017 , 2018-January, pp. 73-76.  Cited 4 times .
+ISBN: 978-153864822-3
+doi: 10.1109/CIS.2017.00024
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+8
+	
+Du, L., Liu, B., Wang, Y., Liu, H., Dai, H.
+Target detection method based on convolutional neural network for SAR image
+
+(2016)  Dianzi Yu Xinxi Xuebao/Journal of Electronics and Information Technology , 38 (12), pp. 3018-3025.  Cited 8 times .
+http://jeit.ie.ac.cn/CN/volumn/home.shtml
+doi: 10.11999/JEIT161032
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+9
+	
+Huina, Z., Yumei, L.I., Yingying, F.U.
+Research on natural scene image classification based on Haar-CNN Model
+(2017)  J. Sichuan Norm. Univ. , 40 (1), pp. 119-126.  Cited 2 times .
+
+     
+
+10
+	
+Kuehnle, Andreas, Burghout, Wilco
+Image-based winter road condition recognition
+
+(1998)  Proceedings of the International Conference on Applications of Advanced Technologies in Transportation Engineering , pp. 225-232.  Cited 2 times .
+
+    Pour obtenir le document(opens in a new window)
+
+11
+	
+Liu, Z., Yang, J., Liu, C.
+Extracting multiple features in the CID color space for face recognition
+
+(2010)  IEEE Transactions on Image Processing , 19 (9), art. no. 5452973, pp. 2502-2509.  Cited 17 times .
+doi: 10.1109/TIP.2010.2048963
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+12
+	
+Zhang, S., Zhao, S., Sui, Y., Zhang, L.
+Single Object Tracking with Fuzzy Least Squares Support Vector Machine
+
+(2015)  IEEE Transactions on Image Processing , 24 (12), art. no. 7283605, pp. 5723-5738.  Cited 24 times .
+doi: 10.1109/TIP.2015.2484068
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+13
+	
+Yuexia, L., Yunfei, C., Wang, W.
+A survey of the application of deep learning in computer vision
+(2018)  Global Intelligent Industry Conference
+GIIC
+
+     
+
+14
+	
+Erhan, D., Bengio, Y., Courville, A., Manzagol, P.A., Vincent, P., Bengio, S.
+Why does unsupervised pre-training help deep learning?
+
+(2010)  Journal of Machine Learning Research , 11, pp. 625-660.  Cited 988 times .
+http://jmlr.csail.mit.edu/papers/volume11/erhan10a/erhan10a.pdf
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+15
+	
+Philipp, P., Felix, V.
+Optimal approximation of piecewise smooth functions using deep ReLU neural networks
+(2017)  Neural Networks
+arXiv:1709.05289
+
+     
+
+16
+	
+Fréderic, G., Degrave, J., Dambre, J.
+(2017) 
+Dual rectified linear units (DReLUs): a replacement for tanh activation functions in quasi-recurrent neural networks.
+
+     
+
+17
+	
+Harvey, D.R.
+RELU special issue: Editorial reflections
+
+(2006)  Journal of Agricultural Economics , 57 (2), pp. 329-336.  Cited 12 times .
+doi: 10.1111/j.1477-9552.2006.00055.x
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+18
+	
+Maddern, W., Pascoe, G., Linegar, C., Newman, P.
+1 year, 1000 km: The Oxford RobotCar dataset
+
+(2017)  International Journal of Robotics Research , 36 (1), pp. 3-15.  Cited 131 times .
+doi: 10.1177/0278364916679498
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+19
+	
+Geiger, A., Lenz, P., Stiller, C., Urtasun, R.
+Vision meets robotics: The KITTI dataset
+
+(2013)  International Journal of Robotics Research , 32 (11), pp. 1231-1237.  Cited 1214 times .
+doi: 10.1177/0278364913491297
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+20
+	
+Hinton, G., Osindero, S., Welling, M., Teh, Y.-W.
+Unsupervised discovery of nonlinear structure using contrastive backpropagation
+
+(2006)  Cognitive Science , 30 (4), pp. 725-731.  Cited 54 times .
+doi: 10.1207/s15516709cog0000_76
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+21
+	
+Zhao, H., Liu, F., Li, L., Luo, C.
+A novel softplus linear unit for deep convolutional neural networks
+
+(2018)  Applied Intelligence , 48 (7), pp. 1707-1720.  Cited 3 times .
+doi: 10.1007/s10489-017-1028-7
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+22
+	
+Vydana, H.K., Vuppala, A.K.
+Investigative study of various activation functions for speech recognition
+
+(2017)  2017 23rd National Conference on Communications, NCC 2017 , art. no. 8077043.  Cited 2 times .
+ISBN: 978-150905356-8
+doi: 10.1109/NCC.2017.8077043
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+23
+	
+Yu, Y., Li, X.B., Sun, H.Y.
+Color images illumination compensation method for human face region detection
+
+(2014)  Applied Mechanics and Materials , 678, pp. 162-165.
+http://www.scientific.net/AMM
+ISBN: 978-303835291-4
+doi: 10.4028/www.scientific.net/AMM.678.162
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+24
+	
+Krizhevsky, A., Hinton, G.
+Learning multiple layers of features from tiny images[DB]
+(2009) .  Cited 3071 times .
+Computer Science Department, University of Toronto
+
+     
+
+  Zhang, X.; School of Mechanical and Automotive Engineering, Shanghai University of Engineering Science, Shanghai, China; email: zxu1116@126.com
+© Copyright 2019 Elsevier B.V., All rights reserved.
+
+    Back to results
+    Previous
+    5 of 308
+    Next
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+No metrics available.
+see details
+Cited by 0 documents
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+
+    Analyze EEG signals with convolutional neural network based on power spectrum feature selection
+    Liu, W. , Jiang, H. , Lu, Y.
+    (2017) Proceedings of Science
+
+    Generative modeling of convolutional neural networks
+    Dai, J. , Lu, Y. , Wu, Y.N.
+    (2015) 3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings
+
+    A Novel Inference of a Restricted Boltzmann Machine
+    Tanaka, M. , Okutomi, M.
+    (2014) Proceedings - International Conference on Pattern Recognition
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Convolution; Neural networks; Convolutional network","id":4338,"uri":"Topic/4338","prominencePercentile":99.98852,"prominencePercentileString":"99.989","overallScholarlyOutput":0},"dig":"34adab914e0dfcc7041d6c1d2b250327bae7e3d6b89f921ea96124bfbaf59416"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+    Grouped authors
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+

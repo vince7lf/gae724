@@ -1,0 +1,365 @@
+Call for Abstracts ad
+Logo
+Login     Register     Shibboleth      Mobile      Cart
+
+Advanced Search
+Canadian Journal of Civil Engineering
+
+    Home
+    About Us
+    Journals
+    Books
+    Compilations
+    Open Access
+    Authors
+    Librarians
+    Societies
+    Blog
+    Contact
+
+    Français
+
+Home > Journals > Canadian Journal of Civil Engineering > List of Issues > Volume 44, Number 3, March 2017 > A risk-based approach to winter road surface condition classification
+Canadian Journal of Civil Engineering
+
+    Browse the journal
+        List of issues
+        e-First articles
+        Just-IN articles
+        Current issue
+        Special issues
+        Most read articles
+        Most cited articles
+        Sample issue
+        Author index
+    For authors
+        About the journal
+        Open Access
+        Benefits and services
+        Instructions to authors
+        Submit a manuscript
+        Permission forms
+        Reprints & permissions to reuse content
+
+Article
+
+« Previous TOC
+
+    Abstract
+    PDF (3271 K)
+    PDF-Plus (568 K)
+    Figures
+    Tables
+    References
+
+A risk-based approach to winter road surface condition classification
+
+Liping Fu, a b Lalita Thakali, a Tae J. Kwon, c Taimur Usman a
+
+a Department of Civil and Environmental Engineering, University of Waterloo, Waterloo, ON N2L 3G1, Canada.
+
+b School of Transportation and Logistics, Southwest Jiaotong University, Chengdu, P.R. China.
+
+c Department of Civil and Environmental Engineering, University of Alberta, Edmonton, AB T6G 1H9, Canada.
+
+Corresponding author: Lalita Thakali (email: lthakali@uwaterloo. ca ).
+
+Copyright remains with the author(s) or their institution(s). Permission for reuse (free in most cases) can be obtained from RightsLink .
+
+Published on the web 2 March 2017.
+
+Received May  5 , 2016 . Accepted November  11 , 2016 .
+
+Canadian Journal of Civil Engineering , 2017, 44(3): 182-191, https://doi.org/10.1139/cjce-2016-0215
+Abstract
+
+This paper presents a risk-based approach for classifying the road surface conditions of a highway network under winter weather events. A relative risk index (RRI) is developed to capture the effect of adverse weather conditions on the collision risk of a highway in reference to the normal driving conditions. Based on this index, multiple risk factors related to adverse winter weather conditions can be considered either jointly or separately. The index can also be used to aggregate different types of road conditions observed on any given route into a single class for risk-consistent condition classification and reporting. Two example applications are shown to illustrate the advantages of the proposed approach.
+
+Keywords: road surface condition classification , relative risk index , collision model
+
+1. Introduction
+
+In countries with severe winter seasons, transportation agencies often face significant challenges in meeting the safety and mobility needs of road users. To address these challenges, most agencies have a comprehensive winter maintenance program in place, specifying service policies and standards, best practices, and performance measurement guidelines. Essential to these programs is monitoring and reporting of road surface conditions and weather, using a variety of methods such as road weather information systems (RWIS), patrolling, and friction measurements. This information can be used by maintenance operators to assess the needs for maintenance service during winter events and by the road users to make informed decisions on when, where, and in what mode to make their trips. This information is also useful for evaluating the effectiveness of different treatment methods and the quality of the maintenance services.
+
+A common approach to classifying winter road surface conditions (RSC) for reporting and monitoring is using some predefined descriptive classes, such as bare pavement, bare lane, bare track, and snow covered. A wide variety of terminologies and classification systems is currently being used in practice by different countries and jurisdictions (e.g., Katko 1993 ; Boselly 2000 ; Al-Qadi et al. 2002 ). One of the main reasons for such lack of uniformity is that there is no quantitative basis for most of the classification schemes. In the past, some attempts have been made to develop consistent and uniform taxonomy for RSC classification across the road jurisdictions (e.g., Blackburn et al. 2004 ; TAC 2011 ). However, most of these proposed classification systems rely on heuristic rules with few convincing justifications, and hence it is of high necessity to improve the overall winter RSC classification system. Therefore, the primary objective of this study is to develop and propose a new approach with an explicit account of the driving risk that a motorist may experience on a highway. In this study, a relative risk index (RRI) is introduced to better reflect the relative safety level of various RSC categories. In particular, this research has the following two specific objectives:
+
+    Extend the use of proposed risk measures to determine the overall risk level of highway sections in terms of RSC classes as RSC data are typically collected over individual section of highways and requires an approach to combine them to a longer section for reporting purpose; and,
+
+    Compare the analysis results based on alternative approaches (conventional approach versus proposed approach).
+
+This paper is organized as follows. Section 2 provides a brief review on common RSC classification and reporting practices. Section 3 gives an overview of the data sources, data processing, and summary results of collision model. In Section 4, a relative risk index is introduced followed by its application in RSC classification. In Section 5, some example applications are used to illustrate the application of the proposed approach. Finally, conclusions and recommendations are presented in Section 6.
+2. Winter road surface condition classification and reporting practice
+
+A wide variety of terminologies and classification schemes have been developed and used by transportation authorities around the world and across different jurisdictions. Boselly (2000) synthesized different classification methods used by seven states in the US as described in Table 1 .
+Data table
+
+»View table
+	
+Table 1. RSC classification systems used by some of the US DOTs.
+
+There appears to exist significant inconsistency among the states in reporting road surface conditions both in terms of the number of categories and the terminologies used to describe the conditions. For example, North Dakota Department of Transportation (DOT) groups RSCs into seven main categories while Missouri DOT uses only four. It was suggested that the use of inconsistent reporting terminologies could cause problems for road users when crossing states boundaries. A list of terminologies was therefore recommended; however, the categories seem to have been arbitrarily chosen without explicitly considering the risk associated with each of these categories. Note that the common practice of road agencies for disseminating RSC information to travelers is to broadcast through a traveler information portal known as the 511 system ( http://www.fhwa.dot.gov/trafficinfo/511.htm ) or their individual web portals. Similarly, in Northern European countries and Japan, a variety of road surface categories have been defined to reflect the potential impact on the driving task as described in Table 2 .
+Data table
+
+»View table
+	
+Table 2. RSC classification systems used by Japan and some of the European countries.
+
+For example, Sweden classifies RSCs into five categories while Finland and Japan (Hokkaido) adopt a system of 6 and 13 categories, respectively. Some of these countries collect friction data, which is then mapped to road surface condition classes. Note that friction measurements are also used to evaluate performance of ice and snow control activities to compare efficiency of alternative treatments and service level ( Al-Qadi et al. 2002 ). Again, there is a lack of uniformity and justifications in defining condition classes and related service standards.
+
+In Canada, most provinces and territories have their own winter road condition classification and reporting systems. For example, the Ministry of Transportation Ontario (MTO) implements a condition description system including 7 major categories and 486 subcategories for reporting possible road conditions in the winter season ( Usman et al. 2012 ). While the subcategories are useful for maintenance operations, only the main categories are used for reporting purposes and disseminated to the public through its own information portal system. Similarly, Ministry of Transportation Alberta and Ministry of Transportation Quebec classify road surface conditions into three categories — bare (dry or wet), partly covered (snow or ice), and covered (snow or ice) — and broadcast these information through their 511 reporting system ( http://511.alberta.ca/legend.html ).
+
+The Transportation Association of Canada (TAC) has recently made an effort to develop a consistent and uniform taxonomy of the RSC classification system that can be used by all Canadian road authorities ( TAC 2011 ). Many Canadian road authorities have started to adopt this system for the reporting purpose. In its proposed method, road conditions are divided into eight categories based on a set of heuristic rules. The classification scheme considers the extent of longitudinal and cross-sectional coverage (i.e., bare, partly or fully covered) and types of contaminants (i.e., wet, snow, snow packed, ice) with the priority given to the most severe condition based on 80/20 rule, as shown in Fig. 1 .
+
+
+»View larger version
+
+Fig. 1. RSC classification scheme proposed by Transportation Association of Canada ( TAC 2011 ). [Colour online.]
+
+For example, according to the 80/20 rule, if more than 20% of a road section affected by snow and ice is covered by ice, then it would be classified as Partly Ice Covered, while if more than 20% is covered by packed snow, then it would be classified as Partly Snow Packed. Such rules are simple to apply, but may not be suitable to distinguish a variety of mixed road surface conditions that could be observed in the real world. Moreover, there is a lack of justifications on the selection of the threshold values (e.g., 80/20 rule).
+3. Methodology
+
+In this study, we propose risk level approach for classifying RSCs into different categories that could be used for monitoring winter road maintenance and reporting driving conditions to the travelers specifically in winter season. The risk of a road during a winter event is determined using a collision model calibrated using historical collision data from six winter seasons (2000–2006) along with traffic count, weather, and RSC data from different sources for 31 highway sections of Ontario, as depicted in Fig. 2 . Following sections explain data sources and data processing steps followed by formulation of relative risk index and model calibration.
+
+
+»View larger version
+
+Fig. 2. Thirty-one highway sections in Ontario, Canada used for model calibration (Map data © Google). [Colour online.]
+3.1. Data sources
+
+The following section briefly details the different data sources used for the analysis and their processing. It should be noted that all the data sources were either in hourly format or converted to hourly format for integration and merging. The start and end point coordinates of the selected 31 routes/road sections were used to assign the various data sources to these sections.
+3.1.1. Traffic collision data
+
+Collision data for the study routes was obtained from the Ministry of Transportation, Ontario (MTO). The database includes detailed information on each collision, including collision time, collision location, collision type, impact type, severity level, vehicle information, driver information, road and weather conditions at the time of collisions etc. Collision data are recorded as a person based data and was therefore converted to hourly based collision data by stepwise aggregation of the persons in a vehicle, vehicles in a collision, and collisions in an hour.
+3.1.2. Traffic volume data
+
+This data was obtained from two sources: MTO COMPASS system and permanent data count stations (PDCS) in hourly format. Both COMPASS and PDCS use loop detectors for collecting traffic data such as volume, speed, and density. The raw data from the two sources was screened for any outliers caused by detector malfunction and then merged into hourly traffic volume data. In cases where multiple readings were available for a segment (e.g., from both sources and (or) multiple detectors), average values were used.
+3.1.3. Road condition weather information system (RCWIS) data
+
+This data contains information about road surface conditions, maintenance, precipitation type, accumulation, visibility, and temperature. RCWIS data are collected by MTO maintenance personnel, who patrol the maintenance routes during storm events; three to four times on the average. Information from all patrol routes is conveyed to a central system six times a day. Instead of stations, this data are collected for road sections. Each observation contains information regarding the section of road to which it belongs. This data was converted to an hourly format by averaging weather and road surface information and totaling the maintenance operations in an hour.
+
+One of the most important pieces of information in this data source is the description of road surface conditions available in form of a categorical measure (with 7 major categories and 486 subcategories). These categories have intrinsic ordering in terms of severity, meaning that a more analytically useful measure would be an ordinal one. While binary variables could be used to code ordinal data, it would mean the loss of information in the ordering. Hence, it was decided to use an interval variable to map the RSC categories and at the same time make sure that the new variable would have physical interpretations. Road surface condition index (RSI), a surrogate measure of the commonly used friction level, was therefore introduced to represent different RSC classes described in RCWIS. A friction surrogate is used since there have been a number of prior field studies available focusing on the relationship between descriptive road surface conditions and friction, providing the basis to determine boundary friction values in each category. To map the categorical RSC into RSI, the following procedure was used:
+
+    The major classes of road surface conditions, defined in RCWIS, were first arranged according to their severity in an ascending order as follows:
+
+Bare and Dry < Bare and Wet < Slushy < Partly Snow Covered < Snow Covered < Snow Packed < Icy.
+
+This order was also followed when sorting individual subcategories within the major classes.
+
+    Road surface condition index (RSI) was defined for each major class of road surface state defined in the previous step as a range of values based on the literature in road surface condition discrimination using friction measurements ( Wallman et al. 1997 ; Wallman and Astrom 2001 ; Transportation Association of Canada 2008 ; Usman et al. 2010 ). For convenience of interpretation, RSI is assumed to be similar to road surface friction values and thus varies from 0.05 (poorest, e.g., ice covered) to 1.0 (best, e.g., bare and dry).
+
+    Each category in the major classes is assigned a specific RSI value. For this purpose, subcategories in each major category were sorted as per Step 1 above. Linear interpolation was used to assign RSI values to the subcategories.
+
+3.1.4. Road weather information system (RWIS) data
+
+This data source contains information about temperature, precipitation type, visibility, wind speed, road surface conditions, etc., recorded by the RWIS stations near the selected maintenance routes. All data except precipitation was available on an hourly basis. Hourly precipitation from RWIS sensors was either not available or not reliable. As a result, this information is derived from the daily precipitation reported by Environment Canada (EC). Temperature and RSC data from RWIS were used to fill in the missing data from RCWIS. For visibility and wind speed, RWIS was used as the primary source. RWIS stations record data every 20 min. Data from 45 RWIS stations were used in this research. If more than one station exists for a given route, an average value was used.
+3.1.5. Environment Canada (EC) data
+
+Weather data from Environment Canada includes temperature, precipitation type and intensity, visibility and wind speed. With the exception of the precipitation intensity data, all other data are in hourly format. Most of the EC stations have missing data. For this reason EC data was obtained from 217 stations for the study routes. This data was processed in three steps: In step 1, a 60 km arbitrary buffer zone was assumed around each route and all stations within this boundary were assigned to the particular route. In the next step using t -test, EC stations were identified, which on average are similar to EC stations near the routes. In the last step, data from different EC stations around a route were converted into a single dataset by taking their arithmetic mean. It was found that arithmetic means provide better results than weighted averages.
+3.2. Data processing
+
+Once all the data are converted into an hourly format, they are then merged into a single dataset on the basis of date (day), time (hour), and location (patrol route). Some of the variables in this dataset are duplicated as these variables are present in different data sources. In these cases priority is given to RCWIS data then RWIS data and then EC data because the former data sources are collected nearer the study sites and are therefore considered to be more representative. Similarly in case of any missing data for temperature, precipitation or wind in RCWIS, data from RWIS or EC data are used. Missing RSC data from RCWIS are retrieved from accident data or RWIS data. After removal of the duplicates, snow storm events were identified and extracted resulting in 10 932 events comprising of 122 058 h for the six winter seasons (2000–2006). Descriptive statistics for the data are given in Table 3 .
+Data table
+
+»View table
+	
+Table 3. Descriptive statistics.
+3.3. Relative risk index
+
+We propose a relative risk measure, called relative risk index (RRI) to represent the overall safety level and drivability of a highway section under adverse winter weather conditions. Specifically, RRI is defined as the ratio of the expected collision frequencies between two conditions as follows ( eq. 1 ): (1)
+
+where μ w and μ 0 are the numbers of collisions that are expected to occur on a given highway section over a specific time period (e.g., one hour), i.e., collision frequency, under two condition scenarios: the adverse winter weather event (w) and the base condition (0) for normal weather conditions (non-event), respectively.
+
+A collision model, which is explained in detail in the following section, is used to determine the expected collision frequency under the two different condition scenarios, namely, the base (normal) weather conditions and the snow storm conditions. The normal weather conditions represent the states that impose no effect on drivers such as no precipitation or drifting snow and high visibility. In this research, the following settings are assumed for the normal conditions: precipitation = 0, wind speed = 0, RSI = 1.0, and visibility = 10 km.
+
+RSCs are represented by a surrogate measure called road surface index (RSI) with values ranging from 0.05 to 1. RSI can be viewed as an indicator of the friction level of a pavement surface, depending on the degree of snow and ice coverage. A mapping from descriptive RSCs to RSI was proposed by Usman et al. (2012) as given in Table 4 .
+Data table
+
+»View table
+	
+Table 4. RSC categories and corresponding road surface index.
+3.4. Collision model
+
+A generalized negative binomial (GNB) model is used for modeling collisions. While negative binomial (NB) model has been most widely implemented, one of its limitations lies in the use of constant over-dispersion parameter. This limitation has been improved significantly through GNB model framework where this parameter is modeled as a function of a set of covariates, thus accounting for extra variation in the data and increasing the model performance ( Hauer 2001 ; Miaou and Lord 2003 ; Miranda-Moreno et al. 2005 ; Usman et al. 2010 ).
+
+Mathematically, GNB model can be described as follows. Let Y i be a random variable following a Poisson distribution ( θ i ) with ln( θ i ) = ln( μ i ) + ε i where Y i represents the number of collisions during hour i ( i = 1, … n ), μ i is expected collision frequency at hour i ( eq. 2 ), and exp ( ε i ) is a Gamma distributed function ∼ Gamma(1/ α i , 1/ α i ), where 1/ α i is the over-dispersion parameter ( eq. 3 ). The expected collision frequency ( μ i ) is assumed as a function of a set of covariates through the log-link function, which is the most commonly used model functional form in the road safety literature (see eq. 2 ). (2) (3)
+
+where exposure is the total vehicle kilometres travelled in an hour, X i represent covariates (e.g., precipitation, RSI, visibility, wind speed), is the corresponding model coefficient, and γ i is a coefficient for the over-dispersion parameter model.
+
+A summary of the GNB model is presented in Table 5 . The traffic and weather related factors, namely, traffic exposure, hourly precipitation, wind speed, RSC, and visibility, were found to have a significant effect on road risk level. Most of the variables were significant at a significance level of 2% or less, which is a value well under the generally accepted threshold of 5% with the exception of “Hourly Precipitation” for which the level of significance was 7.9%. This factor was, however, still retained in the model because the value of 7.9% is close enough to 5% and precipitation intensity is also found to have effect on road safety in the studies conducted by other researchers (e.g., Knapp et al. 2000 ; Andrey et al. 2001 ; Fu et al. 2006 , etc.). Comparatively, the degree of impact of RSC (measured in RSI) on road safety is higher than that of weather factors. This could be explained using the concept of “elasticity”, which represents the percent change in the expected collision frequency that would result from a 1% change in the independent variable at its mean value. Accordingly, elasticity for RSI (1.93) was found relatively high in comparison to the weather related factors (ranges from 0.02 to 0.5). A more extensive discussion on the findings can be found in Usman et al. (2012) .
+Data table
+
+»View table
+	
+Table 5. Summary of GNB model results.
+
+Note that other extended forms of NB models such as random-effect NB and random-parameter NB models were also calibrated to explore if these alternative models would perform better. These are normally applied to the collision data exhibiting a significant spatial heterogeneity. A simple comparison using goodness-of-fit measures including mean absolute error (MAE) and root mean squared error (RMSE) between all models was conducted. The results indicated that there were insignificant differences between GNB and other extended NB models, further confirming the validity of incorporating a GNB model. One of the reasons for having such marginal differences could be due to the consideration of a site as a categorical variable in the GNB model as this may have captured the potential spatial heterogeneity across the patrol routes.
+4. Relative risk index
+
+As explained in Section 3.4, relative risk index (RRI) is a relative measure of risk levels between the normal conditions and the specific conditions of a given snow event. For any particular variable, X i (e.g., road surface conditions — RSI), the associated RRI can be determined by holding other variables in their model as constants. As the collision model specification is in exponential (which is multiplicative) form (see eq. 2 ), the remaining variables fixed at certain constant levels are cancelled out, resulting in a simple expression ( eq. 4 ). (4)
+
+Figure 3 illustrates RRI as a function of individual risk factors. As expected, road surface conditions have the most important effect on the risk level of a highway. Lower RSIs are associated with higher RRIs, which is intuitive as a lower RSI indicates unfavorable driving conditions due to a lower frictional level. Similarly, Figs. 3 b –3 e illustrate that higher RRI levels are associated with severe weather conditions (e.g., higher precipitation, lower temperature, lower visibility, and higher wind speed).
+
+
+»View larger version
+
+Fig. 3. Effect of road weather and surface factors on RRI. [Colour online.]
+
+Equation (4) shows a case of calculating relative risk of an individual factor. It is also possible to report overall relative risk of multiple risk factors together based on their levels of contributions to the overall risk of collision as shown in eq. (5) . (5)
+
+In our case, we could simply multiply the individual RRI’s from Fig. 3 to determine the overall RRI for the given weather and road surface conditions. This gives an opportunity for road authorities to report the relative driving risk of a road section, taking into account all major factors including precipitation, wind speed, visibility, temperature, and road surface conditions.
+5. Applications
+
+The relative risk index (RRI) defined in eq. (4) provides a direct link between road safety and individual contributing factors such as road surface condition and weather related factors. In this study, we estimate RRI of different types of descriptive RSCs as we are interested in reporting RSCs in particular. Table 6 shows a mapping from descriptive RSCs (as represented by RSI) to RRI.
+Data table
+
+»View table
+	
+Table 6. RSC categories and corresponding relative risk index.
+
+When it comes to reporting, the relative risk associated with each road section’s surface condition can be presented in a map. Figure 4 shows an example visualizing the relative driving risk of a regional road network at a particular time of a winter event.
+
+
+»View larger version
+
+Fig. 4. Example of risk-based road conditions reporting system (Background image: Imagery © 2016 Landsta, Data SIO, NOAA, US. Navy, NGA, GEBCO, Map data © 2016 Google). [Colour online.]
+
+The RRI can also be used as a basis for determining the overall risk level of a route that has a mix of different types of road surface conditions (e.g., bare, fully snow covered, bare track) and classify it in a way that is consistent with this overall risk level. The following two methods are proposed:
+
+(1) Classification based on average RRI (RRI Method 1): The average RRI of a route is defined as the length-weighted average of the RRIs of all subsections as follows ( eq. 6 ). (6)
+
+where l i is the length of subsection i of the route that has a uniform RSC in terms of snow cover, and RRI i denotes the corresponding RRI for the subsection. The overall RSC type could be decided accordingly based on the mapping between RRI and RSCs ( Table 6 ).
+
+(2) Classification based on the section with the highest overall risk (RRI Method 2): Each subsection ( l i ) is converted into a standard section of the base condition by multiplying its length ( l i ) by its RRI i , i.e., l i × RRI i . The RSC of the whole route can be classified as the same as that of the subsection with the longest equivalent length.
+
+In the past studies ( Blackburn et al. 2004 ; TAC 2011 ), heuristic rules have been proposed to determine the RSC of a route. The potential problem with this heuristic based approach is that the classification results may not reflect the overall condition and thus the risk of the route. Figure 5 shows four examples comparing the classification results of the proposed risk-based methods and the TAC method using a hypothetical highway route. The route is 20 km long and divided into 20 sections of equal length (one kilometre each) with each section’s road surface type generated randomly according to some assumed condition scenarios. For each example, the sections are sorted by the road surface condition type (from Class 7 to Class 1, as described in Table 6 ). These hypothetical scenarios are generated to reflect a wide range of possible road surface conditions, including the cases of mild to severe RSCs. In a scenario of mild condition, the majority of highway sections are dominated by bare conditions whereas in severe case by icy and (or) slippery conditions.
+
+
+»View larger version
+
+Fig. 5. RSC classification — proposed methods versus TAC (2011) method. [Colour online.]
+
+The first example ( Fig. 5 a ) is intended to simulate conditions that are relatively severe with RSC ranging from Class 5 (fully snow covered) to Class 7 (fully ice covered). As it can be seen, the second proposed method (RSI Method 2) and the TAC method have classified the route into the same class of Ice Covered (Class 7), which is more severe than the overall route conditions as identified by the risk-based approach (Method 1).
+
+The second example ( Fig. 5 b ) simulates highly mixed RSCs, with RSC varying from Class 1 to Class 7. In this case, the route would be classified as being partially snow covered or slushy (Class 3) by the TAC Method while it would be in the more severe category of Snow Covered (Class 5) or Snow Packed (Class 6) based on its overall risk.
+
+The TAC Method also indicates a lower overall risk in the other two examples ( Figs. 5 c and 5 d ), which simulate two mild conditions with the first one being relatively uniform (Class 1–5) and other having a combination of two extremes (Class 1, 2, and 7). Between the two proposed methods, Method 2 is always on the conservative side, taking the conditions of the higher risk section as the main class.
+
+Based on the relative risk concept introduced in this paper, the TAC Method could be revised to take into account the relative risk between different RSC categories while retaining its simplicity. Figure 6 shows the revised classification scheme, which is established based on the principles of relative risk as follows (referring to Table 6 for the relative risk values):
+
+    The threshold of 10% that divides the bare pavement categories (Dry or Wet) and the rest is derived from the relative risk between these two general categories (while taking a slightly conservative approach), i.e., = 1.15/(1.15 + 8.5) × 100% = 11.9% or 10% for convenience. Note that TAC also used 10% as a threshold, which was however determined from the common definition of bare pavement status used in practice.
+
+    The threshold of 20% that divides the Partly Covered categories and the rest of the affected area is derived from = 2.08/(2.08 + 8.5) × 100% = 20% (note that the RRI value of 2.08 for Partly Covered is the average of the two sub-categories, i.e., slushy and partly snow covered). Note that in calculating this ratio for a given route, the bare pavement section should be treated as if it were Partly Covered. Compared to the TAC threshold (50%), this new threshold value is more conservative as the fully covered conditions pose higher risk than the partly covered conditions.
+
+    The thresholds of 40% that define the remaining categories are again derived based on the same idea as described above:
+
+        Bare and Wet versus Bare and Dry: 1.0/(1.0 + 1.3) × 100% = 43.5% ∼ 40%
+
+        Partly Ice versus the rest (partly snow): 1.68/(1.68 + 2.48) × 100% = 40.3% ∼ 40%
+
+        Between Ice Covered versus the rest: 5.16/(5.16 + 8.5) × 100% = 37.8% ∼ 40%
+
+        Snow Packed versus Snow Covered: 4.16/(4.16 + 6.15) × 100% = 40.3% ∼ 40%
+
+
+»View larger version
+
+Fig. 6. Revised TAC method-based RSC classification scheme. [Colour online.]
+
+The proposed revised TAC classification scheme was also applied to the example problems presented in Fig. 5 . As observed, these results are in better agreement with those from the full risk-based approach presented in this paper. Therefore, this revised TAC classification method which is based on risk calculation, unlike the original TAC method, could be convincingly used as an alternative RSC classification method.
+6. Conclusions and recommendations
+
+In this paper, a risk-based approach is introduced for the classification and reporting of winter road conditions with an explicit account of the collision risk that a motorist may experience on a highway under adverse road weather and surface conditions. A relative risk index is introduced on the basis of the risk estimated using a collision model with weather and road surface condition variables as the risk factors. Two approaches are proposed to address the road condition classification challenges. The first approach is applying the risk model to calculate relative risk index (RRI) which represents the relative increase in risk as compared to normal conditions. The RRI value gives an indication of the level of driving risk caused by the respective road surface conditions as compared to normal driving conditions. The second approach is converting different classes of road conditions observed on any given route into a single dominant class based on the relative risk between individual classes of road conditions.
+
+Typically, road surface condition data are collected over individual sections of highways; as a result, these data can be used to determine the overall risk level of a highway section or a whole highway route. The resulting risk levels could be potentially applied by road agencies to monitor the performance of contractors using a predefined minimum risk level. Moreover, the latter approach could be used to develop new condition classification systems or improve some of the existing classification schemes.
+
+The research can be further extended in several directions. First, the idea of using a safety based risk index to classify winter road conditions can be applied to define other types of performance measures related to the impacts of winter weather, such as mobility and winter maintenance activities. Secondly, further research is needed to investigate the feasibility of developing a universal risk index that is applicable across large geographic areas. This research introduced the idea of a risk-based approach for road condition classification; however, it only tested the idea using the safety model developed for a particular region (MTO). It is unclear that whether or not the relative effects of the individual risk factors would be in similar magnitudes for other provinces or regions. Finally, the validity of the proposed classification scheme needs to be tested against user perception about the actual road conditions. An ideal classification system should be simple, intuitive, and consistent.
+Acknowledgement
+
+The authors wish to acknowledge Ontario Ministry of Transportation (MTO), AURORA (an international partnership of public agencies for joint research activities in the area of road weather information system), and NSERC (National Science and Engineering Research Council of Canada) for their financial supports. The authors also appreciate the valuable contributions from Mr. Max S. Perchanok of MTO during this study.
+References
+
+     
+    Al-Qadi, I., Loulizi, A., Flintsch, G., Roosevelt, D., Decker, R., Wambold, J., and Nixon, W. 2002. Feasibility of Using Friction Indicators to Improve Winter Maintenance Operations and Mobility (Tech. Rep.). NCHRP Web Document 53, NCHRP Project 6-14 Contractor Final Report. Google Scholar
+     
+    Andrey, J., Mills, B., and Vandermolen, J. 2001. Weather Information and Road Safety. Institute for Catastrophic Loss Reduction, Toronto, Ontario, Canada. Paper Series – No. 15. Google Scholar
+     
+    Blackburn, R.R., Bauer, K.M., Amsler, D.E., Boselly, S.E., and McElory, A.D. 2004. Snow and ice control: guidelines for materials and methods. NCHRP report 526. Transportation Research Board. Google Scholar
+     
+    Boselly, S.E., III. 2000. Identification and Documentation of Weather and Road Condition Dissemination Devices and Data Formats. Weather Solutions Group, Chesterfield MO, Prepared for the Aurora Program, Mn/DOT Agreement, (79575). Google Scholar
+     
+    Fu, L., Perchanok, M.S., Miranda-Moreno, L.F., and Shah, Q.A. 2006. Effects of Winter Weather and Maintenance Treatments on Highway Safety. Paper No. 06-0728. TRB 2006 Annual Meeting CD-ROM. Google Scholar
+     
+    Hauer E. 2001. Overdispersion in modeling accidents on road sections and in Empirical Bayes estimation. Accident Analysis and Prevention 33 (6): 799-808 Crossref , Medline ,  Google Scholar .
+     
+    Katko K. 1993. Goals and Methods of Winter Maintenance in Finland. Transportation Research Record 1387 : 8-11 Google Scholar .
+     
+    Knapp, K.K., Smithson, D.L., and Khattak, A.J. 2000. The Mobility and Safety Impacts of Winter Storm Events in a Freeway Environment. In Mid-Continent Transportation Symposium, 15–16 May, Iowa State University, Ames, Iowa. Google Scholar
+     
+    Miaou SP, Lord D. 2003. Modeling traffic crash-flow relationships for intersections: dispersion parameter, functional form, and Bayes versus empirical Bayes methods. Transportation Research Record: Journal of the Transportation Research Board 1840 : 31-40 Crossref ,  Google Scholar .
+     
+    Miranda-Moreno L, Fu L, Saccomanno F, Labbe A. 2005. Alternative risk models for ranking locations for safety improvement. Transportation Research Record: Journal of the Transportation Research Board 1908 : 1-8 Crossref ,  Google Scholar .
+     
+    Transportation Association of Canada (TAC). 2008. Winter maintenance performance measurement using friction testing. Final draft report, September 2008. Google Scholar
+     
+    Transportation Association of Canada (TAC). 2011. Winter Road Condition Terminology User Guide (Tech. Rep.). Google Scholar
+     
+    Usman T, Fu L, Miranda-Moreno LF. 2010. Quantifying Safety Benefit of Winter Road Maintenance: Accident frequency modeling. Accident Analysis and Prevention 42 (6): 1878-1887 Crossref , Medline ,  Google Scholar .
+     
+    Usman T, Fu L, Miranda-Moreno LF. 2012. A disaggregate model for quantifying the safety effects of winter road maintenance activities at an operational level. Accident Analysis and Prevention 48 : 368-378 Crossref , Medline ,  Google Scholar .
+     
+    Wallman, C.G., and Astrom, H. 2001. Friction measurement methods and the correlation between road friction and traffic safety — A Literature Review. VTI report M911A. Google Scholar
+     
+    Wallman, C.G., Wretling, P., and Oberg, G. 1997. Effects of winter road maintenance. VTI rapport 423A. Google Scholar
+
+Article has an altmetric score of 30
+altmetric text
+Article Tools
+
+    Tweet
+    Share 2
+    Add to Favorites
+    Download Citation
+    Email a Colleague
+    Request Permissions
+    Citation Alerts
+    Download Adobe Reader for PDFs
+
+Journal Tools
+
+    instructions to authors Instructions to authors
+
+    email alerts Get an email alert for the latest issue
+
+    featured content Check out the journal's featured content
+
+    rss feed
+    facebook link
+    twitter link
+    Follow the Journal
+
+    Subscribe Now or click here for more information
+
+Strat Plan Ad CSP Video Acess archives-ad CSCE courses ad
+Connect With Us 	Sign up for E-Alerts Alerts 	Read our Blog CSP Blog 	Facebook 	Twitter 	YouTube 	Linked In
+	RSS
+	
+
+	
+
+
+	
+
+
+	
+
+
+	
+	
+	
+	
+
+
+	
+
+
+© Copyright 2019 – Canadian Science Publishing

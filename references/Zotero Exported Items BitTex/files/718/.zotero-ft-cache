@@ -1,0 +1,346 @@
+    Get Started
+    Ecosystem
+    Models (Beta)
+
+    Discover, publish, and reuse pre-trained models
+    Tools & Libraries
+
+    Explore the ecosystem of tools and libraries
+    Mobile
+    Blog
+    Tutorials
+    Docs
+    Resources
+    Developer Resources
+
+    Find resources and get questions answered
+    About
+
+    Learn about PyTorch’s features and capabilities
+    Github
+
+Table of Contents
+1.3.0
+
+Getting Started
+
+    Deep Learning with PyTorch: A 60 Minute Blitz
+    Writing Custom Datasets, DataLoaders and Transforms
+    Visualizing Models, Data, and Training with TensorBoard
+
+Image
+
+    TorchVision Object Detection Finetuning Tutorial
+    Transfer Learning for Computer Vision Tutorial
+    Spatial Transformer Networks Tutorial
+    Neural Transfer Using PyTorch
+    Adversarial Example Generation
+    DCGAN Tutorial
+
+Audio
+
+    torchaudio Tutorial
+
+Text
+
+    NLP From Scratch: Classifying Names with a Character-Level RNN
+    NLP From Scratch: Generating Names with a Character-Level RNN
+    NLP From Scratch: Translation with a Sequence to Sequence Network and Attention
+    Text Classification with TorchText
+    Language Translation with TorchText
+    Sequence-to-Sequence Modeling with nn.Transformer and TorchText
+
+Named Tensor (experimental)
+
+    (experimental) Introduction to Named Tensors in PyTorch
+
+Reinforcement Learning
+
+    Reinforcement Learning (DQN) Tutorial
+
+Deploying PyTorch Models in Production
+
+    Deploying PyTorch in Python via a REST API with Flask
+    Introduction to TorchScript
+    Loading a TorchScript Model in C++
+    (optional) Exporting a Model from PyTorch to ONNX and Running it using ONNX Runtime
+
+Parallel and Distributed Training
+
+    Model Parallel Best Practices
+    Getting Started with Distributed Data Parallel
+    Writing Distributed Applications with PyTorch
+    (advanced) PyTorch 1.0 Distributed Trainer with Amazon AWS
+
+Extending PyTorch
+
+    Extending TorchScript with Custom C++ Operators
+    Creating Extensions Using numpy and scipy
+    Custom C++ and CUDA Extensions
+
+Quantization (experimental)
+
+    (experimental) Dynamic Quantization on an LSTM Word Language Model
+    (experimental) Static Quantization with Eager Mode in PyTorch
+
+PyTorch in Other Languages
+
+    Using the PyTorch C++ Frontend
+
+PyTorch Fundamentals In-Depth
+
+    Learning PyTorch with Examples
+    What is torch.nn really ?
+
+    Tutorials >
+    Welcome to PyTorch Tutorials
+
+Shortcuts
+index
+Run in Google Colab
+Colab
+Download Notebook
+Notebook
+View on GitHub
+GitHub
+Welcome to PyTorch Tutorials
+
+To learn how to use PyTorch, begin with our Getting Started Tutorials. The 60-minute blitz is the most common starting point, and provides a broad view into how to use PyTorch from the basics all the way into constructing deep neural networks.
+
+Some considerations:
+
+    We’ve added a new feature to tutorials that allows users to open the notebook associated with a tutorial in Google Colab. Visit this page for more information.
+    If you would like to do the tutorials interactively via IPython / Jupyter, each tutorial has a download link for a Jupyter Notebook and Python source code.
+    Additional high-quality examples are available, including image classification, unsupervised learning, reinforcement learning, machine translation, and many other applications, in PyTorch Examples .
+    You can find reference documentation for the PyTorch API and layers in PyTorch Docs or via inline help.
+    If you would like the tutorials section improved, please open a github issue here with your feedback.
+    Check out our PyTorch Cheat Sheet for additional useful information.
+    Finally, here’s a link to the PyTorch Release Notes
+
+Getting Started
+
+_images/pytorch-logo-flat.png
+
+Deep Learning with PyTorch: A 60 Minute Blitz
+
+_images/landmarked_face21.png
+
+Writing Custom Datasets, DataLoaders and Transforms
+
+_images/pytorch_tensorboard.png
+
+Visualizing Models, Data, and Training with TensorBoard
+
+Image
+
+_images/tv-img.png
+
+TorchVision Object Detection Finetuning Tutorial
+
+_images/sphx_glr_transfer_learning_tutorial_001.png
+
+Transfer Learning for Computer Vision Tutorial
+
+_images/Five.gif
+
+Spatial Transformer Networks Tutorial
+
+_images/sphx_glr_neural_style_tutorial_004.png
+
+Neural Transfer Using PyTorch
+
+_images/panda.png
+
+Adversarial Example Generation
+
+_images/dcgan_generator1.png
+
+DCGAN Tutorial
+
+Named Tensor (experimental)
+
+_images/named_tensor.png
+
+(experimental) Introduction to Named Tensors in PyTorch
+
+Audio
+
+_images/audio_preprocessing_tutorial_waveform.png
+
+torchaudio Tutorial
+
+Text
+
+_images/rnnclass.png
+
+NLP From Scratch: Classifying Names with a Character-Level RNN
+
+_images/char_rnn_generation.png
+
+NLP From Scratch: Generating Names with a Character-Level RNN
+
+_images/seq2seq_flat.png
+
+NLP From Scratch: Translation with a Sequence to Sequence Network and Attention
+
+_images/text_sentiment_ngrams_model1.png
+
+Text Classification with TorchText
+
+_images/german_to_english_translation.png
+
+Language Translation with TorchText
+
+_images/transformer_architecture1.jpg
+
+Sequence-to-Sequence Modeling with nn.Transformer and TorchText
+
+Reinforcement Learning
+
+_images/cartpole.gif
+
+Reinforcement Learning (DQN) Tutorial
+
+Deploying PyTorch Models in Production
+
+_images/flask.png
+
+Deploying PyTorch in Python via a REST API with Flask
+
+_images/torchscript.png
+
+Introduction to TorchScript
+
+_images/torchscript_to_cpp.png
+
+Loading a TorchScript Model in C++
+
+_images/cat.jpg
+
+(optional) Exporting a Model from PyTorch to ONNX and Running it using ONNX Runtime
+
+Parallel and Distributed Training
+
+_images/DistPyTorch.jpg
+
+Model Parallel Best Practices
+
+_images/DistPyTorch.jpg
+
+Getting Started with Distributed Data Parallel
+
+_images/DistPyTorch.jpg
+
+Writing Distributed Applications with PyTorch
+
+_images/DistPyTorch.jpg
+
+(advanced) PyTorch 1.0 Distributed Trainer with Amazon AWS
+
+Extending PyTorch
+
+_images/cpp_logo.png
+
+Extending TorchScript with Custom C++ Operators
+
+_images/scipynumpy.png
+
+Creating Extensions Using numpy and scipy
+
+_images/cpp_logo.png
+
+Custom C++ and CUDA Extensions
+
+Quantization (experimental)
+
+_images/quant_asym.png
+
+(experimental) Dynamic Quantization on an LSTM Word Language Model
+
+_images/qat.png
+
+(experimental) Static Quantization with Eager Mode in PyTorch
+
+PyTorch in Other Languages
+
+_images/cpp-pytorch.png
+
+Using the PyTorch C++ Frontend
+
+PyTorch Fundamentals In-Depth
+
+_images/examples.png
+
+Learning PyTorch with Examples
+
+_images/torch.nn.png
+
+What is torch.nn really?
+
+Next
+Was this helpful?
+Yes
+No
+Thank you
+
+© Copyright 2017, PyTorch.
+Built with Sphinx using a theme provided by Read the Docs .
+
+    Welcome to PyTorch Tutorials
+        Getting Started
+        Image
+        Named Tensor (experimental)
+        Audio
+        Text
+        Reinforcement Learning
+        Deploying PyTorch Models in Production
+        Parallel and Distributed Training
+        Extending PyTorch
+        Quantization (experimental)
+        PyTorch in Other Languages
+        PyTorch Fundamentals In-Depth
+
+Docs
+
+Access comprehensive developer documentation for PyTorch
+View Docs
+Tutorials
+
+Get in-depth tutorials for beginners and advanced developers
+View Tutorials
+Resources
+
+Find development resources and get your questions answered
+View Resources
+
+    PyTorch
+    Get Started
+    Features
+    Ecosystem
+    Blog
+    Resources
+
+    Support
+    Tutorials
+    Docs
+    Discuss
+    Github Issues
+    Slack
+    Contributing
+
+    Follow Us
+    Email Address
+
+To analyze traffic and optimize your experience, we serve cookies on this site. By clicking or navigating, you agree to allow our usage of cookies. As the current maintainers of this site, Facebook’s Cookies Policy applies. Learn more, including about available controls: Cookies Policy .
+
+    Get Started
+    Features
+    Ecosystem
+    Mobile
+    PyTorch Hub
+    Blog
+    Tutorials
+    Docs
+    Resources
+    Github
+

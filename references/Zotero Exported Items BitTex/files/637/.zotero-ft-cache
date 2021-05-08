@@ -1,0 +1,4817 @@
+Skip to main content
+Note for Screen Readers
+
+Accessibility Mode is off.
+
+In accessibility mode, pages of books are presented as text rather than images, and other functions such as searching for a book or within the book are optimized for screen reader use.
+Enable Accessibility Mode
+.st2{fill:#243163}.st3{fill:#fff} .st2{fill:#243163}.st3{fill:#fff}
+Toggle navigation
+ProQuest
+Ebook Central ™
+
+    Search
+    Bookshelf
+    Settings
+        Profile
+        Language
+    Help
+    Sign Out
+
+Search Ebooks Search Submit
+Advanced Search Browse Subjects
+Universite de Sherbrooke Bibliotheque MGH
+×
+
+
+
+Advances in Computer Vision : Proceedings of the 2019 Computer Vision Conference (CVC), Volume 1 Cover Image
+Read Online
+Request
+Download Book
+Download Book
+Add to Bookshelf
+Share Link to Book
+Cite Book
+Advances in Computer Vision : Proceedings of the 2019 Computer Vision Conference (CVC), Volume 1
+Kohei Arai and Supriya Kapoor
+Availability
+
+Your institution has access to 1 copy of this book.
+Read Online
+Not Available for Full Download
+Download PDF Chapter
+
+Get up to 334 pages, use any PDF software, does not expire.
+167
+pages remaining for copy (of 167)
+334
+pages remaining for PDF print/chapter download (of 334)
+Description
+
+This book presents a remarkable collection of chapters covering a wide range of topics in the areas of Computer Vision, both from theoretical and application perspectives. It gathers the proceedings of the Computer Vision Conference (CVC 2019), held in Las Vegas, USA from May 2 to 3, 2019. The conference attracted a total of 371 submissions from pioneering researchers, scientists, industrial engineers, and students all around the world. These submissions underwent a double-blind peer review process, after which 120 (including 7 poster papers) were selected for inclusion in these proceedings. The book's goal is to reflect the intellectual breadth and depth of current research on computer vision, from classical to intelligent scope. Accordingly, its respective chapters address state-of-the-art intelligent methods and techniques for solving real-world problems, while also outlining future research directions. Topic areas covered include Machine Vision and Learning, Data Science, Image Processing, Deep Learning, and Computer Vision Applications.
+Show more
+Table of Contents
+Intro
+pp Intro-iv; 5 pages
+Download PDF
+  
+Read Online
+Preface
+pp v-vi; 2 pages
+Download PDF
+  
+Read Online
+Contents
+pp vii-xii; 6 pages
+Download PDF
+  
+Read Online
+Deep Learning for Detection of Railway Signs and Signals
+pp 1-15; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 1-1; 1 page
+Download PDF
+  
+Read Online
+2 Literature Review
+pp 2-3; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Previous Approaches
+pp 2-2; 1 page
+Download PDF
+  
+Read Online
+2.2 Convolutional Neural Networks
+pp 3-3; 1 page
+Download PDF
+  
+Read Online
+3 Data Analysis
+pp 3-7; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Dataset
+pp 3-6; 4 pages
+Download PDF
+  
+Read Online
+3.2 Railway vs Road Signs and Signals
+pp 7-7; 1 page
+Download PDF
+  
+Read Online
+4 Methodology
+pp 8-9; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Faster R-CNN
+pp 8-8; 1 page
+Download PDF
+  
+Read Online
+4.2 Evaluation Method
+pp 9-9; 1 page
+Download PDF
+  
+Read Online
+5 Results
+pp 10-13; 4 pages
+Download PDF
+  
+Read Online
+6 Conclusions
+pp 14-14; 1 page
+Download PDF
+  
+Read Online
+References
+pp 14-15; 2 pages
+Download PDF
+  
+Read Online
+3D Conceptual Design Using Deep Learning
+pp 16-26; 11 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 16-16; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 16-16; 1 page
+Download PDF
+  
+Read Online
+2 Background
+pp 17-17; 1 page
+Download PDF
+  
+Read Online
+3 Network Architecture
+pp 18-19; 2 pages
+Download PDF
+  
+Read Online
+4 Data
+pp 20-20; 1 page
+Download PDF
+  
+Read Online
+5 Experiment and Results
+pp 21-23; 3 pages
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 24-24; 1 page
+Download PDF
+  
+Read Online
+7 Future Work
+pp 24-24; 1 page
+Download PDF
+  
+Read Online
+Appendix
+pp 24-25; 2 pages
+Download PDF
+  
+Read Online
+References
+pp 26-26; 1 page
+Download PDF
+  
+Read Online
+The Effect of Color Channel Representations on the Transferability of Convolutional Neural Networks
+pp 27-38; 12 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 27-28; 2 pages
+Download PDF
+  
+Read Online
+2 Image Color Representation
+pp 29-29; 1 page
+Download PDF
+  
+Read Online
+3 Transfer Learning of DL Models for Image Classification
+pp 30-30; 1 page
+Download PDF
+  
+Read Online
+4 Experimental Layout
+pp 31-32; 2 pages
+Download PDF
+  
+Read Online
+5 Results
+pp 33-35; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Inception-V3
+pp 33-33; 1 page
+Download PDF
+  
+Read Online
+5.2 ResNet
+pp 33-34; 2 pages
+Download PDF
+  
+Read Online
+5.3 MobileNet
+pp 35-35; 1 page
+Download PDF
+  
+Read Online
+6 Findings and Further Work
+pp 35-36; 2 pages
+Download PDF
+  
+Read Online
+References
+pp 37-38; 2 pages
+Download PDF
+  
+Read Online
+Weakly Supervised Deep Metric Learning for Template Matching
+pp 39-58; 20 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 39-39; 1 page
+Download PDF
+  
+Read Online
+2 Related Work
+pp 40-40; 1 page
+Download PDF
+  
+Read Online
+3 Weak Supervision by NCC
+pp 41-43; 3 pages
+Download PDF
+  
+Read Online
+4 Network Architecture
+pp 44-44; 1 page
+Download PDF
+  
+Read Online
+5 Experiments
+pp 44-49; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Alignment
+pp 44-45; 2 pages
+Download PDF
+  
+Read Online
+5.2 Suppression and Enhancement of Features
+pp 46-46; 1 page
+Download PDF
+  
+Read Online
+5.3 Training Stability Analysis
+pp 46-49; 4 pages
+Download PDF
+  
+Read Online
+6 Conclusions
+pp 50-50; 1 page
+Download PDF
+  
+Read Online
+A Appendix
+pp 50-56; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+A.1 Training Set
+pp 50-50; 1 page
+Download PDF
+  
+Read Online
+A.2 Ground Truth Annotation
+pp 51-51; 1 page
+Download PDF
+  
+Read Online
+A.3 Match Filtering
+pp 52-56; 5 pages
+Download PDF
+  
+Read Online
+References
+pp 57-58; 2 pages
+Download PDF
+  
+Read Online
+Nature Inspired Meta-heuristic Algorithms for Deep Learning: Recent Progress and Novel Perspective
+pp 59-70; 12 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 59-59; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 60-60; 1 page
+Download PDF
+  
+Read Online
+2 Nature Inspired Meta-heuristic Algorithms
+pp 61-61; 1 page
+Download PDF
+  
+Read Online
+3 Deep Learning
+pp 61-61; 1 page
+Download PDF
+  
+Read Online
+4 The Application of Nature Inspired Algorithms in Deep Learning
+pp 61-65; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Harmony Search Algorithm for Deep Belief Network
+pp 62-62; 1 page
+Download PDF
+  
+Read Online
+4.2 Firefly Algorithm for Deep Belief Network
+pp 63-63; 1 page
+Download PDF
+  
+Read Online
+4.3 Cuckoo Search Algorithm Deep Belief Network
+pp 63-63; 1 page
+Download PDF
+  
+Read Online
+4.4 Evolutionary Algorithm for Deep Belief Network
+pp 63-63; 1 page
+Download PDF
+  
+Read Online
+4.5 Ant Colony Optimization for Deep Belief Network
+pp 63-63; 1 page
+Download PDF
+  
+Read Online
+4.6 Particle Swarm Optimization for Deep Restricted Boltzmann Machine
+pp 64-64; 1 page
+Download PDF
+  
+Read Online
+4.7 Harmony Search Algorithm for Convolutional Neural Network
+pp 64-64; 1 page
+Download PDF
+  
+Read Online
+4.8 Genetic Algorithm for Convolutional Neural Network
+pp 64-64; 1 page
+Download PDF
+  
+Read Online
+4.9 Genetic Algorithm for Restricted Boltzmann Machine
+pp 64-64; 1 page
+Download PDF
+  
+Read Online
+4.10 Simulated Annealing for Convolutional Neural Network
+pp 65-65; 1 page
+Download PDF
+  
+Read Online
+4.11 Gravitational Search Algorithm for Convolutional Neural Network
+pp 65-65; 1 page
+Download PDF
+  
+Read Online
+5 The General Overview of the Synergy Between Nature Inspired Algorithms and Deep Learning
+pp 65-65; 1 page
+Download PDF
+  
+Read Online
+6 Challenges and Future Research Directions
+pp 66-66; 1 page
+Download PDF
+  
+Read Online
+7 Conclusions
+pp 67-67; 1 page
+Download PDF
+  
+Read Online
+References
+pp 68-70; 3 pages
+Download PDF
+  
+Read Online
+Transfer Probability Prediction for Traffic Flow with Bike Sharing Data: A Deep Learning Approach
+pp 71-85; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 71-71; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 71-73; 3 pages
+Download PDF
+  
+Read Online
+2 Probability of Traffic Flow Transfer
+pp 74-74; 1 page
+Download PDF
+  
+Read Online
+3 RBM-SVR Algorithm
+pp 74-74; 1 page
+Download PDF
+  
+Read Online
+4 An Improved RBM-SVR Algorithm
+pp 75-78; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Principles of GWO Algorithm
+pp 75-75; 1 page
+Download PDF
+  
+Read Online
+4.2 Principles of the DE Algorithm
+pp 76-77; 2 pages
+Download PDF
+  
+Read Online
+4.3 Hybrid DEGWO Algorithm
+pp 78-78; 1 page
+Download PDF
+  
+Read Online
+5 Experimental Setup and Results
+pp 78-81; 4 pages
+Download PDF
+  
+Read Online
+6 Conclusions and Outlook
+pp 82-82; 1 page
+Download PDF
+  
+Read Online
+References
+pp 83-85; 3 pages
+Download PDF
+  
+Read Online
+CanvasGAN: A Simple Baseline for Text to Image Generation by Incrementally Patching a Canvas
+pp 86-98; 13 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 86-86; 1 page
+Download PDF
+  
+Read Online
+2 Related Work
+pp 87-88; 2 pages
+Download PDF
+  
+Read Online
+3 Model
+pp 89-91; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Visual Semantic Embedding
+pp 90-90; 1 page
+Download PDF
+  
+Read Online
+3.2 Discriminator
+pp 91-91; 1 page
+Download PDF
+  
+Read Online
+4 Experiments and Results
+pp 92-94; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Quantitative Analysis
+pp 93-93; 1 page
+Download PDF
+  
+Read Online
+4.2 Qualitative Analysis
+pp 94-94; 1 page
+Download PDF
+  
+Read Online
+5 Conclusions
+pp 95-95; 1 page
+Download PDF
+  
+Read Online
+References
+pp 96-98; 3 pages
+Download PDF
+  
+Read Online
+Unsupervised Dimension Reduction for Image Classification Using Regularized Convolutional Auto-Encoder
+pp 99-108; 10 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 99-100; 2 pages
+Download PDF
+  
+Read Online
+2 Related Works
+pp 101-102; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Inception Architecture
+pp 101-101; 1 page
+Download PDF
+  
+Read Online
+2.2 Auto-Encoder Paradigm
+pp 102-102; 1 page
+Download PDF
+  
+Read Online
+3 Algorithm
+pp 102-103; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Architecture
+pp 102-102; 1 page
+Download PDF
+  
+Read Online
+3.2 Training Methodology
+pp 103-103; 1 page
+Download PDF
+  
+Read Online
+4 Experiments and Discussion
+pp 104-106; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Data Sets
+pp 104-104; 1 page
+Download PDF
+  
+Read Online
+4.2 Classification Algorithm and Evaluation Indicators
+pp 105-105; 1 page
+Download PDF
+  
+Read Online
+4.3 Parameter Sensitivity
+pp 105-105; 1 page
+Download PDF
+  
+Read Online
+4.4 Experimental Results
+pp 106-106; 1 page
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 107-107; 1 page
+Download PDF
+  
+Read Online
+References
+pp 108-108; 1 page
+Download PDF
+  
+Read Online
+ISRGAN: Improved Super-Resolution Using Generative Adversarial Networks
+pp 109-127; 19 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 109-114; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Related Work
+pp 111-112; 2 pages
+Download PDF
+  
+Read Online
+1.2 Single Image Super-Resolution Using GAN
+pp 113-114; 2 pages
+Download PDF
+  
+Read Online
+2 Proposed Method
+pp 115-117; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Loss Functions
+pp 117-117; 1 page
+Download PDF
+  
+Read Online
+3 Experiment Analysis
+pp 118-124; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Conclusion
+pp 124-124; 1 page
+Download PDF
+  
+Read Online
+References
+pp 124-127; 4 pages
+Download PDF
+  
+Read Online
+Deep Learning vs. Traditional Computer Vision
+pp 128-144; 17 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 128-128; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 128-128; 1 page
+Download PDF
+  
+Read Online
+2 A Comparison of Deep Learning and Traditional Computer Vision
+pp 129-132; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 What Is Deep Learning
+pp 129-129; 1 page
+Download PDF
+  
+Read Online
+2.2 Advantages of Deep Learning
+pp 130-131; 2 pages
+Download PDF
+  
+Read Online
+2.3 Advantages of Traditional Computer Vision Techniques
+pp 132-132; 1 page
+Download PDF
+  
+Read Online
+3 Challenges for Traditional Computer Vision
+pp 133-139; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Mixing Hand-Crafted Approaches with DL for Better Performance
+pp 133-133; 1 page
+Download PDF
+  
+Read Online
+3.2 Overcoming the Challenges of Deep Learning
+pp 134-134; 1 page
+Download PDF
+  
+Read Online
+3.3 Making Best Use of Edge Computing
+pp 135-135; 1 page
+Download PDF
+  
+Read Online
+3.4 Problems Not Suited to Deep Learning
+pp 135-135; 1 page
+Download PDF
+  
+Read Online
+3.5 3D Vision
+pp 136-137; 2 pages
+Download PDF
+  
+Read Online
+3.6 Slam
+pp 138-138; 1 page
+Download PDF
+  
+Read Online
+3.7 360 Cameras
+pp 139-139; 1 page
+Download PDF
+  
+Read Online
+3.8 Dataset Annotation and Augmentation
+pp 139-139; 1 page
+Download PDF
+  
+Read Online
+4 Conclusion
+pp 140-140; 1 page
+Download PDF
+  
+Read Online
+References
+pp 141-144; 4 pages
+Download PDF
+  
+Read Online
+Self-localization from a 360-Degree Camera Based on the Deep Neural Network
+pp 145-158; 14 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 145-145; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 145-145; 1 page
+Download PDF
+  
+Read Online
+2 Related Research
+pp 146-146; 1 page
+Download PDF
+  
+Read Online
+3 Proposed Methods of Self-localization Using Deep Learning
+pp 147-153; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Overview of Proposed Methods
+pp 147-147; 1 page
+Download PDF
+  
+Read Online
+3.2 Development/Evaluation Environment
+pp 148-148; 1 page
+Download PDF
+  
+Read Online
+3.3 Generation of Training/Testing Data
+pp 148-148; 1 page
+Download PDF
+  
+Read Online
+3.4 Geometrically Calculate Location
+pp 149-151; 3 pages
+Download PDF
+  
+Read Online
+3.5 Self-localization by CNN
+pp 152-152; 1 page
+Download PDF
+  
+Read Online
+3.6 Self-localization by Convolutional LSTM
+pp 153-153; 1 page
+Download PDF
+  
+Read Online
+4 Evaluation of Self-localization
+pp 154-156; 3 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 157-157; 1 page
+Download PDF
+  
+Read Online
+References
+pp 158-158; 1 page
+Download PDF
+  
+Read Online
+Deep Cross-Modal Age Estimation
+pp 159-177; 19 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 159-159; 1 page
+Download PDF
+  
+Read Online
+2 Related Works
+pp 160-162; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Age and Gender Classification
+pp 160-161; 2 pages
+Download PDF
+  
+Read Online
+2.2 Deep Neural Networks
+pp 162-162; 1 page
+Download PDF
+  
+Read Online
+3 Background
+pp 163-163; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Age and Gender Association
+pp 163-163; 1 page
+Download PDF
+  
+Read Online
+3.2 Age Classification Approach
+pp 163-163; 1 page
+Download PDF
+  
+Read Online
+4 Technical Approach
+pp 164-169; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Model Architecture
+pp 164-165; 2 pages
+Download PDF
+  
+Read Online
+4.2 Prediction Head and Cross-Modal Learning
+pp 166-166; 1 page
+Download PDF
+  
+Read Online
+4.3 Training
+pp 167-167; 1 page
+Download PDF
+  
+Read Online
+4.4 Testing
+pp 168-168; 1 page
+Download PDF
+  
+Read Online
+4.5 Iterative Model Refinement
+pp 168-169; 2 pages
+Download PDF
+  
+Read Online
+5 System and Evaluation
+pp 170-172; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Adience Benchmark
+pp 171-171; 1 page
+Download PDF
+  
+Read Online
+5.2 Results
+pp 171-172; 2 pages
+Download PDF
+  
+Read Online
+6 Conclusions
+pp 173-173; 1 page
+Download PDF
+  
+Read Online
+References
+pp 173-177; 5 pages
+Download PDF
+  
+Read Online
+Multi-stage Reinforcement Learning for Object Detection
+pp 178-191; 14 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 178-178; 1 page
+Download PDF
+  
+Read Online
+2 Related Work
+pp 179-179; 1 page
+Download PDF
+  
+Read Online
+3 Model
+pp 180-185; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Markov Decision Process
+pp 180-183; 4 pages
+Download PDF
+  
+Read Online
+3.2 Architecture
+pp 184-184; 1 page
+Download PDF
+  
+Read Online
+3.3 Training
+pp 185-185; 1 page
+Download PDF
+  
+Read Online
+4 Experiments
+pp 185-187; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Experimental Procedure
+pp 186-186; 1 page
+Download PDF
+  
+Read Online
+4.2 Results
+pp 186-187; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 188-188; 1 page
+Download PDF
+  
+Read Online
+A Algorithm
+pp 189-189; 1 page
+Download PDF
+  
+Read Online
+B Evaluation Overview
+pp 190-190; 1 page
+Download PDF
+  
+Read Online
+References
+pp 191-191; 1 page
+Download PDF
+  
+Read Online
+Road Weather Condition Estimation Using Fixed and Mobile Based Cameras
+pp 192-204; 13 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 192-192; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 192-195; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Mobile Sourced Images
+pp 193-193; 1 page
+Download PDF
+  
+Read Online
+1.2 Fixed Source Images from Road Weather Information Stations (RWIS)
+pp 194-194; 1 page
+Download PDF
+  
+Read Online
+1.3 Fixed Source Images from Closed-Circuit Television (CCTV)
+pp 194-194; 1 page
+Download PDF
+  
+Read Online
+1.4 Objective
+pp 195-195; 1 page
+Download PDF
+  
+Read Online
+2 Proposed Method
+pp 195-197; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Model Description
+pp 195-195; 1 page
+Download PDF
+  
+Read Online
+2.2 Road Weather Condition Estimation Using CCTV
+pp 196-196; 1 page
+Download PDF
+  
+Read Online
+2.3 Road Weather Condition Estimation Using Mobile Cameras
+pp 197-197; 1 page
+Download PDF
+  
+Read Online
+3 Experimental Results
+pp 198-202; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Experimental Results on Naturalistic Driving Images
+pp 202-202; 1 page
+Download PDF
+  
+Read Online
+4 Conclusions
+pp 203-203; 1 page
+Download PDF
+  
+Read Online
+5 Future Work
+pp 203-203; 1 page
+Download PDF
+  
+Read Online
+References
+pp 203-204; 2 pages
+Download PDF
+  
+Read Online
+Robust Pedestrian Detection Based on Parallel Channel Cascade Network
+pp 205-221; 17 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 205-205; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 205-205; 1 page
+Download PDF
+  
+Read Online
+2 Related Work
+pp 206-206; 1 page
+Download PDF
+  
+Read Online
+3 Algorithm Description
+pp 207-210; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Design of Feature Extraction Network
+pp 208-209; 2 pages
+Download PDF
+  
+Read Online
+3.2 Clustering Scheme
+pp 210-210; 1 page
+Download PDF
+  
+Read Online
+4 Experiment Evaluation
+pp 211-218; 8 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Dataset
+pp 211-211; 1 page
+Download PDF
+  
+Read Online
+4.2 Effectiveness Analysis of Feature Extraction
+pp 211-211; 1 page
+Download PDF
+  
+Read Online
+4.3 Analysis of the Effectiveness of a Parallel Network
+pp 212-212; 1 page
+Download PDF
+  
+Read Online
+4.4 Analysis of Detection Results
+pp 213-218; 6 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 219-219; 1 page
+Download PDF
+  
+Read Online
+Acknowledgments
+pp 219-219; 1 page
+Download PDF
+  
+Read Online
+References
+pp 219-221; 3 pages
+Download PDF
+  
+Read Online
+Novel Scheme for Image Encryption and Decryption Based on a Hermite-Gaussian Matrix
+pp 222-236; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 222-222; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 222-223; 2 pages
+Download PDF
+  
+Read Online
+2 Regeneration of Subkeys Using a Secret Key
+pp 224-224; 1 page
+Download PDF
+  
+Read Online
+3 The Encryption Process
+pp 225-225; 1 page
+Download PDF
+  
+Read Online
+4 The Decryption Process
+pp 225-225; 1 page
+Download PDF
+  
+Read Online
+5 Simulation Results
+pp 226-229; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Subkeys Regeneration
+pp 226-227; 2 pages
+Download PDF
+  
+Read Online
+5.2 Encryption Results
+pp 228-228; 1 page
+Download PDF
+  
+Read Online
+5.3 Decryption Results
+pp 229-229; 1 page
+Download PDF
+  
+Read Online
+6 Statistical Results for the Cryptosystem
+pp 230-233; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+6.1 Histogram Analysis
+pp 230-230; 1 page
+Download PDF
+  
+Read Online
+6.2 Scatter Diagrams
+pp 230-230; 1 page
+Download PDF
+  
+Read Online
+6.3 Correlation Coefficients
+pp 231-231; 1 page
+Download PDF
+  
+Read Online
+6.4 Parameter Mismatch
+pp 232-232; 1 page
+Download PDF
+  
+Read Online
+6.5 Differential Attack Analysis
+pp 233-233; 1 page
+Download PDF
+  
+Read Online
+7 Conclusions
+pp 234-234; 1 page
+Download PDF
+  
+Read Online
+References
+pp 235-236; 2 pages
+Download PDF
+  
+Read Online
+MAP Interpolation of an Ising Image Block
+pp 237-256; 20 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 237-239; 3 pages
+Download PDF
+  
+Read Online
+2 Graphs and Cuts
+pp 240-240; 1 page
+Download PDF
+  
+Read Online
+3 Island-Free Reconstructions
+pp 241-241; 1 page
+Download PDF
+  
+Read Online
+4 Simple Reconstruction Paths
+pp 242-242; 1 page
+Download PDF
+  
+Read Online
+5 Map Reconstructions for 1-Run Boundaries
+pp 243-246; 4 pages
+Download PDF
+  
+Read Online
+6 Island-Free Reconstructions for 2-Run Boundaries
+pp 247-249; 3 pages
+Download PDF
+  
+Read Online
+7 MAP Reconstructions for 2-Run Boundaries
+pp 250-254; 5 pages
+Download PDF
+  
+Read Online
+8 Concluding Remarks
+pp 255-255; 1 page
+Download PDF
+  
+Read Online
+References
+pp 255-256; 2 pages
+Download PDF
+  
+Read Online
+Volumetric Data Exploration with Machine Learning-Aided Visualization in Neutron Science
+pp 257-271; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 257-257; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 257-258; 2 pages
+Download PDF
+  
+Read Online
+2 Visualization Analysis
+pp 259-262; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Characteristics of the 3D Neutron Data
+pp 259-260; 2 pages
+Download PDF
+  
+Read Online
+2.2 Traditional DVR with TF Manipulation
+pp 261-261; 1 page
+Download PDF
+  
+Read Online
+2.3 DBSCAN-Assisted DVR
+pp 261-262; 2 pages
+Download PDF
+  
+Read Online
+3 Application on Neutron Data
+pp 263-267; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Feature Extraction in Single Crystal Diffuse Scattering
+pp 265-265; 1 page
+Download PDF
+  
+Read Online
+3.2 Interactive Visualization of Neutron Tomography
+pp 266-267; 2 pages
+Download PDF
+  
+Read Online
+4 Discussion
+pp 268-269; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Involvement of HPC
+pp 268-268; 1 page
+Download PDF
+  
+Read Online
+4.2 Expanding DBSCAN’s Applications in Neutron Science
+pp 269-269; 1 page
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 270-270; 1 page
+Download PDF
+  
+Read Online
+Acknowledgment
+pp 270-270; 1 page
+Download PDF
+  
+Read Online
+References
+pp 270-271; 2 pages
+Download PDF
+  
+Read Online
+License Plate Character Recognition Using Binarization and Convolutional Neural Networks
+pp 272-283; 12 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 272-272; 1 page
+Download PDF
+  
+Read Online
+2 Methods
+pp 273-274; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Data Creation
+pp 273-273; 1 page
+Download PDF
+  
+Read Online
+2.2 Segmentation
+pp 273-273; 1 page
+Download PDF
+  
+Read Online
+2.3 Recognition
+pp 274-274; 1 page
+Download PDF
+  
+Read Online
+3 Segmentation
+pp 274-278; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Plate Characterization
+pp 274-274; 1 page
+Download PDF
+  
+Read Online
+3.2 Selection of Best Binarization Technique
+pp 275-275; 1 page
+Download PDF
+  
+Read Online
+3.3 License Number Segmentation
+pp 276-278; 3 pages
+Download PDF
+  
+Read Online
+4 Convolutional Neural Networks
+pp 279-279; 1 page
+Download PDF
+  
+Read Online
+5 Results and Discussion
+pp 279-281; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Character Segmentation
+pp 279-279; 1 page
+Download PDF
+  
+Read Online
+5.2 Classification Problems
+pp 280-281; 2 pages
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 282-282; 1 page
+Download PDF
+  
+Read Online
+References
+pp 282-283; 2 pages
+Download PDF
+  
+Read Online
+3D-Holograms in Real Time for Representing Virtual Scenarios
+pp 284-302; 19 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 284-284; 1 page
+Download PDF
+  
+Read Online
+2 Related Work
+pp 285-286; 2 pages
+Download PDF
+  
+Read Online
+3 Theoretical Foundations of a Holographic System
+pp 287-293; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Structure of the Human Eye
+pp 287-289; 3 pages
+Download PDF
+  
+Read Online
+3.2 3D Perception Considerations
+pp 290-290; 1 page
+Download PDF
+  
+Read Online
+3.3 Artificial Stereoscopic Vision
+pp 291-291; 1 page
+Download PDF
+  
+Read Online
+3.4 Snell Law
+pp 291-291; 1 page
+Download PDF
+  
+Read Online
+3.5 Color Spaces
+pp 292-292; 1 page
+Download PDF
+  
+Read Online
+3.6 Chroma Key
+pp 293-293; 1 page
+Download PDF
+  
+Read Online
+4 Methodological Proposal of the Holographic System
+pp 294-298; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 General Operation of the System
+pp 294-294; 1 page
+Download PDF
+  
+Read Online
+4.2 Capture Module Design
+pp 294-296; 3 pages
+Download PDF
+  
+Read Online
+4.3 Phase of Coding of Images
+pp 297-297; 1 page
+Download PDF
+  
+Read Online
+4.4 Representation Phase
+pp 298-298; 1 page
+Download PDF
+  
+Read Online
+5 Experiments and Results
+pp 299-300; 2 pages
+Download PDF
+  
+Read Online
+6 Conclusions
+pp 301-301; 1 page
+Download PDF
+  
+Read Online
+References
+pp 301-302; 2 pages
+Download PDF
+  
+Read Online
+A Probabilistic Superpixel-Based Method for Road Crack Network Detection
+pp 303-316; 14 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 303-305; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Background
+pp 303-303; 1 page
+Download PDF
+  
+Read Online
+1.2 Related Work
+pp 304-304; 1 page
+Download PDF
+  
+Read Online
+1.3 Objectives and Proposed Approach
+pp 305-305; 1 page
+Download PDF
+  
+Read Online
+2 Superpixels and Gaussian Modeling
+pp 305-307; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Superpixel Partitioning Using SLIC
+pp 305-306; 2 pages
+Download PDF
+  
+Read Online
+2.2 Gaussian Modeling
+pp 307-307; 1 page
+Download PDF
+  
+Read Online
+3 SLIC-based Probabilistic Crack Network Detection
+pp 307-311; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Overview
+pp 307-307; 1 page
+Download PDF
+  
+Read Online
+3.2 Detection and Manipulation of Superpixels
+pp 308-310; 3 pages
+Download PDF
+  
+Read Online
+3.3 Probabilistic Crack Refinement
+pp 311-311; 1 page
+Download PDF
+  
+Read Online
+3.4 Crack Cleaning and Simplification
+pp 311-311; 1 page
+Download PDF
+  
+Read Online
+4 Results
+pp 312-314; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Subjective Assessment
+pp 312-312; 1 page
+Download PDF
+  
+Read Online
+4.2 Objective Assessment
+pp 313-314; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusions and Future Work
+pp 315-315; 1 page
+Download PDF
+  
+Read Online
+References
+pp 315-316; 2 pages
+Download PDF
+  
+Read Online
+Using Aerial Drone Photography to Construct 3D Models of Real World Objects in an Effort to Decrease Response Time and Repair Costs Following Natural Disasters
+pp 317-325; 9 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 317-317; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 317-318; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Problem
+pp 317-317; 1 page
+Download PDF
+  
+Read Online
+1.2 Objectives
+pp 318-318; 1 page
+Download PDF
+  
+Read Online
+2 Review of the Literature
+pp 318-318; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Theories, Concepts and Models
+pp 318-318; 1 page
+Download PDF
+  
+Read Online
+2.2 Previous Research
+pp 318-318; 1 page
+Download PDF
+  
+Read Online
+3 Research Methodology
+pp 319-319; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Introduction
+pp 319-319; 1 page
+Download PDF
+  
+Read Online
+4 Theoretical Framework
+pp 319-322; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Research Design
+pp 319-322; 4 pages
+Download PDF
+  
+Read Online
+5 Presentation of Findings
+pp 323-324; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Solution
+pp 323-324; 2 pages
+Download PDF
+  
+Read Online
+6 Reflections/Further Research
+pp 325-325; 1 page
+Download PDF
+  
+Read Online
+7 Appendices
+pp 325-325; 1 page
+Download PDF
+  
+Read Online
+References
+pp 325-325; 1 page
+Download PDF
+  
+Read Online
+Image Recognition Model over Augmented Reality Based on Convolutional Neural Networks Through Color-Space Segmentation
+pp 326-338; 13 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 326-326; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 326-326; 1 page
+Download PDF
+  
+Read Online
+2 Background
+pp 327-327; 1 page
+Download PDF
+  
+Read Online
+3 Method and Approach of Scenario
+pp 328-328; 1 page
+Download PDF
+  
+Read Online
+4 Development of the Scenario
+pp 329-329; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Image Acquisition
+pp 329-329; 1 page
+Download PDF
+  
+Read Online
+4.2 Image Processing
+pp 329-329; 1 page
+Download PDF
+  
+Read Online
+5 Image Recognition Through CNN
+pp 330-332; 3 pages
+Download PDF
+  
+Read Online
+6 Test of Scenario
+pp 333-335; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+6.1 Function Evaluate
+pp 333-333; 1 page
+Download PDF
+  
+Read Online
+6.2 Confusion Matrix
+pp 334-334; 1 page
+Download PDF
+  
+Read Online
+6.3 ROC Curve
+pp 335-335; 1 page
+Download PDF
+  
+Read Online
+7 Results Analysis
+pp 336-336; 1 page
+Download PDF
+  
+Read Online
+8 Conclusions and Future Works
+pp 337-337; 1 page
+Download PDF
+  
+Read Online
+References
+pp 338-338; 1 page
+Download PDF
+  
+Read Online
+License Plate Detection and Recognition: An Empirical Study
+pp 339-349; 11 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 339-339; 1 page
+Download PDF
+  
+Read Online
+2 Related Works
+pp 340-340; 1 page
+Download PDF
+  
+Read Online
+3 Datasets
+pp 341-341; 1 page
+Download PDF
+  
+Read Online
+4 Methodology
+pp 342-344; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Preprocessing
+pp 342-342; 1 page
+Download PDF
+  
+Read Online
+4.2 License Plate Detection
+pp 342-342; 1 page
+Download PDF
+  
+Read Online
+4.3 Segmentation
+pp 343-343; 1 page
+Download PDF
+  
+Read Online
+4.4 Character Recognition
+pp 343-344; 2 pages
+Download PDF
+  
+Read Online
+5 Experiments and Results
+pp 345-347; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Experimental Setup
+pp 345-345; 1 page
+Download PDF
+  
+Read Online
+5.2 License Plate Detection
+pp 345-345; 1 page
+Download PDF
+  
+Read Online
+5.3 Recognition
+pp 346-347; 2 pages
+Download PDF
+  
+Read Online
+6 Conclusions
+pp 348-348; 1 page
+Download PDF
+  
+Read Online
+References
+pp 348-349; 2 pages
+Download PDF
+  
+Read Online
+Automatic Object Segmentation Based on GrabCut
+pp 350-360; 11 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 350-350; 1 page
+Download PDF
+  
+Read Online
+2 The Motivation of Our Approach
+pp 351-352; 2 pages
+Download PDF
+  
+Read Online
+3 Objective Weight Cut
+pp 353-356; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Objective Object Weight Map
+pp 353-355; 3 pages
+Download PDF
+  
+Read Online
+3.2 The Texture, Structure, Intensity Distribution Modeling
+pp 356-356; 1 page
+Download PDF
+  
+Read Online
+3.3 Segmentation Based on Iterative Graph Cut
+pp 356-356; 1 page
+Download PDF
+  
+Read Online
+4 Experiment Result
+pp 357-358; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 359-359; 1 page
+Download PDF
+  
+Read Online
+References
+pp 359-360; 2 pages
+Download PDF
+  
+Read Online
+Vertebral Body Compression Fracture Detection
+pp 361-368; 8 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 361-361; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 361-361; 1 page
+Download PDF
+  
+Read Online
+2 Proposed System
+pp 362-363; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Pre-processing Stage
+pp 363-363; 1 page
+Download PDF
+  
+Read Online
+2.2 Segmentation Stage
+pp 363-363; 1 page
+Download PDF
+  
+Read Online
+2.3 Measurement Stage
+pp 363-363; 1 page
+Download PDF
+  
+Read Online
+3 Methodology
+pp 364-364; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Database
+pp 364-364; 1 page
+Download PDF
+  
+Read Online
+3.2 System Performance
+pp 364-364; 1 page
+Download PDF
+  
+Read Online
+4 Experimental Results
+pp 365-366; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 367-367; 1 page
+Download PDF
+  
+Read Online
+References
+pp 367-368; 2 pages
+Download PDF
+  
+Read Online
+PZnet: Efficient 3D ConvNet Inference on Manycore CPUs
+pp 369-383; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 369-369; 1 page
+Download PDF
+  
+Read Online
+2 PZnet
+pp 370-371; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Problem Statement
+pp 370-370; 1 page
+Download PDF
+  
+Read Online
+2.2 Overview
+pp 371-371; 1 page
+Download PDF
+  
+Read Online
+3 Optimizations
+pp 372-375; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Element-Wise Addition Fusion
+pp 373-373; 1 page
+Download PDF
+  
+Read Online
+3.2 Element-Wise Addition Fusion
+pp 374-374; 1 page
+Download PDF
+  
+Read Online
+3.3 Linear Transformation Fusion
+pp 374-374; 1 page
+Download PDF
+  
+Read Online
+3.4 Activation Fusion
+pp 375-375; 1 page
+Download PDF
+  
+Read Online
+3.5 Padding Transformation
+pp 375-375; 1 page
+Download PDF
+  
+Read Online
+4 Evaluation
+pp 376-379; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Setup
+pp 376-376; 1 page
+Download PDF
+  
+Read Online
+4.2 Network Architectures
+pp 376-377; 2 pages
+Download PDF
+  
+Read Online
+4.3 CPU Performance
+pp 378-378; 1 page
+Download PDF
+  
+Read Online
+4.4 Cost Efficiency
+pp 378-378; 1 page
+Download PDF
+  
+Read Online
+4.5 Optimizations
+pp 379-379; 1 page
+Download PDF
+  
+Read Online
+5 Related Work
+pp 380-380; 1 page
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 381-381; 1 page
+Download PDF
+  
+Read Online
+References
+pp 381-383; 3 pages
+Download PDF
+  
+Read Online
+Evaluating Focal Stack with Compressive Sensing
+pp 384-393; 10 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 384-384; 1 page
+Download PDF
+  
+Read Online
+2 Compressive Sensing
+pp 385-386; 2 pages
+Download PDF
+  
+Read Online
+3 Calculating Intensity
+pp 387-388; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 The Laplacian Operator
+pp 387-387; 1 page
+Download PDF
+  
+Read Online
+3.2 Difference of Gaussians
+pp 388-388; 1 page
+Download PDF
+  
+Read Online
+3.3 Gaussian Blur
+pp 388-388; 1 page
+Download PDF
+  
+Read Online
+4 Algorithm Design
+pp 389-389; 1 page
+Download PDF
+  
+Read Online
+5 Results
+pp 389-392; 4 pages
+Download PDF
+  
+Read Online
+6 Limitations and Future Work
+pp 393-393; 1 page
+Download PDF
+  
+Read Online
+References
+pp 393-393; 1 page
+Download PDF
+  
+Read Online
+SfM Techniques Applied in Bad Lighting and Reflection Conditions: The Case of a Museum Artwork
+pp 394-401; 8 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 394-394; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 394-395; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Aim and Structure of the Paper
+pp 395-395; 1 page
+Download PDF
+  
+Read Online
+1.2 Significance of the Research
+pp 395-395; 1 page
+Download PDF
+  
+Read Online
+2 Head of Hades Sample
+pp 395-396; 2 pages
+Download PDF
+  
+Read Online
+3 3D Reconstruction Model
+pp 397-399; 3 pages
+Download PDF
+  
+Read Online
+4 Geometric Results
+pp 400-400; 1 page
+Download PDF
+  
+Read Online
+5 Conclusions
+pp 400-400; 1 page
+Download PDF
+  
+Read Online
+Acknowledgment
+pp 400-400; 1 page
+Download PDF
+  
+Read Online
+References
+pp 401-401; 1 page
+Download PDF
+  
+Read Online
+Fast Brain Volumetric Segmentation from T1 MRI Scans
+pp 402-415; 14 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 402-402; 1 page
+Download PDF
+  
+Read Online
+2 Methods
+pp 403-405; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Models
+pp 403-403; 1 page
+Download PDF
+  
+Read Online
+2.2 Data
+pp 404-405; 2 pages
+Download PDF
+  
+Read Online
+3 Experiments
+pp 406-410; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Segmentation Model
+pp 406-407; 2 pages
+Download PDF
+  
+Read Online
+3.2 Fine-Tuning on Expert Annotations
+pp 408-410; 3 pages
+Download PDF
+  
+Read Online
+4 Discussion
+pp 411-412; 2 pages
+Download PDF
+  
+Read Online
+References
+pp 413-415; 3 pages
+Download PDF
+  
+Read Online
+No-reference Image Denoising Quality Assessment
+pp 416-433; 18 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 416-417; 2 pages
+Download PDF
+  
+Read Online
+2 Image Denoising Quality Metric
+pp 418-424; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Denoising Quality Feature Design
+pp 418-423; 6 pages
+Download PDF
+  
+Read Online
+2.2 Denoising Quality Prediction
+pp 424-424; 1 page
+Download PDF
+  
+Read Online
+2.3 Automatic Parameter Tuning
+pp 424-424; 1 page
+Download PDF
+  
+Read Online
+3 Experiments
+pp 425-430; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Image Denoising Quality Benchmark
+pp 425-425; 1 page
+Download PDF
+  
+Read Online
+3.2 Regression Validation
+pp 426-426; 1 page
+Download PDF
+  
+Read Online
+3.3 Evaluation on Denoising Quality Ranking
+pp 427-427; 1 page
+Download PDF
+  
+Read Online
+3.4 Evaluation on Parameter Tuning
+pp 428-430; 3 pages
+Download PDF
+  
+Read Online
+References
+pp 431-433; 3 pages
+Download PDF
+  
+Read Online
+Plant Leaf Disease Detection Using Adaptive Neuro-Fuzzy Classification
+pp 434-443; 10 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 434-434; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 434-434; 1 page
+Download PDF
+  
+Read Online
+2 Materials and Methods
+pp 435-440; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Plant Disease Database Creation
+pp 435-435; 1 page
+Download PDF
+  
+Read Online
+2.2 Method
+pp 436-440; 5 pages
+Download PDF
+  
+Read Online
+3 Results and Discussion
+pp 441-441; 1 page
+Download PDF
+  
+Read Online
+4 Conclusion
+pp 442-442; 1 page
+Download PDF
+  
+Read Online
+References
+pp 442-443; 2 pages
+Download PDF
+  
+Read Online
+Fusion of CNN- and COSFIRE-Based Features with Application to Gender Recognition from Face Images
+pp 444-458; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 444-444; 1 page
+Download PDF
+  
+Read Online
+2 Related Works
+pp 445-446; 2 pages
+Download PDF
+  
+Read Online
+3 Methods
+pp 447-451; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Face Detection and Alignment
+pp 447-447; 1 page
+Download PDF
+  
+Read Online
+3.2 VGGFace
+pp 448-448; 1 page
+Download PDF
+  
+Read Online
+3.3 COSFIRE
+pp 448-450; 3 pages
+Download PDF
+  
+Read Online
+3.4 Fusion Methods
+pp 451-451; 1 page
+Download PDF
+  
+Read Online
+4 Experiments and Results
+pp 452-453; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Data Sets
+pp 452-452; 1 page
+Download PDF
+  
+Read Online
+4.2 Experiments
+pp 453-453; 1 page
+Download PDF
+  
+Read Online
+5 Discussion
+pp 454-454; 1 page
+Download PDF
+  
+Read Online
+6 Conclusions
+pp 455-455; 1 page
+Download PDF
+  
+Read Online
+References
+pp 455-458; 4 pages
+Download PDF
+  
+Read Online
+Standardization of the Shape of Ground Control Point (GCP) and the Methodology for Its Detection in Images for UAV-Based Mapping Applications
+pp 459-476; 18 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 459-459; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 459-460; 2 pages
+Download PDF
+  
+Read Online
+2 Related Work
+pp 461-461; 1 page
+Download PDF
+  
+Read Online
+3 Methodology
+pp 461-468; 8 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Design of GCP-Marker
+pp 462-462; 1 page
+Download PDF
+  
+Read Online
+3.2 Detection of GCP
+pp 463-468; 6 pages
+Download PDF
+  
+Read Online
+4 Implementation
+pp 469-471; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Data Acquisition
+pp 469-471; 3 pages
+Download PDF
+  
+Read Online
+5 Results
+pp 472-473; 2 pages
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 474-474; 1 page
+Download PDF
+  
+Read Online
+References
+pp 474-476; 3 pages
+Download PDF
+  
+Read Online
+Non-linear-Optimization Using SQP for 3D Deformable Prostate Model Pose Estimation in Minimally Invasive Surgery
+pp 477-496; 20 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 477-478; 2 pages
+Download PDF
+  
+Read Online
+2 Related Works
+pp 479-479; 1 page
+Download PDF
+  
+Read Online
+3 Marker-Based Tracking During Robot-Assisted Radical Prostatectomy
+pp 479-483; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 The Target Application
+pp 481-482; 2 pages
+Download PDF
+  
+Read Online
+3.2 The Simulation of the Surgical Operation
+pp 483-483; 1 page
+Download PDF
+  
+Read Online
+4 The Optimization Procedure
+pp 484-487; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Validation
+pp 487-487; 1 page
+Download PDF
+  
+Read Online
+5 Evaluation
+pp 488-493; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Considering Different Number of Markings
+pp 489-490; 2 pages
+Download PDF
+  
+Read Online
+5.2 Adding Deformation
+pp 491-491; 1 page
+Download PDF
+  
+Read Online
+5.3 Filtering
+pp 492-493; 2 pages
+Download PDF
+  
+Read Online
+6 Conclusion and Future Work
+pp 494-494; 1 page
+Download PDF
+  
+Read Online
+References
+pp 494-496; 3 pages
+Download PDF
+  
+Read Online
+TLS-Point Clouding-3D Shape Deflection Monitoring
+pp 497-502; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 497-497; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 497-497; 1 page
+Download PDF
+  
+Read Online
+2 Laser Scanning System
+pp 498-498; 1 page
+Download PDF
+  
+Read Online
+3 Point Cloud Registration
+pp 499-499; 1 page
+Download PDF
+  
+Read Online
+4 3D Shape Deflection Monitoring
+pp 499-500; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 501-501; 1 page
+Download PDF
+  
+Read Online
+Acknowledgment
+pp 501-501; 1 page
+Download PDF
+  
+Read Online
+References
+pp 501-502; 2 pages
+Download PDF
+  
+Read Online
+From Videos to URLs: A Multi-Browser Guide to Extract User's Behavior with Optical Character Recognition
+pp 503-514; 12 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 503-503; 1 page
+Download PDF
+  
+Read Online
+2 Related Work
+pp 504-506; 3 pages
+Download PDF
+  
+Read Online
+3 Method
+pp 507-510; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Extracting Images
+pp 507-507; 1 page
+Download PDF
+  
+Read Online
+3.2 Template Matching
+pp 507-507; 1 page
+Download PDF
+  
+Read Online
+3.3 Image Pre-processing
+pp 508-508; 1 page
+Download PDF
+  
+Read Online
+3.4 Optical Character Recognition
+pp 509-509; 1 page
+Download PDF
+  
+Read Online
+3.5 Text Post Processing
+pp 510-510; 1 page
+Download PDF
+  
+Read Online
+4 Experimental Results
+pp 511-512; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusion and Future Works
+pp 513-513; 1 page
+Download PDF
+  
+Read Online
+References
+pp 513-514; 2 pages
+Download PDF
+  
+Read Online
+3D Reconstruction Under Weak Illumination Using Visibility-Enhanced LDR Imagery
+pp 515-534; 20 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 515-516; 2 pages
+Download PDF
+  
+Read Online
+2 Literature Review
+pp 517-519; 3 pages
+Download PDF
+  
+Read Online
+3 Proposed Methodology
+pp 520-527; 8 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Overview
+pp 520-520; 1 page
+Download PDF
+  
+Read Online
+3.2 Flowchart of the Proposed Approach
+pp 520-527; 8 pages
+Download PDF
+  
+Read Online
+4 Experimental Results
+pp 528-531; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Image Visibility and Contrast Improvement
+pp 528-528; 1 page
+Download PDF
+  
+Read Online
+4.2 3D Quality Improvement
+pp 529-531; 3 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 532-532; 1 page
+Download PDF
+  
+Read Online
+References
+pp 533-534; 2 pages
+Download PDF
+  
+Read Online
+DynFace: A Multi-label, Dynamic-Margin-Softmax Face Recognition Model
+pp 535-550; 16 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 535-535; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 535-537; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Training Data
+pp 536-536; 1 page
+Download PDF
+  
+Read Online
+1.2 Network Structure
+pp 536-536; 1 page
+Download PDF
+  
+Read Online
+1.3 Loss Functions
+pp 537-537; 1 page
+Download PDF
+  
+Read Online
+1.4 Proposed Model
+pp 537-537; 1 page
+Download PDF
+  
+Read Online
+2 Preliminaries
+pp 538-539; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Multi Label
+pp 538-538; 1 page
+Download PDF
+  
+Read Online
+2.2 Loss Margin
+pp 538-539; 2 pages
+Download PDF
+  
+Read Online
+3 Multi-label, Dynamic-Margin Model
+pp 540-540; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Label Fusion
+pp 540-540; 1 page
+Download PDF
+  
+Read Online
+3.2 Dynamic Margin
+pp 540-540; 1 page
+Download PDF
+  
+Read Online
+4 Implementation
+pp 541-542; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Face Selection
+pp 541-541; 1 page
+Download PDF
+  
+Read Online
+4.2 Model Training
+pp 541-542; 2 pages
+Download PDF
+  
+Read Online
+5 Experiments
+pp 543-548; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Toy Experiment
+pp 543-543; 1 page
+Download PDF
+  
+Read Online
+5.2 Evaluation Metrics
+pp 544-547; 4 pages
+Download PDF
+  
+Read Online
+5.3 Recall-Time Data Filtering
+pp 548-548; 1 page
+Download PDF
+  
+Read Online
+6 Conclusions and Future Work
+pp 549-549; 1 page
+Download PDF
+  
+Read Online
+References
+pp 549-550; 2 pages
+Download PDF
+  
+Read Online
+Towards Resolving the Kidnapped Robot Problem: Topological Localization from Crowdsourcing and Georeferenced Images
+pp 551-563; 13 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 551-552; 2 pages
+Download PDF
+  
+Read Online
+2 Related Works
+pp 553-554; 2 pages
+Download PDF
+  
+Read Online
+3 Methodology
+pp 555-557; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Query to Social Media
+pp 555-555; 1 page
+Download PDF
+  
+Read Online
+3.2 Image Matching Process and GPS Data Extraction
+pp 556-557; 2 pages
+Download PDF
+  
+Read Online
+4 Results
+pp 558-560; 3 pages
+Download PDF
+  
+Read Online
+5 Conclusions and Future Work
+pp 561-561; 1 page
+Download PDF
+  
+Read Online
+References
+pp 561-563; 3 pages
+Download PDF
+  
+Read Online
+Using the Z-bellSM Test to Remediate Spatial Deficiencies in Non-Image-Forming Retinal Processing
+pp 564-579; 16 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 564-564; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 564-565; 2 pages
+Download PDF
+  
+Read Online
+2 Methods
+pp 566-570; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Participants
+pp 567-567; 1 page
+Download PDF
+  
+Read Online
+2.2 Data Collection
+pp 567-570; 4 pages
+Download PDF
+  
+Read Online
+3 Preliminary Findings (n = 14)
+pp 571-572; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Prescription Differences
+pp 572-572; 1 page
+Download PDF
+  
+Read Online
+3.2 Effect of Light Conditions
+pp 572-572; 1 page
+Download PDF
+  
+Read Online
+3.3 Effect of Bell Conditions
+pp 572-572; 1 page
+Download PDF
+  
+Read Online
+3.4 Learning/Fatigue Effects
+pp 572-572; 1 page
+Download PDF
+  
+Read Online
+4 Discussion
+pp 573-574; 2 pages
+Download PDF
+  
+Read Online
+5 Limitations and Future Work
+pp 575-575; 1 page
+Download PDF
+  
+Read Online
+Appendix—Pre-study Questionnaire
+pp 576-577; 2 pages
+Download PDF
+  
+Read Online
+References
+pp 578-579; 2 pages
+Download PDF
+  
+Read Online
+Learning of Shape Models from Exemplars of Biological Objects in Images
+pp 580-599; 20 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 580-580; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 580-580; 1 page
+Download PDF
+  
+Read Online
+2 Problem of Alignment of 2-D Shapes
+pp 581-582; 2 pages
+Download PDF
+  
+Read Online
+3 Related Work
+pp 583-584; 2 pages
+Download PDF
+  
+Read Online
+4 Material Used for This Study
+pp 585-585; 1 page
+Download PDF
+  
+Read Online
+5 Acquisition of Shape Cases
+pp 586-590; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Background
+pp 586-586; 1 page
+Download PDF
+  
+Read Online
+5.2 Acquisition of Object Contours from Real Images
+pp 587-588; 2 pages
+Download PDF
+  
+Read Online
+5.3 Approximation
+pp 589-589; 1 page
+Download PDF
+  
+Read Online
+5.4 Normalization of Shape Cases
+pp 590-590; 1 page
+Download PDF
+  
+Read Online
+6 Shape Alignment and Distance Calculation
+pp 590-594; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+6.1 The Alignment Algorithm
+pp 590-591; 2 pages
+Download PDF
+  
+Read Online
+6.2 Calculation of Point Correspondences
+pp 592-593; 2 pages
+Download PDF
+  
+Read Online
+6.3 Calculation of the Distance Measure
+pp 594-594; 1 page
+Download PDF
+  
+Read Online
+7 Evaluation of Our Alignment Algorithm
+pp 595-596; 2 pages
+Download PDF
+  
+Read Online
+8 Conclusions
+pp 597-597; 1 page
+Download PDF
+  
+Read Online
+Acknowledgment
+pp 598-598; 1 page
+Download PDF
+  
+Read Online
+References
+pp 598-599; 2 pages
+Download PDF
+  
+Read Online
+A New Technique for Laser Spot Detection and Tracking by Using Optical Flow and Kalman Filter
+pp 600-613; 14 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 600-600; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 600-600; 1 page
+Download PDF
+  
+Read Online
+2 Algorithm Framework
+pp 601-602; 2 pages
+Download PDF
+  
+Read Online
+3 PLK Optical Flow
+pp 603-605; 3 pages
+Download PDF
+  
+Read Online
+4 EKF
+pp 606-606; 1 page
+Download PDF
+  
+Read Online
+5 Experiments
+pp 607-611; 5 pages
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 612-612; 1 page
+Download PDF
+  
+Read Online
+References
+pp 612-613; 2 pages
+Download PDF
+  
+Read Online
+Historical Document Image Binarization Based on Edge Contrast Information
+pp 614-628; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 614-614; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 614-615; 2 pages
+Download PDF
+  
+Read Online
+2 Related Methods
+pp 616-616; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Edge Extraction Based on High Contrast Region
+pp 616-616; 1 page
+Download PDF
+  
+Read Online
+2.2 Method of Sauvola
+pp 616-616; 1 page
+Download PDF
+  
+Read Online
+3 Proposed Method
+pp 617-621; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 The Framework of Proposed Method
+pp 617-617; 1 page
+Download PDF
+  
+Read Online
+3.2 Character Edge Extraction with High and Low Contrast
+pp 618-618; 1 page
+Download PDF
+  
+Read Online
+3.3 Local Threshold Calculation
+pp 619-620; 2 pages
+Download PDF
+  
+Read Online
+3.4 Image Binarization
+pp 621-621; 1 page
+Download PDF
+  
+Read Online
+4 Experiment and Analysis
+pp 622-626; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Algorithm Parameters
+pp 622-622; 1 page
+Download PDF
+  
+Read Online
+4.2 Algorithm Parameters
+pp 623-624; 2 pages
+Download PDF
+  
+Read Online
+4.3 Sensory Evaluation
+pp 625-625; 1 page
+Download PDF
+  
+Read Online
+4.4 Time Performance Analysis
+pp 625-626; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 627-627; 1 page
+Download PDF
+  
+Read Online
+Acknowledgments
+pp 627-627; 1 page
+Download PDF
+  
+Read Online
+References
+pp 627-628; 2 pages
+Download PDF
+  
+Read Online
+Development and Laboratory Testing of a Multipoint Displacement Monitoring System
+pp 629-638; 10 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 629-629; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 629-630; 2 pages
+Download PDF
+  
+Read Online
+2 Laboratory Validation
+pp 631-634; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Displacement Accuracy Validation
+pp 631-631; 1 page
+Download PDF
+  
+Read Online
+2.2 Laboratory Testing to Obtain Multipoint Displacement of Long-Medium Span Bridge
+pp 632-634; 3 pages
+Download PDF
+  
+Read Online
+3 Field Testing
+pp 635-635; 1 page
+Download PDF
+  
+Read Online
+4 Discussion and Conclusions
+pp 636-636; 1 page
+Download PDF
+  
+Read Online
+References
+pp 637-638; 2 pages
+Download PDF
+  
+Read Online
+Quantitative Comparison of White Matter Segmentation for Brain MR Images
+pp 639-647; 9 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 639-639; 1 page
+Download PDF
+  
+Read Online
+2 Software Packages and Data Source
+pp 640-641; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 SPM
+pp 640-640; 1 page
+Download PDF
+  
+Read Online
+2.2 FSL
+pp 641-641; 1 page
+Download PDF
+  
+Read Online
+2.3 FreeSurfer
+pp 641-641; 1 page
+Download PDF
+  
+Read Online
+2.4 Image Source
+pp 641-641; 1 page
+Download PDF
+  
+Read Online
+3 Comparison Metrics
+pp 642-642; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 DICE Index
+pp 642-642; 1 page
+Download PDF
+  
+Read Online
+3.2 Hausdorf Distance (HD)
+pp 642-642; 1 page
+Download PDF
+  
+Read Online
+4 Comparison Results
+pp 643-645; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Images with Different Noise Levels
+pp 644-644; 1 page
+Download PDF
+  
+Read Online
+4.2 Images with Different Intensity Non-uniformities
+pp 645-645; 1 page
+Download PDF
+  
+Read Online
+5 Conclusions
+pp 645-645; 1 page
+Download PDF
+  
+Read Online
+References
+pp 646-647; 2 pages
+Download PDF
+  
+Read Online
+Evaluating the Implementation of Deep Learning in LibreHealth Radiology on Chest X-Rays
+pp 648-657; 10 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 648-648; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 648-649; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 The Challenge of Chronic Respiratory Disease
+pp 648-648; 1 page
+Download PDF
+  
+Read Online
+1.2 The Promise of Machine Learning Methods for Reading Chest X-Rays
+pp 649-649; 1 page
+Download PDF
+  
+Read Online
+2 Background
+pp 649-650; 2 pages
+Download PDF
+  
+Read Online
+3 Methodology
+pp 651-654; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Project Objective
+pp 651-651; 1 page
+Download PDF
+  
+Read Online
+3.2 Software Development
+pp 651-652; 2 pages
+Download PDF
+  
+Read Online
+3.3 Development of Buddi-DL, the Open Web App for LibreHealth RIS
+pp 653-654; 2 pages
+Download PDF
+  
+Read Online
+4 Results
+pp 655-655; 1 page
+Download PDF
+  
+Read Online
+5 Discussion
+pp 656-656; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Limitations
+pp 656-656; 1 page
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 656-656; 1 page
+Download PDF
+  
+Read Online
+References
+pp 657-657; 1 page
+Download PDF
+  
+Read Online
+Illumination-Invariant Face Recognition by Fusing Thermal and Visual Images via Gradient Transfer
+pp 658-670; 13 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 658-660; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Proposed Dataset
+pp 660-660; 1 page
+Download PDF
+  
+Read Online
+2 Proposed Methodology
+pp 660-665; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Pixel Intensity Based Face Detection Algorithm
+pp 660-660; 1 page
+Download PDF
+  
+Read Online
+2.2 Image Fusion
+pp 661-662; 2 pages
+Download PDF
+  
+Read Online
+2.3 Optimization
+pp 663-664; 2 pages
+Download PDF
+  
+Read Online
+2.4 Face Recognition on fused images
+pp 665-665; 1 page
+Download PDF
+  
+Read Online
+2.5 MobileNet Architecture
+pp 665-665; 1 page
+Download PDF
+  
+Read Online
+3 Experiment and Results
+pp 666-667; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Dataset
+pp 666-666; 1 page
+Download PDF
+  
+Read Online
+3.2 Image Fusion parameters
+pp 667-667; 1 page
+Download PDF
+  
+Read Online
+3.3 Face Recognition Accuracy
+pp 667-667; 1 page
+Download PDF
+  
+Read Online
+4 Conclusion
+pp 668-668; 1 page
+Download PDF
+  
+Read Online
+References
+pp 669-670; 2 pages
+Download PDF
+  
+Read Online
+An Attention-Based CNN for ECG Classification
+pp 671-677; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 671-671; 1 page
+Download PDF
+  
+Read Online
+2 Datasets
+pp 672-672; 1 page
+Download PDF
+  
+Read Online
+3 Model
+pp 672-673; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Attention Module
+pp 672-672; 1 page
+Download PDF
+  
+Read Online
+3.2 Model Architecture
+pp 672-673; 2 pages
+Download PDF
+  
+Read Online
+4 Results
+pp 674-675; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Raw Signals
+pp 674-674; 1 page
+Download PDF
+  
+Read Online
+4.2 Logarithmic Spectrograms
+pp 675-675; 1 page
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 676-676; 1 page
+Download PDF
+  
+Read Online
+References
+pp 676-677; 2 pages
+Download PDF
+  
+Read Online
+Reverse Engineering of Generic Shapes Using Quadratic Spline and Genetic Algorithm
+pp 678-686; 9 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 678-678; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 678-678; 1 page
+Download PDF
+  
+Read Online
+2 Phases of Reverse Engineering of Generic Shapes Using Quadratic Splines
+pp 679-681; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Boundary Extraction
+pp 679-679; 1 page
+Download PDF
+  
+Read Online
+2.2 Detecting Corner Points
+pp 680-680; 1 page
+Download PDF
+  
+Read Online
+2.3 Quadratic Function for Curve Fitting
+pp 680-681; 2 pages
+Download PDF
+  
+Read Online
+3 Problem Representation and Its Solutions with the Help of GA
+pp 682-684; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Initialization
+pp 683-683; 1 page
+Download PDF
+  
+Read Online
+3.2 Breaking Segments
+pp 684-684; 1 page
+Download PDF
+  
+Read Online
+3.3 Demonstration
+pp 684-684; 1 page
+Download PDF
+  
+Read Online
+4 Conclusion
+pp 685-685; 1 page
+Download PDF
+  
+Read Online
+References
+pp 685-686; 2 pages
+Download PDF
+  
+Read Online
+Bayesian Estimation for Fast Sequential Diffeomorphic Image Variability
+pp 687-699; 13 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1 Introduction
+pp 687-687; 1 page
+Download PDF
+  
+Read Online
+2 Background
+pp 688-689; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Differomorphism in Image Registration
+pp 688-688; 1 page
+Download PDF
+  
+Read Online
+2.2 LDDMM
+pp 689-689; 1 page
+Download PDF
+  
+Read Online
+2.3 Numerical Algorithm of LDDMM
+pp 689-689; 1 page
+Download PDF
+  
+Read Online
+3 Fast Sequential Diffeomorphic Atlas Building (FSDAB)
+pp 690-691; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Numerical Algorithm of FSDAB
+pp 691-691; 1 page
+Download PDF
+  
+Read Online
+4 Fast Bayesian Principal Geodesic Analysis (FBPGA)
+pp 692-693; 2 pages
+Download PDF
+  
+Read Online
+5 Results
+pp 694-696; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Synthetic 2D Data
+pp 694-694; 1 page
+Download PDF
+  
+Read Online
+5.2 3D Brain Dataset
+pp 694-696; 3 pages
+Download PDF
+  
+Read Online
+6 Discussion
+pp 697-697; 1 page
+Download PDF
+  
+Read Online
+7 Conclusion
+pp 697-697; 1 page
+Download PDF
+  
+Read Online
+References
+pp 698-699; 2 pages
+Download PDF
+  
+Read Online
+Copyright Protection and Content Authentication Based on Linear Cellular Automata Watermarking for 2D Vector Maps
+pp 700-719; 20 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 700-700; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 700-701; 2 pages
+Download PDF
+  
+Read Online
+2 Literature Review
+pp 702-703; 2 pages
+Download PDF
+  
+Read Online
+3 Linear Cellular Automata and Data Pre-processing
+pp 704-709; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Linear Cellular Automata Transform
+pp 704-705; 2 pages
+Download PDF
+  
+Read Online
+3.2 Pre-processing of Data for 2D Vector Maps
+pp 706-706; 1 page
+Download PDF
+  
+Read Online
+3.3 Computation of Relative Coordinates
+pp 707-707; 1 page
+Download PDF
+  
+Read Online
+3.4 Binary Transform for Cover Data
+pp 708-708; 1 page
+Download PDF
+  
+Read Online
+3.5 The Degree of Watermarking
+pp 709-709; 1 page
+Download PDF
+  
+Read Online
+4 The Suggested Strategy of Reversible Watermarking
+pp 710-712; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Production of the Watermark
+pp 711-711; 1 page
+Download PDF
+  
+Read Online
+4.2 Embedding Algorithm
+pp 711-711; 1 page
+Download PDF
+  
+Read Online
+4.3 Extraction Algorithm
+pp 712-712; 1 page
+Download PDF
+  
+Read Online
+5 Results and Analysis
+pp 713-716; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Results of Experiments
+pp 713-714; 2 pages
+Download PDF
+  
+Read Online
+5.2 Robustness Assessment
+pp 715-715; 1 page
+Download PDF
+  
+Read Online
+5.3 Assessment of the Capability for Content Authentication
+pp 716-716; 1 page
+Download PDF
+  
+Read Online
+6 Conclusion
+pp 717-717; 1 page
+Download PDF
+  
+Read Online
+References
+pp 717-719; 3 pages
+Download PDF
+  
+Read Online
+Adapting Treemaps to Student Academic Performance Visualization
+pp 720-728; 9 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 720-720; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 720-720; 1 page
+Download PDF
+  
+Read Online
+2 Literature Review
+pp 721-721; 1 page
+Download PDF
+  
+Read Online
+3 Proposed Methodology
+pp 722-722; 1 page
+Download PDF
+  
+Read Online
+4 Application
+pp 723-726; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Background and Dataset
+pp 723-723; 1 page
+Download PDF
+  
+Read Online
+4.2 Results
+pp 723-723; 1 page
+Download PDF
+  
+Read Online
+4.3 Discussion
+pp 724-726; 3 pages
+Download PDF
+  
+Read Online
+5 Conclusion
+pp 727-727; 1 page
+Download PDF
+  
+Read Online
+References
+pp 728-728; 1 page
+Download PDF
+  
+Read Online
+Systematic Mobile Device Usage Behavior and Successful Implementation of TPACK Based on University Students Need
+pp 729-746; 18 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 729-729; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 729-729; 1 page
+Download PDF
+  
+Read Online
+2 Literature Review
+pp 730-731; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 TPACK and Higher Education
+pp 730-730; 1 page
+Download PDF
+  
+Read Online
+2.2 Challenges of TPACK for Higher Education
+pp 731-731; 1 page
+Download PDF
+  
+Read Online
+2.3 Changing Environment for University Learning
+pp 731-731; 1 page
+Download PDF
+  
+Read Online
+3 Study Context
+pp 731-734; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Possible ICT Technologies Used to Carry Out the Proposed Activities
+pp 732-734; 3 pages
+Download PDF
+  
+Read Online
+4 Methodology
+pp 735-737; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Participants
+pp 735-735; 1 page
+Download PDF
+  
+Read Online
+4.2 Data Collection and Analysis
+pp 736-736; 1 page
+Download PDF
+  
+Read Online
+4.3 User Acceptance Questionnaire for TPACK Structure
+pp 736-736; 1 page
+Download PDF
+  
+Read Online
+4.4 Focus Group Interview
+pp 737-737; 1 page
+Download PDF
+  
+Read Online
+5 Results
+pp 738-740; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Results About the Need for Technological Device Usage by University Learners
+pp 738-739; 2 pages
+Download PDF
+  
+Read Online
+5.2 User Acceptance Results of TPACK Model in Accordance with University Learners Need
+pp 740-740; 1 page
+Download PDF
+  
+Read Online
+6 Discussion
+pp 741-743; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+6.1 User Acceptance and Future of TPACK Approach
+pp 741-742; 2 pages
+Download PDF
+  
+Read Online
+6.2 Concerns About “TPACK Structure According to University Learners’ Need” Approach
+pp 743-743; 1 page
+Download PDF
+  
+Read Online
+7 Implications
+pp 744-744; 1 page
+Download PDF
+  
+Read Online
+8 Conclusion
+pp 744-744; 1 page
+Download PDF
+  
+Read Online
+References
+pp 745-746; 2 pages
+Download PDF
+  
+Read Online
+Data Analysis of Tourists’ Online Reviews on Restaurants in a Chinese Website
+pp 747-757; 11 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 747-747; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 747-748; 2 pages
+Download PDF
+  
+Read Online
+2 Literature Review
+pp 749-751; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Online Restaurant Reviews
+pp 749-749; 1 page
+Download PDF
+  
+Read Online
+2.2 Dining Experience
+pp 750-750; 1 page
+Download PDF
+  
+Read Online
+2.3 Hallyu
+pp 751-751; 1 page
+Download PDF
+  
+Read Online
+3 Methodology
+pp 752-754; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Data Collection
+pp 752-752; 1 page
+Download PDF
+  
+Read Online
+3.2 Analysis Method
+pp 753-754; 2 pages
+Download PDF
+  
+Read Online
+4 Expected Contributions
+pp 755-755; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Academic Contributions
+pp 755-755; 1 page
+Download PDF
+  
+Read Online
+4.2 Practical Contributions
+pp 755-755; 1 page
+Download PDF
+  
+Read Online
+References
+pp 756-757; 2 pages
+Download PDF
+  
+Read Online
+Body of Knowledge Model and Linked Data Applied in Development of Higher Education Curriculum
+pp 758-773; 16 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 758-758; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 759-759; 1 page
+Download PDF
+  
+Read Online
+2 Background
+pp 759-763; 5 pages
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Semantic Web
+pp 760-760; 1 page
+Download PDF
+  
+Read Online
+2.2 Principles of Linked Data
+pp 760-760; 1 page
+Download PDF
+  
+Read Online
+2.3 Linked Data Publishing Methodology
+pp 761-761; 1 page
+Download PDF
+  
+Read Online
+2.4 Tools
+pp 762-762; 1 page
+Download PDF
+  
+Read Online
+2.5 Vocabularies
+pp 763-763; 1 page
+Download PDF
+  
+Read Online
+2.6 Projects and Communities of Linked Data
+pp 763-763; 1 page
+Download PDF
+  
+Read Online
+2.7 Linked Data in Higher Education
+pp 763-763; 1 page
+Download PDF
+  
+Read Online
+3 Results
+pp 764-770; 7 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Model of Bodies of Knowledge (BOK)
+pp 764-764; 1 page
+Download PDF
+  
+Read Online
+3.2 Publication Architecture of the Academic Offer
+pp 765-765; 1 page
+Download PDF
+  
+Read Online
+3.3 Academic Offer Domain
+pp 765-766; 2 pages
+Download PDF
+  
+Read Online
+3.4 Design of HTTP URIs
+pp 767-767; 1 page
+Download PDF
+  
+Read Online
+3.5 RDF Generation
+pp 768-768; 1 page
+Download PDF
+  
+Read Online
+3.6 Publication and Exploitation of Data
+pp 769-770; 2 pages
+Download PDF
+  
+Read Online
+4 Conclusions
+pp 771-771; 1 page
+Download PDF
+  
+Read Online
+References
+pp 772-773; 2 pages
+Download PDF
+  
+Read Online
+Building Adaptive Industry Cartridges Using a Semi-supervised Machine Learning Method
+pp 774-788; 15 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 774-774; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 774-775; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+1.1 Context
+pp 774-774; 1 page
+Download PDF
+  
+Read Online
+1.2 Chapters Structure
+pp 775-775; 1 page
+Download PDF
+  
+Read Online
+2 State of the Art
+pp 775-777; 3 pages
+Download PDF
+  
+Read Online
+3 Method
+pp 778-783; 6 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Corpora
+pp 778-778; 1 page
+Download PDF
+  
+Read Online
+3.2 Method and Algorithms
+pp 779-780; 2 pages
+Download PDF
+  
+Read Online
+3.3 Implemented Method System Architecture
+pp 781-782; 2 pages
+Download PDF
+  
+Read Online
+3.4 Model and Classification Training
+pp 783-783; 1 page
+Download PDF
+  
+Read Online
+4 Solution Re-usability and Core Capabilities in a Nutshell
+pp 784-785; 2 pages
+Download PDF
+  
+Read Online
+5 Conclusions and Future Work
+pp 786-786; 1 page
+Download PDF
+  
+Read Online
+References
+pp 787-788; 2 pages
+Download PDF
+  
+Read Online
+Decision Making with Linguistic Information for the Development of New Products
+pp 789-798; 10 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 789-789; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 789-789; 1 page
+Download PDF
+  
+Read Online
+2 Theoretical Framework
+pp 790-790; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+2.1 Decision Making
+pp 790-790; 1 page
+Download PDF
+  
+Read Online
+2.2 Classification of the Problems of Decision Making
+pp 790-790; 1 page
+Download PDF
+  
+Read Online
+2.3 Modeling Preferences
+pp 790-790; 1 page
+Download PDF
+  
+Read Online
+3 Group Decision Making
+pp 791-791; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Consensus Process
+pp 791-791; 1 page
+Download PDF
+  
+Read Online
+3.2 Selection Process
+pp 791-791; 1 page
+Download PDF
+  
+Read Online
+4 Preference Representation Format
+pp 792-792; 1 page
+Download PDF
+  
+Read Online
+5 Fuzzy Approach Linguistico
+pp 792-794; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Linguistic Variables
+pp 792-792; 1 page
+Download PDF
+  
+Read Online
+5.2 Choice of the Set of Linguistic Terms
+pp 793-793; 1 page
+Download PDF
+  
+Read Online
+5.3 Semantics of a Set of Linguistic Terms
+pp 794-794; 1 page
+Download PDF
+  
+Read Online
+5.4 Use of Linguistic Variables
+pp 794-794; 1 page
+Download PDF
+  
+Read Online
+5.5 Linguistic Modeling of Preferences
+pp 794-794; 1 page
+Download PDF
+  
+Read Online
+6 Methodologies in the Development of New Products
+pp 794-796; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+6.1 Innovation Concept
+pp 795-795; 1 page
+Download PDF
+  
+Read Online
+6.2 New Products Development Models
+pp 795-795; 1 page
+Download PDF
+  
+Read Online
+6.3 Variables and Elements in the Analysis and Design of a New Product Development Model
+pp 796-796; 1 page
+Download PDF
+  
+Read Online
+7 Conclusions
+pp 797-797; 1 page
+Download PDF
+  
+Read Online
+References
+pp 797-798; 2 pages
+Download PDF
+  
+Read Online
+Researcher Profile Ontology for Academic Environment
+pp 799-817; 19 pages
+Download PDF
+  
+Read Online
+Show Subsections
+Abstract
+pp 799-799; 1 page
+Download PDF
+  
+Read Online
+1 Introduction
+pp 799-799; 1 page
+Download PDF
+  
+Read Online
+2 Analysis of Related Work
+pp 800-803; 4 pages
+Download PDF
+  
+Read Online
+3 Methodology
+pp 804-805; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+3.1 Scientific Data Sources
+pp 804-804; 1 page
+Download PDF
+  
+Read Online
+3.2 Ontology Construction
+pp 805-805; 1 page
+Download PDF
+  
+Read Online
+3.3 Ontology Enrichment
+pp 805-805; 1 page
+Download PDF
+  
+Read Online
+4 Specification of Ontology Requirements
+pp 805-806; 2 pages
+Download PDF
+  
+Read Online
+Show Subsections
+4.1 Concept Coverage
+pp 806-806; 1 page
+Download PDF
+  
+Read Online
+4.2 Competency of the Ontology
+pp 806-806; 1 page
+Download PDF
+  
+Read Online
+5 Ontology Design
+pp 806-808; 3 pages
+Download PDF
+  
+Read Online
+Show Subsections
+5.1 Person Ontology
+pp 807-807; 1 page
+Download PDF
+  
+Read Online
+5.2 Publication Class
+pp 807-807; 1 page
+Download PDF
+  
+Read Online
+5.3 Researcher Profile Ontology
+pp 808-808; 1 page
+Download PDF
+  
+Read Online
+6 Ontology Population
+pp 809-809; 1 page
+Download PDF
+  
+Read Online
+Show Subsections
+6.1 Person Ontology Population
+pp 809-809; 1 page
+Download PDF
+  
+Read Online
+6.2 Publication Class Population
+pp 809-809; 1 page
+Download PDF
+  
+Read Online
+7 Ontology Enrichment
+pp 810-811; 2 pages
+Download PDF
+  
+Read Online
+8 Ontology Evaluation
+pp 812-815; 4 pages
+Download PDF
+  
+Read Online
+Show Subsections
+8.1 Researcher Publications
+pp 812-812; 1 page
+Download PDF
+  
+Read Online
+8.2 Collaboration Between Researchers
+pp 813-813; 1 page
+Download PDF
+  
+Read Online
+8.3 Qualified and Specialized Researchers
+pp 813-813; 1 page
+Download PDF
+  
+Read Online
+8.4 Publications by Year
+pp 814-814; 1 page
+Download PDF
+  
+Read Online
+8.5 Publications by Department
+pp 815-815; 1 page
+Download PDF
+  
+Read Online
+8.6 Publications by Gender
+pp 815-815; 1 page
+Download PDF
+  
+Read Online
+9 Conclusions
+pp 816-816; 1 page
+Download PDF
+  
+Read Online
+References
+pp 817-817; 1 page
+Download PDF
+  
+Read Online
+Author Index
+pp 819-821; 3 pages
+Download PDF
+  
+Read Online
+
+
+
+
+
+
+Book Details
+Title
+Advances in Computer Vision
+Subtitle
+Proceedings of the 2019 Computer Vision Conference (CVC), Volume 1
+Series
+Advances in Intelligent Systems and Computing Ser.
+Volume
+943
+Editors
+Kohei Arai
+and Supriya Kapoor
+Publisher
+Springer
+Print Pub Date
+2019-04-24
+Ebook Pub Date
+N/A
+Language
+English
+Print ISBN
+9783030177942
+eBook ISBN
+9783030177959
+Pages
+833
+LC Subject Heading
+Computer vision-Congresses.
+LC Call Number
+TA1-2040
+Dewey Decimal Number
+006.37
+BISAC Subject Headings
+COMPUTERS / Computer Graphics
+COMPUTERS / Intelligence (AI) & Semantics
+TECHNOLOGY & ENGINEERING / Engineering (General)
+Document Type
+book
+Show more
+Privacy Policy | Terms & Conditions | Cookie Policy | DMCA Policy | Personal Data Options | Cookie Preferences | Accessibility
+Close
+Share this book
+Advances in Computer Vision : Proceedings of the 2019 Computer Vision Conference (CVC), Volume 1 by Kohei Arai  and Supriya Kapoor  
+Copy Link
+
+Press Control-C to copy
+Tip: this link brings you back to the current page of this book
+Close Done
+Close
+SIGNIN
+
+Close
+Citation
+Copy Citation
+Format
+
+Press Control-C to copy
+Export Citation
+RefWorks EndNote/Citavi
+Close
+Close
+Alert
+
+Cancel
+Close
+Close
+Request This Book
+
+Your request will be sent to your librarian for approval.
+Name
+Reply-to Email
+Confirm Email
+Requested Access
+Message
+(Optional)
+The information provided here will only be used to fulfill your request.
+Request Book
+Done
+Close
+Close
+Check Out Ebook
+
+Get back to your book in less than a minute.
+LOAN LENGTH
+Check Out Ebook
+An invoice for the access selected plus applicable taxes will be generated for this ebook.
+
+Check Out Ebook Cancel
+Close
+Close
+To download, please sign in
+Laptop Desktop
+iOS (iPad, iPhone, iPod)
+Android (Phone, Tablet)
+Other
+I'm using my own computer
+I'm using a public computer
+Continue
+Sorry, we do not officially support download to other devices. If you use an emulator, you may wish to try the PC/Mac option.
+Cancel
+Adobe Digital Editions is required to download books. This free software is different from Adobe Reader.
+A free Adobe ID is also required to transfer the book to another device. It is not required to read books on this computer.
+Get Adobe Digital Editions
+‹ Go back
+Done with this step ›
+Tip: Consider downloading the book to your own computer instead, so you can retain access for the full download period.
+Adobe Digital Editions is required to download books. This free software is different from Adobe Reader.
+I Have Adobe Digital Editions
+‹ Go back
+You will also need an Adobe ID to read this book.
+Use Adobe Digital Editions
+Use Adobe Digital Editions
+We recommend this free app.
+Get Adobe Digital Editions
+User Another App
+Use Another App
+Make sure your app supports Adobe DRM.
+Find in Google Play Store
+‹ Go back Done with this step ›
+You will also need an Adobe ID to read this book.
+Use Adobe Digital Editions
+Use Adobe Digital Editions
+We recommend this free app.
+Get Adobe Digital Editions
+User Another App
+Use Another App
+Make sure your app supports Adobe DRM.
+Find on App Store
+‹ Go back Done with this step ›
+Tip: Consider downloading the book to your own computer instead, so you can retain access for the full download period.
+Adobe Digital Editions   is required to download books. If you are unsure whether it is installed, you should check with the administrator of this device.
+Get Adobe Digital Editions
+‹ Go back Done with this step ›
+
+ 
+Author:
+Length:
+ Pages
+File Size:
+LOAN LENGTH :
+Download Format:
+I'm using my own computer
+An invoice for the access selected plus applicable taxes will be generated for this ebook.
+Download Cancel
+Need Help?
+Read this title with any PDF reader, such as Adobe Acrobat, Bluefire Reader, Adobe Digital Editions.
+Download PDF
+Read this title with any EPUB reader, such as Apple iBooks, Readium, Bibliovore.
+Download EPUB
+Read this title with any PDF reader, such as Adobe Acrobat, Bluefire Reader, Adobe Digital Editions.
+Download PDF
+Read this title with any EPUB reader, such as Apple iBooks, Readium, Bibliovore.
+Download EPUB
+
+This may take a moment.
+Download
+Your PDF is ready for download.
+File Size:
+Download
+Close
+Alert
+
+Cancel Continue Download
+Close
+Close
+Add to Bookshelf
+Select a folder for this item
+FOLDER
+Name
+Cancel Add item
+
+Your book has been successfully added to your folder.
+Done
+
+This name is taken.
+
+Provide a name for your new folder.
+Close
+Close
+Preparing PDF
+
+This may take a moment.
+Download
+Your PDF is ready for download.
+Download
+
+Get back to your book in less than a minute
+LOAN LENGTH
+An invoice for the access selected plus applicable taxes will be generated for this ebook.
+
+Continue Cancel
+
+
+
+
+
+
+
+
+
+
+https://ebookcentral.proquest.com/lib/usherbrookemgh-ebooks/detail.action?docID=5755789
+person with protected data
+Important Notice
+
+By continuing to use your account, you agree to ProQuest's Privacy Policy and Terms of Service for the information that you provide us.
+
+An account is required to download books and chapters, annotate and use the bookshelf.
+
+An account is not required to search and read online.
+
+You may view, manage, and delete your account information on the Profile page.
+
+If you decline, you will be signed out of your account.
+Decline Accept
+Sorry, we've encountered an error. Please try again later.
+

@@ -1,0 +1,527 @@
+Skip Main Navigation Links Jump to Footer
+Scopus
+
+    Search
+    Sources
+    Alerts
+    Lists
+    Help
+        Help
+        Tutorials
+        Contact us
+    Close help menu
+    SciVal
+    Create account 
+    Sign in
+        My organization
+        University of Sherbrooke, Universite de Sherbrooke - Canada Consortium
+    Sign in or create account Learn more about signing in or creating an account with Scopus (opens in a new window)
+
+    To use this feature you must be a registered user of Scopus.
+    Sign in or create account Close popup
+    Expand navigation/Collapse navigation
+
+Document details
+
+    Back to results
+    Previous
+    3 of 5
+    Next
+
+    RIS export
+    Download
+    Print
+    E-mail
+    Save to PDF
+    Add to List
+    More...
+    Close help menu
+        Create bibliography
+
+Pour obtenir le document(opens in a new window) | View at Publisher |
+Export document settings Help/More Information
+
+Select your method of export
+
+    Mendeley
+    RefWorks
+    RIS Format
+    EndNote,
+    Reference Manager
+    CSV
+    Excel
+    BibTeX
+    Plain Text
+    ASCII in HTML
+
+What information do you want to export?
+Citation information 	Bibliographical information 	Abstract & keywords 	Funding details 	Other information
+
+    Author(s)
+    Author(s) ID
+    Document title
+    Year
+    EID
+    Source title
+    volume, issue, pages
+    Citation count
+    Source & document type
+    Publication Stage
+    DOI
+    Access Type
+
+	
+
+    Affiliations
+    Serial identifiers (e.g. ISSN)
+    PubMed ID
+    Publisher
+    Editor(s)
+    Language of original document
+    Correspondence address
+    Abbreviated source title
+
+	
+
+    Abstract
+    Author keywords
+    Index keywords
+
+	
+
+    Number
+    Acronym
+    Sponsor
+    Funding text
+
+	
+
+    Tradenames & manufacturers
+    Accession numbers & chemicals
+    Conference information
+    Include references
+
+Scopus reference list can only export citations. View references in search results for more options.
+Citation information
+Author(s) 	Year 	volume, issue, pages 	EID
+Document title 	Source title 	Citation count
+Cancel Export
+2000
+International Journal of Intelligent Systems Technologies and Applications Volume 13, Issue 4, 2014, Pages 245-257
+The Scopus Document Download Manager requires an extension Help/More Information
+Get extension
+Welcome back
+
+To start downloading documents, please refresh your browser by either
+clicking on the button below or directly refreshing the browser.
+Refresh browser
+If you haven't installed the extension yet: Get the extension
+Sorry, something went wrong...
+
+Scopus Document Download Manager Extension could not load properly.
+Please reload the page and contact our support team if the issue persists.
+Refresh browser
+Browser is not supported
+The Scopus Document Download Manager (DDM) is not supported on this browser.
+
+Please use our new and improved DDM for Firefox and Chrome.
+
+    
+Ok
+Scopus Document Download Manager
+i
+
+Download Done
+Loading...
+Downloaded
+Check publisher site
+View abstract
+Sorry, something went wrong...
+Real-time segmentation for baggage tracking on a cost effective embedded platform (Article)
+
+    Gilman, A. Email Author ,
+    Johnson, M. Email Author
+    View Correspondence (jump link)
+
+View additional authors  
+Retrieving additional authors...
+
+    Institute of Natural and Mathematical Sciences, Massey University, Auckland, 0632, New Zealand
+
+View additional affiliations  
+Retrieving additional affiliations...
+Abstract View references (22)
+
+This paper describes segmentation and tracking parts of a machine vision based airport baggage tracking system. A simplified codebook based background subtraction method is used to segment the bag from a semi-static background. Morphological processing using an integral image is used to filter the foreground mask and the bag location is found using statistical methods. The system was implemented on a cost effective embedded processor and runs in real time at 30 fps. Five ARM based embedded platforms are evaluated and it is shown that all of them are capable of the required performance. Copyright © 2014 Inderscience Enterprises Ltd.
+SciVal Topic Prominence
+New: SciVal Topic Prominence
+
+Topics are unique areas of research, created using all Scopus publications from 1996 onwards.
+
+Use this section to learn about the Topic, find key authors to follow, and view related documents. Learn more about these Topics
+Close window
+Topic: Object recognition | Pixels | Dynamic background
+Prominence percentile: 97.428
+ 
+Prominence is an indicator that shows the current momentum of a Topic. It is calculated by weighing 3 metrics for papers clustered in a Topic: Citation count, Scopus views and Average CiteScore.
+Author keywords
+Background subtraction Machine vision Morphological processing Real-time Segmentation
+Indexed keywords
+Engineering controlled terms: 	Computer vision Image segmentation
+Engineering uncontrolled terms 	Background subtraction Background subtraction method Baggage tracking systems Embedded processors Morphological processing Real time Real-time segmentation Segmentation and tracking
+Engineering main heading: 	Cost effectiveness
+
+    ISSN: 17408865
+    Source Type: Journal
+    Original language: English
+
+    DOI: 10.1504/IJISTA.2014.068821
+    Document Type: Article
+    Publisher: Inderscience Enterprises Ltd.
+
+View references (22)
+
+    References (22)
+    View in search results format
+
+    All
+    RIS export Print E-mail Save to PDF Create bibliography
+
+1
+	
+Benezeth, Y., Jodoin, P.M., Emile, B., Laurent, H., Rosenberger, C.
+Review and evaluation of commonly-implemented background subtraction algorithms
+
+(2008)  Proceedings - International Conference on Pattern Recognition , art. no. 4760998.  Cited 204 times .
+ISBN: 978-142442175-6
+
+    Pour obtenir le document(opens in a new window)
+
+2
+	
+Brutzer, S., Höferlin, B., Heidemann, G.
+Evaluation of background subtraction techniques for video surveillance
+
+(2011)  Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition , art. no. 5995508, pp. 1937-1944.  Cited 426 times .
+ISBN: 978-145770394-2
+doi: 10.1109/CVPR.2011.5995508
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+3
+	
+Cheung, S.-C.S., Kamath, C.
+Robust techniques for background subtraction in urban traffic video
+
+(2004)  Proceedings of SPIE - The International Society for Optical Engineering , 5308 (PART 2), pp. 881-892.  Cited 397 times .
+doi: 10.1117/12.526886
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+4
+	
+Collins, R.T., Kanade, T.
+Introduction to the Special Section on Video Surveillance
+
+(2000)  IEEE Transactions on Pattern Analysis and Machine Intelligence , 22 (8), pp. 745-746.  Cited 277 times .
+doi: 10.1109/TPAMI.2000.868676
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+5
+	
+Crow, Franklin C.
+SUMMED-AREA TABLES FOR TEXTURE MAPPING.
+
+(1984)  Computer Graphics (ACM) , 18 (3), pp. 207-212.  Cited 766 times .
+ISBN: 0897911385; 978-089791138-2
+doi: 10.1145/964965.808600
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+6
+	
+Elgammal, A., Duraiswami, R., Harwood, D., Davis, L.S.
+Background and foreground modeling using nonparametric kernel density estimation for visual surveillance
+
+(2002)  Proceedings of the IEEE , 90 (7), pp. 1151-1162.  Cited 1210 times .
+doi: 10.1109/JPROC.2002.801448
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+7
+	
+Goyat, Y., Chateau, T., Malaterre, L., Trassoudaine, L.
+Vehicle trajectories evaluation by static video sensors
+
+(2006)  IEEE Conference on Intelligent Transportation Systems, Proceedings, ITSC , art. no. 1706852, pp. 864-869.  Cited 46 times .
+ISBN: 1424400945; 978-142440094-2
+
+    Pour obtenir le document(opens in a new window)
+
+8
+	
+Huertas, Andres, Nevatia, Ramakant
+Detecting changes in aerial views of man-made structures
+
+(1998)  Proceedings of the IEEE International Conference on Computer Vision , pp. 73-80.  Cited 32 times .
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+9
+	
+Kim, K., Chalidabhongse, T.H., Harwood, D., Davis, L.
+Real-time foreground-background segmentation using codebook model
+
+(2005)  Real-Time Imaging , 11 (3), pp. 172-185.  Cited 1139 times .
+doi: 10.1016/j.rti.2004.12.004
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+10
+	
+Parks, D.H., Fels, S.S.
+Evaluation of background subtraction algorithms with post-processing
+
+(2008)  Proceedings - IEEE 5th International Conference on Advanced Video and Signal Based Surveillance, AVSS 2008 , art. no. 4730412, pp. 192-199.  Cited 138 times .
+ISBN: 978-076953341-4
+doi: 10.1109/AVSS.2008.19
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+11
+	
+Piccardi, M.
+Background subtraction techniques: A review
+
+(2004)  Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics , 4, pp. 3099-3104.  Cited 1302 times .
+ISBN: 0780385667
+doi: 10.1109/ICSMC.2004.1400815
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+12
+	
+Piccardi, M., Jan, T.
+Mean-shift background image modelling
+
+(2004)  Proceedings - International Conference on Image Processing, ICIP , 2, pp. 3399-3402.  Cited 34 times .
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+13
+	
+Radke, R.J., Andra, S., Al-Kofahi, O., Roysam, B.
+Image change detection algorithms: A systematic survey
+
+(2005)  IEEE Transactions on Image Processing , 14 (3), pp. 294-307.  Cited 1236 times .
+doi: 10.1109/TIP.2004.838698
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+14
+	
+Rey, D., Subsol, G., Delingette, H., Ayache, N.
+Automatic detection and segmentation of evolving processes in 3D medical images: Application to multiple sclerosis
+
+(2002)  Medical Image Analysis , 6 (2), pp. 163-179.  Cited 141 times .
+doi: 10.1016/S1361-8415(02)00056-7
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+15
+	
+(2012)  SITA Baggage Report
+http://www.sita.aero/content/baggage-report-2012
+
+     
+
+16
+	
+Stauffer, Chris, Grimson, W.E.L.
+Adaptive background mixture models for real-time tracking
+
+(1999)  Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition , 2, pp. 246-252.  Cited 5058 times .
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+17
+	
+Stauffer, C., Grimson, W.E.L.
+Learning patterns of activity using real-time tracking
+
+(2000)  IEEE Transactions on Pattern Analysis and Machine Intelligence , 22 (8), pp. 747-757.  Cited 2717 times .
+doi: 10.1109/34.868677
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+18
+	
+Wren, C.R., Azarbayejani, A., Darrell, T., Pentland, A.P.
+P finder: real-time tracking of the human body
+
+(1997)  IEEE Transactions on Pattern Analysis and Machine Intelligence , 19 (7), pp. 780-785.  Cited 3129 times .
+doi: 10.1109/34.598236
+
+    Pour obtenir le document(opens in a new window)
+    View at Publisher
+
+19
+	
+OMAP4 Mobile Applications Platform .  Cited 4 times .
+http://www.ti.com/lit/swpt034
+
+     
+
+20
+	
+OpenCV
+
+     
+
+21
+	
+Pandaboard Resources
+
+     
+
+22
+	
+Ubuntu Linux
+
+     
+
+  Gilman, A.; Institute of Natural and Mathematical Sciences, Massey University, Auckland, New Zealand; email: a.gilman@massey.ac.nz
+© Copyright 2016 Elsevier B.V., All rights reserved.
+
+    Back to results
+    Previous
+    3 of 5
+    Next
+
+Top of page
+Metrics
+Learn more about Article metrics in Scopus (opens in a new window)
+View all metrics  
+Learn more about Field-Weighted Citation Impact
+Close popup
+Field-Weighted Citation Impact Field-Weighted Citation Impact shows how well cited this document is when compared to similar documents. A value greater than 1.00 means the document is more cited than expected according to the average. It takes into account:
+
+    The year of publication
+    Document type, and
+    Disciplines associated with its source.
+
+The FWCI is the ratio of the document's citations to the average number of citations received by all similar documents over a three-year window. Each discipline makes an equal contribution to the metric, which eliminates differences in researcher citation behavior.
+Field-Weighted Citation Impact
+Plum Print visual indicator of research metrics
+PlumX Metrics
+Usage, Captures, Mentions, Social Media and Citations beyond Scopus.
+No metrics available.
+see details
+Cited by 0 documents
+Inform me when this document is cited in Scopus:
+Set citation alert
+Set citation feed
+Related documents
+
+    Real-time baggage tracking using a modified background subtraction algorithm
+    Johnson, M. , Gilman, A.
+    (2012) 2012 19th International Conference on Mechatronics and Machine Vision in Practice, M2VIP 2012
+
+    A new change detection algorithm for visual surveillance system
+    Aching Samatelo, J.L. , Ottoni Teatini Salles, E.
+    (2012) IEEE Latin America Transactions
+
+    Dual-mode detection for foreground segmentation in low-contrast video images
+    Chiu, W.-Y. , Tsai, D.-M.
+    (2014) Journal of Real-Time Image Processing
+
+View all related documents based on references
+Find more related documents in Scopus based on:
+Authors
+Keywords
+{"topic":{"name":"Object recognition; Pixels; Dynamic background","id":545,"uri":"Topic/545","prominencePercentile":97.428215,"prominencePercentileString":"97.428","overallScholarlyOutput":0},"dig":"dcc0254af1232d77904205e18d6789e7a5811c78596d41e6441d930d53d9c4b5"}
+Topic:
+Year range:
+Representative documents
+
+Top authors 	Scholarly Output
+Keyphrase analysis
+
+    Chart
+    Table
+
+A A A relevance of keyphrase | declining A A A Growth
+Analyze in SciVal
+Substance details
+View all substances 
+Addtional data on physical properties, spectra and targets in Reaxys 
+Powered by 
+View all substances on Reaxys
+Previous     of    Next
+Powered by 
+About Scopus
+
+    What is Scopus
+    Content coverage
+    Scopus blog
+    Scopus API
+    Privacy matters
+
+Language
+
+    日本語に切り替える
+    切换到简体中文
+    切換到繁體中文
+    Русский язык
+
+Customer Service
+
+    Help
+    Contact us
+
+Elsevier
+
+    Terms and conditions View the terms and conditions of Elsevier (opens in a new window)
+    Privacy policy
+
+Copyright © Elsevier B.V . All rights reserved. Scopus® is a registered trademark of Elsevier B.V.
+
+We use cookies to help provide and enhance our service and tailor content. By continuing, you agree to the use of cookies .
+RELX Group RELX Group
+Loading...
+Scopus Navigation Panel
+Guest user Expand navigation/Collapse navigation
+Personal profile access
+My Scopus
+
+    Dashboard
+    Saved searches
+    Alerts
+    Saved lists
+    Grouped authors
+
+My organization
+
+    Brought to you by
+    Service des bibliothèques et archives - UdeS
+
+    SciVal
+    Mendeley
+    Pure
+    Privacy center
+
