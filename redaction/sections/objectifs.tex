@@ -1,7 +1,7 @@
-﻿\noindent L'objectif principal de l'essai est d'évaluer la capacité du nano ordinateur "NVIDIA Jetson Nano" à exécuter, en temps réel, un modèle de réseau de neurones à convolution entier (\acrshort{fcn}) permettant la segmentation sémantique d'une vidéo d'une piste multifonctionnelle. Pour y arriver, différents sous-objectifs ont été établis. 
+﻿\noindent L'objectif principal de l'essai est d'évaluer la capacité du nano ordinateur "NVIDIA Jetson Nano" à exécuter, en temps réel, une architecture de réseau de neurones pleinement connectés (\acrshort{fcnn}) permettant la segmentation sémantique d'une vidéo d'une piste multifonctionnelle. Pour y arriver, différents sous-objectifs ont été établis. 
 \vspace{\baselineskip}
 \\
-\noindent Voici en bref les sous-objectifs, avec un peu plus de détails par la suite pour chacun d'eux: 
+\noindent Les sous-objectifs sont les suivants: 
 \begin{itemize}
    \item Évaluer les limites de la plateforme, matérielle et applicative.
    \item Trouver des moyens d'optimiser la plateforme, au besoin, d'un point de vue matériel, mais aussi applicatif.
@@ -9,7 +9,7 @@
    \item Documenter l'approche, les tests, et les résultats;
 \end{itemize}
 \vspace{\baselineskip}
-\noindent Le premier sous-objectif est de déterminer quelles sont les limites de la plateforme, d'un point de vue matériel (\acrshort{gpu}, \acrshort{cpu}s, mémoire, transfert mémoire, consommation, etc.), mais aussi applicatif (entrainement, inférence). Cette phase du projet va permettre d'exécuter différents modèles déjà existants, sans  modification, en tenant compte des éléments documentés dans la littérature \parencite{nguyen_mavnet_2019} \parencite{zheng_real-time_2020} \parencite{nvidia_jetson_2019-1}. Selon le déroulement de cette étape, un ou plusieurs modèles seront sélectionnés. 
+\noindent Le premier sous-objectif est de déterminer quelles sont les limites de la plateforme, d'un point de vue matériel (\acrshort{gpu}, \acrshort{cpu}s, mémoire, transfert mémoire, consommation, etc.), mais aussi applicatif (entrainement, inférence). Cette phase du projet va permettre d'exécuter différents modèles déjà existants, sans modification, en tenant compte des éléments documentés dans la littérature \parencite{nguyen_mavnet_2019, zheng_real-time_2020, nvidia_jetson_2019-1}. Selon le déroulement de cette étape, un ou plusieurs modèles sont sélectionnés. 
 \vspace{\baselineskip}
 \\
 \noindent Un autre sous-objectif est d'optimiser ou d'adapter la plateforme, d'un point de vue matériel, mais aussi applicatif, afin d'avoir les meilleures performances et résultats possibles pendant l'entrainement et l'inférence.
@@ -18,4 +18,4 @@
 \noindent Comme les résultats devront être disponibles en tout temps, une connexion à distance sécurisée devra être mise en place. Cette connexion permettra aussi de pouvoir prendre le contrôle du nano ordinateur à distance et de l'administrer.
 \vspace{\baselineskip}
 \\
-\noindent L'approche, les tests, et les résultats seront documentés. Il y aura beaucoup d'activités relatives à la conception et aux tests, le cheminement complet ne sera pas fourni. Une synthèse sera préférée et les informations les plus pertinentes seront incluses. Les détails de l'installation de l'environnement de développement et des applications, librairies et autres dépendances nécessaires seront inclus, ainsi que ceux de la configuration. Dans le cas où l'objectif principal n'est pas atteint, ou partiellement, la/les raison/s de l'échec seront spécifiées et des pistes de solutions potentielles proposées.
+\noindent L'approche, les tests, et les résultats sont documentés. Il y aura beaucoup d'activités relatives à la conception et aux tests, le cheminement complet n'est pas fourni. Une synthèse est préférée et les informations les plus pertinentes sont incluses. Les détails de l'installation de l'environnement de développement et des applications, librairies et autres dépendances nécessaires sont inclus, ainsi que ceux de la configuration. Dans le cas où l'objectif principal n'est pas atteint, ou partiellement, la/les raison/s de l'échec sont spécifiées et des pistes de solutions potentielles proposées.

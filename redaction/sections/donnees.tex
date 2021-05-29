@@ -4,26 +4,26 @@
 Les ressources mises à disposition par le constructeur du Jetson Nano, NVIDIA, font référence à des jeux de données qui sont disponibles publiquement.
 \vspace{\baselineskip}
 \\
-\noindent En complément des ressources de NVIDIA, deux références scientifiques seront principalement étudiées, car leurs recherches ont été faites avec le Jetson Nano \parencite{nguyen_mavnet_2019} et \parencite{chong_real-time_1992}. Beaucoup de références ont été publiées ces deux dernières années sur le sujet de la segmentation sémantique, ils existent donc de multiples alternatives inspirantes.
+\noindent En complément des ressources de NVIDIA, deux références scientifiques ont été étudiées, car leurs recherches ont été faites avec le Jetson Nano \parencite{nguyen_mavnet_2019} et \parencite{zheng_real-time_2020}. Beaucoup de références ont été publiées ces deux dernières années sur le sujet de la segmentation sémantique, ils existent donc de multiples alternatives inspirantes.
 \vspace{\baselineskip}
 \\
-\noindent Internet est une mine de données : il existe des forums et des blogues dans lesquels des utilisateurs publient leurs expérimentations de la segmentation sémantique en temps réel avec le Jetson Nano \parencite{dustin_realtime_2019}, ou plus génériquement la segmentation sémantique; des sites comme "modelzoo.co" ou "kaggle.com" sont des entrepôts de données et de modèles \acrshort{fcn} prêts à être utilisés; une autre option a été d'effectuer une recherche d'images ou de vidéos de la piste multifonctionnelle du pont Jacques-Cartier via les sites de recherche tels que Google. 
+\noindent Il existe sur Internet des forums et des blogues dans lesquels des utilisateurs publient leurs expérimentations de la segmentation sémantique en temps réel avec le Jetson Nano \parencite{dustin_realtime_2019}, ou plus génériquement la segmentation sémantique; des sites comme "modelzoo.co" ou "kaggle.com" sont des entrepôts de données et d'architectures \acrshort{fcn} prêts à être utilisés; une autre option a été d'effectuer une recherche d'images ou de vidéos de la piste multifonctionnelle du pont Jacques-Cartier via les sites de recherche tels que Google. 
 \vspace{\baselineskip}
 \\
-\noindent L'\acrlong{apcpontjc} existe depuis de nombreuses années pour promouvoir le transport actif et conserver la piste multifonctionnelle du pont Jacques Cartier ouverte durant l'hiver. Ils fournissent, via leurs sites Internet, des collections de vidéos et d'images qui seront utilisées après leur avoir demandé leur autorisation verbale et écrite. \parencite{association_des_pietons_et_cyclistes_du_pont_jacques-cartier_pontjacques-cartier365com_2020} \parencite{association_des_pietons_et_cyclistes_pont_jacques-cartier_flickr_2020}
+\noindent L'\acrlong{apcpontjc} existe depuis de nombreuses années pour promouvoir le transport actif et conserver la piste multifonctionnelle du pont Jacques Cartier ouverte durant l'hiver. Ils fournissent, via leurs sites Internet, des collections de vidéos et d'images qui pourront être utilisées après leur avoir demandé leur autorisation verbale et écrite. \parencite{association_des_pietons_et_cyclistes_du_pont_jacques-cartier_pontjacques-cartier365com_2020, association_des_pietons_et_cyclistes_pont_jacques-cartier_flickr_2020}
 \myparagraph{Approche prévue pour le traitement des données}
 \vspace{\baselineskip}
 \\
-Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts; et 2) l'inférence avec des modèles ré entrainés. Les données utilisées par l'inférence sont des vidéos (d'une certaine résolution et d'un certain nombre d'images pas seconde), et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celles avec lesquelles le modèle a été, ou sera, entrainées. La résolution et la qualité de l'image vidéo seront nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la détection la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
+Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts; et 2) l'inférence avec des architectures ré entrainées. Les données utilisées pour l'inférence sont des vidéos, et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celles avec lesquelles l'architecture a été, ou sera, entrainées. La résolution et la qualité de l'image vidéo sont nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la segmentation la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
 \vspace{\baselineskip}
 \\
-\noindent Tout cela signifie que les vidéos ou nouvelles images devront être traités pour répondre à une certaine taille et résolution requise par le modèle, tout en conservant une qualité élevée (nombre de pixels, niveaux de couleurs). De nouvelles images pour l'entrainement seront extraites des vidéos, et annotées. 
+\noindent Tout cela signifie que les vidéos ou nouvelles images doivent être traitées pour répondre à une certaine taille et résolution requise par l'architecture, tout en conservant une qualité élevée (nombre de pixels, niveaux de couleurs). De nouvelles images pour l'entrainement sont extraites des vidéos, et annotées. 
 \vspace{\baselineskip}
 \\
-\noindent Certains cadres d'application logicielle ("framework") d'apprentissage profond (par exemple "Keras") offrent l'option d'augmenter automatiquement le jeu de données avec des techniques d'augmentation de données (par exemple la rotation, le redimensionnement, l'effet miroir), ce qui est très utile et non négligeable.
+\noindent Certains cadres de développement d'application logicielle d'apprentissage profond (par exemple "Keras") offrent l'option d'augmenter automatiquement le jeu de données avec des techniques d'augmentation de données (par exemple la rotation, le redimensionnement, l'effet miroir), ce qui est utile et non négligeable.
 \vspace{\baselineskip}
 \\
-\noindent Voici le tableau de synthèse des données qui ont été découvertes et qui seront potentiellement utilisées dans le cadre de l'essai, incluant la référence à l'architecture du modèle d'apprentissage profond. Ce tableau est complémentaire à celui déjà proposé par NVIDIA\footnote{\url{https://github.com/dusty-nv/jetson-inference#semantic-segmentation}}.
+\noindent Voici le tableau de synthèse des données qui ont été découvertes et qui sont potentiellement utilisées dans le cadre de l'essai, incluant la référence à l'architecture du modèle d'apprentissage profond. Ce tableau est complémentaire à celui déjà proposé par NVIDIA\footnote{\url{https://github.com/dusty-nv/jetson-inference#semantic-segmentation}}.
 {
    \newcounter{magicrownumbers}
    \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
@@ -40,30 +40,30 @@ Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts
       \endlastfoot
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
-         Réseau: SegNet\\Plateforme: Caffe\\Jeu de données: CamVid\\Vidéo: 10 minutes\\Résolution/s: HD\\
+         Architecture: SegNet\\Plateforme: Caffe\\Jeu de données: CamVid\\Vidéo: 10 minutes\\Résolution/s: HD\\
          \hline
-         SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurent des vidéos de la route avec la même perspective que le conducteur du véhicule. Un modèle entrainé est disponible pour le Jetson Nano.\\
+         SegNet est un réseau qui a été créé pour la segmentation sémantique de vidéos. Il a été entrainé avec le jeu de données de CamVid, qui procurent des vidéos de la route avec la même perspective que le conducteur du véhicule. Une architecture entrainée est disponible pour le Jetson Nano.\\
          \url{https://github.com/alexgkendall/SegNet-Tutorial}\\\url{https://github.com/PengKiKi/camvid}
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
-         Réseau: MFANet\\Plateforme: Inconnue\\Jeu de données: Cityscapes\\Nombre d'images: 25 000\\Résolutions: 512x1024\\
+         Architecture: MFANet\\Plateforme: Inconnue\\Jeu de données: Cityscapes\\Nombre d'images: 25 000\\Résolutions: 512x1024\\
          \hline
          MFANet\parencite{zheng_real-time_2020} est un réseau qui a été créé en 2019 pour la segmentation sémantique sur des appareils tel que le Jetson Nano. Il a été entrainé avec le jeu de données de Cityscapes, qui procurent des images de scènes urbaines. Cityscapes est un jeu de données qui fournit des images de rues spécifiquement destinées pour la segmentation sémantique. Il peut être utilisé par de nombreux réseaux. Différentes stratégies d'augmentation de données sont utilisées. Des tests ont été faits avec le Jetson Nano.\\
          leejy@ustb.edu.cn
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
-         Réseau: MAVNet\\Plateforme: Inconnue\\Jeux de données: drone et penstock\\Nombre d'images: 1008 et 138 \\Résolutions: 1024x1280\\
+         Architecture: MAVNet\\Plateforme: Inconnue\\Jeux de données: drone et penstock\\Nombre d'images: 1008 et 138 \\Résolutions: 1024x1280\\
          \hline
          MAVNet\parencite{nguyen_mavnet_2019} a été entrainé avec deux jeux de données pour être utilisé par le Jetson Nano monté sur des "micro Aerial Vehicles (MAVs)".\\
          \url{https://github.com/tynguyen/MAVNet}\\
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
-         Réseau: AdapNet\\Plateforme: TensorFlow\\Jeu de données: FreiburgForest\\Nombre d'images: 15 000\\Résolutions: 576x320, 864x480 \\
+         Architecture: AdapNet\\Plateforme: TensorFlow\\Jeu de données: FreiburgForest\\Nombre d'images: 15 000\\Résolutions: 576x320, 864x480 \\
          \hline
-         DeepScene propose plusieurs modèles entrainés avec différents jeux de données, comme Cityscpapes, SUN-RGBD, Synthia. Le jeu de données 'FreiburgForest' fournit des images de chemin dans la forêt, qui est destinée pour la segmentation sémantique. Le modèle AdapNet testé durant cet essai a été entrainé avec ce jeu et est disponible en deux résolutions pour le Jetson Nano.\\
+         DeepScene propose plusieurs modèles entrainés avec différents jeux de données, comme Cityscpapes, SUN-RGBD, Synthia. Le jeu de données 'FreiburgForest' fournit des images de chemin dans la forêt, qui est destinée pour la segmentation sémantique. L'architecture AdapNet testée durant cet essai a été entrainée avec ce jeu et est disponible en deux résolutions pour le Jetson Nano.\\
          \url{http://deepscene.cs.uni-freiburg.de}\\
       \end{tabular}\\
       \hline
@@ -77,7 +77,7 @@ Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
          Jeu de données: Association des piétons et cyclistes pont Jacques-Cartier\\Nombre d'images: 313\\Résolutions: variées\\
          \hline
-         L'\acrlong{apcpontjc} a une collection d'images et de vidéos de la piste multifonctionnelle du pont Jacques-Cartier. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai. Il est envisagé de contacter l'association au besoin afin de leur demander leur collaboration pour la collecte d'autres d'images ou vidéos.\\
+         L'\acrlong{apcpontjc} a une collection d'images et de vidéos de la piste multifonctionnelle du pont Jacques-Cartier. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est importante pour l'essai. Il est envisagé de contacter l'association au besoin afin de leur demander leur collaboration pour la collecte d'autres d'images ou vidéos.\\
          \url{https://www.flickr.com/photos/pontjacquescartier}\\
          \url{http://pontjacquescartier365.com/videos-pont-jacques-cartier}\\
       \end{tabular}\\
@@ -85,14 +85,14 @@ Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
          Jeu de données: images et vidéo sur Internet\\Nombre d'images: entre 30-50\\Résolutions: variées\\
          \hline
-         Internet est une source de données non négligeable en termes de données. Quelques images et vidéos de la piste multifonctionnelle du pont Jacques-Cartier, autre que celles fournies par L'\acrlong{apcpontjc}, sont disponibles. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est très importante pour l'essai.\\
+         Internet est une source de données non négligeable en termes de données. Quelques images et vidéos de la piste multifonctionnelle du pont Jacques-Cartier, autre que celles fournies par L'\acrlong{apcpontjc}, sont disponibles. Ce n'est pas un jeu de données qui est prêt à être utilisé pour l'apprentissage tel quel, il doit être préparé. Mais c'est une source de données qui est importante pour l'essai.\\
          \url{https://google.ca}\\
       \end{tabular}\\
       \hline
       \rownumber & \begin{tabular}[t]{@{}p{35em}@{}}
          Jeux de données: KITI Road/Lane Detection\\
          \hline
-         Ce jeu de données contient 289 images d'entrainement et 290 images de tests d'image de routes urbaines. Il existe une grande multitude de modèles qui sont entrainés avec ce jeu de données.\\
+         Ce jeu de données contient 289 images d'entrainement et 290 images de tests d'image de routes urbaines. Il existe une grande multitude d'architectures qui sont entrainées avec ce jeu de données.\\
          \url{http://www.cvlibs.net/datasets/kitti/eval_road.php}\\
       \end{tabular}\\
       \hline
