@@ -51,7 +51,7 @@
 \subsubsection{Images}
 La segmentation prédite pour la classe "Trail" est assez surprenante. Le \acrshort{iou} est de 89 \% et de 69 \% respectivement dans le cas des deux images évaluées, ce qui est encourageant. Par contre les délimitations de la segmentation pour le chemin sont décevantes et questionnables, car l'architecture retourne une résolution faible, de 19 x 10 pixels. C'est probablement dû au fait que l'architecture du modèle segnet18 n'utilise que 18 couches, et qu'il n'y a donc que peu de représentations possibles pour les classes. 
 \subsubsection{Vidéos}
-La segmentation des vidéos n'a pas pu être évaluée avec des indicateurs de performances. C'est donc subjectivement que l'on peut donner une appréciation. Comme les images se succèdent rapidement, ce n'est pas non plus évident. Grossièrement je n'ai pas trouvé le résultat de la segmentation bonne. Les vidéos proviennent d'un contexte autre que celui du jeu de données d'entrainement (la forêt), la surface de la piste est bien différente. 
+La segmentation des vidéos n'a pas pu être évaluée avec des indicateurs de performances. C'est donc subjectivement que l'on peut donner une appréciation. Comme les images se succèdent rapidement, ce n'est pas non plus évident. Les vidéos proviennent d'un contexte autre que celui du jeu de données d'entrainement (la forêt), la surface de la piste est bien différente. 
 \vspace{\baselineskip}
 \\
 \noindent Je me questionne sur l'utilisation de la segmentation de vidéos en temps réel, car il n'y a pas moyen d'évaluer la qualité de la segmentation si la vérité terrain n'est pas disponible.
