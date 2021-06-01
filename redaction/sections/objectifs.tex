@@ -1,21 +1,29 @@
-﻿\noindent L'objectif principal de l'essai est d'évaluer la capacité du nano ordinateur "NVIDIA Jetson Nano" à exécuter, en temps réel, une architecture de réseau de neurones pleinement connectés (\acrshort{fcnn}) permettant la segmentation sémantique d'une vidéo d'une piste multifonctionnelle. Pour y arriver, différents sous-objectifs ont été établis. 
+﻿\noindent L'objectif principal de cet essai consiste a étudier la capacité du nano ordinateur du fabricant NVIDIA, le Jetson Nano \parencite{nvidia_jetson_2019}, à exécuter, en temps réel, une architecture de réseau de neurones pleinement connectés (\acrshort{fcnn}) entrainée à faire de la segmentation sémantique d'images et de vidéos de hautes résolutions qui sont perçues avec la caméra. Une seule classe sera déduite et évaluée, celle représentant la piste multifonctionnelle. Les autres classes ne recevront pas d'attention.
 \vspace{\baselineskip}
 \\
 \noindent Les sous-objectifs sont les suivants: 
 \begin{itemize}
    \item Évaluer les limites de la plateforme, matérielle et applicative.
-   \item Trouver des moyens d'optimiser la plateforme, au besoin, d'un point de vue matériel, mais aussi applicatif.
+   \item Évaluer les moyens d'optimiser la plateforme d'un point de vue matériel et applicatif. 
+   \item Évaluer la possibilité de pouvoir ré entrainer l'architecture sur le nano ordinateur dans une perspective d'apprentissage actif et continue.
+   \item Ré entrainer une architecture \acrshort{fcnn} avec les images du site d'implémentation.
    \item Permettre un accès à distance sécurisé au nano ordinateur.
    \item Documenter l'approche, les tests, et les résultats;
 \end{itemize}
 \vspace{\baselineskip}
-\noindent Le premier sous-objectif est de déterminer quelles sont les limites de la plateforme, d'un point de vue matériel (\acrshort{gpu}, \acrshort{cpu}s, mémoire, transfert mémoire, consommation, etc.), mais aussi applicatif (entrainement, inférence). Cette phase du projet va permettre d'exécuter différents modèles déjà existants, sans modification, en tenant compte des éléments documentés dans la littérature \parencite{nguyen_mavnet_2019, zheng_real-time_2020, nvidia_jetson_2019-1}. Selon le déroulement de cette étape, un ou plusieurs modèles sont sélectionnés. 
+\noindent Il n'est pas planifier de faire des tests sur le site d'implémentation, ni s'intégrer avec d'autres programmes du projet pour \acrshort{pjcci}, par exemple pour détecter les conditions de la surface de la piste multifonctionnelle. 
 \vspace{\baselineskip}
 \\
-\noindent Un autre sous-objectif est d'optimiser ou d'adapter la plateforme, d'un point de vue matériel, mais aussi applicatif, afin d'avoir les meilleures performances et résultats possibles pendant l'entrainement et l'inférence.
+\noindent Le premier sous-objectif est de déterminer quelles sont les limites de la plateforme, d'un point de vue matériel (\acrshort{gpu}, \acrshort{cpu}s, mémoire, transfert mémoire, consommation, etc.), mais aussi applicatif (entrainement, inférence). Cette phase du projet va permettre d'exécuter différents modèles d'architecture déjà existants, sans modification, en tenant compte des éléments documentés dans la littérature \parencite{nguyen_mavnet_2019, zheng_real-time_2020, nvidia_jetson_2019-1}. Selon le déroulement de cette étape, un ou plusieurs modèles seront sélectionnés. 
 \vspace{\baselineskip}
 \\
-\noindent Comme les résultats devront être disponibles en tout temps, une connexion à distance sécurisée devra être mise en place. Cette connexion permettra aussi de pouvoir prendre le contrôle du nano ordinateur à distance et de l'administrer.
+\noindent Un autre sous-objectif est d'optimiser ou d'adapter la plateforme, d'un point de vue matériel, mais aussi applicatif, afin d'avoir les meilleures performances et résultats possibles pendant l'inférence.
+\vspace{\baselineskip}
+\\
+\noindent L'un des intérêts de l'\acrshort{ia} est de pouvoir améliorer constamment les modèles grâce au ré entrainment continue. L'essai va évaluer la possibilité de bénéficier de cet avantage directement sur le nano ordinateur en tentant de ré entrainer activement l'architecture avec des images de la piste multifonctionnelle re segmentées par un expert, et re générer un modèle plus précis, tout ceci en concurence avec l'inférence en temps rélle. 
+\vspace{\baselineskip}
+\\
+\noindent Comme les résultats devront être disponibles en tout temps, une connexion à distance sécurisée devra être mise en place. Cette connexion permettra aussi de pouvoir prendre le contrôle du nano ordinateur à distance et de l'administrer. En effet, le nano ordinateur sera déployé sur le site d'implémentation sans les périphériques standards, tel qu'un clavier, souris ou écran. Le type de réseau adéquat, soit Ethernet ou cellulaire (carte SIM réseau 3g/4g), sera évalué.
 \vspace{\baselineskip}
 \\
 \noindent L'approche, les tests, et les résultats sont documentés. Il y aura beaucoup d'activités relatives à la conception et aux tests, le cheminement complet n'est pas fourni. Une synthèse est préférée et les informations les plus pertinentes sont incluses. Les détails de l'installation de l'environnement de développement et des applications, librairies et autres dépendances nécessaires sont inclus, ainsi que ceux de la configuration. Dans le cas où l'objectif principal n'est pas atteint, ou partiellement, la/les raison/s de l'échec sont spécifiées et des pistes de solutions potentielles proposées.
