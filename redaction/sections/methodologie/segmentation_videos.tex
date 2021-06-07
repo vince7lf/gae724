@@ -1,7 +1,7 @@
 ﻿\myparagraph{Préparation et pré-traitement}
 \vspace{\baselineskip}
 \\
-\noindent L'évaluation de la segmentation avec des vidéos va s'effectuer non pas avec la caméra, mais avec un matériel vidéo virtuel. En effet, il n'est pas réaliste de pouvoir travailler sur le terrain. La commande "segnet-camera" permet de fournir en option le matériel qui doit être utilisé, par exemple "/dev/video0" pour la caméra. Le module "v4l2loopback"\footnote{\url{https://github.com/umlaeute/v4l2loopback}} permet de créer un matériel vidéo virtuel "/dev/video1". Ce matériel permet de recevoir un flux vidéo, qui pourra alors alimenter l'utilitaire "segnet-camera", comme le ferait la caméra. Le flux vidéo sera produit par l'utilitaire "gstreamer" avec comme données d'entrées le fichier de la vidéo et dirigé vers le matériel vidéo virtuel "/dev/video1".
+\noindent L'évaluation de la segmentation avec des vidéos va s'effectuer non pas avec la caméra, mais avec un matériel vidéo virtuel. En effet, il n'est pas réaliste de pouvoir travailler sur le terrain. La commande "segnet-camera" permet de fournir en option le matériel qui doit être utilisé, par exemple "/dev/video0" pour la caméra. Le module "v4l2loopback"\footnote{\url{https://github.com/umlaeute/v4l2loopback}} permet de créer un matériel vidéo virtuel "/dev/video1". Ce matériel permet de recevoir un flux vidéo, qui pourra alors alimenter l'utilitaire "segnet-camera", comme le ferait la caméra. Le flux vidéo est produit par l'utilitaire "gstreamer" avec comme données d'entrées le fichier de la vidéo et dirigé vers le matériel vidéo virtuel "/dev/video1".
 \vspace{\baselineskip}
 \\
 \noindent La difficulté réside dans le fait que le matériel vidéo virtuel et le flux vidéo doivent être compatibles avec ce que l'utilitaire "segnet-camera" s'attend, et qui a été conçu pour être compatible avec une caméra. 
@@ -29,7 +29,7 @@
 \noindent L'un des avantages de l'utilitaire "gstreamer" est de pouvoir contrôler la résolution et le nombre d'images par seconde (\acrshort{fps}) de la vidéo qui doit être segmentée. Les différentes résolutions et \acrshort{fps} qui désirent être exécutées sont préparées dans un script "shell" écrit pour l'occasion. Le script s'occupe de démarrer gstreamer avec les bons paramètres, et en parallèle de démarrer la segmentation avec "segnet-camera". Un jeu de résolution peut être testé unitairement\footnote{\url{https://github.com/vince7lf/gae724/blob/master/run_deepscene.sh}}, ou plusieurs en séquence\footnote{\url{https://github.com/vince7lf/gae724/blob/master/run_deepscene_batch.sh}}. 
 \vspace{\baselineskip}
 \\
-\noindent Les résolutions et images par seconde qui ont été testées sont résumées dans le tableau \ref{table:resolutions_tested}. 
+\noindent Les résolutions et images par seconde qui ont été testées sont résumées dans le tableau \ref{table:resolutions_to_be_tested}. 
 \vspace{\baselineskip}
 \\
 \noindent Deux vidéos ont été utilisées pour tester la segmentation. La première vidéo est utilisée pour tester l'inférence avec une vidéo du site d'étude, et qui a été fournie gracieusement par l'\acrshort{apcpontjc}. Cette première vidéo est intéressante, car elle est filmée en mouvement par un cycliste. Dans un interval de 30 secondes, l'angle de vue change rapidement. La piste cyclable est bordée d'un muret côté sud, et de la route avec les voitures qui circulent côté nord. Même si la journée est ensoleillée, la surface de la piste est aussi à un moment humide.

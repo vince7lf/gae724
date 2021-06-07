@@ -23,7 +23,7 @@
 \noindent Les diagrammes suivants présentent l'état du nano ordinateur avant la segmentation, pendant et après. Les indicateurs qui sont observés sont ceux de la mémoire, la fréquence, le I/O, la consommation, la température. Afin de montrer l'impacte potentiel de l'application Chromium, elle est démarrée entre deux segmentations, et pendant la segmentation. 
 \vspace{\baselineskip}
 \\
-\noindent La carte microSD "Scan Disk Ultra 32Gb class 10 HC I" a été utilisée pour les tests de performance système. La carte microSD "Samsung EVO 64Gb Plus class 10 HC I" n'était malheureusement plus fonctionnelle au moment des tests, celle-ci ayant été réservée pour tenter d'adapter le modèle aux images terrain locales. 
+\noindent La carte microSD "Scan Disk Ultra 32Gb class 10 HC I" a été utilisée pour les tests de performance système. La carte microSD "Samsung EVO 64Gb Plus class 10 HC I" n'était malheureusement plus fonctionnelle au moment des tests, celle-ci ayant été réservée pour tenter d'adapter l'architecture aux images terrain locales. 
 \vspace{\baselineskip}
 \\
 \noindent Le test infère en temps réel la vidéo qui est capturée avec la caméra du nano ordinateur. Le réseau \acrshort{fcn} qui est utilisé est celui fournit par NVIDIA "fcn-resnet18-deepscene-576x320". Ce modèle détecte automatiquement la résolution la plus appropriée avec cette caméra, c'est-à-dire 30 images par seconde (\acrshort{fps}) et une résolution de 1280x720. Le test dure 1400 secondes, un peu de plus de 23 minutes. Il peut se diviser en onze périodes d'observation, qui sont brièvement décrites ci-dessous: 
@@ -99,13 +99,13 @@
 }
 \subsection{Performances de l'inférence}
 \subsubsection{Images}
-\noindent Les tests ont été faits avec le modèle "fcn-resnet18-deepscene-576x320" fourni par NVIDIA. 
+\noindent Les tests ont été faits avec l'architecture "fcn-resnet18-deepscene-576x320" fourni par NVIDIA. 
 \vspace{\baselineskip}
 \\
-\noindent Lors de l'entrainement et l'inférence, le script montre un \acrshort{iou} moyen du modèle de 75\%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le \acrshort{iou} et le F1 score de la segmentation sémantique de la piste cyclable uniquement.
+\noindent Lors de l'entrainement et l'inférence, le script montre un \acrshort{iou} moyen de 75 \%. Mais l'objet d'intérêt de l'essai n'est pas la qualité de la segmentation de l'image complète, mais seulement de la piste cyclable. Certains efforts ont dû être dépensés\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_notebooks/2020-06-21-image_pred_color.ipynb}} afin de pouvoir observer le \acrshort{iou} et le F1 score de la segmentation sémantique de la piste cyclable uniquement.
 \vspace{\baselineskip}
 \\
-\noindent Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour le modèle. L'image utilisée possède une version vérité terrain (\acrshort{gt}). L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain (\acrshort{gt}), tant que la palette de couleur est identique à la version vérité terrain (\acrshort{gt}). 
+\noindent Le résultat de la segmentation sémantique peut-être visualisé avec ces deux photos, prises du jeu de donnée de test de la forêt de Freiburg et utiliser comme jeu de données de test pour l'architecture. L'image utilisée possède une version vérité terrain (\acrshort{gt}). L'image générée est l'image prédite et peut être comparée avec l'image vérité terrain (\acrshort{gt}), tant que la palette de couleur est identique à la version vérité terrain (\acrshort{gt}). 
 \vspace{\baselineskip}
 \\
 \noindent Il s'avère que le \acrshort{iou} et F1 score sont assez élevés pour les deux photos pour la classe "Chemin". 
@@ -119,7 +119,7 @@
       % \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
    }
    \includegraphics[width=1\textwidth]{b1-09517_Clipped_segmented}
-   \caption[Segmentation sémantique de l'image b1-09517 générée par le modèle]{(gauche) Image originale (b1-09517); (centre) vérité terrain (\acrshort{gt}); (droite) segmentation sémantique générée par le modèle. Le \acrshort{iou} et le F1 score pour le chemin sont de +80\%.}
+   \caption[Segmentation sémantique de l'image b1-09517 générée par l'architecture]{(gauche) Image originale (b1-09517); (centre) vérité terrain (\acrshort{gt}); (droite) segmentation sémantique générée par l'architecture. Le \acrshort{iou} et le F1 score pour le chemin sont de +80 \%.}
    \label{fig:b1-09517_Clipped}
 \end{figure}
 \begin{figure}[H]
@@ -130,9 +130,9 @@
       \tikz \fill [vegetation] (0.05, 0.05) rectangle (1.0, 0.5) ; {Végétation/arbres}
       \tikz \fill [sky] (0.05, 0.05) rectangle (1.0, 0.5) ; {Ciel}
       \tikz \fill [obstacle] (0.05, 0.05) rectangle (1.0, 0.5) ; {Obstacle}
-   }   
+   }
    \includegraphics[width=1\textwidth]{b378-61_Clipped_segmented}
-   \caption[Segmentation sémantique de l'image b378-61 générée par le modèle]{(gauche) Image originale (b378-61); (milieu) vérité terrain (\acrshort{gt});  (droite) segmentation sémantique générée par le modèle. Le \acrshort{iou} pour le chemin est +69\%.}
+   \caption[Segmentation sémantique de l'image b378-61 générée par l'architecture]{(gauche) Image originale (b378-61); (milieu) vérité terrain (\acrshort{gt}); (droite) segmentation sémantique générée par l'architecture. Le \acrshort{iou} pour le chemin est +69 \%.}
    \label{fig:b378-61_mask}
 
 \end{figure}
@@ -140,13 +140,13 @@
 \noindent Il y a deux vidéos qui ont été utilisées pour tester les performances de la segmentation avec une vidéo. Comme il n'est pas évident de montrer une vidéo dans un essai, des liens sont mis à disposition. Ces vidéos sont disponibles dans le projet "Vision Météo" de Teams de l'Université de Sherbrooke. Chaque vidéo a été créée en filmant avec un téléphone intelligent l'écran du nano ordinateur pendant que la segmentation est exécutée. Cela produit une vidéo HD 1080p 30 \acrshort{fps}. Lors de la seconde vidéo, les performances du système et les statistiques "tegrastats" sont affichées en plus de la segmentation.
 \vspace{\baselineskip}
 \\
-\noindent J'ai tenté de capturer le résultat (vidéos/images) de l'inférence directement depuis le nano ordinateur, mais ce n'est pas une bonne idée, car trop intrusif, l'inférence est ralentie. Deux images sont produites par le modèle: "overlay" et "mask", qui sont directement rafraichies dans un XWindow. 
+\noindent J'ai tenté de capturer le résultat (vidéos/images) de l'inférence directement depuis le nano ordinateur, mais ce n'est pas une bonne idée, car trop intrusif, l'inférence est ralentie. Deux images sont produites par l'architecture: "overlay" et "mask", qui sont directement rafraichies dans un XWindow. 
 \begin{itemize}
-   \item Lien\footnote{\url{https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet_visionmeteo/videos/gae724_lefv2603/resultats/20200221_020044.mp4}} vers une courte vidéo de 30 secondes démontrant l'inférence en temps réel de la segmentation sémantique d'une vidéo de la piste cyclable du pont Jacques-Cartier dans des conditions ensoleillées, mais avec un angle de vue qui change rapidement. Inférence effectuée en 30 \acrshort{fps} 1280x720 avec le modèle "fcn-resnet18-deepscene-576x320";
-   \item Lien\footnote{\url{https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet_visionmeteo/videos/gae724_lefv2603/resultats/20200412_232155.mp4}} vers une vidéo longue de +8 minutes présentant l'inférence en temps réel de la segmentation sémantique d'une vidéo d'une piste cyclable dans des conditions ensoleillée, mais mouillée, avec présence de neige. Durée de plus de 8 minutes. La taille de la vidéo est de 800Mb. La même vidéo, d'une durée de 30 secondes, est utilisée successivement avec différentes images par seconde (60 / 30 / 15 / 1 \acrshort{fps}) et résolutions (720x1280 / 480x640 / 320x480 / 240x320). Le modèle est "fcn-resnet18-deepscene-576x320". Selon le titre de la fenêtre xWindow présentant la segmentation, le \acrshort{fps} est autour de 23-26 \acrshort{fps}.
+   \item Lien\footnote{\url{https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet_visionmeteo/videos/gae724_lefv2603/resultats/20200221_020044.mp4}} vers une courte vidéo de 30 secondes démontrant l'inférence en temps réel de la segmentation sémantique d'une vidéo de la piste cyclable du pont Jacques-Cartier dans des conditions ensoleillées, mais avec un angle de vue qui change rapidement. Inférence effectuée en 30 \acrshort{fps} 1280x720 avec l'architecture "fcn-resnet18-deepscene-576x320";
+   \item Lien\footnote{\url{https://usherbrooke.sharepoint.com/sites/ProjetVisionMto/Documents\%20partages/General/projet_visionmeteo/videos/gae724_lefv2603/resultats/20200412_232155.mp4}} vers une vidéo longue de +8 minutes présentant l'inférence en temps réel de la segmentation sémantique d'une vidéo d'une piste cyclable dans des conditions ensoleillée, mais mouillée, avec présence de neige. Durée de plus de 8 minutes. La taille de la vidéo est de 800Mb. La même vidéo, d'une durée de 30 secondes, est utilisée successivement avec différentes images par seconde (60 / 30 / 15 / 1 \acrshort{fps}) et résolutions (720x1280 / 480x640 / 320x480 / 240x320). L'architecture est "fcn-resnet18-deepscene-576x320". Selon le titre de la fenêtre xWindow présentant la segmentation, le \acrshort{fps} est autour de 23-26 \acrshort{fps}.
 \end{itemize}
 \vspace{\baselineskip}
-\noindent Voici un tableau montrant les différentes résolutions et images par seconde (\acrshort{fps}) qui ont été testées avec le modèle:
+\noindent Voici un tableau montrant les différentes résolutions et images par seconde (\acrshort{fps}) qui ont été testées avec l'architecture:
 {
     \renewcommand*{\arraystretch}{1.4}
     \begin{table}[ht]
@@ -170,8 +170,8 @@
     \end{tabular}
     \end{table}
 }
-\subsection{Adaptation}
-\noindent Une tentative d'adaptation a été initiée. La première étape a été de vouloir re générer le fichier .onnx tel que NVIDIA le fournit, sans autre effort d'adaptation. En effet les commandes fournies par NVIDIA pour segmenter une image ou une vidéo permettent de préciser un modèle personnalisé, tel que le fichier .onnx, les classes, les codes couleurs. L'idée est donc de bénéficier de cette possibilité. Le seconde étape était de créer un jeu de données adapté au contexte, c'est-à-dire avec des photos de différentes sections de pistes cyclables avec une qualité de surface variable (sèche, mouillée, avec neige, ensoleillé, ombragé, etc.), avec les images fournies par l'\acrshort{apcpontjc} et mon jeu personnel. Les difficultés attendues étaient d'uniformiser les résolutions des photos pour le modèle SegNet18, mais surtout de créer des images vérités terrain (\acrshort{gt}), qui est beaucoup plus chronophage que difficile. Une fois le tout complété, la dernière étape serait de re entrainé le modèle SegNet18 avec ce jeu, et re générer le nouveau .onnx. 
+\subsection{Ré entrainement}
+\noindent Une tentative de ré entrainement a été initiée. La première étape a été de vouloir re générer le fichier \acrshort{onnx} tel que NVIDIA le fournit, sans autre effort de ré entrainement. En effet les commandes fournies par NVIDIA pour segmenter une image ou une vidéo permettent de préciser une architecture personnalisée, tel que le fichier \acrshort{onnx}, les classes, les codes couleurs. L'idée est donc de bénéficier de cette possibilité. Le seconde étape était de créer un jeu de données adapté au contexte, c'est-à-dire avec des photos de différentes sections de pistes cyclables avec une qualité de surface variable (sèche, mouillée, avec neige, ensoleillé, ombragé, etc.), avec les images fournies par l'\acrshort{apcpontjc} et mon jeu personnel. Les difficultés attendues étaient d'uniformiser les résolutions des photos pour l'architecture SegNet18, mais surtout de créer des images vérités terrain (\acrshort{gt}), qui est beaucoup plus chronophage que difficile. Une fois le tout complété, la dernière étape est de re entrainé l'architecture SegNet18 avec ce jeu, et re générer le nouveau fichier \acrshort{onnx}. 
 \vspace{\baselineskip}
 \\
-\noindent Malheureuseument la première étape, de re générer le fichier .onnx tel quel, ne s'est pas déroulé aussi simplement qu'espéré, et a remis en question la suite de l'adaptation. La génération du fichier .onnx a tout d'abord réussie assez facilement, mais une erreur à l'exécution a remis en question l'intégrité de ce fichier. Une longue période d'investigation a débuté\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_posts/2020-05-13-train-onnx-nano.md}}\footnote{\url{https://forums.developer.nvidia.com/t/trying-to-regenerate-onnx-for-jetson-nano/125494?u=vincelf}}, et finalement le fichier .onnx a pu être re généré avec succès après la phase de ré entrainement. Malheureusement le script fourni par NVIDIA qui adapte les photos du jeu de données de DeppScene pour le jeu d'entrainement et de test destiné au ré-entrainement du modèle SegNet18, génère des photos toutes noires, l'investigation s'est arrêtée à ce point.
+\noindent Malheureuseument la première étape, de re générer le fichier \acrshort{onnx}, ne s'est pas déroulé aussi simplement qu'espéré, et a remis en question la suite du ré entrainement. La génération du fichier \acrshort{onnx} a tout d'abord réussie assez facilement, mais une erreur à l'exécution a remis en question l'intégrité de ce fichier. Une longue période d'investigation a débuté\footnote{\url{https://github.com/vince7lf/vince7lf.github.io/blob/master/_posts/2020-05-13-train-onnx-nano.md}}\footnote{\url{https://forums.developer.nvidia.com/t/trying-to-regenerate-onnx-for-jetson-nano/125494?u=vincelf}}, et finalement le fichier \acrshort{onnx} a pu être re généré avec succès après la phase de ré entrainement. Malheureusement le script fourni par NVIDIA qui adapte les photos du jeu de données de DeppScene pour le jeu d'entrainement et de test destiné au ré-entrainement de l'architecture SegNet18, génère des photos toutes noires, l'investigation s'est arrêtée à ce point.
