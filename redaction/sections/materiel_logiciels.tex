@@ -24,7 +24,7 @@
     \label{fig:jetpack_architecture}
 \end{figure}
 \footnotetext{\url{https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra\%2520Linux\%2520Driver\%2520Package\%2520Development\%2520Guide\%2Foverview.html\%23}}
-\noindent Python et le C++ sont les langages utilisés par la plateforme applicative de DeepLearning de NVIDIA. Python est utilisé comme langage accessible et appelle les extensions écrites en C++ et qui optimisent les accès aux ressources systèmes tel que les \acrshort{cpu}s et \acrshort{gpu}s, les traitements des images et vidéos, les boucles et les traitements mémoires intensifs.
+\noindent Python et C++ sont les langages utilisés par la plateforme applicative de DeepLearning de NVIDIA. Python est utilisé comme langage accessible et appelle les extensions écrites en C++ et qui optimisent les accès aux ressources systèmes tel que les \acrshort{cpu}s et \acrshort{gpu}s, les traitements des images et vidéos, les boucles et les traitements mémoires intensifs.
 \vspace{\baselineskip}
 \\
 \noindent La librairie d’apprentissage profond qui est utilisée est PyTorch, bonifié avec une version adaptée par NVIDIA de torchvision, qui fournit des architecture et des utilitaires pour la vision par ordinateur (computer vision). Des versions bien spécifiques sont nécessaires et il est important de s'y conformer au risque de tomber dans une investigation bien couteuse en temps et énergie\footnote{\url{https://forums.developer.nvidia.com/t/trying-to-regenerate-onnx-for-jetson-nano/125494?u=vincelf}}.
