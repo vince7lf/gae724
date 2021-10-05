@@ -1,11 +1,11 @@
 ﻿\myparagraph{Préparation et post-traitement}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Afin de pouvoir mesurer les performances de la segmentation (IoU, F1 score), les classes et la palette de couleur entre l'image vérité terrain (\acrshort{gt}) et celles prédites doivent être les mêmes.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent L'image vérité terrain (\acrshort{gt}) du jeu de donnée original DeepScene ne possède pas la même palette de couleur ni exactement les mêmes classes que celle de l'architecture.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Un travail d'uniformisation est nécessaire avant la segmentation, qui est résumée dans le tableau \ref{table:classes_palette_couleur}.
 {
@@ -36,19 +36,19 @@
         \hline
     \end{tabular}
     \end{table}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent De plus, l'image segmentée prédite par l'architecture ne possède pas précisément la même palette de couleur que celle qui est configurée, il y a quelques différences minimes dans les codes couleurs RGB (par exemple 0-119-255 au lieu de 0-120-255), mais qui doivent être arrangée afin de pouvoir être correctement évaluées. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Un travail de traitement de l'image segmentée prédite est nécessaire avant l'évaluation de la segmentation.
 \myparagraph{Segmentation et évaluation}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Afin de tester la performance de la segmentation du modèle, deux images du jeu de données de DeepScene sont utilisées, car ce jeu contient déjà les images vérités terrain (\acrshort{gt}), un gain de temps non négligeable dans le cadre de l'essai. Uniquemement la classe "Trail" est évaluée.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent L'architecture fournit à l'utilitaire "segnet-console" est "fcn-resnet18-deepscene-576x320" \footnote{\url{segnet-console -{}-network=fcn-resnet18-deepscene -{}-visualize=mask -{}-alpha=10000 images/city_0.jpg output.jp}}. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Un script Python\footnote{\url{https://gist.github.com/ilmonteux/8340df952722f3a1030a7d937e701b5a}} est utilisé afin de mesurer le \acrshort{iou} et le F1 score de la classe de l'image prédite par l'architecture.

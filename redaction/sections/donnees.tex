@@ -1,27 +1,27 @@
 ﻿\myparagraph{Données}\label{metho:data}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 Les ressources mises à disposition par le constructeur du Jetson Nano, NVIDIA, font référence à des jeux de données qui sont disponibles publiquement.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent En complément des ressources de NVIDIA, deux références scientifiques ont été étudiées, car leurs recherches ont été faites avec le Jetson Nano \parencite{nguyen_mavnet_2019} et \parencite{zheng_real-time_2020}. Beaucoup de références ont été publiées ces deux dernières années sur le sujet de la segmentation sémantique, ils existent donc de multiples alternatives inspirantes.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Il existe sur Internet des forums et des blogues dans lesquels des utilisateurs publient leurs expérimentations de la segmentation sémantique en temps réel avec le Jetson Nano \parencite{dustin_realtime_2019}, ou plus génériquement la segmentation sémantique; des sites comme "modelzoo.co" ou "kaggle.com" sont des entrepôts de données et d'architectures \acrshort{fcn} prêts à être utilisés; une autre option a été d'effectuer une recherche d'images ou de vidéos de la piste multifonctionnelle du pont Jacques-Cartier via les sites de recherche tels que Google. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent L'\acrlong{apcpontjc} existe depuis de nombreuses années pour promouvoir le transport actif et conserver la piste multifonctionnelle du pont Jacques Cartier ouverte durant l'hiver. Ils fournissent, via leurs sites Internet, des collections de vidéos et d'images qui pourront être utilisées après leur avoir demandé leur autorisation verbale et écrite. \parencite{association_des_pietons_et_cyclistes_du_pont_jacques-cartier_pontjacques-cartier365com_2020, association_des_pietons_et_cyclistes_pont_jacques-cartier_flickr_2020}
 \myparagraph{Approche prévue pour le traitement des données}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 Il y a deux phases à cet essai: 1) l'inférence avec des modèles déjà prêts; et 2) l'inférence avec des architectures réentrainées. Les données utilisées pour l'inférence sont des vidéos, et celles pour l'entrainement sont des images. Dans les deux cas, les images pour l'entrainement ou l'inférence doivent être d'une taille bien précise, celles avec lesquelles l'architecture a été, ou sera, entrainées. La résolution et la qualité de l'image vidéo sont nivelées vers le bas afin de déterminer la limite inférieure acceptable pour la segmentation la plus efficace et fiable possible. La résolution et le nombre d'images par seconde de la vidéo sont contrôlés par le logiciel ("driver" en anglais) de la caméra, et sont configurables. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Tout cela signifie que les vidéos ou nouvelles images doivent être traitées pour répondre à une certaine taille et résolution requise par l'architecture, tout en conservant une qualité élevée (nombre de pixels, niveaux de couleurs). De nouvelles images pour l'entrainement sont extraites des vidéos, et annotées. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Certains cadres de développement d'application logicielle d'apprentissage profond (par exemple "Keras") offrent l'option d'augmenter automatiquement le jeu de données avec des techniques d'augmentation de données (par exemple la rotation, le redimensionnement, l'effet miroir), ce qui est utile et non négligeable.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Voici le tableau de synthèse des données qui ont été découvertes et qui sont potentiellement utilisées dans le cadre de l'essai, incluant la référence à l'architecture du modèle d'apprentissage profond. Ce tableau est complémentaire à celui déjà proposé par NVIDIA\footnote{\url{https://github.com/dusty-nv/jetson-inference#semantic-segmentation}}.
 {

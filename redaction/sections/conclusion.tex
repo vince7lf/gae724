@@ -7,12 +7,12 @@
    \item Le "temps réel" à été simulé, et n'est donc pas celui qui sera utilisé sur le terrain. 
    \item le nano-ordinateur et l'architecture FCN supporte l'inférence d'une vidéo HD (résolution de 720x1280 = 720p) avec un nombre d'images par seconde de 60/1 \acrshort{fps}.
 \end{itemize}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \noindent D'un point de vue performance matérielle et logicielle, le nano-ordinateur est capable de segmenter une vidéo avec une architecture \acrshort{fcn}. Par contre, d'un point de vue qualitatif, 1) la qualité de la segmentation ne peut pas être mesurée. De plus, 2) la segmentation prédite est imprécise.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent La première limitation qualitative semble être un défaut majeur. Mais si on replace l'objectif dans le contexte de la détection de la délimitation d'une piste cyclable, à partir d'un point de vue fixe, on peut s'interroger sur le besoin de faire de la télédétection en temps réel avec une vidéo en haute résolution.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent La seconde limitation pourrait théoriquement être améliorée en utilisant un modèle dont l'architecture est plus performante, mais implicitement plus complexe, telle que l'architecture SegNet101 ou DeepLabV3, mais qui risque d'être aussi plus demandant en ressources matérielles, GPU, CPU et mémoire. Ce qui risque de remettre en question les performances matérielles et logicielles du nano-ordinateur. C'est ainsi probablement la raison pour laquelle NVIDIA procure uniquement des jeux de modèles préentrainés de segmentation sémantique avec SegNet18 pour le nano-ordinateur. 
 \subsection{Limites}
@@ -20,29 +20,29 @@
 \noindent Au sujet des limites matérielles, durant l'inférence, il n'y a aucune limite qui est ressortie lors des tests de performance. Selon la documentation de NVIDIA\todo{référence}, un mode opérationnel 24/7 offre une durée de vie de 4.4 années au nano-ordinateur.
 \subsubsection{Limites applicatives}
 \noindent Au sujet des limites applicatives, durant l'inférence, il n'y a aucune limite qui est ressortie lors des tests de performance. Par contre il a été observé durant l'essai que le nano-ordinateur ne devrait pas être utilisé comme machine de développement, pour par exemple pour re entrainé une architecture. L'entrainement de l'architecture SegNet18 n'a pas fonctionné dans un environnement virtuel Python, ni dans un conteneur Docker sur le nano-ordinateur, celui-ci arrête de fonctionner. Il n'y a pas eu d'investigation, mais il semble que le nano-ordinateur atteind une limite mémoire qui le ralenti jusqu'à un arrêt de fonctionnement. DIGITS ne peut pas non plus être utilisé, car il n'est pas compatible avec l'architecture ARM du nano-ordinateur. Si l'objectif est d'améliorer l'architecture en réentrainant à la demande en mode opérationnel, l'entrainement et l'inférence ne peuvent cohabiter simultanément, cela me semble donc impossible aujourd'hui, à moins d'investiguer et de trouver un moyen d'optimiser les ressources.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Durant l'essai, il a aussi été observé que l'utilisation prolongée de Chromium peut impacter les performances du nano-ordinateur en le ralentissant grandement. 
 \subsection{Optimisation}
 \subsubsection{Optimisation matérielle}
 \noindent Plusieurs initiatives ont été tentées afin d'optimiser le matériel. L'optimisation requise est celle d'utiliser un adaptateur 5V 4Amp, recommandé et fiable, afin de fournir assez de puissance au nano-ordinateur lorsque d'autres périphériques viennent s'y raccorder, comme une caméra et un ventilateur. Profiter du PoE de l'interface réseau n'a pas été testé, mais cela semble aussi être une option rapide et simple à mettre en place pour assister l'adaptateur. Enfin, forcer le démarrage du ventilateur dés le démarrage du nano-ordinateur est une autre optimisation simple, mais efficace a appliqué. Par contre, je ne recommande pas l'utilisation d'un dongle ou adaptateur Wifi, celui-ci étant énergivore, peu efficace, non fiable, ni stable. Il prendrait de plus un pourcentage d'utilisation non négligeable du Hub USB 3.0. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent La seconde optimisation qui a été tentée est celle d'utiliser un \acrshort{ssd} à la place d'une microSD, car il y aurait beaucoup d'avantages. Pour des raisons de performances d'abord, le gain peut-être d'au moins 4 fois plus grand en opération de lecture I/O. Ensuite, en durée de vie, une carte microSD est fragile et ne peut être considérée comme un système fiable sur le long terme. D'un point de vue capacité de stockage, un \acrshort{ssd} peut offrir beaucoup mieux. Enfin, un \acrshort{ssd} est plus adapté à la gestion d'un système opérationnelle et la manipulation de petits fichiers. En contrepartie, un SSD va demander plus de puissance au nano-ordinateur, et générer plus de chaleur. Ma recommandation serait de trouver un disque \acrshort{ssd} interne au format NVMe, connecteur de type M.2, qui peut être facilement branché au port PCIe du nano-ordinateur.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Une autre optimisation matérielle qui n'est pas à négliger est le boitier. Vu que le système a été conçu pour être en opération continue sur le terrain, le boitier doit permettre de le protéger sur le long terme. Il doit être bien adapté à ses périphériques, que sont la caméra et le ventilateur, et optionnellement un \acrshort{ssd} interne.
 \subsubsection{Optimisation logicielle}
 \noindent La version de l'architecture SegNet18 fournit par NVIDIA s'exécute avec fluidité, sans que l'on sente que le nano-ordinateur puisse devenir non réactif. Au démarrage de l'inférence, il y a une brève période de 2-3 secondes ou le nano-ordinateur ne répond plus. Mais sinon, il est tout à fait possible d'utiliser le nano-ordinateur pendant l'inférence d'une vidéo ou avec la caméra, et même avec 5-6 onglets d'ouverts dans Chromium. Lorsque le nombre d'onglets, ou d'instances de Chromium, devient trop grand, il a été observé que le nano-ordinateur devenait lent, limite non fonctionnel, jusqu'à la fermeture des onglets. Ceci est probablement dû à une limitation mémoire.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Autrement, certaines corrections au code C++ ont dû être apportées au code source original fourni par NVIDIA: l'image de la caméra est à l'envers (et je ne pouvais monter la caméra dans le sens opposé dans le boitier); le pipeline gstreamer interne de l'application est trop spécifique pour supporter un flux vidéo autre que celui provenant de la caméra; et la taille de la fenêtre XWindow qui s'ouvre pour afficher la segmentation de la vidéo est programmée pour prendre tout l'écran, nous faisant perdre ainsi l'accessibilité et visibilité aux autres fenêtres.
 \myparagraph{Segmentation}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Comme observé durant les tests, la résolution de la segmentation avec l'architecture SegNet18 est faible, 19 x 10 pixels. Le désavantage majeur dans le contexte de cet essai est que les délimitations des classes sont approximatives, incluant celle du chemin. Même si le IoU et le F1 score sont pourtant acceptable pour cette classe. Il semble que ce serait l'élément prioritaire à améliorer. 
 \myparagraph{Réentrainement}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Même si la phase de réentrainement a pu être initiée durant l'essai, elle n'a pas durée longtemps : regénérer le même fichier interopérable \acrshort{onnx} avec le code source original a été laborieux. Il est vrai que NVIDIA propose, avec DIGITS, un environnement de re entrainement des architectures qu'ils offrent. Mais dans le contexte de cet essai, je n'avais à ma disposition que l'environnement de Calcul Québec, qui n'est pas compatible avec DIGITS. Néanmoins je pense qu'il est important de pouvoir le faire tout en gardant le contrôle de son environnement, par exemple pour permettre d'adapter l'architecture de notre choix, plus performant, tel que SegNet101 ou DeepLabV3, entrainé avec le jeu de données DeepScene, et l'adapter à un jeu de données personnalisé. Le questionnement est de savoir comment le nano-ordinateur réagit avec une architecture beaucoup plus grosse et complexe que SegNet18. Dans une autre perspective, il serait bon de considérer un modèle de nano-ordinateur plus performant, tel que le Jetson Xavier AGX.
 \subsection{Accès distant}

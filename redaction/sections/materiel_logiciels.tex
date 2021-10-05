@@ -8,13 +8,13 @@
 \end{figure}
 \noindent L'architecture du nano-ordinateur est ARM 64 bits (aarch64), ce qui le limite pour certaines portabilités de librairies, surtout dans le domaine assez restreint de la recherche, ou l'architecture la plus populaire et portable est x86-64. Il est composé d'un quad-core ARM Cortex-A57 @ 1.43 GHz, qui est conçu pour ce genre de nano-ordinateur, comme le Raspberry Pi. Les performances \acrshort{gpu} du Maxwell sont de 128-cores @ 921 MHz, 0.5 \acrshort{tflops} (16 FP = 16 bits FP = 2 bytes Floating Points). Par comparaison la PlayStation 4 Pro (2016) supporte +4 \acrshort{tflops}. La mémoire est limitée à 4Gb LPDDR4 @ 1.6 GHz. Les autres caractéristiques à considérer sont le port pour une carte microSD, un port Ethernet 10/100/1000Mbs, un port HDMI, un hub USB 4 ports 3.0, un connecteur pour une caméra, et un port PCIe. Le tout tient sur une carte mère d'une taille de 69.6 mm x 45 mm, et consomme entre 5 et 10 watt.
 \myparagraph{Logiciels}
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent De même que pour les périphériques, les solutions logiciels principales qui sont utilisés dans le cadre de l'essai sont résumés dans le tableau suivant, où il est indiqué leur nom, le type de licence, leur version, leurs rôles et responsabilités, comme pour le système d'exploitation, l'environnement de développement pour l'apprentissage profond, l'inférence, les logiciels de traitements vidéos et d'images. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Pour tester les performances de la microSD et du disque SDD interne M.2 NVMe, l'utilitaire "hdparm" a été utilisé. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Le \acrshort{sdk} qui est utilisé avec le nano-ordinateur est celui fourni par NVIDIA et qui se nomme "JetPack"\footnote{\url{https://developer.nvidia.com/embedded/jetpack}} \footnote{\url{https://docs.nvidia.com/jetson/jetpack/introduction/index.html}}. La version 4.4\footnote{\url{https://developer.nvidia.com/embedded/jetpack-archive}} est celle avec laquelle les tests de performance ont été exécutés. Il contient le système d'exploitation "\acrlong{l4t}" (\acrshort{l4t})\footnote{\url{https://developer.nvidia.com/embedded/linux-tegra}} (version \acrshort{l4t} 32.4.3), qui est une version de la distribution Linux Ubuntu 18.04 mise à la saveur de NVIDIA. Jetpack contient aussi d'autres librairies qui sont nécessaires pour re construire la version \acrshort{onnx} du modèle, tel que Cuda, CuDNN et TensorRT.
 \begin{figure}[H]
@@ -25,16 +25,16 @@
 \end{figure}
 \footnotetext{\url{https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra\%2520Linux\%2520Driver\%2520Package\%2520Development\%2520Guide\%2Foverview.html\%23}}
 \noindent Python et C++ sont les langages utilisés par la plateforme applicative de DeepLearning de NVIDIA. Python est utilisé comme langage accessible et appelle les extensions écrites en C++ et qui optimisent les accès aux ressources systèmes tel que les \acrshort{cpu}s et \acrshort{gpu}s, les traitements des images et vidéos, les boucles et les traitements mémoires intensifs.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent La librairie d’apprentissage profond qui est utilisée est PyTorch, bonifié avec une version adaptée par NVIDIA de torchvision, qui fournit des architecture et des utilitaires pour la vision par ordinateur (computer vision). Des versions bien spécifiques sont nécessaires et il est important de s'y conformer au risque de tomber dans une investigation bien couteuse en temps et énergie\footnote{\url{https://forums.developer.nvidia.com/t/trying-to-regenerate-onnx-for-jetson-nano/125494?u=vincelf}}.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Le nano-ordinateur inclut un \acrshort{gpu} qui est mis à contribution lors de l'inférence. Le compilateur de NVIDIA pour \acrshort{gpu} 'cuda' est nécessaire pour regénérer la version \acrshort{onnx}. La version doit concorder avec la bonne version de PyTorch. La version adaptée (fork) de torchvision doit être recompilée avec la bonne version de pytorch et cuda. 
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 \\
 \noindent Enfin pour regénérer la version \acrshort{onnx} lors de la phase de réentrainement, les librairies TensorRT et \acrshort{onnx} ont été utilisées, en compagnie de l'utilitaire `trtexec` qui permet de valider et tester le fichier \acrshort{onnx} généré.
-\vspace{\baselineskip}
+\vspace{0.5\baselineskip}
 {
     \vspace{0.1em} % Adjust the height of the space between caption and tabular
     \begin{longtable}[t]{{@{}|p{5em}|p{3em}|p{4em}|p{23em}|@{}}} % p{15em}p{35em} with landscape

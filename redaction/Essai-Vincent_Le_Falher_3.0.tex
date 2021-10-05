@@ -50,6 +50,9 @@
 \usepackage{tikz}
 % \usepackage{draftwatermark}
 \addbibresource{selection.bib}
+% to overwrite the french small cap in the \parencite 
+% ref https://tex.stackexchange.com/questions/53309/changing-default-citet-font-in-biblatex 
+\DefineBibliographyExtras{french}{\restorecommand\mkbibnamefamily} 
 \definecolor{orange}{rgb}{1,0.647,0}
 \definecolor{trail}{RGB}{170, 170, 170}
 \definecolor{grass}{RGB}{0, 255, 0}
@@ -83,7 +86,7 @@
    \vspace{11\baselineskip}
  
    {\LARGE Segmentation sémantique en temps réel à partir d'un nano-ordinateur: étude des performances et des limites}
-   \vspace{\baselineskip}
+   \vspace{0.5\baselineskip}
    \linebreak
  
    \vspace*{3\baselineskip}
